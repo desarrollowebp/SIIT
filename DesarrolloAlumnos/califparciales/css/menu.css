@@ -1,0 +1,159 @@
+/* 100% algot de ventava uvh*/
+.menu {
+  background: white;
+  width: 100%;
+  height: 100vh;
+  top: 10px;
+  transition: all 0.5s;
+}
+
+.materia {
+  display: inline-block;
+  margin-bottom: 5px;
+  margin-left: 30px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px 10px 10px 10px;
+  border: 2px solid #70193F;
+  border-radius: 12px;
+  border: 1px solid;
+  word-wrap: break-word;
+}
+
+
+
+.dias {
+  background: red;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.dias p {
+  width: 30%;
+  padding: 5px;
+}
+
+.estado {
+  border-radius: 12px;
+  background: #83C8E3;
+  padding: 1%;
+}
+
+.estado2 {
+  background: white;
+}
+
+.menu span {
+  position: absolute;
+  right: 5px;
+  color: blue;
+}
+
+/*probemmas con margin*/
+.menu ul {
+  background: white;
+  text-decoration: none;
+  list-style: none;
+  font-size: 20px;
+  margin: 0px 0px;
+}
+
+.menu a {
+  border: none;
+  display: block;
+  padding: 5px 20px;
+  text-decoration: none;
+}
+
+/*ayuda a jquery*/
+.menu ul li:hover ul {
+  display: none;
+  position: static;
+}
+
+.menu ul li ul {
+  display: none;
+  width: 100%;
+}
+
+.menu ul li p {
+  font-size: 10px;
+  text-align: center;
+}
+
+.menu ul li a {
+  color: black;
+  border-left: 6px solid #6A1A3E;
+  background-color: white;
+}
+
+  button {
+  padding: 3px 3px;
+  font-size: 9px;
+  padding-bottom: 7px;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: white;
+  background-color: #70193F;
+  border: none;
+  border-radius: 15px;
+  margin-bottom: 5px;
+}
+
+.vertical {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+/*alt 126 tllde selecciona menu*/
+#menu-bar:checked~.menu {
+  transform: translateX(0);
+}
+
+@media(min-width:780px) {
+  .menu {
+    width: 1000px;
+    height: 80%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .submenu {
+    width: 100%;
+    height: 100%;
+    font-size: 10px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .materia {
+    display: block;
+    padding: 0 0 0 0;
+  }
+
+  .estado {
+    width: 100%;
+    max-width: 80px;
+    max-height: 90px;
+    word-wrap: break-word;
+  }
+
+  .menu span {
+    position: static;
+    right: auto;
+    color: blue;
+  }
+
+  .menu ul {
+    display: flex;
+  }
+
+  .vertical {
+    overflow: visible;
+    white-space: normal;
+  }
+}

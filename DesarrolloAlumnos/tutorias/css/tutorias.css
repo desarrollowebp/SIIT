@@ -1,0 +1,82 @@
+* {
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+}
+.container {
+    max-width: 65%;
+    overflow: hidden;
+    background: white;
+    margin: 20px auto;
+    padding: 0px;
+}
+.container ul {
+    padding: 0px;
+    margin: auto;
+}
+.container ul li:hover {
+    opacity: 0.9;
+}
+.container ul li .title:hover {
+    background: #014E82;
+    color: white;
+}
+.container ul li {
+    list-style: none;
+    float: left;
+    width: 20%;
+    height: 100px;
+    background: white;
+    margin: auto;
+    box-sizing:border-box;
+    border: 2px solid white;
+    text-align: center;
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+.container ul li .title {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background-color: #70193f;
+color: white;
+    text-align: center;
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+.tuto{
+    text-align: left;
+    color: #252F33;
+font-size: 20;
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+.lab{
+    text-align: right;
+    color: #014E82; 
+    font-size: 24;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+p {
+    height: 4px;
+}
+
+@media screen and (max-width: 1250px){
+    .container ul li {
+        width: 50%;
+        margin-left: 30px;
+    }
+}
+@media screen and (max-width: 750px){
+    .container {
+        width: 100%;
+        padding: 0px;   
+    }
+    .container ul li {
+        float: none;
+        width: 90%;
+        margin: auto;
+    }
+}
+
+

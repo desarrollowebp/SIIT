@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<!--estos dos son para el correcto funcionamiento con boostrap-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		<!--estos dos son para el correcto funcionamiento con boostrap-->
+	<meta charset="UTF-8">
+	<title>Encuesta</title>
+	<link rel="stylesheet" href="css/estilo.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="js/menu.js"></script>
+</head>
+<body>
+	<!--Menu hamburguesa-->
+	<header>
+		<div class="menu_bar">
+			<img src="img/logo_itd.png">
+			<a href="#" class="bt-menu"><span class="icon-menu"></span></a>
+		</div>
+ 
+		<nav>
+			<ul>
+				<li class="submenu""> <a href="#" class="negrita"><span class="icon-esc"></span> Informacion Escolar<span class="caret icon-arrow"></span></a>
+					<ol class="children">
+						<li><a href="#" class="sombreado">Datos Escolares</a></li>
+						<li><a href="#" class="sombreado">Verificacion De Datos</a></li>
+						<li><a href="#" class="sombreado">Boleta De Calificaciones</a></li>
+						<li><a href="#" class="sombreado">Avance Reticular</a></li>
+						<li><a href="#" class="sombreado">Kardex De Calificaciones</a></li>
+						<li><a href="#" class="sombreado">Horario</a></li>
+						<li><a href="#" class="sombreado">Califi De Exam Globales o Especiales</a></li>
+						<li><a href="#" class="sombreado">Calificaciones Parciales</a></li>
+						<li><a href="#" class="sombreado">Residencia</a></li>
+						<li><a href="#" class="sombreado">Formatos Alumnos</a></li>
+
+						<li class="submenu"><a href="#" class="sombreado">Tutorias<span class="caret icon-flecha2"></span></a>
+							<ul class="children">
+								<li><a href="#" ><span class="icon-flecha"></span>Acerca Del Tutor</a></li>
+								<li><a href="#" ><span class="icon-flecha"></span>Entrevista Inicial</a></li>
+								<li><a href="#" ><span class="icon-flecha"></span>Ficha De Identificacion</a></li>
+								<li><a href="#" ><span class="icon-flecha"></span>Actividades y Estatus</a></li>
+							</ul>	
+						</li>
+					</ol>
+				</li>
+				<li class="submenu""> <a href="#" class="negrita"><span class="icon-ins"></span> Inscripciones<span class="caret icon-arrow"></span></a>
+					<ol class="children">
+						<li class="submenu"><a href="#" class="sombreado">Seleccion de Materias<span class="caret icon-flecha2"></span></a>
+							<ul class="children">
+								<li><a href="#" ><span class="icon-flecha"></span>AGO - DIC</a></li>
+								<li><a href="#" ><span class="icon-flecha"></span>Verano</a></li>
+							</ul>	
+						</li>
+						<li><a href="#" class="sombreado">PRE-FICHA de pago</a></li>
+						<li><a href="#" class="sombreado">Horario de Reinscripción</a></li>
+						<li><a href="#" class="sombreado">Grupos Cargados</a></li>
+						<li><a href="#" class="sombreado">Extraescolares</a></li>
+					</ol>
+				</li>
+				<li class="submenu""> <a href="#" class="negrita"><span class="icon-eva"></span> Evaluaciones</span> Inscripciones<span class="caret icon-arrow"></a>
+					<ol class="children">
+						<li><a href="#" class="sombreado">Evaluacion Docente</a></li>
+						<li><a href="#" class="sombreado">Auditoria de Servicio</a></li>
+					</ol>
+				</li>
+				
+				<li class="submenu"><a href="#"  class="cerrar"><span class="icon-cerrar"></span> Cerrar Sesion</a></li>
+			</ul>
+		</nav>
+	</header>
+	<!--Fin Menu hamburguesa-->
+	<form action="servicio_social.html" method="POST">
+		<div id="tituloInstrucciones">
+			<h1>Encuesta auditoria de servicio</h1>
+		</div>
+		<div id="coment" style="padding: 50px;">
+			<h4>¿Estás en proceso o has terminado tu Servicio Social?</h4>
+		</div>
+			<div id="boton" style="text-align: center;">
+				<button style="background-color: #70193F; border: #70193F; width: 5%;" type="summit" class="btn btn-primary" onclick="servicio_social.html">Sí</button>
+			</div>
+	</form>
+	<form action="servicios_esc.html">
+			<div id="boton" style="text-align: center; padding-top: 10px;">
+				<button style="background-color: #70193F; border: #70193F; width: 5%;" type="summit" class="btn btn-primary" onclick="servicios_esc.html">No</button>
+			</div>
+
+	</form>
+</body>
+</html>

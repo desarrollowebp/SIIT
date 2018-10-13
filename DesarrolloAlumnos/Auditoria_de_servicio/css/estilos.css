@@ -1,0 +1,73 @@
+#tituloInstrucciones{
+	color: white;
+	text-align: center;
+	padding: 15px;
+	background: #70193F;
+	border-radius: 20px;
+}
+
+#pregServicio{
+	width:70%;
+	height: auto;
+	background: white;
+	margin: auto; /*para alinear el div al centro*/
+	padding: 50px; /*Separación a los costados*/
+	padding-top: 35px; /*Separación el parte de arriba*/
+}
+
+#infoInst{
+	text-align: justify;
+	padding: 30px;
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
+#boton{
+	width:100%;
+	height: auto;
+}
+
+#descripcionservicio{
+	font-size: 20px; /*Tamaño de la letra*/
+	color: white;
+	background: #70193F; /*Color guinda al fondo*/
+	padding-bottom: auto; /*padding es el ancho de donde está*/
+	text-align: center; /*para alinear el texto al centro*/
+	justify-content: center; /*para centrar el contenido*/
+	margin: 0px;
+}
+
+#parrafoEstilo{
+	width: 100%;
+	color: #70193F;
+	text-align: left;
+	justify-content: center;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	border: solid 2px #70193F; /*Color del borde*/
+	margin: 0px; /*Margen*/
+	border-right: 0;
+}
+
+
+#oracionesEstilo{
+	width:100%;
+	height: auto;
+	margin: auto; /*para alinear el div al centro*/
+	color: #70193F;
+	text-align: center;
+	justify-content: center;
+	padding-bottom: 20px;
+	padding: 50px; /*Separación a los costados*/
+	padding-top: 20px; /*Separación de la parte de arriba*/
+}
+
+#coment{
+	width: 100%;
+	text-align: center;
+	color: #70193F;
+	justify-content: center;
+
+}
+
+

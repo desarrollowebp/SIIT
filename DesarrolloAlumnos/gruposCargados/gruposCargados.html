@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>GRUPOS CARGADOS</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+  <link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <link rel="stylesheet" href="css/gruposCargados.css">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/gruposCargados.js"></script>
+
+
+</head>
+<body>
+
+  <header >
+      <div class="logo">
+        <img src="img/logo_itd.png">
+        <p>Instituto Tecnológico De Durango</p>
+      </div>
+      <div class="menu_bar">
+        
+        <a href="#" class="bt-menu"><span class="icon-menu"></span></a>
+      </div>
+   
+      <nav>
+        <ul>
+          <li class="submenu""> <a href="#" class="negrita"><span class="icon-esc"></span> Informacion Escolar<span class="caret icon-arrow"></span></a>
+            <ol class="children">
+              <li><a href="#" class="sombreado">Datos Escolares</a></li>
+              <li><a href="#" class="sombreado">Verificacion De Datos</a></li>
+              <li><a href="#" class="sombreado">Boleta De Calificaciones</a></li>
+              <li><a href="#" class="sombreado">Avance Reticular</a></li>
+              <li><a href="#" class="sombreado">Kardex De Calificaciones</a></li>
+              <li><a href="#" class="sombreado">Horario</a></li>
+              <li><a href="#" class="sombreado">Califi De Exam Globales o Especiales</a></li>
+              <li><a href="#" class="sombreado">Calificaciones Parciales</a></li>
+              <li><a href="#" class="sombreado">Residencia</a></li>
+              <li><a href="#" class="sombreado">Formatos Alumnos</a></li>
+
+              <li class="submenu"><a href="#" class="sombreado">Tutorias<span class="caret icon-flecha2"></span></a>
+                <ul class="children">
+                  <li><a href="#" ><span class="icon-flecha"></span>Acerca Del Tutor</a></li>
+                  <li><a href="#" ><span class="icon-flecha"></span>Entrevista Inicial</a></li>
+                  <li><a href="#" ><span class="icon-flecha"></span>Ficha De Identificacion</a></li>
+                  <li><a href="#" ><span class="icon-flecha"></span>Actividades y Estatus</a></li>
+                </ul> 
+              </li>
+            </ol>
+          </li>
+          <li class="submenu""> <a href="#" class="negrita"><span class="icon-ins"></span> Inscripciones<span class="caret icon-arrow"></span></a>
+            <ol class="children">
+              <li class="submenu"><a href="#" class="sombreado">Seleccion de Materias<span class="caret icon-flecha2"></span></a>
+                <ul class="children">
+                  <li><a href="#" ><span class="icon-flecha"></span>AGO - DIC</a></li>
+                  <li><a href="#" ><span class="icon-flecha"></span>Verano</a></li>
+                </ul> 
+              </li>
+              <li><a href="#" class="sombreado">PRE-FICHA de pago</a></li>
+              <li><a href="#" class="sombreado">Horario de Reinscripción</a></li>
+              <li><a href="#" class="sombreado">Grupos Cargados</a></li>
+              <li><a href="#" class="sombreado">Extraescolares</a></li>
+            </ol>
+          </li>
+          <li class="submenu""> <a href="#" class="negrita"><span class="icon-eva"></span> Evaluaciones</span> Inscripciones<span class="caret icon-arrow"></a>
+            <ol class="children">
+              <li><a href="#" class="sombreado">Evaluacion Docente</a></li>
+              <li><a href="#" class="sombreado">Auditoria de Servicio</a></li>
+            </ol>
+          </li>
+          
+          <li class="submenu"><a href="#"  class="cerrar"><span class="icon-cerrar"></span> Cerrar Sesion</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+
+
+
+
+  <div class="gruposCargados">
+  <h2 id="tgc">Grupos Cargados</h2>
+  <div class="semestres">
+
+    <button class="todasmaterias" >Todos</button>
+    <button>Semestre 1</button>
+    <button>Semestre 2</button>
+    <button>Semestre 3</button>
+    <button>Semestre 4</button>
+    <button>Semestre 5</button>
+    <button>Semestre 6</button>
+    <button>Semestre 7</button>
+    <button>Semestre 8</button>
+    <button>Semestre 9</button>
+
+  <h2>Sección selecionada "x"</h2>
+  </div>
+  <div class="vertical">
+        <div class="container" >
+
+            	<div class="row" >
+        			<div class="col-md-12">
+        				<div class="panel panel-primary"  id="tablacontenedor">
+        					<div class="panel-heading">
+
+                    <h3 class="panel-title">TODOS LOS GRUPOS AL PERIODO AGOSTO-DICIEMBRE/2018
+
+                      </h3>
+                      <h3 class="panel-title"><span class="clickable filter" data-toggle="tooltip" title="Toggle table filter" data-container="body">
+                          Presiona para buscar
+                          <i class="glyphicon glyphicon-search"></i>
+          							</span></h3>
+
+        					</div>
+        					<div class="panel-body">
+        						<input type="text" class="form-control" id="dev-table-filter" data-action="filter" data-filters="#dev-table" placeholder="Buscar" />
+        					</div>
+        					<table class="table table-hover" id="dev-table">
+        						<thead>
+        							<tr>
+        								<th id="e1" width="70" class="small_negrita_center"> Grupo </th>
+        								<th id="e2" width="200" class="small_negrita_center"> Materia </th>
+        								<th id="e3" width="70" class="small_negrita_center"> Semestre </th>
+        								<th id="e4" width="80" class="small_negrita_center"> Lunes </th>
+        								<th id="e5" width="80" class="small_negrita_center"> Martes </th>
+        								<th id="e6" width="80" class="small_negrita_center"> Miercoles </th>
+        								<th id="e7" width="80" class="small_negrita_center"> Jueves </th>
+        								<th id="e8" width="80" class="small_negrita_center"> Viernes </th>
+                          <th id="e8" width="80" class="small_negrita_center"> Sabado </th>
+        							</tr>
+        						</thead>
+        						<tbody>
+        							<tr>
+        								<td class="small_center" width="50" > <p class="tgrupo"> 1M </p>  </td>
+        								<td class="small_center" > <p class="tmateria">MATEMATICAS</p> CO1001 <br> VILLARREAL REYES ELIZABETH SORAYA </td>
+        								<td class="small_center"> 1 </td>
+        								<td class="small_center"> 17:00 - 18:00<br>EE10 </td>
+        								<td class="small_center"> 17:00 - 18:00<br>EE10 </td>
+        								<td class="small_center"> 17:00 - 18:00<br>EE10 </td>
+        								<td class="small_center"> 17:00 - 18:00<br>EE10 </td>
+        								<td class="small_center"> 17:00 - 18:00<br>EE10 </td>
+                        <td class="small_center"> 17:00 - 18:00<br>EE10 </td>
+        							</tr>
+                      <tr>
+                        <td class="small_center" width="50" > <p class="tgrupo"> 1M </p>  </td>
+                        <td class="small_center" > <p class="tmateria">CALCULO DIFERENCIA</p> CO1001 <br> VILLARREAL REYES ELIZABETH SORAYA </td>
+                        <td class="small_center"> 1 </td>
+                        <td class="small_center"> 17:00 - 18:00<br>EE10 </td>
+                        <td class="small_center"> 17:00 - 18:00<br>EE10 </td>
+                        <td class="small_center"> 17:00 - 18:00<br>EE10 </td>
+                        <td class="small_center"> 17:00 - 18:00<br>EE10 </td>
+                        <td class="small_center"> 17:00 - 18:00<br>EE10 </td>
+                        <td class="small_center"> 17:00 - 18:00<br>EE10 </td>
+                      </tr>
+                      <tr>
+        								<td class="small_center" width="50" > <p class="tgrupo"> 1M </p>  </td>
+        								<td class="small_center" > <p class="tmateria">ESTADISTICA</p> CO1001 <br> VILLARREAL REYES ELIZABETH SORAYA </td>
+        								<td class="small_center"> 1 </td>
+        								<td class="small_center"> 17:00 - 18:00<br>EE10 </td>
+        								<td class="small_center"> 17:00 - 18:00<br>EE10 </td>
+        								<td class="small_center"> 17:00 - 18:00<br>EE10 </td>
+        								<td class="small_center"> 17:00 - 18:00<br>EE10 </td>
+        								<td class="small_center"> 17:00 - 18:00<br>EE10 </td>
+                        <td class="small_center"> 17:00 - 18:00<br>EE10 </td>
+        							</tr>
+                      <tr>
+        								<td class="small_center" width="50" > <p class="tgrupo"> 1M </p>  </td>
+        								<td class="small_center" > <p class="tmateria">CALCULO DIFERENCIA</p> CO1001 <br> VILLARREAL REYES ELIZABETH SORAYA </td>
+        								<td class="small_center"> 1 </td>
+        								<td class="small_center"> 16:00 - 18:00<br>EE10 </td>
+        								<td class="small_center"> 17:00 - 18:00<br>EE10 </td>
+        								<td class="small_center"> 17:00 - 18:00<br>EE10 </td>
+        								<td class="small_center"> 17:00 - 18:00<br>EE10 </td>
+        								<td class="small_center"> 17:00 - 18:00<br>EE10 </td>
+                        <td class="small_center"> 17:00 - 18:00<br>EE10 </td>
+        							</tr>
+                      <tr>
+                        <td class="small_center" width="50" > <p class="tgrupo"> 1M </p>  </td>
+                        <td class="small_center" > <p class="tmateria">CALCULO DIFERENCIA</p> CO1001 <br> VILLARREAL REYES ELIZABETH SORAYA </td>
+                        <td class="small_center"> 1 </td>
+                        <td class="small_center"> 17:00 - 18:00<br>EE10 </td>
+                        <td class="small_center"> 17:00 - 18:00<br>EE10 </td>
+                        <td class="small_center"> 17:00 - 18:00<br>EE10 </td>
+                        <td class="small_center"> 17:00 - 18:00<br>EE10 </td>
+                        <td class="small_center"> 17:00 - 18:00<br>EE10 </td>
+                        <td class="small_center"> 17:00 - 18:00<br>EE10 </td>
+                      </tr>
+
+                      <tr>
+                        <td class="small_center" width="50" > <p class="tgrupo"> 1M </p>  </td>
+                        <td class="small_center" > <p class="tmateria">CIENCIA</p> CO1001 <br> VILLARREAL REYES ELIZABETH SORAYA </td>
+                        <td class="small_center"> 1 </td>
+                        <td class="small_center"> 17:00 - 18:00<br>EE10 </td>
+                        <td class="small_center"> 17:00 - 18:00<br>EE10 </td>
+                        <td class="small_center"> 17:00 - 18:00<br>EE10 </td>
+                        <td class="small_center"> 17:00 - 18:00<br>EE10 </td>
+                        <td class="small_center"> 17:00 - 18:00<br>EE10 </td>
+                        <td class="small_center"> 17:00 - 18:00<br>EE10 </td>
+                      </tr>
+
+                      <tr>
+                        <td class="small_center" width="50" > <p class="tgrupo"> 1M </p>  </td>
+                        <td class="small_center" > <p class="tmateria">CALCULO DIFERENCIA</p> CO1001 <br> VILLARREAL REYES ELIZABETH SORAYA </td>
+                        <td class="small_center"> 1 </td>
+                        <td class="small_center"> 17:00 - 18:00<br>EE10 </td>
+                        <td class="small_center"> 17:00 - 18:00<br>EE10 </td>
+                        <td class="small_center"> 17:00 - 18:00<br>EE10 </td>
+                        <td class="small_center"> 17:00 - 18:00<br>EE10 </td>
+                        <td class="small_center"> 17:00 - 18:00<br>EE10 </td>
+                        <td class="small_center"> 17:00 - 18:00<br>EE10 </td>
+                      </tr>
+
+
+
+
+
+        						</tbody>
+        					</table>
+        				</div>
+        			</div>
+        		</div>
+        </div>
+
+      </div>
+  </div>
+
+
+</body>
+	
+</html>

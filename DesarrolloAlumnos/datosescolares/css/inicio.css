@@ -1,0 +1,53 @@
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+/*================================================*/
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+.carousel-item > div {
+  float: left;
+}
+.carousel-by-item [class*="cloneditem-"] {
+  display: none;
+}
+.h4, h4 {
+    font-size: 1.2rem;
+    color: #70193f;
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-weight: bold; 
+}
+.carousel-control-prev-icon {
+	margin-left: .002px;
+    background-image: url(back.png);
+}
+.carousel-control-next-icon {
+    background-image: url(next.png);
+}
+.btn{
+	align-content: center;
+	background-color: #70193f;
+	font-size: 15px;
+	color: white;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+.btn {
+   margin-left: 400px;
+   width: 20%;
+   min-width: 50px;  // add this if you want
+   max-width: 300px; // add this if  you want, adjust accordingly
+}
+.btn:hover{
+	color:#7CCFF7;
+}
+.p{
+	height: 8px;
+}
+
+	@media (max-width:768px)
+	{
+		.btn {
+		margin-left: 75px;
+		width:50%;
+		font-size: 15px;	}
+		@media (max-width:768px)
+	{
+		.h4, h4 {
+		font-size: 1.1rem;	}

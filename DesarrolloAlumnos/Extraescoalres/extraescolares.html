@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+
+	<!--============links horario==========-->
+	<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1">
+	<script src="https://code.jquerytype="text/css".com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>	
+	<!--============links horario==========-->
+
+	<!--============links de la segunda tabla que despliega==========-->
+	<!--========https://bootsnipp.com/snippets/GqxGl=========-->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<!--=============Links de el menu de hamburguesa================-->
+	<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+	<script src="https://code.jquery.com/jquery-latest.js"></script>
+	<!--==============links de la tabla de hora===============-->
+	<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	<title>Extraescolares</title>
+
+	<script src="js/Modal.js"></script>
+	<link rel="stylesheet" href="css/extraescolarestabla.css">
+	<link rel="stylesheet" href="css/estilosextraescolar.css">
+	<link rel="stylesheet" href="css/estilo.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/extraescolareshorario.css">
+</head>
+
+
+<body>
+
+
+	<!--==============empieza menu hamburguer===============-->
+
+	<header>
+		<div class="logo">
+			<img src="img/logo_itd.png">
+			<p>Instituto Tecnológico De Durango</p>
+		</div>
+		<div class="menu_bar">
+
+			<a href="#" class="bt-menu"><span class="icon-menu"></span></a>
+		</div>
+
+		<nav>
+			<ul>
+				<li class="submenu"> <a href=" #" class="negrita"><span class="icon-esc"></span> Informacion Escolar<span class="caret icon-arrow"></span></a>
+					<ol class="children">
+						<li><a href="#" class="sombreado">Datos Escolares</a></li>
+						<li><a href="#" class="sombreado">Verificacion De Datos</a></li>
+						<li><a href="#" class="sombreado">Boleta De Calificaciones</a></li>
+						<li><a href="#" class="sombreado">Avance Reticular</a></li>
+						<li><a href="#" class="sombreado">Kardex De Calificaciones</a></li>
+						<li><a href="#" class="sombreado">Horario</a></li>
+						<li><a href="#" class="sombreado">Califi De Exam Globales o Especiales</a></li>
+						<li><a href="#" class="sombreado">Calificaciones Parciales</a></li>
+						<li><a href="#" class="sombreado">Residencia</a></li>
+						<li><a href="#" class="sombreado">Formatos Alumnos</a></li>
+
+						<li class="submenu"><a href="#" class="sombreado">Tutorias<span class="caret icon-flecha2"></span></a>
+							<ul class="children">
+								<li><a href="#"><span class="icon-flecha"></span>Acerca Del Tutor</a></li>
+								<li><a href="#"><span class="icon-flecha"></span>Entrevista Inicial</a></li>
+								<li><a href="#"><span class="icon-flecha"></span>Ficha De Identificacion</a></li>
+								<li><a href="#"><span class="icon-flecha"></span>Actividades y Estatus</a></li>
+							</ul>
+						</li>
+					</ol>
+				</li>
+				<li class="submenu"> <a href="#" class="negrita"><span class="icon-ins"></span> Inscripciones<span class="caret icon-arrow"></span></a>
+					<ol class="children">
+						<li class="submenu"><a href="#" class="sombreado">Seleccion de Materias<span class="caret icon-flecha2"></span></a>
+							<ul class="children">
+								<li><a href="#"><span class="icon-flecha"></span>AGO - DIC</a></li>
+								<li><a href="#"><span class="icon-flecha"></span>Verano</a></li>
+							</ul>
+						</li>
+						<li><a href="SIIT\prefichapago\fichaprepago.html" class="sombreado">PRE-FICHA de pago</a></li>
+						<li><a href="horarioreinscripcion.html" class="sombreado">Horario de Reinscripción</a></li>
+						<li><a href="#" class="sombreado">Grupos Cargados</a></li>
+						<li><a href="#" class="sombreado">Extraescolares</a></li>
+					</ol>
+				</li>
+				<li class="submenu"> <a href="#" class="negrita"><span class="icon-eva"></span> Evaluaciones</span> Inscripciones<span class="caret icon-arrow"></a>
+					<ol class="children">
+						<li><a href="#" class="sombreado">Evaluacion Docente</a></li>
+						<li><a href="#" class="sombreado">Auditoria de Servicio</a></li>
+					</ol>
+				</li>
+
+				<li class="submenu"><a href="#" class="cerrar"><span class="icon-cerrar"></span> Cerrar Sesion</a></li>
+			</ul>
+		</nav>
+	</header>
+	<!--============termina menu h=================-->
+	<div class="container">
+        <div class="row">
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Periodo</th>
+                    <th scope="col">Actividad</th>
+                    <th scope="col">Grupo</th>
+                    <th scope="col">Promotor</th>
+                     <th scope="col">H.Inicial</th>
+                    <th scope="col">H.Final</th>
+                    <th scope="col">Dias</th>                  
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>20183</td>
+                    <td>Ritmos Latinos	</td>                    
+                    <td>RL</td>
+                    <td>GALINDO ZALDIVAR M.V. ISAAC ALEJANDRO</td>
+                    <td>01:00</td>
+                    <td>02:00</td>
+                    <td>L,Ma,Mi,J</td>
+                  </tr>                   
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
+
+		<!--============termina menu h=================-->
+
+
+
+	<div class="container">
+		<div class="side-menu">
+			<div class="navbar navbar-default" role="navigation">
+				<div class="side-menu-container">
+					<ul class="nav">
+
+						<li class="nav-title"><a href="#"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> Actividades Culturales </a></li>
+
+						<li class="panel panel-default" id="dropdown">
+							<a data-toggle="collapse" href="#about">
+								BAILE <span class="caret"></span>
+							</a>
+							<div id="about" class="panel-collapse collapse">
+								<div class="panel-body">
+									<ul class="nav navbar-nav">
+										<li><a href="#">
+												<ul>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Ballet Tahitiano</li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Bellydance Fusión</li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Break Dance</li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Danza Aérea </li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Danza Árabe </li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Electro Dance </li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Hip Hop </li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Hip Hop Avanzado </li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Hip Hop Principiante </li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Jazz </li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Jazz Avanzado</li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Jazz Principiante </li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Popping Dance </li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Ritmos Latinos </li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Ritmos Urbanos</li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Tango </li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Danza Floklorica</li>
+													</a>
+												</ul>
+											</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+
+						<li class="panel panel-default" id="dropdown">
+							<a data-toggle="collapse" href="#about1">
+								MÚSICA<span class="caret"></span>
+							</a>
+							<div id="about1" class="panel-collapse collapse">
+								<div class="panel-body">
+									<ul class="nav navbar-nav">
+										<li><a href="#1">
+												<ul>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Orquesta Filarmónica</li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Orquesta Sinfónica </li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Rondalla </li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Rondalla Femenil </li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Rondalla Varonil </li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Rondalla Y Taller De Guitarra </li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Taller Guitarra Popular </li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Coro De Cámara </li>
+													</a>
+												</ul>
+											</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+
+						<!--============termina submenu=================-->
+
+						<li class="panel panel-default" id="dropdown">
+							<a data-toggle="collapse" href="#about2">
+								ACTIVIDADES CÍVICAS<span class="caret"></span>
+							</a>
+							<div id="about2" class="panel-collapse collapse">
+								<div class="panel-body">
+									<ul class="nav navbar-nav">
+										<li><a href="#1">
+												<ul>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Banda De Guerra</li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Edecanes </li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Escolta y guión</li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Grupo Cívico</li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Oratoria </li>
+													</a>
+												</ul>
+											</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<!--============termina submenu=================-->
+
+						<li class="panel panel-default" id="dropdown">
+							<a data-toggle="collapse" href="#about3">
+								DIFUSION Y TEATRO<span class="caret"></span>
+							</a>
+							<div id="about3" class="panel-collapse collapse">
+								<div class="panel-body">
+									<ul class="nav navbar-nav">
+										<li><a href="#1">
+												<ul>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Periodismo</li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Radio</li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Taller De Arte Literario</li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Teatro</li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Teatro y Pantomima </li>
+													</a>
+												</ul>
+											</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<!--============termina submenu=================-->
+
+						<li class="panel panel-default" id="dropdown">
+							<a data-toggle="collapse" href="#about4">
+								VISUALES<span class="caret"></span>
+							</a>
+							<div id="about4" class="panel-collapse collapse">
+								<div class="panel-body">
+									<ul class="nav navbar-nav">
+										<li><a href="#1">
+												<ul>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Taller De Cinematografía </li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Taller de Fotografía y Dibujo </li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Cine Y Cortometraje</li>
+													</a>
+												</ul>
+											</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<!-----------------------deportes----------------------------->
+						<li class="nav-title"><a href="#"><span class="glyphicon glyphicon-certificate" aria-hidden="true"></span> Actividades Deportivas</a></li>
+
+						<li class="panel panel-default" id="dropdown">
+							<a data-toggle="collapse" href="#about5">
+								PELOTA <span class="caret"></span>
+							</a>
+							<div id="about5" class="panel-collapse collapse">
+								<div class="panel-body">
+									<ul class="nav navbar-nav">
+										<li><a href="#">
+												<ul>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Balón Mano</li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Balón Mano Femenil</li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Basquetbol Femenil</li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Basquetbol Varonil</li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Beisbol</li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Frontón A Mano</li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Fútbol Americano</li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Fútbol Rapido</li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Fútbol Rápido Femenil</li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Fútbol Soccer Varonil</li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Hand Ball</li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Hockey Sobre Pasto</li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Ping Pong De Mesa</li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Softbol</li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Tenis</li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Tenis De Mesa</li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Tochito</li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Tochito Femenil</li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Voleibol De Playa</li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Voleibol De Playa Femenil</li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Voleibol De Playa Varonil</li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Voleibol Femenil</li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Voleibol Varonil</li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Fortalecimiento Y Tonicidad En Frontenis</li>
+													</a>
+												</ul>
+											</a></li>
+
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="panel panel-default" id="dropdown">
+							<a data-toggle="collapse" href="#about6">
+								ACTIVIDADES FISICAS<span class="caret"></span>
+							</a>
+							<div id="about6" class="panel-collapse collapse">
+								<div class="panel-body">
+									<ul class="nav navbar-nav">
+										<li><a href="#1">
+												<ul>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Activacion Fisica</li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Actividad Fisica</li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Aero Figth</li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Aerobics</li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Animacion Deportiva</li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Artes Marciales Europeas Histó</li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Atletismo Femeni</li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Atletismo Varonil</li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Box</li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Gimnasia Artística</li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Hiit Workout</li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Insanity</li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Judo</li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Karate Do</li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Pesas</li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Porristas</li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Tae Kwon Do</li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Yoga</li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Yoga Dinamico</li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Yoga Iyengar</li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Yoga Meditativo</li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Zumba</li>
+													</a>
+												</ul>
+											</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+
+						<!--============termina submenu=================-->
+
+						<li class="panel panel-default" id="dropdown">
+							<a data-toggle="collapse" href="#about7">
+								NATACION<span class="caret"></span>
+							</a>
+							<div id="about7" class="panel-collapse collapse">
+								<div class="panel-body">
+									<ul class="nav navbar-nav">
+										<li><a href="#1">
+												<ul>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Natacion Femenil</li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Natacion Varonil</li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Escolta y guión</li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Natación</li>
+													</a>
+												</ul>
+											</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<!--============termina submenu=================-->
+
+						<li class="panel panel-default" id="dropdown">
+							<a data-toggle="collapse" href="#about8">
+								AJEDREZ, ELECTRONICOS Y ARCO<span class="caret"></span>
+							</a>
+							<div id="about8" class="panel-collapse collapse">
+								<div class="panel-body">
+									<ul class="nav navbar-nav">
+										<li><a href="#1">
+												<ul>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Ajedrez</li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Ajedrez Paralelo</li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Deportes Electrónicos</li>
+													</a>
+													<a class="myBtn" onclick="myFunction()">
+														<li>Tiro Con Arco</li>
+													</a>
+												</ul>
+											</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<!--============pegar submenus arriba de estas etiquetas=================-->
+
+					</ul>
+				</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+	<!--============termina submenu alexis es gai=================-->
+
+	
+
+
+	<!--=============finaliaz tabla de avisos================-->
+
+
+	<!-- El modal perron vieja loka -->
+	<div id="myModal" class="modal">
+
+		<!-- Modal content -->
+		<div class="form">
+			<h2 class="etiqueta">
+				Grupos disponibles "extraescolar"
+			</h2>
+			<form>
+				<table>
+					<tr>
+						<th>Grupo</th>
+						<th>Profesor Asignado</th>
+						<th>Horario</th>
+						<th>Lugares Disponibles</th>
+						<th></th>
+					</tr>
+					<tr>
+						<td>1A</td>
+						<td>ERNESTO LOPEZ PEREZ</td>
+						<td>13:00-14:00</td>
+						<td>20</td>
+						<td><button type="button" id="btn-seleccionar">Seleccionar</button></td>
+					</tr>
+					<tr>
+						<td>1B</td>
+						<td>ANTONIO GARCIA GARCIA</td>
+						<td>11:00-12:00</td>
+						<td>20</td>
+						<td><button type="button" id="btn-seleccionar2">Seleccionar</button></td>
+					</tr>
+					<tr>
+					</tr>
+				</table>
+			</form>
+			<button id="btn-cancelar">Cancelar</button>
+		</div>
+
+	</div>
+<!--============termina submenu alexis es gai=================-->
+
+
+
+<!--=============finaliaz tabla de avisos================-->
+
+</body>
+
+
+<script src="JS\Modal.js">
+
+</script>
+<script src="js\menu.js">
+
+</script>
+
+</html>

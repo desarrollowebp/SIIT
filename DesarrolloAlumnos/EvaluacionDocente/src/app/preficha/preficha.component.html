@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1 class="text-center text-success">Este es otro componente</h1>
+    </div>
+  </div>
+</div>
+
+<div id="contenedor-titulo" class="container bg-dark">
+  <h3 class="text-light text-center">{{titulo}}</h3>
+  <ul *ngFor="let alumno of alumnos">
+    <li class="text-light">{{alumno | uppercase}}</li>
+  </ul>
+</div>

@@ -1,0 +1,207 @@
+thead{
+	background-color: #70193f;
+}
+#codigo tr, th {
+    padding: 6px;
+    text-align: center;
+    background-color: white;
+
+}
+
+
+ #colores  {
+	background-color: white;
+	margin-left: 5px;
+	box-sizing: border-box;
+
+
+}
+h2 {
+	font-size: 20px;/*RESET ELEMENTOS Y SE CONTENGAN EN LAS CAJAS	*/
+}
+*{
+
+	margin:0;
+	padding: 0;
+	font-size: small;
+	box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	 box-sizing: border-box;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+/* CENTRAR LA CAJA Y DARLE 1000 PX */
+.contenedor{
+	width:800px;
+	background: #70193f;
+	margin-right: 375;
+	margin-left: 375;
+	border: 200PX;
+	
+}
+/* El hijo siempre lleva margin 0 y auto para centrarlo al div padre*/
+.meniu{
+
+margin: 0 auto;
+width: 100%;
+height: 40%;
+background:white;
+
+}
+.meniu ul{
+	justify-content: center;
+	text-align: center;
+	list-style: none;
+	width: 100%;
+	display: flex;
+	flex-wrap: nowrap;
+	text-decoration: none;
+
+}
+
+.meniu ul li {
+	padding: 5px;
+	width: 33%;
+	color: black;
+}
+
+.submeniu ul li{
+	width: 100%;
+	background:white;
+
+}
+.submeniu #titulo
+{
+	background-color: #70193f;
+	color: white;
+	font-weight: bold;
+
+
+}
+#table th {
+    background: #70193f;
+    color: white;
+    font-weight: bold;
+}
+
+@media (min-width:100px) {
+	.contenedor{
+	  width: 70%;
+		min-width: 100%;
+		max-width: 100%;
+		background: #70193f;
+		font-size: 15px;
+
+	
+	}
+
+	.meniu{
+
+margin: 0 auto;
+width: 100%;
+height: 40%;
+background:white;
+
+}
+
+
+}
+h3{
+    display: block;
+    font-size: 1.2em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    background-color: #70193f;
+    text-align: center;
+    color: white;
+}
+p
+{
+	width: auto;
+}
+/* 
+Generic Styling, for Desktops/Laptops 
+*/body{background:#f9f9f9;}
+#wrapper{padding:90px 15px;}
+.navbar-expand-lg .navbar-nav.side-nav{flex-direction: column;}
+.card{margin-bottom: 15px; border-radius:0; box-shadow: 0 3px 5px rgba(0,0,0,.1); }
+.header-top{box-shadow: 0 3px 5px rgba(0,0,0,.1)}
+.leftmenutrigger{display: none}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+
+/* Zebra striping */
+
+tr:nth-of-type(odd) {
+  background: #eee;
+}
+
+th {
+  background: #70193f;
+  color: white;
+  font-weight: bold;
+}
+
+td,
+th {
+  padding: 6px;
+
+  text-align: center;
+}
+
+@media all and (max-width:500px) {
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    font-size:8px;
+  }
+  
+  tr { margin-bottom: 10px}
+  
+  
+}
+@media (max-width:1000px) {
+
+ 
+ #colores  {
+	background-color: white;
+	margin-left: 0px;
+
+
+
+
+}
+#colores img {
+	width: 39px;
+	height: 39px;
+	border-spacing: 3px;
+}
+
+#codigo tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+    border-collapse: collapse;
+}
+#codigo td, th {
+    padding: 0.3px;
+    text-align: center;
+    background-color: white;
+   
+}
+#table tr, th{
+	background-color: #70193f;
+}
+}
+
+
+

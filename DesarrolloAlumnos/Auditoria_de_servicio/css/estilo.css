@@ -1,0 +1,175 @@
+* {
+	padding:0;
+	margin:0;
+	box-sizing: border-box;
+}
+ 
+body {background:white;
+
+}
+ 
+header nav ul li .caret {
+		float: right;
+	}
+ 
+
+header {
+	width: 100%;
+	background: black;
+	border: 2px solid #F4F4F4;
+}
+
+header nav {
+	background:#F5F4EE;
+	z-index:1000;
+	max-width: 1000px;
+	width:95%;
+	margin:20px auto;
+	left: auto;
+	height: 95%;
+	overflow-y:scroll;
+}
+ 
+header nav ul {
+	
+	list-style:none;
+}
+ 
+header nav ul li {
+	display:block;
+	position: static;
+}
+ 
+header nav ul .submenu:hover {
+	background-color:#A94E77;
+}
+header .sombreado:hover{
+	background-color:#DFBBCB;
+}
+
+header nav ul li a {
+	color:#000;
+	display:block;
+	text-decoration:none;
+	font-family:balsamic;
+	padding: 20px;
+}
+header .negrita{
+	font-weight: bold;
+}
+
+header .cerrar
+{
+	font-weight: bold;
+}
+ 
+header nav ul li:hover .children {
+	display:block;
+}
+ 
+header nav ul li .children {
+	display: none;
+	background:#F5F4EE;
+	position: absolute;
+	width: 150%;
+	z-index:1000;
+}
+ 
+header nav ul li .children li {
+	display:block;
+	overflow: hidden;
+	border-bottom: 1px solid #6F193F;
+}
+ 
+header nav ul li .children li a {
+	color: #000;
+	display: block;
+}
+
+/*=================================================================================*/
+
+
+ /*=================================================================================*/
+	body {
+		padding-top:70px;
+	}
+ 
+	.menu_bar {
+		display:block;
+		height:70px;
+		width: 100%;
+		position: fixed;
+		top:0;
+		background:#fff;
+		left:0;
+	}
+	.menu_bar .bt-menu {
+		display: block;
+		padding: 20px;
+		color: #6F193F;
+		overflow: hidden;
+		font-size: 25px;
+		font-weight: bold;
+		text-decoration: none;
+		left:0;
+	}
+ 
+	.menu_bar span {
+		float: left;
+		font-size: 35px;
+	}
+	.menu_bar img {
+		float: right;
+		transform: translateX(-30%) translateY(0%);
+		width: 63px; 
+		height: 73px;
+	}
+ 
+	header nav {
+		width: 200px;
+		height: 95%;
+		position: fixed;
+		right:100%;
+		margin: 0;
+		
+	}
+ 
+	header nav ul li {
+		display: block;
+		border-bottom:3px solid #6F193F;
+	}
+
+	header nav ul li a {
+		display: block;
+	}
+ 
+	header nav ul li:hover .children {
+		display: none;
+	}
+ 
+	header nav ul li .children {
+		width: 100%;
+		position: relative;
+	}
+ 
+	header nav ul li .children li a {
+		margin-left:20px;
+	}
+ 
+	header nav ul li .caret {
+		float: right;
+	}
+
+
+	@media (max-width:720px)
+	{
+		..menu_bar {
+		display:block;
+		height:70px;
+		position: fixed;
+		top:0;
+		background:#fff;
+		left:0;
+	}
+ 
+	}

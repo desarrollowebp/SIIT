@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--===================018002526440==aclaraciones@ial.com.mx=inversiones accionarias plandus====tarjeta amiga=============================-->
+	<meta charset="UTF-8">
+	<title>Horario de Reinscripción</title>
+	<!--============links de la segunda tabla que despliega==========-->
+	<!--========https://bootsnipp.com/snippets/GqxGl=========-->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<!--=============Links de el menu de hamburguesa================-->	
+	<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+	<script src="https://code.jquery.com/jquery-latest.js"></script>
+	<!--==============links de la tabla de hora===============-->
+	<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<!--============css importados=================-->
+	<script src="js/menu.js"></script>
+	<link rel="stylesheet" href="css/avisoshorarioreinscripcion.css">
+	<link rel="stylesheet" href="css/tablahorarioreinscripcion.css">
+	<link rel="stylesheet" href="css/estilo.css">
+	<link rel="stylesheet" href="css/styles.css">
+	
+
+</head>
+<body>
+	<!--==============empieza menu hamburguer===============-->
+	<header>
+		<div class="logo">
+			<img src="img/logo_itd.png">
+			<p>Instituto Tecnológico De Durango</p>
+		</div>
+		<div class="menu_bar">
+			
+			<a href="#" class="bt-menu"><span class="icon-menu"></span></a>
+		</div>
+ 
+		<nav>
+			<ul>
+				<li class="submenu""> <a href="#" class="negrita"><span class="icon-esc"></span> Informacion Escolar<span class="caret icon-arrow"></span></a>
+					<ol class="children">
+						<li><a href="#" class="sombreado">Datos Escolares</a></li>
+						<li><a href="#" class="sombreado">Verificacion De Datos</a></li>
+						<li><a href="#" class="sombreado">Boleta De Calificaciones</a></li>
+						<li><a href="#" class="sombreado">Avance Reticular</a></li>
+						<li><a href="#" class="sombreado">Kardex De Calificaciones</a></li>
+						<li><a href="#" class="sombreado">Horario</a></li>
+						<li><a href="#" class="sombreado">Califi De Exam Globales o Especiales</a></li>
+						<li><a href="#" class="sombreado">Calificaciones Parciales</a></li>
+						<li><a href="#" class="sombreado">Residencia</a></li>
+						<li><a href="#" class="sombreado">Formatos Alumnos</a></li>
+
+						<li class="submenu"><a href="#" class="sombreado">Tutorias<span class="caret icon-flecha2"></span></a>
+							<ul class="children">
+								<li><a href="#" ><span class="icon-flecha"></span>Acerca Del Tutor</a></li>
+								<li><a href="#" ><span class="icon-flecha"></span>Entrevista Inicial</a></li>
+								<li><a href="#" ><span class="icon-flecha"></span>Ficha De Identificacion</a></li>
+								<li><a href="#" ><span class="icon-flecha"></span>Actividades y Estatus</a></li>
+							</ul>	
+						</li>
+					</ol>
+				</li>
+				<li class="submenu""> <a href="#" class="negrita"><span class="icon-ins"></span> Inscripciones<span class="caret icon-arrow"></span></a>
+					<ol class="children">
+						<li class="submenu"><a href="#" class="sombreado">Seleccion de Materias<span class="caret icon-flecha2"></span></a>
+							<ul class="children">
+								<li><a href="#" ><span class="icon-flecha"></span>AGO - DIC</a></li>
+								<li><a href="#" ><span class="icon-flecha"></span>Verano</a></li>
+							</ul>	
+						</li>
+						<li><a href="SIIT\prefichapago\fichaprepago.html" class="sombreado">PRE-FICHA de pago</a></li>
+						<li><a href="horarioreinscripcion.html" class="sombreado">Horario de Reinscripción</a></li>
+						<li><a href="#" class="sombreado">Grupos Cargados</a></li>
+						<li><a href="#" class="sombreado">Extraescolares</a></li>
+					</ol>
+				</li>
+				<li class="submenu""> <a href="#" class="negrita"><span class="icon-eva"></span> Evaluaciones</span> Inscripciones<span class="caret icon-arrow"></a>
+					<ol class="children">
+						<li><a href="#" class="sombreado">Evaluacion Docente</a></li>
+						<li><a href="#" class="sombreado">Auditoria de Servicio</a></li>
+					</ol>
+				</li>
+				
+				<li class="submenu"><a href="#"  class="cerrar"><span class="icon-cerrar"></span> Cerrar Sesion</a></li>
+			</ul>
+		</nav>
+	</header>
+	<!--============termina menu h=================-->
+	<!--===============empieza tabla de horario==============-->
+	<div class="container">    
+    	<div class="row" >
+			<div class="row col-md-6 col-md-push-3" >
+				<div class="panel panel-primary" id="tablacontenedor"align="center">
+					<div class="panel-heading" id="fondogrupos1">
+						<h3 class="panel-title" align="center">Horario de Reinscripción AGOSTO-DICIEMBRE/2018</h3>
+						<h6 align="center">ADEUDOS N=NO ADEUDO, S= SI ADEUDO</h6>
+					</div>
+					
+					<table class="table table-hover" id="dev-table" >
+						<thead>
+							<tr>
+								<th>Nombre</th>
+								<td>Alejandro Marrufo Quintana</td>
+								<th>Biblioteca</th>
+								<td>N</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>Fecha</th>
+								<td>18-Agosto-2018</td>
+								<th>Escolares</th>
+								<td>N</td>
+							</tr>
+							<tr>
+								<th>Hora</th>
+								<td><i>10:40AM</i></td>
+								<th>Financieros</th>
+								<td>N</td>
+							</tr>
+							<tr>
+								<th>Autorizado</th>
+								<td>S</td>
+								<th>Encuesta</th>
+								<td>N</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			
+		</div>
+<!--============finaliza tabla horario=================-->
+<!--=============empieza tabla de avisos================-->
+<div class="container">
+<div class="side-menu">
+        	<div class="navbar navbar-default" role="navigation">
+            <div class="side-menu-container">
+        <ul class="nav">
+			
+            <li class="nav-title"><a href="#"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span> Información Importante </a></li>
+            
+            <li class="panel panel-default" id="dropdown">
+                <a data-toggle="collapse" href="#about">
+                    Acerca del pago <span class="caret"></span>
+                </a>
+                <div id="about" class="panel-collapse collapse">
+                    <div class="panel-body">
+                       <ul class="nav navbar-nav">
+						<li><a href="#">
+								<ul>
+								  <li>1- REALIZA TU PAGO OPORTUNAMENTE</li>
+								  <li>2- NO CONTAR CON ADEUDOS DE NINGUN TIPO (S=SI y N=NO). EN CASO DE CONTAR CON ALGUNO, DEBES LIQUIDARLOS ANTES DE LAS FECHAS DE REINSCRIPCIONES.</li>
+								  <li>3- SI ADEUDA ENCUESTA ES "S", SIGNIFICA QUE NO REALIZASTE LA EVALUACION A TUS PROFESORES EN EL PERIODO ANTERIOR</li>
+								  <li>4- SI ADEUDA ESCOLAR ES "S", SIGNIFICA QUE TIENES DOS ESPECIALES O ESPECIAL REPROBADO O APROBASTE SOLO 2 MATERIAS O MENOS EN TU PRIMER SEMESTRE</li>
+								  <li>5- DEBERAS CANJEAR TU RECIBO DEL BANCO POR RECIBO OFICIAL 48 HORAS ANTES DE TU FECHA DE REINSCRIPCION</li>
+						</ul>					
+							
+							
+							</a></li>                           
+                            
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="panel panel-default" id="dropdown">
+                <a data-toggle="collapse" href="#about1">
+                    Acerca la reinscripción <span class="caret"></span>
+                </a>
+                <div id="about1" class="panel-collapse collapse">
+                    <div class="panel-body">
+                       <ul class="nav navbar-nav">
+						<li><a href="#1">
+								<ul>
+								  <li>Nota:El orden de reinscripción será de la siguiente manera:</li>
+								  <li>1- Por Carreras</li>
+								  <li>2- Por Promedio (de mayor a menor) del último semestre cursado.</li>
+								  <li>3- La publicación se hará por INTERNET</li>
+								  <li>La reinscripción será por INTERNET <br>
+								Si tienes algún problema con la reinscripción, Acude con tus Coordinadores de Carrera. <br>
+								Si Debes la encuesta, acude al departamento Desarrollo Academico. <br>
+								Si Tienes algún adeudo escolar, Acude a Servicios Escolares.</li>
+										</ul>	
+									</a></li>
+                        		</ul>
+                    		</div>
+                		</div>
+            		</li>            
+            	</ul>
+            </div>
+        </nav>
+    </div>
+</div>
+</div>
+<!--=============finaliaz tabla de avisos================-->
+</body>
+</html>

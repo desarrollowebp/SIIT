@@ -1,0 +1,36 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12">
+      <div class="card" *ngFor="let pregunta of preguntas">
+        <div class="card-header bg-guinda text-light">
+          <h4 class="mb-0">{{pregunta}}</h4>
+        </div>
+        <div class="ui-table-wrapper card-body table-responsive-md pt-0 pb-0">
+          <table class="ui-table-big table text-center mb-0">
+            <tbody>
+              <tr *ngFor="let maestro of maestros">
+                <th>{{maestro.materia}}</th>
+                <th>{{maestro.nombre}}</th>
+                <td>
+                  1 <input type="radio">
+                </td>
+                <td>
+                  2 <input type="radio">
+                </td>
+                <td>
+                  3 <input type="radio">
+                </td>
+                <td>
+                  4 <input type="radio">
+                </td>
+                <td>
+                  5 <input type="radio">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

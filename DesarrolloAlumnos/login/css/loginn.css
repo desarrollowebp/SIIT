@@ -1,0 +1,498 @@
+
+html {
+  background-color: #56baed;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+}
+#icon, #icon2 {
+    width: 5%;
+    height: 5%;
+}
+
+a {
+  color: white;
+  display:inline-block;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+h2 {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  display:inline-block;
+  margin: 40px 8px 10px 8px; 
+  color: #cccccc;
+}
+
+
+
+/* STRUCTURE */
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column; 
+  justify-content: center;
+  width: 100%;
+  min-height: 80%;
+  padding: 20px;
+  background-color: white;
+  vertical-align: center;
+
+}
+
+#formContent {
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
+  background: #fff;
+  padding: 30px;
+  width: 35%;
+  
+  position: relative;
+  padding: 0px;
+  -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+  box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+#formFooter {
+  background-color: #70193f;
+  border-top: 1px solid #dce8f1;
+  padding: 12px;
+  text-align: center;
+  -webkit-border-radius: 0 0 10px 10px;
+  border-radius: 0 0 10px 10px;
+}
+
+
+
+/* TABS */
+
+h2.inactive {
+  color: #cccccc;
+}
+
+h2.active {
+  color: #0d0d0d;
+  border-bottom: 2px solid #B00000;
+}
+h5 {
+    color: #70193f;
+    font-size: 
+}
+
+
+/* FORM TYPOGRAPHY*/
+
+input[type=button], input[type=submit], input[type=reset]  {
+  background-color: #B00000;
+  border: none;
+  color: white;
+  padding: 15px 80px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 13px;
+  -webkit-box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+  box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+  margin: 5px 20px 40px 20px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover  {
+  background-color: #B00000;
+}
+
+input[type=button]:active, input[type=submit]:active, input[type=reset]:active  {
+  -moz-transform: scale(0.95);
+  -webkit-transform: scale(0.95);
+  -o-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
+}
+
+input[type=text], input[type=password] {
+  background-color: #f6f6f6;
+  border: none;
+  color: #0d0d0d;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 5px;
+  width: 85%;
+  border: 2px solid #f6f6f6;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #fff;
+  border-bottom: 2px solid #B00000;
+}
+
+input[type=text]:placeholder, input[type=password]:placeholder {
+  color: #cccccc;
+}
+
+
+
+/* ANIMATIONS */
+
+/* Simple CSS3 Fade-in-down Animation */
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+/* Simple CSS3 Fade-in Animation */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fadeIn {
+  opacity:0;
+  -webkit-animation:fadeIn ease-in 1;
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+
+.fadeIn.first {
+  -webkit-animation-delay: 0.4s;
+  -moz-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.fadeIn.second {
+  -webkit-animation-delay: 0.6s;
+  -moz-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.fadeIn.third {
+  -webkit-animation-delay: 0.8s;
+  -moz-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+.fadeIn.fourth {
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+/* Simple CSS3 Fade-in Animation */
+.underlineHover:after {
+  display: block;
+  left: 0;
+  bottom: -10px;
+  width: 0;
+  height: 2px;
+  background-color: none;
+  content: "";
+  transition: width 0.2s;
+  color:white;
+  text-decoration-color: none;
+}
+
+
+
+.underlineHover:hover:after{
+  width: 100%;
+  color:white;
+}
+.underlineHover:hover{
+  color:#7CCFF7;
+  text-decoration: none;
+}
+
+h5{
+    color:#70193f;
+
+}
+
+/* OTHERS */
+
+*:focus {
+    outline: none;
+} 
+
+#icon {
+  width:10%;
+}
+#icon2{
+    width: 10%;
+}
+
+element.style {
+}
+table[Attributes Style] {
+    width: 800px;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+}
+user agent stylesheet
+table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: grey;
+}
+body {
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-variant: small-caps;
+    text-align: center;
+    background-color: white;
+}
+body {
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-variant:small-caps;
+    text-align:center;
+    background-color: white;
+}
+/*titulos de arriba*/
+
+.titulo1 { font-size: 20px; color: #DEDECA;}
+
+.titulo2 { font-size: 16px; font-weight:bold; color: #DEDECA;  }
+
+
+/***********************************************/
+/* Layout Divs                                 */
+/***********************************************/
+#siteName{
+    margin: 0px;
+    padding: 16px 0px 8px 0px;
+    color: #ffffff;
+    font-weight: normal;
+}
+
+
+#masthead{
+    position: absolute;
+    top: 0px;
+    left: 2%;
+    right: 2%;
+    width:95.6%;
+    
+}
+
+/************* globalNav styles ****************/
+
+#globalNav{
+position: relative;
+width: 100%;
+min-width: 640px;
+height: 22px;
+color: #cccccc;
+padding: 0px;
+margin: 0px;
+background-image: url(../../img/menu/glbnav_background.gif);
+}
+
+#globalNav img{
+    margin-bottom: -4px;
+ 
+}
+
+#gnl {
+    position: absolute;
+    top: 0px;
+    left:0px;
+}
+
+#gnr {
+    position: absolute;
+    top: 0px;
+    right:0px;
+}
+
+#globalLink{
+    position: absolute;
+    top: 4px;
+    height: 15px;
+    min-width: 640px;
+    padding: 0px;
+    margin: 0px;
+    left: 10px;
+    z-index: 100;
+}
+
+a.glink, a.glink:visited{
+    font-size: small;
+    color: #000000;
+    font-weight: bold;
+    margin: 0px;
+    padding: 2px 5px 4px 5px;
+    border-right: 1px solid #8FB8BC;
+    text-decoration: none;
+}
+
+a.glink:hover{
+    background-image: url(../../img/menu/glblnav_selected.gif);
+    text-decoration: none;
+}
+
+.skipLinks {display: none;}
+
+/************ subglobalNav styles **************/
+
+.subglobalNav{
+    position: absolute;
+    top: 104px;
+    left: 0px;
+    /*width: 100%;*/
+    min-width: 640px;
+    height: 18px;
+    padding: 0px 0px 0px 10px;
+    visibility: hidden;
+    font-size:11px;
+    font-variant: normal;
+    color: #FFFFFF;
+}
+
+.subglobalNav a:link, .subglobalNav a:visited {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.subglobalNav a:hover{
+/*  background-image: url(../../img/menu/glblnav_selected.gif);*/
+    color: #FFFF66; 
+    text-decoration: none;
+}
+
+
+/************ sub_subglobalNav styles **************/
+.sub_subglobalNav{
+    position: absolute;
+    top: 120px;
+    left: 20px;
+    /*width: 100%;*/
+    min-width: 640px;
+    height: 18px;
+    padding: 0px 0px 0px 10px;
+    visibility: hidden;
+    font-size:11px;
+    font-variant: normal;
+    color: #FFFFFF;/*DEDECA;*/
+}
+
+.sub_subglobalNav a:link, .sub_subglobalNav a:visited {
+    color: #DEDECA;
+    text-decoration: none;
+
+}
+
+.sub_subglobalNav a:hover{
+    color: #FFFF00;
+    text-decoration: none;
+}
+
+/************ sesion styles **************/
+#sesion{
+    position: absolute;
+    top: 5px;
+    right: 6px;
+    z-index: 101;
+    font-size: 11px;
+}
+ 
+#sesion a:link {
+    font-weight: bold;
+    color: #014E82;
+    text-decoration:none;
+}
+
+#sesion a:hover
+{
+    margin: 0px;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+    height: 55px;
+}
+#formContent{
+  vertical-align: center;
+}
+@media (max-width:1000px)
+  {
+    #formContent {
+      width: 615px;
+      font-size: 30px;
+      height: auto;
+      
+    }
+
+      }
+@media (max-width:1000px)
+  {
+      h5 {
+    
+    font-size: 30px;
+  }
+}
+ @media (max-width:1000px)
+  {
+      input[placeholder] {
+    
+    font-size: 27px;
+  }
+}   

@@ -1,0 +1,39 @@
+    	.row{
+		    margin-top:20px;
+		    padding: 0 10px;
+		}
+		.clickable{
+		    cursor: pointer;   
+		}
+
+		.panel-heading div {
+			margin-top: -18px;
+			font-size: 15px;
+		}
+		.panel-heading div span{
+			margin-left:5px;
+		}
+		
+		#fondogrupos1{
+			background: #70193F;
+			border-color:#70193F;
+		}
+			#fondogrupos2{
+			background: #70193F;		
+		}
+		#tablacontenedor{			
+			border-color:black;
+		}
+		table {
+		    counter-reset: rowNumber;
+		}
+
+		table tr {
+		    counter-increment: rowNumber;
+		}
+
+		table tr td:first-child::before {
+		    content: counter(rowNumber);
+		    min-width: 1em;
+		    margin-right: 0.5em;
+		}
