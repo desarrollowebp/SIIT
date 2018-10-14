@@ -18,26 +18,8 @@ los archivos:
 
 Puedes ignorar el archivo `nombre-de-componente.component.spec.ts`.
 
-## Monta tu componente en la raiz
-A la hora que generas tu componente, una linea de importacion del modulo es autoañadida al
-archivo `/src/app/app.module.ts` esta se parecera a la siguiente:
-
-```ts
-import { NombreDeComponenteComponent } from './nombre-de-componente/nombre-de-componente.component';
-```
-
-Para que puedas visualizar tu componente modifica el arreglo de rutas en
-el mismo archivo (`app.module.ts`) sustituyendo el `TestComponent` por
-el `NombreDeComponenteComponent` que se te genero. Quedaria algo asi:
-
-```ts
-const routes:Routes = [
-  { path: '', component: NombreDeComponenteComponent },
-]
-```
-
-Esta modificacion hara que tu componente se monte en la raiz de la pagina (mas o menos :v)
-y lo podras visualizar visitando http://localhost:4200/.
+## Visualiza tu componente
+Solo visita http://localhost:4200 y visita el enlace respectivo de tu modulo
 
 ## Copia y pega tu codigo
 Este sera el paso mas crucial, ya que pudiera ser que no se visualize correctamente por la
@@ -66,6 +48,7 @@ import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
 
 @Component({
+
 ...
 ```
 
@@ -76,7 +59,7 @@ Copia el contenido de tu archivo `.js` dentro del metodo
 ```ts
 ...
 
-export class TestComponent implements OnInit {
+export class MiComponenteComponent implements OnInit {
 
   constructor() { }
 
@@ -87,7 +70,4 @@ export class TestComponent implements OnInit {
     })
   }
 }
-
 ```
-
-> NOTA: Consuta el archivo `test.component.ts` en el componente `test` para ver un ejemplo

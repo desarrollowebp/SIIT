@@ -47,6 +47,7 @@ C:\Usuarios\mi-usuario\Documentos>
 
 ```
 
+> NOTA: Tienes que estar posicionado en el directorio `SIIT` que creaste para la siguiente parte.
 
 ## Utilizacion del repositorio
 
