@@ -15,7 +15,7 @@ import { ResidenciasComponent } from './residencias/residencias.component';
 import { TutoriasComponent } from './tutorias/tutorias.component';
 import { SeleccionMateriasComponent } from './seleccion-materias/seleccion-materias.component';
 import { PrefichaPagoComponent } from './preficha-pago/preficha-pago.component';
-import { HorarioReiniscripcionComponent } from './horario-reiniscripcion/horario-reiniscripcion.component';
+import { HorarioReinscripcionComponent } from './horario-reinscripcion/horario-reinscripcion.component';
 import { GruposCargadosComponent } from './grupos-cargados/grupos-cargados.component';
 import { ExtraescolarComponent } from './extraescolar/extraescolar.component';
 import { EvaluacionDocenteComponent } from './evaluacion-docente/evaluacion-docente.component';
@@ -36,7 +36,7 @@ const routes:Routes = [
   { path: 'tutorias', component: TutoriasComponent },
   { path: 'seleccionMaterias', component: SeleccionMateriasComponent },
   { path: 'prefichaPago', component: PrefichaPagoComponent },
-  { path: 'horarioReiniscripcion', component: HorarioReiniscripcionComponent },
+  { path: 'horarioReinscripcion', component: HorarioReinscripcionComponent },
   { path: 'gruposCargados', component: GruposCargadosComponent },
   { path: 'extraescolar', component: ExtraescolarComponent },
   { path: 'evaluacionDocente', component: EvaluacionDocenteComponent },
@@ -58,12 +58,12 @@ const routes:Routes = [
     TutoriasComponent,
     SeleccionMateriasComponent,
     PrefichaPagoComponent,
-    HorarioReiniscripcionComponent,
+    HorarioReinscripcionComponent,
     GruposCargadosComponent,
     ExtraescolarComponent,
     EvaluacionDocenteComponent,
     AuditoriaServicioComponent,
-    ListaModulosComponent
+    ListaModulosComponent,
   ],
   imports: [
     BrowserModule,
