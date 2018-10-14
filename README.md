@@ -13,26 +13,27 @@ Todos los archivos que se han subido de sus modulos se han añadido a este proye
 - [Guia de `git`](guias/git.md)
 - [Guia de componentes](guias/componentes.md)
 
-## Clona el proyecto
+## Guia rapida
+
+### Clona el proyecto
 ```
 git clone https://github.com/desarrollowebp/SIIT.git
 ```
 
-## Instalacion del proyecto
+### Posicionamiento en directorio
+```
+cd SIIT
+```
+
+### Instalacion del proyecto
 ```
 npm install
 ```
 
-## Ejecucion del proyecto
+### Ejecucion del proyecto
 ```
 npm start
 ```
 
-## URL del proyecto
+### Visita el proyecto
 http://localhost:4200/
-
-
-## Genera un componente
-```
-ng generate component nombre-de-componente
-```

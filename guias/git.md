@@ -88,5 +88,10 @@ git commit -m "Mi explicacion en comillas"
 git push origin nombre-del-modulo-del-siit
 ```
 
+#### Baja los cambios
+```
+git pull origin nombre-del-modulo-del-siit
+```
+
 > NOTA: Cuando subas los cambios es posible que te salga una ventana de GitHub.
-> En esta solo tienes que meter tus credenciales para hacer subir los cambios
+> En esta solo tienes que meter tus credenciales para hacer subir los cambios.

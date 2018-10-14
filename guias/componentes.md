@@ -1,14 +1,7 @@
 # Componentes de angular
 
-
-## Crea un componente vacio
-Crea y añade al componente raiz un nuevo componente vacio con el siguiente comando:
-```
-ng generate component nombre-de-componente
-```
-
 ## Identifica el componente
-Si generaste el componente exitosamente, lo encontraras bajo la ruta de
+Los componentes fueron generados previamente, lo encontraras bajo la ruta de
 `/src/app/nombre-de-componente`. Este sera un directorio que contendra
 los archivos:
 
@@ -19,7 +12,7 @@ los archivos:
 Puedes ignorar el archivo `nombre-de-componente.component.spec.ts`.
 
 ## Visualiza tu componente
-Solo visita http://localhost:4200 y visita el enlace respectivo de tu modulo
+Solo visita http://localhost:4200 y visita el enlace respectivo de tu modulo.
 
 ## Copia y pega tu codigo
 Este sera el paso mas crucial, ya que pudiera ser que no se visualize correctamente por la
