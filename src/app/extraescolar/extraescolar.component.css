@@ -1,0 +1,342 @@
+body {}
+
+.tableh {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 1000px;
+  border: 1px solid #ddd;
+  margin: auto;
+}
+
+.tableh th {
+  text-align: center;
+  padding: 8px;
+  background: #70193f;
+  color: white;
+}
+
+.tableh td {
+  text-align: center;
+  padding: 8px;
+}
+
+.tableh tr:nth-child(even) {
+  background-color: #f2f2f2
+}
+
+/*contenedor*/
+.check {
+  display: none;
+}
+
+.item ul, .nav input[type="checkbox"] {
+  display: none;
+  margin: auto;
+  list-style: none;
+
+
+}
+a{
+  color: blue;
+}
+
+.arrow {
+    width: 12px;
+    height: 12px;
+    vertical-align: middle;
+    float: left;
+    z-index: 0;
+    margin: 17px 1em 0 2em;
+}
+
+#menu:checked~.multi-level, .item input:checked~ul {
+  display: block;
+}
+
+label:hover {
+  cursor: pointer;
+}
+
+label {
+  width: 100%;
+  display: block;
+  z-index: 3;
+  position: relative;
+  text-decoration: none;
+
+}
+
+.nav {
+  width: 1000px;
+  background-color: white;
+  overflow-x: hidden;
+  border-bottom: 1px solid #CFD8DC;
+}
+
+#nav-icon {
+  font-size: 28px;
+  line-height: 50px;
+  padding-left: 1em;
+  color: white;
+  background-color: #F44336;
+}
+
+.nav-title {
+  background-color: #70193f;
+}
+
+.nav-title a {
+  color: #fff;
+  font-weight: bold;
+}
+
+.nav-title a:hover {
+  background-color: #70193f;
+  color: #70193f;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.actividades {
+  background-color: #70193f;
+  color: #fff;
+  margin: 0 auto;
+  text-align: left;
+  width: 1000px;
+  font-weight: bold;
+  border: 2px solid #ddd;
+  padding: 10px;
+}
+
+.item {
+  margin: 0 auto;
+  text-align: left;
+  width: 1000px;
+  padding: 5px;
+
+}
+
+li {
+  padding: 10px;
+
+}
+
+li:hover {
+  cursor: pointer;
+}
+h4{
+  text-align: center;
+  font-size: 35px;
+}
+
+
+/*modal*/
+.visibleNo {
+  /* Hidden by default */
+  display: block;
+  position: fixed;
+  /* Stay in place */
+  z-index: 100;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+  -webkit-animation-name: fadeIn;
+  /* Fade in the background */
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* The Modal (background) */
+.modal {
+  /* Hidden by default */
+  display: none;
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+  -webkit-animation-name: fadeIn;
+  /* Fade in the background */
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Modal Content */
+.form {
+  border-radius: 5px;
+  bottom: 0;
+  background-color: #fefefe;
+  width: 80%;
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: slideIn;
+  animation-duration: 0.4s;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 15% auto;
+}
+
+.etiqueta {
+  text-align: center;
+}
+
+.form table tr th, td {
+  padding: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.col-md-6 {
+  width: 100%;
+  background: blue;
+}
+
+/* Zebra striping */
+tr:nth-of-type(odd) {
+  background: #eee;
+}
+
+th {
+  background: #70193f;
+  color: white;
+  font-weight: bold;
+}
+
+td,
+th {
+  padding: 6px;
+  font-size: 11px;
+  text-align: center;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+.modal-body {
+  padding: 2px 16px;
+}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+  from {
+    bottom: -300px;
+    opacity: 0
+  }
+
+  to {
+    bottom: 0;
+    opacity: 1
+  }
+}
+
+@keyframes slideIn {
+  from {
+    bottom: -300px;
+    opacity: 0
+  }
+
+  to {
+    bottom: 0;
+    opacity: 1
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@media(max-width:780px) {
+  .modal {
+    padding-left: 0;
+    padding-top: 0;
+  }
+
+  .form {
+    margin: 35% auto;
+    padding-left: 0;
+    border-radius: 0;
+    width: 100%;
+  }
+
+  th {
+    background-color: #6F193F;
+    color: white;
+  }
+}
