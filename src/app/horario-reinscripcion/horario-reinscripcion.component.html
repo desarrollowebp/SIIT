@@ -58,65 +58,70 @@
 <!--============finaliza tabla horario=================-->
 
 <!--=============empieza tabla de avisos================-->
-<div class="container">
-		<div class="side-menu">
-					<nav class="navbar navbar-default" role="navigation">
-					<div class="side-menu-container">
-		
-				<ul class="nav">			
-					<li class="nav-title"><a href="#">
-						<span class="glyphicon glyphicon-bullhorn" aria-hidden="true">
-		
-						</span> Información Importante </a>
-					</li>            
-					<li class="panel panel-default" id="dropdown">
-						<a data-toggle="collapse" href="#about">
-							Acerca del pago <span class="caret"></span>
-						</a>
-						<div id="about" class="panel-collapse collapse">
-							<div class="panel-body">
-							   <ul class="nav navbar-nav">
-								<li><a href="#">
-								<ul>
-									<li>1- REALIZA TU PAGO OPORTUNAMENTE</li>
-									<li>2- NO CONTAR CON ADEUDOS DE NINGUN TIPO (S=SI y N=NO). EN CASO DE CONTAR CON ALGUNO, DEBES LIQUIDARLOS ANTES DE LAS FECHAS DE REINSCRIPCIONES.</li>
-									<li>3- SI ADEUDA ENCUESTA ES "S", SIGNIFICA QUE NO REALIZASTE LA EVALUACION A TUS PROFESORES EN EL PERIODO ANTERIOR</li>
-									<li>4- SI ADEUDA ESCOLAR ES "S", SIGNIFICA QUE TIENES DOS ESPECIALES O ESPECIAL REPROBADO O APROBASTE SOLO 2 MATERIAS O MENOS EN TU PRIMER SEMESTRE</li>
-									<li>5- DEBERAS CANJEAR TU RECIBO DEL BANCO POR RECIBO OFICIAL 48 HORAS ANTES DE TU FECHA DE REINSCRIPCION</li>
-								</ul>
-								</a></li> 
-								</ul>
-							</div>
-						</div>
-					</li>
-					<li class="panel panel-default" id="dropdown">
-						<a data-toggle="collapse" href="#about1">
-							Acerca la reinscripción <span class="caret"></span>
-						</a>
-						<div id="about1" class="panel-collapse collapse">
-							<div class="panel-body">
-							   <ul class="nav navbar-nav">
-								<li><a href="#1">
-										<ul>
-										  <li>Nota:El orden de reinscripción será de la siguiente manera:</li>
-										  <li>1- Por Carreras</li>
-										  <li>2- Por Promedio (de mayor a menor) del último semestre cursado.</li>
-										  <li>3- La publicación se hará por INTERNET</li>
-										  <li>La reinscripción será por INTERNET <br>
-										Si tienes algún problema con la reinscripción, Acude con tus Coordinadores de Carrera. <br>
-										Si Debes la encuesta, acude al departamento Desarrollo Academico. <br>
-										Si Tienes algún adeudo escolar, Acude a Servicios Escolares.</li>
-												</ul>	
-											</a></li>
-										</ul>
-									</div>
-								</div>
-							</li>            
-						</ul>
-					</div>
-				</nav>
-			</div>
+
+
+<div class="multi-level">
+		<div class="item">
+		  <input type="checkbox" id="aviso1" class="check" />
+		  <label for="aviso1" class="actividades">
+			<span class="glyphicon glyphicon-bullhorn" aria-hidden="true">
+			</span> Acerca del pago</label>
+		  <ul>
+			<li>
+			  <div class="sub-item">
+				<input type="checkbox" id="baile" class="check" />
+				<label for="baile" class="item">
+					<li>1- REALIZA TU PAGO OPORTUNAMENTE</li>
+					<li>2- NO CONTAR CON ADEUDOS DE NINGUN TIPO (S=SI y N=NO). 
+						EN CASO DE CONTAR CON ALGUNO, 
+						DEBES LIQUIDARLOS ANTES DE LAS FECHAS DE REINSCRIPCIONES.</li>
+					<li>3- SI ADEUDA ENCUESTA ES "S", 
+						SIGNIFICA QUE NO REALIZASTE LA EVALUACION A TUS PROFESORES
+						 EN EL PERIODO ANTERIOR</li>
+					<li>4- SI ADEUDA ESCOLAR ES "S", SIGNIFICA QUE TIENES DOS 
+						ESPECIALES O ESPECIAL REPROBADO O APROBASTE SOLO 2 MATERIAS
+						 O MENOS EN TU PRIMER SEMESTRE</li>
+					<li>5- DEBERAS CANJEAR TU RECIBO DEL BANCO POR
+						RECIBO OFICIAL 48 HORAS ANTES DE TU FECHA DE 
+						REINSCRIPCION</li>				
+				</label>
+				
+			  </div>
+			</li>
+		  </ul>
 		</div>
+<!--=============empieza segundo avisos================-->
+		<div class="item">
+				<input type="checkbox" id="aviso2" class="check" />
+				<label for="aviso2" class="actividades">
+				  <span class="glyphicon glyphicon-repeat" aria-hidden="true">
+				  </span> Acerca de la reinscripción</label>
+				<ul>
+				  <li>
+					<div class="sub-item">
+					  <input type="checkbox" id="baile" class="check" />
+					  <label for="baile" class="item">
+							<li>Nota:El orden de reinscripción será de la siguiente manera:</li>
+							<li>1- Por Carreras</li>
+							<li>2- Por Promedio (de mayor a menor) del último semestre cursado.</li>
+							<li>3- La publicación se hará por INTERNET</li>
+							<li>La reinscripción será por INTERNET <br>
+						  Si tienes algún problema con la reinscripción, Acude con tus Coordinadores de Carrera. <br>
+						  Si Debes la encuesta, acude al departamento Desarrollo Academico. <br>
+						  Si Tienes algún adeudo escolar, Acude a Servicios Escolares.</li>
+																		
+					  </label>
+					  
+					</div>
+				  </li>
+				</ul>
+			  </div>
+<!--=============termina segundo avisos================-->
+
+
+	  </div>
+	
+	
 <!--=============termina tabla de avisos================-->
 		
 </body>
