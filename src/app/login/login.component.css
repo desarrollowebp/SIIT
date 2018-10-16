@@ -146,7 +146,7 @@ html {
   
   input[type=text]:focus, input[type=password]:focus {
     background-color: #fff;
-    border-bottom: 2px solid #B00000;
+    border-bottom: 2px solid #70193f;
   }
   
   input[type=text]:placeholder, input[type=password]:placeholder {
@@ -410,6 +410,7 @@ html {
   .subglobalNav a:link, .subglobalNav a:visited {
       color: #FFFFFF;
       text-decoration: none;
+      
   }
   
   .subglobalNav a:hover{
@@ -475,8 +476,8 @@ html {
   @media (max-width:1000px)
     {
       #formContent {
-        width: 615px;
-        font-size: 30px;
+        width: auto;
+        font-size: 18px;
         height: auto;
         
       }
@@ -486,13 +487,13 @@ html {
     {
         h5 {
       
-      font-size: 30px;
+      font-size: 18px;
     }
   }
    @media (max-width:1000px)
     {
         input[placeholder] {
       
-      font-size: 27px;
+      font-size: 18px;
     }
   }   
