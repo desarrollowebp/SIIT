@@ -41,7 +41,8 @@ const routes:Routes = [
   { path: 'gruposCargados', component: GruposCargadosComponent },
   { path: 'extraescolar', component: ExtraescolarComponent },
   { path: 'evaluacionDocente', component: EvaluacionDocenteComponent },
-  { path: 'auditoriaServicio', component: AuditoriaServicioComponent }
+  { path: 'auditoriaServicio', component: AuditoriaServicioComponent },
+  { path: 'menuH', component: MenuHComponent }
 ]
 
 @NgModule({
