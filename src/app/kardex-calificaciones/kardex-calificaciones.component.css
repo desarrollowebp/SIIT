@@ -96,7 +96,79 @@ h3{
 p{
 	width: auto;
 }
+
 /* Responsive para mostrar datos de la tabla de materias*/
+
+.content {
+	width: 100%; margin: auto;
+	}
+	.info{
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+table {
+	width: 100%;
+	margin:auto;
+	border: solid 1px #666;
+	background: white;
+	border-spacing: 0;
+	font-size: 1rem; line-height: 1rem;
+	}
+	thead{
+		border-color: white;
+	}
+/*======TFOOT======*/
+
+tfoot td {
+	border-top: solid 1px #eee;
+	color: #70193F;
+	}
+/*======TBODY======*/
+
+tr {
+	border-bottom: solid 1px #ccc;
+	color: black;
+	}
+	th{
+		border:white;
+	}
+tr * {
+	padding: 5px 10px;
+	text-align: left;
+	}
+tr:nth-child(even) {
+	background-color: #f5bfd7;
+	}
+tr th {
+	font-weight: bold;
+	}
+thead tr{
+	background:white;
+	background: linear-gradient(white, white);
+	background: -webkit-linear-gradient(white,white);
+	background: -ms-linear-gradient(white, white);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#cccccc');
+	border-bottom: solid 2px #bbb;
+	}
+thead th{
+		color: white;
+		text-align: center;
+		background: #70193f;
+
+	}
+	
+	tbody td {
+		text-align: center;
+	}
+	tbody th{
+		text-align: center;
+	}
+	.foot td{
+		text-align: center;
+	}
+	button{
+		text-align: center;
+	}
 @media only screen and (max-width: 480px){
 	
 	/*======GENERAL======*/
