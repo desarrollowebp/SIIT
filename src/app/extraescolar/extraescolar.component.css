@@ -1,16 +1,13 @@
-body {}
 
 /* tabla de extra seleccionada*/
 .row{
   margin-top:20px;
-  padding: 0 10px;
 }
 .clickable{
   cursor: pointer;   
 }
 
 .panel-heading div {
-margin-top: -18px;
 font-size: 15px;
 }
 .panel-heading div span{
@@ -261,8 +258,8 @@ table {
 tr:nth-of-type(odd) {
   background: #eee;
 }
- /* aqui le movi a lo menso y quedo responsivo al 100% la tabla de extra seleccionada
- y hasta mas chida*/
+ /* aqui le movi y quedo responsivo al 100% la tabla de extra seleccionada
+sobreescribiendo el css del inicio de la tabla de hora*/
 th {
   color: white;
   font-weight: bold;
@@ -365,7 +362,6 @@ th {
     padding-left: 0;
     border-radius: 0;
     width: 100%;
-  }
-
-  
+  }  
 }
+
