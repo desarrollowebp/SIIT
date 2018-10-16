@@ -11,6 +11,11 @@
 	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
 }
 /* CENTRAR LA CAJA Y DARLE 1000 PX */
+.menu{
+	width: 1000px;
+	align-content: center;
+	margin-left: 15%;
+}
 .contenedor{
 	width:800px;
 	background: #70193f;
@@ -22,7 +27,7 @@
 /* El hijo siempre lleva margin 0 y auto para centrarlo al div padre*/
 .meniu{
 
-margin: 0 auto;
+align-content: center;
 width: 100%;
 height: 40%;
 background:white;
@@ -107,12 +112,13 @@ p{
 		padding-bottom: 15px;
 	}
 table {
-	width: 100%;
+	width: 1000px;
 	margin:auto;
-	border: solid 1px #666;
+	border: none;
 	background: white;
 	border-spacing: 0;
 	font-size: 1rem; line-height: 1rem;
+	align-content: center;
 	}
 	thead{
 		border-color: white;
@@ -127,7 +133,7 @@ tfoot td {
 
 tr {
 	border-bottom: solid 1px #ccc;
-	color: black;
+	color:none;
 	}
 	th{
 		border:white;
@@ -144,11 +150,7 @@ tr th {
 	}
 thead tr{
 	background:white;
-	background: linear-gradient(white, white);
-	background: -webkit-linear-gradient(white,white);
-	background: -ms-linear-gradient(white, white);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#cccccc');
-	border-bottom: solid 2px #bbb;
+	
 	}
 thead th{
 		color: white;
@@ -159,6 +161,7 @@ thead th{
 	
 	tbody td {
 		text-align: center;
+		background: white;
 	}
 	tbody th{
 		text-align: center;
