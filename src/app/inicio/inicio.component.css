@@ -15,11 +15,11 @@
 }
 .carousel-control-prev-icon {
 	margin-left: .002px;
-    background-image: url(back.png);
+    /*background-image: url(back.png);*/
     margin-right: auto;
 }
 .carousel-control-next-icon {
-    background-image: url(next.png);
+    /*background-image: url(next.png);*/
     margin-left: auto;
 }
 .btn{
@@ -32,8 +32,8 @@
 
 .btn {
    width: 20%;
-   min-width: 50px;  // add this if you want
-   max-width: 300px; // add this if  you want, adjust accordingly
+   min-width: 50px;  /* add this if you want*/
+   max-width: 300px; /* add this if  you want, adjust accordingly*/
 
 }
 .btn:hover{
@@ -41,7 +41,7 @@
 }
 .p{
 	height: 15px;
-}
+	}
 
 	@media (max-width:768px)
 	{
@@ -52,3 +52,5 @@
 	{
 		.h4, h4 {
 		font-size: 1.1rem;	}
+	}
+	}
