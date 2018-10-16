@@ -15,11 +15,11 @@
 }
 .carousel-control-prev-icon {
 	margin-left: .002px;
-    background-image: url(back.png);
+    
     margin-right: auto;
 }
 .carousel-control-next-icon {
-    background-image: url(next.png);
+    
     margin-left: auto;
 }
 .btn{
@@ -53,4 +53,6 @@
 		@media (max-width:768px)
 	{
 		.h4, h4 {
-		font-size: 1.1rem;	}}}
+		font-size: 1.1rem;	}
+		}
+	}
