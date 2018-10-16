@@ -125,7 +125,7 @@ padding: 2px;
 }
 
 .menu ul li p {
-  font-size: 10px;
+  font-size: 14px;
   text-align: center;
 }
 .menu ul li .NombreMateria  {
@@ -215,6 +215,39 @@ font-size: 14px;
   margin-bottom: 2px;
 }
 
+.codcolores{
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+
+}
+
+.codcolores .codcolor{
+  margin: 0 auto;
+  width: 30%;
+
+height: 120px;
+border-radius: 5px;
+   height: 50px;
+   border: 1px solid black;
+    display: table;
+    margin: 5px;
+
+}
+.codcolores .codcolor p {
+
+  text-align:center;
+    vertical-align: middle;
+    display: table-cell;
+  height: 25px;
+  color: white;
+
+
+
+
+}
+
 @media(min-width:780px)
 {
   .container{
@@ -235,7 +268,7 @@ font-size: 14px;
   .submenu {
     width: 100%;
     height: 100%;
-    font-size: 10px;
+
     margin: 0 auto;
     text-align: center;
   }
@@ -245,9 +278,6 @@ font-size: 14px;
     width: 100%;
     display: block;
     margin: 0 auto;
-
-
-
 
 
   }
@@ -293,76 +323,20 @@ font-size: 14px;
   padding: 0 0 0 0;
   padding-top: 10%;
 }
+.codcolores .codcolor{
+
+  width: 10%;
+ height: 80px;
 
 }
 
+}
+
 
 
 
-  @charset "UTF-8";
 
-@font-face {
-  font-family: "web";
-  src:url("/assets/fonts/web.eot");
-  src:url("/assets/fonts/web.eot?#iefix") format("embedded-opentype"),
-    url("/assets/fonts/web.woff") format("woff"),
-    url("/assets/fonts/web.ttf") format("truetype"),
-    url("/assets/fonts/web.svg#web") format("svg");
-  font-weight: normal;
-  font-style: normal;
 
-}
-
-[data-icon]:before {
-  font-family: "web" !important;
-  content: attr(data-icon);
-  font-style: normal !important;
-  font-weight: normal !important;
-  font-variant: normal !important;
-  text-transform: none !important;
-  speak: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-[class^="icon-"]:before,
-[class*=" icon-"]:before {
-  font-family: "web" !important;
-  font-style: normal !important;
-  font-weight: normal !important;
-  font-variant: normal !important;
-  text-transform: none !important;
-  speak: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.icon-menu:before {
-  content: "\67";
-}
-.icon-esc:before {
-  content: "\68";
-}
-.icon-ins:before {
-  content: "\69";
-}
-.icon-eva:before {
-  content: "\6a";
-}
-.icon-cerrar:before {
-  content: "\6b";
-}
-.icon-flecha:before {
-  content: "\6d";
-}
-.icon-flecha2:before {
-  content: "\6f";
-}
-.icon-arrow:before {
-  content: "\70";
-}
 
 /*modal */
 
