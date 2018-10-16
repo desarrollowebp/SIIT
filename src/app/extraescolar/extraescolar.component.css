@@ -1,11 +1,42 @@
 body {}
 
+/* tabla de extra seleccionada*/
+.row{
+  margin-top:20px;
+  padding: 0 10px;
+}
+.clickable{
+  cursor: pointer;   
+}
+
+.panel-heading div {
+margin-top: -18px;
+font-size: 15px;
+}
+.panel-heading div span{
+margin-left:5px;
+}
+
+#fondogrupos1{
+background: #70193F;
+border-color:#70193F;
+}
+#fondogrupos2{
+background: #70193F;		
+}
+#tablacontenedor{			
+border-color:black;
+}
+/* tabla de extra seleccionada*/
+
 .tableh {
   border-collapse: collapse;
   border-spacing: 0;
   width: 1000px;
   border: 1px solid #ddd;
   margin: auto;
+  border-color:black;
+
 }
 
 .tableh th {
@@ -21,12 +52,13 @@ body {}
 }
 
 .tableh tr:nth-child(even) {
-  background-color: #f2f2f2
+  background-color: #f2f2f2;
 }
 
 /*contenedor*/
 .check {
   display: none;
+  
 }
 
 .item ul, .nav input[type="checkbox"] {
@@ -36,9 +68,7 @@ body {}
 
 
 }
-a{
-  color: blue;
-}
+
 
 .arrow {
     width: 12px;
@@ -51,6 +81,9 @@ a{
 
 #menu:checked~.multi-level, .item input:checked~ul {
   display: block;
+  border-color: black;
+  border-bottom: 1px solid black;
+
 }
 
 label:hover {
@@ -223,18 +256,14 @@ table {
   border-collapse: collapse;
 }
 
-.col-md-6 {
-  width: 100%;
-  background: blue;
-}
 
 /* Zebra striping */
 tr:nth-of-type(odd) {
   background: #eee;
 }
-
+ /* aqui le movi a lo menso y quedo responsivo al 100% la tabla de extra seleccionada
+ y hasta mas chida*/
 th {
-  background: #70193f;
   color: white;
   font-weight: bold;
 }
@@ -246,6 +275,9 @@ th {
   text-align: center;
 }
 
+
+
+
 /* The Close Button */
 .close {
   color: white;
@@ -256,7 +288,7 @@ th {
 
 .close:hover,
 .close:focus {
-  color: #000;
+  color: #fff;
   text-decoration: none;
   cursor: pointer;
 }
@@ -335,8 +367,5 @@ th {
     width: 100%;
   }
 
-  th {
-    background-color: #6F193F;
-    color: white;
-  }
+  
 }
