@@ -1,10 +1,9 @@
-
 /* tabla de extra seleccionada*/
 .row{
   margin-top:20px;
 }
 .clickable{
-  cursor: pointer;   
+  cursor: pointer;
 }
 
 .panel-heading div {
@@ -19,9 +18,9 @@ background: #70193F;
 border-color:#70193F;
 }
 #fondogrupos2{
-background: #70193F;		
+background: #70193F;
 }
-#tablacontenedor{			
+#tablacontenedor{
 border-color:black;
 }
 /* tabla de extra seleccionada*/
@@ -55,7 +54,7 @@ border-color:black;
 /*contenedor*/
 .check {
   display: none;
-  
+
 }
 
 .item ul, .nav input[type="checkbox"] {
@@ -160,13 +159,15 @@ h4{
 }
 
 
-/*modal*/
+
+/*modal */
+
 .visibleNo {
   /* Hidden by default */
-  display: block;
+  display:block ;
   position: fixed;
   /* Stay in place */
-  z-index: 100;
+  z-index: 1;
   /* Sit on top */
   left: 0;
   top: 0;
@@ -193,6 +194,7 @@ h4{
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
+
 
 /* The Modal (background) */
 .modal {
@@ -222,11 +224,11 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+
 }
 
 /* Modal Content */
 .form {
-  border-radius: 5px;
   bottom: 0;
   background-color: #fefefe;
   width: 80%;
@@ -238,29 +240,36 @@ body {
   align-items: center;
   text-align: center;
   margin: 15% auto;
-}
 
-.etiqueta {
+}
+.etiqueta{
   text-align: center;
 }
 
 .form table tr th, td {
   padding: 10px;
+
 }
+
 
 table {
   width: 100%;
   border-collapse: collapse;
 }
 
+.col-md-6{
+  width: 100%;
+  background: blue;
+}
 
 /* Zebra striping */
+
 tr:nth-of-type(odd) {
   background: #eee;
 }
- /* aqui le movi y quedo responsivo al 100% la tabla de extra seleccionada
-sobreescribiendo el css del inicio de la tabla de hora*/
+
 th {
+  background: #70193f;
   color: white;
   font-weight: bold;
 }
@@ -285,7 +294,7 @@ th {
 
 .close:hover,
 .close:focus {
-  color: #fff;
+  color: #000;
   text-decoration: none;
   cursor: pointer;
 }
@@ -352,6 +361,7 @@ th {
 }
 
 @media(max-width:780px) {
+
   .modal {
     padding-left: 0;
     padding-top: 0;
@@ -362,6 +372,12 @@ th {
     padding-left: 0;
     border-radius: 0;
     width: 100%;
-  }  
+  }
+
+
+th {
+  background-color: #6F193F;
+  color: white;
 }
 
+}
