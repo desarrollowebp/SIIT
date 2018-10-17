@@ -10,6 +10,7 @@ export class HorarioReinscripcionComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    
   }
 
 }
