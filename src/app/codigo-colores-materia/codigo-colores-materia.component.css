@@ -84,7 +84,7 @@
   width: 30%;
 height: 120px;
 border-radius: 5px;
-   height: 50px;
+   height: 90px;
    border: 1px solid black;
     display: table;
     margin: 5px;
@@ -95,7 +95,7 @@ border-radius: 5px;
   text-align:center;
     vertical-align: middle;
     display: table-cell;
-  height: 25px;
+  height: 50px;
   color: white;
 
 
