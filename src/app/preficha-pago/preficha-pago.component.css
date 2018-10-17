@@ -126,7 +126,7 @@ form{
  
  
 }
-<<<<<<< HEAD
+
 .s{
   width: 40px;  /* Ancho del icono */
 height: 40px;  /* Alto del icono */
@@ -165,7 +165,7 @@ li{
 	margin:14px;
 	padding: 12px;
 	background: #70193f;
-	border-radius: 15px;
+	
 	color: #fff;
 }
 .titable{
@@ -173,13 +173,13 @@ li{
 	color:#fff;
 	font-family: roboto Arial;
 	text-align: center;
-	border-radius: 13px;
+	
 	margin-bottom: 10px;
 
 
 }
 .int{
-<<<<<<< HEAD
+
   text-align: center;
   font-family: arial;
   font-size: 15px;
@@ -188,7 +188,7 @@ li{
 .stil{
   font-size: 20px;
   margin: 5px;
-  border-radius: 13px;
+  
 
 }
 .titulo{
@@ -217,12 +217,12 @@ li{
 .principal{
   background-color: #70193F;
   padding: 15px 15px 15px 15px;
-  border-radius: 23px;
+  
   margin-top: 15px;
 }
 .bienvenido{
   color: white;
-  border-radius: 23px;
+ 
 
 }
 .texto{
@@ -240,7 +240,7 @@ li{
 .stil{
 	font-size: 20px;
 	margin: 5px;
-	border-radius: 13px;
+	
 
 }
 .titulo{
@@ -269,13 +269,13 @@ li{
 .principal{
 	background-color: #70193F;
 	padding: 15px 15px 15px 15px;
-	border-radius: 23px;
+
 	margin-top: 15px;
 	color: white;
 }
 .bienvenido{
 	color: white;
-	border-radius: 23px;
+	
 
 }
 .texto{
@@ -294,7 +294,6 @@ h3{
   font-family: verdana;
   font-size: 12px;
   text-align: center;
-=======
 	color: white;
 	font-family: verdana;
 	font-size: 12px;
