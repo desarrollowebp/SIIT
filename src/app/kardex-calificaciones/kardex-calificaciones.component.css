@@ -12,15 +12,14 @@
 }
 /* CENTRAR LA CAJA Y DARLE 1000 PX */
 .menu{
-	width: 1000px;
+	width: 1024px;
 	align-content: center;
-	margin-left: 15%;
+	margin: auto;
 }
 .contenedor{
-	width:800px;
+	width:1024px;
 	background: #70193f;
-	margin-right: 375;
-	margin-left: 375;
+	margin: auto;
 	border: 200PX;
 	
 }
@@ -66,11 +65,12 @@ background:white;
 
 @media (min-width:100px) {
 	.contenedor{
-	  width: 70%;
+	  width: 1000px;
 		min-width: 100%;
 		max-width: 100%;
 		background: #70193f;
 		font-size: 15px;
+		margin: auto;
 
 	
 	}
@@ -104,21 +104,22 @@ p{
 
 /* Responsive para mostrar datos de la tabla de materias*/
 
-.content {
-	width: 100%; margin: auto;
+.container {
+	width: 100%;
+	margin: auto;
 	}
 	.info{
 		padding-top: 15px;
 		padding-bottom: 15px;
 	}
 table {
-	width: 1000px;
+	width: 100%;;
 	margin:auto;
 	border: none;
 	background: white;
 	border-spacing: 0;
 	font-size: 1rem; line-height: 1rem;
-	align-content: center;
+
 	}
 	thead{
 		border-color: white;
@@ -130,20 +131,23 @@ tfoot td {
 	color: #70193F;
 	}
 /*======TBODY======*/
-
+.foot {
+ background: white;
+}
 tr {
 	border-bottom: solid 1px #ccc;
 	color:none;
+	background: white;
 	}
 	th{
 		border:white;
 	}
 tr * {
 	padding: 5px 10px;
-	text-align: left;
+	text-align: center;
 	}
 tr:nth-child(even) {
-	background-color: #f5bfd7;
+	background-color: #ffffff;
 	}
 tr th {
 	font-weight: bold;
@@ -165,6 +169,7 @@ thead th{
 	}
 	tbody th{
 		text-align: center;
+		background: white;
 	}
 	.foot td{
 		text-align: center;
@@ -172,7 +177,7 @@ thead th{
 	button{
 		text-align: center;
 	}
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: 780px){
 	
 	/*======GENERAL======*/
 	HTML {
@@ -204,7 +209,7 @@ thead th{
 	/*======TFOOT======*/
 	
 	tfoot {
-		position: absolute; bottom: -60px;
+		position: absolute; bottom: 60px;
 		width:inherit;
 		}
 	tfoot td, tfoot tr {
@@ -227,7 +232,7 @@ thead th{
 		font-size: 1.2rem; line-height: 1.2rem;
 		}
 	tbody th {
-		width: 34%;
+		width: 30%;
 		}
 	tbody tr td:first-of-type {
 		padding-right: 10%;
