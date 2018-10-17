@@ -13,6 +13,11 @@ h2 {
 	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
 }
 /* CENTRAR LA CAJA Y DARLE 1000 PX */
+.menu{
+	width: 85%;
+	align-content: center;
+	margin:auto;
+}
 .contenedor{
 	width:800px;
 	background: #70193f;
