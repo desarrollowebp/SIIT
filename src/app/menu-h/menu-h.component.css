@@ -22,12 +22,12 @@ body {background:#fff;
 
 }
 
-body header nav ul li .caret {
+header nav ul li .caret {
 		float: right;
 	}
 
 
-body header {
+header {
 	width: 100%;
 	margin: 0 auto;
 	background:#fff;
@@ -39,7 +39,7 @@ body header {
 	position: fixed;
 }
 
-body header nav {
+header nav {
 	background:#F5F4EE;
 	z-index:1000;
 	max-width: 1000px;
@@ -50,44 +50,44 @@ body header nav {
 	overflow-y:scroll;
 }
 
-body header nav ul {
+header nav ul {
 
 	list-style:none;
 }
 
-body header nav ul li {
+header nav ul li {
 	display:block;
 	position: static;
 }
 
-body header nav ul .submenu2:hover {
+header nav ul .submenu2:hover {
 	background-color:#A94E77;
 }
-body header .sombreado:hover{
+header .sombreado:hover{
 	background-color:#DFBBCB;
 }
 
-body header nav ul li a {
+header nav ul li a {
 	color:#000;
 	display:block;
 	text-decoration:none;
 	font-family:balsamic;
 	padding: 20px;
 }
-body header .negrita{
+header .negrita{
 	font-weight: bold;
 }
 
-body header .cerrar
+header .cerrar
 {
 	font-weight: bold;
 }
 
-body header nav ul li:hover .children {
+header nav ul li:hover .children {
 	display:block;
 }
 
-body header nav ul li .children {
+header nav ul li .children {
 	display: none;
 	background:#F5F4EE;
 	position: absolute;
@@ -95,13 +95,13 @@ body header nav ul li .children {
 	z-index:1000;
 }
 
-body header nav ul li .children li {
+header nav ul li .children li {
 	display:block;
 	overflow: hidden;
 	border-bottom: 1px solid #6F193F;
 }
 
-body header nav ul li .children li a {
+header nav ul li .children li a {
 	color: #000;
 	display: block;
 }
@@ -153,7 +153,7 @@ body header nav ul li .children li a {
 		font-size: 35px;
 	}
 
-	body header nav {
+	header nav {
 		width: 200px;
 		height: 95%;
 		position: fixed;
@@ -163,33 +163,33 @@ body header nav ul li .children li a {
 
 	}
 
-	body header nav ul li {
+	header nav ul li {
 		display: block;
 		border-bottom:3px solid #6F193F;
 	}
 
-	body header nav ul li a {
+	header nav ul li a {
 		display: block;
 	}
 
-	body header nav ul li:hover .children {
+	header nav ul li:hover .children {
 		display: none;
 	}
 
-	body header nav ul li .children {
+	header nav ul li .children {
 		width: 100%;
 		position: relative;
 	}
 
-	body header nav ul li .children li a {
+	header nav ul li .children li a {
 		margin-left:20px;
 	}
 
-	body header nav ul li .caret {
+	header nav ul li .caret {
 		float: right;
 	}
 
-body header .logp, .textoITD, .menu_bar
+header .logp, .textoITD, .menu_bar
 {
 	float: left;
 	width: 33%;
@@ -199,7 +199,7 @@ body header .logp, .textoITD, .menu_bar
 }
 	@media (max-width:768px)
 	{
-		..menu_bar {
+		.menu_bar {
 		display:block;
 		height:70px;
 		max-width: 30px;
