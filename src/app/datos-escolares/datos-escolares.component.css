@@ -15,7 +15,7 @@ h2 {
 }
 /* CENTRAR LA CAJA Y DARLE 1000 PX */
 .contenedor{
-	width:1000px;
+	width:800px;
 	background: #70193f;
 	margin-right: 375;
 	margin-left: 375;
@@ -57,7 +57,8 @@ background:white;
 {
 	background-color: #70193f;
 	color: white;
-	font-weight: bold;
+  font-weight: bold;
+  
 
 
 }
@@ -84,7 +85,12 @@ margin: 0 auto;
 width: 100%;
 height: 40%;
 background:white;
+font-size: 15px;
 
+}
+.submeniu
+{
+font-size: 60px;
 }
 
 
