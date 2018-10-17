@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import * as $ from 'jquery';
 @Component({
   selector: 'app-codigo-colores-materia',
   templateUrl: './codigo-colores-materia.component.html',
@@ -10,6 +10,28 @@ export class CodigoColoresMateriaComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-  }
+    $(".submenu").click(function() {
+      $(this).children("ul").slideToggle();
 
+    }
+    )
+
+    $("ul").click(function(p) {
+      p.stopPropagation();
+    })
+
+    if ($(window).width() > 720) {
+
+
+      $(".submenu").children("ul").show();
+
+
+
+    }
+    else {
+
+    }
+
+
+}
 }
