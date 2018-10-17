@@ -79,7 +79,7 @@
 }
 
 .menu ul li p {
-  font-size: 10px;
+  font-size: 15px;
   text-align: center;
 }
 
@@ -194,7 +194,8 @@ background:white;
 
 .submeniu ul li{
 	width: 100%;
-	background:white;
+  background:white;
+  
 
 }
 .submeniu #titulo
