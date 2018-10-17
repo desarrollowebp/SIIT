@@ -1,7 +1,7 @@
 /*DATOS ESCOLARES*/
 
 h2 {
-	font-size: 20px;/*RESET ELEMENTOS Y SE CONTENGAN EN LAS CAJAS	*/
+	font-size: 30px;/*RESET ELEMENTOS Y SE CONTENGAN EN LAS CAJAS	*/
 }
 *{
 
@@ -360,5 +360,29 @@ input{
   height: 20px;
 }
 
+/*PRINCIPAL*/
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  -ms-box-sizing: border-box;
+       box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+}
 
 
+
+/* 98 para tener un alinieamiento
+margin auto para centrar*/
+.contenedor{
+  width:98%;
+  margin: auto;
+  }
+  /* Margin bottom para espaciar  */
+  
+  
+  .prueba{
+    padding: 20px;
+  }
+  
