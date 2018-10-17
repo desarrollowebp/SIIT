@@ -21,6 +21,8 @@ import { ExtraescolarComponent } from './extraescolar/extraescolar.component';
 import { EvaluacionDocenteComponent } from './evaluacion-docente/evaluacion-docente.component';
 import { AuditoriaServicioComponent } from './auditoria-servicio/auditoria-servicio.component';
 import { ListaModulosComponent } from './lista-modulos/lista-modulos.component';
+import { InformacionEscEstudianteComponent } from './informacion-esc-estudiante/informacion-esc-estudiante.component';
+import { CodigoColoresMateriaComponent } from './codigo-colores-materia/codigo-colores-materia.component';
 
 const routes:Routes = [
   { path: '', component: ListaModulosComponent },
@@ -40,7 +42,9 @@ const routes:Routes = [
   { path: 'gruposCargados', component: GruposCargadosComponent },
   { path: 'extraescolar', component: ExtraescolarComponent },
   { path: 'evaluacionDocente', component: EvaluacionDocenteComponent },
-  { path: 'auditoriaServicio', component: AuditoriaServicioComponent }
+  { path: 'auditoriaServicio', component: AuditoriaServicioComponent },
+  { path: 'informacionEscEstudiante', component: InformacionEscEstudianteComponent}, 
+  { path: 'codigoColoresMateria', component: CodigoColoresMateriaComponent}
 ]
 
 @NgModule({
@@ -64,6 +68,8 @@ const routes:Routes = [
     EvaluacionDocenteComponent,
     AuditoriaServicioComponent,
     ListaModulosComponent,
+    InformacionEscEstudianteComponent,
+    CodigoColoresMateriaComponent,
   ],
   imports: [
     BrowserModule,
