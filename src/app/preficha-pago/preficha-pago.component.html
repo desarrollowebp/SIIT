@@ -1,4 +1,6 @@
 
+
+	
 <body>
 	
 <div class="container-fluid text-center">    
@@ -8,9 +10,8 @@
 
 	    <div class="col-lg-8 col-md-8 col-sm-9 col-xs-12 text-left " > 
 	    	<div class="principal col-lg-12 col-md-12 col-sm-12 col-xs-12">
-
-
 	        <h2 class="bienvenido">Bienvenido usuario</h2>
+	       
 	        <li class="texto panel-default" id="dropdown">
                 <a data-toggle="collapse" style="color: white;" href="#about" >
                     Informacion para impresion<span class="caret"></span>
@@ -39,25 +40,33 @@
 						<h3 class="panel-title" align="center">Ficha de Pago Periodo x x</h3>
 					</div>
 					
-					<table class="table table" >
+					<table class="table table-hover" id="dev-table" >
+						<thead>
+							<tr>
+								<th>Importe a pagar:</th>
+								<td bgcolor="#bbb"> <b><i>2450.00</i></b>.</td>								
+							</tr>
+						</thead>
 						<tbody>
 							<tr>
-								<th>Importe a pagar</th>
-								<td>$$$$$$$$</td>
-								<th>Semestre</th>
-								<td>semestre</td>
+								<th>Semestre:</th>
+								<td>9</td>
+								
 							</tr>
 							<tr>
-								<th>Numero de Control</th>
-								<td>Control</td>
-								<th>Apellidos</th>
-								<td>Appa Apma</td>
+								<th>Número de control:</th>
+								<td><i>14041243</i></td>
+								
 							</tr>
 							<tr>
-								<th>nombre</th>
-								<td>nombre</td>
-								<th>Carrera</th>
-								<td>carrera</td>
+								<th>Alumno:</th>
+								<td>Alejandro Marrufo Quintana
+								</td>								
+							</tr>							
+							<tr>
+								<th>Carrera:</th>
+								<td>Ingenieria en Sistemas Computacionales
+								</td>								
 							</tr>
 						</tbody>
 					</table>
@@ -85,3 +94,4 @@
 
 	
 </body>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
