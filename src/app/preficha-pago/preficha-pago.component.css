@@ -398,6 +398,13 @@ height: 40px;  /* Alto del icono */
   border-radius: 13px;
   margin-bottom: 10px;
 }
+a{
+  text-decoration:none;
+  
+}
+li{
+  list-style:none;
+}
 .boton{
 	width: 60px;
 
