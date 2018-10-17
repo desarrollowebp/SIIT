@@ -158,6 +158,16 @@ li{
 
 
 }
+.hea{
+  font-size: 25px;
+  font-family: roboto , arial;
+  text-align: center;
+}
+.bod{
+  background: #fff;
+}
+ border: 5px #70193f; 
+
 .impr{
 	font-size: 20px;
 }
@@ -173,12 +183,10 @@ li{
 	color:#fff;
 	font-family: roboto Arial;
 	text-align: center;
-	
-
-
 }
 .alumno{
   text-decoration: none;
+  font-size: 18px;
 
 }
 .sec{
@@ -186,9 +194,11 @@ li{
   background: #fff;
   text-decoration: none;
   color:#000;
-  margin:10px;
-  
-  
+  border: 3px #70193f;
+}
+
+.desp{
+  color: #000;
 
 }
 .int{
@@ -281,7 +291,8 @@ li{
 }
 .principal{
 	background-color: #70193F;
-	padding: 15px 15px 15px 15px;
+	margin: 0px;
+
 
 	margin-top: 15px;
 	color: white;
@@ -328,8 +339,12 @@ input,select{
 
 
 .texto2{
-  color:#000;
+  color:#000;font-size: 23px;
 
+
+}
+.tab{
+  color: #000;
 }
 
 #boton{
