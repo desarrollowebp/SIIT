@@ -63,10 +63,20 @@ background:white;
 
 
 }
+@media (max-width: 500px){
 
+table[_ngcontent-c1], thead[_ngcontent-c1], tbody[_ngcontent-c1], th[_ngcontent-c1], td[_ngcontent-c1], tr[_ngcontent-c1] {
+    width: 420px;
+    font-size: 8px;
+}
+.card{
+    width: 420px;
+}
+
+}
 @media (min-width:100px) {
 	.contenedor{
-	  width: 70%;
+	  width: 100%;
 		min-width: 100%;
 		max-width: 100%;
 		background: #70193f;
