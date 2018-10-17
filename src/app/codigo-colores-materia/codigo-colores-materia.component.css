@@ -103,7 +103,11 @@ border-radius: 5px;
 
 
 }
-
+.menu .submenu .expspan span{
+  position: relative;
+  right: 5px;
+  top: 5px;
+}
 @media(min-width:780px)
 {
 
