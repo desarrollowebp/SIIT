@@ -174,8 +174,21 @@ li{
 	font-family: roboto Arial;
 	text-align: center;
 	
-	margin-bottom: 10px;
 
+
+}
+.alumno{
+  text-decoration: none;
+
+}
+.sec{
+  margin-top: 0px;
+  background: #fff;
+  text-decoration: none;
+  color:#000;
+  margin:10px;
+  
+  
 
 }
 .int{
@@ -279,15 +292,12 @@ li{
 
 }
 .texto{
-	color: white;
+	
 	font-family:   Arial;
 	color:#fff;
 	font-size: 14px;
-	
+	}
 
-
-
-}
 h3{
 
   color: white;
@@ -317,7 +327,10 @@ input,select{
 }
 
 
+.texto2{
+  color:#000;
 
+}
 
 #boton{
  background-color: #31384A;
