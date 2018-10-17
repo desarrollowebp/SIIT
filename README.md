@@ -16,6 +16,27 @@ Todos los archivos que se han subido de sus modulos se han añadido a este proye
 en el directorio de [DesarrolloAlumnos](DesarrolloAlumnos).
 
 
+## Uso de iconos Fontastic
+Se agrego una coleccion de iconos para el uso global del proyecto, puedes encontrar la lista de
+iconos disponibles en el archivo [iconos-fontastic.pdf](recursos/iconos-fontastic.pdf) localizado
+en la carpeta de [recursos](recursos).
+
+Para utilizar un icono, realiza lo siguiente:
+- Busca una palabra clave en el PDF
+- Copia el nombre del icono
+- Añade un `<span>` en donde lo quieras utilizar
+- Agrega una clase `icon` al `<span>`
+- Utiliza el nombre del icono como segunda clase, pero añade un prefijo `icon-`
+- Debera quedar algo similar a lo siguiente si yo quiero utilizar el icono *list*:
+
+```html
+<span class="icon icon-list"></span>
+```
+
+> NOTA: No necesitas agregar nada dentro del `<span>`.
+
+Esta contribucion fue hecha por Arturo Rangel Muñoz | 15040581.
+
 ## Lista de ramas
 |Modulo del SIIT|Rama|
 |---|---|
@@ -33,7 +54,7 @@ en el directorio de [DesarrolloAlumnos](DesarrolloAlumnos).
 |Preficha de Pago|preficha-pago|
 |Horario de Reinscripcion|horario-reinscripcion|
 |Grupos Cargados|grupos-cargados|
-|Extraexcolar|extraescolar|
+|Extraescolar|extraescolar|
 |Evaluacion Docente|evaluacion-docente|
 |Auditoria de Servicio|auditoria-servicio|
 
