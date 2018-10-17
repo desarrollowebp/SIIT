@@ -1,7 +1,5 @@
 /* tabla de extra seleccionada*/
-.row{
-  margin-top:20px;
-}
+
 .clickable{
   cursor: pointer;
 }
@@ -22,13 +20,14 @@ background: #70193F;
 }
 #tablacontenedor{
 border-color:black;
+
 }
 /* tabla de extra seleccionada*/
 
 .tableh {
   border-collapse: collapse;
   border-spacing: 0;
-  width: 1000px;
+  width: 100;
   border: 1px solid #ddd;
   margin: auto;
   border-color:black;
@@ -131,7 +130,6 @@ label {
   color: #fff;
   margin: 0 auto;
   text-align: left;
-  width: 1000px;
   font-weight: bold;
   border: 2px solid #ddd;
   padding: 10px;
@@ -167,7 +165,7 @@ h4{
   display:block ;
   position: fixed;
   /* Stay in place */
-  z-index: 1;
+  z-index: 100;
   /* Sit on top */
   left: 0;
   top: 0;
@@ -198,6 +196,7 @@ body {
 
 /* The Modal (background) */
 .modal {
+
   /* Hidden by default */
   display: none;
   position: fixed;
@@ -361,8 +360,11 @@ th {
 }
 
 @media(max-width:780px) {
-
+  .item{
+    width: 100%;
+  }
   .modal {
+    width: 100%;
     padding-left: 0;
     padding-top: 0;
   }
