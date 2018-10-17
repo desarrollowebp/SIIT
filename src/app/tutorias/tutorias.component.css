@@ -3,8 +3,9 @@
     overflow: hidden;
     background: white;
     margin: 20px auto;
-    padding: 0px;
+    padding: 0px; 
 }
+
 .container ul {
     padding: 0px;
     margin: auto;
@@ -31,13 +32,13 @@
     width: 100%;
     height: 50px;
     line-height: 50px;
-    background-color: #A94E77;
+    background-color: #70193F;
     text-align: center;
 }
 
 .tuto{
     text-align: center;
-    color: #A94E77;
+    color: #70193F;
     font-size: 35;
 }
 
