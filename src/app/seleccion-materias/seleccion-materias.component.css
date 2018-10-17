@@ -87,10 +87,15 @@ padding: 2px;
 
 .menu span {
   position: absolute;
-  right: 5px;
+  right: 10px;
 
 }
 
+.menu .submenu .expspan span{
+  position: relative;
+  right: 5px;
+  top: 5px;
+}
 /*probemmas con margin*/
 .menu ul {
   background: white;
