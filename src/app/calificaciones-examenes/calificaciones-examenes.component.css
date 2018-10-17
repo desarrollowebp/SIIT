@@ -13,23 +13,18 @@ h2 {
 	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
 }
 /* CENTRAR LA CAJA Y DARLE 1000 PX */
-.menu{
-    width: 1000px;
-    align-content: center;
-    margin: auto;
-}
 .contenedor{
 	width:800px;
 	background: #70193f;
-	margin-right: 375;
-	margin-left: 375;
+	margin:auto;
 	border: 200PX;
-	
+	align-content: center;
 }
-.container
-{
-	margin-top: 30px;
-
+.menu ul li{
+    width: 100opx;
+    align-content: center;
+    margin: auto;
+    
 }
 /* El hijo siempre lleva margin 0 y auto para centrarlo al div padre*/
 .meniu{
@@ -127,7 +122,7 @@ table {
 /* Zebra striping */
 
 tr:nth-of-type(odd) {
-  background: white;
+  background: #eee;
 }
 
 th {
@@ -157,5 +152,3 @@ th {
   
   
 }
-
-
