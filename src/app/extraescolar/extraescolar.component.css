@@ -1,4 +1,4 @@
-
+/***empieza css de tabla de extra seleccionada*****/
 table {
 	text-align: left;
 	line-height: 40px;
@@ -83,4 +83,399 @@ table {
 		display: block;
 		text-align:center;
 	}
-  }
+	}
+	/***empieza css de tabla de extra seleccionada*****/
+
+/***empieza css de tabla que despliega*****/
+.container {
+  margin-top:100px;
+  border: 1px solid blue;
+  border-right: 1px solid blue;
+}
+
+.expandcollapse-item {
+  overflow: hidden;
+  border-top:1px solid blue;
+}
+
+.expandcollapse-heading-collapsed {
+  cursor: pointer;
+  padding: 15px 20px;
+  position: relative;
+  z-index: 100000000;
+  color: black; 
+  background-color: white;
+  
+}
+
+.expandcollapse-item:first-of-type {
+  border-top:0px;
+}
+
+
+.expandcollapse-heading-collapsed p{
+  font-size: 16px;
+  font-weight: normal;
+  margin:0px;
+}
+
+
+
+.expandcollapse-heading-expanded {
+  cursor: pointer;
+  z-index: 100000000;
+  padding: 15px 20px;
+  position: relative;
+  color: white; 
+  background-color: black;
+  border: 1px solid blue;
+}
+
+.expandcollapse-heading-expanded p{
+  font-size: 16px;
+  font-weight: bold;
+  margin:0px;
+}
+
+.expandcollapse-heading-collapsed > span,
+.expandcollapse-heading-expanded > span {
+  position:absolute;
+  top: 25px;
+  right: 15px;
+  font-size: 20px;
+  line-height: 0px;
+}
+
+.expand-collapse-content {
+  padding: 20px;
+}
+
+
+/*
+animation:*/
+
+.slideDown.ng-hide {
+  height:0;
+  transition:height 0.35s ease;
+  overflow:hidden;
+  position:relative;
+}
+
+.slideDown {
+  height:141px;
+  transition:height 0.35s ease;
+  overflow:hidden;
+  position:relative;
+}
+
+.slideDown.ng-hide-remove,
+.slideDown.ng-hide-add {
+  /* remember, the .hg-hide class is added to element
+  when the active class is added causing it to appear
+  as hidden. Therefore set the styling to display=block
+  so that the hide animation is visible */
+  display:block!important;
+}
+
+
+.slideDown.ng-hide-add {
+  animation-name: hide;
+  -webkit-animation-name: hide;  
+
+  animation-duration: .5s; 
+  -webkit-animation-duration: .5s;
+
+  animation-timing-function: ease-in;  
+  -webkit-animation-timing-function: ease-in;  
+}
+
+
+
+.slideDown.ng-hide-remove {
+  animation-name: show;
+  -webkit-animation-name: show;  
+
+  animation-duration: .5s; 
+  -webkit-animation-duration: .5s;
+
+  animation-timing-function: ease-out;  
+  -webkit-animation-timing-function: ease-out;  
+}
+
+
+form{
+ margin: 0 auto;
+ 
+ margin-bottom: 20px;
+ padding: 10px 20px;
+ border-radius: 7px;
+ background-color: #6f193f;
+ box-sizing:border-box;
+ margin-top:20px;
+ 
+ 
+}
+
+.s{
+  width: 40px;  /* Ancho del icono */
+height: 40px;  /* Alto del icono */
+}
+.title{
+  margin:14px;
+  padding: 12px;
+  background: #70193f;
+  border-radius: 15px;
+  color: #fff;
+}
+.titable{
+  background-color: #70193f;
+  color:#fff;
+  font-family: roboto Arial;
+  text-align: center;
+  border-radius: 13px;
+  margin-bottom: 10px;
+}
+a{
+  text-decoration:none;
+  
+}
+li{
+  list-style:none;
+  text-align:justify;
+}
+.boton{
+	width: 60px;
+
+
+}
+.hea{
+  font-size: 25px;
+  font-family: roboto , arial;
+  text-align: center;
+}
+.bod{
+  background: #fff;
+  margin: 0px;
+  color: #000;
+  border :solid #70193f;
+}
+
+
+.impr{
+	font-size: 20px;
+}
+.title{
+	margin:14px;
+	padding: 12px;
+	background: #70193f;
+	
+	color: #fff;
+}
+.titable{
+	background-color: #70193f;
+	color:#fff;
+	font-family: roboto Arial;
+	text-align: center;
+}
+/*esta clase es para quitar las lineas de las a*/
+.alumno{
+ 
+  font-size: 18px;
+  color: #fff;
+
+}
+/*esta clase es para quitar las lineas de las a en el segundo div */
+.alumno2{
+ 
+  font-size: 18px;
+  color: #000;
+
+
+}
+.do{
+  background:#fff;
+  margin: 0px;
+}
+.sec{
+  margin-top: 0px;
+  background: #fff;
+  text-decoration: none;
+  color:#000;
+  border: solid #70193f;
+}
+
+
+.desp{
+  color: #000;
+
+}
+.int{
+
+  text-align: center;
+  font-family: arial;
+  font-size: 15px;
+
+}
+p{
+ margin: 0px;
+  color: #000;
+  font-family: arial, roboto;
+  font-size: 20px;
+}
+.stil{
+  font-size: 20px;
+  margin: 5px;
+  
+
+}
+.titulo{
+  text-align: center;
+  font-size: 20px;
+  margin: 10px;
+}
+.botones{
+  background-color: #fff;
+  padding-top: 15px;
+}
+
+.estilo{
+  padding: 5px 5px 5px 5px;
+  background-color: #70193F;
+  font-family: verdana;
+
+}
+.informacion{
+  font-family: verdana;
+  background: white;
+  width: 100%;
+}
+.principal{
+  background-color: #70193F;
+  padding: 15px 15px 15px 15px;
+  
+  margin-top: 15px;
+}
+.bienvenido{
+  color: white;
+  font-family: roboto;
+ 
+
+}
+.texto{
+  color: white;
+  font-family:   Arial;
+  color:#fff;
+  font-size: 14px;
+  
+	text-align: center;
+	font-family: arial;
+	font-size: 15px;
+
+}
+.stil{
+	font-size: 20px;
+	margin: 5px;
+	
+
+}
+.titulo{
+	text-align: center;
+	font-size: 20px;
+	margin: 10px;
+}
+.botones{
+	background-color: #fff;
+	padding-top: 15px;
+}
+
+.estilo{
+	padding: 5px 5px 5px 5px;
+	background-color: #70193F;
+	font-family: verdana;
+
+}
+.informacion{
+	font-family: verdana;
+	background: white;
+	width: 100%;
+}
+.principal{
+	background-color: #70193F;
+	margin: 0px;
+
+
+	margin-top: 15px;
+	color: white;
+}
+.bienvenido{
+	color: white;
+	
+
+}
+.texto{
+	
+	font-family:   Arial;
+	color:#fff;
+	font-size: 14px;
+	}
+
+h3{
+
+  color: white;
+  font-family: verdana;
+  font-size: 12px;
+  text-align: center;
+	color: white;
+	font-family: verdana;
+	font-size: 12px;
+	text-align: center;
+}
+h2{
+ color: white;
+ font-size: 40px;
+ margin-bottom: 20px;
+ text-align: center;
+ font-family: monospace;
+}
+
+input,select{
+ width: 100%;
+ margin-bottom: 20px;
+ padding: 7px;
+ box-sizing:border-box;
+ font-size: 17px;
+ border: none;
+}
+
+
+.texto2{
+  color:#000;
+  font-size: 23px;
+
+
+
+}
+
+.tab{
+  color: #000;
+}
+
+#boton{
+ background-color: #31384A;
+ color: #fff;
+ padding: 20px;
+ border: none;
+
+ width: 50%;
+ width: 100%;
+
+ font-family: monospace;
+ font-weight: bolder;
+ font-size: 2em;
+}
+#boton:hover{
+ cursor:pointer;
+}
+
+
+/***termina css de tabla que despliega*****/
