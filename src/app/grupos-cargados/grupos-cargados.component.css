@@ -21,9 +21,9 @@
   margin: 0 auto;
 
   border: 0px;
-margin-bottom: 5px;
+  margin-bottom: 5px;
 
-justify-content: center;
+  justify-content: center;
 align-items: center;
 text-align: center;
 }
@@ -266,6 +266,12 @@ td {
       text-align: center;
       font-size:15px;
 
+}
+
+
+
+#tablecontent{
+  font-size: 12px;
 }
 /*----------------------------------------------------------------------------------------*/
 
