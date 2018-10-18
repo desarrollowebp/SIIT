@@ -119,7 +119,7 @@ header nav ul li .children li a {
 	height: 70px;
 	width: 65px;
 	float: right;
-	margin-right: 10px;
+	margin-right: 8px;
 }
 
 
@@ -132,6 +132,8 @@ header nav ul li .children li a {
 		font-weight: bold;
 		text-decoration: none;
 		float: left;
+		margin-left: 10px;
+		cursor: pointer;
 	}
 
 	.textoITD
@@ -139,6 +141,7 @@ header nav ul li .children li a {
 	text-align: center;
 	justify-content: center;
 	}
+
 	.textoITD p{
 		text-align:center;
 		font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
@@ -189,7 +192,7 @@ header nav ul li .children li a {
 		float: right;
 	}
 
-header .logp, .textoITD, .menu_bar
+header .logo, .textoITD, .menu_bar
 {
 	float: left;
 	width: 33%;
@@ -199,7 +202,7 @@ header .logp, .textoITD, .menu_bar
 }
 	@media (max-width:768px)
 	{
-		.menu_bar {
+		.menu_bar a{
 		display:block;
 		height:70px;
 		max-width: 30px;
