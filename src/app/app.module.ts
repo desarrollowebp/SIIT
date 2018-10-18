@@ -21,6 +21,7 @@ import { ExtraescolarComponent } from './extraescolar/extraescolar.component';
 import { EvaluacionDocenteComponent } from './evaluacion-docente/evaluacion-docente.component';
 import { AuditoriaServicioComponent } from './auditoria-servicio/auditoria-servicio.component';
 import { ListaModulosComponent } from './lista-modulos/lista-modulos.component';
+import { TiposComponent } from './auditoria-servicio/tipos/tipos.component';
 
 const routes:Routes = [
   { path: '', component: ListaModulosComponent },
@@ -64,6 +65,7 @@ const routes:Routes = [
     EvaluacionDocenteComponent,
     AuditoriaServicioComponent,
     ListaModulosComponent,
+    TiposComponent,
   ],
   imports: [
     BrowserModule,
