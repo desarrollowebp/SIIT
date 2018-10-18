@@ -219,7 +219,7 @@ th {
   text-decoration: none;
   list-style: none;
   font-size: 20px;
-  margin: 0px 0px;
+  margin: 0px -8px;
 }
 .menu li
 {
@@ -231,7 +231,7 @@ th {
   display: block;
   padding: 5px 20px;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 /*ayuda a jquery*/
@@ -303,6 +303,7 @@ th {
     right: auto;
     color: blue;
   }
+  
 
   .menu ul {
     display: flex;
