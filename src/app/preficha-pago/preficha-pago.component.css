@@ -152,6 +152,7 @@ a{
 }
 li{
   list-style:none;
+  text-align:justify;
 }
 .boton{
 	width: 60px;
@@ -165,6 +166,9 @@ li{
 }
 .bod{
   background: #fff;
+  margin: 0px;
+  color: #000;
+  border :solid #70193f;
 }
 
 
@@ -184,18 +188,33 @@ li{
 	font-family: roboto Arial;
 	text-align: center;
 }
+/*esta clase es para quitar las lineas de las a*/
 .alumno{
-  text-decoration: none;
+ 
   font-size: 18px;
+  color: #fff;
 
+}
+/*esta clase es para quitar las lineas de las a en el segundo div */
+.alumno2{
+ 
+  font-size: 18px;
+  color: #000;
+
+
+}
+.do{
+  background:#fff;
+  margin: 0px;
 }
 .sec{
   margin-top: 0px;
   background: #fff;
   text-decoration: none;
   color:#000;
-  border: 3px #70193f;
+  border: solid #70193f;
 }
+
 
 .desp{
   color: #000;
@@ -207,6 +226,12 @@ li{
   font-family: arial;
   font-size: 15px;
 
+}
+p{
+ margin: 0px;
+  color: #000;
+  font-family: arial, roboto;
+  font-size: 20px;
 }
 .stil{
   font-size: 20px;
@@ -245,6 +270,7 @@ li{
 }
 .bienvenido{
   color: white;
+  font-family: roboto;
  
 
 }
@@ -339,10 +365,13 @@ input,select{
 
 
 .texto2{
-  color:#000;font-size: 23px;
+  color:#000;
+  font-size: 23px;
+
 
 
 }
+
 .tab{
   color: #000;
 }
