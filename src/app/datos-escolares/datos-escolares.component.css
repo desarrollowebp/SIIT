@@ -45,7 +45,7 @@ background:white;
 
 .meniu ul li {
 	padding: 5px;
-	width: 33%;
+	width: inherit;
   color: black;
   font-size: 100px;
   
