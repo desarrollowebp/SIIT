@@ -369,7 +369,7 @@ input{
   -ms-box-sizing: border-box;
        box-sizing: border-box;
   font-family: 'Lato', sans-serif;
-  text-align: center;
+  text-align: inherit;
 }
 
 
