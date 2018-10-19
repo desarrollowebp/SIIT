@@ -61,7 +61,7 @@ background:white;
 	background-color: #70193f;
 	color: white;
   font-weight: bold;
-  font-size: small;
+  font-size: 12px;
   
 
 
@@ -76,8 +76,9 @@ background:white;
 	.contenedor{
 	  width: 70%;
 		min-width: 100%;
-		max-width: 100%;
-		background: #70193f;
+    max-width: 100%;
+    height: 200px;
+		background: white;
 		font-size: 20px;
 
 	
@@ -98,7 +99,7 @@ font-size: 20px;
 }
 h3{
     display: block;
-    font-size: 1.2em;
+    font-size: 1em;
     margin-block-start: 0.83em;
     margin-block-end: 0.83em;
     margin-inline-start: 0px;
@@ -154,7 +155,10 @@ th {
   }
   
   tr { margin-bottom: 10px}
-  
+  .menu p 
+  {
+    font-size: 1em;
+  }
   
 }
 
@@ -163,7 +167,7 @@ th {
 .menu {
   background: white;
   width: 100%;
-  height: 350px;
+  height: 200px;
   top: 10px;
   transition: all 0.5s;
 }
@@ -245,7 +249,7 @@ th {
 }
 
 .menu ul li p {
-  font-size: 10px;
+  font-size: 11px;
   text-align: center;
 }
 
@@ -311,6 +315,10 @@ th {
   .vertical {
     overflow: visible;
     white-space: normal;
+  }
+  .menu ul li p {
+    font-size: 13px;
+    text-align: center;
   }
 }
 
