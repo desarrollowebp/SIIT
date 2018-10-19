@@ -1,6 +1,10 @@
 * all {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+.meniu[_ngcontent-c1] ul[_ngcontent-c1]{
+  width: 90%;
+}
+
 h3[_ngcontent-c1] {
   
   font-size: .92em;
@@ -13,10 +17,7 @@ h3[_ngcontent-c1] {
     margin-left: auto;
     padding-top: 15px;
 }
-.meniu[_ngcontent-c1] ul[_ngcontent-c1] li[_ngcontent-c1] {
-  padding: 1.5px;
-  
-}
+
 h2, .h2 {
     font-size: 1.2rem;
 }
@@ -104,6 +105,13 @@ h2, .h2 {
 }
 
 @media(min-width:780px) {
+  h3[_ngcontent-c1] {
+  
+    font-size: 1.2em;
+  }
+  .meniu[_ngcontent-c1] ul[_ngcontent-c1]{
+    width: 96%;
+  }
   .menu {
     width: 1000px;
     height: 80%;
@@ -112,63 +120,24 @@ h2, .h2 {
     overflow: hidden;
   }
 
-  .submenu {
-    width: 100%;
-    height: 100%;
-    font-size: 10px;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  .materia {
-    display: block;
-    padding: 0 0 0 0;
-  }
-
-  .estado {
-    width: 100%;
-    max-width: 80px;
-    max-height: 90px;
-    word-wrap: break-word;
-  }
-
-  .menu span {
-    position: static;
-    right: auto;
-    color: blue;
-  }
-
-  .menu ul {
-    display: flex;
-  }
-
-  .vertical {
-    overflow: visible;
-    white-space: normal;
-  }
+ 
   .menu ul li p {
     font-size: 15px;
     
   }
+ 
   
 h2, .h2 {
     font-size: 2rem;
 }
 }
 
-.contenedor{
-	width:800px;
-	background: #70193f;
-	margin-right: 375;
-	margin-left: 375;
-	border: 200PX;
-	
-}
+
 /* El hijo siempre lleva margin 0 y auto para centrarlo al div padre*/
 .meniu{
 
 margin: 0 auto;
-width: 90%;
+
 height: 40%;
 background:white;
 
@@ -197,11 +166,7 @@ background:white;
     text-align: center;
 
 }
-.meniu[_ngcontent-c1] ul[_ngcontent-c1] {
-  justify-content: center;
-  text-align: center;
-  list-style: none;
-  width: 90%;}
+
 
 .meniu ul li {
 	padding: 5px;
@@ -231,6 +196,7 @@ background:white;
 }
 
 @media (min-width:100px) {
+  
 	.contenedor{
 	  width: 70%;
 		min-width: 100%;
@@ -244,7 +210,7 @@ background:white;
 	.meniu{
 
 margin: 0 auto;
-width: 100%;
+
 height: 40%;
 background:white;
 
@@ -277,45 +243,8 @@ Generic Styling, for Desktops/Laptops
 .header-top{box-shadow: none} 
 .leftmenutrigger{display: none}
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
 
 
-/* Zebra striping */
-
-tr:nth-of-type(odd) {
-  background: #eee;
-}
-
-th {
-  background: #70193f;
-  color: white;
-  font-weight: bold;
-}
-
-td,
-th {
-  padding: 6px;
-
-  text-align: center;
-}
-
-@media all and (max-width:500px) {
-  table,
-  thead,
-  tbody,
-  th,
-  td,
-  tr {
-    font-size:8px;
-  }
-  
-  tr { margin-bottom: 10px}
-  
-  
-}
 .contenedor{
 	width:800px;
 	background: #70193f;
@@ -370,28 +299,7 @@ background:white;
     font-weight: bold;
 }
 
-@media (min-width:100px) {
-	.contenedor{
-	  width: 70%;
-		min-width: 100%;
-		max-width: 100%;
-		background: #70193f;
-		font-size: 15px;
 
-	
-	}
-
-	.meniu{
-
-margin: 0 auto;
-width: 100%;
-height: 40%;
-background:white;
-
-}
-
-
-}
 h3{
     display: block;
     font-size: 1.2em;
@@ -408,14 +316,7 @@ p
 {
 	width: auto;
 }
-/* 
-Generic Styling, for Desktops/Laptops 
-*/body{background:#f9f9f9;}
-#wrapper{padding:90px 15px;}
-.navbar-expand-lg .navbar-nav.side-nav{flex-direction: column;}
-.card{margin-bottom: 15px; border-radius:0; box-shadow: 0 3px 5px rgba(0,0,0,.1); }
-.header-top{box-shadow: 0 3px 5px rgba(0,0,0,.1)}
-.leftmenutrigger{display: none}
+
 
 table {
   width: 100%;
