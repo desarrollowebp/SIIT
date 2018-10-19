@@ -1,6 +1,6 @@
 /***empieza css de tabla de extra seleccionada*****/
 table {
-  text-align: left;
+  text-align: center;
   line-height: 40px;
   border-collapse: separate;
   border-spacing: 0;
@@ -231,6 +231,10 @@ a.appbtn:hover {
   margin-bottom: 0;
 }
 
+li:hover{
+	cursor: pointer;
+	padding: 5px;
+}
 /*termina css de tabla que se despliega*/
 
 /*Empieza el modal*/
