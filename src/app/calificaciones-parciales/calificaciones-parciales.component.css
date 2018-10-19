@@ -267,8 +267,8 @@ Generic Styling, for Desktops/Laptops
 */body{background:#f9f9f9;}
 #wrapper{padding:90px 15px;}
 .navbar-expand-lg .navbar-nav.side-nav{flex-direction: column;}
-.card{margin-bottom: 15px; border-radius:0; box-shadow: 0 3px 5px rgba(0,0,0,.1); }
-.header-top{box-shadow: 0 3px 5px rgba(0,0,0,.1)}
+.card{margin-bottom: 15px; border-radius:0; box-shadow: none; border:none; }
+.header-top{box-shadow: none} 
 .leftmenutrigger{display: none}
 
 table {
