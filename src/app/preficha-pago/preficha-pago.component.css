@@ -1,3 +1,5 @@
+
+
 .modal-dialog {
     max-width: 98%;
     margin: 10px auto;
@@ -160,6 +162,8 @@ li{
 }
 .boton{
 	width: 60px;
+
+
 }
 .hea{
   font-size: 25px;
@@ -172,6 +176,8 @@ li{
   color: #000;
   border :solid #70193f;
 }
+
+
 .impr{
 	font-size: 20px;
 }
@@ -190,13 +196,18 @@ li{
 }
 /*esta clase es para quitar las lineas de las a*/
 .alumno{
+ 
   font-size: 18px;
   color: #fff;
+
 }
 /*esta clase es para quitar las lineas de las a en el segundo div */
 .alumno2{
+ 
   font-size: 18px;
   color: #000;
+
+
 }
 .do{
   background:#fff;
@@ -209,6 +220,8 @@ li{
   color:#000;
   border: solid #70193f;
 }
+
+
 .desp{
   color: #000;
 
@@ -241,6 +254,8 @@ p{
   font-size: 20px;
   margin: 10px;
   color: white;
+  
+    
 }
 .stiltab{
   color: black;
@@ -291,8 +306,17 @@ p{
   font-family:   Arial;
   color:#fff;
   font-size: 14px;
+=======
 	text-align: center;
+	font-family: arial;
 	font-size: 15px;
+
+}
+.stil{
+	font-size: 20px;
+	margin: 5px;
+	
+
 }
 .titulo{
 	text-align: center;
