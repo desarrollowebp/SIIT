@@ -1,4 +1,8 @@
 
+.meniu[_ngcontent-c1] ul[_ngcontent-c1] li[_ngcontent-c1] {
+  padding: 1.5px;
+  
+}
 h2, .h2 {
     font-size: 1.2rem;
 }
