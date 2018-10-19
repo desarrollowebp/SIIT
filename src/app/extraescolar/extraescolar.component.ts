@@ -9,38 +9,38 @@ import * as $ from 'jquery';
 })
 export class ExtraescolarComponent implements OnInit {
   modals = "modal";
-    constructor() {
-      this.modals = "modal";
+  constructor() {
+    this.modals = "modal";
+  }
+  func() {
+    this.modals = "visibleNo";
+  }
+  cerrar() {
+    this.modals = "modal";
+  }
+  ngOnInit() {
+    $(".submenu").click(function() {
+      $(this).children("ul").slideToggle();
+
     }
-    func() {
-      this.modals = "visibleNo";
+    )
+
+    $("ul").click(function(p) {
+      p.stopPropagation();
+    })
+
+    if ($(window).width() > 720) {
+
+
+      $(".submenu").children("ul").show();
+
+
+
     }
-    cerrar(){
-      this.modals="modal";
+    else {
+
     }
-    ngOnInit() {
-      $(".submenu").click(function() {
-        $(this).children("ul").slideToggle();
-
-      }
-      )
-
-      $("ul").click(function(p) {
-        p.stopPropagation();
-      })
-
-      if ($(window).width() > 720) {
-
-
-        $(".submenu").children("ul").show();
-
-
-
-      }
-      else {
-
-      }
 
 
   }
-  }
+}
