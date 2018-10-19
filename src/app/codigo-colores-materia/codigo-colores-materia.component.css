@@ -80,26 +80,132 @@
 
 }
 
-.codcolores .codcolor{
+.codcolores .codcolor {
   margin: 0 auto;
   width: 30%;
-height: 120px;
-border-radius: 5px;
-   height: 90px;
-   border: 1px solid black;
-    display: table;
-    margin: 5px;
+  height: 120px;
+  border-radius: 5px;
+  height: 90px;
+  border: 1px solid black;
+  display: table;
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-top: 2px;
+  margin-bottom: 2px;
 
 }
-.codcolores .codcolor p {
+.codcolores .codcolor1 p {
 
   text-align:center;
-    vertical-align: middle;
-    display: table-cell;
+  vertical-align: middle;
+  display: table-cell;
+  font-weight: bold;
   height: 50px;
   color: #000;
+  background:#2ecc71;
 
 }
+.codcolores .codcolor2 p {
+
+  text-align:center;
+  vertical-align: middle;
+  display: table-cell;
+  height: 50px;
+  color: #FFF;
+  background: #a537fd;
+  font-weight: bold;
+}
+.codcolores .codcolor3 p {
+
+  text-align:center;
+  vertical-align: middle;
+  display: table-cell;
+  height: 50px;
+  color: #000;
+  background: rgb(241, 225, 0);
+  font-weight: bold;
+}
+.codcolores .codcolor4 p {
+
+  text-align:center;
+  vertical-align: middle;
+  display: table-cell;
+  height: 50px;
+  color: #fff;
+  background: rgb(236, 4, 167);
+  font-weight: bold;
+}
+.codcolores .codcolor5 p {
+
+  text-align:center;
+  vertical-align: middle;
+  display: table-cell;
+  height: 50px;
+  color: #fff;
+  background: rgb(56, 197, 13);
+  font-weight: bold;
+}
+.codcolores .codcolor6 p {
+
+  text-align:center;
+  vertical-align: middle;
+  display: table-cell;
+  height: 50px;
+  color: #fff;
+  background: rgb(247, 99, 0);
+  font-weight: bold;
+}
+.codcolores .codcolor7 p {
+
+  text-align:center;
+  vertical-align: middle;
+  display: table-cell;
+  height: 50px;
+  color: #fff;
+  background: #FF0000;
+  font-weight: bold;
+}
+.codcolores .codcolor8 p {
+
+  text-align:center;
+  vertical-align: middle;
+  display: table-cell;
+  height: 50px;
+  color: #fff;
+  background: rgb(0, 108, 250);
+  font-weight: bold;
+}
+.codcolores .codcolor9 p {
+
+  text-align:center;
+  vertical-align: middle;
+  display: table-cell;
+  height: 50px;
+  color: #000;
+  background: #bdc3c7;
+  font-weight: bold;
+}
+.codcolores .codcolor10 p {
+
+  text-align:center;
+  vertical-align: middle;
+  display: table-cell;
+  height: 50px;
+  color: #fff;
+  background: rgb(95, 51, 11);
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
 .menu .submenu .expspan span{
   position: relative;
   right: 5px;
