@@ -16,8 +16,6 @@ table {
 	border: none;
   }
   
-  
-  
   th {
 	font-weight: 500;
   }
@@ -52,7 +50,7 @@ table {
   }
   
   .edit:hover {
-	color: #0a79df;
+	color: #111111;
   }
   
   .delete:hover {
@@ -132,6 +130,7 @@ table {
   background: #ffffff;
   overflow: hidden;
   transition: all 0.3s ease;
+  text-decoration-color: #111111;
   }
   
   
