@@ -40,11 +40,11 @@
 <!--desde aqui para arriba puedes copiar cambiar css    clases que debes usar texto2,bod,alumnos2,alumno principal-->
 
 <!--Inicia contenido de informacion para el alumno-->
-      <div class=" principal  col-lg-12 col-md-12 col-sm-12 col-xs-12 panel-primary " id="tablacontenedor" align="center">
+      <div class="acomodo col-lg-12 col-md-12 col-sm-12 col-xs-12 panel-primary " id="tablacontenedor" align="center">
         <div class="  heading " id="fondogrupos1">
-          <h3 class="panel-title hea" >Ficha de Pago Periodo x x</h3>
+          <h3 class="padre acomodo titulo" >Ficha de Pago Periodo x x</h3>
         </div>
-        <table class="table table-hover bod" id="dev-table">
+        <table class="table table-hover bod" id="dev-table" >
           <thead>
             <tr>
               <th class="tab">Importe a pagar:</th>
@@ -72,16 +72,14 @@
             </tr>
           </tbody>
         </table>
-        <div class="botones col-sm-12">
-          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-          </div>
-        </div>
+        
+        
       </div>
 <!--Finaliza contenido de informacion para el alumno-->
     </div>
   </div>
 <!--Boton para mostrar ficha de pago-->
-  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+  <div class="acomodo padre">
     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
       Mostrar Ficha de pago
     </button>
@@ -92,108 +90,83 @@
   <div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-md-9 " role="document">
       <div class="modal-content">
+        <div class="padre acomodo"style="text-align: center; font-size: 30px;">INSTITUTO TECNOLOGICO <br>DE DURANGO</div>
+          
+        <div class="padre">
 
+          <div class="titulo acomodo col-lg-8 col-md-12 col-sm-12 col-xs-12 ">DEPARTAMENTO DE RECURSOS FINANCIEROS
+          </div>
+        </div> 
 
-        <div class="titulo col-lg-12 col-md-12 col-sm-12 col-xs-12">DEPARTAMENTO DE RECURSOS FINANCIEROS
-        </div>
-
-        <div class="titulo col-lg-12 col-md-12 col-sm-12 col-xs-12">
-          <table width="100%" border="2">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="titulo acomodo">Ficha de Depósito</div>
+          <table  border="2" style="margin: 0 auto;">
             <tbody>
+              
               <tr>
-                <div class="titable col-lg-12 col-md-12 col-sm-12 col-xs-12" colspan="3" scope="col"><h2 class="stil">Ficha de Depósito</h2>
-                </div>
-              </tr>
-              <tr>
-                <td align="right"><h2 class="int"><strong>No. de Control:</strong></h2>
+                <td><h2 class="stiltab">No. de Control:</h2>
                 </td>
-                <td><h2 class="stil">14040428</h2>
+                <td><h2 class="stiltab">14040428</h2>
                 </td>
               </tr>
               <tr>
-                <td align="right"><h2 class="int"><strong>Nombre:</strong></h2>
+                <td><h2 class="stiltab">Nombre:</h2>
                 </td>
-                <td><h2 class="stil">ABREGO SALMERON RICARDO</h2>
-                </td>
-              </tr>
-              <tr>
-                <td align="right"><h2 class="int"><strong>Concepto:</strong></h2>
-                </td>
-                <td><h2 class="stil">Inscripción Reingreso</h2>
+                <td><h2 class="stiltab">ABREGO SALMERON RICARDO</h2>
                 </td>
               </tr>
               <tr>
-                <td align="right"><h2 class="int"><strong>Monto a pagar:</strong></h2>
+                <td><h2 class="stiltab">Concepto:</h2>
                 </td>
-                <td colspan="2"><h2 class="stil">2350.00</h2>
+                <td><h2 class="stiltab">Inscripción Reingreso</h2>
                 </td>
               </tr>
               <tr>
-                <td align="right"><h2 class="int"><strong>Periodo:</strong></h2>
+                <td><h2 class="stiltab">Monto a pagar:</h2>
                 </td>
-                <td><h2 class="stil">AGOSTO-DICIEMBRE/2018</h2>
+                <td><h2 class="stiltab">2350.00</h2>
+                </td>
+              </tr>
+              <tr>
+                <td><h2 class="stiltab">Periodo:</h2>
+                </td>
+                <td><h2 class="stiltab">AGOSTO-DICIEMBRE/2018</h2>
                 </td>
               </tr>
             </tbody>
           </table>
         </div>
-
-      
-
-
-
-  <div class="titulo col-lg-12 col-md-12 col-sm-12 col-xs-12">
-    <table width="100%" border="2">
-      <tbody>
-        <tr>
-          <div colspan="3" scope="col" class="titable col-lg-12 col-md-12 col-sm-12 col-xs-12">BANAMEX</div>
-        </tr>
-        <tr>
-          <td><strong class="int">Sucursal-Cuenta: </strong></td>
-          <td>7000-7909274</td>
-        </tr>
-        <!--         <tr>
-            <td align="right"><strong>Sucursal-Cuenta: </strong></td>
-            <td>7011-8042350</td>         
-			
-          </tr>-->
-        <!--tr>
-            <td align="right"><strong>Referencia Alfanumerica:</strong></td>
-            <td>N140404280521</td>
-          </tr-->
-        <tr>
-          <td><strong class="int">Referencia Alfanumerica:</strong></td>
-          <td>N14040428</td>
-        </tr>
-        <!--tr>
-            <td align="right"><strong>Referencia Numerica:</strong></td>
-            <td></td>
-          </tr>-->
-        <tr>
-          <td><strong  class="int">Monto a pagar:</strong></td>
-          <td colspan="2">2350.00</td>
-        </tr>
-        <tr>
-          <td><strong  class="int">Fecha de Vencimiento:</strong></td>
-          <td>31 de Diciembre de 2018</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
-</div>
+        
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="titulo acomodo">BANAMEX</div>
+          <table border="2" style="margin: 0 auto;">
+            <tbody>
+              <tr>
+                <td><strong class="stiltab">Sucursal-Cuenta: </strong></td>
+                <td class="stiltab">7000-7909274</td>
+              </tr>
+              <tr>
+                <td><strong class="stiltab">Referencia Alfanumerica:</strong></td>
+                <td class="stiltab">N14040428</td>
+              </tr>
+              <tr>
+                <td><strong class="stiltab">Monto a pagar:</strong></td>
+                <td class="stiltab">2350.00</td>
+              </tr>
+              <tr>
+                <td><strong class="stiltab">Fecha de Vencimiento:</strong></td>
+                <td class="stiltab">31 de Diciembre de 2018</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="acomodo padre">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Regresar</button>
+          <button class="btnprint">
+            <span class="print icon-print " onclick="window.print()"></span>
+          </button>
+        </div>
+      </div>
     </div>
-  </div>
-
-
-
-  <div class="modal-footer">
-    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-    <button type="button" onclick="window.print()" class="btn btn-primary">Save changes</button>
-  </div>
-  
-  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-  </div>
-  <div class="col-lg-2 col-md-2 col-sm-1 col-xs-0">
   </div>
 </body>

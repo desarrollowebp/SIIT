@@ -226,12 +226,12 @@ li{
   color: #000;
 
 }
-.int{
-
+.stiltab{
+  color: black;
   text-align: center;
   font-family: arial;
   font-size: 15px;
-
+  margin: 5px;
 }
 p{
  margin: 0px;
@@ -239,16 +239,38 @@ p{
   font-family: arial, roboto;
   font-size: 20px;
 }
-.stil{
-  font-size: 20px;
-  margin: 5px;
-  
+.btnprint{
+   
+    padding-left: 0px;
+    width: 45px;
+    height: 41px;
+    margin-left: 10px;
+    padding-right: 0px;
 
 }
+
 .titulo{
+  background-color: #70193F;
   text-align: center;
   font-size: 20px;
   margin: 10px;
+  color: white;
+  
+    
+}
+.stiltab{
+  color: black;
+}
+.acomodo{
+  padding-top: 10px;
+  padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+.padre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .botones{
   background-color: #fff;
