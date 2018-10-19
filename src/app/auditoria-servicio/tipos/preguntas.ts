@@ -1,3 +1,4 @@
+
 export class tpregunta{
 	id : String;
 	Pregunta1 : String;
