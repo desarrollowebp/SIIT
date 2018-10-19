@@ -175,7 +175,6 @@ th {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 10px 10px 10px 10px;
   border: 2px solid #70193F;
   border-radius: 12px;
   border: 1px solid;
@@ -199,7 +198,7 @@ th {
 .estado {
   border-radius: 12px;
   background: #83C8E3;
-  padding: auto;
+  padding: 10px 10px 10px;
   
 }
 
