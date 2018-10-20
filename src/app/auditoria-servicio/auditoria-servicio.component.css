@@ -1,95 +1,149 @@
-#tituloInstrucciones{
-	color: white;
-	text-align: center;
-	padding: 15px;
-	background: #70193F;
-	border-radius: 20px;
-}
+/*empieza css de tabla que se despliega*/
+
+/* STYLE THE ACCORDION HOLDING CONTAINER */
+.accordionbox{
+	max-width: 1000px;
+	margin: 10px auto 0px auto;
+	z-index: 2;
+	display: block;
   
-#pregServicio{
-	width:100%;
-	height: auto;
-	margin: auto; /*para alinear el div al centro*/
-	padding: 50px; /*Separación a los costados*/
-	padding-top: 35px; /*Separación el parte de arriba*/
-}
-
-#infoInst{
-	text-align: justify;
-	padding: 30px;
-	padding-left: 100px;
-	padding-right: 100px;
-}
-
-#boton{
-	width:100%;
-	height: auto;
-}
-
-#descripcionservicio{
-	font-size: 20px; /*Tamaño de la letra*/
-	color: white;
-	background: #70193F; /*Color guinda al fondo*/
-	padding-bottom: auto; /*padding es el ancho de donde está*/
-	text-align: center; /*para alinear el texto al centro*/
-	justify-content: center; /*para centrar el contenido*/
-	margin: 0px;
-}
-
-#parrafoEstilo{
-	width: 100%;
-	color: #70193F;
-	text-align: left;
-	justify-content: center;
-	padding-right: 10px;
-	padding-bottom: 10px;
-	border: solid 2px #70193F; /*Color del borde*/
-	margin: 0px; /*Margen*/
-	border-right: 0;
-}
-
-
-#oracionesEstilo{
-	width:100%;
-	height: auto;
-	margin: auto; /*para alinear el div al centro*/
-	color: #70193F;
-	text-align: center;
-	justify-content: center;
-	padding-bottom: 20px;
-	padding: 50px; /*Separación a los costados*/
-	padding-top: 20px; /*Separación de la parte de arriba*/
-}
-
-#coment{
-	width: 100%;
-	text-align: center;
-	color: #70193F;
-	justify-content: center;
-
-}
-#preg{
-	width: 75%;
-	display: flex;	
-}
-#rng{
-	width: 25%;
-	/*display: flex;*/
-}
-#grpselect{
-	height: 100%;
-	text-align: center;
-	font-weight: bold;
-	color: #000;
-}
-
-form{
-	width: 1000px;		/*No le muevas al form, ese se tiene que quedar así*/
-	margin: 0 auto;
-}
-
-@media (max-width: 780px){
-	form{
-		width: 100%;
 	}
-}
+	
+	/* STYLE THE CHECKBOX LABELS */
+	.accordionbox label{
+	 font-family: 'PT Sans Narrow', sans-serif;
+	 padding: 10px;
+	 position: relative;
+	 display: block;
+	 cursor: pointer;
+	 color: white;
+	 font-size: 18px;
+	 background: #70193f;
+	 border-bottom: 2px solid #aaa;
+	 transition: all 0.3s ease;
+	}
+	
+	/* STYLE THE CHECKBOX LABELS ON HOVER */
+	.accordionbox label:hover{
+	 background: #aaa;
+	 color: #111111;
+	}
+	
+	/* HIDE THE HTML CHECKBOX SQUARE */
+	.accordionbox input{
+	 display: none;
+	}
+	
+	/* STYLE THE INITIAL DROPDOWN CONTENT BOX */
+	.insidebox{
+	height: 0px;
+	padding: 0px 15px;
+	font-size: 13px;
+	font-family: 'PT Sans', sans-serif;
+	color: #111111;
+	background: #ffffff;
+	overflow: hidden;
+	transition: all 0.3s ease;
+	}
+	
+	
+	/* STYLE THE CLICKED DROPDOWN CONTENT BOX */
+	.accordionbox input:checked ~ .insidebox{
+	 height: 250px;
+	  overflow: scroll;
+	}
+	
+	
+	/* SHOW THE + SIGN WHEN BOXES ARE CLOSED */
+	input[type=checkbox] + label::before {
+	  content: "+ ";
+	}
+	
+	
+	/* SHOW THE – SIGN WHEN BOXES ARE OPEN */
+	input[type=checkbox]:checked + label::before {
+	  content: "– ";
+	}
+	
+	
+	/* THIS IS ADDITIONAL PAGE STYLING, NOT RELATED TO THE ACCORDION */
+	a.appbtn{
+	font-size: 14px;
+	text-decoration: none;
+	cursor: pointer;
+	display: block;
+	width: 90%;
+	padding: 13px;
+	text-align: center;
+	background: #263238;
+	color: #FFFFFF;
+	margin: 20px auto;
+	transition: all 0.3s ease;
+	}
+	
+	a.appbtn:hover{
+	  background: #5FCF80;
+	
+	}
+	
+	.applicationbox{
+	  position: relative;
+	  display: inline-block;
+	  background: #263238;
+	  color: #ffffff;
+	  text-align: center;
+	  padding: 10px;
+	  max-width: 100px;
+	  margin: 10px;
+	}
+	
+	.applicationbox1{
+	  position: relative;
+	  display: inline-block;
+	  background: #263238;
+	  color: #ffffff;
+	  text-align: center;
+	  padding: 10px;
+	  max-width: 100px;
+	  margin: 10px;
+	}
+	
+	.applicationbox::after{
+	  position: absolute;
+	  width: 0;
+	  height: 0;
+	  content: '';
+	  top: 50%;
+	  left: 100%;
+	  border-top: 10px solid transparent;
+	  border-right: 10px solid transparent;
+	  border-bottom: 10px solid transparent;
+	  border-left: 10px solid #263238;
+	  margin-top: -10px;
+	}
+	
+	.copyright{
+	  font-size: 9px;
+	  font-family: 'Roboto', sans-serif;
+	  color: #cccccc;
+	  text-align: center;
+	}
+	
+	.pagetitle{
+	  position: absolute;
+	  top: 40px;
+	  left: 30px;
+	  color: #ffffff;
+	  font-size: 32px;
+	  line-height: 0.5;
+	  font-family: 'Baskerville', serif;;
+	  font-weight: 200;
+	  z-index: 2;
+	  opacity: 0.5;
+	  letter-spacing: 0.01em;
+	  padding-bottom: 0;
+	  margin-bottom: 0;
+	}
+  
+  
+  /*termina css de tabla que se despliega*/
