@@ -22,6 +22,7 @@ import { EvaluacionDocenteComponent } from './evaluacion-docente/evaluacion-doce
 import { AuditoriaServicioComponent } from './auditoria-servicio/auditoria-servicio.component';
 import { ListaModulosComponent } from './lista-modulos/lista-modulos.component';
 import { CentroInfoComponent } from './centro-info/centro-info.component';
+import { MenuHComponent } from './menu-h/menu-h.component';
 
 
 const routes:Routes = [
@@ -69,6 +70,7 @@ const routes:Routes = [
     AuditoriaServicioComponent,
     ListaModulosComponent,
     CentroInfoComponent,
+    MenuHComponent,
   ],
   imports: [
     BrowserModule,
