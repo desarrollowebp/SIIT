@@ -1,17 +1,25 @@
 .container {
-  width: 101%;
-  padding-right: 1px;
-  padding-left: 1px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  padding-top: 1px;
+  padding-top: 15px;
 }
 
 .meniu[_ngcontent-c1] ul[_ngcontent-c1] li[_ngcontent-c1] {
   padding: 1.5px;
 }
 
-
+.meniu[_ngcontent-c2] ul[_ngcontent-c2] {
+  justify-content: center;
+  text-align: center;
+  list-style: none;
+  width: 90%;
+  display: flex;
+  flex-wrap: nowrap;
+  text-decoration: none;
+}
 
 h2,
 .h2 {
@@ -61,15 +69,7 @@ h2,
 }
 
 @media(min-width:780px) {
-  .menu {
-    width: 1000px;
-    height: 80%;
-    margin: 0 auto;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .meniu[_ngcontent-c2] ul[_ngcontent-c2] {
+  .meniu[_ngcontent-c2][_ngcontent-c2] ul[_ngcontent-c2][_ngcontent-c2] {
     justify-content: center;
     text-align: center;
     list-style: none;
@@ -78,6 +78,15 @@ h2,
     flex-wrap: nowrap;
     text-decoration: none;
 }
+  .menu {
+    width: 1000px;
+    height: 80%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+  }
+
+  
 
   .menu ul {
     display: flex;
@@ -93,28 +102,21 @@ h2,
   }
 }
 
-.contenedor {
-  width: 800px;
-  background: #70193f;
-  margin-right: 375;
-  margin-left: 375;
-  border: 200PX;
-}
 
 
 @media (min-width:100px) {
+  
   .contenedor {
-    width: 70%;
+    width: 100%;
     min-width: 100%;
     max-width: 100%;
     background: #70193f;
     font-size: 15px;
   }
-  
 
   .meniu {
     margin: 0 auto;
-    width: 96%;
+   width: 96%;
     height: 40%;
     background: white;
   }
@@ -133,12 +135,16 @@ h3 {
   color: white;
 }
 
+p {
+  width: auto;
+}
+
 body {
   background: #f9f9f9;
 }
 
 #wrapper {
-  padding: 15px 15px;
+  padding: 90px 15px;
 }
 
 .navbar-expand-lg .navbar-nav.side-nav {
@@ -208,7 +214,7 @@ th {
   justify-content: center;
   text-align: center;
   list-style: none;
-  width: 90%;
+  width: 100%;
   display: flex;
   flex-wrap: nowrap;
   text-decoration: none;
