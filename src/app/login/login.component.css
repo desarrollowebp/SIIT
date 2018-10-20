@@ -280,9 +280,8 @@ html {
       width: 10%;
   }
   
-  element.style {
-  }
-  table[Attributes Style] {
+  
+  table {
       width: 800px;
       margin-inline-start: auto;
       margin-inline-end: auto;
