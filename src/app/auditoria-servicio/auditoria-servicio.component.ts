@@ -1,31 +1,37 @@
 import { Component, OnInit } from '@angular/core';
-import {tpregunta} from  './tipos/preguntas';
+
 
 @Component({
   selector: 'app-auditoria-servicio',
   templateUrl: './auditoria-servicio.component.html',
   styleUrls: ['./auditoria-servicio.component.css']
 })
-export class AuditoriaServicioComponent {
-	
+export class AuditoriaServicioComponent implements OnInit{
 
-  pregunta:tpregunta={
-  	"id":"",
-  	"Pregunta1":"",
-  	"Pregunta2":"",
-  	"Pregunta3":"",
-  	"Pregunta4":"",
-  	"Pregunta5":"",
-  	"Pregunta6":"",
-  	"Pregunta7":"",
-  	"Pregunta8":"",
-  	"Pregunta9":"",
+
+	constructor()	{}
+	ngOnInit() {
+
+	}
+
+
+  /*pregunta:tpregunta={
+	  "Servicio":"",
+	  "Pregunta1":"",
+	  "Pregunta2":"",
+	  "Pregunta3":"",
+	  "Pregunta4":"",
+	  "Pregunta5":"",
+	  "Pregunta6":"",
+	  "Pregunta7":"",
+	  "Pregunta8":"",
+	  "Pregunta9":"",
   };
 
   preguntas : tpregunta[] =[
   {
-  	"id":"Servicion: Centro de Informacion",
-  	"Pregunta1":"1.-�Tiene un Horario de consulta?",
+	"Servicio": "Centro de Informacion",
+  	"Pregunta1":"1.-�Tiene un horario adecuado de consulta?",
   	"Pregunta2":"2.-�La informacion con la que cuenta me apoya en las asignaturas que curso?",
   	"Pregunta3":"3.-�Siempre encuentro por lo menos un ejemplar disponible de la biografia se�alada en las asignaturas?",
   	"Pregunta4":"4.-�La bibliografia de la que se dispone es actualizada?",
@@ -36,7 +42,7 @@ export class AuditoriaServicioComponent {
   	"Pregunta9":"9.-�Mantienen una relacion atenta conmigo durante mi estancia?"
   	  },
   	 {
-  	 "id":"Servicion: Coordinacion de Carreras",
+  	"Servicio": "Coordinacion de Carreras",
   	"Pregunta1":"1.-�Tiene un Horario de atencion?",
   	"Pregunta2":"2.-�Me proporciona informacion necesaria para el manejo de mi reticula de carrera?",
   	"Pregunta3":"3.-�Me da orientacion adecuada cuando requiero realizar tramites en la institucion?",
@@ -48,7 +54,7 @@ export class AuditoriaServicioComponent {
   	"Pregunta9":"9.-�Me proporciona informaci�n sobre el calendario escolar?"
   	 },
   	 {
-  	 "id":"Servicion: Recursos Financieros",
+  	"Servicio": "Recursos Financieros",
   	"Pregunta1":"1.-�Tiene un horario adecuado para realizar mis tr�mites?",
   	"Pregunta2":"2.-�Me proporcionan una lista actualizada de los costos de los diferentes tr�mites?",
   	"Pregunta3":"3.-�El tiempo de espera para pagar en caja de recursos financieros es aceptable?",
@@ -61,7 +67,7 @@ export class AuditoriaServicioComponent {
   	 },
 
   	 {
-  	 "id":"Servicion: Residencia",
+  	"Servicio": "Residencia",
   	"Pregunta1":"1.-�El departamento de Gesti�n Tecnol�gica y Vinculaci�n me proporciona informaci�n del banco de proyectos de Residencias Profesionales?",
   	"Pregunta2":"2.-�La Divisi�n de Estudios Profesionales me da informaci�n de las opciones para realizar los anteproyectos de Residencias Profesionales?",
   	"Pregunta3":"3.-�El coordinador de carrera me da informaci�n para desarrollo de anteproyectos de Residencias Profesionales?",
@@ -73,7 +79,7 @@ export class AuditoriaServicioComponent {
   	"Pregunta9":"9.-�Mi asesor interno  me da a conocer la calificaci�n durante el periodo establecido?"
   	 },
   	 {
-  	 "id":"Servicion: Centro de Computo",
+  	"Servicio": "Centro de Computo",
   	"Pregunta1":"1.-�El Servicio de C�mputo tiene un horario adecuado?",
   	"Pregunta2":"2.-�Siempre hay m�quinas disponibles para realizar mi trabajo?",
   	"Pregunta3":"3.-�Siempre tengo disponible una conexion de Internet?",
@@ -85,7 +91,7 @@ export class AuditoriaServicioComponent {
   	"Pregunta9":"9.-�Mantienen una relaci�n atenta conmigo durante toda mi estancia en las instalaciones?"
   	 },
   	  {
-  	 "id":"Servicion: Servicios Escolares",
+  	"Servicio": "Servicios Escolares",
   	"Pregunta1":"1.-�El Departamento de Servicios Escolares tiene un horario adecuado de atenci�n?",
   	"Pregunta2":"2.-�El tiempo de respuesta a mis solicitudes es r�pido?",
   	"Pregunta3":"3.-�El tiempo de espera para ser atendido en la ventanilla es adecuado?",
@@ -97,7 +103,7 @@ export class AuditoriaServicioComponent {
   	"Pregunta9":"9.-�Mantienen una relaci�n atenta conmigo durante toda mi estancia en el departamento?"
   	 },
   	  {
-  	 "id":"Servicion: Servicios Social",
+  	"Servicio": "Servicios Social",
   	"Pregunta1":"1.-�La oficina de servicio social tiene un horario adecuado para realizar mis tr�mites?",
   	"Pregunta2":"2.-�La oficina de servicio social me ofrece un cat�logo de instituciones en donde puedo realizarlo?",
   	"Pregunta3":"3.-�La oficina de servicio social me gestiona apoyos para desarrollar mis actividades?",
@@ -109,7 +115,7 @@ export class AuditoriaServicioComponent {
   	"Pregunta9":"9.-�Matienen una relaci�n atenta conmigo durante toda mi estancia en su oficina?"
   	 }, 
   	 {
-  	 "id":"Servicion: Laboratorio correspondiente a su Carrera",
+  	"Servicio": "Laboratorio correspondiente a su Carrera",
   	"Pregunta1":"1.-�Los servicios necesarios para la operaci�n de los equipos son suficientes y adecuados?",
   	"Pregunta2":"2.-�	Los equipos son los suficientes y adecuados para el desarrollo de las pr�cticas?",
   	"Pregunta3":"3.-�Siempre tengo disponible material necesario para mis pr�cticas?",
@@ -119,7 +125,7 @@ export class AuditoriaServicioComponent {
   	"Pregunta7":"7.-�Me atienden en forma oportuna cuando solicito cualquier servicio?",
   	"Pregunta8":"8.-�Me atienden en forma amable cuando solicito informaci�n?",
   	"Pregunta9":"9.-�Mantienen una relaci�n atenta conmigo durante toda mi estancia en el laboratorio?"
-  	 }];
+  	 }];*/
   	 
 }
 
