@@ -21,10 +21,6 @@
 	display: none;
 }
 
-.card	{
-	margin: 42px 0;
-}
-
 @media (max-width: 720px) {
 	.ui-table-big {
 		display: none;
