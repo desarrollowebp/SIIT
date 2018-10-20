@@ -1,19 +1,17 @@
 .container {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  width: 101%;
+  padding-right: 1px;
+  padding-left: 1px;
   margin-right: auto;
   margin-left: auto;
-  padding-top: 15px;
+  padding-top: 1px;
 }
 
 .meniu[_ngcontent-c1] ul[_ngcontent-c1] li[_ngcontent-c1] {
   padding: 1.5px;
 }
 
-.meniu[_ngcontent-c1] ul[_ngcontent-c1] {
-  width: 90%;
-}
+
 
 h2,
 .h2 {
@@ -71,9 +69,15 @@ h2,
     overflow: hidden;
   }
 
-  .meniu[_ngcontent-c1] ul[_ngcontent-c1] {
+  .meniu[_ngcontent-c2] ul[_ngcontent-c2] {
+    justify-content: center;
+    text-align: center;
+    list-style: none;
     width: 96%;
-  }
+    display: flex;
+    flex-wrap: nowrap;
+    text-decoration: none;
+}
 
   .menu ul {
     display: flex;
@@ -97,6 +101,7 @@ h2,
   border: 200PX;
 }
 
+
 @media (min-width:100px) {
   .contenedor {
     width: 70%;
@@ -105,10 +110,11 @@ h2,
     background: #70193f;
     font-size: 15px;
   }
+  
 
   .meniu {
     margin: 0 auto;
-    width: 100%;
+    width: 96%;
     height: 40%;
     background: white;
   }
@@ -127,16 +133,12 @@ h3 {
   color: white;
 }
 
-p {
-  width: auto;
-}
-
 body {
   background: #f9f9f9;
 }
 
 #wrapper {
-  padding: 90px 15px;
+  padding: 15px 15px;
 }
 
 .navbar-expand-lg .navbar-nav.side-nav {
@@ -206,7 +208,7 @@ th {
   justify-content: center;
   text-align: center;
   list-style: none;
-  width: 100%;
+  width: 90%;
   display: flex;
   flex-wrap: nowrap;
   text-decoration: none;
