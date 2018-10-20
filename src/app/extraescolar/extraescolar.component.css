@@ -321,6 +321,7 @@ body {
   align-items: center;
   text-align: center;
   margin: 15% auto;
+  width: 100%
 
 }
 .etiqueta{
@@ -333,7 +334,7 @@ body {
 }
 
 
-#tablaModal table {
+#tablaModal{
   width: 100%;
   border-collapse: collapse;
 }
@@ -387,6 +388,7 @@ body {
 
 .modal-body {
   padding: 2px 16px;
+
 }
 
 .modal-footer {
@@ -458,6 +460,11 @@ body {
 #tablaModal th {
   background-color: #6F193F;
   color: white;
+
+}
+#tablaModal {
+  width: 100%;
+
 }
 
 }
