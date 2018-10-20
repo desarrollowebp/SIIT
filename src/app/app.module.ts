@@ -21,12 +21,8 @@ import { ExtraescolarComponent } from './extraescolar/extraescolar.component';
 import { EvaluacionDocenteComponent } from './evaluacion-docente/evaluacion-docente.component';
 import { AuditoriaServicioComponent } from './auditoria-servicio/auditoria-servicio.component';
 import { ListaModulosComponent } from './lista-modulos/lista-modulos.component';
-<<<<<<< HEAD
 import { CentroInfoComponent } from './centro-info/centro-info.component';
 
-=======
-import { MenuHComponent } from './menu-h/menu-h.component';
->>>>>>> a52569ad985e721259a18b9dfdb927a4f94846ec
 
 const routes:Routes = [
   { path: '', component: ListaModulosComponent },
@@ -47,6 +43,7 @@ const routes:Routes = [
   { path: 'extraescolar', component: ExtraescolarComponent },
   { path: 'evaluacionDocente', component: EvaluacionDocenteComponent },
   { path: 'auditoriaServicio', component: AuditoriaServicioComponent },
+  { path: 'centroInfo', component: CentroInfoComponent},
   { path: 'menuH', component: MenuHComponent }
 ]
 
@@ -71,11 +68,7 @@ const routes:Routes = [
     EvaluacionDocenteComponent,
     AuditoriaServicioComponent,
     ListaModulosComponent,
-<<<<<<< HEAD
     CentroInfoComponent,
-=======
-    MenuHComponent,
->>>>>>> a52569ad985e721259a18b9dfdb927a4f94846ec
   ],
   imports: [
     BrowserModule,
