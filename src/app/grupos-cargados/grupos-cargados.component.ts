@@ -10,7 +10,8 @@ export class GruposCargadosComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    	(function(){
+
+  	(function(){
     'use strict';
 	
 	$.fn.extend({
@@ -59,6 +60,60 @@ export class GruposCargadosComponent implements OnInit {
 	});
 	$('[data-toggle="tooltip"]').tooltip();
 })
-  }
+ 	
 
+  	    $('.pestanas').click(function(evento){
+    	if($(this).data("sem")==0)
+    	{
+    		$('.semestresdiv').show();
+    	}else{if($(this).data("sem")==1)
+	    	  {
+	    	  	$('.semestresdiv').hide();
+	    		$('#semestre1').show(); 
+	    	  }else{if($(this).data("sem")==2)
+				     {
+				     	$('.semestresdiv').hide();
+				    	$('#semestre2').show();
+				     }else{if($(this).data("sem")==3)
+					    	  {
+					    	  	$('.semestresdiv').hide();
+					    		$('#semestre3').show();
+					    	  }else{if($(this).data("sem")==4)
+							    	  {
+							    	  	$('.semestresdiv').hide();
+							    		$('#semestre4').show();
+							    	  }else{if($(this).data("sem")==5)
+								    	    {
+								    	    	$('.semestresdiv').hide();
+								    			$('#semestre5').show();
+								    	    }else{if($(this).data("sem")==6)
+										    	  {
+										    	  	$('.semestresdiv').hide();
+										    		$('#semestre6').show();
+										    	  }else{if($(this).data("sem")==7)
+												    	  {
+												    	  	$('.semestresdiv').hide();
+												    		$('#semestre7').show();
+												    	  }else{if($(this).data("sem")==8)
+														    	  {
+														    	  	$('.semestresdiv').hide();
+														    		$('#semestre8').show();
+														    	  }else{if($(this).data("sem")==9)
+																    	  {
+																    	  	$('.semestresdiv').hide();
+																    		$('#semestre9').show();
+																    	  }else{
+																    				$('.semestresdiv').hide();
+																    		   }  
+														    		   }
+												    		   }
+							    		   			   }
+								    		   }
+							    		   }
+			    				   }
+						  }
+				    }
+	    	 }
+  })
+}
 }
