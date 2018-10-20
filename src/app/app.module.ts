@@ -65,7 +65,6 @@ const routes:Routes = [
     EvaluacionDocenteComponent,
     AuditoriaServicioComponent,
     ListaModulosComponent,
-    TiposComponent,
   ],
   imports: [
     BrowserModule,
