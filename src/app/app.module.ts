@@ -21,6 +21,7 @@ import { ExtraescolarComponent } from './extraescolar/extraescolar.component';
 import { EvaluacionDocenteComponent } from './evaluacion-docente/evaluacion-docente.component';
 import { AuditoriaServicioComponent } from './auditoria-servicio/auditoria-servicio.component';
 import { ListaModulosComponent } from './lista-modulos/lista-modulos.component';
+import { CentroInfoComponent } from './centro-info/centro-info.component';
 
 
 const routes:Routes = [
@@ -65,6 +66,7 @@ const routes:Routes = [
     EvaluacionDocenteComponent,
     AuditoriaServicioComponent,
     ListaModulosComponent,
+    CentroInfoComponent,
   ],
   imports: [
     BrowserModule,
