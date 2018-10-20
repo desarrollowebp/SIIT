@@ -16,6 +16,12 @@ thead tr:first-child {
   border: none;
 
 }
+thead {
+  background: #70193f;
+  color: #fff;
+  border: none;
+}
+
 
 th {
   font-weight: 500;
@@ -246,6 +252,19 @@ li:hover{
 
 /*Empieza el modal*/
 /*modal */
+
+.boton{
+  margin-bottom: auto;
+  border-radius: 5px;
+  color: white;
+  background: #70193f;
+}
+#btn-cancelar{
+  margin-bottom: 15px;
+}
+.boton:hover{
+  cursor: pointer;
+}
 
 .visibleNo {
   /* Hidden by default */
