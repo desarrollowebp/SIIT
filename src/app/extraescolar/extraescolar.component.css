@@ -14,6 +14,7 @@ thead tr:first-child {
   background: #70193f;
   color: #fff;
   border: none;
+
 }
 
 th {
@@ -64,6 +65,9 @@ td:last-child {
 
   thead {
     display: flow-root;
+    background: #70193f;
+    width: 100%;
+    color: white;
   }
 
   tr:nth-of-type(2n) {
