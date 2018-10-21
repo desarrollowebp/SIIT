@@ -21,8 +21,7 @@ export class ExtraescolarComponent implements OnInit {
   ngOnInit() {
     $(".submenu").click(function() {
       $(this).children("ul").slideToggle();
-
-    }
+     }
     )
 
     $("ul").click(function(p) {
@@ -30,15 +29,9 @@ export class ExtraescolarComponent implements OnInit {
     })
 
     if ($(window).width() > 720) {
-
-
       $(".submenu").children("ul").show();
-
-
-
     }
     else {
-
     }
 
 
