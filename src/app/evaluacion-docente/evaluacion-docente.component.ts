@@ -11,15 +11,4 @@ export class EvaluacionDocenteComponent implements OnInit {
 
   ngOnInit() {
   }
-
-  preguntas = [
-    'Cuando?',
-    'Donde?',
-    'Quien?',
-  ]
-  maestros = [
-    {nombre: 'Sofia', materia: 'Estadistica'},
-    {nombre: 'Miguel', materia: 'Historia'},
-    {nombre: 'Betty', materia: 'Teoria Lineal'},
-  ]
 }
