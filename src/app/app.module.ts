@@ -22,6 +22,7 @@ import { EvaluacionDocenteComponent } from './evaluacion-docente/evaluacion-doce
 import { AuditoriaServicioComponent } from './auditoria-servicio/auditoria-servicio.component';
 import { ListaModulosComponent } from './lista-modulos/lista-modulos.component';
 import { CodigoColoresMateriaComponent } from './codigo-colores-materia/codigo-colores-materia.component';
+import { MenuHComponent } from './menu-h/menu-h.component';
 
 const routes:Routes = [
   { path: '', component: ListaModulosComponent },
@@ -43,6 +44,7 @@ const routes:Routes = [
   { path: 'evaluacionDocente', component: EvaluacionDocenteComponent },
   { path: 'auditoriaServicio', component: AuditoriaServicioComponent },
   { path: 'codigoColoresMateria', component: CodigoColoresMateriaComponent}
+  { path: 'menuH', component: MenuHComponent }
 ]
 
 @NgModule({
@@ -67,6 +69,7 @@ const routes:Routes = [
     AuditoriaServicioComponent,
     ListaModulosComponent,
     CodigoColoresMateriaComponent,
+    MenuHComponent,
   ],
   imports: [
     BrowserModule,

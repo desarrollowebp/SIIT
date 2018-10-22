@@ -11,5 +11,4 @@ export class EvaluacionDocenteComponent implements OnInit {
 
   ngOnInit() {
   }
-
 }
