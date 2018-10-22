@@ -10,7 +10,7 @@ export class CodigoColoresMateriaComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    $(".submenu").click(function() {
+    $(".submenu_12").click(function() {
       $(this).children("ul").slideToggle();
 
     }
@@ -23,7 +23,7 @@ export class CodigoColoresMateriaComponent implements OnInit {
     if ($(window).width() > 720) {
 
 
-      $(".submenu").children("ul").show();
+      $(".submenu_12").children("ul").show();
 
 
 

@@ -206,7 +206,7 @@
 
 
 
-.menu .submenu .expspan span{
+.menu .submenu_12 .expspan span{
   position: relative;
   right: 5px;
   top: 5px;
@@ -223,7 +223,7 @@
 
   }
 
-  .submenu {
+  .submenu_12 {
     width: 100%;
     height: 100%;
 
