@@ -44,9 +44,11 @@ const routes:Routes = [
   { path: 'extraescolar', component: ExtraescolarComponent },
   { path: 'evaluacionDocente', component: EvaluacionDocenteComponent },
   { path: 'auditoriaServicio', component: AuditoriaServicioComponent },
-  { path: 'menuH', component: MenuHComponent },{ 
+  { path: 'menuH', component: MenuHComponent },
+  { 
     path: 'datos-alumno', component:DatosAlumnoComponent
   }
+  ,{path: 'horario-horario', component:HorarioHorarioComponent}
 ]
 
 @NgModule({
