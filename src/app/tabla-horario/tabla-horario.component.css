@@ -2,10 +2,10 @@
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
-
-  }
   
-tr #creditos
+    padding-top: 15px;
+  }
+  tr #creditos
   {
       background: #70193f;
       color: white;
@@ -15,6 +15,7 @@ tr #cr
 {
     background: white;
 }
+  
   h2,
   .h2 {
     font-size: 1.2rem;
@@ -22,6 +23,39 @@ tr #cr
   
   
   
+  
+
+  
+
+    h2,
+    .h2 {
+      font-size: 2rem;
+    }
+
+  @media (min-width:100px) {
+    .contenedor {
+      width: 70%;
+      min-width: 100%;
+      max-width: 100%;
+      background: #70193f;
+      font-size: 15px;
+    }
+  
+    .meniu {
+      margin: 0 auto;
+      width: 100%;
+      height: 40%;
+    
+    }
+
+    .meniu ul {
+    
+      margin: 0 auto;
+      width: 100%;
+      background: white;
+     padding-left: 5px;
+    }
+  }
   
   h3 {
     display: block;
@@ -41,13 +75,21 @@ tr #cr
   }
   
 
+  #wrapper {
+    padding: 90px 15px;
+  }
+  
+  .navbar-expand-lg .navbar-nav.side-nav {
+    flex-direction: column;
+  }
+  
   .card {
     
     border-radius: 0;
     box-shadow: none;
     border: none;
   }
-
+  
   .header-top {
     box-shadow: 0 3px 5px rgba(0, 0, 0, .1)
   }
@@ -93,7 +135,7 @@ tr #cr
     }
   }
   
-  
+ 
   #table th {
     background: #70193f;
     color: white;
