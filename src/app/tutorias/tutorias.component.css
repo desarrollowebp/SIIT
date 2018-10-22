@@ -6,6 +6,7 @@
     padding: 0px; 
 }
 
+
 .container ul {
     padding: 0px;
     margin: auto;
@@ -40,13 +41,20 @@
 .tuto{
     text-align: center;
     color: #70193F;
-    font-size: 35;
+    
 }
+
+.alumno{
+    text-align: center;
+    color: #597EAA;
+    line-height: 2px;
+}
+
 
 .lab{
     text-align: right;
     color: #597EAA; 
-    font-size: 30;
+   
 }
 
 @media screen and (max-width: 1250px){
@@ -66,3 +74,14 @@
         margin: auto;
     }
 }
+input[type="checkbox"] { 
+    
+  height: 15px; 
+  width: 15px; 
+  margin-right: auto;
+}   
+
+
+
+
+
