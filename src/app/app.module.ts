@@ -23,6 +23,7 @@ import { AuditoriaServicioComponent } from './auditoria-servicio/auditoria-servi
 import { ListaModulosComponent } from './lista-modulos/lista-modulos.component';
 import { MenuHComponent } from './menu-h/menu-h.component';
 import { DatosAlumnoComponent } from './datos-alumno/datos-alumno.component';
+import { TablaHorarioComponent } from './tabla-horario/tabla-horario.component';
 
 const routes:Routes = [
   { path: '', component: ListaModulosComponent },
@@ -73,6 +74,7 @@ const routes:Routes = [
     ListaModulosComponent,
     MenuHComponent,
     DatosAlumnoComponent,
+    TablaHorarioComponent,
   ],
   imports: [
     BrowserModule,
