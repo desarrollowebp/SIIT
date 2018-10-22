@@ -10,6 +10,28 @@ export class AvanceMateriaAlumnoComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    $(".submenu_11").click(function() {
+     $(this).children("ul").slideToggle();
+
+   }
+   )
+
+   $("ul").click(function(p) {
+     p.stopPropagation();
+   })
+
+   if ($(window).width() > 720) {
+
+
+     $(".submenu_11").children("ul").show();
+
+
+
+   }
+   else {
+
+   }
+
   }
 
 }
