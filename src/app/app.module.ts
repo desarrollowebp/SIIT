@@ -48,7 +48,7 @@ const routes:Routes = [
   { 
     path: 'datos-alumno', component:DatosAlumnoComponent
   }
-  ,{path: 'horario-horario', component:HorarioHorarioComponent}
+  
 ]
 
 @NgModule({
