@@ -93,3 +93,26 @@ img{
     left: 2px;
     background-color: none;
 }
+
+@media screen 
+  and (min-width: 1200px) {
+      img{
+          width: 150px;
+          height: auto;
+      }
+      h4{
+          font-size: 20px;
+      }
+      .container,.box-cat,.slide-center,.slide-center2,.list-cat,.list-cat2,.list-cat3{
+          height: 180px;
+      }
+      .slide-left,.slide-left2,.slide-right,.slide-right2{
+          line-height: 140px;
+      }
+      .box-cat{
+          width: 189px;
+      }
+      .container{
+          width: 1000px;
+      }
+  }
