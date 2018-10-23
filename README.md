@@ -1,14 +1,20 @@
 # SIIT | Desarrollo Web Profesional
 
 
-## Aviso importante
-Para el lunes deben tener clonado el repositorio en su computadora, ya que se explicara el
-lunes conceptos importantes. Recuerden que se esta tomando nota de todo lo que se entrega.
+## Integracion
+La integracion esta completa. Hay algunas notas que se pueden encontrar en el archivo de
+[integracion](integracion.md) sobre sus modulos. Ya que la integracion esta en `master`
+pueden bajar cambios normalmente con `git pull origin master`.
 
+Visiten los modulos de sus compañeros, y si gustan, brinden un poco de retroalimentacion
+y/o critica constructiva para mejorar la experencia del SIIT.
 
-## Recordatorio
-Recuerden avisar a sus compañeros faltantes que entren a la plataforma para que se vayan
-familiarizado y haciendo los cambios de sus respectivos modulos.
+Como nota final (y general): muchos modulos estan bien definidos y algunos tenian excelente
+funcionalidad, y a los demas les faltaba un poco para que tuvieran la funcionalidad requerida,
+pero este sistema ya esta en pie. Lo siguiente seria trabajar con las *variables*, *mocks*
+y *servicios* para manejar la comunicacion de datos y el estado de la aplicacion. Un enlace
+de interes pudiera ser el [tutorial oficial de Angular](https://angular.io/tutorial), y la
+pagina de [Angular](https://angular.io/) en si.
 
 
 ## Archivos del proyecto
