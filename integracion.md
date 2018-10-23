@@ -47,6 +47,17 @@ originario que causo el punto que la nota dice.
 - Bootstrap framework fue agregado al `index.html`
 - Libreria de jQuery fue agregada al `index.html`
 
+
+## `seleccion-materias`
+- Codigo de colores tapa titulo
+
+
+## `preficha-pago`
+- Referencia a scripts de modulos de node de forma relativa en `index.html`
+- Instrucciones no se vuelven a colapsar
+- Impresion muestra elemento debajo del modal
+
+
 ## `horario-reinscripcion`
 - Libreria de jQuery fue agregada al `index.html`
 
