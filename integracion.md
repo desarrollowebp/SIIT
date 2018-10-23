@@ -62,5 +62,17 @@ originario que causo el punto que la nota dice.
 - Libreria de jQuery fue agregada al `index.html`
 
 
+## `grupos-cargados`
+- Efecto de *hover* en pestañas de semestre:
+  - Desplaza secciones debajo de las pestañas cuanto *Todos Semestres* esta seleccionado
+  - Se comporta *raro* con una seleccion de un semestre del 1 al 9 cuando se posiciona en la mitad inferior
+
+
 ## `extraescolar`
 - Las opciones en el modal no modifican la seleccion
+
+
+## `evaluacion-docente`
+- Los cambios que se realizaron para arreglar `master` afectan el modulo
+- Las preguntas no son suficientes y no tiene relacion con la encuesta actual
+- Los *radio inputs* no limitan la seleccion a uno
