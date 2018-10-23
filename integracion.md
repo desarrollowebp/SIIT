@@ -43,6 +43,11 @@ originario que causo el punto que la nota dice.
 - Demasiados conflictos
 
 
+## `residencias`
+- `package-lock.json` tiene artefactos de los conflictos
+- El color de la fuente en la caja de titulo no es muy contrastante
+
+
 ## `tutorias`
 - Bootstrap framework fue agregado al `index.html`
 - Libreria de jQuery fue agregada al `index.html`
