@@ -31,8 +31,8 @@
 .btn {
    margin-left: 400px;
    width: 20%;
-   min-width: 50px;  // add this if you want
-   max-width: 300px; // add this if  you want, adjust accordingly
+   min-width: 50px; 
+   max-width: 300px; 
 }
 .btn:hover{
 	color:#7CCFF7;
@@ -50,4 +50,7 @@
 		@media (max-width:768px)
 	{
 		.h4, h4 {
-		font-size: 1.1rem;	}
+		font-size: 1.1rem;
+		}
+	}
+}

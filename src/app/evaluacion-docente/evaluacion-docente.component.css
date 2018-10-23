@@ -1,0 +1,36 @@
+.bg-guinda {
+	background-color: #70193f;
+}
+
+.btn-guinda {
+	color: #fff;
+	background-color: #70193f;
+	border-color: #70193f;
+}
+
+.row {
+	margin: 42px 0;
+}
+
+.ui-table-wrapper {
+	display: block;
+	position: relative;
+}
+
+.ui-table-sm {
+	display: none;
+}
+
+.card	{
+	margin: 42px 0;
+}
+
+@media (max-width: 720px) {
+	.ui-table-big {
+		display: none;
+	}
+
+	.ui-table-sm {
+		display: table;
+	}
+}
