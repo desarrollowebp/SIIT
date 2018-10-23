@@ -41,7 +41,7 @@ html {
     flex-direction: column; 
     justify-content: center;
     width: 100%;
-    min-height: 80%;
+    height: 500px;
     padding: 20px;
     background-color: white;
     vertical-align: center;
