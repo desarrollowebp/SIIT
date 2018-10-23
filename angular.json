@@ -25,10 +25,12 @@
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.css",
+              "node_modules/jquery-ui/themes/base/progressbar.css",
               "src/styles.css"
             ],
             "scripts": [
-              "node_modules/jquery/dist/jquery.js"
+              "node_modules/jquery-ui-dist/jquery-ui.min.js"
+              
             ]
           },
           "configurations": {
