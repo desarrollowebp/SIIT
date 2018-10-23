@@ -43,10 +43,13 @@ originario que causo el punto que la nota dice.
 - Demasiados conflictos
 
 
+## `tutorias`
+- Bootstrap framework fue agregado al `index.html`
+- Libreria de jQuery fue agregada al `index.html`
+
 ## `horario-reinscripcion`
-- Libreria de jQuery fue agregada al index.html
+- Libreria de jQuery fue agregada al `index.html`
 
 
 ## `extraescolar`
 - Las opciones en el modal no modifican la seleccion
-

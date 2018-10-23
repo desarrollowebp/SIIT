@@ -1,3 +1,435 @@
-<p>
-  seleccion-materias works!
-</p>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Seeleccion materias</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+</head>
+<body>
+  <main>
+    <section class="registro">
+      <div class="menu">
+        <h1>Semestres</h1>
+        <h4>Presiona semestre y desliza horizontalmente </h4>
+        <ul>
+
+          <li class="submenu">
+            <a> Semestre 1<span class="icon-angle-down"> </span> </a>
+            <ul>
+              <li class="vertical">
+                <div class="materia">
+                  <div class="estado">
+                    <p>Calculo diferencial</p>
+                    <p>Numero creditos</p>
+                    <button type="button" name="button" class="myBtn" (click)="func()">Seleccionar</button>
+                  </div>
+
+                </div>
+                <div class="materia">
+                  <div class="estado">
+                    <p>Programacion orientada a los objets texto largo</p>
+                    <p>Numero creditos</p>
+                    <button type="button" name="button" class="myBtn" onclick="myFunction()">Seleccionar</button>
+
+                  </div>
+                </div>
+                <div class="materia">
+                  <div class="estado">
+                    <p>Programacion orientada a los objets texto largo</p>
+                    <p>Numero creditos</p>
+                    <button type="button" name="button" class="myBtn" onclick="myFunction()">Seleccionar</button>
+
+                  </div>
+                </div>
+                <div class="materia">
+                  <div class="estado">
+                    <p>Programacion orientada a los objets texto largo</p>
+                    <p>Numero creditos</p>
+                    <button type="button" name="button" class="myBtn" onclick="myFunction()">Seleccionar</button>
+
+                  </div>
+                </div>
+
+              </li>
+            </ul>
+          </li>
+          <li class="submenu">
+            <a> Semestre 2<span class="icon-angle-down"> </span> </a>
+            <ul>
+              <li class="vertical">
+                <div class="materia">
+                  <div class="estado">
+                    <p>Calculo diferencial</p>
+                    <p>Numero creditos</p>
+                    <button type="button" name="button" class="myBtn" onclick="myFunction()">Seleccionar</button>
+                  </div>
+
+                </div>
+                <div class="materia">
+                  <div class="estado">
+                    <p>Programacion orientada a los objets texto largo</p>
+                    <p>Numero creditos</p>
+                    <button type="button" name="button" class="myBtn" onclick="myFunction()">Seleccionar</button>
+
+                  </div>
+                </div>
+                <div class="materia">
+                  <div class="estado">
+                    <p>Programacion orientada a los objets texto largo</p>
+                    <p>Numero creditos</p>
+                    <button type="button" name="button" class="myBtn" onclick="myFunction()">Seleccionar</button>
+
+                  </div>
+                </div>
+                <div class="materia">
+                  <div class="estado">
+                    <p>Programacion orientada a los objets texto largo</p>
+                    <p>Numero creditos</p>
+                    <button type="button" name="button" class="myBtn" onclick="myFunction()">Seleccionar</button>
+
+                  </div>
+                </div>
+                <div class="materia">
+                  <div class="estado">
+                    <p>Programacion orientada a los objets texto largo</p>
+                    <p>Numero creditos</p>
+                    <button type="button" name="button" class="myBtn" onclick="myFunction()">Seleccionar</button>
+
+                  </div>
+                </div>
+                <div class="materia">
+                  <div class="estado">
+                    <p>Programacion orientada a los objets texto largo</p>
+                    <p>Numero creditos</p>
+                    <button type="button" name="button" class="myBtn" onclick="myFunction()">Seleccionar</button>
+
+                  </div>
+                </div>
+
+
+
+              </li>
+            </ul>
+          </li>
+          <li class="submenu">
+            <a> Semestre 3<span class="icon-angle-down"> </span> </a>
+            <ul>
+
+            </ul>
+          </li>
+          <li class="submenu">
+            <a h> Semestre 4<span class="icon-angle-down"> </span> </a>
+            <ul>
+
+            </ul>
+          </li>
+          <li class="submenu">
+            <a> Semestre 5<span class="icon-angle-down"> </span> </a>
+            <ul>
+
+            </ul>
+          </li>
+          <li class="submenu">
+            <a> Semestre 6<span class="icon-angle-down"> </span> </a>
+            <ul>
+
+            </ul>
+          </li>
+          <li class="submenu">
+            <a> Semestre 7<span class="icon-angle-down"> </span> </a>
+            <ul>
+
+            </ul>
+          </li>
+          <li class="submenu">
+            <a> Semestre 8<span class="icon-angle-down"> </span> </a>
+            <ul>
+
+            </ul>
+          </li>
+          <li class="submenu">
+            <a> Semestre 9<span class="icon-angle-down"> </span> </a>
+            <ul>
+
+            </ul>
+          </li>
+
+        </ul>
+
+        <app-codigo-colores-materia></app-codigo-colores-materia>
+
+        <h4>Materias Seleccionadas</h4>
+        <h5>Presiona el recuadro para ver/eliminar materia</h5>
+        <div class="container">
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="panel panel-primary">
+                <div class="panel-heading">
+
+
+                </div>
+
+                <table class="table table-hover" id="dev-table">
+                  <thead>
+                    <tr>
+                      <th>Materia / Docente</th>
+                      <th>Grupo</th>
+                      <th>Cr</th>
+                      <th>LUNES</th>
+                      <th>MARTES</th>
+                      <th>MIERCOLES</th>
+                      <th>JUEVES</th>
+                      <th>VIERNES</th>
+                      <th>SABADO</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>CALCULO DIFERENCIAL / FAVILA HERRERA LEONEL HUGO</td>
+                      <td>1Y</td>
+                      <td>5</td>
+                      <td>07:00-08:00 SC6</td>
+                      <td>07:00-08:00 SC6</td>
+                      <td>07:00-08:00 SC6</td>
+                      <td>07:00-08:00 SC6</td>
+                      <td>07:00-08:00 SC6</td>
+                      <td></td>
+                      <td><button type="button" id="btn-eliminar">Eliminar</button></td>
+                    </tr>
+                    <tr>
+                      <td>CONTABILIDAD FINANCIERA / VALDERRAMA VELAZQUEZ EDITH</td>
+                      <td>2Y</td>
+                      <td>4</td>
+                      <td>10:00-11:00 SC10</td>
+                      <td>10:00-11:00 SC10</td>
+                      <td>10:00-11:00 SC10</td>
+                      <td>10:00-11:00 SC10</td>
+                      <td></td>
+                      <td></td>
+                      <td><button type="button" id="btn-eliminar">Eliminar</button></td>
+                    </tr>
+                    <tr>
+                      <td>CALCULO INTEGRAL / REYES MARTINEZ LUIS GUSTAVO</td>
+                      <td>1Y</td>
+                      <td>5</td>
+                      <td>09:00-10:00 SC10</td>
+                      <td>09:00-10:00 SC10</td>
+                      <td>09:00-10:00 SC10</td>
+                      <td>09:00-10:00 SC10</td>
+                      <td>09:00-10:00 SC10</td>
+                      <td></td>
+                      <td><button type="button" id="btn-eliminar">Eliminar</button></td>
+                    </tr>
+                  </tbody>
+                </table>
+
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+
+
+      </div>
+
+      <div class="menu movil ">
+        <ul class>
+          <li class="submenu horarioseparacion ">
+            <p class="NombreMateria">Porgramacion Orientada a objetosaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa CR:X GGP: X </p>
+            <ul>
+              <li class="horariodes">
+                <div class="materia">
+                  <div class="dias">
+                    <div class="infodia">
+                      <p>Lunes</p>
+                      <p>19:00-20:00</p>
+                      <p>LCY</p>
+                    </div>
+                    <div class="infodia">
+                      <p>Martes</p>
+                      <p>19:00-20:00</p>
+                      <p>LCY</p>
+                    </div>
+                    <div class="infodia">
+                      <p>Miercoles</p>
+                      <p>19:00-20:00</p>
+                      <p>LCY</p>
+                    </div>
+                  </div>
+                  <div class="dias">
+                    <div class="infodia">
+                      <p>Jueves</p>
+                      <p>19:00-20:00</p>
+                      <p>LCY</p>
+                    </div>
+                    <div class="infodia">
+                      <p>Viernes</p>
+                      <p>19:00-20:00</p>
+                      <p>LCY</p>
+                    </div>
+                    <div class="infodia">
+                      <p>Sabado</p>
+                      <p>19:00-20:00</p>
+                      <p>LCY</p>
+                    </div>
+                  </div>
+                  <button type="button" id="btn-eliminar">Eliminar</button>
+
+
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li class="submenu horarioseparacion">
+            <p class="NombreMateria">Porgramacion Orientada a objetos CR:X GGP: X<span class="demo-icon icon-arrow"> </span> </p>
+            <ul>
+              <li class="horariodes">
+                <div class="materia">
+                  <div class="dias">
+                    <div class="infodia">
+                      <p>Lunes</p>
+                      <p>19:00-20:00</p>
+                      <p>LCY</p>
+                    </div>
+                    <div class="infodia">
+                      <p>Martes</p>
+                      <p>19:00-20:00</p>
+                      <p>LCY</p>
+                    </div>
+                    <div class="infodia">
+                      <p>Miercoles</p>
+                      <p>19:00-20:00</p>
+                      <p>LCY</p>
+                    </div>
+                  </div>
+                  <div class="dias">
+                    <div class="infodia">
+                      <p>Jueves</p>
+                      <p>19:00-20:00</p>
+                      <p>LCY</p>
+                    </div>
+                    <div class="infodia">
+                      <p>Viernes</p>
+                      <p>19:00-20:00</p>
+                      <p>LCY</p>
+                    </div>
+                    <div class="infodia">
+                      <p>Sabado</p>
+                      <p>19:00-20:00</p>
+                      <p>LCY</p>
+                    </div>
+                  </div>
+                  <button type="button" id="btn-eliminar">Eliminar</button>
+
+
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li class="submenu horarioseparacion">
+            <p class="NombreMateria">Porgramacion Orientada a objetos CR:X GGP: X<span class="demo-icon icon-arrow"> </span> </p>
+            <ul>
+              <li class="horariodes">
+                <div class="materia">
+                  <div class="dias">
+                    <div class="infodia">
+                      <p>Lunes</p>
+                      <p>19:00-20:00</p>
+                      <p>LCY</p>
+                    </div>
+                    <div class="infodia">
+                      <p>Martes</p>
+                      <p>19:00-20:00</p>
+                      <p>LCY</p>
+                    </div>
+                    <div class="infodia">
+                      <p>Miercoles</p>
+                      <p>19:00-20:00</p>
+                      <p>LCY</p>
+                    </div>
+                  </div>
+                  <div class="dias">
+                    <div class="infodia">
+                      <p>Jueves</p>
+                      <p>19:00-20:00</p>
+                      <p>LCY</p>
+                    </div>
+                    <div class="infodia">
+                      <p>Viernes</p>
+                      <p>19:00-20:00</p>
+                      <p>LCY</p>
+                    </div>
+                    <div class="infodia">
+                      <p>Sabado</p>
+                      <p>19:00-20:00</p>
+                      <p>LCY</p>
+                    </div>
+                  </div>
+                  <button type="button" id="btn-eliminar">Eliminar</button>
+
+
+                </div>
+              </li>
+            </ul>
+          </li>
+
+        </ul>
+
+      </div>
+      <div class="centarbtn">
+        <button type="button" id="btn-guardar">Guardar y Terminar</button>
+      </div>
+    </section>
+
+    <div id="myModal" class="{{modals}}">
+
+      <!-- Modal content -->
+      <div class="form">
+        <h4 >
+          Grupos disponibles  "nombre materia" Presiona para mostrar horario
+        </h4>
+        <form>
+          <table>
+            <tr>
+              <th>Grupo</th>
+              <th>Profesor Asignado</th>
+              <th>Horario</th>
+              <th>Lugares Disponibles</th>
+              <th></th>
+            </tr>
+            <tr>
+              <td>2Z</td>
+              <td>ROBLES ZAPATA JESUS ROBERTO</td>
+              <td>19:00-20:00</td>
+              <td>30</td>
+              <td><button type="button" id="btn-seleccionar">Seleccionar</button></td>
+            </tr>
+            <tr>
+              <td>2Y</td>
+              <td>REYES MARTINEZ LUIS GUSTAVO</td>
+              <td>07:00-08:00</td>
+              <td>20</td>
+              <td><button type="button" id="btn-seleccionar2">Seleccionar</button></td>
+            </tr>
+            <tr>
+
+
+
+            </tr>
+
+
+          </table>
+        </form>
+        <button id="btn-cancelar" (click)="cerrar()">Cancelar</button>
+      </div>
+
+    </div>
+
+  </main>
+</body>
+</html>
