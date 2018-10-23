@@ -1,4 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import *as $ from 'jquery'
 
 import { VerificacionBecaComponent } from './verificacion-beca.component';
 
