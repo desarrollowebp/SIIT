@@ -1,39 +1,31 @@
-
 .container {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-top: 15px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 15px;
 }
+
 .meniu[_ngcontent-c1] ul[_ngcontent-c1] li[_ngcontent-c1] {
   padding: 1.5px;
-  
-}
-h2, .h2 {
-    font-size: 1.2rem;
 }
 
-/* 100% algot de ventava uvh*/
-.menu {
-  background: white;
-  width: 100%;
-  height: 200px;
-  top: 10px;
-  transition: all 0.5s;
-  
+.meniu[_ngcontent-c2] ul[_ngcontent-c2] {
+  justify-content: center;
+  text-align: center;
+  list-style: none;
+  width: 90%;
+  display: flex;
+  flex-wrap: nowrap;
+  text-decoration: none;
 }
 
-
-
-.menu span {
-  position: absolute;
-  right: 5px;
-  color: blue;
+h2,
+.h2 {
+  font-size: 1.2rem;
 }
 
-/*probemmas con margin*/
 .menu ul {
   background: white;
   text-decoration: none;
@@ -50,7 +42,6 @@ h2, .h2 {
   text-decoration: none;
 }
 
-/*ayuda a jquery*/
 .menu ul li:hover ul {
   display: none;
   position: static;
@@ -64,7 +55,7 @@ h2, .h2 {
 .menu ul li p {
   font-size: 9px;
   text-align: center;
- overflow-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .menu ul li a {
@@ -73,31 +64,20 @@ h2, .h2 {
   background-color: white;
 }
 
-  button {
-  padding: 3px 3px;
-  font-size: 9px;
-  padding-bottom: 7px;
-  text-align: center;
-  text-decoration: none;
-  outline: none;
-  color: white;
-  background-color: #70193F;
-  border: none;
-  border-radius: 15px;
-  margin-bottom: 5px;
-}
-
-.vertical {
-  overflow: auto;
-  white-space: nowrap;
-}
-
-/*alt 126 tllde selecciona menu*/
 #menu-bar:checked~.menu {
   transform: translateX(0);
 }
 
 @media(min-width:780px) {
+  .meniu[_ngcontent-c2][_ngcontent-c2] ul[_ngcontent-c2][_ngcontent-c2] {
+    justify-content: center;
+    text-align: center;
+    list-style: none;
+    width: 96%;
+    display: flex;
+    flex-wrap: nowrap;
+    text-decoration: none;
+}
   .menu {
     width: 1000px;
     height: 80%;
@@ -106,347 +86,174 @@ h2, .h2 {
     overflow: hidden;
   }
 
-  .submenu {
-    width: 100%;
-    height: 100%;
-    font-size: 10px;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  .materia {
-    display: block;
-    padding: 0 0 0 0;
-  }
-
-  .estado {
-    width: 100%;
-    max-width: 80px;
-    max-height: 90px;
-    word-wrap: break-word;
-  }
-
-  .menu span {
-    position: static;
-    right: auto;
-    color: blue;
-  }
+  
 
   .menu ul {
     display: flex;
   }
 
-  .vertical {
-    overflow: visible;
-    white-space: normal;
-  }
   .menu ul li p {
     font-size: 15px;
-    
   }
-  
-h2, .h2 {
+
+  h2,
+  .h2 {
     font-size: 2rem;
-}
+  }
 }
 
-.contenedor{
-	width:800px;
-	background: #70193f;
-	margin-right: 375;
-	margin-left: 375;
-	border: 200PX;
-	
-}
-/* El hijo siempre lleva margin 0 y auto para centrarlo al div padre*/
-.meniu{
 
-margin: 0 auto;
-width: 100%;
-height: 40%;
-background:white;
 
+@media (min-width:100px) {
+  
+  .contenedor {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    background: #70193f;
+    font-size: 15px;
+  }
+
+  .meniu {
+    margin: 0 auto;
+   width: 96%;
+    height: 40%;
+    background: white;
+  }
 }
-.meniu ul{
-	justify-content: center;
-	text-align: center;
-	list-style: none;
-	width: 100%;
-	display: flex;
-	flex-wrap: nowrap;
-  text-decoration: none;
+
+h3 {
   display: block;
-    font-size: 1.2em;
-    -webkit-margin-before: 0.83em;
-    margin-block-start: 0.83em;
-    -webkit-margin-after: 0.83em;
-    margin-block-end: 0.83em;
-    -webkit-margin-start: 0px;
-    margin-inline-start: 0px;
-    -webkit-margin-end: 0px;
-    margin-inline-end: 0px;
-    font-weight: bolder;
-    
-   
-    text-align: center;
-
+  font-size: 1.2em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  background-color: #70193f;
+  text-align: center;
+  color: white;
 }
-.meniu[_ngcontent-c1] ul[_ngcontent-c1] {
+
+p {
+  width: auto;
+}
+
+body {
+  background: #f9f9f9;
+}
+
+#wrapper {
+  padding: 90px 15px;
+}
+
+.navbar-expand-lg .navbar-nav.side-nav {
+  flex-direction: column;
+}
+
+.card {
+  margin-bottom: 15px;
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
+}
+
+.header-top {
+  box-shadow: 0 3px 5px rgba(0, 0, 0, .1)
+}
+
+.leftmenutrigger {
+  display: none
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+tr:nth-of-type(odd) {
+  background: #eee;
+}
+
+th {
+  background: #70193f;
+  color: white;
+  font-weight: bold;
+}
+
+td,
+th {
+  padding: 6px;
+  text-align: center;
+}
+
+@media all and (max-width:500px) {
+
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    font-size: 8px;
+  }
+
+  tr {
+    margin-bottom: 10px
+  }
+}
+
+.meniu {
+  margin: 0 auto;
+  width: 100%;
+  height: 40%;
+  background: white;
+}
+
+.meniu ul {
   justify-content: center;
   text-align: center;
   list-style: none;
-  width: 90%;}
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  text-decoration: none;
+}
 
 .meniu ul li {
-	padding: 5px;
-	width: 33%;
+  padding: 5px;
+  width: 33%;
   color: black;
-  
 }
 
-.submeniu ul li{
-	width: 100%;
-  background:white;
-  
-
-}
-.submeniu #titulo
-{
-	background-color: #70193f;
-	color: white;
-	font-weight: bold;
-
-
-}
-#table th {
-    background: #70193f;
-    color: white;
-    font-weight: bold;
-}
-
-@media (min-width:100px) {
-	.contenedor{
-	  width: 70%;
-		min-width: 100%;
-		max-width: 100%;
-		background: #70193f;
-		font-size: 15px;
-
-	
-	}
-
-	.meniu{
-
-margin: 0 auto;
-width: 100%;
-height: 40%;
-background:white;
-
-}
-
-
-}
-h3{
-    display: block;
-    font-size: 1.2em;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-    background-color: #70193f;
-    text-align: center;
-    color: white;
-}
-p
-{
-	width: auto;
-}
-/* 
-Generic Styling, for Desktops/Laptops 
-*/body{background:#f9f9f9;}
-#wrapper{padding:90px 15px;}
-.navbar-expand-lg .navbar-nav.side-nav{flex-direction: column;}
-.card{margin-bottom: 15px; border-radius:0; box-shadow: 0 3px 5px rgba(0,0,0,.1); }
-.header-top{box-shadow: 0 3px 5px rgba(0,0,0,.1)}
-.leftmenutrigger{display: none}
-
-table {
+.submeniu ul li {
   width: 100%;
-  border-collapse: collapse;
-}
-
-
-/* Zebra striping */
-
-tr:nth-of-type(odd) {
-  background: #eee;
-}
-
-th {
-  background: #70193f;
-  color: white;
-  font-weight: bold;
-}
-
-td,
-th {
-  padding: 6px;
-
-  text-align: center;
-}
-
-@media all and (max-width:500px) {
-  table,
-  thead,
-  tbody,
-  th,
-  td,
-  tr {
-    font-size:8px;
-  }
-  
-  tr { margin-bottom: 10px}
-  
-  
-}
-.contenedor{
-	width:800px;
-	background: #70193f;
-	margin-right: 375;
-	margin-left: 375;
-	border: 200PX;
-	
-}
-/* El hijo siempre lleva margin 0 y auto para centrarlo al div padre*/
-.meniu{
-
-margin: 0 auto;
-width: 100%;
-height: 40%;
-background:white;
-
-}
-.meniu ul{
-	justify-content: center;
-	text-align: center;
-	list-style: none;
-	width: 100%;
-	display: flex;
-	flex-wrap: nowrap;
-	text-decoration: none;
-
-}
-
-.meniu ul li {
-	padding: 5px;
-	width: 33%;
-	color: black;
-}
-
-.submeniu ul li{
-	width: 100%;
-  background:white;
+  background: white;
   margin-left: 1px;
-
 }
-.submeniu #titulo
-{
-	background-color: #70193f;
-	color: white;
-	font-weight: bold;
 
-
+.submeniu #titulo {
+  background-color: #70193f;
+  color: white;
+  font-weight: bold;
 }
+
 #table th {
-    background: #70193f;
-    color: white;
-    font-weight: bold;
-}
-
-@media (min-width:100px) {
-	.contenedor{
-	  width: 70%;
-		min-width: 100%;
-		max-width: 100%;
-		background: #70193f;
-		font-size: 15px;
-
-	
-	}
-
-	.meniu{
-
-margin: 0 auto;
-width: 100%;
-height: 40%;
-background:white;
-
-}
-
-
-}
-h3{
-    display: block;
-    font-size: 1.2em;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-    background-color: #70193f;
-    text-align: center;
-    color: white;
-}
-p
-{
-	width: auto;
-}
-/* 
-Generic Styling, for Desktops/Laptops 
-*/body{background:#f9f9f9;}
-#wrapper{padding:90px 15px;}
-.navbar-expand-lg .navbar-nav.side-nav{flex-direction: column;}
-.card{margin-bottom: 15px; border-radius:0; box-shadow: 0 3px 5px rgba(0,0,0,.1); }
-.header-top{box-shadow: 0 3px 5px rgba(0,0,0,.1)}
-.leftmenutrigger{display: none}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-
-/* Zebra striping */
-
-tr:nth-of-type(odd) {
-  background: #eee;
-}
-
-th {
   background: #70193f;
   color: white;
   font-weight: bold;
 }
 
+p {
+  width: auto;
+}
+
+tr:nth-of-type(odd) {
+  background: #eee;
+}
+
 td,
 th {
   padding: 6px;
-
   text-align: center;
-}
-
-@media all and (max-width:500px) {
-  table,
-  thead,
-  tbody,
-  th,
-  td,
-  tr {
-    font-size:8px;
-  }
-  
-  tr { margin-bottom: 10px}
-  
-  
 }

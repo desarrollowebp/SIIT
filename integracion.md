@@ -2,9 +2,18 @@
 
 Las siguientes notas fueron derivadas de pruebas superficiales de cada uno
 de los modulos enlistados. Los modulos que no esten enlistados no tienen algun
-punto a mencionar. Las pruebas fueron realizadas en una computadora portatil y
-no en un dispositivo movil; probando los modulos en este ultimo pudiera generar
-mas puntos a tratar.
+punto a mencionar.
+
+Las pruebas fueron realizadas en una computadora portatil y no en un dispositivo
+movil; probando los modulos en este ultimo, pudiera generar mas puntos a tratar.
+
+Si la nota tiene un *?* al final, significa que el modulo pudiera no ser el
+originario que causo el punto que la nota dice.
+
+
+## `menu-h`
+- Enlaces de menu lateral no funcionan
+- Enlace de nombre no dirige a la raiz
 
 
 ## `login`
@@ -21,15 +30,23 @@ mas puntos a tratar.
 - El boton de cerrar redirige a un URI del SIIT actual
 
 
-## `menu-h`
-- Enlaces de menu lateral no funcionan
-- Enlace de nombre no dirige a la raiz
+## `horario`
+- El icono del menu es de color amarillo
 
 
-## `extraescolar`
-- Las opciones en el modal no modifican la seleccion
+## `calificaciones-examenes`
+- El icono del menu es de color amarillo ?
+
+
+## `calificaciones-parciales`
+- El icono del menu es de color amarillo ?
+- Demasiados conflictos
 
 
 ## `horario-reinscripcion`
 - Libreria de jQuery fue agregada al index.html
+
+
+## `extraescolar`
+- Las opciones en el modal no modifican la seleccion
 
