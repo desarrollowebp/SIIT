@@ -76,3 +76,7 @@ originario que causo el punto que la nota dice.
 - Los cambios que se realizaron para arreglar `master` afectan el modulo
 - Las preguntas no son suficientes y no tiene relacion con la encuesta actual
 - Los *radio inputs* no limitan la seleccion a uno
+
+
+## `auditoria-servicio`
+- Componente `centro-info` se muestra sin contenido relevante
