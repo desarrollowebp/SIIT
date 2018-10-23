@@ -2,24 +2,11 @@
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+
   padding-top: 15px;
 }
 
-.meniu[_ngcontent-c1] ul[_ngcontent-c1] li[_ngcontent-c1] {
-  padding: 1.5px;
-}
 
-.meniu[_ngcontent-c2] ul[_ngcontent-c2] {
-  justify-content: center;
-  text-align: center;
-  list-style: none;
-  width: 90%;
-  display: flex;
-  flex-wrap: nowrap;
-  text-decoration: none;
-}
 
 h2,
 .h2 {
@@ -31,7 +18,7 @@ h2,
   text-decoration: none;
   list-style: none;
   font-size: 20px;
-  margin: 0px 0px;
+  margin: 0px auto;
   width: 70%;
 }
 
@@ -69,15 +56,6 @@ h2,
 }
 
 @media(min-width:780px) {
-  .meniu[_ngcontent-c2][_ngcontent-c2] ul[_ngcontent-c2][_ngcontent-c2] {
-    justify-content: center;
-    text-align: center;
-    list-style: none;
-    width: 96%;
-    display: flex;
-    flex-wrap: nowrap;
-    text-decoration: none;
-}
   .menu {
     width: 1000px;
     height: 80%;
@@ -86,7 +64,7 @@ h2,
     overflow: hidden;
   }
 
-  
+
 
   .menu ul {
     display: flex;
@@ -102,12 +80,16 @@ h2,
   }
 }
 
+.contenedor {
+  width: 800px;
+  background: #70193f;
 
+  border: 200PX;
+}
 
 @media (min-width:100px) {
-  
   .contenedor {
-    width: 100%;
+    width: 70%;
     min-width: 100%;
     max-width: 100%;
     background: #70193f;
@@ -116,9 +98,17 @@ h2,
 
   .meniu {
     margin: 0 auto;
-   width: 96%;
+    width: 100%;
     height: 40%;
+  
+  }
+
+  .meniu ul {
+  
+    margin: 0 auto;
+    width: 100%;
     background: white;
+   padding-left: 5px;
   }
 }
 
@@ -139,9 +129,6 @@ p {
   width: auto;
 }
 
-body {
-  background: #f9f9f9;
-}
 
 #wrapper {
   padding: 90px 15px;
@@ -152,7 +139,7 @@ body {
 }
 
 .card {
-  margin-bottom: 15px;
+  
   border-radius: 0;
   box-shadow: none;
   border: none;
@@ -211,25 +198,27 @@ th {
 }
 
 .meniu ul {
+  
   justify-content: center;
   text-align: center;
   list-style: none;
-  width: 100%;
+  width: 90%;
   display: flex;
   flex-wrap: nowrap;
   text-decoration: none;
 }
 
 .meniu ul li {
-  padding: 5px;
+  padding: 1px;
   width: 33%;
   color: black;
+
 }
 
 .submeniu ul li {
   width: 100%;
   background: white;
-  margin-left: 1px;
+  
 }
 
 .submeniu #titulo {
