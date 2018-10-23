@@ -19,6 +19,7 @@ import { HorarioReinscripcionComponent } from './horario-reinscripcion/horario-r
 import { GruposCargadosComponent } from './grupos-cargados/grupos-cargados.component';
 import { ExtraescolarComponent } from './extraescolar/extraescolar.component';
 import { EvaluacionDocenteComponent } from './evaluacion-docente/evaluacion-docente.component';
+import { EvaluacionDocenteIntroduccionComponent } from './evaluacion-docente-introduccion/evaluacion-docente-introduccion.component';
 import { AuditoriaServicioComponent } from './auditoria-servicio/auditoria-servicio.component';
 import { ListaModulosComponent } from './lista-modulos/lista-modulos.component';
 import { CodigoColoresMateriaComponent } from './codigo-colores-materia/codigo-colores-materia.component';
@@ -44,6 +45,7 @@ const routes:Routes = [
   { path: 'gruposCargados', component: GruposCargadosComponent },
   { path: 'extraescolar', component: ExtraescolarComponent },
   { path: 'evaluacionDocente', component: EvaluacionDocenteComponent },
+  { path: 'evaluacionDocente/introduccion', component: EvaluacionDocenteIntroduccionComponent },
   { path: 'auditoriaServicio', component: AuditoriaServicioComponent },
   { path: 'menuH', component: MenuHComponent },
   { path: 'datos-alumno', component:DatosAlumnoComponent },
@@ -70,6 +72,7 @@ const routes:Routes = [
     GruposCargadosComponent,
     ExtraescolarComponent,
     EvaluacionDocenteComponent,
+    EvaluacionDocenteIntroduccionComponent,
     AuditoriaServicioComponent,
     ListaModulosComponent,
     CodigoColoresMateriaComponent,
