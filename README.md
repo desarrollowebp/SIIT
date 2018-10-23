@@ -38,25 +38,25 @@ Para utilizar un icono, realiza lo siguiente:
 Esta contribucion fue hecha por Arturo Rangel Muñoz | 15040581.
 
 ## Lista de ramas
-|Modulo del SIIT|Rama|
-|---|---|
-|Login|login|
-|Incio|inicio|
-|Datos escolares|datos-escolares|
-|Verificacion Datos para Beca|verificacion-beca|
-|Kardex de Calificaciones|kardex-calificaciones|
-|Horario del Alumno|horario|
-|Calificaciones de Examenes Globales o Especiales|calificaciones-examenes|
-|Calificaciones Parciales|calificaciones-parciales|
-|Residencias|residencias|
-|Tutorias|tutorias|
-|Seleccion de Materias|seleccion-materias|
-|Preficha de Pago|preficha-pago|
-|Horario de Reinscripcion|horario-reinscripcion|
-|Grupos Cargados|grupos-cargados|
-|Extraescolar|extraescolar|
-|Evaluacion Docente|evaluacion-docente|
-|Auditoria de Servicio|auditoria-servicio|
+|Modulo del SIIT|Rama|Porcentaje|
+|---|---|---|
+|Login|login|90%|
+|Incio|inicio|70%|
+|Datos escolares|datos-escolares|80%|
+|Verificacion Datos para Beca|verificacion-beca|95%|
+|Kardex de Calificaciones|kardex-calificaciones|95%|
+|Horario del Alumno|horario|90%|
+|Calificaciones de Examenes Globales o Especiales|calificaciones-examenes|95%|
+|Calificaciones Parciales|calificaciones-parciales|95%|
+|Residencias|residencias|100%|
+|Tutorias|tutorias|90%|
+|Seleccion de Materias|seleccion-materias|80%|
+|Preficha de Pago|preficha-pago|90%|
+|Horario de Reinscripcion|horario-reinscripcion|100%|
+|Grupos Cargados|grupos-cargados|95%|
+|Extraescolar|extraescolar|100%|
+|Evaluacion Docente|evaluacion-docente|80%|
+|Auditoria de Servicio|auditoria-servicio|80%|
 
 > NOTA: Las ramas tienen el mismo nombre que el componenete perteneciente al modulo del SIIT.
 
