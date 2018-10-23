@@ -22,6 +22,8 @@ import { EvaluacionDocenteComponent } from './evaluacion-docente/evaluacion-doce
 import { AuditoriaServicioComponent } from './auditoria-servicio/auditoria-servicio.component';
 import { ListaModulosComponent } from './lista-modulos/lista-modulos.component';
 import { MenuHComponent } from './menu-h/menu-h.component';
+import { DatosAlumnoComponent } from './datos-alumno/datos-alumno.component';
+import { TablaHorarioComponent } from './tabla-horario/tabla-horario.component';
 
 const routes:Routes = [
   { path: '', component: ListaModulosComponent },
@@ -42,7 +44,12 @@ const routes:Routes = [
   { path: 'extraescolar', component: ExtraescolarComponent },
   { path: 'evaluacionDocente', component: EvaluacionDocenteComponent },
   { path: 'auditoriaServicio', component: AuditoriaServicioComponent },
-  { path: 'menuH', component: MenuHComponent }
+  { path: 'menuH', component: MenuHComponent },
+  { 
+    path: 'datos-alumno', component:DatosAlumnoComponent
+  },
+  { path: 'tabla-horario', component:TablaHorarioComponent}
+  
 ]
 
 @NgModule({
@@ -67,6 +74,8 @@ const routes:Routes = [
     AuditoriaServicioComponent,
     ListaModulosComponent,
     MenuHComponent,
+    DatosAlumnoComponent,
+    TablaHorarioComponent,
   ],
   imports: [
     BrowserModule,
