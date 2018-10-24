@@ -1,3 +1,82 @@
-<p>
-  verificacion-beca works!
-</p>
+<section class="registro">
+    	
+  <div class="menu">
+     
+   <div class="contenedor">
+       <div class="row">  
+     <div class="meniu">
+       <h3>Verifica el Curp</h3>
+       <ul>
+         <li class="submeniu" id="control">
+           <p id="titulo">No.control s.e.p </p>
+           <p>14041413</p>
+         </li>
+         <li class="submeniu" id="control">
+           <p id="titulo">Nombre del Alumno </p>
+           <p>VENEGAS FLORES MARIANA IDALI</p>
+         </li>
+         <li class="submeniu" id="control">
+         <p id="titulo">	Semestre </p>
+         <p>9</p>
+       </li>
+       <li class="submeniu" id="control">
+         <p id="titulo">	Periodo Escolar </p>
+         <p>AGOSTO-DICIEMBRE/2018</p>
+       </li>
+         <li class="submeniu" id="control">
+           <p id="titulo">Prom.Acum. </p>
+           <p>80.91</p>
+         </li>
+       
+       </ul>
+       <ul>
+         <li class="submeniu" id="control">
+           <p id="titulo">Carrera </p>
+           <p>INGENIERÍA EN TECNOLOGÍAS DE LA INFORMACIÓN Y COMUNICACIONES</p>
+         </li>
+           <li class="submeniu" id="control">
+           <p id="titulo">Especialidad </p>
+           <p>TECNOLOGÍAS WEB</p>
+           </li>
+         <li class="submeniu" id="control">
+             <p id="titulo">CURP </p>
+             <tr id="non">
+                 <td >
+                   <input name ="curp_alumno" type="text" id="curp_alumno" size="18"
+                    maxlength="8" align="center" value="VEFM941118MDGNLR04"
+                     onchange="javascript:this.value=this.value.toUpperCase();">
+                 </td>
+             </tr>
+           </li>
+           
+           <li class="submeniu" id="control">
+             <p id="titulo">Opcion para Beca PRONABES </p>
+             <td>
+                 <div align="center"> 
+                   <select name="beca" id="select4">
+
+                     <option value="S"> SI </option>
+                     <option value="N" selected> No </option>
+                   </select>
+                   </div>
+                 </td>
+           </li>
+       </ul>
+       <ul>
+         <li>
+           <div align="center"> 
+               <input type="button" name="actualiza" class="boton" value="Actualizar" onclick="validacampo()">
+               <input type="button" class="boton" value="Cerrar" onClick="javascript: document.location = '/sistema/modulos/alu/bienvenida.php'"> 
+             </div>
+         </li>
+       
+       </ul>
+     </div>
+    
+   </div>
+   </div>
+   
+</div>
+ 
+  
+</section> 
