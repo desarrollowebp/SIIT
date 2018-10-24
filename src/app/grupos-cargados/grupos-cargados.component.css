@@ -6,6 +6,13 @@
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
 }
+
+#jj{
+  border-radius: .23px;
+  border-color: blue;
+}
+
+
 .gruposCargados{
   width: 100%;
 
@@ -55,6 +62,7 @@ width: 96%;
   border: 0 ;
 
   padding: 0px;
+
 }
 
 h2{
@@ -104,6 +112,7 @@ h2{
 .container{
   padding-left: 0;
   padding-right: 0;
+
 }
       .row{
         width: 1000px;
@@ -140,6 +149,7 @@ h2{
       height: auto;
       float:right;
       text-align: center;
+      border-radius: .23px;
 
     }
 .panel-primary{
@@ -147,10 +157,15 @@ h2{
   border: 0;
   padding: 0;
 
+
 }
     .panel-heading div {
 
 
+
+    }
+
+    .panel-heading{
 
     }
     .panel-heading div span{
@@ -216,11 +231,14 @@ tr{
 #dev-table {
 
   max-width: 1000px;
+
 }
 table{
   white-space: pre-line;
     table-layout: fixed;
   width: 1000px;
+
+
 }
 
 th {
@@ -272,6 +290,8 @@ td {
 
 #tablecontent{
   font-size: 12px;
+  border-radius: .23px;
+
 }
 /*----------------------------------------------------------------------------------------*/
 
@@ -348,7 +368,10 @@ display: block;
 display: none;
 }
 
+
+
 /*.pest-activo{
   background-color: #70193F !important;
   color: white;
 }*/
+
