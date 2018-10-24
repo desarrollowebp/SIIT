@@ -125,7 +125,7 @@ header nav ul li .children li a {
 
 	.menu_bar .bt-menu {
 		margin-top: 15px;
-		display: block;
+		display: none;
 		color: #6F193F;
 		overflow: hidden;
 		font-size: 25px;
