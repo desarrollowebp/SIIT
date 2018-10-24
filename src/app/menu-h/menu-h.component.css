@@ -18,7 +18,8 @@
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
-body {background:#fff;
+body {
+	background:#fff;
 
 }
 
@@ -114,6 +115,10 @@ header nav ul li .children li a {
 		padding-top:70px;
 	}
 
+	.ritd:hover{
+		text-decoration: none;
+	}
+
 	.logo img{
 	margin: 0 auto;
 	height: 70px;
@@ -124,9 +129,9 @@ header nav ul li .children li a {
 
 
 	.menu_bar .bt-menu {
-		margin-top: 15px;
+		margin-top: 10px;
 		display: block;
-		color: #6F193F;
+		color: yellow;
 		overflow: hidden;
 		font-size: 25px;
 		font-weight: bold;
@@ -204,7 +209,7 @@ header .logo, .textoITD, .menu_bar
 	{
 		.menu_bar a{
 		display:block;
-		height:70px;
+		height:55px;
 		max-width: 30px;
 		position: fixed;
 		top:0;

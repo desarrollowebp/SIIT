@@ -122,7 +122,7 @@ table {
 /* Zebra striping */
 
 tr:nth-of-type(odd) {
-  background: #white;
+  background: white;
 }
 
 th {
