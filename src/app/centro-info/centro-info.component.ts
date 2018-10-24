@@ -22,7 +22,7 @@ export class CentroInfoComponent implements OnInit {
 
 preguntas : Tpregunta[] = [{
     "servicio" :"Centro de Informacion",
-    "pregunta1":"1.-¿Tiene un Horario de consulta?",
+    "pregunta1":"1.-¿Tiene un horario adecuado de consulta?",
     "pregunta2":"2.-¿La informacion con la que cuenta me apoya en las asignaturas que curso?",
     "pregunta3":"3.-¿Siempre encuentro por lo menos un ejemplar disponible de la biografia señalada en las asignaturas?",
     "pregunta4":"4.-¿La bibliografia de la que se dispone es actualizada?",
