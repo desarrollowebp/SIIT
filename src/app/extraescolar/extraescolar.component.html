@@ -1,5 +1,5 @@
 <!--===============empieza tabla de extra seleccionada=================0-->
-<table>
+<table id="tabla">
 	<thead>
 		<th colspan="7">
 			<h5 align="center">Extraescolar Seleccionada</h5>
@@ -16,16 +16,17 @@
 			<td>Dias</td>
 		</tr>
 		<tr>
-			<td>20183</td>
-			<td>Ritmos Latinos</td>
-			<td>RL</td>
-			<td>GALINDO ZALDIVAR M.V. ISAAC ALEJANDRO </td>
-			<td>01:00</td>
-			<td>02:00</td>
-			<td>L,Ma,Mi,J</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
 		</tr>
 	</tbody>
 </table>
+
 
 <!--=========empieza tabla de avisos==========---------->
 <div class="accordionbox">
@@ -157,37 +158,44 @@
 <!--=========empieza el modal==========--->
 <div id="myModal" class="{{modals}}">
 
-	<!-- Modal content -->
-	<div class="form" *ngFor="let baile of bailes">
-		<h4>
-			Grupos disponibles para {{baile}} Presiona para mostrar horario
-		</h4>
-		<form>
-			<table id="tablaModal">
-				<tr>
-					<th>Grupo</th>
-					<th>Promotor</th>
-					<th>H.Inicial</th>
-					<th>H.Final</th>
-					<th>Dias</th>
-					<th>Lugares Disponibles</th>
-					<th></th>
-				</tr>
-				<tr *ngFor="let grupo of gruposDisponibles">
-					<td>{{grupo.grupo}}</td>
-					<td>{{grupo.promotor}}</td>
-					<td>{{grupo.hInicial}}</td>
-					<td>{{grupo.hFinal}}</td>
-					<td>{{grupo.dias}}</td>
-					<td>{{grupo.lugares}}</td>
-					<td><button class="boton" id="btn-seleccionar" (click)="cerrar()">Seleccionar</button></td>
-				</tr>
-				<tr>
-				</tr>
-			</table>
-		</form>
-		<button class="boton" id="btn-cancelar" (click)="cerrar()">Cancelar</button>
 
+
+	<!--=========empieza el modal==========--->
+	<div id="myModal" class="{{modals}}">
+
+
+
+		<!-- Modal content -->
+		<div class="form" >
+			<h4>
+				Grupos disponibles para  Presiona para mostrar horario
+			</h4>
+			<form>
+				<table id="tablaModal">
+					<tr>
+						<th>Grupo</th>
+						<th>Promotor</th>
+						<th>H.Inicial</th>
+						<th>H.Final</th>
+						<th>Dias</th>
+						<th>Lugares Disponibles</th>
+						<th></th>
+					</tr>
+					<tr *ngFor="let grupo of gruposDisponibles">
+						<td>{{grupo.grupo}}</td>
+						<td>{{grupo.promotor}}</td>
+						<td>{{grupo.hInicial}}</td>
+						<td>{{grupo.hFinal}}</td>
+						<td>{{grupo.dias}}</td>
+						<td>{{grupo.lugares}}</td>
+						<td><button class="boton" (click)="cerrar()" (click)="objetoActual(grupo)">Seleccionar</button></td>
+					</tr>
+					<tr>
+					</tr>
+				</table>
+			</form>
+			<button class="boton" id="btn-cancelar"  (click)="cerrar()" >Cancelar</button>
+
+		</div>
 	</div>
-</div>
-<!--=========termina el modal==========--->
+	<!--=========termina el modal==========--->
