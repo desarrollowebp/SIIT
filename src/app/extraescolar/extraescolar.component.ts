@@ -81,7 +81,13 @@ export class ExtraescolarComponent implements OnInit {
 
 
   aeas = [
-    'Ajedrez', 'Ajedrez Paralelo', 'Deportes Electronicos','Tiro con Arco',
+    'Ajedrez', 'Ajedrez Paralelo', 'Deportes Electronicos', 'Tiro con Arco',
   ]
+
+  gruposDisponibles = [
+    { grupo: 'RL', promotor: 'GALINDO ZALDIVAR M.V. ISAAC ALEJANDRO', hInicial: '13:00', hFinal: '14:00', dias: 'L,MA,MI,J', lugares: '20' }
+    { grupo: '1B', promotor: 'GARCIA GARCIA JOSE ANTONIO', hInicial: '11:00', hFinal: '12:00', dias: 'L,MA,MI,J', lugares: '15' }
+  ]
+
 
 }
