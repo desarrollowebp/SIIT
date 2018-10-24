@@ -21,16 +21,12 @@ import { ExtraescolarComponent } from './extraescolar/extraescolar.component';
 import { EvaluacionDocenteComponent } from './evaluacion-docente/evaluacion-docente.component';
 import { EvaluacionDocenteIntroduccionComponent } from './evaluacion-docente-introduccion/evaluacion-docente-introduccion.component';
 import { AuditoriaServicioComponent } from './auditoria-servicio/auditoria-servicio.component';
-import { ListaModulosComponent } from './lista-modulos/lista-modulos.component';
 import { CodigoColoresMateriaComponent } from './codigo-colores-materia/codigo-colores-materia.component';
 import { CentroInfoComponent } from './centro-info/centro-info.component';
 import { MenuHComponent } from './menu-h/menu-h.component';
 
-
-
 const routes:Routes = [
-  { path: '', component: ListaModulosComponent },
-  { path: 'login', component: LoginComponent },
+  { path: '', component: LoginComponent },
   { path: 'inicio', component: InicioComponent },
   { path: 'datosEscolares', component: DatosEscolaresComponent },
   { path: 'verificacionBeca', component: VerificacionBecaComponent },
@@ -51,6 +47,7 @@ const routes:Routes = [
   { path: 'menuH', component: MenuHComponent },
   { path: 'codigoColoresMateria', component: CodigoColoresMateriaComponent},
   { path: 'centroInfo', component: CentroInfoComponent},
+  { path: 'menuH', component: MenuHComponent },
 ]
 
 @NgModule({
@@ -74,9 +71,9 @@ const routes:Routes = [
     EvaluacionDocenteComponent,
     EvaluacionDocenteIntroduccionComponent,
     AuditoriaServicioComponent,
-    ListaModulosComponent,
     CodigoColoresMateriaComponent,
     CentroInfoComponent,
+    MenuHComponent,
     MenuHComponent,
   ],
   imports: [
