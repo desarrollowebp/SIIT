@@ -25,8 +25,7 @@ import { ListaModulosComponent } from './lista-modulos/lista-modulos.component';
 import { CodigoColoresMateriaComponent } from './codigo-colores-materia/codigo-colores-materia.component';
 import { CentroInfoComponent } from './centro-info/centro-info.component';
 import { MenuHComponent } from './menu-h/menu-h.component';
-import { DatosAlumnoComponent } from './datos-alumno/datos-alumno.component';
-import { TablaHorarioComponent } from './tabla-horario/tabla-horario.component';
+
 
 
 const routes:Routes = [
@@ -50,8 +49,6 @@ const routes:Routes = [
   { path: 'evaluacionDocente/introduccion', component: EvaluacionDocenteIntroduccionComponent },
   { path: 'auditoriaServicio', component: AuditoriaServicioComponent },
   { path: 'menuH', component: MenuHComponent },
-  { path: 'datos-alumno', component:DatosAlumnoComponent },
-  { path: 'tabla-horario', component:TablaHorarioComponent},
   { path: 'codigoColoresMateria', component: CodigoColoresMateriaComponent},
   { path: 'centroInfo', component: CentroInfoComponent},
 ]
@@ -81,8 +78,6 @@ const routes:Routes = [
     CodigoColoresMateriaComponent,
     CentroInfoComponent,
     MenuHComponent,
-    DatosAlumnoComponent,
-    TablaHorarioComponent,
   ],
   imports: [
     BrowserModule,
