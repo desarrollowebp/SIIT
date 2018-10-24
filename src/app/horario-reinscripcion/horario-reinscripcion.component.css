@@ -114,7 +114,7 @@ td:last-child {
   
   /* STYLE THE CHECKBOX LABELS ON HOVER */
   .accordionbox label:hover{
-   background: #aaa;
+   background: rgb(182, 182, 182);
    color: #111111;
   }
   
