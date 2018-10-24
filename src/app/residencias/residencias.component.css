@@ -1,7 +1,7 @@
 
 * {
   padding:0;
-  margin:0;
+  margin:auto;
   box-sizing: border-box;
 }
  
@@ -467,4 +467,8 @@ body{
         content: counter(rowNumber);
         min-width: 1em;
         margin-right: 0.5em;
+    }
+
+    h3.panel-title{
+      color: white;
     }
