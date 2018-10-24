@@ -9,16 +9,8 @@ import * as $ from 'jquery';
 })
 export class ExtraescolarComponent implements OnInit {
 
-  export class extrasel{
-  	id : Number;
-  	grupo : string;
-  	promotor : string;
-  	hInicial : string;
-  	hFinal:string;
-    dias:string;
-  }
 
-  
+
 
   modals = "modal";
   constructor() {
