@@ -18,6 +18,9 @@ export class ExtraescolarComponent implements OnInit {
   cerrar() {
     this.modals = "modal";
   }
+
+
+
   ngOnInit() {
     $(".submenu").click(function() {
       $(this).children("ul").slideToggle();
