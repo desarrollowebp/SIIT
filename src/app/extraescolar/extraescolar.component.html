@@ -15,14 +15,14 @@
 			<td>H.Final </td>
 			<td>Dias</td>
 		</tr>
-		<tr>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
+		<tr *ngFor="let ext of extrase">
+			<td>{{ext.periodo}}</td>
+			<td>{{ext.nombre}}</td>
+			<td>{{ext.grupo}}</td>
+			<td>{{ext.promotor}}</td>
+			<td>{{ext.hInicial}}</td>
+			<td>{{ext.hFinal}}</td>
+			<td>{{ext.dias}}</td>
 		</tr>
 	</tbody>
 </table>
@@ -181,14 +181,14 @@
 						<th>Lugares Disponibles</th>
 						<th></th>
 					</tr>
-					<tr *ngFor="let grupo of gruposDisponibles">
-						<td>{{grupo.grupo}}</td>
-						<td>{{grupo.promotor}}</td>
-						<td>{{grupo.hInicial}}</td>
-						<td>{{grupo.hFinal}}</td>
-						<td>{{grupo.dias}}</td>
-						<td>{{grupo.lugares}}</td>
-						<td><button class="boton" (click)="cerrar()" (click)="objetoActual(grupo)">Seleccionar</button></td>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td><button type="button" class="boton" (click)="cerrar()" (click)="objetoActual(group)">Seleccionar</button></td>
 					</tr>
 					<tr>
 					</tr>

@@ -8,9 +8,14 @@ import * as $ from 'jquery';
 })
 export class ExtraescolarComponent implements OnInit {
 
+
   objetoActual = function(gru) {
     console.log(gru);
+
   }
+
+
+
 
   modals = "modal";
   constructor() {
@@ -21,6 +26,7 @@ export class ExtraescolarComponent implements OnInit {
   }
   cerrar() {
     this.modals = "modal";
+
   }
 
 
@@ -93,12 +99,18 @@ export class ExtraescolarComponent implements OnInit {
   ]
 
 
+  tgrupo = {
+
+  }
+
+  $scope.extrase = []
+
   gruposDisponibles = [
     { periodo: '20183', nombre: 'Baile Tahitiano', grupo: 'RL', promotor: 'GALINDO ZALDIVAR M.V. ISAAC ALEJANDRO', hInicial: '13:00', hFinal: '14:00', dias: 'L,MA,MI,J', lugares: '20' },
     { periodo: '20183', nombre: 'Baile Tahitiano', grupo: '1B', promotor: 'GARCIA GARCIA JOSE ANTONIO', hInicial: '11:00', hFinal: '12:00', dias: 'L,MA,MI,J', lugares: '15' },
   ]
 
-  extraSeleccionada = [ {periodo: '', nombre: '', grupo: '', promotor: '', hInicial: '', hFinal: '', dias: '', lugares: ''}
-  ]
+
+
 
 }
