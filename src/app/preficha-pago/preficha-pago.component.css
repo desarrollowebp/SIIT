@@ -5,7 +5,9 @@
     margin: 10px auto;
 }
 
-
+.modal{
+  background:#fff;
+}
 .titable{
   background-color: #70193f;
   color:#fff;
@@ -199,7 +201,7 @@ h2{
  border: none;
 
  width: 50%;
-=======
+
  width: 100%;
 
  font-family: monospace;
@@ -210,9 +212,13 @@ h2{
  cursor:pointer;
 }
 
-/* tabla de despliege*/
+ 
 
 
+
+/*empieza css de tabla que se despliega*/
+
+/* STYLE THE ACCORDION HOLDING CONTAINER */
 .accordionbox{
   max-width: 1000px;
   margin: 10px auto 0px auto;
@@ -239,6 +245,9 @@ h2{
   .accordionbox label:hover{
    background: rgb(182, 182, 182);
    color: #111111;
+  }
+  .local{
+
   }
   
   /* HIDE THE HTML CHECKBOX SQUARE */
@@ -341,7 +350,7 @@ h2{
     text-align: center;
   }
   
-  .pages{
+  .pagetitle{
     position: absolute;
     top: 40px;
     left: 30px;
