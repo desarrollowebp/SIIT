@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {  Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
 import * as $ from 'jquery';
 
 
@@ -8,6 +8,18 @@ import * as $ from 'jquery';
   styleUrls: ['./extraescolar.component.css']
 })
 export class ExtraescolarComponent implements OnInit {
+
+  export class extrasel{
+  	id : Number;
+  	grupo : string;
+  	promotor : string;
+  	hInicial : string;
+  	hFinal:string;
+    dias:string;
+  }
+
+  
+
   modals = "modal";
   constructor() {
     this.modals = "modal";
@@ -20,8 +32,10 @@ export class ExtraescolarComponent implements OnInit {
   }
 
 
-
   ngOnInit() {
+
+
+
     $(".submenu").click(function() {
       $(this).children("ul").slideToggle();
     }
@@ -88,8 +102,8 @@ export class ExtraescolarComponent implements OnInit {
   ]
 
   gruposDisponibles = [
-    { grupo: 'RL', promotor: 'GALINDO ZALDIVAR M.V. ISAAC ALEJANDRO', hInicial: '13:00', hFinal: '14:00', dias: 'L,MA,MI,J', lugares: '20' }
-    { grupo: '1B', promotor: 'GARCIA GARCIA JOSE ANTONIO', hInicial: '11:00', hFinal: '12:00', dias: 'L,MA,MI,J', lugares: '15' }
+    { grupo: 'RL', promotor: 'GALINDO ZALDIVAR M.V. ISAAC ALEJANDRO', hInicial: '13:00', hFinal: '14:00', dias: 'L,MA,MI,J', lugares: '20' },
+    { grupo: '1B', promotor: 'GARCIA GARCIA JOSE ANTONIO', hInicial: '11:00', hFinal: '12:00', dias: 'L,MA,MI,J', lugares: '15' },
   ]
 
 
