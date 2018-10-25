@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import * as $ from 'jquery';
 @Component({
   selector: 'app-avance-materia-alumno',
   templateUrl: './avance-materia-alumno.component.html',
