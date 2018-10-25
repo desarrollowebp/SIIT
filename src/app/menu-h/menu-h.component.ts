@@ -13,7 +13,6 @@ export class MenuHComponent implements OnInit {
     $(document).ready(menuh);
 
 var contador = 1;
-
 function menuh () {
 	$('.menu_bar').click(function(){
 		if (contador == 1) {
@@ -29,14 +28,13 @@ function menuh () {
 		}
 	});
 
+
+
 	// Mostramos y ocultamos submenus
 	$('.submenu2').click(function(){
 		$(this).children('.children').slideToggle();
 	});
 
-	$('ol').click(function(p){
-		p.stopPropagation();
-	})
 }
   }
 
