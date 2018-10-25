@@ -24,6 +24,7 @@ h1
 }
 
 
+
 .menu {
   background: white;
 
@@ -235,4 +236,17 @@ font-size: 14px;
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+}
+@media(max-width:780px)
+{
+  h4 
+  {
+    font-size: 15px;
+   
+  }
+  h1
+  {
+    font-size: 1.5rem;
+  }
+  
 }
