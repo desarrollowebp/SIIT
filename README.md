@@ -1,6 +1,28 @@
 # SIIT | Desarrollo Web Profesional
 
 
+## Pruebas
+El proyecto esta lo suficientemente listo para las pruebas. Despues de ~427 commits por
+20 contribuidores se puede apreciar el trabajo realizado para llegar a este punto, pero
+faltara aun mas para terminarlo. Por ahora se necesita la opinion de sus proximos usuarios.
+
+
+## Acceso publico en la red
+
+### Obtener la direccion IP de la maquina
+Ejecuta el comando de `ipconfig` en Windows y `ifconfig` en Linux/OSX.
+
+### Ejecuta el proyecto pasandole la opcion `--host`
+En vez de `npm start`, utiliza `ng serve --host mi.direccion.ip`.
+
+> NOTA: mi.direccion.ip sera la direccion IP del paso anterior.
+
+## Visita el proyecto desde otro dispositivo
+Desde tu celular visita `http://mi.direccion.ip:4200`
+
+Esta contribucion fue hecha por Aurora Gamero Pescador | 14041403.
+
+
 ## Integracion
 La integracion esta completa. Hay algunas notas que se pueden encontrar en el archivo de
 [integracion](integracion.md) sobre sus modulos. Ya que la integracion esta en `master`
