@@ -11,19 +11,21 @@ export class ExtraescolarComponent implements OnInit {
 
   objetoActual = function(gru) {
     console.log(gru);
-   this.extraseleccionada ={ periodo:gru.periodo, nombre:gru.nombre, grupo:gru.grupo,
-     promotor:gru.promotor, hInicial:gru.hInicial, hFinal:gru.hFinal, dias:gru.dias };
+    this.extraseleccionada = {
+      periodo: gru.periodo, nombre: gru.nombre, grupo: gru.grupo,
+      promotor: gru.promotor, hInicial: gru.hInicial, hFinal: gru.hFinal, dias: gru.dias
+    };
   }
 
-  datosmodal="kevin wulf";
-  extraseleccionada={
-    periodo:"",
-    nombre:"",
-    grupo:"",
-    promotor:"",
-    hInicial:"",
-    hFinal:"",
-    dias:""
+  datosmodal = "";
+  extraseleccionada = {
+    periodo: "",
+    nombre: "",
+    grupo: "",
+    promotor: "",
+    hInicial: "",
+    hFinal: "",
+    dias: ""
   }
 
   modals = "modal";
@@ -32,14 +34,14 @@ export class ExtraescolarComponent implements OnInit {
   }
   func($var) {
     this.modals = "visibleNo";
-    this.datosmodal= "kevin wulf es l matzimo";
+    this.datosmodal = "";
   }
   funcp($var) {
     this.modals = "visibleNo";
-    this.datosmodal= $var;
+    this.datosmodal = $var;
   }
   cerrar() {
-    this.modals ="modal";
+    this.modals = "modal";
 
   }
 

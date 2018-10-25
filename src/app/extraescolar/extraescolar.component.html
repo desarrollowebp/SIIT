@@ -51,7 +51,7 @@
 		<label for="tab-two">MÚSICA</label>
 		<div class="insidebox">
 			<div class="panel-body" *ngFor="let musica of musicales">
-				<li (click)="func()">{{musica}}</li>
+				<li (click)="funcp(musica)">{{musica}}</li>
 			</div>
 		</div>
 	</div>
@@ -63,7 +63,7 @@
 		<label for="tab-three">ACTIVIDADES CIVICAS</label>
 		<div class="insidebox">
 			<div class="panel-body" *ngFor="let civica of civicas">
-				<li (click)="func()">{{civica}}</li>
+				<li (click)="funcp(civica)">{{civica}}</li>
 			</div>
 		</div>
 	</div>
@@ -75,7 +75,7 @@
 		<label for="tab-four">DIFUSION Y TEATRO</label>
 		<div class="insidebox">
 			<div class="panel-body" *ngFor="let dt of dts">
-				<li (click)="func()">{{dt}}</li>
+				<li (click)="funcp(dt)">{{dt}}</li>
 			</div>
 		</div>
 	</div>
@@ -87,7 +87,7 @@
 		<label for="tab-five">VISUALES</label>
 		<div class="insidebox">
 			<div class="panel-body" *ngFor="let visual of visuales">
-				<li (click)="func()">{{visual}}</li>
+				<li (click)="funcp(visual)">{{visual}}</li>
 			</div>
 		</div>
 	</div>
@@ -109,7 +109,7 @@
 		<div class="insidebox">
 			<!--=========PRIMER CONTENEDOR DE EXTRA==========--->
 			<div class="panel-body" *ngFor="let pelota of pelotas">
-				<li (click)="func()">{{pelota}}</li>
+				<li (click)="funcp(pelota)">{{pelota}}</li>
 			</div>
 		</div>
 	</div>
@@ -121,7 +121,7 @@
 		<label for="tab-seven">ACTIVIDADES FISICAS</label>
 		<div class="insidebox">
 			<div class="panel-body" *ngFor="let fisica of fisicas">
-				<li (click)="func()">{{fisica}}</li>
+				<li (click)="funcp(fisica)">{{fisica}}</li>
 			</div>
 		</div>
 	</div>
@@ -133,7 +133,7 @@
 		<label for="tab-eight">NATACION</label>
 		<div class="insidebox">
 			<div class="panel-body" *ngFor="let natacion of nataciones">
-				<li (click)="func()">{{natacion}}</li>
+				<li (click)="funcp(natacion)">{{natacion}}</li>
 			</div>
 		</div>
 	</div>
@@ -145,7 +145,7 @@
 		<label for="tab-nine">AJEDREZ, ELECTRONICOS Y ARCO</label>
 		<div class="insidebox">
 			<div class="panel-body" *ngFor="let aea of aeas">
-				<li (click)="func()">{{aea}}</li>
+				<li (click)="funcp(aea)">{{aea}}</li>
 			</div>
 		</div>
 	</div>
@@ -163,7 +163,7 @@
 		<!-- Modal content -->
 		<div class="form" >
 			<h4>
-				GRUPOS disponibles para  {{datosmodal}}  Presiona para mostrar horario
+				Grupos disponibles para  {{datosmodal}},  presiona seleccionar para elegir un grupo
 			</h4>
 			<form>
 				<table id="tablaModal">
