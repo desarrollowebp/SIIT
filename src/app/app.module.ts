@@ -55,7 +55,7 @@ const routes:Routes = [
   { path: 'codigoColoresMateria', component: CodigoColoresMateriaComponent},
   { path: 'centroInfo', component: CentroInfoComponent},
   { path: 'menuH', component: MenuHComponent },
-  { path: 'avanceMateriaAlumno', component:AvanceMateriaAlumnoComponent}
+  { path: 'avanceMateriaAlumno', component:AvanceMateriaAlumnoComponent},
   { path: 'auditoriaServicio', component: AuditoriaServicioComponent },
   { path: 'postSeleccionMaterias', component:PostSeleccionMateriasComponent},
   { path: 'preSeleccionMaterias', component: PreSeleccionMateriasComponent}
