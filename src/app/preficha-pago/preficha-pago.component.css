@@ -268,7 +268,7 @@ h2{
   
   /* STYLE THE CLICKED DROPDOWN CONTENT BOX */
   .accordionbox input:checked ~ .insidebox{
-   height: 250px;
+   height: 200px;
     overflow: scroll;
   }
   
