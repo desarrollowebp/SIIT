@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
@@ -21,6 +21,8 @@ import { ExtraescolarComponent } from './extraescolar/extraescolar.component';
 import { EvaluacionDocenteComponent } from './evaluacion-docente/evaluacion-docente.component';
 import { EvaluacionDocenteIntroduccionComponent } from './evaluacion-docente-introduccion/evaluacion-docente-introduccion.component';
 import { AuditoriaServicioComponent } from './auditoria-servicio/auditoria-servicio.component';
+
+import { PreSeleccionMateriasComponent } from './pre-seleccion-materias/pre-seleccion-materias.component';
 import { CodigoColoresMateriaComponent } from './codigo-colores-materia/codigo-colores-materia.component';
 import { CentroInfoComponent } from './centro-info/centro-info.component';
 import { DatosAlumnoComponent } from './datos-alumno/datos-alumno.component';
@@ -54,7 +56,8 @@ const routes:Routes = [
   { path: 'centroInfo', component: CentroInfoComponent},
   { path: 'menuH', component: MenuHComponent },
   { path: 'auditoriaServicio', component: AuditoriaServicioComponent },
-  { path: 'postSeleccionMaterias', component:PostSeleccionMateriasComponent}
+  { path: 'postSeleccionMaterias', component:PostSeleccionMateriasComponent},
+  { path: 'preSeleccionMaterias', component: PreSeleccionMateriasComponent}
 ]
 
 @NgModule({
@@ -84,8 +87,10 @@ const routes:Routes = [
     DatosAlumnoComponent,
     TablaHorarioComponent,
     MenuHComponent,
-    
+
     PostSeleccionMateriasComponent,
+
+    PreSeleccionMateriasComponent,
   ],
   imports: [
     BrowserModule,
