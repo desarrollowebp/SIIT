@@ -7,10 +7,10 @@
 	</thead>
 	<tbody>
 		<tr>
-			<td>Periodo</td>
+			<td>Periodo </td>
 			<td>Actividad</td>
-			<td>Grupo</td>
-			<td>Promotor</td>
+			<td>Grupo {{datoseleccionado.grupo}}</td>
+			<td>Promotor{{datoseleccionado.promotor}}</td>
 			<td>H.Inicial </td>
 			<td>H.Final </td>
 			<td>Dias</td>
@@ -31,7 +31,7 @@
 <!--=========empieza tabla de avisos==========---------->
 <div class="accordionbox">
 	<div>
-		<h4>Extraescolares Culturales Disponibles </h4>
+		<h4>Extraescolares Culturales Disponibles  </h4>
 	</div>
 	<div>
 		<input id="tab" name="myaccordion" type="checkbox" />
@@ -39,7 +39,7 @@
 		<div class="insidebox">
 			<!--=========PRIMER CONTENEDOR DE EXTRA==========--->
 			<div class="panel-body" *ngFor="let baile of bailes">
-				<li (click)="func()">{{baile}}</li>
+				<li (click)="funcp(baile)">{{baile}} </li>
 			</div>
 		</div>
 	</div>
@@ -158,17 +158,12 @@
 <!--=========empieza el modal==========--->
 <div id="myModal" class="{{modals}}">
 
-
-
 	<!--=========empieza el modal==========--->
-	<div id="myModal" class="{{modals}}">
-
-
 
 		<!-- Modal content -->
 		<div class="form" >
 			<h4>
-				Grupos disponibles para  Presiona para mostrar horario
+				GRUPOS disponibles para  {{datosmodal}}  Presiona para mostrar horario
 			</h4>
 			<form>
 				<table id="tablaModal">
@@ -197,5 +192,5 @@
 			<button class="boton" id="btn-cancelar"  (click)="cerrar()" >Cancelar</button>
 
 		</div>
-	</div>
+
 	<!--=========termina el modal==========--->

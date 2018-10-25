@@ -11,21 +11,29 @@ export class ExtraescolarComponent implements OnInit {
 
   objetoActual = function(gru) {
     console.log(gru);
-
+   this.datoseleccionado ={ promotor:gru.promotor, grupo:gru.grupo};
   }
 
-
-
+  datosmodal="kevin wulf";
+  datoseleccionado={
+    promotor:"",
+    grupo:""
+  }
 
   modals = "modal";
   constructor() {
     this.modals = "modal";
   }
-  func() {
+  func($var) {
     this.modals = "visibleNo";
+    this.datosmodal= "kevin wulf es l matzimo";
+  }
+  funcp($var) {
+    this.modals = "visibleNo";
+    this.datosmodal= $var;
   }
   cerrar() {
-    this.modals = "modal";
+    this.modals ="kevin wulf es l matzimo";
 
   }
 
@@ -99,7 +107,7 @@ export class ExtraescolarComponent implements OnInit {
   ]
 
 
-  
+
 
   gruposDisponibles = [
     { periodo: '20183', nombre: 'Baile Tahitiano', grupo: 'RL', promotor: 'GALINDO ZALDIVAR M.V. ISAAC ALEJANDRO', hInicial: '13:00', hFinal: '14:00', dias: 'L,MA,MI,J', lugares: '20' },
