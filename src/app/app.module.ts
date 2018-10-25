@@ -24,6 +24,7 @@ import { AuditoriaServicioComponent } from './auditoria-servicio/auditoria-servi
 import { CodigoColoresMateriaComponent } from './codigo-colores-materia/codigo-colores-materia.component';
 import { CentroInfoComponent } from './centro-info/centro-info.component';
 import { MenuHComponent } from './menu-h/menu-h.component';
+import { AvanceMateriaAlumnoComponent } from './avance-materia-alumno/avance-materia-alumno.component';
 
 const routes:Routes = [
   { path: '', component: LoginComponent },
@@ -48,6 +49,7 @@ const routes:Routes = [
   { path: 'codigoColoresMateria', component: CodigoColoresMateriaComponent},
   { path: 'centroInfo', component: CentroInfoComponent},
   { path: 'menuH', component: MenuHComponent },
+  { path: 'avanceMateriaAlumno', component:AvanceMateriaAlumnoComponent}
 ]
 
 @NgModule({
@@ -75,6 +77,7 @@ const routes:Routes = [
     CentroInfoComponent,
     MenuHComponent,
     MenuHComponent,
+    AvanceMateriaAlumnoComponent,
   ],
   imports: [
     BrowserModule,
