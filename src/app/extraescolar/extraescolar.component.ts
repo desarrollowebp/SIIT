@@ -11,13 +11,19 @@ export class ExtraescolarComponent implements OnInit {
 
   objetoActual = function(gru) {
     console.log(gru);
-   this.datoseleccionado ={ promotor:gru.promotor, grupo:gru.grupo};
+   this.extraseleccionada ={ periodo:gru.periodo, nombre:gru.nombre, grupo:gru.grupo,
+     promotor:gru.promotor, hInicial:gru.hInicial, hFinal:gru.hFinal, dias:gru.dias };
   }
 
   datosmodal="kevin wulf";
-  datoseleccionado={
+  extraseleccionada={
+    periodo:"",
+    nombre:"",
+    grupo:"",
     promotor:"",
-    grupo:""
+    hInicial:"",
+    hFinal:"",
+    dias:""
   }
 
   modals = "modal";
@@ -33,7 +39,7 @@ export class ExtraescolarComponent implements OnInit {
     this.datosmodal= $var;
   }
   cerrar() {
-    this.modals ="kevin wulf es l matzimo";
+    this.modals ="modal";
 
   }
 
@@ -110,8 +116,8 @@ export class ExtraescolarComponent implements OnInit {
 
 
   gruposDisponibles = [
-    { periodo: '20183', nombre: 'Baile Tahitiano', grupo: 'RL', promotor: 'GALINDO ZALDIVAR M.V. ISAAC ALEJANDRO', hInicial: '13:00', hFinal: '14:00', dias: 'L,MA,MI,J', lugares: '20' },
-    { periodo: '20183', nombre: 'Baile Tahitiano', grupo: '1B', promotor: 'GARCIA GARCIA JOSE ANTONIO', hInicial: '11:00', hFinal: '12:00', dias: 'L,MA,MI,J', lugares: '15' },
+    { periodo: '20183', nombre: 'Ajedrez', grupo: 'RL', promotor: 'GALINDO ZALDIVAR M.V. ISAAC ALEJANDRO', hInicial: '13:00', hFinal: '14:00', dias: 'L,MA,MI,J', lugares: '20' },
+    { periodo: '20183', nombre: 'Ajedrez', grupo: '1B', promotor: 'GARCIA GARCIA JOSE ANTONIO', hInicial: '11:00', hFinal: '12:00', dias: 'L,MA,MI,J', lugares: '15' },
   ]
 
 
