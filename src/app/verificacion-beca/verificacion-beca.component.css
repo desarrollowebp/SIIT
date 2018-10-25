@@ -1,4 +1,5 @@
 
+
 *{
 
 	margin:0;
@@ -10,19 +11,36 @@
 	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
 }
 /* CENTRAR LA CAJA Y DARLE 1000 PX */
+.menu{
+	width: 85%;
+	margin: auto;
+}
 .contenedor{
-	width:1000px;
+	width:1024px;
 	background: #70193f;
-	margin-right: 375;
-	margin-left: 375;
-	border: 300PX;
+	margin: auto;
+	border: 200PX;
 	
+}
+.boton{
+  font-size: 12px;
+  font-family: Arial, sans-serif,Helvetica;
+  font-weight: bold;
+  font-variant:small-caps;
+  color: #FFFFFF;
+  background: #70193F;
+  border-color: #70193F;
+  border-style: solid;
+  border-bottom-width: 2px;
+  border-top-width: 1px;
+  border-left-width: 1px;
+  border-right-width: 2px;
 }
 
 /* El hijo siempre lleva margin 0 y auto para centrarlo al div padre*/
 .meniu{
 
-margin: 0 auto;
+align-content: center;
 width: 100%;
 height: 40%;
 background:white;
@@ -31,8 +49,7 @@ background:white;
 .meniu ul{
 	justify-content: center;
 	text-align: center;
-  list-style: none;
-  font-size: smaller;
+	list-style: none;
 	width: 100%;
 	display: flex;
 	flex-wrap: nowrap;
@@ -42,16 +59,10 @@ background:white;
 
 .meniu ul li {
 	padding: 5px;
-	width: inherit;
-  color: black;
-  font-size: 100px;
-  
+	width: 33%;
+	color: black;
 }
-.ngcontent-c2{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 .submeniu ul li{
 	width: 100%;
 	background:white;
@@ -61,24 +72,21 @@ background:white;
 {
 	background-color: #70193f;
 	color: white;
-  font-weight: bold;
-  font-size: 12px;
-  
-}
-#table th {
-    background: #70193f;
-    color: white;
-    font-weight: bold;
+	font-weight: bold;
+	font-size: small;
+
+
+
 }
 
 @media (min-width:100px) {
 	.contenedor{
-	  width: 80%;
+	  width: 70%;
 		min-width: 100%;
-    max-width: 100%;
-    height: 150px;
-		background: white;
-		font-size: 11px;
+		max-width: 100%;
+		background: #70193f;
+		font-size: 15px;
+		margin: auto;
 
 	
 	}
@@ -89,32 +97,30 @@ margin: 0 auto;
 width: 100%;
 height: 40%;
 background:white;
-font-size: 20px;
 
 }
-.boton{
-  font-size: 12px;
-  font-family: Arial, sans-serif,Helvetica;
-  font-weight: bold;
-  font-variant:small-caps;
-  color: #FFFFFF;
-  background: #70193F;
-  border-color: #70193F;
-  border-style: solid;
-  border-bottom-width: 2px;
-  border-top-width: 1px;
-  border-left-width: 1px;
-  border-right-width: 2px;
- }
- .boton:hover{
-  color:#7CCFF7;
- }
-
-
+._ngcontent-c1 {
+  margin: 0;
+  padding: 0;
+  font-size: 9px;
+  box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+.curp_alumno {
+  margin: 0;
+  padding: 0;
+  font-size: xx-small;
+  box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
 }
 h3{
     display: block;
-    font-size: 1em;
+    font-size: 1.5em;
     margin-block-start: 0.83em;
     margin-block-end: 0.83em;
     margin-inline-start: 0px;
@@ -124,9 +130,11 @@ h3{
     text-align: center;
     color: white;
 }
-
+p{
+	width: auto;
+}
 /* 
-
+Generic Styling, for Desktops/Laptops 
 */body{background:#f9f9f9;}
 #wrapper{padding:90px 15px;}
 .navbar-expand-lg .navbar-nav.side-nav{flex-direction: column;}
@@ -134,220 +142,164 @@ h3{
 .header-top{box-shadow: 0 3px 5px rgba(0,0,0,.1)}
 .leftmenutrigger{display: none}
 
+/* Responsive para mostrar datos de la tabla de materias*/
+
+.container {
+	width: 100%;
+	margin: auto;
+	}
+	.info{
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
 table {
-  width: 100%;
-  border-collapse: collapse;
+	width: 100%;;
+	margin:auto;
+	border: none;
+	background: white;
+	border-spacing: 0;
+	font-size: 1rem; line-height: 1rem;
+
+	}
+	thead{
+		border-color: white;
+	}
+/*======TFOOT======*/
+
+tfoot td {
+	border-top: solid 1px #eee;
+	color: #70193F;
+	}
+/*======TBODY======*/
+.foot {
+ background: white;
 }
+tr {
+	border-bottom: solid 1px #ccc;
+	color:none;
+	background: white;
+	}
+	th{
+		border:white;
+	}
+tr * {
+	padding: 5px 10px;
+	text-align: center;
+	}
+tr:nth-child(even) {
+	background-color: #ffffff;
+	}
+tr th {
+	font-weight: bold;
+	}
+thead tr{
+	background:white;
+	
+	}
+thead th{
+		color: white;
+		text-align: center;
+		background: #70193f;
 
-
-/* */
-
-tr:nth-of-type(odd) {
-  background: #eee;
+	}
+	
+	tbody td {
+		text-align: center;
+		background: white;
+	}
+	tbody th{
+		text-align: center;
+		background: white;
+	}
+	.foot td{
+		text-align: center;
+	}
+	button{
+		text-align: center;
+	}
+@media only screen and (max-width: 780px){
+	
+	/*======GENERAL======*/
+	HTML {
+		font-size: 1rem;
+		}
+	
+	table, thead, tfoot, tbody, tr {
+		display:block;
+		}
+	
+	table {
+		position: relative;
+		}
+	/*table * {
+		font: bold normal 36px/42px Arial, Helvetica, sans-serif;
+		}*/
+		
+	/*======THEAD======*/
+	
+	thead tr th {
+		display:none;
+		}
+	thead tr th:first-child {
+		display: block;
+		width: inherit; padding: 2% 5%;
+		font-size: 1.5rem; line-height: 1.8rem;
+		text-align: center;
+		}
+	/*======TFOOT======*/
+	
+	tfoot {
+		position: absolute; bottom: 60px;
+		width:inherit;
+		}
+	tfoot td, tfoot tr {
+		display: block;
+		padding: 0;
+		border: 0;
+		text-align: center;
+		}
+	/*======TBODY======*/
+	
+	tbody tr {
+		position: relative;
+		}
+	tr * {
+		padding: 10px 20px;
+	}
+	tbody th, tbody tr td:first-of-type {
+		display: inline-block;
+		width: 44%; padding: 1.2rem 4%;
+		font-size: 1.2rem; line-height: 1.2rem;
+		}
+	tbody th {
+		width: 30%;
+		}
+	tbody tr td:first-of-type {
+		padding-right: 10%;
+	}
+	tr td, tr td:nth-of-type(1n+2) {
+		display:block;
+		}
+	tbody .closed td {
+		display: none;
+		}
+	tbody td:nth-of-type(1n+2):before {
+		content: attr(title)": ";
+		font-weight: bold;
+		}
+	tbody tr:after {
+		content: "";
+		position: absolute; right: 8px; top: 12px;
+		width: 2rem; height: 2rem;
+		opacity: 0.6;
+		background: transparent  no-repeat center center; background-size: 2rem;
+		cursor: pointer;
+		}
+	tr.closed:after{
+		background: transparent  no-repeat center center; background-size: 2rem
+		}
+	td:nth-of-type(1n+2) {
+		border-bottom: solid 1px #ccc;
+		}
+	
 }
-
-th {
-  background: #70193f;
-  color: white;
-  font-weight: bold;
-}
-
-td,
-th {
-  padding: 6px;
-
-  text-align: center;
-}
-
-@media all and (max-width:780px) {
-  table,
-  thead,
-  tbody,
-  th,
-  td,
-  tr {
-    font-size:10px;
-  }
-  
-  tr { margin-bottom: 10px}
-  .menu p 
-  {
-    font-size: 1em;
-  }
-  .container
-  {
-    
-    height: 10px;
-    margin-top: 15px;
-    
-  }
-  .container table {
-
-  font-size: 11px;
-  }
-  p #p2
-  {
-    height: 11px;
-  }
-}
-
-/* MENU*/
-/* 100% algot de ventava uvh*/
-.menu {
-  background: white;
-  width: 100%;
-  height: 200px;
-  top: 10px;
-  transition: all 0.5s;
-}
-
-.boton{
-  font-size: 12px;
-  font-family: Arial, sans-serif,Helvetica;
-  font-weight: bold;
-  font-variant:small-caps;
-  color: #FFFFFF;
-  background: #70193F;
-  border-color: #70193F;
-  border-style: solid;
-  border-bottom-width: 2px;
-  border-top-width: 1px;
-  border-left-width: 1px;
-  border-right-width: 2px;
- }
- .boton:hover{
-  color:#7CCFF7;
- }
- ._ngcontent-c1 {
-   margin: 0;
-   padding: 0;
-   font-size: 10px;
-   box-sizing: border-box;
-   -ms-box-sizing: border-box;
-   box-sizing: border-box;
-   font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
-   background: #FFFFFF;
- }
-
-/*probemmas con margin*/
-.menu ul {
-  background: white;
-  text-decoration: none;
-  list-style: none;
-  font-size: 20px;
-  margin: 0px -8px;
-}
-.menu li
-{
-  font-size: 25px;
-}
-
-.menu a {
-  border: none;
-  display: block;
-  padding: 5px 20px;
-  text-decoration: none;
-  font-size: 15px;
-}
-
-/*ayuda a jquery*/
-.menu ul li:hover ul {
-  display: none;
-  position: static;
-}
-
-.menu ul li ul {
-  display: none;
-  width: 100%;
-}
-
-.menu ul li p {
-  font-size: 11px;
-  text-align: center;
-}
-
-.menu ul li a {
-  color: black;
-  border-left: 6px solid #6A1A3E;
-  background-color: white;
-}
-
-
-
-.vertical {
-  overflow: auto;
-  white-space: nowrap;
-}
-
-/*alt 126 tllde selecciona menu*/
-#menu-bar:checked~.menu {
-  transform: translateX(0);
-}
-
-@media(min-width:720px) {
-
-  .menu {
-    width: 1000px;
-    height: 80%;
-    margin: 0 auto;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .submenu {
-    width: 100%;
-    height: 100%;
-    font-size: 10px;
-    margin: 0 auto;
-    text-align: center;
-  }
-  .menu ul {
-    display: flex;
-  }
-
-  .vertical {
-    overflow: visible;
-    white-space: normal;
-  }
-  .menu ul li p {
-    font-size: 13px;
-    text-align: center;
-  }
-  p 
-  {
-    height: 15px;
-  }
-}
-
-
-*{
-  margin:0;
-  padding: 0;
-  box-sizing: border-box;
-
-}
-
-body{
-  background:white;
-  margin: 50px  ;
-}
-
-
-
-
-
-
-
-/* 98 para tener un alinieamiento
-margin auto para centrar*/
-.contenedor{
-  width:98%;
-  margin: auto;
-  }
-  /* Margin bottom para espaciar  */
-  
-  
-  .prueba{
-    padding: 20px;
-  }
-  
