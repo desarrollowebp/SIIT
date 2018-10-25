@@ -6,6 +6,10 @@
 .modal{
   background:#fff;
 }
+.btn-primary{
+  background: #70193f;
+  border-color: #000;
+}
 
 .titable{
   background-color: #70193f;
@@ -15,6 +19,7 @@
   border-radius: 13px;
   margin-bottom: 10px;
 }
+.
 a{
   text-decoration:none;
   
