@@ -18,7 +18,7 @@ export class TutoriasComponent implements AfterViewInit {
   	$(document).ready(function() {
   
   // get box count
-  var count = 1;
+  var count = 0;
   var count2 = 0;
   var percentage = 0;
   function countBoxes() { 
