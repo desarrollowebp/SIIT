@@ -181,13 +181,13 @@
 						<th>Lugares Disponibles</th>
 						<th></th>
 					</tr>
-					<tr>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
+					<tr *ngFor="let group of gruposDisponibles">
+						<td>{{group.grupo}}</td>
+						<td>{{group.promotor}}</td>
+						<td>{{group.hInicial}}</td>
+						<td>{{group.hFinal}}</td>
+						<td>{{group.dias}}</td>
+						<td>{{group.lugares}}</td>
 						<td><button type="button" class="boton" (click)="cerrar()" (click)="objetoActual(group)">Seleccionar</button></td>
 					</tr>
 					<tr>
