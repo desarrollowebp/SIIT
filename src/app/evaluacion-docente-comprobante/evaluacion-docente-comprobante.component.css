@@ -1,0 +1,20 @@
+.row {
+  margin: 42px 0;
+}
+
+.clr-guinda {
+  color: #70193f;
+}
+
+
+.btn-guinda {
+	color: #fff;
+	background-color: #70193f;
+	border-color: #70193f;
+}
+
+@media print {
+  a, button {
+    display: none;
+  }
+}

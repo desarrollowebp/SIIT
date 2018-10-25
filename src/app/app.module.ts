@@ -26,6 +26,7 @@ import { CentroInfoComponent } from './centro-info/centro-info.component';
 import { DatosAlumnoComponent } from './datos-alumno/datos-alumno.component';
 import { TablaHorarioComponent } from './tabla-horario/tabla-horario.component';
 import { MenuHComponent } from './menu-h/menu-h.component';
+import { EvaluacionDocenteComprobanteComponent } from './evaluacion-docente-comprobante/evaluacion-docente-comprobante.component';
 
 const routes:Routes = [
   { path: '', component: LoginComponent },
@@ -45,6 +46,7 @@ const routes:Routes = [
   { path: 'extraescolar', component: ExtraescolarComponent },
   { path: 'evaluacionDocente', component: EvaluacionDocenteComponent },
   { path: 'evaluacionDocente/introduccion', component: EvaluacionDocenteIntroduccionComponent },
+  { path: 'evaluacionDocente/comprobante', component: EvaluacionDocenteComprobanteComponent },
   { path: 'auditoriaServicio', component: AuditoriaServicioComponent },
   { path: 'datos-alumno', component:DatosAlumnoComponent },
   { path: 'tabla-horario', component:TablaHorarioComponent},
@@ -80,6 +82,7 @@ const routes:Routes = [
     DatosAlumnoComponent,
     TablaHorarioComponent,
     MenuHComponent,
+    EvaluacionDocenteComprobanteComponent,
   ],
   imports: [
     BrowserModule,
