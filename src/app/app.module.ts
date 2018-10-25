@@ -27,6 +27,8 @@ import { DatosAlumnoComponent } from './datos-alumno/datos-alumno.component';
 import { TablaHorarioComponent } from './tabla-horario/tabla-horario.component';
 import { MenuHComponent } from './menu-h/menu-h.component';
 
+import { PostSeleccionMateriasComponent } from './post-seleccion-materias/post-seleccion-materias.component';
+
 const routes:Routes = [
   { path: '', component: LoginComponent },
   { path: 'inicio', component: InicioComponent },
@@ -51,6 +53,8 @@ const routes:Routes = [
   { path: 'codigoColoresMateria', component: CodigoColoresMateriaComponent},
   { path: 'centroInfo', component: CentroInfoComponent},
   { path: 'menuH', component: MenuHComponent },
+  { path: 'auditoriaServicio', component: AuditoriaServicioComponent },
+  { path: 'postSeleccionMaterias', component:PostSeleccionMateriasComponent}
 ]
 
 @NgModule({
@@ -80,6 +84,8 @@ const routes:Routes = [
     DatosAlumnoComponent,
     TablaHorarioComponent,
     MenuHComponent,
+    
+    PostSeleccionMateriasComponent,
   ],
   imports: [
     BrowserModule,
