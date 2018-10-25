@@ -99,11 +99,7 @@ export class ExtraescolarComponent implements OnInit {
   ]
 
 
-  tgrupo = {
-
-  }
-
-  $scope.extrase = []
+  
 
   gruposDisponibles = [
     { periodo: '20183', nombre: 'Baile Tahitiano', grupo: 'RL', promotor: 'GALINDO ZALDIVAR M.V. ISAAC ALEJANDRO', hInicial: '13:00', hFinal: '14:00', dias: 'L,MA,MI,J', lugares: '20' },
