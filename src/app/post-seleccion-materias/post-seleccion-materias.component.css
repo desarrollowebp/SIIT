@@ -120,6 +120,7 @@ align-items: center;
   margin: 20px;
   width: 100px;
   height: 40px;
+  cursor: pointer;
 }
 
 .vertical {
@@ -155,8 +156,8 @@ font-size: 14px;
 .vertical::-webkit-scrollbar-thumb {
     background: red;
 }
-.opciones{
-
+.opciones button{
+cursor: pointer;
 
 }
 @media(min-width:780px)
