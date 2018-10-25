@@ -131,6 +131,17 @@ padding: 2px;
   width: 100%;
 }
 
+ .movil ul li:hover ul {
+    display: block;
+    position: static;
+}
+
+ .movil ul li ul {
+   display: block;
+    width: 100%;
+}
+
+
 .menu ul li p {
   font-size: 14px;
   text-align: center;
