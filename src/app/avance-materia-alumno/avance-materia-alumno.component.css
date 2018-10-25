@@ -8,10 +8,18 @@
   -ms-box-sizing: border-box;
        box-sizing: border-box;
   font-family: 'Lato', sans-serif;
-  text-align: center;
+  text-align: left;
 }
 
-
+h4 
+{
+  font-size: 10px;
+ 
+}
+h1
+{
+  font-size: 14px;
+}
 
 
 .menu {
