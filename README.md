@@ -17,7 +17,7 @@ En vez de `npm start`, utiliza `ng serve --host mi.direccion.ip`.
 
 > NOTA: mi.direccion.ip sera la direccion IP del paso anterior.
 
-## Visita el proyecto desde otro dispositivo
+### Visita el proyecto desde otro dispositivo
 Desde tu celular visita `http://mi.direccion.ip:4200`
 
 Esta contribucion fue hecha por Aurora Gamero Pescador | 14041403.
