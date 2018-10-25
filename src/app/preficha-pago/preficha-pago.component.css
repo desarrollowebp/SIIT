@@ -2,7 +2,6 @@
     max-width: 98%;
     margin: 10px auto;
 }
-
 .modal{
   background:#fff;
 }
@@ -10,63 +9,13 @@
   background: #70193f;
   border-color: #000;
 }
-
-.titable{
-  background-color: #70193f;
-  color:#fff;
-  font-family: roboto Arial;
-  text-align: center;
-  border-radius: 13px;
-  margin-bottom: 10px;
-}
-.
 a{
   text-decoration:none;
-  
 }
 li{
   list-style:none;
   text-align:justify;
 }
-.boton{
-	width: 60px;
-
-
-}
-.hea{
-  font-size: 25px;
-  font-family: roboto , arial;
-  text-align: center;
-}
-.bod{
-  background: #fff;
-  margin: 0px;
-  color: #000;
-  border :solid #70193f;
-}
-
-
-.impr{
-	font-size: 20px;
-}
-.title{
-	margin:14px;
-	padding: 12px;
-	background: #70193f;
-	
-	color: #fff;
-}
-
-/*esta clase es para quitar las lineas de las a*/
-.alumno{
- 
-  font-size: 18px;
-  color: #fff;
-
-}
-
-
-
 .stiltab{
   color: black;
   text-align: center;
@@ -74,24 +23,19 @@ li{
   font-size: 15px;
   margin: 5px;
 }
-
 .btnprint{
-   
-    padding-left: 0px;
-    width: 45px;
-    height: 41px;
-    margin-left: 10px;
-    padding-right: 0px;
+  padding-left: 0px;
+  width: 45px;
+  height: 41px;
+  margin-left: 10px;
+  padding-right: 0px;
 }
-
 .titulo{
   background-color: #70193F;
   text-align: center;
   font-size: 20px;
   margin: 10px;
-  color: white;
-  
-    
+  color: white;   
 }
 .stiltab{
   color: black;
@@ -107,9 +51,6 @@ li{
   justify-content: center;
   align-items: center;
 }
-
-
-
 .principal{
   background-color: #70193F;
   padding: 15px 15px 15px 15px;
@@ -117,64 +58,10 @@ li{
   margin-top: 15px;
 }
 .texto{
-  color: white;
-  font-family:   Arial;
-  color:#fff;
-  font-size: 14px;
-=======
-	text-align: center;
 	font-family: arial;
 	font-size: 15px;
-
-}
-.stil{
-	font-size: 20px;
-	margin: 5px;
-	
-
-}
-.titulo{
-	text-align: center;
-	font-size: 20px;
-	margin: 10px;
-}
-.botones{
-	background-color: #fff;
-	padding-top: 15px;
-}
-.btn2{
-	position:;
-}
-.estilo{
-	padding: 5px 5px 5px 5px;
-	background-color: #70193F;
-	font-family: verdana;
-
-}
-.informacion{
-	font-family: verdana;
-	background: white;
-	width: 100%;
-}
-
-
-.texto{
-	
-	font-family:   Arial;
-	color:#fff;
-	font-size: 14px;
-	}
-
-h3{
-
   color: white;
-  font-family: verdana;
-  font-size: 12px;
-  text-align: center;
-	color: white;
-	font-family: verdana;
-	font-size: 12px;
-	text-align: ;
+
 }
 h2{
  color: white;
@@ -183,28 +70,16 @@ h2{
  text-align: center;
  font-family: monospace;
 }
-
-
-
-.texto2{
-  color:#000;
-  font-size: 23px;
-}
-
 .tab{
   color: #000;
 }
-
 #boton{
  background-color: #31384A;
  color: #fff;
  padding: 20px;
  border: none;
-
  width: 50%;
-
  width: 100%;
-
  font-family: monospace;
  font-weight: bolder;
  font-size: 2em;
@@ -212,24 +87,17 @@ h2{
 #boton:hover{
  cursor:pointer;
 }
-
- 
-
-
-
 /*empieza css de tabla que se despliega*/
 
-/* STYLE THE ACCORDION HOLDING CONTAINER */
+/* ESTILO EL CONTENEDOR DE CONTENCIÓN DE ACORDIÓN */
 .accordionbox{
   max-width: 1000px;
   margin: 10px auto 0px auto;
   z-index: 2;
   display: block;
-
-  }
-  
-  /* STYLE THE CHECKBOX LABELS */
-  .accordionbox label{
+}
+  /* ESTILO LAS ETIQUETAS DE CHECKBOX */
+.accordionbox label{
    font-family: 'PT Sans Narrow', sans-serif;
    padding: 10px;
    position: relative;
@@ -240,22 +108,18 @@ h2{
    background: #70193f;
    border-bottom: 2px solid #aaa;
    transition: all 0.3s ease;
-  }
-  
-  /* STYLE THE CHECKBOX LABELS ON HOVER */
-  .accordionbox label:hover{
+}
+  /* ESTILO LAS ETIQUETAS DE CHECKBOX EN HOVER */
+.accordionbox label:hover{
    background: rgb(182, 182, 182);
    color: #111111;
-  }
-
-  
-  /* HIDE THE HTML CHECKBOX SQUARE */
-  .accordionbox input{
+}
+  /* OCULTAR EL CUADRADO DE CHECKBOX HTML */
+.accordionbox input{
    display: none;
-  }
-  
-  /* STYLE THE INITIAL DROPDOWN CONTENT BOX */
-  .insidebox{
+}
+  /* ESTILO LA CAJA DE CONTENIDO INICIAL */
+.insidebox{
   height: 0px;
   padding: 0px 15px;
   font-size: 13px;
@@ -264,107 +128,21 @@ h2{
   background: #ffffff;
   overflow: hidden;
   transition: all 0.3s ease;
-  }
-  
-  
-  /* STYLE THE CLICKED DROPDOWN CONTENT BOX */
-  .accordionbox input:checked ~ .insidebox{
-   height: 200px;
-    overflow: scroll;
-  }
-  
-  
-  /* SHOW THE + SIGN WHEN BOXES ARE CLOSED */
-  input[type=checkbox] + label::before {
-    content: "+ ";
-  }
-  
-  
-  /* SHOW THE – SIGN WHEN BOXES ARE OPEN */
-  input[type=checkbox]:checked + label::before {
-    content: "– ";
-  }
-  
-  
-  /* THIS IS ADDITIONAL PAGE STYLING, NOT RELATED TO THE ACCORDION */
-  a.appbtn{
-  font-size: 14px;
-  text-decoration: none;
-  cursor: pointer;
-  display: block;
-  width: 90%;
-  padding: 13px;
-  text-align: center;
-  background: #263238;
-  color: #FFFFFF;
-  margin: 20px auto;
-  transition: all 0.3s ease;
-  }
-  
-  a.appbtn:hover{
-    background: #5FCF80;
-  
-  }
-  
-  .applicationbox{
-    position: relative;
-    display: inline-block;
-    background: #263238;
-    color: #ffffff;
-    text-align: center;
-    padding: 10px;
-    max-width: 100px;
-    margin: 10px;
-  }
-  
-  .applicationbox1{
-    position: relative;
-    display: inline-block;
-    background: #263238;
-    color: #ffffff;
-    text-align: center;
-    padding: 10px;
-    max-width: 100px;
-    margin: 10px;
-  }
-  .back{
-    background:#70193f;
-    color: #fff;
-  }
-  
-  .applicationbox::after{
-    position: absolute;
-    width: 0;
-    height: 0;
-    content: '';
-    top: 50%;
-    left: 100%;
-    border-top: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    border-left: 10px solid #263238;
-    margin-top: -10px;
-  }
-  
-  .copyright{
-    font-size: 9px;
-    font-family: 'Roboto', sans-serif;
-    color: #cccccc;
-    text-align: center;
-  }
-  
-  .pagetitle{
-    position: absolute;
-    top: 40px;
-    left: 30px;
-    color: #ffffff;
-    font-size: 32px;
-    line-height: 0.5;
-    font-family: 'Baskerville', serif;;
-    font-weight: 200;
-    z-index: 2;
-    opacity: 0.5;
-    letter-spacing: 0.01em;
-    padding-bottom: 0;
-    margin-bottom: 0;
-  }
+}
+  /* ESTILO DE LA CAJA DE CONTENIDO DE DESECHO HECHO CLIC EN */
+.accordionbox input:checked ~ .insidebox{
+  height: 200px;
+  overflow: scroll;
+}
+  /* MOSTRAR EL SIGNO + CUANDO LAS CAJAS SE CERRAN */
+input[type=checkbox] + label::before {
+  content: "+ ";
+}
+  /* MOSTRAR EL SIGNO - CUANDO SE ABREN LAS CAJAS */
+input[type=checkbox]:checked + label::before {
+  content: "– ";
+}
+.back{
+  background:#70193f;
+  color: #fff;
+}
