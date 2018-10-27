@@ -155,7 +155,13 @@ p {
 
 table {
   width: 100%;
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0px;
+  border: 1px solid black;
+  border-radius: .25rem;
+  -moz-border-radius: .25rem;
+  	-webkit-border-radius: .25rem;
+  
 }
 
 tr:nth-of-type(odd) {
@@ -183,6 +189,9 @@ th {
   td,
   tr {
     font-size: 8px;
+  }
+  .card-body{
+    padding:.5rem;
   }
 
   tr {
