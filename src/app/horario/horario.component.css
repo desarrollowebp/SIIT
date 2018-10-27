@@ -193,6 +193,9 @@ table tr:last-child td:last-child {
     tr {
       margin-bottom: 10px
     }
+    .card-body{
+      padding: .5rem;
+    }
   }
   
   .meniu {
