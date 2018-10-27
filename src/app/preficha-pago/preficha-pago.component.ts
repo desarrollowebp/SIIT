@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-preficha-pago',
@@ -10,6 +11,10 @@ export class PrefichaPagoComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  	$('h1').click(function() {
+      $(this).fadeOut()
+    })
+  
   }
 
 }

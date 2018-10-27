@@ -36,6 +36,7 @@ html {
   /* STRUCTURE */
   
   .wrapper {
+    margin-top: 0 auto;
     display: flex;
     align-items: center;
     flex-direction: column; 
@@ -49,6 +50,7 @@ html {
   }
   
   #formContent {
+    margin-top: 150px;
     -webkit-border-radius: 10px 10px 10px 10px;
     border-radius: 10px 10px 10px 10px;
     background: #fff;
@@ -480,7 +482,7 @@ html {
         width: auto;
         font-size: 18px;
         height: auto;
-        
+        margin-top: 100px;
       }
   
         }
