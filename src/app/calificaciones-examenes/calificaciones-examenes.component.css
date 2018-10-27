@@ -19,7 +19,6 @@ h2,
 .h2 {
   font-size: 1.2rem;
 }
-
 .menu ul {
   background: white;
   text-decoration: none;
@@ -28,30 +27,25 @@ h2,
   margin: 0px 0px;
   width: 70%;
 }
-
 .menu a {
   border: none;
   display: block;
   padding: 5px 20px;
   text-decoration: none;
 }
-
 .menu ul li:hover ul {
   display: none;
   position: static;
 }
-
 .menu ul li ul {
   display: none;
   width: 100%;
 }
-
 .menu ul li p {
   font-size: 9px;
   text-align: center;
   overflow-wrap: break-word;
 }
-
 .menu ul li a {
   color: black;
   border-left: 6px solid #6A1A3E;
@@ -88,7 +82,6 @@ h2,
     font-size: 2rem;
   }
 }
-
 .contenedor {
   width: 800px;
   background: #70193f;
@@ -105,7 +98,6 @@ h2,
     background: #70193f;
     font-size: 15px;
   }
-
   .meniu {
     margin: 0 auto;
     width: 100%;
@@ -113,7 +105,6 @@ h2,
     background: white;
   }
 }
-
 h3 {
   display: block;
   font-size: 1.2em;
@@ -172,7 +163,6 @@ th {
   color: white;
   font-weight: bold;
 }
-
 td,
 th {
   padding: 6px;
@@ -189,19 +179,16 @@ th {
   tr {
     font-size: 8px;
   }
-
   tr {
     margin-bottom: 10px
   }
 }
-
 .meniu {
   margin: 0 auto;
   width: 100%;
   height: 40%;
   background: white;
 }
-
 .meniu ul {
   justify-content: center;
   text-align: center;
@@ -211,25 +198,21 @@ th {
   flex-wrap: nowrap;
   text-decoration: none;
 }
-
 .meniu ul li {
   padding: 5px;
   width: 33%;
   color: black;
 }
-
 .submeniu ul li {
   width: 100%;
   background: white;
   margin-left: 1px;
 }
-
 .submeniu #titulo {
   background-color: #70193f;
   color: white;
   font-weight: bold;
 }
-
 #table th {
   background: #70193f;
   color: white;

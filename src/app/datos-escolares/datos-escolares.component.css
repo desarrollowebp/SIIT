@@ -1,132 +1,163 @@
-/*DATOS ESCOLARES*/
 
-h2 {
-	font-size: 30px;/*RESET ELEMENTOS Y SE CONTENGAN EN LAS CAJAS	*/
-}
-*{
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
 
-	margin:0;
-	padding: 0;
-	font-size: small;
-	box-sizing: border-box;
-	-ms-box-sizing: border-box;
-	 box-sizing: border-box;
-	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
-}
-/* CENTRAR LA CAJA Y DARLE 1000 PX */
-.contenedor{
-	width:1000px;
-	background: #70193f;
-	margin-right: 375;
-	margin-left: 375;
-	border: 200PX;
-	
+  padding-top: 15px;
 }
 
-/* El hijo siempre lleva margin 0 y auto para centrarlo al div padre*/
-.meniu{
 
-margin: 0 auto;
-width: 100%;
-height: 40%;
-background:white;
 
+h2,
+.h2 {
+  font-size: 1.2rem;
 }
-.meniu ul{
-	justify-content: center;
-	text-align: center;
+
+.menu ul {
+  background: white;
+  text-decoration: none;
   list-style: none;
-  font-size: smaller;
-	width: 100%;
-	display: flex;
-	flex-wrap: nowrap;
-	text-decoration: none;
-
+  font-size: 20px;
+  margin: 0px auto;
+  width: 70%;
 }
 
-.meniu ul li {
-	padding: 5px;
-	width: inherit;
+.menu a {
+  border: none;
+  display: block;
+  padding: 5px 20px;
+  text-decoration: none;
+}
+
+.menu ul li:hover ul {
+  display: none;
+  position: static;
+}
+
+.menu ul li ul {
+  display: none;
+  width: 100%;
+}
+
+.menu ul li p {
+  font-size: 9px;
+  text-align: center;
+  overflow-wrap: break-word;
+}
+
+.menu ul li a {
   color: black;
-  font-size: 100px;
-  
+  border-left: 6px solid #6A1A3E;
+  background-color: white;
 }
 
-.submeniu ul li{
-	width: 100%;
-	background:white;
-
+#menu-bar:checked~.menu {
+  transform: translateX(0);
 }
-.submeniu #titulo
-{
-	background-color: #70193f;
-	color: white;
-  font-weight: bold;
-  font-size: 12px;
-  
+
+@media(min-width:780px) {
+  .menu {
+    width: 1000px;
+    height: 80%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+  }
 
 
+
+  .menu ul {
+    display: flex;
+  }
+
+  .menu ul li p {
+    font-size: 15px;
+  }
+
+  h2,
+  .h2 {
+    font-size: 2rem;
+  }
 }
-#table th {
-    background: #70193f;
-    color: white;
-    font-weight: bold;
+
+.contenedor {
+  width: 800px;
+  background: #70193f;
+
+  border: 200PX;
 }
 
 @media (min-width:100px) {
-	.contenedor{
-	  width: 70%;
-		min-width: 100%;
+  .contenedor {
+    width: 70%;
+    min-width: 100%;
     max-width: 100%;
-    height: 150px;
-		background: white;
-		font-size: 20px;
+    background: #70193f;
+    font-size: 15px;
+  }
 
-	
-	}
+  .meniu {
+    margin: 0 auto;
+    width: 100%;
+    height: 40%;
+  
+  }
 
-	.meniu{
-/*para ajustes del titulo DATOSALUMNO*/
-margin: 0 auto;
-width: 100%;
-height: 40%;
-background:white;
-font-size: 20px;
+  .meniu ul {
+  
+    margin: 0 auto;
+    width: 100%;
+    background: white;
+   padding-left: 5px;
+  }
+}
 
+h3 {
+  display: block;
+  font-size: 1.2em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  background-color: #70193f;
+  text-align: center;
+  color: white;
+}
+
+p {
+  width: auto;
 }
 
 
-
-}
-h3{
-    display: block;
-    font-size: 1em;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-    background-color: #70193f;
-    text-align: center;
-    color: white;
+#wrapper {
+  padding: 90px 15px;
 }
 
-/* 
-Generic Styling, for Desktops/Laptops 
-*/body{background:#f9f9f9;}
-#wrapper{padding:90px 15px;}
-.navbar-expand-lg .navbar-nav.side-nav{flex-direction: column;}
-.card{margin-bottom: 15px; border-radius:0; box-shadow: 0 3px 5px rgba(0,0,0,.1); }
-.header-top{box-shadow: 0 3px 5px rgba(0,0,0,.1)}
-.leftmenutrigger{display: none}
+.navbar-expand-lg .navbar-nav.side-nav {
+  flex-direction: column;
+}
+
+.card {
+  
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
+}
+
+.header-top {
+  box-shadow: 0 3px 5px rgba(0, 0, 0, .1)
+}
+
+.leftmenutrigger {
+  display: none
+}
 
 table {
   width: 100%;
   border-collapse: collapse;
 }
-
-
-/* Zebra striping */
 
 tr:nth-of-type(odd) {
   background: #eee;
@@ -141,275 +172,78 @@ th {
 td,
 th {
   padding: 6px;
-
   text-align: center;
 }
 
-@media all and (max-width:780px) {
+@media all and (max-width:500px) {
+
   table,
   thead,
   tbody,
   th,
   td,
   tr {
-    font-size:10px;
+    font-size: 8px;
   }
-  
-  tr { margin-bottom: 10px}
-  .menu p 
-  {
-    font-size: 1em;
-  }
-  .container
-  {
-    
-    height: 10px;
-    margin-top: 15px;
-    
-  }
-  .container table {
 
-  font-size: 15px;
-  }
-  p #p2
-  {
-    height: 15px;
+  tr {
+    margin-bottom: 10px
   }
 }
 
-/* MENU*/
-/* 100% algot de ventava uvh*/
-.menu {
+.meniu {
+  margin: 0 auto;
+  width: 100%;
+  height: 40%;
   background: white;
-  width: 100%;
-  height: 200px;
-  top: 10px;
-  transition: all 0.5s;
 }
 
-.materia {
-  display: inline-block;
-  margin-bottom: 5px;
-  margin-left: 30px;
+.meniu ul {
+  
   justify-content: center;
-  align-items: center;
   text-align: center;
-  border: 2px solid #70193F;
-  border-radius: 12px;
-  border: 1px solid;
-  word-wrap: break-word;
-}
-
-
-
-.dias {
-  background: red;
-  width: 100%;
+  list-style: none;
+  width: 90%;
   display: flex;
   flex-wrap: nowrap;
+  text-decoration: none;
 }
 
-.dias p {
-  width: 30%;
-  padding: 5px;
+.meniu ul li {
+  padding: 1px;
+  width: 33%;
+  color: black;
+
 }
 
-.estado {
-  border-radius: 12px;
-  background: #83C8E3;
-  padding: 10px 10px 10px;
+.submeniu ul li {
+  width: 100%;
+  background: white;
   
 }
 
-.estado2 {
-  background: white;
+.submeniu #titulo {
+  background-color: #70193f;
+  color: white;
+  font-weight: bold;
 }
 
-.menu span {
-  position: absolute;
-  right: 15px;
-  color: blue;
+#table th {
+  background: #70193f;
+  color: white;
+  font-weight: bold;
 }
 
-/*probemmas con margin*/
-.menu ul {
-  background: white;
-  text-decoration: none;
-  list-style: none;
-  font-size: 20px;
-  margin: 0px -8px;
-}
-.menu li
-{
-  font-size: 25px;
+p {
+  width: auto;
 }
 
-.menu a {
-  border: none;
-  display: block;
-  padding: 5px 20px;
-  text-decoration: none;
-  font-size: 15px;
+tr:nth-of-type(odd) {
+  background: #eee;
 }
 
-/*ayuda a jquery*/
-.menu ul li:hover ul {
-  display: none;
-  position: static;
-}
-
-.menu ul li ul {
-  display: none;
-  width: 100%;
-}
-
-.menu ul li p {
-  font-size: 11px;
+td,
+th {
+  padding: 6px;
   text-align: center;
 }
-
-.menu ul li a {
-  color: black;
-  border-left: 6px solid #6A1A3E;
-  background-color: white;
-}
-
-
-
-.vertical {
-  overflow: auto;
-  white-space: nowrap;
-}
-
-/*alt 126 tllde selecciona menu*/
-#menu-bar:checked~.menu {
-  transform: translateX(0);
-}
-
-@media(min-width:720px) {
-
-  .menu {
-    width: 1000px;
-    height: 80%;
-    margin: 0 auto;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .submenu {
-    width: 100%;
-    height: 100%;
-    font-size: 10px;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  .materia {
-    display: block;
-    padding: 0 0 0 0;
-  }
-
-  .estado {
-    width: 100%;
-    max-width: 110px;
-    max-height: 100px;
-    word-wrap: break-word;
-  }
-
-  .menu span {
-    position: static;
-    right: auto;
-    color: blue;
-  }
-  
-
-  .menu ul {
-    display: flex;
-  }
-
-  .vertical {
-    overflow: visible;
-    white-space: normal;
-  }
-  .menu ul li p {
-    font-size: 13px;
-    text-align: center;
-  }
-  p 
-  {
-    height: 15px;
-  }
-}
-
-
-*{
-  margin:0;
-  padding: 0;
-  box-sizing: border-box;
-
-}
-
-body{
-  background: gray;
-
-  margin: 50px  ;
-}
-.pricipal{
-
-  width: 100%;
-  height: 600px;
-  background: green;
-  justify-content: center;
-  border: 5px solid rgb(224, 224, 224);
-  padding: 5px;
-
-}
-
-.pricipal .seccion{
-
-  width: 100%;
-  height: 20%;
-  border: 5px solid rgb(224, 224, 224);
-  padding: 15% 5%;
-  display: flex;
-
-}
-
-a{
-  font-size: 20px;
- 
-
-}
-
-input{
-  font-size: 15px;
-  width: 100%;
-  height: 20px;
-}
-
-/*PRINCIPAL*/
-*{
-  margin:0;
-  padding: 0;
-  box-sizing: border-box;
-  -ms-box-sizing: border-box;
-       box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
-  text-align: inherit;
-}
-
-
-
-/* 98 para tener un alinieamiento
-margin auto para centrar*/
-.contenedor{
-  width:98%;
-  margin: auto;
-  }
-  /* Margin bottom para espaciar  */
-  
-  
-  .prueba{
-    padding: 20px;
-  }
-  

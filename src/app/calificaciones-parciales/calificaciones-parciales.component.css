@@ -11,8 +11,14 @@
   padding: 1.5px;
 }
 
-.meniu[_ngcontent-c1] ul[_ngcontent-c1] {
+.meniu[_ngcontent-c2] ul[_ngcontent-c2] {
+  justify-content: center;
+  text-align: center;
+  list-style: none;
   width: 90%;
+  display: flex;
+  flex-wrap: nowrap;
+  text-decoration: none;
 }
 
 h2,
@@ -63,6 +69,15 @@ h2,
 }
 
 @media(min-width:780px) {
+  .meniu[_ngcontent-c2][_ngcontent-c2] ul[_ngcontent-c2][_ngcontent-c2] {
+    justify-content: center;
+    text-align: center;
+    list-style: none;
+    width: 96%;
+    display: flex;
+    flex-wrap: nowrap;
+    text-decoration: none;
+}
   .menu {
     width: 1000px;
     height: 80%;
@@ -71,9 +86,7 @@ h2,
     overflow: hidden;
   }
 
-  .meniu[_ngcontent-c1] ul[_ngcontent-c1] {
-    width: 96%;
-  }
+  
 
   .menu ul {
     display: flex;
@@ -89,17 +102,12 @@ h2,
   }
 }
 
-.contenedor {
-  width: 800px;
-  background: #70193f;
-  margin-right: 375;
-  margin-left: 375;
-  border: 200PX;
-}
+
 
 @media (min-width:100px) {
+  
   .contenedor {
-    width: 70%;
+    width: 100%;
     min-width: 100%;
     max-width: 100%;
     background: #70193f;
@@ -108,7 +116,7 @@ h2,
 
   .meniu {
     margin: 0 auto;
-    width: 100%;
+   width: 96%;
     height: 40%;
     background: white;
   }

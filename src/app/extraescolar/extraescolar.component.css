@@ -1,0 +1,493 @@
+/***empieza css de tabla de extra seleccionada*****/
+table {
+  text-align: center;
+  line-height: 40px;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid black;
+  width: 1000px;
+  margin: 70px auto;
+  border-radius: .25rem;
+}
+
+thead tr:first-child {
+  background: #70193f;
+  color: #fff;
+  border: none;
+
+}
+thead {
+  background: #70193f;
+  color: #fff;
+  border: none;
+}
+
+
+th {
+  font-weight: 500;
+}
+
+thead tr:last-child th {
+  border-bottom: 3px solid #ddd;
+}
+
+tbody tr:hover {
+  background-color: #f2f2f2;
+  cursor: default;
+}
+
+tbody tr:last-child td {
+  border: none;
+}
+
+tbody td {
+  border-bottom: 1px solid #ddd;
+}
+
+td:last-child {
+  text-align: left;
+  padding-right: 10px;
+}
+
+.button {
+  color: #aaa;
+  cursor: pointer;
+  vertical-align: left;
+  margin-top: -4px;
+}
+
+.edit:hover {
+  color: #111111;
+}
+
+.delete:hover {
+  color: black;
+}
+
+@media screen and (max-width: 600px) {
+  table {
+    width: 100%;
+  }
+
+  thead {
+    display: flow-root;
+    background: #70193f;
+    width: 100%;
+    color: white;
+  }
+
+  tr:nth-of-type(2n) {
+    background-color: inherit;
+  }
+
+  tr td:first-child {
+    background: #aaa;
+    font-weight: bold;
+    font-size: 1.3em;
+  }
+
+  tbody td, th {
+    display: block;
+    text-align: center;
+  }
+
+  tbody td:before {
+    content: attr(data-th);
+    display: block;
+    text-align: center;
+  }
+}
+
+/***empieza css de tabla de extra seleccionada*****/
+/*empieza css de tabla que se despliega*/
+/* STYLE THE ACCORDION HOLDING CONTAINER */
+.accordionbox {
+  max-width: 1000px;
+  margin: 10px auto 0px auto;
+  z-index: 2;
+  display: block;
+}
+
+/* STYLE THE CHECKBOX LABELS */
+.accordionbox label {
+  font-family: 'PT Sans Narrow', sans-serif;
+  padding: 10px;
+  position: relative;
+  display: block;
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+  background: #70193f;
+  border-bottom: 2px solid #aaa;
+  transition: all 0.3s ease;
+}
+
+/* STYLE THE CHECKBOX LABELS ON HOVER */
+.accordionbox label:hover {
+  background: #aaa;
+  color: #111111;
+}
+
+/* HIDE THE HTML CHECKBOX SQUARE */
+.accordionbox input {
+  display: none;
+}
+
+/* STYLE THE INITIAL DROPDOWN CONTENT BOX */
+.insidebox {
+  height: 0px;
+  padding: 0px 15px;
+  font-size: 18px;
+  font-family: 'PT Sans', sans-serif;
+  color: #111111;
+  background: #ffffff;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  text-decoration-color: #111111;
+	list-style: none;
+}
+
+/* STYLE THE CLICKED DROPDOWN CONTENT BOX */
+.accordionbox input:checked~.insidebox {
+  height: 250px;
+  overflow: scroll;
+}
+
+/* SHOW THE + SIGN WHEN BOXES ARE CLOSED */
+input[type=checkbox]+label::before {
+  content: "+ ";
+}
+
+/* SHOW THE – SIGN WHEN BOXES ARE OPEN */
+input[type=checkbox]:checked+label::before {
+  content: "– ";
+}
+
+/* THIS IS ADDITIONAL PAGE STYLING, NOT RELATED TO THE ACCORDION */
+a.appbtn {
+  font-size: 14px;
+  text-decoration: none;
+  cursor: pointer;
+  display: block;
+  width: 90%;
+  padding: 13px;
+  text-align: center;
+  background: #263238;
+  color: #FFFFFF;
+  margin: 20px auto;
+  transition: all 0.3s ease;
+}
+
+a.appbtn:hover {
+  background: #5FCF80;
+}
+
+.applicationbox {
+  position: relative;
+  display: inline-block;
+  background: #263238;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+  max-width: 100px;
+  margin: 10px;
+}
+
+.applicationbox1 {
+  position: relative;
+  display: inline-block;
+  background: #263238;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+  max-width: 100px;
+  margin: 10px;
+}
+
+.applicationbox::after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  content: '';
+  top: 50%;
+  left: 100%;
+  border-top: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #263238;
+  margin-top: -10px;
+}
+
+.copyright {
+  font-size: 9px;
+  font-family: 'Roboto', sans-serif;
+  color: #cccccc;
+  text-align: center;
+}
+
+.pagetitle {
+  position: absolute;
+  top: 40px;
+  left: 30px;
+  color: #ffffff;
+  font-size: 32px;
+  line-height: 0.5;
+  font-family: 'Baskerville', serif;
+  ;
+  font-weight: 200;
+  z-index: 2;
+  opacity: 0.5;
+  letter-spacing: 0.01em;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+li:hover{
+	cursor: pointer;
+	padding: 5px;
+	text-decoration: underline blue;
+	color: blue;
+}
+/*termina css de tabla que se despliega*/
+
+/*Empieza el modal*/
+/*modal */
+
+.boton{
+  margin-bottom: auto;
+  border-radius: 5px;
+  color: white;
+  background: #70193f;
+}
+#btn-cancelar{
+  margin-bottom: 15px;
+}
+.boton:hover{
+  cursor: pointer;
+}
+
+.visibleNo {
+  /* Hidden by default */
+  display:block ;
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+  -webkit-animation-name: fadeIn;
+  /* Fade in the background */
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* The Modal (background) */
+.modal {
+  /* Hidden by default */
+  display: none;
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+  -webkit-animation-name: fadeIn;
+  /* Fade in the background */
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+
+/* Modal Content */
+.form {
+  bottom: 0;
+  background-color: #fefefe;
+  width: 80%;
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: slideIn;
+  animation-duration: 0.4s;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 15% auto;
+  width: 100%
+
+}
+.etiqueta{
+  text-align: center;
+}
+
+.form table tr th, td {
+  padding: 10px;
+
+}
+
+
+#tablaModal{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.col-md-6{
+  width: 100%;
+  background: blue;
+}
+
+/* Zebra striping */
+
+#tablaModal tr:nth-of-type(odd) {
+  background: #eee;
+}
+
+#tablaModal th {
+  background: #70193f;
+  color: white;
+  font-weight: bold;
+}
+
+#tablaModal td, th {
+  padding: 6px;
+  font-size: 11px;
+  text-align: center;
+}
+
+
+
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+.modal-body {
+  padding: 2px 16px;
+
+}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+  from {
+    bottom: -300px;
+    opacity: 0
+  }
+
+  to {
+    bottom: 0;
+    opacity: 1
+  }
+}
+
+@keyframes slideIn {
+  from {
+    bottom: -300px;
+    opacity: 0
+  }
+
+  to {
+    bottom: 0;
+    opacity: 1
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@media(max-width:780px) {
+
+  .modal {
+    padding-left: 0;
+    padding-top: 0;
+  }
+
+  .form {
+    margin: 35% auto;
+    padding-left: 0;
+    border-radius: 0;
+    width: 100%;
+  }
+
+
+#tablaModal th {
+  background-color: #6F193F;
+  color: white;
+
+}
+#tablaModal {
+  width: 100%;
+
+}
+
+}
