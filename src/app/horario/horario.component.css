@@ -156,6 +156,8 @@
   table {
     width: 100%;
     border-collapse: collapse;
+    border: 1px solid black;
+    border: radius 0.23rem; 
   }
   
   tr:nth-of-type(odd) {
