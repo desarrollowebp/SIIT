@@ -128,8 +128,8 @@ header nav ul li .children li a {
 }
 
 
-	.menu_bar .bt-menu {
-		margin-top: 10px;
+	.menu_bar img {
+		margin-top: 2px;
 		display: block;
 		color: #6F193F;
 		overflow: hidden;
@@ -138,7 +138,9 @@ header nav ul li .children li a {
 		text-decoration: none;
 		float: left;
 		margin-left: 10px;
-		cursor: pointer;
+		
+		height: 65px;
+	width: 65px;
 	}
 
 	.textoITD
