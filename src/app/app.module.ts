@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
@@ -21,11 +21,15 @@ import { ExtraescolarComponent } from './extraescolar/extraescolar.component';
 import { EvaluacionDocenteComponent } from './evaluacion-docente/evaluacion-docente.component';
 import { EvaluacionDocenteIntroduccionComponent } from './evaluacion-docente-introduccion/evaluacion-docente-introduccion.component';
 import { AuditoriaServicioComponent } from './auditoria-servicio/auditoria-servicio.component';
+
+import { PreSeleccionMateriasComponent } from './pre-seleccion-materias/pre-seleccion-materias.component';
 import { CodigoColoresMateriaComponent } from './codigo-colores-materia/codigo-colores-materia.component';
 import { CentroInfoComponent } from './centro-info/centro-info.component';
 import { MenuHComponent } from './menu-h/menu-h.component';
 import { EvaluacionDocenteComprobanteComponent } from './evaluacion-docente-comprobante/evaluacion-docente-comprobante.component';
 import { AvanceMateriaAlumnoComponent } from './avance-materia-alumno/avance-materia-alumno.component';
+
+import { PostSeleccionMateriasComponent } from './post-seleccion-materias/post-seleccion-materias.component';
 
 const routes:Routes = [
   { path: '', component: LoginComponent },
@@ -51,7 +55,10 @@ const routes:Routes = [
   { path: 'codigoColoresMateria', component: CodigoColoresMateriaComponent},
   { path: 'centroInfo', component: CentroInfoComponent},
   { path: 'menuH', component: MenuHComponent },
-  { path: 'avanceMateriaAlumno', component:AvanceMateriaAlumnoComponent}
+  { path: 'avanceMateriaAlumno', component:AvanceMateriaAlumnoComponent},
+  { path: 'auditoriaServicio', component: AuditoriaServicioComponent },
+  { path: 'postSeleccionMaterias', component:PostSeleccionMateriasComponent},
+  { path: 'preSeleccionMaterias', component: PreSeleccionMateriasComponent}
 ]
 
 @NgModule({
@@ -81,6 +88,8 @@ const routes:Routes = [
     MenuHComponent,
     EvaluacionDocenteComprobanteComponent,
     AvanceMateriaAlumnoComponent,
+    PostSeleccionMateriasComponent,
+    PreSeleccionMateriasComponent,
   ],
   imports: [
     BrowserModule,
