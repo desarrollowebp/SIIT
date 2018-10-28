@@ -1,5 +1,5 @@
 <!--===============empieza tabla de extra seleccionada=================0-->
-<table>
+<table id="tabla">
 	<thead>
 		<th colspan="7">
 			<h5 align="center">Extraescolar Seleccionada</h5>
@@ -7,30 +7,31 @@
 	</thead>
 	<tbody>
 		<tr>
-			<td>Periodo</td>
+			<td>Periodo </td>
 			<td>Actividad</td>
-			<td>Grupo</td>
+			<td>Grupo </td>
 			<td>Promotor</td>
 			<td>H.Inicial </td>
 			<td>H.Final </td>
 			<td>Dias</td>
 		</tr>
-		<tr>
-			<td>20183</td>
-			<td>Ritmos Latinos</td>
-			<td>RL</td>
-			<td>GALINDO ZALDIVAR M.V. ISAAC ALEJANDRO </td>
-			<td>01:00</td>
-			<td>02:00</td>
-			<td>L,Ma,Mi,J</td>
+		<tr >
+			<td>{{extraseleccionada.periodo}}</td>
+			<td>{{extraseleccionada.nombre}}</td>
+			<td>{{extraseleccionada.grupo}}</td>
+			<td>{{extraseleccionada.promotor}}</td>
+			<td>{{extraseleccionada.hInicial}}</td>
+			<td>{{extraseleccionada.hFinal}}</td>
+			<td>{{extraseleccionada.dias}}</td>
 		</tr>
 	</tbody>
 </table>
 
+
 <!--=========empieza tabla de avisos==========---------->
 <div class="accordionbox">
 	<div>
-		<h4>Extraescolares Culturales Disponibles </h4>
+		<h4>Extraescolares Culturales Disponibles  </h4>
 	</div>
 	<div>
 		<input id="tab" name="myaccordion" type="checkbox" />
@@ -38,7 +39,7 @@
 		<div class="insidebox">
 			<!--=========PRIMER CONTENEDOR DE EXTRA==========--->
 			<div class="panel-body" *ngFor="let baile of bailes">
-				<li (click)="func()">{{baile}}</li>
+				<li (click)="funcp(baile)">{{baile}} </li>
 			</div>
 		</div>
 	</div>
@@ -50,7 +51,7 @@
 		<label for="tab-two">MÚSICA</label>
 		<div class="insidebox">
 			<div class="panel-body" *ngFor="let musica of musicales">
-				<li (click)="func()">{{musica}}</li>
+				<li (click)="funcp(musica)">{{musica}}</li>
 			</div>
 		</div>
 	</div>
@@ -62,7 +63,7 @@
 		<label for="tab-three">ACTIVIDADES CIVICAS</label>
 		<div class="insidebox">
 			<div class="panel-body" *ngFor="let civica of civicas">
-				<li (click)="func()">{{civica}}</li>
+				<li (click)="funcp(civica)">{{civica}}</li>
 			</div>
 		</div>
 	</div>
@@ -74,7 +75,7 @@
 		<label for="tab-four">DIFUSION Y TEATRO</label>
 		<div class="insidebox">
 			<div class="panel-body" *ngFor="let dt of dts">
-				<li (click)="func()">{{dt}}</li>
+				<li (click)="funcp(dt)">{{dt}}</li>
 			</div>
 		</div>
 	</div>
@@ -86,7 +87,7 @@
 		<label for="tab-five">VISUALES</label>
 		<div class="insidebox">
 			<div class="panel-body" *ngFor="let visual of visuales">
-				<li (click)="func()">{{visual}}</li>
+				<li (click)="funcp(visual)">{{visual}}</li>
 			</div>
 		</div>
 	</div>
@@ -108,7 +109,7 @@
 		<div class="insidebox">
 			<!--=========PRIMER CONTENEDOR DE EXTRA==========--->
 			<div class="panel-body" *ngFor="let pelota of pelotas">
-				<li (click)="func()">{{pelota}}</li>
+				<li (click)="funcp(pelota)">{{pelota}}</li>
 			</div>
 		</div>
 	</div>
@@ -120,7 +121,7 @@
 		<label for="tab-seven">ACTIVIDADES FISICAS</label>
 		<div class="insidebox">
 			<div class="panel-body" *ngFor="let fisica of fisicas">
-				<li (click)="func()">{{fisica}}</li>
+				<li (click)="funcp(fisica)">{{fisica}}</li>
 			</div>
 		</div>
 	</div>
@@ -132,7 +133,7 @@
 		<label for="tab-eight">NATACION</label>
 		<div class="insidebox">
 			<div class="panel-body" *ngFor="let natacion of nataciones">
-				<li (click)="func()">{{natacion}}</li>
+				<li (click)="funcp(natacion)">{{natacion}}</li>
 			</div>
 		</div>
 	</div>
@@ -144,7 +145,7 @@
 		<label for="tab-nine">AJEDREZ, ELECTRONICOS Y ARCO</label>
 		<div class="insidebox">
 			<div class="panel-body" *ngFor="let aea of aeas">
-				<li (click)="func()">{{aea}}</li>
+				<li (click)="funcp(aea)">{{aea}}</li>
 			</div>
 		</div>
 	</div>
@@ -157,37 +158,39 @@
 <!--=========empieza el modal==========--->
 <div id="myModal" class="{{modals}}">
 
-	<!-- Modal content -->
-	<div class="form" *ngFor="let baile of bailes">
-		<h4>
-			Grupos disponibles para {{baile}} Presiona para mostrar horario
-		</h4>
-		<form>
-			<table id="tablaModal">
-				<tr>
-					<th>Grupo</th>
-					<th>Promotor</th>
-					<th>H.Inicial</th>
-					<th>H.Final</th>
-					<th>Dias</th>
-					<th>Lugares Disponibles</th>
-					<th></th>
-				</tr>
-				<tr *ngFor="let grupo of gruposDisponibles">
-					<td>{{grupo.grupo}}</td>
-					<td>{{grupo.promotor}}</td>
-					<td>{{grupo.hInicial}}</td>
-					<td>{{grupo.hFinal}}</td>
-					<td>{{grupo.dias}}</td>
-					<td>{{grupo.lugares}}</td>
-					<td><button class="boton" id="btn-seleccionar" (click)="cerrar()">Seleccionar</button></td>
-				</tr>
-				<tr>
-				</tr>
-			</table>
-		</form>
-		<button class="boton" id="btn-cancelar" (click)="cerrar()">Cancelar</button>
+	<!--=========empieza el modal==========--->
 
-	</div>
-</div>
-<!--=========termina el modal==========--->
+		<!-- Modal content -->
+		<div class="form" >
+			<h4>
+				Grupos disponibles para  {{datosmodal}},  presiona seleccionar para elegir un grupo
+			</h4>
+			<form>
+				<table id="tablaModal">
+					<tr>
+						<th>Grupo</th>
+						<th>Promotor</th>
+						<th>H.Inicial</th>
+						<th>H.Final</th>
+						<th>Dias</th>
+						<th>Lugares Disponibles</th>
+						<th></th>
+					</tr>
+					<tr *ngFor="let group of gruposDisponibles">
+						<td>{{group.grupo}}</td>
+						<td>{{group.promotor}}</td>
+						<td>{{group.hInicial}}</td>
+						<td>{{group.hFinal}}</td>
+						<td>{{group.dias}}</td>
+						<td>{{group.lugares}}</td>
+						<td><button type="button" class="boton" (click)="cerrar()" (click)="objetoActual(group)">Seleccionar</button></td>
+					</tr>
+					<tr>
+					</tr>
+				</table>
+			</form>
+			<button class="boton" id="btn-cancelar"  (click)="cerrar()" >Cancelar</button>
+
+		</div>
+
+	<!--=========termina el modal==========--->
