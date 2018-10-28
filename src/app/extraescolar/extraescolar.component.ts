@@ -1,6 +1,5 @@
-import {  Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import * as $ from 'jquery';
-
 
 @Component({
   selector: 'app-extraescolar',
@@ -10,23 +9,45 @@ import * as $ from 'jquery';
 export class ExtraescolarComponent implements OnInit {
 
 
+  objetoActual = function(gru) {
+    console.log(gru);
+    this.extraseleccionada = {
+      periodo: gru.periodo, nombre: gru.nombre, grupo: gru.grupo,
+      promotor: gru.promotor, hInicial: gru.hInicial, hFinal: gru.hFinal, dias: gru.dias
+    };
+  }
 
+  datosmodal = "";
+  extraseleccionada = {
+    periodo: "",
+    nombre: "",
+    grupo: "",
+    promotor: "",
+    hInicial: "",
+    hFinal: "",
+    dias: ""
+  }
 
   modals = "modal";
   constructor() {
     this.modals = "modal";
   }
-  func() {
+  func($var) {
     this.modals = "visibleNo";
+    this.datosmodal = "";
+  }
+  funcp($var) {
+    this.modals = "visibleNo";
+    this.datosmodal = $var;
   }
   cerrar() {
     this.modals = "modal";
+
   }
 
 
+
   ngOnInit() {
-
-
 
     $(".submenu").click(function() {
       $(this).children("ul").slideToggle();
@@ -93,10 +114,15 @@ export class ExtraescolarComponent implements OnInit {
     'Ajedrez', 'Ajedrez Paralelo', 'Deportes Electronicos', 'Tiro con Arco',
   ]
 
+
+
+
   gruposDisponibles = [
-    { grupo: 'RL', promotor: 'GALINDO ZALDIVAR M.V. ISAAC ALEJANDRO', hInicial: '13:00', hFinal: '14:00', dias: 'L,MA,MI,J', lugares: '20' },
-    { grupo: '1B', promotor: 'GARCIA GARCIA JOSE ANTONIO', hInicial: '11:00', hFinal: '12:00', dias: 'L,MA,MI,J', lugares: '15' },
+    { periodo: '20183', nombre: 'Ajedrez', grupo: 'RL', promotor: 'GALINDO ZALDIVAR M.V. ISAAC ALEJANDRO', hInicial: '13:00', hFinal: '14:00', dias: 'L,MA,MI,J', lugares: '20' },
+    { periodo: '20183', nombre: 'Ajedrez', grupo: '1B', promotor: 'GARCIA GARCIA JOSE ANTONIO', hInicial: '11:00', hFinal: '12:00', dias: 'L,MA,MI,J', lugares: '15' },
   ]
+
+
 
 
 }
