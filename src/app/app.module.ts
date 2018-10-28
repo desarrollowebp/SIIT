@@ -60,7 +60,7 @@ const routes:Routes = [
   { path: 'auditoriaServicio', component: AuditoriaServicioComponent },
   { path: 'postSeleccionMaterias', component:PostSeleccionMateriasComponent},
   { path: 'preSeleccionMaterias', component: PreSeleccionMateriasComponent},
-  { path: ' tablaHorario', component:TablaHorarioComponent}
+  { path: 'tablaHorario', component:TablaHorarioComponent}
 ]
 
 @NgModule({
