@@ -12,6 +12,9 @@
 a{
   text-decoration:none;
 }
+.esp{
+  padding: 10px;
+}
 li{
   list-style:none;
   text-align:justify;
