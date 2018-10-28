@@ -15,6 +15,13 @@ a{
 .esp{
   padding: 10px;
 }
+
+.tab1{
+  border: 1px solid #000;
+
+
+
+}
 li{
   list-style:none;
   text-align:justify;
@@ -148,4 +155,9 @@ input[type=checkbox]:checked + label::before {
 .back{
   background:#70193f;
   color: #fff;
+
+
+}
+table{
+  border-radius: .25rem;
 }
