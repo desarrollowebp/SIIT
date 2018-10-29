@@ -5,38 +5,38 @@
     <div class="contenedor" >
   <div class="meniu">
     <h3>Datos del Alumno</h3>
-    <ul>
-      <li class="submeniu" id="control">
+    <ul *ngFor="let alumno of alumno">
+      <li class="submeniu" id="control" >
         <p id="titulo">No. Control </p>
-        <p>14041413</p>
+        <p>{{alumno.control}}</p>
       </li>
       <li class="submeniu">
         <p id="titulo">Nombre </p>
-        <p>Valenzuela Valdez Alma Teresa </p>
+        <p>{{alumno.nombre}}</p>
       </li>
       <li class="submeniu" id="control">
         <p id="titulo">Periodo Escolar </p>
-        <p>Ago-Dic 2018</p>
+        <p>{{alumno.periodo}}</p>
       </li>
       <li class="submeniu">
         <p id="titulo">Promedio </p>
-        <p>100.00</p>
+        <p>{{alumno.promedio}}</p>
       </li>
       
         </ul>
     
-    <ul>
+    <ul *ngFor="let datos of datos" >
       <li class="submeniu">
           <p id="titulo"> Carrera</p>
-          <p>Ing. en Tecnologías de la Información y Comunicación</p>
+          <p>{{datos.carrera}}</p>
         </li>
         <li class="submeniu">
           <p id="titulo"> Especialidad</p>
-          <p>Tecnologías Web</p>
+          <p>{{datos.especialidad}}</p>
         </li>
         <li class="submeniu">
           <p id="titulo"> CURP</p>
-          <p>VAVADGO961584282DD2D</p>
+          <p>{{datos.curp}}</p>
         </li>
     </ul>
   </div>
