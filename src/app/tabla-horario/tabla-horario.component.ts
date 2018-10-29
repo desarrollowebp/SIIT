@@ -35,4 +35,10 @@ clase3=
     dato:"Materia/Docente",materia:"Programación web",docente:"Fernando Ayala Partida",gpo:"5TA",cr:"5",lun:"13:00-14:00",salon:"SC12",mar:"13:00-14:00",salon2:"SC12 ",mie:"13:00-14:00",salon3:"SC12",jue:"13:00-14:00",salon4:"SC12",vie:"13:00-14:00",salon5:"SC12",sab:"13:00-14:00",salon6:"SC12"
   }
 ]
+creditos=
+[
+  {
+    dato:"total de creditos",credito:"19"
+  }
+]
 }
