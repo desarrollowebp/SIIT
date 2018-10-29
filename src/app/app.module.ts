@@ -30,7 +30,11 @@ import { EvaluacionDocenteComprobanteComponent } from './evaluacion-docente-comp
 import { AvanceMateriaAlumnoComponent } from './avance-materia-alumno/avance-materia-alumno.component';
 
 import { PostSeleccionMateriasComponent } from './post-seleccion-materias/post-seleccion-materias.component';
+<<<<<<< HEAD
 import { DatosTablaAlumnoComponent } from './datos-tabla-alumno/datos-tabla-alumno.component';
+=======
+import { TablaHorarioComponent } from './tabla-horario/tabla-horario.component';
+>>>>>>> 7785b037588975b0dc621b7cbf9abbbc638f31c4
 
 const routes:Routes = [
   { path: '', component: LoginComponent },
@@ -60,7 +64,11 @@ const routes:Routes = [
   { path: 'auditoriaServicio', component: AuditoriaServicioComponent },
   { path: 'postSeleccionMaterias', component:PostSeleccionMateriasComponent},
   { path: 'preSeleccionMaterias', component: PreSeleccionMateriasComponent},
+<<<<<<< HEAD
   { path: 'datosTablaAlumno', component:DatosTablaAlumnoComponent}
+=======
+  { path: 'tablaHorario', component:TablaHorarioComponent}
+>>>>>>> 7785b037588975b0dc621b7cbf9abbbc638f31c4
 ]
 
 @NgModule({
@@ -92,7 +100,11 @@ const routes:Routes = [
     AvanceMateriaAlumnoComponent,
     PostSeleccionMateriasComponent,
     PreSeleccionMateriasComponent,
+<<<<<<< HEAD
     DatosTablaAlumnoComponent,
+=======
+    TablaHorarioComponent,
+>>>>>>> 7785b037588975b0dc621b7cbf9abbbc638f31c4
   ],
   imports: [
     BrowserModule,
