@@ -1,14 +1,42 @@
 # SIIT | Desarrollo Web Profesional
 
 
-## Aviso importante
-Para el lunes deben tener clonado el repositorio en su computadora, ya que se explicara el
-lunes conceptos importantes. Recuerden que se esta tomando nota de todo lo que se entrega.
+## Pruebas
+El proyecto esta lo suficientemente listo para las pruebas. Despues de ~427 commits por
+20 contribuidores se puede apreciar el trabajo realizado para llegar a este punto, pero
+faltara aun mas para terminarlo. Por ahora se necesita la opinion de sus proximos usuarios.
 
 
-## Recordatorio
-Recuerden avisar a sus compañeros faltantes que entren a la plataforma para que se vayan
-familiarizado y haciendo los cambios de sus respectivos modulos.
+## Acceso publico en la red
+
+### Obtener la direccion IP de la maquina
+Ejecuta el comando de `ipconfig` en Windows y `ifconfig` en Linux/OSX.
+
+### Ejecuta el proyecto pasandole la opcion `--host`
+En vez de `npm start`, utiliza `ng serve --host mi.direccion.ip`.
+
+> NOTA: mi.direccion.ip sera la direccion IP del paso anterior.
+
+### Visita el proyecto desde otro dispositivo
+Desde tu celular visita `http://mi.direccion.ip:4200`
+
+Esta contribucion fue hecha por Aurora Gamero Pescador | 14041403.
+
+
+## Integracion
+La integracion esta completa. Hay algunas notas que se pueden encontrar en el archivo de
+[integracion](integracion.md) sobre sus modulos. Ya que la integracion esta en `master`
+pueden bajar cambios normalmente con `git pull origin master`.
+
+Visiten los modulos de sus compañeros, y si gustan, brinden un poco de retroalimentacion
+y/o critica constructiva para mejorar la experencia del SIIT.
+
+Como nota final (y general): muchos modulos estan bien definidos y algunos tenian excelente
+funcionalidad, y a los demas les faltaba un poco para que tuvieran la funcionalidad requerida,
+pero este sistema ya esta en pie. Lo siguiente seria trabajar con las *variables*, *mocks*
+y *servicios* para manejar la comunicacion de datos y el estado de la aplicacion. Un enlace
+de interes pudiera ser el [tutorial oficial de Angular](https://angular.io/tutorial), y la
+pagina de [Angular](https://angular.io/) en si.
 
 
 ## Archivos del proyecto
@@ -38,25 +66,25 @@ Para utilizar un icono, realiza lo siguiente:
 Esta contribucion fue hecha por Arturo Rangel Muñoz | 15040581.
 
 ## Lista de ramas
-|Modulo del SIIT|Rama|
-|---|---|
-|Login|login|
-|Incio|inicio|
-|Datos escolares|datos-escolares|
-|Verificacion Datos para Beca|verificacion-beca|
-|Kardex de Calificaciones|kardex-calificaciones|
-|Horario del Alumno|horario|
-|Calificaciones de Examenes Globales o Especiales|calificaciones-examenes|
-|Calificaciones Parciales|calificaciones-parciales|
-|Residencias|residencias|
-|Tutorias|tutorias|
-|Seleccion de Materias|seleccion-materias|
-|Preficha de Pago|preficha-pago|
-|Horario de Reinscripcion|horario-reinscripcion|
-|Grupos Cargados|grupos-cargados|
-|Extraescolar|extraescolar|
-|Evaluacion Docente|evaluacion-docente|
-|Auditoria de Servicio|auditoria-servicio|
+|Modulo del SIIT|Rama|Porcentaje|
+|---|---|---|
+|Login|login|90%|
+|Incio|inicio|70%|
+|Datos escolares|datos-escolares|80%|
+|Verificacion Datos para Beca|verificacion-beca|95%|
+|Kardex de Calificaciones|kardex-calificaciones|95%|
+|Horario del Alumno|horario|90%|
+|Calificaciones de Examenes Globales o Especiales|calificaciones-examenes|95%|
+|Calificaciones Parciales|calificaciones-parciales|95%|
+|Residencias|residencias|100%|
+|Tutorias|tutorias|90%|
+|Seleccion de Materias|seleccion-materias|80%|
+|Preficha de Pago|preficha-pago|90%|
+|Horario de Reinscripcion|horario-reinscripcion|100%|
+|Grupos Cargados|grupos-cargados|95%|
+|Extraescolar|extraescolar|100%|
+|Evaluacion Docente|evaluacion-docente|80%|
+|Auditoria de Servicio|auditoria-servicio|80%|
 
 > NOTA: Las ramas tienen el mismo nombre que el componenete perteneciente al modulo del SIIT.
 

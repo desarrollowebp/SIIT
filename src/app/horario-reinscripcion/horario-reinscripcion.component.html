@@ -1,3 +1,104 @@
-<p>
-  horario-reinscripcion works!
-</p>
+<body>
+
+	<!--=========empieza tabla de hora de reins==========--->
+	<table>
+		<thead>
+			<tr>
+				<th colspan="4">
+					<h5 align="center">Horario de Reinscripción AGOSTO-DICIEMBRE/2018</h5>
+					<h6 align="center">ADEUDOS N=NO ADEUDO, S= SI ADEUDO</h6>
+				</th>
+			</tr>
+
+		</thead>
+		<tbody>
+			<tr>
+			<tr *ngFor="let alumno of alumno">
+				<td>{{alumno.dato}}</td>
+				<td>{{alumno.nombre}}</td>
+				<td>{{alumno.tipoadeudo}}</td>
+				<td>{{alumno.adeudo}}</td>
+			</tr>
+
+			<tr *ngFor="let fecha of fecha">
+				<td>{{fecha.dato}}</td>
+				<td>{{fecha.fecha}}</td>
+				<td>{{fecha.tipoadeudo}}</td>
+				<td>{{fecha.adeudo}}</td>
+			</tr>
+
+			<tr *ngFor="let hora of hora">
+				<td>{{hora.dato}}</td>
+				<td>{{hora.hora}}</td>
+				<td>{{hora.tipoadeudo}}</td>
+				<td>{{hora.adeudo}}</td>
+			</tr>
+
+			<tr *ngFor="let autorizado of autorizado">
+				<td>{{autorizado.dato}}</td>
+				<td>{{autorizado.autorizado}}</td>
+				<td>{{autorizado.tipoadeudo}}</td>
+				<td>{{autorizado.adeudo}}</td>
+			</tr>
+		</tbody>
+	</table>
+	<!--=========Termian tabla de hora de reins==========--->
+
+	<!--=========empieza tabla de avisos==========---------->
+	<div class="accordionbox">
+
+		<div>
+			<h5> Información Importante </h5>
+		</div>
+
+		<div>
+			<input id="tab" name="myaccordion" type="checkbox" />
+			<label for="tab">Acerca del pago</label>
+			<div class="insidebox">
+				<div class="panel-body">
+					<ul class="nav navbar-nav">
+						<li>
+							<ul>
+								<li>1- REALIZA TU PAGO OPORTUNAMENTE</li>
+								<li>2- NO CONTAR CON ADEUDOS DE NINGUN TIPO
+									(S=SI y N=NO). EN CASO DE CONTAR CON ALGUNO,
+									DEBES LIQUIDARLOS ANTES DE LAS FECHAS DE REINSCRIPCIONES.</li>
+								<li>3- SI ADEUDA ENCUESTA ES "S", SIGNIFICA QUE
+									NO REALIZASTE LA EVALUACION A TUS PROFESORES EN EL
+									PERIODO ANTERIOR</li>
+								<li>4- SI ADEUDA ESCOLAR ES "S", SIGNIFICA QUE TIENES
+									DOS ESPECIALES O ESPECIAL REPROBADO O APROBASTE SOLO
+									2 MATERIAS O MENOS EN TU PRIMER SEMESTRE</li>
+								<li>5- DEBERAS CANJEAR TU RECIBO DEL BANCO POR RECIBO
+									OFICIAL 48 HORAS ANTES DE TU FECHA DE REINSCRIPCION</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+
+		<div>
+			<input id="tab-two" name="myaccordion" type="checkbox" />
+			<label for="tab-two">Acerca la reinscripción</label>
+			<div class="insidebox">
+
+				<ul>
+					<li>Nota:El orden de reinscripción será de la siguiente manera:</li>
+					<li>1- Por Carreras</li>
+					<li>2- Por Promedio (de mayor a menor) del último semestre cursado.</li>
+					<li>3- La publicación se hará por INTERNET</li>
+					<li>La reinscripción será por INTERNET <br>
+						Si tienes algún problema con la reinscripción, Acude con tus Coordinadores de Carrera. <br>
+						Si Debes la encuesta, acude al departamento Desarrollo Academico. <br>
+						Si Tienes algún adeudo escolar, Acude a Servicios Escolares.</li>
+				</ul>
+
+			</div>
+		</div>
+	</div>
+	<!--=========termina tabla de avisos==========--->
+
+
+</body>

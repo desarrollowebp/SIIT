@@ -1,0 +1,150 @@
+<div style="text-align: center;">
+  <h1> AUDITORIA DE SERVICIO </h1>
+</div><br/>
+<div *ngFor="let element of preguntas">
+  <p id="tituloServicio">{{element.servicio}}</p>
+  <!--Pregunta 1-->
+  <div class="row justify-content-md-center">
+    <div class="col-md-9">
+      <p>{{element.pregunta1}}</p>
+            </div>
+            <div class="col-md-2">
+                <select id="valor" class="form-control" name="valor">
+                    <option value=5>5</option>
+                    <option value=4>4</option>
+                    <option value=3>3</option>
+                    <option value=2>2</option>
+                    <option value=1>1</option>
+                </select>
+            </div>
+  </div>
+  <!--Pregunta 2-->
+  <div class="row justify-content-md-center">
+    <div class="col-md-9">
+      <p>{{element.pregunta2}}</p>
+            </div>
+            <div class="col-md-2">
+                <select id="valor" class="form-control" name="valor">
+                    <option value=5>5</option>
+                    <option value=4>4</option>
+                    <option value=3>3</option>
+                    <option value=2>2</option>
+                    <option value=1>1</option>
+                </select>
+            </div>
+  </div>
+        <!--Pregunta 3-->
+        <div class="row justify-content-md-center">
+    <div class="col-md-9">
+      <p>{{element.pregunta3}}</p>
+            </div>
+            <div class="col-md-2">
+                <select id="valor" class="form-control" name="valor">
+                    <option value=5>5</option>
+                    <option value=4>4</option>
+                    <option value=3>3</option>
+                    <option value=2>2</option>
+                    <option value=1>1</option>
+                </select>
+            </div>
+  </div>
+        <!--Pregunta 4-->
+        <div class="row justify-content-md-center">
+    <div class="col-md-9">
+      <p>{{element.pregunta4}}</p>
+            </div>
+            <div class="col-md-2">
+                <select id="valor" class="form-control" name="valor">
+                    <option value=5>5</option>
+                    <option value=4>4</option>
+                    <option value=3>3</option>
+                    <option value=2>2</option>
+                    <option value=1>1</option>
+                </select>
+            </div>
+  </div>
+  <!--Pregunta 5-->
+        <div class="row justify-content-md-center">
+    <div class="col-md-9">
+      <p>{{element.pregunta5}}</p>
+            </div>
+            <div class="col-md-2">
+                <select id="valor" class="form-control" name="valor">
+                    <option value=5>5</option>
+                    <option value=4>4</option>
+                    <option value=3>3</option>
+                    <option value=2>2</option>
+                    <option value=1>1</option>
+                </select>
+            </div>
+  </div>
+  <!--Pregunta 6-->
+        <div class="row justify-content-md-center">
+    <div class="col-md-9">
+      <p>{{element.pregunta6}}</p>
+            </div>
+            <div class="col-md-2">
+                <select id="valor" class="form-control" name="valor">
+                    <option value=5>5</option>
+                    <option value=4>4</option>
+                    <option value=3>3</option>
+                    <option value=2>2</option>
+                    <option value=1>1</option>
+                </select>
+            </div>
+  </div>
+  <!--Pregunta 7-->
+        <div class="row justify-content-md-center">
+    <div class="col-md-9">
+      <p>{{element.pregunta7}}</p>
+            </div>
+            <div class="col-md-2">
+                <select id="valor" class="form-control" name="valor">
+                    <option value=5>5</option>
+                    <option value=4>4</option>
+                    <option value=3>3</option>
+                    <option value=2>2</option>
+                    <option value=1>1</option>
+                </select>
+            </div>
+  </div>
+  <!--Pregunta 8-->
+        <div class="row justify-content-md-center">
+    <div class="col-md-9">
+      <p>{{element.pregunta8}}</p>
+            </div>
+            <div class="col-md-2">
+                <select id="valor" class="form-control" name="valor">
+                    <option value=5>5</option>
+                    <option value=4>4</option>
+                    <option value=3>3</option>
+                    <option value=2>2</option>
+                    <option value=1>1</option>
+                </select>
+            </div>
+  </div>
+  <!--Pregunta 9-->
+        <div class="row justify-content-md-center">
+    <div class="col-md-9">
+      <p>{{element.pregunta9}}</p>
+            </div>
+            <div class="col-md-2">
+                <select id="valor" class="form-control" name="valor">
+                    <option value=5>5</option>
+                    <option value=4>4</option>
+                    <option value=3>3</option>
+                    <option value=2>2</option>
+                    <option value=1>1</option>
+                </select>
+            </div>
+  </div>
+        <!--Sección de comentarios y botón-->
+  <div id="coment"><h4>Comentarios</h4></div>
+        <textarea id="comentarios" style="border: solid 1px gray;" class="form-control" rows="5">
+        </textarea>
+        <div id="boton" style="text-align: center;">    
+            <button type="button" class="btn btn-primary" routerLink="/centro-info">
+                Continuar
+            </button>
+  </div>
+</div>

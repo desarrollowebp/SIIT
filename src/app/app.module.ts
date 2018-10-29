@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
@@ -19,13 +19,20 @@ import { HorarioReinscripcionComponent } from './horario-reinscripcion/horario-r
 import { GruposCargadosComponent } from './grupos-cargados/grupos-cargados.component';
 import { ExtraescolarComponent } from './extraescolar/extraescolar.component';
 import { EvaluacionDocenteComponent } from './evaluacion-docente/evaluacion-docente.component';
+import { EvaluacionDocenteIntroduccionComponent } from './evaluacion-docente-introduccion/evaluacion-docente-introduccion.component';
 import { AuditoriaServicioComponent } from './auditoria-servicio/auditoria-servicio.component';
-import { ListaModulosComponent } from './lista-modulos/lista-modulos.component';
+
+import { PreSeleccionMateriasComponent } from './pre-seleccion-materias/pre-seleccion-materias.component';
+import { CodigoColoresMateriaComponent } from './codigo-colores-materia/codigo-colores-materia.component';
+import { CentroInfoComponent } from './centro-info/centro-info.component';
 import { MenuHComponent } from './menu-h/menu-h.component';
+import { EvaluacionDocenteComprobanteComponent } from './evaluacion-docente-comprobante/evaluacion-docente-comprobante.component';
+import { AvanceMateriaAlumnoComponent } from './avance-materia-alumno/avance-materia-alumno.component';
+
+import { PostSeleccionMateriasComponent } from './post-seleccion-materias/post-seleccion-materias.component';
 
 const routes:Routes = [
-  { path: '', component: ListaModulosComponent },
-  { path: 'login', component: LoginComponent },
+  { path: '', component: LoginComponent },
   { path: 'inicio', component: InicioComponent },
   { path: 'datosEscolares', component: DatosEscolaresComponent },
   { path: 'verificacionBeca', component: VerificacionBecaComponent },
@@ -41,8 +48,17 @@ const routes:Routes = [
   { path: 'gruposCargados', component: GruposCargadosComponent },
   { path: 'extraescolar', component: ExtraescolarComponent },
   { path: 'evaluacionDocente', component: EvaluacionDocenteComponent },
+  { path: 'evaluacionDocente/introduccion', component: EvaluacionDocenteIntroduccionComponent },
+  { path: 'evaluacionDocente/comprobante', component: EvaluacionDocenteComprobanteComponent },
   { path: 'auditoriaServicio', component: AuditoriaServicioComponent },
-  { path: 'menuH', component: MenuHComponent }
+  { path: 'menuH', component: MenuHComponent },
+  { path: 'codigoColoresMateria', component: CodigoColoresMateriaComponent},
+  { path: 'centroInfo', component: CentroInfoComponent},
+  { path: 'menuH', component: MenuHComponent },
+  { path: 'avanceMateriaAlumno', component:AvanceMateriaAlumnoComponent},
+  { path: 'auditoriaServicio', component: AuditoriaServicioComponent },
+  { path: 'postSeleccionMaterias', component:PostSeleccionMateriasComponent},
+  { path: 'preSeleccionMaterias', component: PreSeleccionMateriasComponent}
 ]
 
 @NgModule({
@@ -64,9 +80,16 @@ const routes:Routes = [
     GruposCargadosComponent,
     ExtraescolarComponent,
     EvaluacionDocenteComponent,
+    EvaluacionDocenteIntroduccionComponent,
     AuditoriaServicioComponent,
-    ListaModulosComponent,
+    CodigoColoresMateriaComponent,
+    CentroInfoComponent,
     MenuHComponent,
+    MenuHComponent,
+    EvaluacionDocenteComprobanteComponent,
+    AvanceMateriaAlumnoComponent,
+    PostSeleccionMateriasComponent,
+    PreSeleccionMateriasComponent,
   ],
   imports: [
     BrowserModule,
