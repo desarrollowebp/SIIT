@@ -9,7 +9,7 @@
               <h2>Calificaciones de Exámenes</h2>
               <table class="table">
                 <thead>
-                  <tr>
+                  <tr >
                     <th scope="col">Facilitador</th>
                     <th scope="col">Materia</th>
                     <th scope="col">Calificación</th>
@@ -17,19 +17,24 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Juan Matador</td> <!-- facilitador-->
-                    <td>Administración Gerencial</td><!-- Materia-->
-                    <td>85.00</td><!-- calificacion-->
-                    <td>Especial</td>
+                  <tr *ngFor="let examen1 of examen1">
+                    <td>{{examen1.facilitador}}</td> <!-- facilitador-->
+                    <td>{{examen1.materia}}</td><!-- Materia-->
+                    <td>{{examen1.calificacion}}</td><!-- c alificacion-->
+                    <td>{{examen1.tipo}}</td>
                   </tr>
-                  <tr>
-                    <td>Elena Ortega</td> <!-- facilitador-->
-                    <td>Cálculo Integral</td><!-- Materia-->
-                    <td>93.00</td><!-- calificacion-->
-                    <td>Especial</td>
-                  </tr>
-                  
+                  <tr *ngFor="let examen2 of examen2">
+                      <td>{{examen2.facilitador}}</td> <!-- facilitador-->
+                      <td>{{examen2.materia}}</td><!-- Materia-->
+                      <td>{{examen2.calificacion}}</td><!-- c alificacion-->
+                      <td>{{examen2.tipo}}</td>
+                    </tr>
+                    <tr *ngFor="let examen3 of examen3">
+                        <td>{{examen3.facilitador}}</td> <!-- facilitador-->
+                        <td>{{examen3.materia}}</td><!-- Materia-->
+                        <td>{{examen3.calificacion}}</td><!-- c alificacion-->
+                        <td>{{examen3.tipo}}</td>
+                      </tr>
                 </tbody>
               </table>
             </div>
