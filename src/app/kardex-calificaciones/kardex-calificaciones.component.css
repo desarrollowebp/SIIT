@@ -149,6 +149,7 @@ tfoot td {
 /*======TBODY======*/
 .foot {
  background: white;
+ align-content: center;
 }
 tr {
 	border-bottom: solid 1px #ccc;
@@ -189,7 +190,8 @@ thead th{
 		background: white;
 	}
 	.foot td{
-		text-align: center;
+		align-content: center;
+		padding-right: 25px;
 	}
 	button{
 		text-align: center;
