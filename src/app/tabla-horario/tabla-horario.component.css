@@ -1,121 +1,92 @@
-.container {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-  
-    padding-top: 15px;
-  }
-  
-
-  
-  h2,
-  .h2 {
-    font-size: 1.2rem;
-  }
-  
-  
-  
-  #menu-bar:checked~.menu {
-    transform: translateX(0);
-  }
-  
-  
-  h3 {
-    display: block;
-    font-size: 1.2em;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-    background-color: #70193f;
-    text-align: center;
-    color: white;
-  }
-  
-  p {
-    width: auto;
-  }
-  
-
-  #wrapper {
-    padding: 90px 15px;
-  }
-  
-  .navbar-expand-lg .navbar-nav.side-nav {
-    flex-direction: column;
-  }
-  
-  .card {
+h2{
+  font-size: 20px;
+}
+.card {
     
-    border-radius: 0;
-    box-shadow: none;
-    border: none;
-  }
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
+}
+
+
+.table tbody tr:nth-child(5) td:nth-child(1){
+  text-align: right;
   
-  .header-top {
-    box-shadow: 0 3px 5px rgba(0, 0, 0, .1)
-  }
+}
+
+
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0px;
+  border: 1px solid black;
   
-  .leftmenutrigger {
-    display: none
-  }
+  empty-cells: HIDE;
+  border-radius: .25rem;
+  perspective: 1px;
+  -webkit-border-radius: .25rem;
+-moz-border-radius: .25rem;
+}
+table tr:last-child td:first-child {
+border-bottom-left-radius: 6px;
+}
+
+table tr:last-child td:last-child {
+border-bottom-right-radius: 6px;
+}
   
-  table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  tr:nth-of-type(odd) {
-    background: #eee;
-  }
-  
-  th {
-    background: #70193f;
-    color: white;
-    font-weight: bold;
-  }
-  
+
+
+tr:nth-of-type(odd) {
+  background: #eee;
+}
+
+th {
+  background: #70193f;
+  color: white;
+  font-weight: bold;
+}
+
+
+
+@media all and (max-width:500px) {
+
+  table,
+  thead,
+  tbody,
+  th,
   td,
-  th {
-    padding: 6px;
-    text-align: center;
+  tr {
+    font-size: 7px;
   }
-  
-  @media all and (max-width:500px) {
-  
-    table,
-    thead,
-    tbody,
-    th,
-    td,
-    tr {
-      font-size: 8px;
-    }
-  
-    tr {
-      margin-bottom: 10px
-    }
+
+  tr {
+    margin-bottom: 10px
   }
-  
- 
-  #table th {
-    background: #70193f;
-    color: white;
-    font-weight: bold;
+  .card-body{
+    padding: .1rem;
   }
-  
-  p {
-    width: auto;
+  h2{
+    font-size: 10px;
   }
-  
-  tr:nth-of-type(odd) {
-    background: #eee;
-  }
-  
-  td,
-  th {
-    padding: 6px;
-    text-align: center;
-  }
-  
+}
+
+#table th {
+  background: #70193f;
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+}
+
+
+
+tr:nth-of-type(odd) {
+  background: #eee;
+}
+
+td,
+th {
+  padding: 4px;
+  text-align: center;
+}
