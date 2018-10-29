@@ -8,16 +8,12 @@
 	border-color: #70193f;
 }
 
-.row {
-	margin: 42px 0;
-}
-
 .ui-table-wrapper {
 	display: block;
 	position: relative;
 }
 
-.ui-table-sm {
+.ui-tbody-sm {
 	display: none;
 }
 
@@ -25,12 +21,30 @@
 	margin: 42px 0;
 }
 
+.ui-custom-row {
+	margin: 28px 0 70px;
+}
+
 @media (max-width: 720px) {
-	.ui-table-big {
+	.ui-tbody-big {
 		display: none;
 	}
 
-	.ui-table-sm {
-		display: table;
+	.ui-table-wrapper {
+		padding: 0;
+	}
+
+	h4 {
+		font-size: 18px;
+	}
+
+	th, td {
+		white-space: nowrap;
+		font-size: 14px;
+		padding: 7px;
+	}
+
+	.ui-tbody-sm {
+		display: initial;
 	}
 }

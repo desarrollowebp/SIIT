@@ -1,0 +1,252 @@
+
+/* 100% algot de ventava uvh*/
+@import url('https://fonts.googleapis.com/css?family=Lato|Roboto');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  color: black;
+  
+}
+
+h4 
+{
+  font-size: 20px;
+ 
+}
+h1
+{
+  font-size: 2rem;
+}
+
+
+
+.menu {
+  background: white;
+
+  width: 100%;
+
+  top: 10px;
+  transition: all 0.5s;
+}
+
+.materia {
+  width: 100%;
+
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+padding: 2px;
+  margin: 0 auto;
+  word-wrap: break-word;
+
+}
+
+
+
+.estado {
+  margin: 0 auto;
+  width: 100%;
+  border-radius: 12px;
+  background: #83C8E3;
+  padding: 1%;
+}
+
+
+.menu span {
+  position: absolute;
+  right: 10px;
+
+}
+
+.menu .submenu_11 .expspan span{
+  position: relative;
+  right: 5px;
+  top: 5px;
+}
+/*probemmas con margin*/
+.menu ul {
+  background: white;
+  text-decoration: none;
+  list-style: none;
+  font-size: 30px;
+  margin: 0px 0px;
+}
+
+.menu a {
+
+  font-size: 10px;
+  border: none;
+  display: block;
+  padding:  20px;
+  text-decoration: none;
+  height: 40px;
+  margin: 0 auto;
+  border-right: 50px;
+
+}
+
+/*ayuda a jquery*/
+.menu ul li:hover ul {
+  display: none;
+  position: static;
+}
+
+.menu ul li ul {
+  display: none;
+  width: 100%;
+}
+
+.menu ul li p {
+  font-size: 14px;
+  text-align: center;
+}
+.menu ul li .NombreMateria  {
+  width: 100%;
+  font-size: 15px;
+  text-align: center;
+  height: auto;
+  margin: 0 auto;
+word-wrap: break-word;
+  border: 6px solid #6A1A3E;
+padding: 5px;
+border-radius: 5px;
+justify-content: center;
+align-items: center;
+
+}
+
+.menu ul li a {
+  color: black;
+  border-left: 6px solid #6A1A3E;
+  background-color: white;
+  text-align: center;
+  font-size: 14px;
+
+  padding-right:  70%;
+  padding-top:  3%;
+}
+
+  button {
+  padding: 3px 3px;
+  font-size: 9px;
+  padding-bottom: 7px;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: white;
+  background-color: #70193F;
+  border: none;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+
+
+/* Handle on hover */
+
+.vertical {
+  overflow-x: scroll;
+  white-space: nowrap;
+
+}
+
+
+
+@media(min-width:780px)
+{
+
+  .menu {
+
+    width: 1000px;
+
+    margin: 0 auto;
+    position: relative;
+
+  }
+
+  .submenu_11 {
+    width: 100%;
+    height: 100%;
+
+    margin: 0 auto;
+    text-align: center;
+  }
+
+
+  .materia {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+
+
+  }
+
+  .estado {
+    width: 100%;
+
+    word-wrap: break-word;
+  }
+
+  .menu span {
+    position: static;
+    right: 10px;
+
+  }
+
+  .menu ul  {
+    display: flex;
+    cursor: pointer;
+  }
+
+  .vertical {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+    white-space: normal;
+    margin: 0 auto;
+
+  }
+
+.vertical button{
+  text-align: center;
+
+}
+.centarbtn button{
+font-size: 14px;
+ width: 200px;
+  margin: 0 auto;
+  height: 40px;
+}
+.menu ul li a{
+  padding: 0 0 0 0;
+  padding-top: 10%;
+}
+
+
+}
+
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+@media(max-width:780px)
+{
+  h4 
+  {
+    font-size: 15px;
+   
+  }
+  h1
+  {
+    font-size: 1.5rem;
+  }
+  
+}

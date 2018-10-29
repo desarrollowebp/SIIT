@@ -2,65 +2,53 @@
     <div class="menu_bar">
       <a class="bt-menu"><span class="icon-bars"></span></a>
     </div>
-  
+
     <div class="textoITD">
-      <a class="ritd" routerLink="/seleccionMaterias"><p>Instituto Tecnológo De Durango</p></a>
+      <a class="ritd" routerLink="/inicio"><p>Instituto Tecnológico De Durango</p></a>
     </div>
-  
+
     <div class="logo">
       <img src="/assets/img/menu-h/Logo_itd.png">
     </div>
-  
+
     <nav>
       <ul>
-  
+
         <li class="submenu2"> <a class="negrita"><span class="icon-graduation-cap"></span> Informacion Escolar<span class="caret icon-chevron-down"></span></a>
           <ol class="children">
-            <li><a  class="sombreado">Datos Escolares</a></li>
-            <li><a  class="sombreado">Verificacion De Datos</a></li>
-            <li><a  class="sombreado">Boleta De Calificaciones</a></li>
-            <li><a  class="sombreado">Avance Reticular</a></li>
-            <li><a  class="sombreado">Kardex De Calificaciones</a></li>
-            <li><a  class="sombreado">Horario</a></li>
-            <li><a  class="sombreado">Califi De Exam Globales o Especiales</a></li>
-            <li><a  class="sombreado">Calificaciones Parciales</a></li>
-            <li><a  class="sombreado">Residencia</a></li>
-            <li><a  class="sombreado">Formatos Alumnos</a></li>
-  
-            <li class="submenu2"><a class="sombreado">Tutorias<span class="caret icon-caret-down"></span></a>
-              <ul class="children">
-                <li><a><span class="icon-angle-double-right"></span>Acerca Del Tutor</a></li>
-                <li><a><span class="icon-angle-double-right"></span>Entrevista Inicial</a></li>
-                <li><a><span class="icon-angle-double-right"></span>Ficha De Identificacion</a></li>
-                <li><a><span class="icon-angle-double-right"></span>Actividades y Estatus</a></li>
-              </ul>
-            </li>
+            <li><a  class="ritd" class="sombreado" routerLink="/datosEscolares">Datos Escolares</a></li>
+            <li><a  class="ritd" class="sombreado" routerLink="/verificacionBeca">Verificacion De Datos</a></li>
+            <li><a  class="ritd" class="sombreado" routerLink="/kardexCalificaciones">Kardex De Calificaciones</a></li>
+            <li><a  class="ritd" class="sombreado" routerLink="/horario">Horario</a></li>
+            <li><a  class="ritd" class="sombreado" routerLink="/calificacionesExamenes">Califi De Exam Globales o Especiales</a></li>
+            <li><a  class="ritd" class="sombreado" routerLink="/calificacionesParciales">Calificaciones Parciales</a></li>
+            <li><a  class="ritd" class="sombreado" routerLink="/residencias">Residencia</a></li>
+            <li><a  class="ritd" class="sombreado" routerLink="/tutorias">Tutorias</a></li>
           </ol>
         </li>
-  
+
         <li class="submenu2"> <a  class="negrita"><span class="icon-select"></span> Inscripciones<span class="caret icon-chevron-down"></span></a>
           <ol class="children">
-            <li class="submenu2"><a class="sombreado">Seleccion de Materias<span class="caret icon-caret-down"></span></a>
+            <li id="mantener" class="submenu2"><a class="sombreado">Seleccion de Materias<span class="caret icon-caret-down"></span></a>
               <ul class="children">
-                <li><a><span class="icon-angle-double-right"></span>AGO - DIC</a></li>
+                <li><a class="ritd" class="sombreado" routerLink="/seleccionMaterias"><span class="icon-angle-double-right"></span>AGO - DIC</a></li>
                 <li><a><span class="icon-angle-double-right"></span>Verano</a></li>
               </ul>
             </li>
-            <li><a class="sombreado">PRE-FICHA de pago</a></li>
-            <li><a class="sombreado">Horario de Reinscripción</a></li>
-            <li><a class="sombreado">Grupos Cargados</a></li>
-            <li><a class="sombreado">Extraescolares</a></li>
+            <li><a  class="ritd" class="sombreado" routerLink="/prefichaPago">PRE-FICHA de pago</a></li>
+            <li><a  class="ritd" class="sombreado" routerLink="/horarioReinscripcion">Horario de Reinscripción</a></li>
+            <li><a  class="ritd" class="sombreado" routerLink="/gruposCargados">Grupos Cargados</a></li>
+            <li><a  class="ritd" class="sombreado" routerLink="/extraescolar">Extraescolares</a></li>
           </ol>
         </li>
         <li class="submenu2"> <a class="negrita"><span class="icon-server"></span> Evaluaciones Inscripciones<span class="caret icon-chevron-down"></span></a>
           <ol class="children">
-            <li><a class="sombreado">Evaluacion Docente</a></li>
-            <li><a class="sombreado">Auditoria de Servicio</a></li>
+            <li><a class="ritd" class="sombreado" routerLink="/evaluacionDocente/introduccion">Evaluacion Docente</a></li>
+            <li><a class="ritd" class="sombreado" routerLink="/auditoriaServicio">Auditoria de Servicio</a></li>
           </ol>
         </li>
-  
-        <li class="submenu2"><a class="cerrar"><span class="icon-times"></span> Cerrar Sesion</a></li>
+
+        <li class="submenu2"><a class="ritd" class="sombreado" routerLink="/" class="cerrar"><span class="icon-times"></span> Cerrar Sesion</a></li>
       </ul>
     </nav>
   </header>
-  

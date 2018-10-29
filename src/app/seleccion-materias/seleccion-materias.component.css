@@ -15,7 +15,9 @@
 /* z index siempre por delante de todo */
 
 
-
+h5{
+  margin-bottom: 10px;
+}
 /* 98 para tener un alinieamiento
 margin auto para centrar*/
 .contenedor{
@@ -128,6 +130,17 @@ padding: 2px;
   display: none;
   width: 100%;
 }
+
+ .movil ul li:hover ul {
+    display: block;
+    position: static;
+}
+
+ .movil ul li ul {
+   display: block;
+    width: 100%;
+}
+
 
 .menu ul li p {
   font-size: 14px;
