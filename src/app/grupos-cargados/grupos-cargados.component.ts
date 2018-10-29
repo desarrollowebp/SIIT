@@ -115,5 +115,73 @@ export class GruposCargadosComponent implements OnInit {
 				    }
 	    	 }
   })
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+$('.nomsemestre').hide();
+
+ $('.pestanas').click(function(evento){
+   
+   		
+
+    	if($(this).data("sem")==0)
+		{
+			$('.nomsemestre').hide();
+    		$('#st').show();
+    	}else{if($(this).data("sem")==1)
+	    	  {
+	    	  	$('.nomsemestre').hide();
+	    		$('#s1').show(); 
+	    	  }else{if($(this).data("sem")==2)
+				     {
+				     	$('.nomsemestre').hide();
+				    	$('#s2').show();
+				     }else{if($(this).data("sem")==3)
+					    	  {
+					    	  	$('.nomsemestre').hide();
+					    		$('#s3').show();
+					    	  }else{if($(this).data("sem")==4)
+							    	  {
+							    	  	$('.nomsemestre').hide();
+							    		$('#s4').show();
+							    	  }else{if($(this).data("sem")==5)
+								    	    {
+								    	    	$('.nomsemestre').hide();
+								    			$('#s5').show();
+								    	    }else{if($(this).data("sem")==6)
+										    	  {
+										    	  	$('.nomsemestre').hide();
+										    		$('#s6').show();
+										    	  }else{if($(this).data("sem")==7)
+												    	  {
+												    	  	$('.nomsemestre').hide();
+												    		$('#s7').show();
+												    	  }else{if($(this).data("sem")==8)
+														    	  {
+														    	  	$('.nomsemestre').hide();
+														    		$('#s8').show();
+														    	  }else{if($(this).data("sem")==9)
+																    	  {
+																    	  	$('.nomsemestre').hide();
+																    		$('#s9').show();
+																    	  }else{
+																    				$('.nomsemestre').hide();
+																    		   }  
+														    		   }
+												    		   }
+							    		   			   }
+								    		   }
+							    		   }
+			    				   }
+						  }
+				    }
+	    	 }
+  })
+
+  //////////////////////////////////////
+
+
+
+
 }
 }
