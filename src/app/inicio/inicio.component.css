@@ -16,6 +16,7 @@ img{
     background-color: #fff;
     position: relative;
     transform: translate3d(0,0,0);
+    white-space: nowrap;
 }
 
 .slide-right , .slide-right2 {
@@ -39,12 +40,14 @@ img{
     height: 150%;
     overflow: hidden;
     position: relative;
+    white-space: nowrap;
 }
 .slide-center.open{
     left: -50px;
 }
 
 .list-cat , .list-cat2 , .list-cat3{
+    
     margin-right: 7px;
     white-space: nowrap;
     margin-left: 7px;

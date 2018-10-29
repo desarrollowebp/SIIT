@@ -15,21 +15,26 @@ export class InicioComponent implements OnInit {
     ngOnInit() {
         $(document).ready(function () {
             var slide = 0;
+           
+
+
             $(".slide-left").click(function () {
                 slide = slide + 200;
                 if (slide > 0) {
                     slide = 0;
                 }
+                
                 $(".list-cat").css({ 'left': slide + 'px' });
             });
 
             $(".slide-right").click(function () {
                 slide = slide - 200;
                 let listWidth = $(".list-cat").width();
-                let centerWidth = $(".slide-center").width() - 160;
+                let centerWidth = $(".slide-center").width() ;
                 if (slide < -(listWidth - centerWidth)) {
                     slide = -(listWidth - centerWidth);
                 }
+                
                 $(".list-cat").css({ 'left': slide + 'px' });
             });
 
@@ -48,7 +53,7 @@ export class InicioComponent implements OnInit {
             $(".slide-right2").click(function () {
                 slide = slide - 200;
                 let listWidth = $(".list-cat2").width();
-                let centerWidth = $(".slide-center2").width() - 160;
+                let centerWidth = $(".slide-center2").width();
                 if (slide < -(listWidth - centerWidth)) {
                     slide = -(listWidth - centerWidth);
                 }
