@@ -31,6 +31,7 @@ import { AvanceMateriaAlumnoComponent } from './avance-materia-alumno/avance-mat
 
 import { PostSeleccionMateriasComponent } from './post-seleccion-materias/post-seleccion-materias.component';
 import { DatosTablaAlumnoComponent } from './datos-tabla-alumno/datos-tabla-alumno.component';
+import { TablaHorarioComponent } from './tabla-horario/tabla-horario.component';
 
 const routes:Routes = [
   { path: '', component: LoginComponent },
@@ -60,7 +61,8 @@ const routes:Routes = [
   { path: 'auditoriaServicio', component: AuditoriaServicioComponent },
   { path: 'postSeleccionMaterias', component:PostSeleccionMateriasComponent},
   { path: 'preSeleccionMaterias', component: PreSeleccionMateriasComponent},
-  { path: 'datosTablaAlumno', component:DatosTablaAlumnoComponent}
+  { path: 'datosTablaAlumno', component:DatosTablaAlumnoComponent},
+  { path: 'tablaHorario', component:TablaHorarioComponent}
 ]
 
 @NgModule({
@@ -93,6 +95,7 @@ const routes:Routes = [
     PostSeleccionMateriasComponent,
     PreSeleccionMateriasComponent,
     DatosTablaAlumnoComponent,
+    TablaHorarioComponent,
   ],
   imports: [
     BrowserModule,
