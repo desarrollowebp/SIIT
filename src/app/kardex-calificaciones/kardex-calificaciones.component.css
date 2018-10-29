@@ -189,9 +189,9 @@ thead th{
 		text-align: center;
 		background: white;
 	}
-	.foot td{
+	.foot td em{
 		align-content: center;
-		padding-right: 25px;
+		margin: auto;
 	}
 	button{
 		text-align: center;
