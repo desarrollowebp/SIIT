@@ -1,4 +1,13 @@
-.menu ul {
+
+  
+  
+  
+  h2,
+  .h2 {
+    font-size: 1.2rem;
+  }
+  
+  .menu ul {
     background: white;
     text-decoration: none;
     list-style: none;
@@ -87,7 +96,7 @@
       height: 40%;
     
     }
-
+  
     .meniu ul {
     
       margin: 0 auto;
@@ -110,18 +119,10 @@
     color: white;
   }
   
-  p {
-    width: auto;
-  }
   
-
-  #wrapper {
-    padding: 90px 15px;
-  }
   
-
-
-
+  
+  
   .meniu {
     margin: 0 auto;
     width: 100%;
@@ -144,7 +145,7 @@
     padding: 1px;
     width: 33%;
     color: black;
- 
+  
   }
   
   .submeniu ul li {
@@ -158,4 +159,5 @@
     color: white;
     font-weight: bold;
   }
+  
   
