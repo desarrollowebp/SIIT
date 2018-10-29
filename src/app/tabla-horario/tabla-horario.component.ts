@@ -38,7 +38,7 @@ clase3=
 creditos=
 [
   {
-    dato:"Materia/Docente",credito:"19"
+    dato:"total de creditos",credito:"19"
   }
 ]
 }
