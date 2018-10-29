@@ -36,29 +36,28 @@
           </thead>
          <tbody>
          	<thead >
-            <tr>
-              <th class="tab1">Importe a pagar:</th>
-              <td class="tab1" bgcolor="#ccc"> <b><i>2450.00</i></b>.</td>
+            <tr *ngFor="let importe of importe">
+              <th class="tab1">{{importe.dato}}</th>
+              <td class="tab1" bgcolor="#ccc"> <b><i>{{importe.importe}}</i></b>.</td>
             </tr>
          
         
-            <tr>
-              <th class="tab1">Semestre:</th>
-              <td class="tab1">9</td>
+            <tr *ngFor="let semes of semes">
+              <th class="tab1">{{semes.dato}}</th>
+              <td class="tab1">{{semes.semest}}</td>
             </tr>
-            <tr>
-              <th class="tab1">Número de control:</th>
-              <td class="tab1"><i>14041243</i></td>
+            <tr *ngFor="let numero of numero">
+              <th class="tab1">{{numero.dato}}</th>
+              <td class="tab1"><i>{{numero.numerocontrol}}</i></td>
             </tr>
-            <tr>
-              <th class="tab1">Alumno:</th>
-              <td class="tab1">Alejandro Marrufo Quintana
+            <tr *ngFor="let alumno of alumno">
+              <th class="tab1">{{alumno.dato}}</th>
+              <td class="tab1">{{alumno.nombre}}
               </td>
             </tr>
-            <tr>
-              <th class="tab1">Carrera:</th>
-              <td class="tab1">Ingenieria en Sistemas Computacionales
-              </td>
+            <tr *ngFor="let carrera of carrera">
+              <th class="tab1">{{carrera.dato}}</th>
+              <td class="tab1">{{carrera.carre}}</td>
             </tr>
             </thead>
       </tbody>
@@ -99,34 +98,34 @@
           </thead>
             <tbody>
 			
-              <tr>
-                <td><h2 class="stiltab"><strong>No. de Control:</strong></h2>
+              <tr *ngFor="let numero of numero">
+                <td><h2 class="stiltab"><strong>{{numero.dato}}</strong></h2>
                 </td>
-                <td><h2 class="stiltab">14040428</h2>
+                <td><h2 class="stiltab">{{numero.numerocontrol}}</h2>
                 </td>
               </tr>
-              <tr>
-                <td><h2 class="stiltab"><strong> Nombre:</strong></h2></td>
+              <tr *ngFor="let alumno of alumno">
+                <td><h2 class="stiltab"><strong> {{alumno.dato}}</strong></h2></td>
                
-                <td><h2 class="stiltab">Abrego Salmeron Ricardo</h2>
+                <td><h2 class="stiltab">{{alumno.nombre}}</h2>
                 </td>
               </tr>
-              <tr>
-                <td><h2 class="stiltab"><strong> Concepto:</strong></h2>
+              <tr *ngFor="let consep of consep">
+                <td><h2 class="stiltab"><strong> {{consep.dato}}</strong></h2>
                 </td>
-                <td><h2 class="stiltab">INSCRIPCIÓN REINGRESO</h2>
-                </td>
-              </tr>
-              <tr>
-                <td><h2 class="stiltab"><strong> Monto a pagar:</strong></h2>
-                </td>
-                <td><h2 class="stiltab">2350.00</h2>
+                <td><h2 class="stiltab">{{consep.reinc}}</h2>
                 </td>
               </tr>
-              <tr>
-                <td><h2 class="stiltab"><strong>Periodo</strong></h2>
+              <tr *ngFor="let importe of importe">
+                <td><h2 class="stiltab"><strong> {{importe.dato}}</strong></h2>
                 </td>
-                <td><h2 class="stiltab">AGOSTO-DICIEMBRE/2018</h2>
+                <td><h2 class="stiltab">{{importe.importe}}</h2>
+                </td>
+              </tr>
+              <tr *ngFor="let fecha of  fecha">
+                <td><h2 class="stiltab"><strong>{{fecha.dato}}</strong></h2>
+                </td>
+                <td><h2 class="stiltab">{{fecha.dia}}</h2>
                 </td>
               </tr>
             </tbody>
