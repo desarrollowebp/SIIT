@@ -34,67 +34,70 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>Cálculo Integral / Jane Doe</td>
-                <td>3TA</td>
+              <tr *ngFor="let materia1 of materia1">
+                <td>{{materia1.materia}} / {{materia1.docente}}</td>
+                <td>{{materia1.grupo}}</td>
 
-                <td>85</td>
-                <td>85</td>
-                <td>85</td>
-                <td>85</td>
-                <td>85</td>
-                <td>85</td>
-                <td>85</td>
-                <td>85</td>
-                <td>85</td>
-                <td>85</td>
+                <td>{{materia1.u1}}</td>
+                <td>{{materia1.u2}}</td>
+                <td>{{materia1.u3}}</td>
+                <td>{{materia1.u4}}</td>
+                <td>{{materia1.u5}}</td>
+                <td>{{materia1.u6}}</td>
+                <td>{{materia1.u7}}</td>
+                <td>{{materia1.u8}}</td>
+                <td>{{materia1.u9}}</td>
+                <td>{{materia1.u10}}</td>
 
               </tr>
-              <tr>
-                <td>Programación II / Juan Pacheco</td>
-                <td>3TA</td>
-
-                <td>85</td>
-                <td>85</td>
-                <td>85</td>
-                <td>85</td>
-                <td>85</td>
-                <td>85</td>
-                <td>85</td>
-                <td>85</td>
-                <td>85</td>
-                <td>85</td>
-              </tr>
-              <tr>
-                <td>Estadística / Lorenzo Duarte</td>
-                <td>3TA</td>
-
-                <td>85</td>
-                <td>85</td>
-                <td>85</td>
-                <td>85</td>
-                <td>85</td>
-                <td>85</td>
-                <td>85</td>
-                <td>85</td>
-                <td>85</td>
-                <td>85</td>
-              </tr>
-              <tr>
-                <td>Negocios Electrónicos / Cuauhtli Williams</td>
-                <td>3TA</td>
-
-                <td>85</td>
-                <td>85</td>
-                <td>85</td>
-                <td>85</td>
-                <td>85</td>
-                <td>85</td>
-                <td>85</td>
-                <td>85</td>
-                <td>85</td>
-                <td>85</td>
-              </tr>
+              <tr *ngFor="let materia2 of materia2">
+                  <td>{{materia2.materia}} / {{materia2.docente}}</td>
+                  <td>{{materia2.grupo}}</td>
+  
+                  <td>{{materia2.u1}}</td>
+                  <td>{{materia2.u2}}</td>
+                  <td>{{materia2.u3}}</td>
+                  <td>{{materia2.u4}}</td>
+                  <td>{{materia2.u5}}</td>
+                  <td>{{materia2.u6}}</td>
+                  <td>{{materia2.u7}}</td>
+                  <td>{{materia2.u8}}</td>
+                  <td>{{materia2.u9}}</td>
+                  <td>{{materia2.u10}}</td>
+  
+                </tr>
+                <tr *ngFor="let materia3 of materia3">
+                    <td>{{materia3.materia}} / {{materia3.docente}}</td>
+                    <td>{{materia3.grupo}}</td>
+    
+                    <td>{{materia3.u1}}</td>
+                    <td>{{materia3.u2}}</td>
+                    <td>{{materia3.u3}}</td>
+                    <td>{{materia3.u4}}</td>
+                    <td>{{materia3.u5}}</td>
+                    <td>{{materia3.u6}}</td>
+                    <td>{{materia3.u7}}</td>
+                    <td>{{materia3.u8}}</td>
+                    <td>{{materia3.u9}}</td>
+                    <td>{{materia3.u10}}</td>
+    
+                  </tr>
+                  <tr *ngFor="let materia4 of materia4">
+                      <td>{{materia4.materia}} / {{materia4.docente}}</td>
+                      <td>{{materia4.grupo}}</td>
+      
+                      <td>{{materia4.u1}}</td>
+                      <td>{{materia4.u2}}</td>
+                      <td>{{materia4.u3}}</td>
+                      <td>{{materia4.u4}}</td>
+                      <td>{{materia4.u5}}</td>
+                      <td>{{materia4.u6}}</td>
+                      <td>{{materia4.u7}}</td>
+                      <td>{{materia4.u8}}</td>
+                      <td>{{materia4.u9}}</td>
+                      <td>{{materia4.u10}}</td>
+      
+                    </tr>
             </tbody>
           </table>
         </div>
