@@ -1,0 +1,50 @@
+.bg-guinda {
+	background-color: #70193f;
+}
+
+.btn-guinda {
+	color: #fff;
+	background-color: #70193f;
+	border-color: #70193f;
+}
+
+.ui-table-wrapper {
+	display: block;
+	position: relative;
+}
+
+.ui-tbody-sm {
+	display: none;
+}
+
+.card	{
+	margin: 42px 0;
+}
+
+.ui-custom-row {
+	margin: 28px 0 70px;
+}
+
+@media (max-width: 720px) {
+	.ui-tbody-big {
+		display: none;
+	}
+
+	.ui-table-wrapper {
+		padding: 0;
+	}
+
+	h4 {
+		font-size: 18px;
+	}
+
+	th, td {
+		white-space: nowrap;
+		font-size: 14px;
+		padding: 7px;
+	}
+
+	.ui-tbody-sm {
+		display: initial;
+	}
+}

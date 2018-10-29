@@ -12,8 +12,7 @@
 }
 /* CENTRAR LA CAJA Y DARLE 1000 PX */
 .menu{
-	width: 1024px;
-	align-content: center;
+	width: 85%;
 	margin: auto;
 }
 .contenedor{
@@ -22,6 +21,11 @@
 	margin: auto;
 	border: 200PX;
 	
+}
+.boton{
+	background: #70193f;
+	border: #eee;
+	color: #eee;
 }
 /* El hijo siempre lleva margin 0 y auto para centrarlo al div padre*/
 .meniu{
@@ -59,13 +63,15 @@ background:white;
 	background-color: #70193f;
 	color: white;
 	font-weight: bold;
+	font-size: small;
+
 
 
 }
 
 @media (min-width:100px) {
 	.contenedor{
-	  width: 1000px;
+	  width: 70%;
 		min-width: 100%;
 		max-width: 100%;
 		background: #70193f;
@@ -101,6 +107,14 @@ h3{
 p{
 	width: auto;
 }
+/* 
+Generic Styling, for Desktops/Laptops 
+*/body{background:#f9f9f9;}
+#wrapper{padding:90px 15px;}
+.navbar-expand-lg .navbar-nav.side-nav{flex-direction: column;}
+.card{margin-bottom: 15px; border-radius:0; box-shadow: 0 3px 5px rgba(0,0,0,.1); }
+.header-top{box-shadow: 0 3px 5px rgba(0,0,0,.1)}
+.leftmenutrigger{display: none}
 
 /* Responsive para mostrar datos de la tabla de materias*/
 

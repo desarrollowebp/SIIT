@@ -1,3 +1,196 @@
-<p>
-  extraescolar works!
-</p>
+<!--===============empieza tabla de extra seleccionada=================0-->
+<table id="tabla">
+	<thead>
+		<th colspan="7">
+			<h5 align="center">Extraescolar Seleccionada</h5>
+		</th>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Periodo </td>
+			<td>Actividad</td>
+			<td>Grupo </td>
+			<td>Promotor</td>
+			<td>H.Inicial </td>
+			<td>H.Final </td>
+			<td>Dias</td>
+		</tr>
+		<tr >
+			<td>{{extraseleccionada.periodo}}</td>
+			<td>{{extraseleccionada.nombre}}</td>
+			<td>{{extraseleccionada.grupo}}</td>
+			<td>{{extraseleccionada.promotor}}</td>
+			<td>{{extraseleccionada.hInicial}}</td>
+			<td>{{extraseleccionada.hFinal}}</td>
+			<td>{{extraseleccionada.dias}}</td>
+		</tr>
+	</tbody>
+</table>
+
+
+<!--=========empieza tabla de avisos==========---------->
+<div class="accordionbox">
+	<div>
+		<h4>Extraescolares Culturales Disponibles  </h4>
+	</div>
+	<div>
+		<input id="tab" name="myaccordion" type="checkbox" />
+		<label for="tab">BAILE</label>
+		<div class="insidebox">
+			<!--=========PRIMER CONTENEDOR DE EXTRA==========--->
+			<div class="panel-body" *ngFor="let baile of bailes">
+				<li (click)="funcp(baile)">{{baile}} </li>
+			</div>
+		</div>
+	</div>
+	<!--=========PRIMER CONTENEDOR DE EXTRA TERMINA==========--->
+
+	<!--=========SEGUNDO CONTENEDOR DE EXTRA==========--->
+	<div>
+		<input id="tab-two" name="myaccordion" type="checkbox" />
+		<label for="tab-two">MÚSICA</label>
+		<div class="insidebox">
+			<div class="panel-body" *ngFor="let musica of musicales">
+				<li (click)="funcp(musica)">{{musica}}</li>
+			</div>
+		</div>
+	</div>
+	<!--=========SEGUNDO CONTENEDOR DE EXTRA TERMINA==========--->
+
+	<!--=========TERCER CONTENEDOR DE EXTRA==========--->
+	<div>
+		<input id="tab-three" name="myaccordion" type="checkbox" />
+		<label for="tab-three">ACTIVIDADES CIVICAS</label>
+		<div class="insidebox">
+			<div class="panel-body" *ngFor="let civica of civicas">
+				<li (click)="funcp(civica)">{{civica}}</li>
+			</div>
+		</div>
+	</div>
+	<!--=========TERCER CONTENEDOR DE EXTRA TERMINA==========--->
+
+	<!--=========CUARTO CONTENEDOR DE EXTRA==========--->
+	<div>
+		<input id="tab-four" name="myaccordion" type="checkbox" />
+		<label for="tab-four">DIFUSION Y TEATRO</label>
+		<div class="insidebox">
+			<div class="panel-body" *ngFor="let dt of dts">
+				<li (click)="funcp(dt)">{{dt}}</li>
+			</div>
+		</div>
+	</div>
+	<!--=========CUARTO CONTENEDOR DE EXTRA TERMINA==========--->
+
+	<!--=========QUINTO CONTENEDOR DE EXTRA==========--->
+	<div>
+		<input id="tab-five" name="myaccordion" type="checkbox" />
+		<label for="tab-five">VISUALES</label>
+		<div class="insidebox">
+			<div class="panel-body" *ngFor="let visual of visuales">
+				<li (click)="funcp(visual)">{{visual}}</li>
+			</div>
+		</div>
+	</div>
+	<!--=========QUINTO CONTENEDOR DE EXTRA TERMINA==========--->
+
+</div>
+<!--=========termina tabla de avisos==========--->
+<br>
+<!--=========empieza SEGUNDA tabla de avisos==========---------->
+<div class="accordionbox">
+
+	<div>
+		<h4>Extraescolares Deportivas Disponibles </h4>
+	</div>
+
+	<div>
+		<input id="tab-six" name="myaccordion" type="checkbox" />
+		<label for="tab-six">PELOTA</label>
+		<div class="insidebox">
+			<!--=========PRIMER CONTENEDOR DE EXTRA==========--->
+			<div class="panel-body" *ngFor="let pelota of pelotas">
+				<li (click)="funcp(pelota)">{{pelota}}</li>
+			</div>
+		</div>
+	</div>
+	<!--=========PRIMER CONTENEDOR DE EXTRA TERMINA==========--->
+
+	<!--=========SEGUNDO CONTENEDOR DE EXTRA==========--->
+	<div>
+		<input id="tab-seven" name="myaccordion" type="checkbox" />
+		<label for="tab-seven">ACTIVIDADES FISICAS</label>
+		<div class="insidebox">
+			<div class="panel-body" *ngFor="let fisica of fisicas">
+				<li (click)="funcp(fisica)">{{fisica}}</li>
+			</div>
+		</div>
+	</div>
+	<!--=========SEGUNDO CONTENEDOR DE EXTRA TERMINA==========--->
+
+	<!--=========TERCER CONTENEDOR DE EXTRA==========--->
+	<div>
+		<input id="tab-eight" name="myaccordion" type="checkbox" />
+		<label for="tab-eight">NATACION</label>
+		<div class="insidebox">
+			<div class="panel-body" *ngFor="let natacion of nataciones">
+				<li (click)="funcp(natacion)">{{natacion}}</li>
+			</div>
+		</div>
+	</div>
+	<!--=========TERCER CONTENEDOR DE EXTRA TERMINA==========--->
+
+	<!--=========CUARTO CONTENEDOR DE EXTRA==========--->
+	<div>
+		<input id="tab-nine" name="myaccordion" type="checkbox" />
+		<label for="tab-nine">AJEDREZ, ELECTRONICOS Y ARCO</label>
+		<div class="insidebox">
+			<div class="panel-body" *ngFor="let aea of aeas">
+				<li (click)="funcp(aea)">{{aea}}</li>
+			</div>
+		</div>
+	</div>
+	<!--=========CUARTO CONTENEDOR DE EXTRA TERMINA==========--->
+
+</div>
+<!--=========termina SEGUNDA tabla de avisos==========--->
+
+
+<!--=========empieza el modal==========--->
+<div id="myModal" class="{{modals}}">
+
+	<!--=========empieza el modal==========--->
+
+		<!-- Modal content -->
+		<div class="form" >
+			<h4>
+				Grupos disponibles para  {{datosmodal}},  presiona seleccionar para elegir un grupo
+			</h4>
+			<form>
+				<table id="tablaModal">
+					<tr>
+						<th>Grupo</th>
+						<th>Promotor</th>
+						<th>H.Inicial</th>
+						<th>H.Final</th>
+						<th>Dias</th>
+						<th>Lugares Disponibles</th>
+						<th></th>
+					</tr>
+					<tr *ngFor="let group of gruposDisponibles">
+						<td>{{group.grupo}}</td>
+						<td>{{group.promotor}}</td>
+						<td>{{group.hInicial}}</td>
+						<td>{{group.hFinal}}</td>
+						<td>{{group.dias}}</td>
+						<td>{{group.lugares}}</td>
+						<td><button type="button" class="boton" (click)="cerrar()" (click)="objetoActual(group)">Seleccionar</button></td>
+					</tr>
+					<tr>
+					</tr>
+				</table>
+			</form>
+			<button class="boton" id="btn-cancelar"  (click)="cerrar()" >Cancelar</button>
+
+		</div>
+
+	<!--=========termina el modal==========--->

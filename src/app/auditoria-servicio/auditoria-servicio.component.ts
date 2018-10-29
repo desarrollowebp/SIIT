@@ -5,11 +5,13 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './auditoria-servicio.component.html',
   styleUrls: ['./auditoria-servicio.component.css']
 })
-export class AuditoriaServicioComponent implements OnInit {
+export class AuditoriaServicioComponent implements OnInit{
+	
+	constructor()	{}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+	ngOnInit() {
+	}
+  	 
 }
+
+
