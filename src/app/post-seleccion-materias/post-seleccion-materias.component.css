@@ -1,0 +1,414 @@
+/* 100% algot de ventava uvh*/
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  -ms-box-sizing: border-box;
+       box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+}
+
+.menu {
+  background: white;
+
+  width: 100%;
+
+  top: 10px;
+  transition: all 0.5s;
+}
+
+
+
+
+.dias {
+  padding-left: 10%;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.dias .infodia {
+  width: 30%;
+  padding: 5px 5px;
+}
+
+
+
+/*probemmas con margin*/
+.menu ul {
+  background: white;
+  text-decoration: none;
+  list-style: none;
+  font-size: 20px;
+  margin: 0px 0px;
+}
+
+.menu a {
+
+  font-size: 10px;
+  border: none;
+  display: block;
+  padding:  20px;
+  text-decoration: none;
+  height: 40px;
+  margin: 0 auto;
+  border-right: 50px;
+
+}
+
+/*ayuda a jquery*/
+.menu ul li:hover ul {
+  display: none;
+  position: static;
+}
+
+.menu ul li ul {
+  display: none;
+  width: 100%;
+}
+
+.menu ul li p {
+  font-size: 10px;
+  text-align: center;
+}
+.menu ul li .NombreMateria  {
+  width: 100%;
+  font-size: 15px;
+  text-align: center;
+  height: auto;
+  margin: 0 auto;
+word-wrap: break-word;
+  border: 6px solid #6A1A3E;
+padding: 5px;
+border-radius: 5px;
+justify-content: center;
+align-items: center;
+
+}
+
+.menu ul li a {
+  color: black;
+  border-left: 6px solid #6A1A3E;
+  background-color: white;
+  text-align: center;
+  font-size: 14px;
+
+  padding-right:  70%;
+  padding-top:  3%;
+}
+ .horarioseparacion{
+  margin: 10px;
+  padding: 10px;
+
+
+
+}
+
+  button {
+
+  font-size: 15px;
+
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: white;
+  background-color: #70193F;
+  border: none;
+  border-radius: 15px;
+  margin: 20px;
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.vertical {
+
+  overflow: auto;
+  white-space: nowrap;
+}
+.container{
+  display: none;
+}
+
+
+.horariodes{
+width: 100%;
+background-color: white;
+text-align: center;
+font-size: 14px;
+
+
+}
+.centarbtn{
+  margin: 10px auto;
+  width: 100%;
+  height: 50px;
+  display: flex;
+ align-items: center;
+ justify-content: center;
+}
+#btn-cancelar{
+  margin-bottom: 2px;
+}
+
+.vertical::-webkit-scrollbar-thumb {
+    background: red;
+}
+.opciones button{
+cursor: pointer;
+
+}
+@media(min-width:780px)
+{
+  .container{
+    display:inline;
+  }
+  .movil{
+    display: none;
+  }
+  .menu {
+
+    width: 1000px;
+
+    margin: 0 auto;
+    position: relative;
+
+  }
+
+  .submenu {
+    width: 100%;
+    height: 100%;
+    font-size: 10px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+
+  .materia {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+
+
+
+
+
+  }
+
+  .estado {
+    width: 100%;
+
+    word-wrap: break-word;
+  }
+
+
+
+  .menu ul  {
+    display: flex;
+    cursor: pointer;
+  }
+
+  .vertical {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+    white-space: normal;
+    margin: 0 auto;
+
+  }
+
+.vertical button{
+  text-align: center;
+
+}
+
+.menu ul li a{
+  padding: 0 0 0 0;
+  padding-top: 10%;
+}
+
+}
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+/* The Modal (background) */
+.modal {
+  /* Hidden by default */
+  display: none;
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+  -webkit-animation-name: fadeIn;
+  /* Fade in the background */
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+
+/* Modal Content */
+.form {
+  bottom: 0;
+  background-color: #fefefe;
+  width: 100%;
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: slideIn;
+  animation-duration: 0.4s;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 15% auto;
+
+}
+.etiqueta{
+  text-align: center;
+}
+
+.form table tr th, td {
+  padding: 10px;
+
+}
+
+table{
+  width: 100%;
+	border :10px;
+	background: #FFFFFF;
+  padding: 10px;
+}
+
+th {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	color: #FFFFFF;
+	background-color: #014e82;
+	font-variant: small-caps;
+	padding: 3px 10px 3px 5px;
+}
+
+
+td {
+  text-align: center;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	color: #25496B;
+	padding: 0px 0px 0px 0px;
+
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+.modal-body {
+  padding: 2px 16px;
+}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+  from {
+    bottom: -300px;
+    opacity: 0
+  }
+
+  to {
+    bottom: 0;
+    opacity: 1
+  }
+}
+
+@keyframes slideIn {
+  from {
+    bottom: -300px;
+    opacity: 0
+  }
+
+  to {
+    bottom: 0;
+    opacity: 1
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@media(max-width:780px) {
+  .modal {
+    padding-left: 0;
+    padding-top: 0;
+  }
+
+  .form {
+    padding-left: 0;
+    border-radius: 0;
+    width: 100%;
+  }
+}
+
+th {
+  background-color: #6F193F;
+  color: white;
+}
