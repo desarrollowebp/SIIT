@@ -34,9 +34,18 @@ function menuh () {
 		$(this).children('.children').slideToggle();
 	});
 
-	$('ol').click(function(p){
+  $('#mantener').click(function(p)
+  {
 		p.stopPropagation();
 	})
+	$('.children').click(function(p)
+  {
+		p.stopPropagation();
+    $('nav').animate({
+      left: '-100%'
+    });
+	})
+
 }
   }
 
