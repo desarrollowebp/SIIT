@@ -1,3 +1,4 @@
+/*Propiedades del contenedor*/
 .container {
     max-width: 90%;
     overflow: hidden;
@@ -6,11 +7,15 @@
     padding: 0px; 
 }
 
-
+/*Propiedades de los ul de la tabla de actividades*/
 .container ul {
     padding: 0px;
     margin: auto;
+    
+
 }
+
+/*Propiedades que se aplicaran a la tabla de actividades cuando se coloque el puntero sobre ellos*/
 .container ul li:hover {
     opacity: 0.9;
 }
@@ -18,6 +23,8 @@
     background: #597EAA;
     color: white;
 }
+
+/*Propiedades del contenedor que seran aplicados a los ul e il de la tabla de actividades*/
 .container ul li {
     list-style: none;
     float: left;
@@ -28,7 +35,10 @@
     box-sizing:border-box;
     border: 2px solid white;
     text-align: center;
+
 }
+
+/*Propiedades del contenedor que seran aplicados a los titulos de los ul e il de la tabla de actividades*/
 .container ul li .title {
     width: 100%;
     height: 50px;
@@ -38,25 +48,22 @@
     color: white;
 }
 
+/*Propiedades que se aplicaran al nombre del tutor*/
 .tuto{
     text-align: center;
     color: #70193F;
+    font-weight: bold;
     
 }
 
-.alumno{
-    text-align: center;
-    color: #597EAA;
-    line-height: 2px;
-}
-
-
+/*Propiedades que se aplicaran al a la etiqueta de avnce de actividades*/
 .lab{
     text-align: center;
-    color: #597EAA; 
-   
+    color: #black; 
+    font-weight: bold;
 }
 
+/*Propiedades resposive*/
 @media screen and (max-width: 1250px){
     .container ul li {
         width: 40%;
@@ -76,9 +83,7 @@
     }
 }
 
-
-
-
+/*Propiedades que se aplicaran a los checkbox*/
 input[type="checkbox"] { 
     
   height: 15px; 
@@ -86,146 +91,7 @@ input[type="checkbox"] {
   margin-right: auto;
 }   
 
-.menu ul {
-    background: white;
-    text-decoration: none;
-    list-style: none;
-    font-size: 20px;
-    margin: 0px auto;
-    width: 70%;
-  }
-  
-  .menu a {
-    border: none;
-    display: block;
-    padding: 5px 20px;
-    text-decoration: none;
-  }
-  
-  .menu ul li:hover ul {
-    display: none;
-    position: static;
-  }
-  
-  .menu ul li ul {
-    display: none;
-    width: 100%;
-  }
-  
-  .menu ul li p {
-    font-size: 9px;
-    text-align: center;
-    overflow-wrap: break-word;
-  }
-  
-  .menu ul li a {
-    color: black;
-    border-left: 6px solid #6A1A3E;
-    background-color: white;
-  }
-  
-  #menu-bar:checked~.menu {
-    transform: translateX(0);
-  }
-  
-  
-  
-  
-  
-    .menu ul {
-      display: flex;
-    }
-  
-    .menu ul li p {
-      font-size: 15px;
-    }
-  
-    h2,
-    .h2 {
-      font-size: 2rem;
-    }
-  
-  
-  
-  
-  
-    .meniu {
-      margin: 0 auto;
-      width: 100%;
-      height: 40%;
-    
-    }
 
-    .meniu ul {
-    
-      margin: 0 auto;
-      width: 100%;
-      background: white;
-     padding-left: 5px;
-    }
-  
-  
-  h3 {
-    display: block;
-    font-size: 1.2em;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-    background-color: #70193f;
-    text-align: center;
-    color: white;
-  }
-  
-  p {
-    width: auto;
-  }
-  
-
-  #wrapper {
-    padding: 90px 15px;
-  }
-  
-
-
-
-  .meniu {
-    margin: 0 auto;
-    width: 100%;
-    height: 40%;
-    background: white;
-  }
-  
-  .meniu ul {
-    
-    justify-content: center;
-    text-align: center;
-    list-style: none;
-    width: 90%;
-    display: flex;
-    flex-wrap: nowrap;
-    text-decoration: none;
-  }
-  
-  .meniu ul li {
-    padding: 1px;
-    width: 33%;
-    color: black;
- 
-  }
-  
-  .submeniu ul li {
-    width: 100%;
-    background: white;
-    
-  }
-  
-  .submeniu #titulo {
-    background-color: #70193f;
-    color: white;
-    font-weight: bold;
-  }
 
 
 
