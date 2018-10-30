@@ -21,9 +21,8 @@ table {
   border-collapse: separate;
   border-spacing: 0px;
   border: 1px solid black;
-  
-  empty-cells: HIDE;
   border-radius: .25rem;
+  empty-cells: HIDE;
   perspective: 1px;
   -webkit-border-radius: .25rem;
 -moz-border-radius: .25rem;
