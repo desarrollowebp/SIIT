@@ -13,9 +13,15 @@ export class ExtraescolarComponent implements OnInit {
     console.log(gru);
     this.extraseleccionada = {
       periodo: gru.periodo, nombre: gru.nombre, grupo: gru.grupo,
-      promotor: gru.promotor, hInicial: gru.hInicial, hFinal: gru.hFinal, dias: gru.dias
+      promotor: gru.promotor, hInicial: gru.hInicial, hFinal: gru.hFinal, 
+      dias: gru.dias
     };
   }
+
+  actividadesCulturales=[];
+  actividadesDeportivas=[];
+
+
 
   datosmodal = "";
   extraseleccionada = {
@@ -67,6 +73,14 @@ export class ExtraescolarComponent implements OnInit {
 
   }
 
+  actividades=[ 
+    this.actividadesCulturales=[{bailes:[],musicales:[],civicas:[],dts:[],visuales:[]
+    }],
+    this.actividadesDeportivas=[{pelotas:[],fisicas:[],nataciones:[],aeas:[]}]
+  ]
+
+ 
+
   bailes = [
     'Ballet Tahitiano', 'Bellydance Fusión', 'Break Dance', 'Danza Aérea',
     'Danza Árabe', 'Electro Dance', 'Hip Hop', 'Hip Hop Avanzado', 'Hip Hop Principiante',
@@ -115,14 +129,17 @@ export class ExtraescolarComponent implements OnInit {
   ]
 
 
+  maestros = [
+    { periodo: '20183', 
+      nombre: this.bailes[0],
+      grupo: 'RL',
+      promotor: 'GALINDO ZALDIVAR M.V. ISAAC ALEJANDRO', 
+      hInicial: '13:00', hFinal: '14:00', 
+      dias: 'L,MA,MI,J', lugares: '20' },
 
-
-  gruposDisponibles = [
-    { periodo: '20183', nombre: 'Ajedrez', grupo: 'RL', promotor: 'GALINDO ZALDIVAR M.V. ISAAC ALEJANDRO', hInicial: '13:00', hFinal: '14:00', dias: 'L,MA,MI,J', lugares: '20' },
-    { periodo: '20183', nombre: 'Ajedrez', grupo: '1B', promotor: 'GARCIA GARCIA JOSE ANTONIO', hInicial: '11:00', hFinal: '12:00', dias: 'L,MA,MI,J', lugares: '15' },
+    { periodo: '20183', nombre: 'Ajedrez', grupo: '1B', 
+      promotor: 'GARCIA GARCIA JOSE ANTONIO', 
+      hInicial: '11:00', hFinal: '12:00', dias: 'L,MA,MI,J', 
+      lugares: '15' },
   ]
-
-
-
-
 }
