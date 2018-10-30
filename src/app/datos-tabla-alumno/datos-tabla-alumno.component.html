@@ -1,0 +1,44 @@
+
+<section class="registro">
+
+  <div class="menu">
+    <div class="contenedor" >
+  <div class="meniu">
+    <h3>Datos del Alumno</h3>
+    <ul *ngFor="let alumno of alumno">
+      <li class="submeniu" id="control" >
+        <p id="titulo">No. Control </p>
+        <p>{{alumno.control}}</p>
+      </li>
+      <li class="submeniu">
+        <p id="titulo">Nombre </p>
+        <p>{{alumno.nombre}}</p>
+      </li>
+      <li class="submeniu" id="control">
+        <p id="titulo">Periodo Escolar </p>
+        <p>{{alumno.periodo}}</p>
+      </li>
+      <li class="submeniu">
+        <p id="titulo">Promedio </p>
+        <p>{{alumno.promedio}}</p>
+      </li>
+      
+        </ul>
+    
+    <ul *ngFor="let datos of datos" >
+      <li class="submeniu">
+          <p id="titulo"> Carrera</p>
+          <p>{{datos.carrera}}</p>
+        </li>
+        <li class="submeniu">
+          <p id="titulo"> Especialidad</p>
+          <p>{{datos.especialidad}}</p>
+        </li>
+        <li class="submeniu">
+          <p id="titulo"> CURP</p>
+          <p>{{datos.curp}}</p>
+        </li>
+    </ul>
+  </div>
+</div>
+</div>
