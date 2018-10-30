@@ -129,18 +129,15 @@ header nav ul li .children li a {
 
 
 	.menu_bar img {
-		margin-top: 2px;
-		display: block;
-		color: #6F193F;
-		overflow: hidden;
-		font-size: 25px;
-		font-weight: bold;
-		text-decoration: none;
-		float: left;
-		margin-left: 10px;
 		
-		height: 65px;
-	width: 65px;
+		margin: 0 auto;
+		height: 64px;
+		width: 86px;
+		float: left;
+		margin-right: 8px;
+		image-rendering: crisp-edges;
+		
+
 	}
 
 	.textoITD
