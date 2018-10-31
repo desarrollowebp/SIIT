@@ -13,6 +13,18 @@
 	position: relative;
 }
 
+.ui-table-wrapper{
+	border: 1px solid #70193f;
+	
+}
+	tr:nth-last-child(even){
+		background-color:#eee; 
+	}
+	tr:hover td{
+		background-color: #eee;
+		color:white;
+	}
+	
 .ui-tbody-sm {
 	display: none;
 }
