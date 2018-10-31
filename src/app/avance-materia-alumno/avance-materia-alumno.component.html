@@ -1,150 +1,147 @@
 
 <div class="menu">
-       <h1>Semestres</h1>
-       <h4>Presiona semestre y desliza horizontalmente </h4>
-       <ul>
+  <h1>Semestres</h1>
+  <h4>Presiona semestre y desliza horizontalmente </h4>
+  <ul>
 
-         <li class="submenu_11">
-           <a> Semestre 1<span class="icon-angle-down"> </span> </a>
-           <ul>
-             <li class="vertical">
-               <div class="materia">
-                 <div class="estado">
-                   <p>Calculo diferencial</p>
-                   <p>Numero creditos</p>
-                   <p>Calificacion</p>
-                 </div>
+    <li class="submenu_11">
+      <a> Semestre 1<span class="icon-angle-down"> </span> </a>
+      <ul>
+        <li class="vertical">
+          <div class="materia" *ngFor="let semestre1 of semestre1">
+            <div class="estado">
+              <p>{{semestre1.codigo}}</p>
+              <p>{{semestre1.nombre}}</p>
+              <p>{{semestre1.calif}}</p>
+            </div>
 
-               </div>
-               <div class="materia">
-                 <div class="estado">
-                   <p>Programacion orientada a los objets texto largo</p>
-                   <p>Numero creditos</p>
-                   <p>Calificacion</p>
+          </div>
+          
 
-                 </div>
-               </div>
-               <div class="materia">
-                 <div class="estado">
-                   <p>Programacion orientada a los objets texto largo</p>
-                   <p>Numero creditos</p>
-                   <p>Calculo</p>
+        </li>
+      </ul>
+    </li>
+    <li class="submenu_11">
+      <a> Semestre 2<span class="icon-angle-down"> </span> </a>
+      <ul>
+        <li class="vertical">
+          <div class="materia" *ngFor="let semestre2 of semestre2">
+            <div class="estado">
+             <p>{{semestre2.codigo}}</p>
+             <p>{{semestre2.nombre}}</p>
+             <p>{{semestre2.calif}}</p>
+            </div>
 
-                 </div>
-               </div>
-               <div class="materia">
-                 <div class="estado">
-                   <p>Programacion orientada a los objets texto largo</p>
-                   <p>Numero creditos</p>
-                   <p>Calculo</p>
+          </div>
+        </li>
+      </ul>
+    </li>
+    <li class="submenu_11">
+      <a> Semestre 3<span class="icon-angle-down"> </span> </a>
+      <ul>
+        <li class="vertical">
+          <div class="materia" *ngFor="let semestre3 of semestre3">
+            <div class="estado">
+             <p>{{semestre3.codigo}}</p>
+             <p>{{semestre3.nombre}}</p>
+             <p>{{semestre3.calif}}</p>
+            </div>
 
-                 </div>
-               </div>
+          </div>
+        </li>
+      </ul>
+    </li>
+    <li class="submenu_11">
+      <a h> Semestre 4<span class="icon-angle-down"> </span> </a>
+      <ul>
+        <li class="vertical">
+          <div class="materia" *ngFor="let semestre4 of semestre4">
+            <div class="estado">
+             <p>{{semestre4.codigo}}</p>
+             <p>{{semestre4.nombre}}</p>
+             <p>{{semestre4.calif}}</p>
+            </div>
 
-             </li>
-           </ul>
-         </li>
-         <li class="submenu_11">
-           <a> Semestre 2<span class="icon-angle-down"> </span> </a>
-           <ul>
-             <li class="vertical">
-               <div class="materia">
-                 <div class="estado">
-                   <p>Calculo diferencial</p>
-                   <p>Numero creditos</p>
-                   <p>Calificacion</p>
-                 </div>
+          </div>
+        </li>
+      </ul>
+    </li>
+    <li class="submenu_11">
+      <a> Semestre 5<span class="icon-angle-down"> </span> </a>
+      <ul>
+        <li class="vertical">
+          <div class="materia" *ngFor="let semestre5 of semestre5">
+            <div class="estado">
+             <p>{{semestre5.codigo}}</p>
+             <p>{{semestre5.nombre}}</p>
+             <p>{{semestre5.calif}}</p>
+            </div>
 
-               </div>
-               <div class="materia">
-                 <div class="estado">
-                   <p>Programacion orientada a los objets texto largo</p>
-                   <p>Numero creditos</p>
-                   <p>Calificacion</p>
+          </div>
+        </li>
+      </ul>
+    </li>
+    <li class="submenu_11">
+      <a> Semestre 6<span class="icon-angle-down"> </span> </a>
+      <ul>
+        <li class="vertical">
+          <div class="materia" *ngFor="let semestre6 of semestre6">
+            <div class="estado">
+             <p>{{semestre6.codigo}}</p>
+             <p>{{semestre6.nombre}}</p>
+             <p>{{semestre6.calif}}</p>
+            </div>
 
-                 </div>
-               </div>
-               <div class="materia">
-                 <div class="estado">
-                   <p>Programacion orientada a los objets texto largo</p>
-                   <p>Numero creditos</p>
-                   <p>Calificacion</p>
+          </div>
+        </li>
+      </ul>
+    </li>
+    <li class="submenu_11">
+      <a> Semestre 7<span class="icon-angle-down"> </span> </a>
+      <ul>
+        <li class="vertical">
+          <div class="materia" *ngFor="let semestre7 of semestre7">
+            <div class="estado">
+             <p>{{semestre7.codigo}}</p>
+             <p>{{semestre7.nombre}}</p>
+             <p>{{semestre7.calif}}</p>
+            </div>
 
-                 </div>
-               </div>
-               <div class="materia">
-                 <div class="estado">
-                   <p>Programacion orientada a los objets texto largo</p>
-                   <p>Numero creditos</p>
-                   <p>Calificacion</p>
+          </div>
+        </li>
+      </ul>
+    </li>
+    <li class="submenu_11">
+      <a> Semestre 8<span class="icon-angle-down"> </span> </a>
+      <ul>
+        <li class="vertical">
+          <div class="materia" *ngFor="let semestre8 of semestre8">
+            <div class="estado">
+             <p>{{semestre8.codigo}}</p>
+             <p>{{semestre8.nombre}}</p>
+             <p>{{semestre8.calif}}</p>
+            </div>
 
-                 </div>
-               </div>
-               <div class="materia">
-                 <div class="estado">
-                   <p>Programacion orientada a los objets texto largo</p>
-                   <p>Numero creditos</p>
-                   <p>Calificacion</p>
+          </div>
+        </li>
+      </ul>
+    </li>
+    <li class="submenu_11">
+      <a> Semestre 9<span class="icon-angle-down"> </span> </a>
+      <ul>
+        <li class="vertical">
+          <div class="materia" *ngFor="let semestre9 of semestre9">
+            <div class="estado">
+             <p>{{semestre9.codigo}}</p>
+             <p>{{semestre9.nombre}}</p>
+             <p>{{semestre9.calif}}</p>
+            </div>
 
-                 </div>
-               </div>
-               <div class="materia">
-                 <div class="estado">
-                   <p>Programacion orientada a los objets texto largo</p>
-                   <p>Numero creditos</p>
-                   <p>Calificacion</p>
+          </div>
+        </li>
+      </ul>
+    </li>
 
-                 </div>
-               </div>
+  </ul>
 
-
-
-             </li>
-           </ul>
-         </li>
-         <li class="submenu_11">
-           <a> Semestre 3<span class="icon-angle-down"> </span> </a>
-           <ul>
-
-           </ul>
-         </li>
-         <li class="submenu_11">
-           <a h> Semestre 4<span class="icon-angle-down"> </span> </a>
-           <ul>
-
-           </ul>
-         </li>
-         <li class="submenu_11">
-           <a> Semestre 5<span class="icon-angle-down"> </span> </a>
-           <ul>
-
-           </ul>
-         </li>
-         <li class="submenu_11">
-           <a> Semestre 6<span class="icon-angle-down"> </span> </a>
-           <ul>
-
-           </ul>
-         </li>
-         <li class="submenu_11">
-           <a> Semestre 7<span class="icon-angle-down"> </span> </a>
-           <ul>
-
-           </ul>
-         </li>
-         <li class="submenu_11">
-           <a> Semestre 8<span class="icon-angle-down"> </span> </a>
-           <ul>
-
-           </ul>
-         </li>
-         <li class="submenu_11">
-           <a> Semestre 9<span class="icon-angle-down"> </span> </a>
-           <ul>
-
-           </ul>
-         </li>
-
-       </ul>
-
-     </div>
+</div>
