@@ -26,6 +26,7 @@ table {
   perspective: 1px;
   -webkit-border-radius: .25rem;
 -moz-border-radius: .25rem;
+ margin-top: 10px;
 }
 table tr:last-child td:first-child {
 border-bottom-left-radius: 6px;
