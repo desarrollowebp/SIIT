@@ -1,6 +1,4 @@
-<div style="text-align: center;">
-  <h1> AUDITORIA DE SERVICIO </h1>
-</div><br/>
+
 <div *ngFor="let element of preguntas">
   <p id="tituloServicio">{{element.servicio}}</p>
   <!--Pregunta 1-->
@@ -141,12 +139,12 @@
         <!--Sección de comentarios y botón-->
   <div id="coment"><h4>Comentarios</h4></div>
         <textarea id="comentarios" style="border: solid 1px gray;" class="form-control" rows="5">
-        </textarea>
-        
-  </div>
+        </textarea>     
+  
 </div>
 <div id="boton" style="text-align: center;">    
     <button type="button" class="btn btn-primary">
-        Continuar
+        Finalizar
     </button>
+</div>
 
