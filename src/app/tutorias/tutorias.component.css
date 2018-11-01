@@ -22,6 +22,7 @@
 .container ul li .title:hover {
     background: #597EAA;
     color: white;
+    
 }
 
 /*Propiedades del contenedor que seran aplicados a los ul e il de la tabla de actividades*/
