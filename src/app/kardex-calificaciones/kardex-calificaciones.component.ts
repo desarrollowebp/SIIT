@@ -35,7 +35,7 @@ export class KardexCalificacionesComponent implements OnInit {
   }
 
   Carga = [
-    { dato: 'carga', carga: '1' }
+    { dato: 'carga', carga: '1' ,salon:'LC22', curso:'repetición'}
   ]
   periodoEsc = [
     { dato: 'Perido Escolar', periodoEsc: 'AGOS/DIC 2014',  }
