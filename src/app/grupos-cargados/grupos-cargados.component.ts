@@ -62,48 +62,48 @@ export class GruposCargadosComponent implements OnInit {
 })
 
 
-  	    $('.pestanas').click(function(evento){
+  	    $('.pestanasGC').click(function(evento){
     	if($(this).data("sem")==0)
     	{
-    		$('.semestresdiv').show();
+    		$('.semestresdivGC').show();
     	}else{if($(this).data("sem")==1)
 	    	  {
-	    	  	$('.semestresdiv').hide();
-	    		$('#semestre1').show(); 
+	    	  	$('.semestresdivGC').hide();
+	    		$('#semestre1GC').show(); 
 	    	  }else{if($(this).data("sem")==2)
 				     {
-				     	$('.semestresdiv').hide();
-				    	$('#semestre2').show();
+				     	$('.semestresdivGC').hide();
+				    	$('#semestre2GC').show();
 				     }else{if($(this).data("sem")==3)
 					    	  {
-					    	  	$('.semestresdiv').hide();
-					    		$('#semestre3').show();
+					    	  	$('.semestresdivGC').hide();
+					    		$('#semestre3GC').show();
 					    	  }else{if($(this).data("sem")==4)
 							    	  {
-							    	  	$('.semestresdiv').hide();
-							    		$('#semestre4').show();
+							    	  	$('.semestresdivGC').hide();
+							    		$('#semestre4GC').show();
 							    	  }else{if($(this).data("sem")==5)
 								    	    {
-								    	    	$('.semestresdiv').hide();
-								    			$('#semestre5').show();
+								    	    	$('.semestresdivGC').hide();
+								    			$('#semestre5GC').show();
 								    	    }else{if($(this).data("sem")==6)
 										    	  {
-										    	  	$('.semestresdiv').hide();
-										    		$('#semestre6').show();
+										    	  	$('.semestresdivGC').hide();
+										    		$('#semestre6GC').show();
 										    	  }else{if($(this).data("sem")==7)
 												    	  {
-												    	  	$('.semestresdiv').hide();
-												    		$('#semestre7').show();
+												    	  	$('.semestresdivGC').hide();
+												    		$('#semestre7GC').show();
 												    	  }else{if($(this).data("sem")==8)
 														    	  {
-														    	  	$('.semestresdiv').hide();
-														    		$('#semestre8').show();
+														    	  	$('.semestresdivGC').hide();
+														    		$('#semestre8GC').show();
 														    	  }else{if($(this).data("sem")==9)
 																    	  {
-																    	  	$('.semestresdiv').hide();
-																    		$('#semestre9').show();
+																    	  	$('.semestresdivGC').hide();
+																    		$('#semestre9GC').show();
 																    	  }else{
-																    				$('.semestresdiv').hide();
+																    				$('.semestresdivGC').hide();
 																    		   }  
 														    		   }
 												    		   }
@@ -122,60 +122,60 @@ export class GruposCargadosComponent implements OnInit {
     { tdato: 'Gpo-Sem', tmateria: 'Materia', tlunes: 'Lunes', tmartes: 'Martes', tmiercoles: 'Miercoles', tjueves: 'Jueves', tviernes: 'Viernes', tsabado:'Sabado' }
   ]
   sem1 = [
-    { dato: '1M', materia: 'CALCULO DIFERENCIAL\nCO1001\nVILLARREAL REYES ELIZABETH SORAYA', lunes: '17:00 - 18:00\nEE10', martes: '17:00 - 18:00\nEE10', miercoles: '17:00 - 18:00\nEE10', jueves: '17:00 - 18:00\nEE10', viernes: '17:00 - 18:00\nEE10', sabado:'' },
-	{ dato: '1Z', materia: 'FUNDAMENTOS DE PROGRAMACION\nSI1800\nCALZADA TERRONES JEORGINA', lunes: '07:00 - 08:00\nLC23', martes: '07:00 - 08:00\nLC23', miercoles: '07:00 - 08:00\nLC23', jueves: '07:00 - 08:00\nLC23', viernes: '07:00 - 08:00\nLC23', sabado:'' },
-	{ dato: '1Y', materia: 'CALCULO DIFERENCIAL\nCO1001\nFAVILA HERRERA LEONEL HUGO', lunes: '11:00 - 12:00\nSC6', martes: '11:00 - 12:00\nSC6', miercoles: '11:00 - 12:00\nSC6', jueves: '11:00 - 12:00\nSC6', viernes: '11:00 - 12:00\nSC6', sabado:'' },
-	{ dato: '1A', materia: 'TALLER DE ETICA\nCO1006\nREYES OJEDA TOMAS', lunes: '09:00 - 10:00\nSC6', martes: '09:00 - 10:00\nSC6', miercoles: '09:00 - 10:00\nSC6', jueves: '09:00 - 10:00\nSC6', viernes: '09:00 - 10:00\nSC6', sabado:'' },
-	{ dato: '1B', materia: 'MATEMATICAS DISCRETAS\nSI1801\nRIVERA SAUCEDO ELDA', lunes: '10:00 - 11:00\nSC6', martes: '10:00 - 11:00\nSC6', miercoles: '10:00 - 11:00\nSC6', jueves: '10:00 - 11:00\nSC6', viernes: '10:00 - 11:00\nSC6', sabado:'' }
+    { dato: '1M', materia: 'CALCULO DIFERENCIAL\n', codigo: 'CO1001\n', facilitador: 'VILLARREAL REYES ELIZABETH SORAYA', lunes: '17:00 - 18:00\nEE10', martes: '17:00 - 18:00\nEE10', miercoles: '17:00 - 18:00\nEE10', jueves: '17:00 - 18:00\nEE10', viernes: '17:00 - 18:00\nEE10', sabado:'' },
+	{ dato: '1Z', materia: 'FUNDAMENTOS DE PROGRAMACION\n', codigo: 'SI1800\n', facilitador: 'CALZADA TERRONES JEORGINA', lunes: '07:00 - 08:00\nLC23', martes: '07:00 - 08:00\nLC23', miercoles: '07:00 - 08:00\nLC23', jueves: '07:00 - 08:00\nLC23', viernes: '07:00 - 08:00\nLC23', sabado:'' },
+	{ dato: '1Y', materia: 'CALCULO DIFERENCIAL\n', codigo: 'CO1001\n', facilitador: 'FAVILA HERRERA LEONEL HUGO', lunes: '11:00 - 12:00\nSC6', martes: '11:00 - 12:00\nSC6', miercoles: '11:00 - 12:00\nSC6', jueves: '11:00 - 12:00\nSC6', viernes: '11:00 - 12:00\nSC6', sabado:'' },
+	{ dato: '1A', materia: 'TALLER DE ETICA\n', codigo: 'CO1006\n', facilitador: 'REYES OJEDA TOMAS', lunes: '09:00 - 10:00\nSC6', martes: '09:00 - 10:00\nSC6', miercoles: '09:00 - 10:00\nSC6', jueves: '09:00 - 10:00\nSC6', viernes: '09:00 - 10:00\nSC6', sabado:'' },
+	{ dato: '1B', materia: 'MATEMATICAS DISCRETAS\n', codigo: 'SI1801\n', facilitador: 'RIVERA SAUCEDO ELDA', lunes: '10:00 - 11:00\nSC6', martes: '10:00 - 11:00\nSC6', miercoles: '10:00 - 11:00\nSC6', jueves: '10:00 - 11:00\nSC6', viernes: '10:00 - 11:00\nSC6', sabado:'' }
   ]
 
   sem2 = [
-    { dato: '2M', materia: 'CALCULO INTEGRAL\nACF0902\nREYES MARTINEZ LUIS GUSTAVO', lunes: '07:00 - 08:00\nQB6', martes: '07:00 - 08:00\nQB6', miercoles: '07:00 - 08:00\nQB6', jueves: '07:00 - 08:00\nQB6', viernes: '07:00 - 08:00\nQB6', sabado:'' },
-	{ dato: '2Z', materia: 'ALGEBRA LINEAL\nCO1003\nVARELA RAMIREZ CESAR PORFIRIO', lunes: '16:00 - 17:00\nEE3', martes: '16:00 - 17:00\nEE3', miercoles: '16:00 - 17:00\nEE3', jueves: '16:00 - 17:00\nEE3', viernes: '16:00 - 17:00\nEE3', sabado:'' },
-	{ dato: '2Y', materia: 'PROGRAMACION ORIENTADA A OBJETOS\nAED1286\nRUIZ CARRETE J GUADALUPE', lunes: '08:00 - 09:00\nLC4', martes: '08:00 - 09:00\nLC4', miercoles: '08:00 - 09:00\nLC4', jueves: '08:00 - 09:00\nLC4', viernes: '08:00 - 09:00\nLC4', sabado:'' },
-	{ dato: '2A', materia: 'QUIMICA\nAEC1058\nHERNANDEZ VELAZQUEZ RAFAEL', lunes: '10:00 - 11:00\nSC7', martes: '10:00 - 11:00\nSC7', miercoles: '10:00 - 11:00\nSC7', jueves: '10:00 - 11:00\nSC7', viernes: '', sabado:'' }
+    { dato: '2M', materia: 'CALCULO INTEGRAL\n', codigo: 'ACF0902\n', facilitador: 'REYES MARTINEZ LUIS GUSTAVO', lunes: '07:00 - 08:00\nQB6', martes: '07:00 - 08:00\nQB6', miercoles: '07:00 - 08:00\nQB6', jueves: '07:00 - 08:00\nQB6', viernes: '07:00 - 08:00\nQB6', sabado:'' },
+	{ dato: '2Z', materia: 'ALGEBRA LINEAL\n', codigo: 'CO1003\n', facilitador: 'VARELA RAMIREZ CESAR PORFIRIO', lunes: '16:00 - 17:00\nEE3', martes: '16:00 - 17:00\nEE3', miercoles: '16:00 - 17:00\nEE3', jueves: '16:00 - 17:00\nEE3', viernes: '16:00 - 17:00\nEE3', sabado:'' },
+	{ dato: '2Y', materia: 'PROGRAMACION ORIENTADA A OBJETOS\n', codigo: 'AED1286\n', facilitador: 'RUIZ CARRETE J GUADALUPE', lunes: '08:00 - 09:00\nLC4', martes: '08:00 - 09:00\nLC4', miercoles: '08:00 - 09:00\nLC4', jueves: '08:00 - 09:00\nLC4', viernes: '08:00 - 09:00\nLC4', sabado:'' },
+	{ dato: '2A', materia: 'QUIMICA\n', codigo: 'AEC1058\n', facilitador: 'HERNANDEZ VELAZQUEZ RAFAEL', lunes: '10:00 - 11:00\nSC7', martes: '10:00 - 11:00\nSC7', miercoles: '10:00 - 11:00\nSC7', jueves: '10:00 - 11:00\nSC7', viernes: '', sabado:'' }
   ]
 
   sem3 = [
-    { dato: '3M', materia: 'INVESTIGACION DE OPERACIONES\nSCC1013\nBUTZMANN ALVAREZ LAURA GUADALUPE', lunes: '07:00 - 08:00\nSC8', martes: '07:00 - 08:00\nSC8', miercoles: '07:00 - 08:00\nSC8', jueves: '07:00 - 08:00\nSC8', viernes: '', sabado:'' },
-	{ dato: '3Z', materia: 'DESARROLLO SUSTENTABLE\nIT8833\nLUGO MORALES GABRIEL ARTURO', lunes: '11:00 - 12:00\nSC8', martes: '11:00 - 12:00\nSC8', miercoles: '11:00 - 12:00\nSC8', jueves: '11:00 - 12:00\nSC8', viernes: '11:00 - 12:00\nSC8', sabado:'' },
-	{ dato: '3B', materia: 'CULTURA EMPRESARIAL\nSI1808\nAVITIA ROCHA BRENDA DE LA LUZ', lunes: '12:00 - 13:00\nSC8', martes: '12:00 - 13:00\nSC8', miercoles: '12:00 - 13:00\nSC8', jueves: '12:00 - 13:00\nSC8', viernes: '', sabado:'' }
+    { dato: '3M', materia: 'INVESTIGACION DE OPERACIONES\n', codigo: 'SCC1013\n', facilitador: 'BUTZMANN ALVAREZ LAURA GUADALUPE', lunes: '07:00 - 08:00\nSC8', martes: '07:00 - 08:00\nSC8', miercoles: '07:00 - 08:00\nSC8', jueves: '07:00 - 08:00\nSC8', viernes: '', sabado:'' },
+	{ dato: '3Z', materia: 'DESARROLLO SUSTENTABLE\n', codigo: 'IT8833\n', facilitador: 'LUGO MORALES GABRIEL ARTURO', lunes: '11:00 - 12:00\nSC8', martes: '11:00 - 12:00\nSC8', miercoles: '11:00 - 12:00\nSC8', jueves: '11:00 - 12:00\nSC8', viernes: '11:00 - 12:00\nSC8', sabado:'' },
+	{ dato: '3B', materia: 'CULTURA EMPRESARIAL\n', codigo: 'SI1808\n', facilitador: 'AVITIA ROCHA BRENDA DE LA LUZ', lunes: '12:00 - 13:00\nSC8', martes: '12:00 - 13:00\nSC8', miercoles: '12:00 - 13:00\nSC8', jueves: '12:00 - 13:00\nSC8', viernes: '', sabado:'' }
   ]
 
   sem4 = [
-    { dato: '4M', materia: 'MÉTODOS NUMÉRICOS\nSI1813\nHERRERA ZARATE JOSE GABRIEL', lunes: '07:00 - 08:00\nLC4', martes: '07:00 - 08:00\nLC4', miercoles: '07:00 - 08:00\nLC4', jueves: '07:00 - 08:00\nLC4', viernes: '', sabado:'' },
-	{ dato: '4Z', materia: 'SIMULACION\nSCD1022\nCUSSIN DELGADO MARIO AURELIO', lunes: '09:00 - 10:00\nSC9', martes: '09:00 - 10:00\nSC9', miercoles: '09:00 - 10:00\nSC9', jueves: '09:00 - 10:00\nSC9', viernes: '09:00 - 10:00\nSC9', sabado:'' }
+    { dato: '4M', materia: 'MÉTODOS NUMÉRICOS\n', codigo: 'SI1813\n', facilitador: 'HERRERA ZARATE JOSE GABRIEL', lunes: '07:00 - 08:00\nLC4', martes: '07:00 - 08:00\nLC4', miercoles: '07:00 - 08:00\nLC4', jueves: '07:00 - 08:00\nLC4', viernes: '', sabado:'' },
+	{ dato: '4Z', materia: 'SIMULACION\n', codigo: 'SCD1022\n', facilitador: 'CUSSIN DELGADO MARIO AURELIO', lunes: '09:00 - 10:00\nSC9', martes: '09:00 - 10:00\nSC9', miercoles: '09:00 - 10:00\nSC9', jueves: '09:00 - 10:00\nSC9', viernes: '09:00 - 10:00\nSC9', sabado:'' }
   ]
 
   sem5 = [
-    { dato: '5M', materia: 'ARQ. DE COMPUTADORAS\nSI1823\nRAMOS DOMINGUEZ JACOBO ADRIAN', lunes: '07:00 - 08:00\nSC10', martes: '07:00 - 08:00\nSC10', miercoles: '07:00 - 08:00\nSC10\n15:00 - 17:00\nLED', jueves: '', viernes: '', sabado:'' },
-	{ dato: '5Z', materia: 'FUNDAMENTOS DE ING. DE SW\nSI1822\nFLORES NUÑEZ VERONICA', lunes: '11:00 - 12:00\nSC10', martes: '11:00 - 12:00\nSC10', miercoles: '11:00 - 12:00\nSC10', jueves: '11:00 - 12:00\nSC10', viernes: '11:00 - 12:00\nSC10', sabado:'' },
-	{ dato: '5Y', materia: 'TALLER DE BASE DE DATOS\nSI1820\nHERNANDEZ CARRILLO IRMA SELENE', lunes: '17:00 - 18:00\nLC4', martes: '17:00 - 18:00\nLC4', miercoles: '17:00 - 18:00\nLC4', jueves: '17:00 - 18:00\nLC4', viernes: '', sabado:'' }
+    { dato: '5M', materia: 'ARQ. DE COMPUTADORAS\n', codigo: 'SI1823\n', facilitador: 'RAMOS DOMINGUEZ JACOBO ADRIAN', lunes: '07:00 - 08:00\nSC10', martes: '07:00 - 08:00\nSC10', miercoles: '07:00 - 08:00\nSC10\n15:00 - 17:00\nLED', jueves: '', viernes: '', sabado:'' },
+	{ dato: '5Z', materia: 'FUNDAMENTOS DE ING. DE SW\n', codigo: 'SI1822\n', facilitador: 'FLORES NUÑEZ VERONICA', lunes: '11:00 - 12:00\nSC10', martes: '11:00 - 12:00\nSC10', miercoles: '11:00 - 12:00\nSC10', jueves: '11:00 - 12:00\nSC10', viernes: '11:00 - 12:00\nSC10', sabado:'' },
+	{ dato: '5Y', materia: 'TALLER DE BASE DE DATOS\n', codigo: 'SI1820\n', facilitador: 'HERNANDEZ CARRILLO IRMA SELENE', lunes: '17:00 - 18:00\nLC4', martes: '17:00 - 18:00\nLC4', miercoles: '17:00 - 18:00\nLC4', jueves: '17:00 - 18:00\nLC4', viernes: '', sabado:'' }
 	
   ]
 
   sem6 = [
-    { dato: '6Z', materia: 'ADMINISTRACION DE BASES DE DATOS\nSI1826\nQUIÑONES GARCIA CARLOS', lunes: '07:00 - 08:00\nLC22', martes: '07:00 - 08:00\nLC22', miercoles: '07:00 - 08:00\nLC22', jueves: '07:00 - 08:00\nLC22', viernes: '07:00 - 08:00\nLC22', sabado:'' },
-	{ dato: '6Y', materia: 'INGENIERIA DE SOFTWARE\nSI1828\nDOMINGUEZ FLORES ARACELI SOLEDAD', lunes: '08:00 - 09:00\nSC11', martes: '08:00 - 09:00\nSC11', miercoles: '08:00 - 09:00\nSC11', jueves: '08:00 - 09:00\nSC11', viernes: '08:00 - 09:00\nSC11', sabado:'' },
-	{ dato: '6A', materia: 'GRAFICACION\nSI1827\nMARTINEZ SAAVEDRA RAFAEL', lunes: '14:00 - 15:00\nSC11', martes: '14:00 - 15:00\nSC11', miercoles: '14:00 - 15:00\nSC11', jueves: '14:00 - 15:00\nSC11', viernes: '14:00 - 15:00\nSC11', sabado:'' },
-	{ dato: '6B', materia: 'LENGUAJES DE INTERFAZ\nSCC1014\nSOLIS GALLEGOS JOSE LAURO', lunes: '16:00 - 17:00\nSC11', martes: '16:00 - 17:00\nSC11', miercoles: '16:00 - 17:00\nSC11', jueves: '16:00 - 17:00\nSC11', viernes: '', sabado:'' }
+    { dato: '6Z', materia: 'ADMINISTRACION DE BASES DE DATOS\n', codigo: 'SI1826\n', facilitador: 'QUIÑONES GARCIA CARLOS', lunes: '07:00 - 08:00\nLC22', martes: '07:00 - 08:00\nLC22', miercoles: '07:00 - 08:00\nLC22', jueves: '07:00 - 08:00\nLC22', viernes: '07:00 - 08:00\nLC22', sabado:'' },
+	{ dato: '6Y', materia: 'INGENIERIA DE SOFTWARE\n', codigo: 'SI1828\n', facilitador: 'DOMINGUEZ FLORES ARACELI SOLEDAD', lunes: '08:00 - 09:00\nSC11', martes: '08:00 - 09:00\nSC11', miercoles: '08:00 - 09:00\nSC11', jueves: '08:00 - 09:00\nSC11', viernes: '08:00 - 09:00\nSC11', sabado:'' },
+	{ dato: '6A', materia: 'GRAFICACION\n', codigo: 'SI1827\n', facilitador: 'MARTINEZ SAAVEDRA RAFAEL', lunes: '14:00 - 15:00\nSC11', martes: '14:00 - 15:00\nSC11', miercoles: '14:00 - 15:00\nSC11', jueves: '14:00 - 15:00\nSC11', viernes: '14:00 - 15:00\nSC11', sabado:'' },
+	{ dato: '6B', materia: 'LENGUAJES DE INTERFAZ\n', codigo: 'SCC1014\n', facilitador: 'SOLIS GALLEGOS JOSE LAURO', lunes: '16:00 - 17:00\nSC11', martes: '16:00 - 17:00\nSC11', miercoles: '16:00 - 17:00\nSC11', jueves: '16:00 - 17:00\nSC11', viernes: '', sabado:'' }
   ]
 
   sem7 = [
-    { dato: '7M', materia: 'CONM. Y ENRUT. DE REDES DE DAT\nSI1831\nRODRIGUEZ ZUÑIGA MARCO ANTONIO', lunes: '09:00 - 10:00\nSC15', martes: '09:00 - 10:00\nSC15', miercoles: '09:00 - 10:00\nSC15', jueves: '09:00 - 10:00\nSC15', viernes: '09:00 - 10:00\nSC15', sabado:'' },
-	{ dato: '7A', materia: 'TALLER DE INVESTIGACION I\nSI1832\nZAMORA LERMA MARIA DEL RAYO', lunes: '08:00 - 09:00\nSC8', martes: '08:00 - 09:00\nSC8', miercoles: '08:00 - 09:00\nSC8', jueves: '08:00 - 09:00\nSC8', viernes: '', sabado:'' },
-	{ dato: '7B', materia: 'SISTEMAS PROGRAMABLES\nSI1834\nVALDEZ GUTIERREZ JOSE RAMON', lunes: '19:00 - 20:00\nSC15', martes: '19:00 - 20:00\nSC15', miercoles: '19:00 - 20:00\nSC15', jueves: '19:00 - 20:00\nSC15', viernes: '', sabado:'' }
+    { dato: '7M', materia: 'CONM. Y ENRUT. DE REDES DE DAT\n', codigo: 'SI1831\n', facilitador: 'RODRIGUEZ ZUÑIGA MARCO ANTONIO', lunes: '09:00 - 10:00\nSC15', martes: '09:00 - 10:00\nSC15', miercoles: '09:00 - 10:00\nSC15', jueves: '09:00 - 10:00\nSC15', viernes: '09:00 - 10:00\nSC15', sabado:'' },
+	{ dato: '7A', materia: 'TALLER DE INVESTIGACION I\n', codigo: 'SI1832\n', facilitador: 'ZAMORA LERMA MARIA DEL RAYO', lunes: '08:00 - 09:00\nSC8', martes: '08:00 - 09:00\nSC8', miercoles: '08:00 - 09:00\nSC8', jueves: '08:00 - 09:00\nSC8', viernes: '', sabado:'' },
+	{ dato: '7B', materia: 'SISTEMAS PROGRAMABLES\n', codigo: 'SI1834\n', facilitador: 'VALDEZ GUTIERREZ JOSE RAMON', lunes: '19:00 - 20:00\nSC15', martes: '19:00 - 20:00\nSC15', miercoles: '19:00 - 20:00\nSC15', jueves: '19:00 - 20:00\nSC15', viernes: '', sabado:'' }
   ]
 
   sem8 = [
-    { dato: '8M', materia: 'ADMINISTRACION DE REDES\nSI1836\nVALDEZ HERNANDEZ SERGIO', lunes: '08:00 - 09:00\nSC16', martes: '08:00 - 09:00\nSC16', miercoles: '08:00 - 09:00\nSC16', jueves: '08:00 - 09:00\nSC16', viernes: '', sabado:'' },
-	{ dato: '8Z', materia: 'PROGRAMACION LOGICA Y FUNCIONA\nSI1835\nNUÑEZ ROCHA HECTOR FRANCISCO', lunes: '10:00 - 11:00\nLC3', martes: '10:00 - 11:00\nLC3', miercoles: '10:00 - 11:00\nLC3', jueves: '10:00 - 11:00\nLC3', viernes: '', sabado:'' },
-	{ dato: '8A', materia: 'PROGRAMACION WEB\nSI1838\nRODRIGUEZ RIVAS JOSE GABRIEL', lunes: '11:00 - 12:00\nLC23', martes: '11:00 - 12:00\nLC23', miercoles: '11:00 - 12:00\nLC23', jueves: '11:00 - 12:00\nLC23', viernes: '11:00 - 12:00\nLC23', sabado:'' },
-	{ dato: '8B', materia: 'TALLER DE INVESTIGACION II\nSI1837\nMARTINEZ SAAVEDRA RAFAEL', lunes: '08:00 - 09:00\nSC13', martes: '08:00 - 09:00\nSC13', miercoles: '08:00 - 09:00\nSC13', jueves: '08:00 - 09:00\nSC13', viernes: '', sabado:'' }
+    { dato: '8M', materia: 'ADMINISTRACION DE REDES\n', codigo: 'SI1836\n', facilitador: 'VALDEZ HERNANDEZ SERGIO', lunes: '08:00 - 09:00\nSC16', martes: '08:00 - 09:00\nSC16', miercoles: '08:00 - 09:00\nSC16', jueves: '08:00 - 09:00\nSC16', viernes: '', sabado:'' },
+	{ dato: '8Z', materia: 'PROGRAMACION LOGICA Y FUNCIONA\n', codigo: 'SI1835\n', facilitador: 'NUÑEZ ROCHA HECTOR FRANCISCO', lunes: '10:00 - 11:00\nLC3', martes: '10:00 - 11:00\nLC3', miercoles: '10:00 - 11:00\nLC3', jueves: '10:00 - 11:00\nLC3', viernes: '', sabado:'' },
+	{ dato: '8A', materia: 'PROGRAMACION WEB\n', codigo: 'SI1838\n', facilitador: 'RODRIGUEZ RIVAS JOSE GABRIEL', lunes: '11:00 - 12:00\nLC23', martes: '11:00 - 12:00\nLC23', miercoles: '11:00 - 12:00\nLC23', jueves: '11:00 - 12:00\nLC23', viernes: '11:00 - 12:00\nLC23', sabado:'' },
+	{ dato: '8B', materia: 'TALLER DE INVESTIGACION II\n', codigo: 'SI1837\n', facilitador: 'MARTINEZ SAAVEDRA RAFAEL', lunes: '08:00 - 09:00\nSC13', martes: '08:00 - 09:00\nSC13', miercoles: '08:00 - 09:00\nSC13', jueves: '08:00 - 09:00\nSC13', viernes: '', sabado:'' }
   ]
 
   sem9 = [
-    { dato: '9M', materia: 'INTELIGENCIA ARTIFICIAL\nSI1839\nTORRES IBARRA IVONNE', lunes: '19:00 - 20:00\nSC11', martes: '19:00 - 20:00\nSC11', miercoles: '19:00 - 20:00\nSC11', jueves: '19:00 - 20:00\nSC11', viernes: '', sabado:'' }
+    { dato: '9M', materia: 'INTELIGENCIA ARTIFICIAL\n', codigo: 'SI1839\n', facilitador: 'TORRES IBARRA IVONNE', lunes: '19:00 - 20:00\nSC11', martes: '19:00 - 20:00\nSC11', miercoles: '19:00 - 20:00\nSC11', jueves: '19:00 - 20:00\nSC11', viernes: '', sabado:'' }
   ]
  
 }

@@ -1,55 +1,54 @@
  <div class="gruposCargados">
 
-  <div class="semestres">
-    <button class="todasmaterias pestanas pest-activo" data-sem="0" >Todos Semestres</button>
-    <button class="pestanas" data-sem="1">Semestre 1</button>
-    <button class="pestanas" data-sem="2">Semestre 2</button>
-    <button class="pestanas" data-sem="3">Semestre 3</button>
-    <button class="pestanas" data-sem="4">Semestre 4</button>
-    <button class="pestanas" data-sem="5">Semestre 5</button>
-    <button class="pestanas" data-sem="6">Semestre 6</button>
-    <button class="pestanas" data-sem="7">Semestre 7</button>
-    <button class="pestanas" data-sem="8">Semestre 8</button>
-    <button class="pestanas" data-sem="9">Semestre 9</button>
-   
-
+  <div class="semestresGC">
+    <button class="todasmateriasGC pestanasGC pest-activoGC" data-sem="0" >Todos Semestres</button>
+    <button class="pestanasGC" data-sem="1">Semestre 1</button>
+    <button class="pestanasGC" data-sem="2">Semestre 2</button>
+    <button class="pestanasGC" data-sem="3">Semestre 3</button>
+    <button class="pestanasGC" data-sem="4">Semestre 4</button>
+    <button class="pestanasGC" data-sem="5">Semestre 5</button>
+    <button class="pestanasGC" data-sem="6">Semestre 6</button>
+    <button class="pestanasGC" data-sem="7">Semestre 7</button>
+    <button class="pestanasGC" data-sem="8">Semestre 8</button>
+    <button class="pestanasGC" data-sem="9">Semestre 9</button>
   </div>
-    <div class="vertical">
-        <div class="container" >
 
-            <div class="row" >
+    <div class="verticalGC">
+        <div class="containerGC" >
+
+            <div class="rowGC" >
         			<div class="col-md-12">
-        				<div class="panel panel-primary"  id="tablacontenedor">
-        					<div class="panel-heading" id="jj">
-                    			<h3 class="panel-title" id=redo; >GRUPOS AL PERIODO AGOSTO-DICIEMBRE/2018</h3>
-                      			<h5 class="panel-title"><span data-toggle="tooltip" title="Toggle table filter" data-container="body">BUSCAR</span></h5>
+        				<div class="panel panel-primaryGC"  id="tablacontenedorGC">
+        					<div class="panel-headingGC" id="jj">
+                    			<h3 class="panel-titleGC" id=redo; >GRUPOS AL PERIODO AGOSTO-DICIEMBRE/2018</h3>
+                      			<h5 class="panel-titleGC"><span data-toggle="tooltip" title="Toggle table filter" data-container="bodyGC">BUSCAR</span></h5>
         					</div>
-        					<div class="panel-body">
-        						<input type="text" class="form-control" id="dev-table-filter" data-action="filter" data-filters="#dev-table" placeholder="Buscar">
+        					<div class="panel-bodyGC">
+        						<input type="text" class="form-control" id="dev-table-filter" data-action="filter" data-filters="#dev-tableGC" placeholder="Buscar">
         					</div>
 
-        					<table class="table table-hover" id="dev-table" >
+        					<table class="table table-hover" id="dev-tableGC" >
         						<thead>
         							 <tr *ngFor="let titulo of titulo">
-                                        <th id="e1" width="75" class="small_negrita_center">{{titulo.tdato}}</th>
-                                        <th id="e2" width="200" class="small_negrita_center">{{titulo.tmateria}}</th>
-                                        <th id="e3" width="80" class="small_negrita_center">{{titulo.tlunes}}</th>
-                                        <th id="e4" width="80" class="small_negrita_center">{{titulo.tmartes}}</th>
-                                        <th id="e5" width="83" class="small_negrita_center">{{titulo.tmiercoles}}</th>
-                                        <th id="e6" width="80" class="small_negrita_center">{{titulo.tjueves}}</th>
-                                        <th id="e7" width="80" class="small_negrita_center">{{titulo.tviernes}}</th>
-                                        <th id="e8" width="80" class="small_negrita_center">{{titulo.tsabado}}</th>
+                                        <th id="e1GC" width="75" class="small_negrita_center">{{titulo.tdato}}</th>
+                                        <th id="e2GC" width="200" class="small_negrita_center">{{titulo.tmateria}}</th>
+                                        <th id="e3GC" width="80" class="small_negrita_center">{{titulo.tlunes}}</th>
+                                        <th id="e4GC" width="80" class="small_negrita_center">{{titulo.tmartes}}</th>
+                                        <th id="e5GC" width="83" class="small_negrita_center">{{titulo.tmiercoles}}</th>
+                                        <th id="e6GC" width="80" class="small_negrita_center">{{titulo.tjueves}}</th>
+                                        <th id="e7GC" width="80" class="small_negrita_center">{{titulo.tviernes}}</th>
+                                        <th id="e8GC" width="80" class="small_negrita_center">{{titulo.tsabado}}</th>
                                     </tr>
         						</thead>
         					
 
-        					<div id="semestre1" class="semestresdiv">
-        						<table class="table table-hover" id="dev-table">
-        						<tbody id="tablecontent">
+        					<div id="semestre1GC" class="semestresdivGC">
+        						<table class="table table-hover" id="dev-tableGC">
+        						<tbody id="tablecontentGC">
         							
         								<tr *ngFor="let sem1 of sem1">
                                             <td width="75" >{{sem1.dato}}</td>
-                                            <td width="200">{{sem1.materia}}</td>
+                                            <td width="200">{{sem1.materia}}{{sem1.codigo}}{{sem1.facilitador}}</td>
                                             <td width="80" >{{sem1.lunes}}</td>
                                             <td width="80" >{{sem1.martes}}</td>
                                             <td width="83" >{{sem1.miercoles}}</td>
@@ -62,12 +61,12 @@
         					</div>
 
 
-        					<div id="semestre2" class="semestresdiv">
-        						<table class="table table-hover" id="dev-table">
-        						<tbody id="tablecontent">
+        					<div id="semestre2GC" class="semestresdivGC">
+        						<table class="table table-hover" id="dev-tableGC">
+        						<tbody id="tablecontentGC">
         							<tr *ngFor="let sem2 of sem2">
                                         <td width="75" >{{sem2.dato}}</td>
-                                        <td width="200">{{sem2.materia}}</td>
+                                        <td width="200">{{sem2.materia}}{{sem2.codigo}}{{sem2.facilitador}}</td>
                                         <td width="80" >{{sem2.lunes}}</td>
                                         <td width="80" >{{sem2.martes}}</td>
                                         <td width="83" >{{sem2.miercoles}}</td>
@@ -80,12 +79,12 @@
         					</div>        					
         						
 
-        					<div id="semestre3" class="semestresdiv">
-        						<table class="table table-hover" id="dev-table">
-        						<tbody id="tablecontent">
+        					<div id="semestre3GC" class="semestresdivGC">
+        						<table class="table table-hover" id="dev-tableGC">
+        						<tbody id="tablecontentGC">
         							<tr *ngFor="let sem3 of sem3">
                                         <td width="75" >{{sem3.dato}}</td>
-                                        <td width="200">{{sem3.materia}}</td>
+                                        <td width="200">{{sem3.materia}}{{sem3.codigo}}{{sem3.facilitador}}</td>
                                         <td width="80" >{{sem3.lunes}}</td>
                                         <td width="80" >{{sem3.martes}}</td>
                                         <td width="83" >{{sem3.miercoles}}</td>
@@ -99,12 +98,12 @@
 
 
 
-        					<div id="semestre4" class="semestresdiv">
-        						<table class="table table-hover" id="dev-table">
-        						<tbody id="tablecontent">
+        					<div id="semestre4GC" class="semestresdivGC">
+        						<table class="table table-hover" id="dev-tableGC">
+        						<tbody id="tablecontentGC">
         							<tr *ngFor="let sem4 of sem4">
                                         <td width="75" >{{sem4.dato}}</td>
-                                        <td width="200">{{sem4.materia}}</td>
+                                        <td width="200">{{sem4.materia}}{{sem4.codigo}}{{sem4.facilitador}}</td>
                                         <td width="80" >{{sem4.lunes}}</td>
                                         <td width="80" >{{sem4.martes}}</td>
                                         <td width="83" >{{sem4.miercoles}}</td>
@@ -118,12 +117,12 @@
 
 
 
-        					<div id="semestre5" class="semestresdiv">
-        						<table class="table table-hover" id="dev-table">
-        						<tbody id="tablecontent">
+        					<div id="semestre5GC" class="semestresdivGC">
+        						<table class="table table-hover" id="dev-tableGC">
+        						<tbody id="tablecontentGC">
         							<tr *ngFor="let sem5 of sem5">
                                         <td width="75" >{{sem5.dato}}</td>
-                                        <td width="200">{{sem5.materia}}</td>
+                                        <td width="200">{{sem5.materia}}{{sem5.codigo}}{{sem5.facilitador}}</td>
                                         <td width="80" >{{sem5.lunes}}</td>
                                         <td width="80" >{{sem5.martes}}</td>
                                         <td width="83" >{{sem5.miercoles}}</td>
@@ -135,12 +134,12 @@
                   			</table>
         					</div>
 
-        					<div id="semestre6" class="semestresdiv">
-        						<table class="table table-hover" id="dev-table">
-        						<tbody id="tablecontent">
+        					<div id="semestre6GC" class="semestresdivGC">
+        						<table class="table table-hover" id="dev-tableGC">
+        						<tbody id="tablecontentGC">
         							<tr *ngFor="let sem6 of sem6">
                                         <td width="75" >{{sem6.dato}}</td>
-                                        <td width="200">{{sem6.materia}}</td>
+                                        <td width="200">{{sem6.materia}}{{sem6.codigo}}{{sem6.facilitador}}</td>
                                         <td width="80" >{{sem6.lunes}}</td>
                                         <td width="80" >{{sem6.martes}}</td>
                                         <td width="83" >{{sem6.miercoles}}</td>
@@ -153,12 +152,12 @@
         					</div>
 
 
-        					<div id="semestre7" class="semestresdiv">
-        						<table class="table table-hover" id="dev-table">
-        						<tbody id="tablecontent">
+        					<div id="semestre7GC" class="semestresdivGC">
+        						<table class="table table-hover" id="dev-tableGC">
+        						<tbody id="tablecontentGC">
         							<tr *ngFor="let sem7 of sem7">
                                         <td width="75" >{{sem7.dato}}</td>
-                                        <td width="200">{{sem7.materia}}</td>
+                                        <td width="200">{{sem7.materia}}{{sem7.codigo}}{{sem7.facilitador}}</td>
                                         <td width="80" >{{sem7.lunes}}</td>
                                         <td width="80" >{{sem7.martes}}</td>
                                         <td width="83" >{{sem7.miercoles}}</td>
@@ -171,12 +170,12 @@
         					</div>
 
 
-        					<div id="semestre8" class="semestresdiv">
-        						<table class="table table-hover" id="dev-table">
-        						<tbody id="tablecontent">
+        					<div id="semestre8GC" class="semestresdivGC">
+        						<table class="table table-hover" id="dev-tableGC">
+        						<tbody id="tablecontentGC">
         							<tr *ngFor="let sem8 of sem8">
                                         <td width="75" >{{sem8.dato}}</td>
-                                        <td width="200">{{sem8.materia}}</td>
+                                        <td width="200">{{sem8.materia}}{{sem8.codigo}}{{sem8.facilitador}}</td>
                                         <td width="80" >{{sem8.lunes}}</td>
                                         <td width="80" >{{sem8.martes}}</td>
                                         <td width="83" >{{sem8.miercoles}}</td>
@@ -188,12 +187,12 @@
                   			</table>
         					</div>
 
-        					<div id="semestre9" class="semestresdiv">
-        						<table class="table table-hover" id="dev-table">
-        						<tbody id="tablecontent">
+        					<div id="semestre9GC" class="semestresdivGC">
+        						<table class="table table-hover" id="dev-tableGC">
+        						<tbody id="tablecontentGC">
         							<tr *ngFor="let sem9 of sem9">
                                         <td width="75" >{{sem9.dato}}</td>
-                                        <td width="200">{{sem9.materia}}</td>
+                                        <td width="200">{{sem9.materia}}{{sem9.codigo}}{{sem9.facilitador}}</td>
                                         <td width="80" >{{sem9.lunes}}</td>
                                         <td width="80" >{{sem9.martes}}</td>
                                         <td width="83" >{{sem9.miercoles}}</td>

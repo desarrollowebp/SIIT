@@ -7,7 +7,7 @@
   font-family: 'Lato', sans-serif;
 }
 
-#jj{
+#semestresGC{
   border-radius: .23px;
   border-color: blue;
 }
@@ -22,7 +22,7 @@
   border: 0;
 }
 
-.semestres{
+.semestresGC{
 
   width:  100%;
   margin: 0 auto;
@@ -35,7 +35,7 @@ align-items: center;
 text-align: center;
 }
 
-.semestres button{
+.semestresGC button{
 
       width: 28%;
       height: 50px;
@@ -49,12 +49,12 @@ text-align: center;
 
 }
 
-.semestres .todasmaterias {
+.semestresGC .todasmaterias {
   padding-bottom: 5px;
 width: 96%;
 
 }
-.vertical {
+.verticalGC {
   width: 100%;
   overflow: auto;
   white-space: nowrap;
@@ -71,20 +71,17 @@ h2{
 }
 @media(min-width:780px) {
 
-  .vertical{
+  .verticalGC{
     padding-right: 400px;
   }
-  .semestres{
-
-
-  }
+ 
 
   .gruposCargados{
     width: 1000px;
   }
 
 
-  .semestres button{
+  .semestresGC button{
 
         width: 9%;
         height: 50px;
@@ -98,11 +95,11 @@ h2{
 
   }
 
-  .semestres .todasmaterias {
+  .semestresGC .todasmaterias {
     padding-bottom: 0px;
   width: 9%;
   }
-  .vertical {
+  .verticalGC {
     overflow: visible;
     white-space: normal;
   }
@@ -110,12 +107,12 @@ h2{
 }
 
 
-.container{
+.containerGC{
   padding-left: 0;
   padding-right: 0;
 
 }
-      .row{
+      .rowGC{
         width: 998px;
         padding: 0 ;
         margin: 0;
@@ -126,11 +123,11 @@ h2{
         border-radius: .25rem;
 
     }
-    .row .col-md-11{
+    .rowGC .col-md-11{
       padding-left: 0;
       padding-right: 0;
     }
-    .clickable{
+    .clickableGC{
         width: 700px;
         cursor: pointer;
         padding: 10px;
@@ -139,7 +136,7 @@ h2{
         margin-bottom: 20px;
 
     }
-    .panel-heading{
+    .panel-headingGC{
       display: inline-block;
       width: 100%;
       background: #70193F;
@@ -151,55 +148,44 @@ h2{
       text-align: center;
       border-radius: .23px;
     }
-.panel-primary{
+.panel-primaryGC{
   width: 100%;
   border: 0;
   padding: 0;
 
 
 }
-    .panel-heading div {
-
-
-
-    }
-
-    .panel-heading{
-
-    }
-    .panel-heading div span{
-
-    }
-    .panel-body{
+   
+    .panel-bodyGC{
       display: block;
       width: auto;
 
     }
 
-    .medium_left{
+    .medium_leftGC{
       text-align: justify;
     }
 
-      .medium_left p{
+      .medium_leftGC p{
       font-weight:bold;
       margin: 0px;
     }
 
 
-      .small_center p{
+      .small_centerGC p{
       font-weight:bold;
       margin: 0px;
     }
 
 
-    .medium_left p {
+    .medium_leftGC p {
       font-weight:bold;
       margin: 0px;
     }
 
 
 
-      .panel-title{
+      .panel-titleGC{
         width: 100%;
         padding-top: 10px;
         border: 0px;
@@ -212,7 +198,7 @@ h2{
 
     }
 
-    #e1, #e2, #e3, #e4, #e5, #e6,#e7, #e8{
+    #e1GC, #e2GC, #e3GC, #e4GC, #e5GC, #e6GC,#e7GC, #e8GC{
       background: #70193F;
       border-color:#70193F;
       color: white;
@@ -224,11 +210,11 @@ tr{
    border-collapse: collapse;
    word-wrap: break-word;
 }
-    #dev-table td{
+    #dev-tableGC td{
       border-style: solid;
       border-width: thin;
     }
-#dev-table {
+#dev-tableGC {
 
   max-width: 998px;
   border: none;
@@ -254,7 +240,7 @@ td {
     min-width: 60px;
 }
 
-#tgc {
+#tgcGC {
 
   text-align: center;
   font-size: 40px;
@@ -262,13 +248,13 @@ td {
 
 @media(min-width:780px) {
 
-.row{
+.rowGC{
   text-align: center;
 }
 
 }
 
-.semestres button:hover{
+.semestresGC button:hover{
 
       background: #70193F;
       border-color:#70193F;
@@ -278,7 +264,7 @@ td {
 
 }
 
-.semestres button:focus{
+.semestresGC button:focus{
 
       background: #70193F;
       border-color:#70193F;
@@ -290,7 +276,7 @@ td {
 
 
 
-#tablecontent{
+#tablecontentGC{
   font-size: 12px;
   border-radius: .23px;
 
@@ -361,17 +347,7 @@ td {
   content: "\70";
 }
 
-.visible{
-display: block;
-}
-
-.escondido{
-display: none;
-}
-
-
-
-.pest-activo{
+.pest-activoGC{
   background-color: #70193F !important;
   color: white;
 }
