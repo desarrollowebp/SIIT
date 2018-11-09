@@ -1,4 +1,4 @@
-.container {
+.containercalifexam {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
@@ -18,7 +18,7 @@ h2,
 
 
 
-.card {
+.cardcalifexam {
   
   border-radius: 0;
   box-shadow: none;
@@ -27,7 +27,7 @@ h2,
 
 
 
-table {
+.tablecalifexam {
   width: 100%;
   border-collapse: separate;
   border-spacing: 0px;
@@ -53,7 +53,7 @@ th {
 
 @media all and (max-width:500px) {
 
-  table,
+  .tablecalifexam,
   thead,
   tbody,
   th,
@@ -61,7 +61,7 @@ th {
   tr {
     font-size: 7px;
   }
-  .card-body{
+  .card-bodycalifexam{
     padding: .5rem;
   }
 
@@ -74,7 +74,7 @@ th {
 }
 
 
-#table th {
+#tablecalifexam th {
   background: #70193f;
   color: white;
   font-weight: bold;
