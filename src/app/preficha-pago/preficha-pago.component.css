@@ -14,17 +14,17 @@
   padding: 10px;
 }
 
-.tab1{
+.tab1_jyr{
   border: 1px solid #000;
 
 
 
 }
-.inf{
+.inf_jyr{
   list-style:none;
   text-align:justify;
 }
-.stiltab{
+.stiltab_jyr{
   color: black;
   text-align: center;
   font-family: arial;
@@ -51,13 +51,13 @@
   font-family: roboto, arial;
   margin: 5px;
 }
-.acomodo{
+.acomodo_jyr{
   padding-top: 10px;
   padding-right: 10px;
     padding-bottom: 10px;
     padding-left: 10px;
 }
-.padre {
+.father {
   display: flex;
   justify-content: center;
   align-items: center;
