@@ -1,9 +1,10 @@
-.containercalifparciales {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-
-  padding-top: 15px;
+.containerCalifP #containerParciales {
+ width: 100%;
+ padding-right: 15px;
+ padding-left: 15px;
+ margin-right: auto;
+ margin-left: auto;
+ padding-top: 15px;
 }
 
 
@@ -15,7 +16,7 @@ h2,
 
 
 
-.cardcalifparciales {
+.card {
   
   border-radius: 0;
   box-shadow: none;
@@ -30,7 +31,7 @@ h2,
   display: none
 }
 
-.tablecalifparciales {
+.table {
   width: 100%;
   border-collapse: separate;
   border-spacing: 0px;
@@ -59,7 +60,7 @@ th {
 
 @media all and (max-width:500px) {
 
-  .tablecalifparciales,
+  .table,
   thead,
   tbody,
   th,
@@ -67,7 +68,7 @@ th {
   tr {
     font-size: 7px;
   }
-  .card-bodycalifparciales{
+  .card-body{
     padding:.5rem;
   }
 
@@ -81,7 +82,7 @@ th {
 
 
 
-#tablecalifparciales th {
+#table th {
   background: #70193f;
   color: white;
   font-weight: bold;
