@@ -1,4 +1,4 @@
-.container{
+.containerinicio{
     padding-top: 10px;
 }
 
@@ -11,7 +11,7 @@ img{
     width: 90px;
     height: auto;
 }
-.btn{
+.btninicio{
 	align-content: center;
 	background-color: #70193f;
 	font-size: 12px;
@@ -24,7 +24,7 @@ img{
 }
 
 
-.btn:hover{
+.btninicio:hover{
 	color:#7CCFF7;
 }
 
@@ -124,7 +124,7 @@ img{
       h4{
           font-size: 20px;
       }
-      .container,.box-cat,.slide-center,.slide-center2,.list-cat,.list-cat2,.list-cat3{
+      .containerinicio,.box-cat,.slide-center,.slide-center2,.list-cat,.list-cat2,.list-cat3{
           height: 180px;
       }
       .slide-left,.slide-left2,.slide-right,.slide-right2{
@@ -133,10 +133,10 @@ img{
       .box-cat{
           width: 189px;
       }
-      .container{
+      .containerinicio{
           width: 1000px;
       }
-      .btn {
+      .btninicio {
           margin-top: 1%;
 		margin-left: 45%;
 		font-size: 15px;	}
