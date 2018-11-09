@@ -1,4 +1,4 @@
-.container {
+.containercalifparciales {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
@@ -15,7 +15,7 @@ h2,
 
 
 
-.card {
+.cardcalifparciales {
   
   border-radius: 0;
   box-shadow: none;
@@ -30,7 +30,7 @@ h2,
   display: none
 }
 
-table {
+.tablecalifparciales {
   width: 100%;
   border-collapse: separate;
   border-spacing: 0px;
@@ -59,7 +59,7 @@ th {
 
 @media all and (max-width:500px) {
 
-  table,
+  .tablecalifparciales,
   thead,
   tbody,
   th,
@@ -67,7 +67,7 @@ th {
   tr {
     font-size: 7px;
   }
-  .card-body{
+  .card-bodycalifparciales{
     padding:.5rem;
   }
 
@@ -81,7 +81,7 @@ th {
 
 
 
-#table th {
+#tablecalifparciales th {
   background: #70193f;
   color: white;
   font-weight: bold;
