@@ -34,24 +34,22 @@ export class ExtraescolarComponent implements OnInit {
     dias: ""
   }
 
-  modals = "modal";
+  modals = "modalExtraescolar";
   constructor() {
-    this.modals = "modal";
+    this.modals = "modalExtraescolar";
   }
   func($var) {
-    this.modals = "visibleNo";
+    this.modals = "visibleNoExtraescolar";
     this.datosmodal = "";
   }
   funcp($var) {
-    this.modals = "visibleNo";
+    this.modals = "visibleNoExtraescolar";
     this.datosmodal = $var;
   }
   cerrar() {
-    this.modals = "modal";
+    this.modals = "modalExtraescolar";
 
   }
-
-
 
   ngOnInit() {
 

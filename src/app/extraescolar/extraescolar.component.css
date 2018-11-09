@@ -1,5 +1,5 @@
 /***empieza css de tabla de extra seleccionada*****/
-table {
+.tablaExtraSeleccionada {
   text-align: center;
   line-height: 40px;
   border-collapse: separate;
@@ -10,51 +10,51 @@ table {
   border-radius: .25rem;
 }
 
-thead tr:first-child {
+.theadExtraSeleccionada tr:first-child {
   background: #70193f;
   color: #fff;
   border: none;
 
 }
-thead {
+.theadExtraSeleccionada {
   background: #70193f;
   color: #fff;
   border: none;
 }
 
 
-th {
+.thExtraSeleccionada {
   font-weight: 500;
 }
 
-thead tr:last-child th {
+.theadExtraSeleccionada tr:last-child th {
   border-bottom: 3px solid #ddd;
 }
 
-tbody tr:hover {
+.tbodyExtraSeleccionada tr:hover {
   background-color: #f2f2f2;
   cursor: default;
 }
 
-tbody tr:last-child td {
+.tbodyExtraSeleccionada tr:last-child td {
   border: none;
 }
 
-tbody td {
+.tbodyExtraSeleccionada td {
   border-bottom: 1px solid #ddd;
 }
 
-td:last-child {
+.tbodyExtraSeleccionada td:last-child {
   text-align: left;
   padding-right: 10px;
 }
 
-.button {
+/**.button {
   color: #aaa;
   cursor: pointer;
   vertical-align: left;
   margin-top: -4px;
-}
+}**/
 
 .edit:hover {
   color: #111111;
@@ -65,36 +65,41 @@ td:last-child {
 }
 
 @media screen and (max-width: 600px) {
-  table {
+  .tablaExtraSeleccionada {
     width: 100%;
   }
 
-  thead {
+  .theadExtraSeleccionada {
     display: flow-root;
     background: #70193f;
     width: 100%;
     color: white;
   }
 
-  tr:nth-of-type(2n) {
+  .theadExtraSeleccionada tr:nth-of-type(2n) {
     background-color: inherit;
   }
 
-  tr td:first-child {
+  .theadExtraSeleccionada tr, td:first-child {
     background: #aaa;
     font-weight: bold;
     font-size: 1.3em;
   }
 
-  tbody td, th {
+  .tbodyExtraSeleccionada td, th {
     display: block;
     text-align: center;
   }
 
-  tbody td:before {
+  .tbodyExtraSeleccionada td:before {
     content: attr(data-th);
     display: block;
     text-align: center;
+  }
+
+  .tbodyExtraSeleccionada td:last-child {
+    text-align: center;
+    
   }
 }
 
@@ -266,7 +271,7 @@ li:hover{
   cursor: pointer;
 }
 
-.visibleNo {
+.visibleNoExtraescolar {
   /* Hidden by default */
   display:block ;
   position: fixed;
@@ -301,7 +306,7 @@ body {
 
 
 /* The Modal (background) */
-.modal {
+.modalExtraescolar {
   /* Hidden by default */
   display: none;
   position: fixed;
