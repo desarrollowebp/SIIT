@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
 import * as $ from 'jquery';
 @Component({
   selector: 'app-menu-h',
@@ -7,7 +9,8 @@ import * as $ from 'jquery';
 })
 export class MenuHComponent implements OnInit {
 
-  constructor() { }
+	constructor(private router: Router) {}
+
 
   ngOnInit() {
     $(document).ready(menuh);
@@ -34,9 +37,18 @@ function menuh () {
 		$(this).children('.children').slideToggle();
 	});
 
-	$('ol').click(function(p){
+  $('#mantener').click(function(p)
+  {
 		p.stopPropagation();
 	})
+	$('.children').click(function(p)
+  {
+		p.stopPropagation();
+    $('nav').animate({
+      left: '-100%'
+    });
+	})
+
 }
   }
 
