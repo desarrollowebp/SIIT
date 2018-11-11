@@ -10,7 +10,7 @@ Generic Styling, for Desktops/Laptops
 
 /* Responsive para mostrar datos de la tabla de materias*/
 
-.container {
+.containerkardex {
 	width: 100%;
 	margin: auto;
 	}
@@ -18,7 +18,7 @@ Generic Styling, for Desktops/Laptops
 		padding-top: 15px;
 		padding-bottom: 15px;
 	}
-table {
+.tablekardex {
 	width: 100%;;
 	margin:auto;
 	border: none;
@@ -39,7 +39,7 @@ tfoot td {
 	color: #70193F;
 	}
 /*======TBODY======*/
-.foot {
+.footkardex {
  background: white;
  align-content: center;
 }
@@ -95,11 +95,11 @@ thead th{
 		font-size: 1rem;
 		}
 	
-	table, thead, tfoot, tbody, tr {
+	.tablekardex, thead, tfoot, tbody, tr {
 		display:block;
 		}
 	
-	table {
+	.tablekardex {
 		position: relative;
 		}
 	/*table * {
