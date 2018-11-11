@@ -128,7 +128,9 @@ header nav ul li .children li a {
 }
 
 
-	.menu_bar .bt-menu {
+	.menu_bar img {
+		margin-top: 0;
+	
 		margin-top: 10px;
 		display: block;
 <<<<<<< HEAD
@@ -146,7 +148,9 @@ header nav ul li .children li a {
 		text-decoration: none;
 		float: left;
 		margin-left: 10px;
-		cursor: pointer;
+		
+		height: 65px;
+		width: 65px;
 	}
 
 	.textoITD
