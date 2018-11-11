@@ -11,7 +11,7 @@ Generic Styling, for Desktops/Laptops
 /* Responsive para mostrar datos de la tabla de materias*/
 
 .containerkardex {
-	width: 100%;
+	width: 80%;
 	margin: auto;
 	}
 	.info{
@@ -19,7 +19,7 @@ Generic Styling, for Desktops/Laptops
 		padding-bottom: 15px;
 	}
 .tablekardex {
-	width: 100%;;
+	width: 80%;;
 	margin:auto;
 	border: none;
 	background: white;
@@ -40,8 +40,11 @@ tfoot td {
 	}
 /*======TBODY======*/
 .footkardex {
+	width: 50%;
+	margin: auto;
  background: white;
  align-content: center;
+ padding-left: 10em;
 }
 tr {
 	border-bottom: solid 1px #ccc;
@@ -81,13 +84,13 @@ thead th{
 		text-align: center;
 		background: white;
 	}
-	.foot td {
+	.footkardex td {
 		align-content: center;
-		padding-right: 40px;
+		padding-right: 60spx;
+		margin: auto;
 	}
-	button{
-		text-align: center;
-	}
+	
+	
 @media only screen and (max-width: 780px){
 	
 	/*======GENERAL======*/
