@@ -4,7 +4,7 @@
   
  
   
-  .menuDatosEscolares ul {
+  .menu ul {
     background: white;
     text-decoration: none;
     list-style: none;
@@ -13,38 +13,41 @@
     width: 70%;
   }
   
-  .menuDatosEscolares a {
+  .menu a {
     border: none;
     display: block;
     padding: 5px 20px;
     text-decoration: none;
   }
   
-  .menuDatosEscolares ul li:hover ul {
+  .menu ul li:hover ul {
     display: none;
     position: static;
   }
   
-  .menuDatosEscolares ul li ul {
+  .menu ul li ul {
     display: none;
     width: 100%;
   }
   
-  .menuDatosEscolares ul li p {
+  .menu ul li p {
     font-size: 9px;
     text-align: center;
     overflow-wrap: break-word;
   }
   
-  .menuDatosEscolares ul li a {
+  .menu ul li a {
     color: black;
     border-left: 6px solid #6A1A3E;
     background-color: white;
   }
-
+  
+  #menu-bar:checked~.menu {
+    transform: translateX(0);
+  }
   
   @media(min-width:780px) {
-    .menuDatosEscolares {
+    .menu {
       width: 1000px;
       height: 80%;
       margin: 0 auto;
@@ -54,18 +57,18 @@
   
   
   
-    .menuDatosEscolares ul {
+    .menu ul {
       display: flex;
     }
   
-    .menuDatosEscolares ul li p {
+    .menu ul li p {
       font-size: 15px;
     }
   
   
   }
   
-  .contenedorDatosEscolares {
+  .contenedor {
     width: 800px;
     background: #70193f;
   
@@ -74,7 +77,7 @@
   
   @media (min-width:100px) {
     
-    .contenedorDatosEscolares {
+    .contenedor {
       width: 70%;
       min-width: 100%;
       max-width: 100%;
@@ -82,14 +85,14 @@
       font-size: 15px;
     }
   
-    .meniuDatosEscolares {
+    .meniu {
       margin: 0 auto;
       width: 100%;
       height: 40%;
     
     }
   
-    .meniuDatosEscolares ul {
+    .meniu ul {
     
       margin: 0 auto;
       width: 100%;
@@ -116,14 +119,14 @@
   
   
   
-  .meniuDatosEscolares {
+  .meniu {
     margin: 0 auto;
     width: 100%;
     height: 40%;
     background: white;
   }
   
-  .meniuDatosEscolares ul {
+  .meniu ul {
     
     justify-content: center;
     text-align: center;
@@ -134,20 +137,20 @@
     text-decoration: none;
   }
   
-  .meniuDatosEscolares ul li {
+  .meniu ul li {
     padding: 1px;
     width: 33%;
     color: black;
   
   }
   
-  .submeniuDatosEscolares ul li {
+  .submeniu ul li {
     width: 100%;
     background: white;
     
   }
   
-  .submeniuDatosEscolares #titulo {
+  .submeniu #titulo {
     background-color: #70193f;
     color: white;
     font-weight: bold;
