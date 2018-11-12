@@ -9,17 +9,17 @@ import * as $ from 'jquery';
 export class ExtraescolarComponent implements OnInit {
 
 
-  objetoActual = function(gru) {
+  objetoActual = function (gru) {
     console.log(gru);
     this.extraseleccionada = {
       periodo: gru.periodo, nombre: gru.nombre, grupo: gru.grupo,
-      promotor: gru.promotor, hInicial: gru.hInicial, hFinal: gru.hFinal, 
+      promotor: gru.promotor, hInicial: gru.hInicial, hFinal: gru.hFinal,
       dias: gru.dias
     };
   }
 
-  actividadesCulturales=[];
-  actividadesDeportivas=[];
+  actividadesCulturales = [];
+  actividadesDeportivas = [];
 
 
 
@@ -53,12 +53,12 @@ export class ExtraescolarComponent implements OnInit {
 
   ngOnInit() {
 
-    $(".submenu").click(function() {
+    $(".submenu").click(function () {
       $(this).children("ul").slideToggle();
     }
     )
 
-    $("ul").click(function(p) {
+    $("ul").click(function (p) {
       p.stopPropagation();
     })
 
@@ -71,13 +71,14 @@ export class ExtraescolarComponent implements OnInit {
 
   }
 
-  actividades=[ 
-    this.actividadesCulturales=[{bailes:[],musicales:[],civicas:[],dts:[],visuales:[]
+  actividades = [
+    this.actividadesCulturales = [{
+      bailes: [], musicales: [], civicas: [], dts: [], visuales: []
     }],
-    this.actividadesDeportivas=[{pelotas:[],fisicas:[],nataciones:[],aeas:[]}]
+    this.actividadesDeportivas = [{ pelotas: [], fisicas: [], nataciones: [], aeas: [] }]
   ]
 
- 
+
 
   bailes = [
     'Ballet Tahitiano', 'Bellydance Fusión', 'Break Dance', 'Danza Aérea',
@@ -104,7 +105,8 @@ export class ExtraescolarComponent implements OnInit {
   ]
 
   pelotas = [
-    'Balón Mano', 'Balón Mano Femenil', 'Basquetbol Femenil', 'Basquetbol Varonil', 'Beisbol', 'Frontón A Mano',
+    'Balón Mano', 'Balón Mano Femenil', 'Basquetbol Femenil',
+    'Basquetbol Varonil', 'Beisbol', 'Frontón A Mano',
     'Fútbol Americano', 'Fútbol Rapido', 'Fútbol Rápido Femenil', 'Fútbol Soccer Varonil',
     'Hand Ball', 'Hockey Sobre Pasto', 'Ping Pong De Mesa', 'Softbol', 'Tenis', 'Tenis De Mesa',
     'Tochito', 'Tochito Femenil', 'Voleibol De Playa', 'Voleibol De Playa Femenil',
@@ -128,16 +130,20 @@ export class ExtraescolarComponent implements OnInit {
 
 
   maestros = [
-    { periodo: '20183', 
-      nombre: this.bailes[0],
+    {
+      periodo: '20183',
+      nombre: this.datosmodal,
       grupo: 'RL',
-      promotor: 'GALINDO ZALDIVAR M.V. ISAAC ALEJANDRO', 
-      hInicial: '13:00', hFinal: '14:00', 
-      dias: 'L,MA,MI,J', lugares: '20' },
+      promotor: 'GALINDO ZALDIVAR M.V. ISAAC ALEJANDRO',
+      hInicial: '13:00', hFinal: '14:00',
+      dias: 'L,MA,MI,J', lugares: '20'
+    },
 
-    { periodo: '20183', nombre: 'Ajedrez', grupo: '1B', 
-      promotor: 'GARCIA GARCIA JOSE ANTONIO', 
-      hInicial: '11:00', hFinal: '12:00', dias: 'L,MA,MI,J', 
-      lugares: '15' },
+    {
+      periodo: '20183', nombre: 'Ajedrez', grupo: '1B',
+      promotor: 'GARCIA GARCIA JOSE ANTONIO',
+      hInicial: '11:00', hFinal: '12:00', dias: 'L,MA,MI,J',
+      lugares: '15'
+    },
   ]
 }
