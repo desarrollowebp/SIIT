@@ -167,14 +167,14 @@
 			</h4>
 			<form>
 				<table id="tablaModal">
-					<tr>
-						<th>Grupo</th>
-						<th>Promotor</th>
-						<th>H.Inicial</th>
-						<th>H.Final</th>
-						<th>Dias</th>
-						<th>Lugares Disponibles</th>
-						<th></th>
+					<tr class="headModal">
+						<td>Grupo</td>
+						<td>Promotor</td>
+						<td>H.Inicial</td>
+						<td>H.Final</td>
+						<td>Dias</td>
+						<td>Lugares Disponibles</td>
+						<td></td>
 					</tr>
 					<tr *ngFor="let group of maestros">
 						<td>{{group.grupo}}</td>
@@ -192,5 +192,6 @@
 			<button class="boton" id="btn-cancelar"  (click)="cerrar()" >Cancelar</button>
 
 		</div>
+</div>
 
 	<!--=========termina el modal==========--->

@@ -65,6 +65,29 @@
 }
 
 @media screen and (max-width: 600px) {
+
+  .modal {
+    padding-left: 0;
+    padding-top: 0;
+  }
+
+  .form {
+    margin: 35% auto;
+    padding-left: 0;
+    border-radius: 0;
+    width: 100%;
+  }
+
+
+#tablaModal th {
+  background-color: #6F193F;
+  color: white;
+
+}
+#tablaModal {
+  width: 100%;
+
+}
   .tablaExtraSeleccionada {
     width: 100%;
   }
@@ -470,29 +493,3 @@ body {
   }
 }
 
-@media(max-width:780px) {
-
-  .modal {
-    padding-left: 0;
-    padding-top: 0;
-  }
-
-  .form {
-    margin: 35% auto;
-    padding-left: 0;
-    border-radius: 0;
-    width: 100%;
-  }
-
-
-#tablaModal th {
-  background-color: #6F193F;
-  color: white;
-
-}
-#tablaModal {
-  width: 100%;
-
-}
-
-}
