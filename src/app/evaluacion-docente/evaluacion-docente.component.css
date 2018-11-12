@@ -36,11 +36,13 @@
 	margin: 28px 0 70px;
 }
 
+th,td{
+	padding: 0 !important;
+}
 @media (max-width: 720px) {
 	.ui-tbody-big {
 		display: n
 		one;
-
 	}
 
 	.ui-table-wrapper {
