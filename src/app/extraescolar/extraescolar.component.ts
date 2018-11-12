@@ -52,7 +52,14 @@ export class ExtraescolarComponent implements OnInit {
   }
 
   ngOnInit() {
-
+    ///metoro para regresar arriba
+    $(function(){
+      $("#button").click(function(e){
+          e.preventDefault();
+          $("html, body").animate({"scrollTop": "0px"}, 600);
+      })
+  });
+/////
     $(".submenu").click(function () {
       $(this).children("ul").slideToggle();
     }
@@ -132,17 +139,21 @@ export class ExtraescolarComponent implements OnInit {
   maestros = [
     {
       periodo: '20183',
-      nombre: this.datosmodal,
       grupo: 'RL',
       promotor: 'GALINDO ZALDIVAR M.V. ISAAC ALEJANDRO',
-      hInicial: '13:00', hFinal: '14:00',
-      dias: 'L,MA,MI,J', lugares: '20'
+      hInicial: '13:00', 
+      hFinal: '14:00',
+      dias: 'L,MA,MI,J', 
+      lugares: '20'
     },
 
     {
-      periodo: '20183', nombre: 'Ajedrez', grupo: '1B',
+      periodo: '20183', 
+      grupo: '1B',
       promotor: 'GARCIA GARCIA JOSE ANTONIO',
-      hInicial: '11:00', hFinal: '12:00', dias: 'L,MA,MI,J',
+      hInicial: '11:00', 
+      hFinal: '12:00', 
+      dias: 'L,MA,MI,J',
       lugares: '15'
     },
   ]
