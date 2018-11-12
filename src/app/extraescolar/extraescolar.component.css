@@ -361,6 +361,7 @@ body {
 
 /* Modal Content */
 .form {
+  padding-top: 30px;
   bottom: 0;
   background-color: #fefefe;
   width: 80%;
