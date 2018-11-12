@@ -1,3 +1,4 @@
+
 /***empieza css de tabla de extra seleccionada*****/
 .tablaExtraSeleccionada {
   text-align: center;
@@ -126,10 +127,12 @@
   }
 }
 
-/***empieza css de tabla de extra seleccionada*****/
+/***termina css de tabla de extra seleccionada*****/
+
 /*empieza css de tabla que se despliega*/
 /* STYLE THE ACCORDION HOLDING CONTAINER */
 .accordionbox {
+  
   max-width: 1000px;
   margin: 10px auto 0px auto;
   z-index: 2;
