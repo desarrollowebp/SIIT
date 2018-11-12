@@ -123,7 +123,7 @@
 
   .tbodyExtraSeleccionada td:last-child {
     text-align: center;
-    
+
   }
 }
 
@@ -132,7 +132,7 @@
 /*empieza css de tabla que se despliega*/
 /* STYLE THE ACCORDION HOLDING CONTAINER */
 .accordionbox {
-  
+
   max-width: 1000px;
   margin: 10px auto 0px auto;
   z-index: 2;
@@ -180,13 +180,16 @@
 
 /* STYLE THE CLICKED DROPDOWN CONTENT BOX */
 .accordionbox input:checked~.insidebox {
-  height: 250px;
+  height: 150px;
   overflow: scroll;
+  scroll-behavior: smooth;
+
 }
 
 /* SHOW THE + SIGN WHEN BOXES ARE CLOSED */
 input[type=checkbox]+label::before {
   content: "+ ";
+
 }
 
 /* SHOW THE – SIGN WHEN BOXES ARE OPEN */
@@ -284,7 +287,7 @@ li:hover{
 /*Empieza el modal*/
 /*modal */
 
-.boton{
+.botonModal{
   margin-bottom: auto;
   border-radius: 5px;
   color: white;
@@ -293,7 +296,7 @@ li:hover{
 #btn-cancelar{
   margin-bottom: 15px;
 }
-.boton:hover{
+.botonModal:hover{
   cursor: pointer;
 }
 
@@ -496,4 +499,3 @@ body {
     opacity: 1
   }
 }
-

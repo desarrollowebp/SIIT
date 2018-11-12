@@ -28,6 +28,10 @@
 </table>
 
 
+ <div id="page-1">
+ 	<p>1</p>
+ </div>
+
 <!--=========empieza tabla de avisos==========---------->
 <div class="accordionbox">
 	<div>
@@ -83,8 +87,9 @@
 
 	<!--=========QUINTO CONTENEDOR DE EXTRA==========--->
 	<div>
+
 		<input id="tab-five" name="myaccordion" type="checkbox" />
-		<label for="tab-five">VISUALES</label>
+		<label class="visuales" for="tab-five">VISUALES</label>
 		<div class="insidebox">
 			<div class="panel-body" *ngFor="let visual of visuales">
 				<li (click)="funcp(visual)">{{visual}}</li>
@@ -184,11 +189,9 @@
 					<td>{{group.hFinal}}</td>
 					<td>{{group.dias}}</td>
 					<td>{{group.lugares}}</td>
-					<td><button id="button" type="button" class="boton" 
-						(click)="cerrar()" 
+					<td><button id="button" type="button" class="botonModal"
+						(click)="cerrar()"
 						(click)="objetoActual(group)">Seleccionar</button></td>
-				</tr>
-				<tr>
 				</tr>
 			</table>
 		</form>

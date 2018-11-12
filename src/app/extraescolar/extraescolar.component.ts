@@ -16,6 +16,9 @@ export class ExtraescolarComponent implements OnInit {
       promotor: gru.promotor, hInicial: gru.hInicial, hFinal: gru.hFinal,
       dias: gru.dias
     };
+
+
+
   }
 
   actividadesCulturales = [];
@@ -54,26 +57,12 @@ export class ExtraescolarComponent implements OnInit {
   ngOnInit() {
     ///metoro para regresar arriba
     $(function(){
-      $("#button").click(function(e){
+      $(".botonModal").click(function(e){
           e.preventDefault();
           $("html, body").animate({"scrollTop": "0px"}, 600);
       })
   });
 /////
-    $(".submenu").click(function () {
-      $(this).children("ul").slideToggle();
-    }
-    )
-
-    $("ul").click(function (p) {
-      p.stopPropagation();
-    })
-
-    if ($(window).width() > 720) {
-      $(".submenu").children("ul").show();
-    }
-    else {
-    }
 
 
   }
@@ -95,7 +84,7 @@ export class ExtraescolarComponent implements OnInit {
   ]
 
   musicales = [
-    'Orquesta Filarmónica', 'Orquesta Sinfónica', 'Rondalla', 'Rondalla Femeni', 'Rondalla Varonil',
+    'Orquesta Filarmónica', 'Orquesta Sinfónica', 'Rondalla', 'Rondalla Femenil', 'Rondalla Varonil',
     'Rondalla Y Taller De Guitarra', 'Taller Guitarra Popular', 'Coro De Cámara',
   ]
 
@@ -141,18 +130,18 @@ export class ExtraescolarComponent implements OnInit {
       periodo: '20183',
       grupo: 'RL',
       promotor: 'GALINDO ZALDIVAR M.V. ISAAC ALEJANDRO',
-      hInicial: '13:00', 
+      hInicial: '13:00',
       hFinal: '14:00',
-      dias: 'L,MA,MI,J', 
+      dias: 'L,MA,MI,J',
       lugares: '20'
     },
 
     {
-      periodo: '20183', 
+      periodo: '20183',
       grupo: '1B',
       promotor: 'GARCIA GARCIA JOSE ANTONIO',
-      hInicial: '11:00', 
-      hFinal: '12:00', 
+      hInicial: '11:00',
+      hFinal: '12:00',
       dias: 'L,MA,MI,J',
       lugares: '15'
     },
