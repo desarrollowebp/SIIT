@@ -1,4 +1,5 @@
 
+<!----Inicia despliegue de preguntas-->
 <div *ngFor="let element of preguntas">
   <p id="tituloServicio">{{element.servicio}}</p>
   <!--Pregunta 1-->
@@ -125,7 +126,7 @@
         <div class="row justify-content-md-center">
     <div class="col-md-9">
       <p>{{element.pregunta9}}</p>
-            </div>
+    </div>
             <div class="col-md-2">
                 <select id="valor" class="form-control" name="valor">
                     <option value=5>5</option>
@@ -135,16 +136,29 @@
                     <option value=1>1</option>
                 </select>
             </div>
-  </div>
-        <!--Sección de comentarios y botón-->
-  <div id="coment"><h4>Comentarios</h4></div>
+    </div>
+    <!---Termina el despliegue de preguntas-->
+    <!--Sección de comentarios-->
+    <div id="coment"><h4>Comentarios</h4></div>
         <textarea id="comentarios" style="border: solid 1px gray;" class="form-control">
         </textarea>     
-  
-</div>
-<div id="boton" style="text-align: center;">    
-    <button type="button" class="btn btn-primary">
-        Finalizar
-    </button>
+        
+    </div>
+    <!---Termina comentarios-->
+    <div id="boton" style="text-align: center;">    
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal">Finalizar
+        </button>
+    </div>
+    <!---Inicia modal de impresión de comprobante-->
+    <div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document" id="mdalSize">
+            <div class="modal-content">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                        <h2>Auditoria de servicio finalizada con éxito</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
 </div>
 

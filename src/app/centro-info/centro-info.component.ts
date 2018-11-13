@@ -125,4 +125,10 @@ preguntas : Tpregunta[] = [
   ngOnInit() {
   }
 
+  fechaActual = (new Date()).toLocaleString()
+
+  imprimirPagina() {
+    window.print()
+  }
+
 }
