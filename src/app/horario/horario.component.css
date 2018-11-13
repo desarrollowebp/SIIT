@@ -1,9 +1,9 @@
 .container {
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 0px;
+    padding-left: 0px;
   
-    padding-top: 15px;
+    padding-top: 0px;
   }
   
 
@@ -124,20 +124,12 @@
     text-align: center;
     color: white;
   }
-  
-  p {
-    width: auto;
-  }
+
   
 
-  #wrapper {
-    padding: 90px 15px;
-  }
+ 
   
-  .navbar-expand-lg .navbar-nav.side-nav {
-    flex-direction: column;
-  }
-  
+
   .card {
     
     border-radius: 0;
@@ -145,18 +137,35 @@
     border: none;
   }
   
-  .header-top {
-    box-shadow: 0 3px 5px rgba(0, 0, 0, .1)
-  }
   
-  .leftmenutrigger {
-    display: none
+  .table tbody tr:nth-child(5) td:nth-child(1){
+    text-align: right;
+    
   }
+
+  
   
   table {
     width: 100%;
-    border-collapse: collapse;
-  }
+    border-collapse: separate;
+    border-spacing: 0px;
+    border: 1px solid black;
+    
+    empty-cells: HIDE;
+    border-radius: .25rem;
+    perspective: 1px;
+    -webkit-border-radius: .25rem;
+-moz-border-radius: .25rem;
+}
+table tr:last-child td:first-child {
+  border-bottom-left-radius: 6px;
+}
+
+table tr:last-child td:last-child {
+  border-bottom-right-radius: 6px;
+}
+    
+  
   
   tr:nth-of-type(odd) {
     background: #eee;
@@ -168,11 +177,7 @@
     font-weight: bold;
   }
   
-  td,
-  th {
-    padding: 6px;
-    text-align: center;
-  }
+
   
   @media all and (max-width:500px) {
   
@@ -187,6 +192,9 @@
   
     tr {
       margin-bottom: 10px
+    }
+    .card-body{
+      padding: .5rem;
     }
   }
   
@@ -231,6 +239,7 @@
     background: #70193f;
     color: white;
     font-weight: bold;
+    border-radius: 6px;
   }
   
   p {
@@ -243,7 +252,7 @@
   
   td,
   th {
-    padding: 6px;
+    padding: 5px;
     text-align: center;
   }
   

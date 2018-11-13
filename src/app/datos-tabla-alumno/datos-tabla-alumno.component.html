@@ -1,44 +1,42 @@
-<p>
-  datos-tabla-alumno works!
-</p>
-<section class="registro">
 
-  <div class="menu">
-    <div class="contenedor" >
-  <div class="meniu">
+<section class="registroTablaAlumno">
+
+  <div class="menuTablaAlumno">
+    <div class="contenedorTablaAlumno" >
+  <div class="meniuTablaAlumno">
     <h3>Datos del Alumno</h3>
-    <ul>
-      <li class="submeniu" id="control">
+    <ul *ngFor="let alumno of alumno">
+      <li class="submeniuTablaAlumno" id="control" >
         <p id="titulo">No. Control </p>
-        <p>14041413</p>
+        <p>{{alumno.control}}</p>
       </li>
-      <li class="submeniu">
+      <li class="submeniuTablaAlumno">
         <p id="titulo">Nombre </p>
-        <p>Valenzuela Valdez Alma Teresa </p>
+        <p>{{alumno.nombre}}</p>
       </li>
-      <li class="submeniu" id="control">
+      <li class="submeniuTablaAlumno" id="control">
         <p id="titulo">Periodo Escolar </p>
-        <p>Ago-Dic 2018</p>
+        <p>{{alumno.periodo}}</p>
       </li>
-      <li class="submeniu">
+      <li class="submeniuTablaAlumno">
         <p id="titulo">Promedio </p>
-        <p>100.00</p>
+        <p>{{alumno.promedio}}</p>
       </li>
       
         </ul>
     
-    <ul>
-      <li class="submeniu">
+    <ul *ngFor="let datos of datos" >
+      <li class="submeniuTablaAlumno">
           <p id="titulo"> Carrera</p>
-          <p>Ing. en Tecnologías de la Información y Comunicación</p>
+          <p>{{datos.carrera}}</p>
         </li>
-        <li class="submeniu">
+        <li class="submeniuTablaAlumno">
           <p id="titulo"> Especialidad</p>
-          <p>Tecnologías Web</p>
+          <p>{{datos.especialidad}}</p>
         </li>
-        <li class="submeniu">
+        <li class="submeniuTablaAlumno">
           <p id="titulo"> CURP</p>
-          <p>VAVADGO961584282DD2D</p>
+          <p>{{datos.curp}}</p>
         </li>
     </ul>
   </div>
