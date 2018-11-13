@@ -22,18 +22,6 @@ margin:auto;
 left: auto;
 height: 5%;
 }
-.titulo
-{
-  background: #6F193F;
-  height: 45px;
-}
-.titulo h1
-{
-  color: #fff;
-  text-align: center;
-  font-size: 20px;
-  padding-top: 10px;
-}
 
 #pfo1
 {
@@ -41,31 +29,31 @@ height: 5%;
     font-size: 25px;
 }
 
-.contenido
+.contenidoPSM
 {
     margin-top: 2%;
 }
-.contenido #HoraActual
+.contenidoPSM #HoraActual
 {
     margin-top: 3%;
 }
-.contenido p{
+.contenidoPSM p{
     margin-top: 2%;
 }
 
-.contenido #pfo2
+.contenidoPSM #pfo2
 {
     margin-top: 3%;
     font-size: 25px; 
 }
-.contenido #HoraActual
+.contenidoPSM #HoraActual
 {
     font-weight: bold;
     color:#6F193F;
 }
 
 
-.opciones
+.opcionesPSM
 {
    margin-top: 3%;
 }
@@ -85,7 +73,7 @@ button {
   cursor: pointer;
 }
 
-table {
+.preSeleccionMaterias {
   text-align: left;
   line-height: 40px;
   border-collapse: separate;
@@ -128,7 +116,7 @@ td:last-child {
 }
 @media (max-width:768px)
 {
-      table {
+       .preSeleccionMaterias{
           margin-top: 15px;
           width:100%;
       }
