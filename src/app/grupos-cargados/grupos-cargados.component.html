@@ -1,283 +1,219 @@
  <div class="gruposCargados">
-
-  <h2 id="tgc">Grupos Cargados</h2>
-
-  <div class="semestres">
-    <button class="todasmaterias pestanas pest-activo" data-sem="0" >Todos Semestres</button>
-    <button class="pestanas" data-sem="1">Semestre 1</button>
-    <button class="pestanas" data-sem="2">Semestre 2</button>
-    <button class="pestanas" data-sem="3">Semestre 3</button>
-    <button class="pestanas" data-sem="4">Semestre 4</button>
-    <button class="pestanas" data-sem="5">Semestre 5</button>
-    <button class="pestanas" data-sem="6">Semestre 6</button>
-    <button class="pestanas" data-sem="7">Semestre 7</button>
-    <button class="pestanas" data-sem="8">Semestre 8</button>
-    <button class="pestanas" data-sem="9">Semestre 9</button>
-   
-
-
-            <div id="st" class="nomsemestre">
-                <h2>Todas</h2>                                      
-            </div>
-
-            <div id="s1" class="nomsemestre">
-                <h2>Semestre 1</h2>                       
-            </div>
-
-            <div id="s2" class="nomsemestre">
-                <h2>Semestre 2</h2>                       
-            </div>
-
-            <div id="s3" class="nomsemestre">
-                <h2>Semestre 3</h2>                       
-            </div>
-
-            <div id="s4" class="nomsemestre">
-                <h2>Semestre 4</h2>                       
-            </div>
-
-            <div id="s5" class="nomsemestre">
-                <h2>Semestre 5</h2>                       
-            </div>
-
-            <div id="s6" class="nomsemestre">
-                <h2>Semestre 6</h2>                       
-            </div>
-
-            <div id="s7" class="nomsemestre">
-                <h2>Semestre 7</h2>                       
-            </div>
-
-            <div id="s8" class="nomsemestre">
-                <h2>Semestre 8</h2>                       
-            </div>
-
-            <div id="s9" class="nomsemestre">
-                <h2>Semestre 9</h2>                       
-            </div>
-
-
-
-
-
-
-
+<!-- inicia botones parte superior -->
+  <div class="semestresGC">
+    <button class="todasmateriasGC pestanasGC pest-activoGC" data-sem="0" >Todos Semestres</button>
+    <button class="pestanasGC" data-sem="1">Semestre 1</button>
+    <button class="pestanasGC" data-sem="2">Semestre 2</button>
+    <button class="pestanasGC" data-sem="3">Semestre 3</button>
+    <button class="pestanasGC" data-sem="4">Semestre 4</button>
+    <button class="pestanasGC" data-sem="5">Semestre 5</button>
+    <button class="pestanasGC" data-sem="6">Semestre 6</button>
+    <button class="pestanasGC" data-sem="7">Semestre 7</button>
+    <button class="pestanasGC" data-sem="8">Semestre 8</button>
+    <button class="pestanasGC" data-sem="9">Semestre 9</button>
   </div>
-    <div class="vertical">
-        <div class="container" >
+<!-- fin botones parte superior -->
 
-            <div class="row" >
+
+    <div class="verticalGC">
+        <div class="containerGC" >
+            <div class="rowGC" >
         			<div class="col-md-12">
-        				<div class="panel panel-primary"  id="tablacontenedor">
-        					<div class="panel-heading" id="jj">
-                    			<h3 class="panel-title" id=redo; >TODOS LOS GRUPOS AL PERIODO AGOSTO-DICIEMBRE/2018</h3>
-                      			<h3 class="panel-title"><span class="clickable filter" data-toggle="tooltip" title="Toggle table filter" data-container="body">Presiona para buscar<i class="icon icon-search"></i></span></h3>
+        				<div class="panel panel-primaryGC"  id="tablacontenedorGC">
+        					<div class="panel-headingGC" id="jj">
+                                <!-- inicia encabezado de la tabla y filtro -->
+                    			<h3 class="panel-titleGC" id=redo; >GRUPOS AL PERIODO AGOSTO-DICIEMBRE/2018</h3>
+                      			<h5 class="panel-titleGC"><span data-toggle="tooltip" title="Toggle table filter" data-container="bodyGC">BUSCAR</span></h5>
         					</div>
-        					<div class="panel-body">
-        						<input type="text" class="form-control" id="dev-table-filter" data-action="filter" data-filters="#dev-table" placeholder="Buscar" />
+        					<div class="panel-bodyGC">
+        						<input type="text" class="form-control" id="dev-table-filter" data-action="filter" data-filters="#dev-tableGC" placeholder="Buscar">
         					</div>
+                            <!-- fin del encabezado de la tabla y filtro -->
 
-        					<table class="table table-hover" id="dev-table" >
+                            <!-- inicia tabla que contiene los titulos y la informacion -->
+        					<table class="table table-hover" id="dev-tableGC" >
         						<thead>
-        							<tr >
-        								<th id="e1" width="75" class="small_negrita_center"> Sem/Gpo </th>
-        								<th id="e2" width="200" class="small_negrita_center"> Materia </th>
-        								<th id="e4" width="80" class="small_negrita_center"> Lunes </th>
-        								<th id="e5" width="80" class="small_negrita_center"> Martes </th>
-        								<th id="e6" width="83" class="small_negrita_center"> Miercoles </th>
-        								<th id="e7" width="80" class="small_negrita_center"> Jueves </th>
-        								<th id="e8" width="80" class="small_negrita_center"> Viernes </th>
-                                        <th id="e8" width="80" class="small_negrita_center"> Sabado </th>
-        							</tr>
+        							 <tr *ngFor="let titulo of titulo">
+                                        <th id="e1GC" width="75" class="small_negrita_center">{{titulo.tgrupo}}</th>
+                                        <th id="e2GC" width="200" class="small_negrita_center">{{titulo.tmateria}}</th>
+                                        <th id="e3GC" width="80" class="small_negrita_center">{{titulo.tlunes}}</th>
+                                        <th id="e4GC" width="80" class="small_negrita_center">{{titulo.tmartes}}</th>
+                                        <th id="e5GC" width="83" class="small_negrita_center">{{titulo.tmiercoles}}</th>
+                                        <th id="e6GC" width="80" class="small_negrita_center">{{titulo.tjueves}}</th>
+                                        <th id="e7GC" width="80" class="small_negrita_center">{{titulo.tviernes}}</th>
+                                        <th id="e8GC" width="80" class="small_negrita_center">{{titulo.tsabado}}</th>
+                                    </tr>
         						</thead>
         					
 
-        					<div id="semestre1" class="semestresdiv">
-        						<table class="table table-hover" id="dev-table">
-        						<tbody id="tablecontent">
-        							<tr>
-        								<td class="small_center" width="50" > <p class="tgrupo"> 1M </p>  </td>
-        								<td class="small_center" > <p class="tmateria">ESTADISTICA</p> CO1001 <br> VILLARREAL REYES ELIZABETH SORAYA </td>
-        								<td class="small_center"> 17:00 - 18:00<br>EE10 </td>
-        								<td class="small_center"> 17:00 - 18:00<br>EE10 </td>
-        								<td class="small_center"> 17:00 - 18:00<br>EE10 </td>
-        								<td class="small_center"> 17:00 - 18:00<br>EE10 </td>
-        								<td class="small_center"> 17:00 - 18:00<br>EE10 </td>
-        								<td></td>
-        							</tr>
-                      				<tr>
-        								<td class="small_center" width="50" > <p class="tgrupo"> 1M </p>  </td>
-        								<td class="small_center" > <p class="tmateria">CALCULO DIFERENCIA</p> CO1001 <br> VILLARREAL REYES ELIZABETH SORAYA </td>       								
-        								<td class="small_center"> 16:00 - 18:00<br>EE10 </td>
-        								<td class="small_center"> 17:00 - 18:00<br>EE10 </td>
-        								<td class="small_center"> 17:00 - 18:00<br>EE10 </td>
-        								<td class="small_center"> 17:00 - 18:00<br>EE10 </td>
-        								<td class="small_center"> 17:00 - 18:00<br>EE10 </td>
-        								<td></td>
-        							</tr>
+        					<div id="semestre1GC" class="semestresdivGC">
+        						<table class="table table-hover" id="dev-tableGC">
+        						<tbody id="tablecontentGC">
+        							
+        								<tr *ngFor="let sem1 of sem1">
+                                            <td width="75" >{{sem1.grupo}}</td>
+                                            <td width="200">{{sem1.materia}}{{sem1.codigo}}{{sem1.facilitador}}</td>
+                                            <td width="80" >{{sem1.lunes}}{{sem1.salonl}}</td>
+                                            <td width="80" >{{sem1.martes}}{{sem1.salonma}}</td>
+                                            <td width="83" >{{sem1.miercoles}}{{sem1.salonmi}}</td>
+                                            <td width="80" >{{sem1.jueves}}{{sem1.salonj}}</td>
+                                            <td width="80" >{{sem1.viernes}}{{sem1.salonv}}</td>
+                                            <td width="80" >{{sem1.sabado}}{{sem1.salons}}</td>
+                                        </tr>
                   				</tbody>
                   			</table>
         					</div>
 
 
-        					<div id="semestre2" class="semestresdiv">
-        						<table class="table table-hover" id="dev-table">
-        						<tbody id="tablecontent">
-        							<tr>
-        								<td class="small_center" width="50" > <p class="tgrupo"> 2M </p>  </td>
-        								<td class="small_center" > <p class="tmateria">ESTADISTICA</p> CO1001 <br> VILLARREAL REYES ELIZABETH SORAYA </td>
-        								<td class="small_center"> 17:00 - 18:00<br>EE10 </td>
-        								<td class="small_center"> 17:00 - 18:00<br>EE10 </td>
-        								<td class="small_center"> 17:00 - 18:00<br>EE10 </td>
-        								<td class="small_center"> 17:00 - 18:00<br>EE10 </td>
-        								<td class="small_center"> 17:00 - 18:00<br>EE10 </td>
-        								<td></td>
-        							</tr>
-                      				<tr>
-        								<td class="small_center" width="50" > <p class="tgrupo"> 2M </p>  </td>
-        								<td class="small_center" > <p class="tmateria">CALCULO DIFERENCIA</p> CO1001 <br> VILLARREAL REYES ELIZABETH SORAYA </td>       								
-        								<td class="small_center"> 16:00 - 18:00<br>EE10 </td>
-        								<td class="small_center"> 17:00 - 18:00<br>EE10 </td>
-        								<td class="small_center"> 17:00 - 18:00<br>EE10 </td>
-        								<td class="small_center"> 17:00 - 18:00<br>EE10 </td>
-        								<td class="small_center"> 17:00 - 18:00<br>EE10 </td>
-        								<td></td>
-        							</tr>
+        					<div id="semestre2GC" class="semestresdivGC">
+        						<table class="table table-hover" id="dev-tableGC">
+        						<tbody id="tablecontentGC">
+        							<tr *ngFor="let sem2 of sem2">
+                                        <td width="75" >{{sem2.grupo}}</td>
+                                        <td width="200">{{sem2.materia}}{{sem2.codigo}}{{sem2.facilitador}}</td>
+                                        <td width="80" >{{sem2.lunes}}{{sem2.salonl}}</td>
+                                        <td width="80" >{{sem2.martes}}{{sem2.salonma}}</td>
+                                        <td width="83" >{{sem2.miercoles}}{{sem2.salonmi}}</td>
+                                        <td width="80" >{{sem2.jueves}}{{sem2.salonj}}</td>
+                                        <td width="80" >{{sem2.viernes}}{{sem2.salonv}}</td>
+                                        <td width="80" >{{sem2.sabado}}{{sem2.salons}}</td>
+                                    </tr>
                   				</tbody>
                   			</table>
         					</div>        					
         						
 
-        					<div id="semestre3" class="semestresdiv">
-        						<table class="table table-hover" id="dev-table">
-        						<tbody id="tablecontent">
-        							<tr>
-				                        <td class="small_center" width="50" > <p class="tgrupo"> 3M </p>  </td>
-				                        <td class="small_center" > <p class="tmateria">CALCULO DIFERENCIA</p> CO1001 <br> VILLARREAL REYES ELIZABETH SORAYA </td>
-				                        
-				                        <td class="small_center"> 17:00 - 18:00<br>EE10 </td>
-				                        <td class="small_center"> 17:00 - 18:00<br>EE10 </td>
-				                        <td class="small_center"> 17:00 - 18:00<br>EE10 </td>
-				                        <td class="small_center"> 17:00 - 18:00<br>EE10 </td>
-				                        <td class="small_center"> 17:00 - 18:00<br>EE10 </td>
-				                        <td></td>
-				                    </tr>
+        					<div id="semestre3GC" class="semestresdivGC">
+        						<table class="table table-hover" id="dev-tableGC">
+        						<tbody id="tablecontentGC">
+        							<tr *ngFor="let sem3 of sem3">
+                                        <td width="75" >{{sem3.grupo}}</td>
+                                        <td width="200">{{sem3.materia}}{{sem3.codigo}}{{sem3.facilitador}}</td>
+                                        <td width="80" >{{sem3.lunes}}{{sem3.salonl}}</td>
+                                        <td width="80" >{{sem3.martes}}{{sem3.salonma}}</td>
+                                        <td width="83" >{{sem3.miercoles}}{{sem3.salonmi}}</td>
+                                        <td width="80" >{{sem3.jueves}}{{sem3.salonj}}</td>
+                                        <td width="80" >{{sem3.viernes}}{{sem3.salonv}}</td>
+                                        <td width="80" >{{sem3.sabado}}{{sem3.salons}}</td>
+                                    </tr>
                   				</tbody>
                   				</table>
         					</div>           
 
 
 
-        					<div id="semestre4" class="semestresdiv">
-        						<table class="table table-hover" id="dev-table">
-        						<tbody id="tablecontent">
-        							<tr>
-				                        <td class="small_center" width="50" > <p class="tgrupo"> 4M </p>  </td>
-				                        <td class="small_center" > <p class="tmateria">CIENCIA</p> CO1001 <br> VILLARREAL REYES ELIZABETH SORAYA </td>                       
-				                        <td class="small_center"> 17:00 - 18:00<br>EE10 </td>
-				                        <td class="small_center"> 17:00 - 18:00<br>EE10 </td>
-				                        <td class="small_center"> 17:00 - 18:00<br>EE10 </td>
-				                        <td class="small_center"> 17:00 - 18:00<br>EE10 </td>
-				                        <td class="small_center"> 17:00 - 18:00<br>EE10 </td>
-				                        <td></td>
-				                    </tr>
+        					<div id="semestre4GC" class="semestresdivGC">
+        						<table class="table table-hover" id="dev-tableGC">
+        						<tbody id="tablecontentGC">
+        							<tr *ngFor="let sem4 of sem4">
+                                        <td width="75" >{{sem4.grupo}}</td>
+                                        <td width="200">{{sem4.materia}}{{sem4.codigo}}{{sem4.facilitador}}</td>
+                                        <td width="80" >{{sem4.lunes}}{{sem4.salonl}}</td>
+                                        <td width="80" >{{sem4.martes}}{{sem4.salonma}}</td>
+                                        <td width="83" >{{sem4.miercoles}}{{sem4.salonmi}}</td>
+                                        <td width="80" >{{sem4.jueves}}{{sem4.salonj}}</td>
+                                        <td width="80" >{{sem4.viernes}}{{sem4.salonv}}</td>
+                                        <td width="80" >{{sem4.sabado}}{{sem4.salons}}</td>
+                                    </tr>
                   				</tbody>
                   			</table>
         					</div>
 
 
 
-        					<div id="semestre5" class="semestresdiv">
-        						<table class="table table-hover" id="dev-table">
-        						<tbody id="tablecontent">
-        							<tr>
-				                        <td class="small_center" width="50" > <p class="tgrupo"> 5M </p>  </td>
-				                        <td class="small_center" > <p class="tmateria">CALCULO DIFERENCIA</p> CO1001 <br> VILLARREAL REYES ELIZABETH SORAYA </td>                        
-				                        <td class="small_center"> 17:00 - 18:00<br>EE10 </td>
-				                        <td class="small_center"> 17:00 - 18:00<br>EE10 </td>
-				                        <td class="small_center"> 17:00 - 18:00<br>EE10 </td>
-				                        <td class="small_center"> 17:00 - 18:00<br>EE10 </td>
-				                        <td class="small_center"> 17:00 - 18:00<br>EE10 </td>
-				                        <td></td>
-				                    </tr>
+        					<div id="semestre5GC" class="semestresdivGC">
+        						<table class="table table-hover" id="dev-tableGC">
+        						<tbody id="tablecontentGC">
+        							<tr *ngFor="let sem5 of sem5">
+                                        <td width="75" >{{sem5.grupo}}</td>
+                                        <td width="200">{{sem5.materia}}{{sem5.codigo}}{{sem5.facilitador}}</td>
+                                        <td width="80" >{{sem5.lunes}}{{sem5.salonl}}</td>
+                                        <td width="80" >{{sem5.martes}}{{sem5.salonma}}</td>
+                                        <td width="83" >{{sem5.miercoles}}{{sem5.salonmi}}</td>
+                                        <td width="80" >{{sem5.jueves}}{{sem5.salonj}}</td>
+                                        <td width="80" >{{sem5.viernes}}{{sem5.salonv}}</td>
+                                        <td width="80" >{{sem5.sabado}}{{sem5.salons}}</td>
+                                    </tr>
                   				</tbody>
                   			</table>
         					</div>
 
-        					<div id="semestre6" class="semestresdiv">
-        						<table class="table table-hover" id="dev-table">
-        						<tbody id="tablecontent">
-        							<tr>
-				                        <td class="small_center" width="50" > <p class="tgrupo"> 6M </p>  </td>
-				                        <td class="small_center" > <p class="tmateria">PROGRAMACION WEB</p> CO1001 <br> VILLARREAL REYES ELIZABETH SORAYA </td>                       
-				                        <td class="small_center"> 17:00 - 18:00<br>EE10 </td>
-				                        <td class="small_center"> 17:00 - 18:00<br>EE10 </td>
-				                        <td class="small_center"> 17:00 - 18:00<br>EE10 </td>
-				                        <td class="small_center"> 17:00 - 18:00<br>EE10 </td>
-				                        <td class="small_center"> 17:00 - 18:00<br>EE10 </td>
-				                        <td></td>
-				                    </tr>
-                  				</tbody>
-                  			</table>
-        					</div>
-
-
-        					<div id="semestre7" class="semestresdiv">
-        						<table class="table table-hover" id="dev-table">
-        						<tbody id="tablecontent">
-        							<tr>
-				                        <td class="small_center" width="50" > <p class="tgrupo"> 7M </p>  </td>
-				                        <td class="small_center" > <p class="tmateria">TALLER INVESTIGACION</p> CO1001 <br> VILLARREAL REYES ELIZABETH SORAYA </td>                       
-				                        <td class="small_center"> 17:00 - 18:00<br>EE10 </td>
-				                        <td class="small_center"> 17:00 - 18:00<br>EE10 </td>
-				                        <td class="small_center"> 17:00 - 18:00<br>EE10 </td>
-				                        <td class="small_center"> 17:00 - 18:00<br>EE10 </td>
-				                        <td class="small_center"> 17:00 - 18:00<br>EE10 </td>
-				                        <td></td>
-				                    </tr>
+        					<div id="semestre6GC" class="semestresdivGC">
+        						<table class="table table-hover" id="dev-tableGC">
+        						<tbody id="tablecontentGC">
+        							<tr *ngFor="let sem6 of sem6">
+                                        <td width="75" >{{sem6.grupo}}</td>
+                                        <td width="200">{{sem6.materia}}{{sem6.codigo}}{{sem6.facilitador}}</td>
+                                        <td width="80" >{{sem6.lunes}}{{sem6.salonl}}</td>
+                                        <td width="80" >{{sem6.martes}}{{sem6.salonma}}</td>
+                                        <td width="83" >{{sem6.miercoles}}{{sem6.salonmi}}</td>
+                                        <td width="80" >{{sem6.jueves}}{{sem6.salonj}}</td>
+                                        <td width="80" >{{sem6.viernes}}{{sem6.salonv}}</td>
+                                        <td width="80" >{{sem6.sabado}}{{sem6.salons}}</td>
+                                    </tr>
                   				</tbody>
                   			</table>
         					</div>
 
 
-        					<div id="semestre8" class="semestresdiv">
-        						<table class="table table-hover" id="dev-table">
-        						<tbody id="tablecontent">
-        							<tr>
-				                        <td class="small_center" width="50" > <p class="tgrupo"> 8M </p>  </td>
-				                        <td class="small_center" > <p class="tmateria">ADMINISTRACION REDES</p> CO1001 <br> VILLARREAL REYES ELIZABETH SORAYA </td>                       
-				                        <td class="small_center"> 17:00 - 18:00<br>EE10 </td>
-				                        <td class="small_center"> 17:00 - 18:00<br>EE10 </td>
-				                        <td class="small_center"> 17:00 - 18:00<br>EE10 </td>
-				                        <td class="small_center"> 17:00 - 18:00<br>EE10 </td>
-				                        <td class="small_center"> 17:00 - 18:00<br>EE10 </td>
-				                        <td></td>
-				                    </tr>
+        					<div id="semestre7GC" class="semestresdivGC">
+        						<table class="table table-hover" id="dev-tableGC">
+        						<tbody id="tablecontentGC">
+        							<tr *ngFor="let sem7 of sem7">
+                                        <td width="75" >{{sem7.grupo}}</td>
+                                        <td width="200">{{sem7.materia}}{{sem7.codigo}}{{sem7.facilitador}}</td>
+                                        <td width="80" >{{sem7.lunes}}{{sem7.salonl}}</td>
+                                        <td width="80" >{{sem7.martes}}{{sem7.salonma}}</td>
+                                        <td width="83" >{{sem7.miercoles}}{{sem7.salonmi}}</td>
+                                        <td width="80" >{{sem7.jueves}}{{sem7.salonj}}</td>
+                                        <td width="80" >{{sem7.viernes}}{{sem7.salonv}}</td>
+                                        <td width="80" >{{sem7.sabado}}{{sem7.salons}}</td>
+                                    </tr>
                   				</tbody>
                   			</table>
         					</div>
 
-        					<div id="semestre9" class="semestresdiv">
-        						<table class="table table-hover" id="dev-table">
-        						<tbody id="tablecontent">
-        							<tr>
-				                        <td class="small_center" width="50" > <p class="tgrupo"> 9M </p>  </td>
-				                        <td class="small_center" > <p class="tmateria">INTELIGENCIA ART.</p> CO1001 <br> VILLARREAL REYES ELIZABETH SORAYA </td>                       
-				                        <td class="small_center"> 17:00 - 18:00<br>EE10 </td>
-				                        <td class="small_center"> 17:00 - 18:00<br>EE10 </td>
-				                        <td class="small_center"> 17:00 - 18:00<br>EE10 </td>
-				                        <td class="small_center"> 17:00 - 18:00<br>EE10 </td>
-				                        <td class="small_center"> 17:00 - 18:00<br>EE10 </td>
-				                        <td></td>
-				                    </tr>
+
+        					<div id="semestre8GC" class="semestresdivGC">
+        						<table class="table table-hover" id="dev-tableGC">
+        						<tbody id="tablecontentGC">
+        							<tr *ngFor="let sem8 of sem8">
+                                        <td width="75" >{{sem8.grupo}}</td>
+                                        <td width="200">{{sem8.materia}}{{sem8.codigo}}{{sem8.facilitador}}</td>
+                                        <td width="80" >{{sem8.lunes}}{{sem8.salonl}}</td>
+                                        <td width="80" >{{sem8.martes}}{{sem8.salonma}}</td>
+                                        <td width="83" >{{sem8.miercoles}}{{sem8.salonmi}}</td>
+                                        <td width="80" >{{sem8.jueves}}{{sem8.salonj}}</td>
+                                        <td width="80" >{{sem8.viernes}}{{sem8.salonv}}</td>
+                                        <td width="80" >{{sem8.sabado}}{{sem8.salons}}</td>
+                                    </tr>
+                  				</tbody>
+                  			</table>
+        					</div>
+
+        					<div id="semestre9GC" class="semestresdivGC">
+        						<table class="table table-hover" id="dev-tableGC">
+        						<tbody id="tablecontentGC">
+        							<tr *ngFor="let sem9 of sem9">
+                                        <td width="75" >{{sem9.grupo}}</td>
+                                        <td width="200">{{sem9.materia}}{{sem9.codigo}}{{sem9.facilitador}}</td>
+                                        <td width="80" >{{sem9.lunes}}{{sem9.salonl}}</td>
+                                        <td width="80" >{{sem9.martes}}{{sem9.salonma}}</td>
+                                        <td width="83" >{{sem9.miercoles}}{{sem9.salonmi}}</td>
+                                        <td width="80" >{{sem9.jueves}}{{sem9.salonj}}</td>
+                                        <td width="80" >{{sem9.viernes}}{{sem9.salonv}}</td>
+                                        <td width="80" >{{sem9.sabado}}{{sem9.salons}}</td>
+                                    </tr>
                   				</tbody>
                   			</table>
         					</div>
 
         			</table>
+
+                    <!-- fin de la tabla que contiene los titulos y la informacion -->
         			</div>
         		</div>
         </div>
      </div>
-    </div>
+   </div>
 </div>
