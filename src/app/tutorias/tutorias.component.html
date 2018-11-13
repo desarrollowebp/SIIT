@@ -1,117 +1,86 @@
 <div class="container">
-  <h2 class="tuto">Tutor: Alexander Anderson Huerta</h2>
 
-  <div class="menu">
-  <div class="contenedor">
-    <div class="meniu">
-      <h3>Datos del alumno</h3>
-      <ul>
-        <li class="submeniu" id="control">
-          <p id="titulo">No. Control S.E.P </p>
-          <p>14041413</p>
-        </li>
-        <li class="submeniu">
-          <p id="titulo">Nombre Alumno</p>
-          <p>Valenzuela Valdez Alma T. </p>
-        </li>
-        <li class="submeniu" id="control">
-          <p id="titulo">Periodo Esocolar </p>
-          <p>Ago-Dic 2018</p>
-        </li>
-
-        <li class="submeniu">
-          <p id="titulo">Promedio</p>
-          <p>100.00</p>
-        </li>
+<!--=========Datos Alumno==========---------->
+<app-datos-tabla-alumno></app-datos-tabla-alumno>
+<!--=========Termina Datos Alumno==========---------->
 
 
-      </ul><br>
-
-
-      <ul>
-        <li class="submeniu">
-          <p id="titulo"> Carrera</p>
-          <p>TIC's</p>
-        </li>
-        <li class="submeniu">
-          <p id="titulo"> Especialidad</p>
-          <p>Tecnologías web</p>
-        </li>
-        <li class="submeniu">
-          <p id="titulo"> CURP</p>
-          <p>VAVADGO961584282DD2D</p>
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
   
-  <ul>
+<!--=========Comienza tabla de lista de actividades==========---------->  
+
+  <ul *ngFor="let tutorias of tutorias">
+    <h2 class="tuto">{{tutorias.dato}} : {{tutorias.nombre}}</h2>
     <li>
-      <div class="title">Actividad 1</div><input type="checkbox" name="" disabled checked >Realizado
+      <div class="title">{{tutorias.act1}}</div><input type="checkbox" name="" disabled checked>Realizado
     </li>
     <li>
-      <div class="title">Actividad 2</div><input type="checkbox" name="" disabled checked>Realizado
+      <div class="title">{{tutorias.act2}}</div><input type="checkbox" name="" disabled checked>Realizado
     </li>
     <li>
-      <div class="title">Actividad 3</div><input type="checkbox" name="" disabled checked>Realizado
+      <div class="title">{{tutorias.act3}}</div><input type="checkbox" name="" disabled checked>Realizado
     </li>
     <li>
-      <div class="title">Actividad 4</div><input type="checkbox" name="" disabled checked>Realizado
+      <div class="title">{{tutorias.act4}}</div><input type="checkbox" name="" disabled checked>Realizado
     </li>
     <li>
-      <div class="title">Actividad 5</div><input type="checkbox" name="" disabled checked>Realizado
+      <div class="title">{{tutorias.act5}}</div><input type="checkbox" name="" disabled checked>Realizado
     </li>
     <li>
-      <div class="title">Actividad 6</div><input type="checkbox" name="" disabled checked>Realizado
+      <div class="title">{{tutorias.act6}}</div><input type="checkbox" name="" disabled checked>Realizado
     </li>
     <li>
-      <div class="title">Actividad 7</div><input type="checkbox" name="" disabled checked>Realizado
+      <div class="title">{{tutorias.act7}}</div><input type="checkbox" name="" disabled checked>Realizado
     </li>
     <li>
-      <div class="title">Actividad 8</div><input type="checkbox" name="" disabled checked>Realizado
+      <div class="title">{{tutorias.act8}}</div><input type="checkbox" name="" disabled checked>Realizado
     </li>
     <li>
-      <div class="title">Actividad 9</div><input type="checkbox" name="" disabled checked>Realizado
+      <div class="title">{{tutorias.act9}}</div><input type="checkbox" name="" disabled checked>Realizado
     </li>
     <li>
-      <div class="title">Actividad10</div><input type="checkbox" name="" disabled checked>Realizado
+      <div class="title">{{tutorias.act10}}</div><input type="checkbox" name="" disabled checked>Realizado
+    </li>
+    <li >
+      <div class="title">{{tutorias.act11}}</div><input type="checkbox" name="" disabled checked>Realizado
     </li>
     <li>
-      <div class="title">Actividad11</div><input type="checkbox" name="" disabled checked>Realizado
+      <div class="title">{{tutorias.act12}}</div><input type="checkbox" name="" disabled checked>Realizado
     </li>
     <li>
-      <div class="title">Actividad 12</div><input type="checkbox" name="" disabled checked>Realizado
+      <div class="title">{{tutorias.act13}}</div><input type="checkbox" name="" disabled checked>Realizado
     </li>
     <li>
-      <div class="title">Actividad 13</div><input type="checkbox" name="" disabled>Realizado
+      <div class="title">{{tutorias.act14}}</div><input type="checkbox" name="" disabled checked>Realizado
     </li>
     <li>
-      <div class="title">Actividad 14</div><input type="checkbox" name="" disabled>Realizado
+      <div class="title">{{tutorias.act15}}</div><input type="checkbox" name="" disabled checked>Realizado
     </li>
     <li>
-      <div class="title">Actividad 15</div><input type="checkbox" name="" disabled>Realizado
+      <div class="title">{{tutorias.act16}}</div><input type="checkbox" name="" disabled checked>Realizado
     </li>
     <li>
-      <div class="title">Actividad 16</div><input type="checkbox" name="" disabled>Realizado
+      <div class="title">{{tutorias.act17}}</div><input type="checkbox" name="" disabled checked>Realizado
     </li>
     <li>
-      <div class="title">Actividad17</div><input type="checkbox" name="" disabled>Realizado
+      <div class="title">{{tutorias.act18}}</div><input type="checkbox" name="" disabled checked>Realizado
     </li>
     <li>
-      <div class="title">Actividad18</div><input type="checkbox" name="" disabled>Realizado
+      <div class="title">{{tutorias.act19}}</div><input type="checkbox" name="" disabled checked>Realizado
     </li>
     <li>
-      <div class="title">Actividad19</div><input type="checkbox" name="" disabled>Realizado
-    </li>
-    <li>
-      <div class="title">Actividad20</div><input type="checkbox" name="" disabled>Realizado
+      <div class="title">{{tutorias.act20}}</div><input type="checkbox" name="" disabled checked>Realizado
     </li>
   </ul>
-  <div class="lab">
-    <h4>Avance de actividades</h4>
-      <div class="progress-bar bg-info" id="progreso" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"> <label id="lblporcentaje">0%</label></div>
 
+  <!--=========Termina tabla de lista de actividades==========----------> 
+
+  <!--=========Progress Bar que mostrara el porcentaje de actividades realizadas segun checbox marcados==========----------> 
+
+  <div class="lab" *ngFor="let avance of avance">
+    <h4>{{avance.dato}}</h4>
+    <div class="progress-bar bg-info" id="progreso" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"> <label id="lblporcentaje">0%</label></div>
     <div class="ready"></div>
   </div>
+
+<!--=========Termina Progress Bar==========----------> 
 </div>
