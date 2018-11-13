@@ -1,183 +1,183 @@
 <body>
-
-  <!--desde aqui puedes copiar-->
+<!--Inicia modulo Para imprimir ficha-->
   <div class="container-fluid text-center ">
+  <!--Inicia Contenido Para el Alumno-->
     <div class="row content">
       <div class="col-lg-2 col-md-2 col-sm-1 col-xs-0">
       </div>
       <div class="col-lg-8 col-md-8 col-sm-9 col-xs-12 text-left ">
+      <!--inicia Contenido de despliegue de informacion-->
         
-        <div class="principal col-lg-12 col-md-12 col-sm-12 col-xs-12">
-          <li class="texto panel-default " id="dropdown">
-            <a class="alumno">Instrucciones:</a>
-          </li>
-        </div>
-
-          <div class="accordionbox">
-
-    
-
-    <div>
-      <input id="tab" name="myaccordion" type="checkbox" />
-      <label for="tab">Lea cuidadosamente antes de proceder</label>
-      <div class="insidebox">
-        <div class=" local panel-body">
-          <li>1- Habilitar las ventanas emergentes de tu navegador</li>
-          <li>2- Presiona el Icono de Continuar para poder Imprimir la Ficha de Depósito.</li>
-          <li>3- Imprime y acude a cualquier sucursal de los siguintes Bancos: Scotiabank o Banamex donde podras realizar tu pagó.</li>
-          <li>4- Es muy importante verificar su monto a pagar, Si existiera algún problema acude al Centro de Cómputo.</li>
-        </div>
-      </div>
-    </div>
-
-    
-  </div>
-  
-<!--desde aqui para arriba puedes copiar cambiar css    clases que debes usar texto2,bod,alumnos2,alumno principal-->
-
-<!--Inicia contenido de informacion para el alumno-->
-      <div class="acomodo col-lg-12 col-md-12 col-sm-12 col-xs-12 panel-primary " id="tablacontenedor" align="center">
-      
+        <div class="accordionbox">
+          <div>
+            <input id="tab" name="myaccordion" type="checkbox" />
+            <label for="tab"><strong>Lea cuidadosamente antes de proceder</strong></label>
+            <div class="insidebox">
+              <div class=" local panel-body">
+                <li class="inf_jyr">1- Habilitar las ventanas emergentes de tu  navegador</li>
+                <li class="inf_jyr">2- Presiona el Icono de Continuar para poder Imprimir la Ficha de Depósito.</li>
+                <li class="inf_jyr">3- Imprime y acude a cualquier sucursal de los siguintes Bancos: Scotiabank o Banamex donde podras realizar tu pagó.</li>
+                <li class="inf_jyr">4- Es muy importante verificar su monto a pagar, Si existiera algún problema acude al Centro de Cómputo.</li>
+              </div>
             </div>
-
-        <table class=" bod"  border="2" style="margin: 0 auto;" >
-      <thead class="back">
-      <tr>
-        <th colspan="4">
-          <h5 align="center">FICHA DE PAGO
-           AGOSTO-DICIEMBRE/2018</h5>
-        
-        </th>
-      </tr>
-    </thead>
-          <thead>
+          </div>
+        </div>
+      <!--Finaliza Contenido de despliegue de informacion-->
+      <!--Inicia contenido de informacion para el alumno-->
+        <div class="acomodo_jyr col-lg-12 col-md-12 col-sm-12 col-xs-12 panel-primary " id="tablacontenedor" align="center">
+        </div>
+        <table  style="margin: 0 auto;" >
+          <thead class="back">
             <tr>
-              <th class="tab">Importe a pagar:</th>
-              <td class="tab" bgcolor="#ccc"> <b><i>2450.00</i></b>.</td>
+              <th colspan="4">
+                <h5 align="center"><strong>FICHA DE PAGO AGOSTO-DICIEMBRE/2018</strong></h5>
+              </th>
             </tr>
           </thead>
-          <tbody>
-            <tr>
-              <th class="tab">Semestre:</th>
-              <td class="tab">9</td>
+         <tbody>
+         	<thead >
+            <tr *ngFor="let importe of importe">
+              <th class="tab1_jyr">{{importe.dato}}</th>
+              <td class="tab1_jyr" bgcolor="#ccc"> <b><i>{{importe.importe}}</i></b>.</td>
             </tr>
-            <tr>
-              <th class="tab">Número de control:</th>
-              <td class="tab"><i>14041243</i></td>
+         
+        
+            <tr *ngFor="let semes of semes">
+              <th class="tab1_jyr">{{semes.dato}}</th>
+              <td class="tab1_jyr">{{semes.semest}}</td>
             </tr>
-            <tr>
-              <th class="tab">Alumno:</th>
-              <td class="tab">Alejandro Marrufo Quintana
+            <tr *ngFor="let numero of numero">
+              <th class="tab1_jyr">{{numero.dato}}</th>
+              <td class="tab1_jyr"><i>{{numero.numerocontrol}}</i></td>
+            </tr>
+            <tr *ngFor="let alumno of alumno">
+              <th class="tab1_jyr">{{alumno.dato}}</th>
+              <td class="tab1_jyr">{{alumno.nombre}}
               </td>
             </tr>
-            <tr>
-              <th class="tab">Carrera:</th>
-              <td class="tab">Ingenieria en Sistemas Computacionales
-              </td>
+            <tr *ngFor="let carrera of carrera">
+              <th class="tab1_jyr">{{carrera.dato}}</th>
+              <td class="tab1_jyr">{{carrera.carre}}</td>
             </tr>
-          </tbody>
+            </thead>
+      </tbody>
         </table>
-        
-        
+      <!--Finaliza contenido de informacion para el alumno-->
       </div>
-<!--Finaliza contenido de informacion para el alumno-->
     </div>
-
-
+  <!--Finaliza Contenido Para el Alumno-->
   </div>
-<!--Boton para mostrar ficha de pago-->
-  <div class="acomodo padre">
+  <div class="acomodo_jyr father">
+  <!--Inicio Boton para mostrar ficha de pago-->
     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Mostrar Ficha de pago
     </button>
+  <!--Termina Boton para mostrar ficha de pago-->
   </div>
-
-
-
-
-
-
-
-<!--Termina Boton para mostrar ficha de pago-->
-
-<!-- Iniciar Modal Para la Impresion de ficha de pago-->
   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <!-- Inicia Modal Para la Impresion de ficha de pago-->
     <div class="modal-dialog" role="document">
       <div class="modal-content">
-        <div class="padre acomodo"style="text-align: center; font-size: 30px;">INSTITUTO TECNOLOGICO DE DURANGO</div>
-        <div class="padre">
-          <div class="titulo acomodo col-lg-8 col-md-12 col-sm-12 col-xs-12 ">DEPARTAMENTO DE RECURSOS FINANCIEROS
-          </div>
+        <div class="father acomodo_jyr"style="text-align: center; font-size: 30px;">INSTITUTO TECNOLOGICO DE DURANGO
+        </div><!--Titulo para impresion-->
+        <div class="father">
+          <div class=" new col-lg-8 col-md-12 col-sm-12 col-xs-12 ">DEPARTAMENTO DE RECURSOS FINANCIEROS
+          </div><!--Titulo para impresion-->
         </div> 
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-          <div class="titulo acomodo">Ficha de Depósito</div>
-          <table  border="2" style="margin: 0 auto;">
+        <!--Inicia Tabla para mostrar informacion de pago-->
+          
+
+
+          <table  border="1" style="margin: 0 auto;">
+          	 <thead class="back">
+            <tr>
+              <th colspan="4">
+                <h5 align="center"><strong>FICHA DE DEPOSITO</strong></h5>
+              </th>
+            </tr>
+          </thead>
             <tbody>
-              
-              <tr>
-                <td><h2 class="stiltab">No. de Control:</h2>
+			
+              <tr *ngFor="let numero of numero">
+                <td><h2 class=" stiltab_jyr"><strong>{{numero.dato}}</strong></h2>
                 </td>
-                <td><h2 class="stiltab">14040428</h2>
-                </td>
-              </tr>
-              <tr>
-                <td><h2 class="stiltab">Nombre:</h2>
-                </td>
-                <td><h2 class="stiltab">ABREGO SALMERON RICARDO</h2>
+                <td><h2 class="stiltab_jyr">{{numero.numerocontrol}}</h2>
                 </td>
               </tr>
-              <tr>
-                <td><h2 class="stiltab">Concepto:</h2>
-                </td>
-                <td><h2 class="stiltab">Inscripción Reingreso</h2>
-                </td>
-              </tr>
-              <tr>
-                <td><h2 class="stiltab">Monto a pagar:</h2>
-                </td>
-                <td><h2 class="stiltab">2350.00</h2>
+              <tr *ngFor="let alumno of alumno">
+                <td><h2 class="  stiltab_jyr"><strong> {{alumno.dato}}</strong></h2></td>
+               
+                <td><h2 class=" stiltab_jyr">{{alumno.nombre}}</h2>
                 </td>
               </tr>
-              <tr>
-                <td><h2 class="stiltab">Periodo:</h2>
+              <tr *ngFor="let consep of consep">
+                <td><h2 class="  stiltab_jyr"><strong> {{consep.dato}}</strong></h2>
                 </td>
-                <td><h2 class="stiltab">AGOSTO-DICIEMBRE/2018</h2>
+                <td><h2 class=" stiltab_jyr">{{consep.reinc}}</h2>
+                </td>
+              </tr>
+              <tr *ngFor="let importe of importe">
+                <td><h2 class="  stiltab_jyr"><strong> {{importe.dato}}</strong></h2>
+                </td>
+                <td><h2 class=" stiltab_jyr">{{importe.importe}}</h2>
+                </td>
+              </tr>
+              <tr *ngFor="let fecha of  fecha">
+                <td><h2 class="  stiltab_jyr"><strong>{{fecha.dato}}</strong></h2>
+                </td>
+                <td><h2 class=" stiltab_jyr">{{fecha.dia}}</h2>
                 </td>
               </tr>
             </tbody>
           </table>
+        <!--Termina Tabla para mostrar informacion de pago-->
         </div>
         
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-          <div class="titulo acomodo">BANAMEX</div>
-          <table border="2" style="margin: 0 auto;">
+
+
+        <div class=" esp col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <!--Inicia Tabla para mostrar informacion para el banco-->
+          
+          <table border="1" style="margin: 0 auto;">
+          	 <thead class="back">
+            
+              <th colspan="4">
+                <h5 align="center"><strong>BANAMEX</strong></h5>
+              </th>
+            
+          </thead>
             <tbody>
               <tr>
-                <td><strong class="stiltab">Sucursal-Cuenta: </strong></td>
-                <td class="stiltab">7000-7909274</td>
+                <td><strong class="stiltab_jyr">Sucursal-Cuenta: </strong></td>
+                <td class="stiltab_jyr">7000-7909274</td>
               </tr>
               <tr>
-                <td><strong class="stiltab">Referencia Alfanumerica:</strong></td>
-                <td class="stiltab">N14040428</td>
+                <td><strong class="stiltab_jyr">Referencia Alfanumerica:</strong></td>
+                <td class="stiltab_jyr">N14040428</td>
               </tr>
               <tr>
-                <td><strong class="stiltab">Monto a pagar:</strong></td>
-                <td class="stiltab">2350.00</td>
+                <td><strong class="stiltab_jyr">Monto a pagar:</strong></td>
+                <td class="stiltab_jyr">2350.00</td>
               </tr>
               <tr>
-                <td><strong class="stiltab">Fecha de Vencimiento:</strong></td>
-                <td class="stiltab">31 de Diciembre de 2018</td>
+                <td><strong class="stiltab_jyr">Fecha de Vencimiento:</strong></td>
+                <td class="stiltab_jyr">31 de Diciembre de 2018</td>
               </tr>
             </tbody>
           </table>
+        <!--Termina Tabla para mostrar informacion para el banco-->
         </div>
-        <div class="acomodo padre">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Regresar</button>
+        <div class="acomodo_jyr father">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Regresar
+          </button><!--Boton Para regresar a la principal-->
           <button class="btnprint">
             <span class="print icon-print " onclick="window.print()"></span>
-          </button>
+          </button><!--Boton Para imprimir ficha-->
         </div>
         <div>Hora fecha y lugar de la impresion</div>
       </div>
     </div>
+  <!-- Finaliza Modal Para la Impresion de ficha de pago-->
   </div>
+<!--Inicia modulo Para imprimir ficha-->
 </body>
