@@ -19,6 +19,8 @@ img{
     margin-left: 36%;
     margin-top: 5%;
     width: auto;
+    border:none;
+    
     
   
 }
@@ -135,9 +137,18 @@ img{
       }
       .containerinicio{
           width: 1000px;
-      }
+          
+          padding-right: 15px;
+          padding-left: 15px;
+        margin-left: 17%;
+          padding-top: 15px;
+        }
+      
       .btninicio {
           margin-top: 1%;
 		margin-left: 45%;
-		font-size: 15px;	}
+        font-size: 15px;
+        width: 15%;
+    }
   }
+
