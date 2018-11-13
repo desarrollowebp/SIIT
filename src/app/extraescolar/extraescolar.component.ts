@@ -9,13 +9,22 @@ import * as $ from 'jquery';
 export class ExtraescolarComponent implements OnInit {
 
 
-  objetoActual = function(gru) {
+  objetoActual = function (gru) {
     console.log(gru);
     this.extraseleccionada = {
       periodo: gru.periodo, nombre: gru.nombre, grupo: gru.grupo,
-      promotor: gru.promotor, hInicial: gru.hInicial, hFinal: gru.hFinal, dias: gru.dias
+      promotor: gru.promotor, hInicial: gru.hInicial, hFinal: gru.hFinal,
+      dias: gru.dias
     };
+
+
+
   }
+
+  actividadesCulturales = [];
+  actividadesDeportivas = [];
+
+
 
   datosmodal = "";
   extraseleccionada = {
@@ -28,44 +37,44 @@ export class ExtraescolarComponent implements OnInit {
     dias: ""
   }
 
-  modals = "modal";
+  modals = "modalExtraescolar";
   constructor() {
-    this.modals = "modal";
+    this.modals = "modalExtraescolar";
   }
   func($var) {
-    this.modals = "visibleNo";
+    this.modals = "visibleNoExtraescolar";
     this.datosmodal = "";
   }
   funcp($var) {
-    this.modals = "visibleNo";
+    this.modals = "visibleNoExtraescolar";
     this.datosmodal = $var;
   }
   cerrar() {
-    this.modals = "modal";
+    this.modals = "modalExtraescolar";
 
   }
-
-
 
   ngOnInit() {
-
-    $(".submenu").click(function() {
-      $(this).children("ul").slideToggle();
-    }
-    )
-
-    $("ul").click(function(p) {
-      p.stopPropagation();
-    })
-
-    if ($(window).width() > 720) {
-      $(".submenu").children("ul").show();
-    }
-    else {
-    }
+    ///metoro para regresar arriba
+    $(function(){
+      $(".botonModal").click(function(e){
+          e.preventDefault();
+          $("html, body").animate({"scrollTop": "0px"}, 600);
+      })
+  });
+/////
 
 
   }
+
+  actividades = [
+    this.actividadesCulturales = [{
+      bailes: [], musicales: [], civicas: [], dts: [], visuales: []
+    }],
+    this.actividadesDeportivas = [{ pelotas: [], fisicas: [], nataciones: [], aeas: [] }]
+  ]
+
+
 
   bailes = [
     'Ballet Tahitiano', 'Bellydance Fusión', 'Break Dance', 'Danza Aérea',
@@ -75,7 +84,7 @@ export class ExtraescolarComponent implements OnInit {
   ]
 
   musicales = [
-    'Orquesta Filarmónica', 'Orquesta Sinfónica', 'Rondalla', 'Rondalla Femeni', 'Rondalla Varonil',
+    'Orquesta Filarmónica', 'Orquesta Sinfónica', 'Rondalla', 'Rondalla Femenil', 'Rondalla Varonil',
     'Rondalla Y Taller De Guitarra', 'Taller Guitarra Popular', 'Coro De Cámara',
   ]
 
@@ -92,7 +101,8 @@ export class ExtraescolarComponent implements OnInit {
   ]
 
   pelotas = [
-    'Balón Mano', 'Balón Mano Femenil', 'Basquetbol Femenil', 'Basquetbol Varonil', 'Beisbol', 'Frontón A Mano',
+    'Balón Mano', 'Balón Mano Femenil', 'Basquetbol Femenil',
+    'Basquetbol Varonil', 'Beisbol', 'Frontón A Mano',
     'Fútbol Americano', 'Fútbol Rapido', 'Fútbol Rápido Femenil', 'Fútbol Soccer Varonil',
     'Hand Ball', 'Hockey Sobre Pasto', 'Ping Pong De Mesa', 'Softbol', 'Tenis', 'Tenis De Mesa',
     'Tochito', 'Tochito Femenil', 'Voleibol De Playa', 'Voleibol De Playa Femenil',
@@ -115,14 +125,25 @@ export class ExtraescolarComponent implements OnInit {
   ]
 
 
+  maestros = [
+    {
+      periodo: '20183',
+      grupo: 'RL',
+      promotor: 'GALINDO ZALDIVAR M.V. ISAAC ALEJANDRO',
+      hInicial: '13:00',
+      hFinal: '14:00',
+      dias: 'L,MA,MI,J',
+      lugares: '20'
+    },
 
-
-  gruposDisponibles = [
-    { periodo: '20183', nombre: 'Ajedrez', grupo: 'RL', promotor: 'GALINDO ZALDIVAR M.V. ISAAC ALEJANDRO', hInicial: '13:00', hFinal: '14:00', dias: 'L,MA,MI,J', lugares: '20' },
-    { periodo: '20183', nombre: 'Ajedrez', grupo: '1B', promotor: 'GARCIA GARCIA JOSE ANTONIO', hInicial: '11:00', hFinal: '12:00', dias: 'L,MA,MI,J', lugares: '15' },
+    {
+      periodo: '20183',
+      grupo: '1B',
+      promotor: 'GARCIA GARCIA JOSE ANTONIO',
+      hInicial: '11:00',
+      hFinal: '12:00',
+      dias: 'L,MA,MI,J',
+      lugares: '15'
+    },
   ]
-
-
-
-
 }
