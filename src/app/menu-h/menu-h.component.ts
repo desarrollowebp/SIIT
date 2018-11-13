@@ -13,7 +13,7 @@ export class MenuHComponent implements OnInit {
 
 
   ngOnInit() {
-    
+
   }
 
 }
