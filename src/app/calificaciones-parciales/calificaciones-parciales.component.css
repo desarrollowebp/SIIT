@@ -23,7 +23,7 @@ h2,
   display: none
 }
 
-.table {
+.tablecp {
   width: 100%;
   border-collapse: separate;
   border-spacing: 0px;
@@ -52,7 +52,7 @@ th {
 
 @media all and (max-width:500px) {
 
-  .table,
+  .tablecp,
   thead,
   tbody,
   th,
@@ -70,11 +70,14 @@ th {
   h2{
     font-size: 12px;
   }
+  .containercp{
+    width: 1000px;
+  }
 }
 
 
 
-#table th {
+#tablecp th {
   background: #70193f;
   color: white;
   font-weight: bold;
