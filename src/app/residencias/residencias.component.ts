@@ -6,12 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./residencias.component.css']
 })
 export class ResidenciasComponent implements OnInit {
-  residencia={folio:"INN",nocrtl:"14041418",nombreAlumno:"Kate Bonilla",
-carrera:"Ing. Informatica", seguimiento1:"Entregado",seguimiento2:"Entregado",seguimiento3:"Entregado",
-nombreProyecto:"Sistema de administracion",
-empresa:"SEED",asesorInt:"Gustavo Higareda",asesorExt:"Armando Ramirez",dictamen:"Aceptado",
- portadaAnt:"Entregado", asesorInt2:"Armando Leonel",
-reporteFinal:"Entregado",revFinal:"Entregado"};
+  residencia={folio:"INN",nocrtl:"14041418",nombreAlumno:"KATE VALERIA BONILLA RAMIREZ",
+carrera:"ING. INFORMATICA", seguimiento1:"ENTREGADO",seguimiento2:"ENTREGADO",seguimiento3:"ENTREGADO",
+nombreProyecto:"SISTEMA DE ADMINISTRACION",
+empresa:"SEED",asesorInt:"GUSTAVO HIGAREDA SOTO",asesorExt:"ARMANDO LEONEL NEVAREZ RAMIREZ",
+dictamen:"ACEPTADO",
+ portadaAnt:"ENTREGADO", asesorInt2:"ENTREGADO",
+reporteFinal:"ENTREGADO",revFinal:"ENTREGADO"};
   
   constructor() { }
 
