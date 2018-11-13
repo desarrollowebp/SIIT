@@ -1,4 +1,10 @@
-.menu ul {
+
+  
+  
+  
+ 
+  
+  .menu ul {
     background: white;
     text-decoration: none;
     list-style: none;
@@ -59,10 +65,7 @@
       font-size: 15px;
     }
   
-    h2,
-    .h2 {
-      font-size: 2rem;
-    }
+  
   }
   
   .contenedor {
@@ -73,11 +76,12 @@
   }
   
   @media (min-width:100px) {
+    
     .contenedor {
       width: 70%;
       min-width: 100%;
       max-width: 100%;
-      background: #70193f;
+      background:#70193f;
       font-size: 15px;
     }
   
@@ -87,7 +91,7 @@
       height: 40%;
     
     }
-
+  
     .meniu ul {
     
       margin: 0 auto;
@@ -95,12 +99,13 @@
       background: white;
      padding-left: 5px;
     }
+    
   }
   
   h3 {
     display: block;
-    font-size: 1.2em;
-    margin-block-start: 0.83em;
+    font-size: 18px;
+    margin-block-start:0.83em;
     margin-block-end: 0.83em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
@@ -110,18 +115,10 @@
     color: white;
   }
   
-  p {
-    width: auto;
-  }
   
-
-  #wrapper {
-    padding: 90px 15px;
-  }
   
-
-
-
+  
+  
   .meniu {
     margin: 0 auto;
     width: 100%;
@@ -144,7 +141,7 @@
     padding: 1px;
     width: 33%;
     color: black;
- 
+  
   }
   
   .submeniu ul li {
@@ -159,3 +156,8 @@
     font-weight: bold;
   }
   
+  @media (max-width:1000px){
+    h3{
+      font-size: 12px;
+    }
+  }
