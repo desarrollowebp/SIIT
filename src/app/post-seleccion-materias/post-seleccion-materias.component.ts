@@ -10,7 +10,7 @@ export class PostSeleccionMateriasComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    $(".submenu").click(function() {
+    $(".submenuPostSeleccion").click(function() {
       $(this).children("ul").slideToggle();
 
     }
