@@ -1,4 +1,4 @@
-.menu ul {
+.menuverificacionbeca  ul {
   background: white;
   text-decoration: none;
   list-style: none;
@@ -7,14 +7,14 @@
   width: 70%;
 }
 @media(min-width:780px) {
-  .menu {
+  .menuverificacionbeca {
     width: 1000px;
     height: 80%;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
   }
-  .menu ul {
+  .menuverificacionbeca ul {
     display: flex;
   }
 
@@ -24,7 +24,7 @@
     font-size: 2rem;
   }
 }
-.contenedor {
+.contenedorverificacionbeca {
   width: 800px;
   background: #70193f;
 font-size: 9px;
@@ -32,24 +32,24 @@ font-size: 9px;
 }
 
 @media (min-width:100px) {
-  .contenedor {
+  .contenedorverificacionbeca {
     width: 70%;
     min-width: 100%;
     max-width: 100%;
     background: #70193f;
     font-size: 5px;
   }
-  .menu[_ngcontent-c2] ul[_ngcontent-c2] li[_ngcontent-c2] p[_ngcontent-c2] {
+  .menuverificacionbeca [_ngcontent-c2] ul[_ngcontent-c2] li[_ngcontent-c2] p[_ngcontent-c2] {
     font-size: 11px;
 }
-  .meniu {
+  .meniuverificacionbeca  {
     margin: 0 auto;
     width: 100%;
     height: 40%;
   
   }
 
-  .meniu ul {
+  .meniuverificacionbeca  ul {
   
     margin: 0 auto;
     width: 100%;
@@ -71,14 +71,14 @@ h3 {
   color: white;
 }
 
-.meniu {
+.meniuverificacionbeca  {
   margin: 0 auto;
   width: 100%;
   height: 40%;
   background: white;
 }
 
-.meniu ul {
+.meniuverificacionbeca  ul {
   
   justify-content: center;
   text-align: center;
@@ -88,7 +88,7 @@ h3 {
   flex-wrap: nowrap;
   text-decoration: none;
 }
-.cajatexto {
+.cajatextoverificacionbeca  {
   -webkit-appearance: menulist;
   box-sizing: border-box;
 
@@ -105,7 +105,7 @@ h3 {
   align-content: center;
   font-size: 10px;
 }
-.menu[_ngcontent-c2] ul[_ngcontent-c2] {
+.menuverificacionbeca [_ngcontent-c2] ul[_ngcontent-c2] {
   background: white;
   text-decoration: none;
   list-style: none;
@@ -113,7 +113,7 @@ h3 {
   margin: 0px auto;
   width: 70%;
 }
-.boton{
+.botonverificacionbeca {
   font-size: 12px;
   font-family: Arial, sans-serif,Helvetica;
   font-weight: bold;
@@ -128,7 +128,7 @@ h3 {
   border-right-width: 2px;
  }
  
- .curptext {
+ .curptextverificacionbeca  {
    margin: 0;
    padding: 0;
    font-size: 10px;
@@ -137,20 +137,20 @@ h3 {
    box-sizing: border-box;
    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
  }
-.meniu ul li {
+.meniuverificacionbeca  ul li {
   padding: 1px;
   width: 33%;
   color: black;
 
 }
 
-.submeniu ul li {
+.submeniuverificacionbeca  ul li {
   width: 100%;
   background: white;
   
 }
 
-.submeniu #titulo {
+.submeniuverificacionbeca  #titulo {
   background-color: #70193f;
   color: white;
   font-weight: bold;

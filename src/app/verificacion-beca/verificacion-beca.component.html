@@ -1,59 +1,59 @@
 <section class="registro">
     	
-  <div class="menu">
-   <div class="contenedor">
+  <div class="menuverificacionbeca ">
+   <div class="contenedorverificacionbeca">
        <div class="row">  
-     <div class="meniu">
+     <div class="meniuverificacionbeca ">
        <h3>Verifica el Curp</h3>
        <ul *ngFor="let alumno of alumno">
         
-         <li class="submeniu" id="control">
+         <li class="submeniuverificacionbeca " id="control">
            <p id="titulo">No.control</p>
            <p>{{alumno.numerodecontrol}}</p>
          </li>
-         <li class="submeniu" id="control">
+         <li class="submeniuverificacionbeca " id="control">
            <p id="titulo">Nombre</p>
            <p>{{alumno.nombre}}</p>
          </li>
-         <li class="submeniu" id="control">
+         <li class="submeniuverificacionbeca " id="control">
          <p id="titulo">	Semestre </p>
          <p>{{alumno.semestre}}</p>
        </li>
-       <li class="submeniu" id="control">
+       <li class="submeniuverificacionbeca " id="control">
          <p id="titulo">	Periodo Escolar </p>
          <p>{{alumno.periodoescolar}}</p>
        </li>
-         <li class="submeniu" id="control">
+         <li class="submeniuverificacionbeca " id="control">
            <p id="titulo">Prom.Acum. </p>
            <p>{{alumno.promacum}}</p>
          </li>
        
        </ul>
        <ul *ngFor="let carrera of carrera" >
-         <li class="submeniu" id="control">
+         <li class="submeniuverificacionbeca" id="control">
            <p id="titulo">Carrera </p>
            <p>{{carrera.carrera}}</p>
          </li>
-           <li class="submeniu" id="control">
+           <li class="submeniuverificacionbeca" id="control">
            <p id="titulo">Especialidad </p>
            <p>{{carrera.especialidad}}</p>
            </li>
-         <li class="submeniu" id="control">
+         <li class="submeniuverificacionbeca" id="control">
              <p id="titulo">CURP </p>
              <tr id="non">
                  <td >
-                   <input name ="curp_alumno" type="text" id="curptext" size=""
+                   <input name ="curp_alumno" type="text" id="curptextverificacionbeca" size=""
                     maxlength="18" align="center" value="VEFM941118MDGNLR04"
                      onchange="javascript:this.value=this.value.toUpperCase();">
                  </td>
              </tr>
            </li>
            
-           <li class="submeniu" id="control">
+           <li class="submeniuverificacionbeca" id="control">
              <p id="titulo">PRONABES </p>
              <td>
                  <div align=""> 
-                   <select name="beca" id="cajatexto">
+                   <select name="beca" id="cajatextoverificacionbeca">
 
                      <option value="S"> SI </option>
                      <option value="N" selected> No </option>
@@ -63,11 +63,11 @@
            </li>
        </ul>
        <ul>
-         <li class="submeniu" id="control">
+         <li class="submeniuverificacionbeca" id="control">
         
 
     <div align="center"> 
-        <button boton="" class="boton" data-target="#ejemplo" data-toggle="ejemplo" type="button">  Actualizar </button>
+        <button boton="" class="botonverificacionbeca" data-target="#ejemplo" data-toggle="ejemplo" type="button">  Actualizar </button>
        
         
       </div>
