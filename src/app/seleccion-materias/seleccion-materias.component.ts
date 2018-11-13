@@ -80,7 +80,7 @@ materiaModal="Kevin";
   }
   ngOnInit() {
     this.recuperarSemestre();
-    $(".submenu").click(function() {
+    $(".submenuSeleccionMaterias").click(function() {
       $(this).children("ul").slideToggle();
 
     }
@@ -93,7 +93,7 @@ materiaModal="Kevin";
     if ($(window).width() > 720) {
 
 
-      $(".submenu").children("ul").show();
+      $(".submenuSeleccionMaterias").children("ul").show();
 
 
 

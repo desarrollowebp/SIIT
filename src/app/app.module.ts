@@ -61,7 +61,7 @@ const routes:Routes = [
   { path: 'auditoriaServicio', component: AuditoriaServicioComponent },
   { path: 'postSeleccionMaterias', component:PostSeleccionMateriasComponent},
   { path: 'preSeleccionMaterias', component: PreSeleccionMateriasComponent},
-  { path: 'datosTablaAlumno', component:DatosTablaAlumnoComponent}
+  { path: 'datosTablaAlumno', component:DatosTablaAlumnoComponent},
   { path: 'tablaHorario', component:TablaHorarioComponent}
 ]
 
