@@ -13,21 +13,36 @@
 	position: relative;
 }
 
+.ui-table-wrapper{
+	border: 1px solid #70193f;
+	
+}
+	tr:nth-last-child(even){
+		background-color:#eee; 
+	}
+	tr:hover td{
+		background-color: #eee;
+	}
+	
 .ui-tbody-sm {
 	display: none;
 }
 
 .card	{
-	margin: 42px 0;
+	margin: 60px 0;
 }
 
 .ui-custom-row {
 	margin: 28px 0 70px;
 }
 
+th,td{
+	padding: 0 !important;
+}
 @media (max-width: 720px) {
 	.ui-tbody-big {
-		display: none;
+		display: n
+		one;
 	}
 
 	.ui-table-wrapper {
@@ -35,16 +50,16 @@
 	}
 
 	h4 {
-		font-size: 18px;
+		font-size: 17px;
 	}
 
 	th, td {
 		white-space: nowrap;
-		font-size: 14px;
+		font-size: 10px;
 		padding: 7px;
 	}
 
 	.ui-tbody-sm {
 		display: initial;
-	}
+	}	
 }
