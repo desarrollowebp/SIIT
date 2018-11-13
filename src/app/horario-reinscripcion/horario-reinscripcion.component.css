@@ -145,13 +145,13 @@ td:last-child {
   
   /* SHOW THE + SIGN WHEN BOXES ARE CLOSED */
   input[type=checkbox] + label::before {
-    content: "▼";
+    content: "+";
   }
   
   
   /* SHOW THE – SIGN WHEN BOXES ARE OPEN */
   input[type=checkbox]:checked + label::before {
-    content: "▲";
+    content: "-";
   }
   
   
