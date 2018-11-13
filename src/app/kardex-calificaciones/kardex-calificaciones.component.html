@@ -2,47 +2,17 @@
 
   <section class="registro">
 
-    <div class="menu">
-      <div class="contenedor" >
-        <div class="meniu">
-           <h3>DATOS DEL ALUMNO</h3>
-                <ul>
-                 <li class="submeniu" id="control">
-                 <p id="titulo">NO.CONTROL </p>
-                 <p>14041413</p>
-                  </li>
-                <li class="submeniu">
-                 <p id="titulo">NOMBRE ALUMNO</p>
-                 <p>VALENZUELA VALDEZ ALMA TERESA </p>
-                 </li>
-                <li class="submeniu" id="control">
-                 <p id="titulo">PLAN DE ESTUDIOS  </p>
-                 <p>ITIC-2010-225</p>
-                 </li>
-                 <li class="submeniu">
-                 <p id="titulo">SEMESTRE</p>
-                 <p>8</p>
-                 </li>
-        
-                  </ul>
-          
-          <ul>
-            <li class="submeniu">
-            <p id="titulo"> CARRERA</p>
-            <p>TECNOLOGIAS DE LA INFORMACIÓN Y LAS COMUNICACIONES</p>
-          </li>
-          <li class="submeniu">
-            <p id="titulo"> ESPECIALIDAD</p>
-            <p>TECNOLOGIAS WEB</p>
-          </li>
-          </ul>
-        </div>
-    </div>
-
-</div>
+        <app-datos-tabla-alumno></app-datos-tabla-alumno>
     
- <div class="container">
-  <table>
+ <div class="containerKardex">
+        <table class="tablekardex">
+       
+                <tr><th colspan="5">SEMESTRE 1</th> 
+                     <td >AGO/DIC 2014</td>
+                </tr>
+            
+        </table>
+  <table class="tablekardex">
     <thead>
         <tr><th>NO.</th>
             <th>MATERIA</th>
@@ -61,7 +31,7 @@
         
     </tbody>
 </table>
-    <table>
+    <table class="tablekardex">
        <thead>
         <tr><th>PROM. SEMESTRAL</th>
             
@@ -72,27 +42,32 @@
        </thead>
     
         <tbody>
-        <tr><th>70.93</th>
+                <tr>
+                      
+        <tr *ngFor="let promedioSem of promedioSem"><th>{{promedioSem.promedioSem2}}</th>
 
-            <td title="Promedio Aritmetico">68.93</td>
-            <td title="Creditos cursados">26</td>
+            <td title="Promedio Aritmetico" *ngFor="let promedioAritmetico of promedioAritmetico" >
+                {{promedioAritmetico.promedioAritmetico2}}</td>
+            <td title="Creditos cursados" *ngFor="let creditosCursados of creditosCursados" >
+                {{creditosCursados.creditosCursados}}</td>
             <td title="Promedio certificado">70.93</td>
-            <td title="Creditos aprobados">22</td></tr>
+            <td title="Creditos aprobados" *ngFor="let creditosAprobados of creditosAprobados" >
+                {{creditosAprobados.creditosAprobados2}}</td></tr>
         
         
         
        </tbody>
     </table>
       
-       <table>
-       
-            <tr><th colspan="5">SEMESTRE 1</th> 
-                 <td >AGO/DIC 2014</td>
+    <table class="tablekardex">
+             
+            <tr><th colspan="5">SEMESTRE 2</th> 
+                 <td >ENE/JUL 2015 </td>
             </tr>
         
     </table>
     
-        <table>
+        <table class="tablekardex">
           <thead>
               <tr><th>NO.</th>
                   <th>MATERIA</th>
@@ -111,9 +86,9 @@
               
           </tbody>
       </table>
-          <table>
+          <table class="tablekardex">
              <thead>
-              <tr><th>PROM. SEMESTRAL</th>
+              <tr ><th>PROM. SEMESTRAL</th>
                   
                   <th>PROM.<br>ARITMETICO</th>
                   <th>CREDITOS<br>CURSADOS</th>
@@ -122,31 +97,30 @@
              </thead>
           
               <tbody>
-              <tr><th>70.93</th>
+              <tr *ngFor="let promedioSem of promedioSem"><th>{{promedioSem.promedioSem}}</th>
       
-                  <td title="Promedio Aritmetico">87.90</td>
-                  <td title="Creditos cursados">23</td>
+                  <td title="Promedio Aritmetico" *ngFor="let promedioAritmetico of promedioAritmetico" >
+                      {{promedioAritmetico.promedioAritmetico}}</td>
+                  <td title="Creditos cursados" *ngFor="let creditosCursados of creditosCursados">
+                      {{creditosCursados.creditosCursados}}</td>
                   <td title="Promedio certificado">83.20</td>
-                  <td title="Creditos aprobados">23</td></tr>
+                  <td title="Creditos aprobados" *ngFor="let creditosAprobados of creditosAprobados">
+                      {{creditosAprobados.creditosAprobados}}</td>
+                </tr>
               
               
               
              </tbody>
           </table>
             
-             <table>
              
-                  <tr><th colspan="5">SEMESTRE 2</th> 
-                       <td >ENE/JUL 2015 </td>
-                  </tr>
-              
-          </table>
-   <tr class="foot">
-        <td  colspan="7" > <em>ESTE DOCUMENTO NO ES OFICIAL Y NO ES VALIDO, NO CONTIENE SELLOS NI FIRMAS OFICIALES DE LA INSTITUCION</em> <br /> 
-      <br /><input type="button" class="boton" name="Button" value="Cerrar" onClick="javascript:window.location"> </td>
+   <tr >
+        <td class="footkardex" colspan="7"> ESTE DOCUMENTO NO ES OFICIAL Y NO ES VALIDO, NO CONTIENE SELLOS NI FIRMAS OFICIALES DE LA INSTITUCIÓN
+      </td>
     </tr>
+    
 </div>
-
+<app-tabla-horario></app-tabla-horario>
 
   
     
