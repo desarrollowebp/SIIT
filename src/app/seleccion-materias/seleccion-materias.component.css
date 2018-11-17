@@ -35,7 +35,7 @@ margin: auto;
   padding: 20px;
 }
 
-.menu {
+.menuSeleccionMaterias {
   background: white;
 
   width: 100%;
@@ -87,19 +87,19 @@ padding: 2px;
   background: white;
 }
 
-.menu span {
+.menuSeleccionMaterias span {
   position: absolute;
   right: 10px;
 
 }
 
-.menu .submenu .expspan span{
+.menuSeleccionMaterias .submenuSeleccionMaterias .expspan span{
   position: relative;
   right: 5px;
   top: 5px;
 }
 /*probemmas con margin*/
-.menu ul {
+.menuSeleccionMaterias ul {
   background: white;
   text-decoration: none;
   list-style: none;
@@ -107,7 +107,7 @@ padding: 2px;
   margin: 0px 0px;
 }
 
-.menu a {
+.menuSeleccionMaterias a {
 
   font-size: 10px;
   border: none;
@@ -121,12 +121,12 @@ padding: 2px;
 }
 
 /*ayuda a jquery*/
-.menu ul li:hover ul {
+.menuSeleccionMaterias ul li:hover ul {
   display: none;
   position: static;
 }
 
-.menu ul li ul {
+.menuSeleccionMaterias ul li ul {
   display: none;
   width: 100%;
 }
@@ -142,11 +142,11 @@ padding: 2px;
 }
 
 
-.menu ul li p {
+.menuSeleccionMaterias ul li p {
   font-size: 14px;
   text-align: center;
 }
-.menu ul li .NombreMateria  {
+.menuSeleccionMaterias ul li .NombreMateria  {
   width: 100%;
   font-size: 15px;
   text-align: center;
@@ -161,7 +161,7 @@ align-items: center;
 
 }
 
-.menu ul li a {
+.menuSeleccionMaterias ul li a {
   color: black;
   border-left: 6px solid #6A1A3E;
   background-color: white;
@@ -203,13 +203,13 @@ align-items: center;
 
 }
 
-.container{
+.containerSeleccionMaterias{
   display: none;
 }
 
 
 /*alt 126 tllde selecciona menu*/
-#menu-bar:checked~.menu {
+#menu-bar:checked~.menuSeleccionMaterias {
   transform: translateX(0);
 }
 .horariodes{
@@ -265,16 +265,32 @@ border-radius: 5px;
 
 
 }
+.codigoColoresSM
+{
+margin: 30px;
+}
+
+.menuSeleccionMaterias h1
+{
+  font-size: 30px;
+}
+
+.menuSeleccionMaterias h4
+{
+  margin-bottom: 15px;
+}
+
+
 
 @media(min-width:780px)
 {
-  .container{
+  .containerSeleccionMaterias{
     display:inline;
   }
   .movil{
     display: none;
   }
-  .menu {
+  .menuSeleccionMaterias {
 
     width: 1000px;
 
@@ -283,7 +299,7 @@ border-radius: 5px;
 
   }
 
-  .submenu {
+  .submenuSeleccionMaterias {
     width: 100%;
     height: 100%;
 
@@ -306,13 +322,13 @@ border-radius: 5px;
     word-wrap: break-word;
   }
 
-  .menu span {
+  .menuSeleccionMaterias span {
     position: static;
     right: 10px;
 
   }
 
-  .menu ul  {
+  .menuSeleccionMaterias ul  {
     display: flex;
     cursor: pointer;
   }
@@ -337,7 +353,7 @@ font-size: 14px;
   margin: 0 auto;
   height: 40px;
 }
-.menu ul li a{
+.menuSeleccionMaterias ul li a{
   padding: 0 0 0 0;
   padding-top: 10%;
 }

@@ -11,5 +11,14 @@ export class CalificacionesExamenesComponent implements OnInit {
 
   ngOnInit() {
   }
+  examen1 = [
+    { facilitador: 'Juan Nava Solís', materia: 'Matemáticas Discretas', calificacion: '84', tipo: 'Especial' }
+  ]
+  examen2 = [
+    { facilitador: 'Roberto López ', materia: 'Seguridad Web', calificacion: '100', tipo: 'Global' }
+  ]
+  examen3 = [
+    { facilitador: 'Elena Orozco Juárez ', materia: 'Contabilidad', calificacion: '78', tipo: 'Global' }
+  ]
 
 }

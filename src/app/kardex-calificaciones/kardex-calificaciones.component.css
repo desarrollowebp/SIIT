@@ -1,112 +1,4 @@
-/*RESET ELEMENTOS Y SE CONTENGAN EN LAS CAJAS	*/
 
-*{
-
-	margin:0;
-	padding: 0;
-	font-size: small;
-	box-sizing: border-box;
-	-ms-box-sizing: border-box;
-	 box-sizing: border-box;
-	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
-}
-/* CENTRAR LA CAJA Y DARLE 1000 PX */
-.menu{
-	width: 85%;
-	margin: auto;
-}
-.contenedor{
-	width:1024px;
-	background: #70193f;
-	margin: auto;
-	border: 200PX;
-	
-}
-.boton{
-	background: #70193f;
-	border: #eee;
-	color: #eee;
-}
-/* El hijo siempre lleva margin 0 y auto para centrarlo al div padre*/
-.meniu{
-
-align-content: center;
-width: 100%;
-height: 40%;
-background:white;
-
-}
-.meniu ul{
-	justify-content: center;
-	text-align: center;
-	list-style: none;
-	width: 100%;
-	display: flex;
-	flex-wrap: nowrap;
-	text-decoration: none;
-
-}
-
-.meniu ul li {
-	padding: 5px;
-	width: 33%;
-	color: black;
-}
-
-.submeniu ul li{
-	width: 100%;
-	background:white;
-
-}
-.submeniu #titulo
-{
-	background-color: #70193f;
-	color: white;
-	font-weight: bold;
-	font-size: small;
-
-
-
-}
-
-@media (min-width:100px) {
-	.contenedor{
-	  width: 70%;
-		min-width: 100%;
-		max-width: 100%;
-		background: #70193f;
-		font-size: 15px;
-		margin: auto;
-
-	
-	}
-
-	.meniu{
-
-margin: 0 auto;
-width: 100%;
-height: 40%;
-background:white;
-
-}
-
-
-}
-h3{
-    display: block;
-    font-size: 1.5em;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-    background-color: #70193f;
-    text-align: center;
-    color: white;
-}
-p{
-	width: auto;
-}
 /* 
 Generic Styling, for Desktops/Laptops 
 */body{background:#f9f9f9;}
@@ -118,21 +10,23 @@ Generic Styling, for Desktops/Laptops
 
 /* Responsive para mostrar datos de la tabla de materias*/
 
-.container {
-	width: 100%;
+.containerkardex {
+	width: 80%;
 	margin: auto;
 	}
 	.info{
 		padding-top: 15px;
 		padding-bottom: 15px;
 	}
-table {
-	width: 100%;;
+.tablekardex {
+	width: 80%;;
 	margin:auto;
 	border: none;
 	background: white;
 	border-spacing: 0;
 	font-size: 1rem; line-height: 1rem;
+	border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
+	border: 1px solid black;
 
 	}
 	thead{
@@ -145,8 +39,12 @@ tfoot td {
 	color: #70193F;
 	}
 /*======TBODY======*/
-.foot {
+.footkardex {
+	width: 50%;
+	margin: auto;
  background: white;
+ align-content: center;
+ padding-left: 10em;
 }
 tr {
 	border-bottom: solid 1px #ccc;
@@ -174,7 +72,8 @@ thead th{
 		color: white;
 		text-align: center;
 		background: #70193f;
-
+		border-radius:calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0 ;
+		
 	}
 	
 	tbody td {
@@ -185,12 +84,13 @@ thead th{
 		text-align: center;
 		background: white;
 	}
-	.foot td{
-		text-align: center;
+	.footkardex td {
+		align-content: center;
+		padding-right: 60spx;
+		margin: auto;
 	}
-	button{
-		text-align: center;
-	}
+	
+	
 @media only screen and (max-width: 780px){
 	
 	/*======GENERAL======*/
@@ -198,11 +98,11 @@ thead th{
 		font-size: 1rem;
 		}
 	
-	table, thead, tfoot, tbody, tr {
+	.tablekardex, thead, tfoot, tbody, tr {
 		display:block;
 		}
 	
-	table {
+	.tablekardex {
 		position: relative;
 		}
 	/*table * {

@@ -1,101 +1,119 @@
 <body>
-				<table>
+                <table>
   <thead>
     <tr>
-	  <th colspan="4"><h5 align="center"> CONSULTA DE SEGUIMIENTO</h5>
-		  <h6 align="center">Residencia Ago-Dic 2018</h6>
-	  </th>
+      <th colspan="4"><h5 align="center"> CONSULTA DE SEGUIMIENTO </h5>
+          <h6 align="center">Residencia Ago-Dic 2018</h6>
+      </th>
     </tr>
     
   </thead>
   <tbody>
-	<tr>
-			<td></td>
-			<td>FOLIO</td>
-			<td>IIN-20183-017</td>
+    <tr>
+            <tr >
+                <h2 class="resi">{{residencia.dato}} </h2>
+               
+            </tr>
+        <tr>
+           <td></td>
+            <td><strong>DATOS DEL ALUMNO</strong></td>
+            <td><strong>INFORMACION RECABADA</strong></td>
 
-	</tr>
-	<tr>
-			<td></td>
-			<td>NUMERO DE CONTROL</td>
-			<td>14041418</td>
-			
-		</tr>
-		<tr>
-			<td></td>
-			<td><i>NOMBRE DEL ALUMNO</i></td>
-			<td>KATE BONILLA</td>
-			
-		</tr>
-		<tr>
-			<td></td>
-			<td>CARRERA</td>
-			<td>INGENIERIA INFORMATICA</td>
-			
-			
-		</tr>
-		<tr>
-			<td></td>
-			<td>SEGUIMIENTO 1</td>
-			
-		</tr>
-		<tr>
-			<td></td>
-			<td>SEGUIMIENTO 2</td>
-			
-		</tr>
-		<tr>
-			<td></td>
-			<td>SEGUIMIENTO 3</td>
-			
-		</tr>
-		<tr>
-			<td></td>
-			<td>NOMBRE DEL PROYECTO</td>
-			<td>SISTEMA DE ADMINISTRACION DE VISITAS A DIFERENTES DEPARTAMENTOS DE LA SECRETARIA DE EDUCACION ESTATAL Y FEDERAL</td>
-			
-		</tr>
-		<tr>
-			<td></td>
-			<td>EMPRESA</td>
-			<td>SECRETARIA DE EDUCACION DEL ESTADO DE DURANGO (SEED)</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>ASESOR INTERNO</td>
-			<td>HIGAREDA SOTO GUSTAVO</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>ASESOR EXTERNO</td>
-			<td>ARMANDO LEONEL RAMIREZ NEVAREZ</td>
-			
-		</tr>
-		<tr>
-			<td></td>
-			<td>DICTAMEN</td>
-			<td>ACEPTADO</td>
-			
-		</tr>
-		<tr>
-			<td></td>
-			<td>PORTADA ANTEPROYECTO</td>
-			
-		</tr>
-		<tr>
-			<td></td>
-			<td>ASESOR INTERNO</td>
-			
-		</tr>
-		<tr>
-			<td></td>
-			<td>REPORTE FINAL</td>
-			
-		</tr>
-		<tr>
-			<td></td>
-			<td>REV. FINAL</td>
-			
-		</tr>
+    </tr>   
+    <tr>
+            <td></td>
+            <td><strong>FOLIO</strong></td>
+            <td>{{residencia.folio}}</td>
+
+    </tr>
+    <tr>
+            <td></td>
+            <td><strong>NUMERO DE CONTROL</strong></td>
+            <td>{{residencia.nocrtl}}</td>
+            
+        </tr>
+        <tr>
+            <td></td>
+            <td><i><strong>NOMBRE DEL ALUMNO</strong></i></td>
+            <td>{{residencia.nombreAlumno}}</td>
+            
+        </tr>
+        <tr>
+            <td></td>
+            <td><strong>CARRERA</strong></td>
+            <td>{{residencia.carrera}}</td>
+            
+            
+        </tr>
+        <tr>
+            <td></td>
+            <td><strong>SEGUIMIENTO 1</strong></td>
+            <td>{{residencia.seguimiento1}}</td>
+            
+        </tr>
+        <tr>
+            <td></td>
+            <td><strong>SEGUIMIENTO 2</strong></td>
+            <td>{{residencia.seguimiento2}}</td>
+            
+        </tr>
+        <tr>
+            <td></td>
+            <td><strong>SEGUIMIENTO 3</strong></td>
+            <td>{{residencia.seguimiento3}}</td>
+            
+        </tr>
+        <tr>
+            <td></td>
+            <td><strong>NOMBRE DEL PROYECTO</strong></td>
+            <td>{{residencia.nombreProyecto}}</td>
+            
+        </tr>
+        <tr>
+            <td></td>
+            <td><strong>EMPRESA</strong></td>
+            <td>{{residencia.empresa}}</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><strong>ASESOR INTERNO</strong></td>
+            <td>{{residencia.asesorInt}}</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><strong>ASESOR EXTERNO</strong></td>
+            <td>{{residencia.asesorExt}}</td>
+            
+        </tr>
+        <tr>
+            <td></td>
+            <td><strong>DICTAMEN</strong></td>
+            <td>{{residencia.dictamen}}</td>
+            
+        </tr>
+        <tr>
+            <td></td>
+            <td><strong>PORTADA ANTEPROYECTO</strong></td>
+            <td>{{residencia.portadaAnt}}</td>
+            
+        </tr>
+        <tr>
+            <td></td>
+            <td><strong>ASESOR INTERNO</strong></td>
+            <td>{{residencia.asesorInt2}}</td>
+            
+        </tr>
+        <tr>
+            <td></td>
+            <td><strong>REPORTE FINAL</strong></td>
+            <td>{{residencia.reporteFinal}}</td>
+
+        </tr>
+        <tr>
+            <td></td>
+            <td><strong>REV. FINAL</strong></td>
+            <td>{{residencia.revFinal}}</td>
+            
+        </tr>
   </tbody>
 </table>

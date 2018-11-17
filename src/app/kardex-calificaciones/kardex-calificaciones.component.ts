@@ -30,6 +30,29 @@ export class KardexCalificacionesComponent implements OnInit {
     $(document).ready(function(){
       ShowCells();
     });
+
+   
   }
 
+  Carga = [
+    { dato: 'carga', carga: '1' ,salon:'LC22', curso:'repetición'}
+  ]
+  periodoEsc = [
+    { dato: 'Perido Escolar', periodoEsc: 'AGOS/DIC 2014',  }
+  ]
+  promedioSem = [
+    { dato: 'Promedio Semestral', promedioSem: '80.70', promedioSem2:'89.90' }
+  ]
+  creditosAprob = [
+    { dato: 'Creditos Aprobados', creditosAprob:'26' }
+  ]
+  promedioAritmetico = [
+    { dato: 'promedio Aritmetico', promedioAritmetico:'68.90', promedioAritmetico2:'69.10' }
+  ]
+  creditosCursados = [
+    { dato: 'Creditos Cursados', creditosCursados:'26' }
+  ]
+  creditosAprobados = [
+    { dato: 'Creditos Aprobados', creditosAprobados:'22' , creditosAprobados2:'26' }
+  ]
 }
