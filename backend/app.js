@@ -1,3 +1,4 @@
+require('./config/config');
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
@@ -14,6 +15,6 @@ app.use(bodyParser.json())
 
 app.use('/alumnos', alumnosRouter);
 
-app.listen(3000, function () {
-  console.info('Backend escuchando en el puerto 3000');
+app.listen(process.env.PORT, function() {
+    console.info('Backend escuchando en el puerto 3000', process.env.PORT);
 });
