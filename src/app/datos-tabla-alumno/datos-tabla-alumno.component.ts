@@ -11,5 +11,17 @@ export class DatosTablaAlumnoComponent implements OnInit {
 
   ngOnInit() {
   }
+alumno=
+[
+  {
+    dato:'No. Control',control:'14041403',nombre:'Aurora Gamero Pescador',periodo:'Ago-Dic',promedio:'100.00'
+  }
+]
 
+datos=
+[
+  {
+    dato:'Carrera',carrera:'Ingeniera en tecnologias de la Información y Comunicación',especialidad:'Tecnologías Web',curp:'VAVA960417MDGLLL00'
+  }
+]
 }

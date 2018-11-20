@@ -1,11 +1,11 @@
 <!--===============empieza tabla de extra seleccionada=================0-->
-<table id="tabla">
-	<thead>
-		<th colspan="7">
+<table class=tablaExtraSeleccionada>
+	<thead class="theadExtraSeleccionada">
+		<th colspan="7" class="thExtraSeleccionada">
 			<h5 align="center">Extraescolar Seleccionada</h5>
 		</th>
 	</thead>
-	<tbody>
+	<tbody class="tbodyExtraSeleccionada">
 		<tr>
 			<td>Periodo </td>
 			<td>Actividad</td>
@@ -15,9 +15,9 @@
 			<td>H.Final </td>
 			<td>Dias</td>
 		</tr>
-		<tr >
+		<tr>
 			<td>{{extraseleccionada.periodo}}</td>
-			<td>{{extraseleccionada.nombre}}</td>
+			<td>{{datosmodal}}</td>
 			<td>{{extraseleccionada.grupo}}</td>
 			<td>{{extraseleccionada.promotor}}</td>
 			<td>{{extraseleccionada.hInicial}}</td>
@@ -28,10 +28,14 @@
 </table>
 
 
+ <div id="page-1">
+ 	<p>1</p>
+ </div>
+
 <!--=========empieza tabla de avisos==========---------->
 <div class="accordionbox">
 	<div>
-		<h4>Extraescolares Culturales Disponibles  </h4>
+		<h4>Extraescolares Culturales Disponibles </h4>
 	</div>
 	<div>
 		<input id="tab" name="myaccordion" type="checkbox" />
@@ -83,8 +87,9 @@
 
 	<!--=========QUINTO CONTENEDOR DE EXTRA==========--->
 	<div>
+
 		<input id="tab-five" name="myaccordion" type="checkbox" />
-		<label for="tab-five">VISUALES</label>
+		<label class="visuales" for="tab-five">VISUALES</label>
 		<div class="insidebox">
 			<div class="panel-body" *ngFor="let visual of visuales">
 				<li (click)="funcp(visual)">{{visual}}</li>
@@ -160,37 +165,39 @@
 
 	<!--=========empieza el modal==========--->
 
-		<!-- Modal content -->
-		<div class="form" >
-			<h4>
-				Grupos disponibles para  {{datosmodal}},  presiona seleccionar para elegir un grupo
-			</h4>
-			<form>
-				<table id="tablaModal">
-					<tr>
-						<th>Grupo</th>
-						<th>Promotor</th>
-						<th>H.Inicial</th>
-						<th>H.Final</th>
-						<th>Dias</th>
-						<th>Lugares Disponibles</th>
-						<th></th>
-					</tr>
-					<tr *ngFor="let group of gruposDisponibles">
-						<td>{{group.grupo}}</td>
-						<td>{{group.promotor}}</td>
-						<td>{{group.hInicial}}</td>
-						<td>{{group.hFinal}}</td>
-						<td>{{group.dias}}</td>
-						<td>{{group.lugares}}</td>
-						<td><button type="button" class="boton" (click)="cerrar()" (click)="objetoActual(group)">Seleccionar</button></td>
-					</tr>
-					<tr>
-					</tr>
-				</table>
-			</form>
-			<button class="boton" id="btn-cancelar"  (click)="cerrar()" >Cancelar</button>
+	<!-- Modal content -->
+	<div class="form">
+		<h4>
+			Grupos disponibles para {{datosmodal}},
+			presiona seleccionar para elegir un grupo
+		</h4>
+		<form>
+			<table id="tablaModal">
+				<tr class="headModal">
+					<td>Grupo</td>
+					<td>Promotor</td>
+					<td>H.Inicial</td>
+					<td>H.Final</td>
+					<td>Dias</td>
+					<td>Lugares Disponibles</td>
+					<td></td>
+				</tr>
+				<tr *ngFor="let group of maestros">
+					<td>{{group.grupo}}</td>
+					<td>{{group.promotor}}</td>
+					<td>{{group.hInicial}}</td>
+					<td>{{group.hFinal}}</td>
+					<td>{{group.dias}}</td>
+					<td>{{group.lugares}}</td>
+					<td><button id="button" type="button" class="botonModal"
+						(click)="cerrar()"
+						(click)="objetoActual(group)">Seleccionar</button></td>
+				</tr>
+			</table>
+		</form>
+		<button class="boton" id="btn-cancelar" (click)="cerrar()">Cancelar</button>
 
-		</div>
+	</div>
+</div>
 
-	<!--=========termina el modal==========--->
+<!--=========termina el modal==========--->

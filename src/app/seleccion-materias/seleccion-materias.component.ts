@@ -8,6 +8,44 @@ import { RouterModule } from '@angular/router';
 })
 export class SeleccionMateriasComponent implements OnInit {
 
+
+
+  semestres= [  ];
+
+  totalCreditos;
+
+  recuperarSemestre = function() {
+    var i;
+
+    for (i = 0; i < 9; i++) {
+      //Recuperar Semestres
+      var j;
+      var materias=[];
+      for(j = 0; j < 5; j++){
+        //Recuperar materias por semestre
+        var cadenaCon=[ {codigo:'xyz'} ];
+        var unidadesCalif={ uno:0, dos:0,tres:0,cuatro:0,cinco:0,seis:0,siete:0,ocho:0,nueve:0,diez:0};
+        var codColor={cod1:'codcolor1', cod2:'codcolor2',
+                  cod3:'codcolor3',cod4:'codcolor4',
+                  cod5:'codcolor5',cod6:'codcolor6',
+                  cod7:'codcolor7',cod8:'codcolor8',
+                  cod9:'codcolor9',cod10:'codcolor9'};
+        var materia={codigo:"XXX", nombre:"Ejemplo"+i+"-"+j,numeroCreditos:'x', unidadesCalif, tipoEvaluacion:"Ordinario", codColor ,cadenaCon};
+        materias.push(materia);
+
+      }
+      // asignar materias semestre
+      var semestre = { numsem:i, materias };
+      this.semestres.push(semestre);
+  
+    }
+
+  }
+
+
+
+
+
 semestre1= [{Nombre:"Calculo",totCr:"10"},
               {Nombre:"Programación orientada a obetos",totCr:"15"},
               {Nombre:"Administracion",totCr:"20"},
@@ -41,7 +79,8 @@ materiaModal="Kevin";
     this.modals="modal";
   }
   ngOnInit() {
-    $(".submenu").click(function() {
+    this.recuperarSemestre();
+    $(".submenuSeleccionMaterias").click(function() {
       $(this).children("ul").slideToggle();
 
     }
@@ -54,7 +93,7 @@ materiaModal="Kevin";
     if ($(window).width() > 720) {
 
 
-      $(".submenu").children("ul").show();
+      $(".submenuSeleccionMaterias").children("ul").show();
 
 
 

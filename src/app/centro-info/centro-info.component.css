@@ -2,7 +2,8 @@
     color: white;
 	text-align: center;
 	background: #70193F;
-    font-size: 20px;
+	font-size: 20px;
+	border-radius: .25em;
 }
 
 #valor{
@@ -17,5 +18,9 @@
 button{
 	background-color: #70193F; 
 	border: #70193F
+}
+
+h2{
+	color: #70193F;
 }
 

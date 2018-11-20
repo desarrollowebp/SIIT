@@ -1,38 +1,42 @@
-
-
-
-h2,
-.h2 {
-  font-size: 1.2rem;
+h2{
+  font-size: 20px;
 }
-
-
-
 .card {
-  
+    
   border-radius: 0;
   box-shadow: none;
   border: none;
 }
 
-.header-top {
-  box-shadow: 0 3px 5px rgba(0, 0, 0, .1)
+
+.table tbody tr:nth-child(5) td:nth-child(1){
+  text-align: right;
+  
 }
 
-.leftmenutrigger {
-  display: none
-}
 
-.tablecp {
+
+table {
   width: 100%;
   border-collapse: separate;
   border-spacing: 0px;
   border: 1px solid black;
   border-radius: .25rem;
-  -moz-border-radius: .25rem;
-  	-webkit-border-radius: .25rem;
-  
+  empty-cells: HIDE;
+  perspective: 1px;
+  -webkit-border-radius: .25rem;
+-moz-border-radius: .25rem;
+ margin-top: 10px;
 }
+table tr:last-child td:first-child {
+border-bottom-left-radius: 6px;
+}
+
+table tr:last-child td:last-child {
+border-bottom-right-radius: 6px;
+}
+  
+
 
 tr:nth-of-type(odd) {
   background: #eee;
@@ -44,15 +48,11 @@ th {
   font-weight: bold;
 }
 
-td,
-th {
-  padding: 6px;
-  text-align: center;
-}
+
 
 @media all and (max-width:500px) {
 
-  .tablecp,
+  table,
   thead,
   tbody,
   th,
@@ -60,35 +60,33 @@ th {
   tr {
     font-size: 7px;
   }
-  .card-body{
-    padding:.5rem;
-  }
 
   tr {
     margin-bottom: 10px
   }
-  h2{
-    font-size: 12px;
+  .card-body{
+    padding: .1rem;
   }
-  .containercp{
-    width: 1000px;
+  h2{
+    font-size: 10px;
   }
 }
 
-
-
-#tablecp th {
+#table th {
   background: #70193f;
   color: white;
   font-weight: bold;
+  border-radius: 6px;
 }
 
 
 
-
+tr:nth-of-type(odd) {
+  background: #eee;
+}
 
 td,
 th {
-  padding: 6px;
+  padding: 4px;
   text-align: center;
 }
