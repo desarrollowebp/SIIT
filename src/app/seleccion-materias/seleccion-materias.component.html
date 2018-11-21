@@ -10,21 +10,40 @@
 <body>
   <main>
     <section class="registro">
-      <div class="menuSeleccionMaterias">
+      <div class="menu">
         <app-datos-tabla-alumno></app-datos-tabla-alumno>
         <h1>Semestres</h1>
         <h4>Presiona semestre y desliza horizontalmente </h4>
         <ul>
 
-          <li  class="submenuSeleccionMaterias">
+          <li  class="submenu">
             <a> Semestre 1<span class="icon-angle-down"> </span> </a>
-            <ul>
+            <ul   >
               <li  class="vertical">
-                <div  *ngFor="let mats of semestres[0].materias" class="materia">
+                <div *ngFor="let mats of semestres[0]"   class="materia">
                   <div class="estado">
+                    <p></p>
+                    <p>{{mats.codigo}}</p>
                     <p>{{mats.nombre}}</p>
-                    <p>Creditos:{{mats.numeroCreditos}}</p>
-                    <p>Codigo:{{mats.codig}}</p>
+                    <p>{{mats.numeroCreditos}}</p>
+                    <button type="button" name="button" class="myBtn" (click)="funcMostrarGrupos(mats)" >Seleccionar</button>
+                  </div>
+
+                </div>
+
+
+              </li>
+            </ul>
+          </li>
+          <li  class="submenu">
+            <a> Semestre 1<span class="icon-angle-down"> </span> </a>
+            <ul   >
+              <li  class="vertical">
+                <div *ngFor="let mats of semestres[1]"   class="materia">
+                  <div class="estado">
+                    <p></p>
+                    <p>hola</p>
+                    <p>hola {{mats.nombre}}</p>
                     <button type="button" name="button" class="myBtn"  >Seleccionar</button>
                   </div>
 
@@ -34,15 +53,15 @@
               </li>
             </ul>
           </li>
-          <li  class="submenuSeleccionMaterias">
-            <a> Semestre 2<span class="icon-angle-down"> </span> </a>
-            <ul>
+          <li  class="submenu">
+            <a> Semestre 1<span class="icon-angle-down"> </span> </a>
+            <ul   >
               <li  class="vertical">
-                <div  *ngFor="let mats of semestres[1].materias" class="materia">
+                <div *ngFor="let mats of semestres[2]"   class="materia">
                   <div class="estado">
-                    <p>{{mats.nombre}}</p>
-                    <p>Creditos:{{mats.numeroCreditos}}</p>
-                    <p>Codigo:{{mats.codig}}</p>
+                    <p></p>
+                    <p>hola</p>
+                    <p>hola {{mats.nombre}}</p>
                     <button type="button" name="button" class="myBtn"  >Seleccionar</button>
                   </div>
 
@@ -52,15 +71,15 @@
               </li>
             </ul>
           </li>
-          <li  class="submenuSeleccionMaterias">
-            <a> Semestre 3<span class="icon-angle-down"> </span> </a>
-            <ul>
+          <li  class="submenu">
+            <a> Semestre 1<span class="icon-angle-down"> </span> </a>
+            <ul   >
               <li  class="vertical">
-                <div  *ngFor="let mats of semestres[2].materias" class="materia">
+                <div *ngFor="let mats of semestres[3]"   class="materia">
                   <div class="estado">
-                    <p>{{mats.nombre}}</p>
-                    <p>Creditos:{{mats.numeroCreditos}}</p>
-                    <p>Codigo:{{mats.codig}}</p>
+                    <p></p>
+                    <p>hola</p>
+                    <p>hola {{mats.nombre}}</p>
                     <button type="button" name="button" class="myBtn"  >Seleccionar</button>
                   </div>
 
@@ -70,15 +89,15 @@
               </li>
             </ul>
           </li>
-          <li  class="submenuSeleccionMaterias">
-            <a> Semestre 4<span class="icon-angle-down"> </span> </a>
-            <ul>
+          <li  class="submenu">
+            <a> Semestre 1<span class="icon-angle-down"> </span> </a>
+            <ul   >
               <li  class="vertical">
-                <div  *ngFor="let mats of semestres[3].materias" class="materia">
+                <div *ngFor="let mats of semestres[4]"   class="materia">
                   <div class="estado">
-                    <p>{{mats.nombre}}</p>
-                    <p>Creditos:{{mats.numeroCreditos}}</p>
-                    <p>Codigo:{{mats.codig}}</p>
+                    <p></p>
+                    <p>hola</p>
+                    <p>hola {{mats.nombre}}</p>
                     <button type="button" name="button" class="myBtn"  >Seleccionar</button>
                   </div>
 
@@ -88,15 +107,15 @@
               </li>
             </ul>
           </li>
-          <li  class="submenuSeleccionMaterias">
-            <a> Semestre 5<span class="icon-angle-down"> </span> </a>
-            <ul>
+          <li  class="submenu">
+            <a> Semestre 1<span class="icon-angle-down"> </span> </a>
+            <ul   >
               <li  class="vertical">
-                <div  *ngFor="let mats of semestres[4].materias" class="materia">
+                <div *ngFor="let mats of semestres[5]"   class="materia">
                   <div class="estado">
-                    <p>{{mats.nombre}}</p>
-                    <p>Creditos:{{mats.numeroCreditos}}</p>
-                    <p>Codigo:{{mats.codig}}</p>
+                    <p></p>
+                    <p>hola</p>
+                    <p>hola {{mats.nombre}}</p>
                     <button type="button" name="button" class="myBtn"  >Seleccionar</button>
                   </div>
 
@@ -106,15 +125,15 @@
               </li>
             </ul>
           </li>
-          <li  class="submenuSeleccionMaterias">
-            <a> Semestre 6<span class="icon-angle-down"> </span> </a>
-            <ul>
+          <li  class="submenu">
+            <a> Semestre 1<span class="icon-angle-down"> </span> </a>
+            <ul   >
               <li  class="vertical">
-                <div  *ngFor="let mats of semestres[5].materias" class="materia">
+                <div *ngFor="let mats of semestres[6]"   class="materia">
                   <div class="estado">
-                    <p>{{mats.nombre}}</p>
-                    <p>Creditos:{{mats.numeroCreditos}}</p>
-                    <p>Codigo:{{mats.codig}}</p>
+                    <p></p>
+                    <p>hola</p>
+                    <p>hola {{mats.nombre}}</p>
                     <button type="button" name="button" class="myBtn"  >Seleccionar</button>
                   </div>
 
@@ -124,15 +143,15 @@
               </li>
             </ul>
           </li>
-          <li  class="submenuSeleccionMaterias">
-            <a> Semestre 7<span class="icon-angle-down"> </span> </a>
-            <ul>
+          <li  class="submenu">
+            <a> Semestre 1<span class="icon-angle-down"> </span> </a>
+            <ul   >
               <li  class="vertical">
-                <div  *ngFor="let mats of semestres[6].materias" class="materia">
+                <div *ngFor="let mats of semestres[7]"   class="materia">
                   <div class="estado">
-                    <p>{{mats.nombre}}</p>
-                    <p>Creditos:{{mats.numeroCreditos}}</p>
-                    <p>Codigo:{{mats.codig}}</p>
+                    <p></p>
+                    <p>hola</p>
+                    <p>hola {{mats.nombre}}</p>
                     <button type="button" name="button" class="myBtn"  >Seleccionar</button>
                   </div>
 
@@ -142,15 +161,15 @@
               </li>
             </ul>
           </li>
-          <li  class="submenuSeleccionMaterias">
-            <a> Semestre 8<span class="icon-angle-down"> </span> </a>
-            <ul>
+          <li  class="submenu">
+            <a> Semestre 1<span class="icon-angle-down"> </span> </a>
+            <ul   >
               <li  class="vertical">
-                <div  *ngFor="let mats of semestres[7].materias" class="materia">
+                <div *ngFor="let mats of semestres[8]"   class="materia">
                   <div class="estado">
-                    <p>{{mats.nombre}}</p>
-                    <p>Creditos:{{mats.numeroCreditos}}</p>
-                    <p>Codigo:{{mats.codig}}</p>
+                    <p></p>
+                    <p>hola</p>
+                    <p>hola {{mats.nombre}}</p>
                     <button type="button" name="button" class="myBtn"  >Seleccionar</button>
                   </div>
 
@@ -160,31 +179,12 @@
               </li>
             </ul>
           </li>
-          <li  class="submenuSeleccionMaterias">
-            <a> Semestre 9<span class="icon-angle-down"> </span> </a>
-            <ul>
-              <li  class="vertical">
-                <div  *ngFor="let mats of semestres[0].materias" class="materia">
-                  <div class="estado">
-                    <p>{{mats.nombre}}</p>
-                    <p>Creditos:{{mats.numeroCreditos}}</p>
-                    <p>Codigo:{{mats.codig}}</p>
-                    <button type="button" name="button" class="myBtn"  >Seleccionar</button>
-                  </div>
 
-                </div>
-
-
-              </li>
-            </ul>
-          </li>
 
 
         </ul>
-        
-        <div class="codigoColoresSM">
+
         <app-codigo-colores-materia></app-codigo-colores-materia>
-        </div>
 
         <br>
 
@@ -192,7 +192,7 @@
 
         <h5>Presiona el recuadro para ver/eliminar materia</h5>
 
-        <div class="containerSeleccionMaterias">
+        <div class="container">
 
           <div class="row">
             <div class="col-md-12">
@@ -227,9 +227,7 @@
                       <td>{{seleccionado.Hor}} <br> SC6</td>
                       <td>{{seleccionado.Hor}} <br> SC6</td>
                       <td>{{seleccionado.Hor}} <br> SC6</td>
-                      <td></td>
-                      <td><button type="button" id="btn-eliminar" (click)="  eliminarMateria(gpsdisp)" >Eliminar</button></td>
-                    </tr>
+                      <td></td>hola><button type="button" id="btn-eliminar" (click)="  eliminarMateria(gpsdisp)" >Eliminar</button>hola  </tr>
 
                   </tbody>
                 </table>
@@ -246,9 +244,9 @@
 
       </div>
 
-      <div class="menuSeleccionMaterias movil ">
+      <div class="menu movil ">
         <ul  class="">
-          <li *ngFor="let seleccionada of materiasSeleccionadas" class="submenuSeleccionMaterias horarioseparacion ">
+          <li *ngFor="let seleccionada of materiasSeleccionadas" class="submenu horarioseparacion ">
             <p class="NombreMateria">{{seleccionada.Prof}} CR:5 GGP: {{seleccionada.Gpo}} </p>
             <ul>
               <li class="horariodes">
