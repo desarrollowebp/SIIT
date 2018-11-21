@@ -25,7 +25,7 @@
                     <p>{{mats.nombre}}</p>
                     <p>Creditos:{{mats.numeroCreditos}}</p>
                     <p>Codigo:{{mats.codig}}</p>
-                    <button type="button" name="button" class="myBtn"  >Seleccionar</button>
+                    <button type="button" name="button" class="myBtn" (click)="funcMostrarGrupos(mats.nombre)"  >Seleccionar</button>
                   </div>
 
                 </div>
@@ -181,7 +181,7 @@
 
 
         </ul>
-        
+
         <div class="codigoColoresSM">
         <app-codigo-colores-materia></app-codigo-colores-materia>
         </div>
