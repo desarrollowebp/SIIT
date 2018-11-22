@@ -166,58 +166,53 @@ export class SeleccionMateriasComponent implements OnInit {
 
     maestros= [
               {    nombre:"Martin",materias:[
-                   {codigo:"XZ",nombre:"algrebra",grupo:"XZ",cupo:30,horario:{lunes:{salon:"sc5",hora:"20:30"},martes:{salon:"sc5",hora:"20:30"},miercoles:{salon:"sc5",hora:"20:30"},jueves:{salon:"sc5",hora:"20:30"},viernes:{salon:"sc5",hora:"20:30"},sabado:{salon:"sc5",hora:"20:30"}}},
-                   {codigo:"XY",nombre:"algrebra2",grupo:"XY",cupo:30,horario:{lunes:{salon:"sc5",hora:"20:30"},martes:{salon:"sc5",hora:"20:30"},miercoles:{salon:"sc5",hora:"20:30"},jueves:{salon:"sc5",hora:"20:30"},viernes:{salon:"sc5",hora:"20:30"},sabado:{salon:"sc5",hora:"20:30"}}}
+                   {codigo:"XZ",nombre:"algrebra",grupo:"XZ",cupo:30,horario:{lunes:{salon:["sc5"],hora:["20:30"]},martes:{salon:["sc5"],hora:["20:30"]},miercoles:{salon:["sc5"],hora:["20:30"]},jueves:{salon:["sc5"],hora:["20:30"]},viernes:{salon:["sc5"],hora:["20:30"]},sabado:{salon:["sc5"],hora:["20:30"]}}},
+                   {codigo:"XY",nombre:"algrebra2",grupo:"XY",cupo:30,horario:{lunes:{salon:["sc5"],hora:["20:30"]},martes:{salon:["sc5"],hora:["20:30"]},miercoles:{salon:["sc5"],hora:["20:30"]},jueves:{salon:["sc5"],hora:["20:30"]},viernes:{salon:["sc5"],hora:["20:30"]},sabado:{salon:["sc5"],hora:["20:30"]}}}
                                             ]
                },
                {    nombre:"Vero",materias:[
-                    {codigo:"XZ",nombre:"algrebra",grupo:"XZ",cupo:30,horario:{lunes:{salon:"sc3",hora:"20:31"},martes:{salon:"sc5",hora:"20:50"},miercoles:{salon:"sc5",hora:"14:30"},jueves:{salon:"sc5",hora:"20:30"},viernes:{salon:"sc5",hora:"20:30"},sabado:{salon:"sc5",hora:"20:30"}}},
-                    {codigo:"X",nombre:"algrebra2",grupo:"XY",cupo:30,horario:{lunes:{salon:"sc3",hora:"20:30"},martes:{salon:"sc5",hora:"20:30"},miercoles:{salon:"sc5",hora:"20:30"},jueves:{salon:"sc5",hora:"20:30"},viernes:{salon:"sc5",hora:"20:30"},sabado:{salon:"sc5",hora:"20:30"}}}
+                    {codigo:"XZ",nombre:"algrebra",grupo:"XZ",cupo:30,horario:{lunes:{salon:["sc5"],hora:["20:30"]},martes:{salon:["sc5"],hora:["20:30"]},miercoles:{salon:["sc5"],hora:["20:30"]},jueves:{salon:["sc5"],hora:["20:30"]},viernes:{salon:["sc5"],hora:["20:30"]},sabado:{salon:["sc5"],hora:["20:30"]}}},
+                    {codigo:"X",nombre:"algrebra2",grupo:"XY",cupo:30,horario:{lunes:{salon:["sc5"],hora:["20:30"]},martes:{salon:["sc5"],hora:["20:30"]},miercoles:{salon:["sc5"],hora:["20:30"]},jueves:{salon:["sc5"],hora:["20:30"]},viernes:{salon:["sc5"],hora:["20:30"]},sabado:{salon:["sc5"],hora:["20:30"]}}}
                                              ]
                 },
                 {    nombre:"Krak",materias:[
-                     {codigo:"AAA",nombre:"algrebra",grupo:"XZ",cupo:30,horario:{lunes:{salon:"sc5",hora:"20:30"},martes:{salon:"sc5",hora:"20:30"},miercoles:{salon:"sc5",hora:"20:30"},jueves:{salon:"sc5",hora:"20:30"},viernes:{salon:"sc5",hora:"20:30"},sabado:{salon:"sc5",hora:"20:30"}}},
-                     {codigo:"XY",nombre:"algrebra2",grupo:"XY",cupo:30,horario:{lunes:{salon:"sc5",hora:"20:30"},martes:{salon:"sc5",hora:"20:30"},miercoles:{salon:"sc5",hora:"20:30"},jueves:{salon:"sc5",hora:"20:30"},viernes:{salon:"sc5",hora:"20:30"},sabado:{salon:"sc5",hora:"20:30"}}}
+                     {codigo:"AAA",nombre:"algrebra",grupo:"XZ",cupo:30,horario:{lunes:{salon:["sc5"],hora:["20:30"]},martes:{salon:["sc5"],hora:["20:30"]},miercoles:{salon:["sc5"],hora:["20:30"]},jueves:{salon:["sc5"],hora:["20:30"]},viernes:{salon:["sc5"],hora:["20:30"]},sabado:{salon:["sc5"],hora:["20:30"]}}},
+                     {codigo:"XY",nombre:"algrebra2",grupo:"XY",cupo:30,horario:{lunes:{salon:["sc5"],hora:["20:30"]},martes:{salon:["sc5"],hora:["20:30"]},miercoles:{salon:["sc5"],hora:["20:30"]},jueves:{salon:["sc5"],hora:["20:30"]},viernes:{salon:["sc5"],hora:["20:30"]},sabado:{salon:["sc5"],hora:["20:30"]}}}
                                               ]
                  }
              ];
 
-
-
   recuperarSemestre = function() {
-
-
   }
 
 
 
 
 
-semestre1= [{Nombre:"Calculo",totCr:"10"},
-              {Nombre:"Programación orientada a obetos",totCr:"15"},
-              {Nombre:"Administracion",totCr:"20"},
-              {Nombre:"Química",totCr:"5"},
-              {Nombre:"Taller Inv. I",totCr:"3"}
-            ];
 cargaSemestreActual=[
-{numeroCreditos:'x',
+
+{
+numeroCreditos:'x',
 uno:0, dos:0,tres:0,cuatro:0,cinco:0,seis:0,siete:0,ocho:0,nueve:0,diez:0,
 tipoEvaluacion:"Ordinario",codigo:"X",
-nombre:"algrebra",nombreMaestro:"Juan",grupo:"X",cupo:30,
-horario:{lunes:"17:00",martes:"17:30",miercoles:"17:30",
-jueves:"17:30",viernes:"17:30",sabado:"17:30"}}];
+nombreMateria:"algrebra",nombreMaestro:"Juan",grupo:"X",cupo:30,
+horario:{lunes:{salon:["sc5"],hora:["20:30"]},martes:{salon:["sc5"],hora:["20:30"]},miercoles:{salon:["sc5"],hora:["20:30"]},jueves:{salon:["sc5"],hora:["20:30"]},viernes:{salon:["sc5"],hora:["20:30"]},sabado:{salon:["sc5"],hora:["20:30"]}}
+}
+];
 
 kardex=[
 [
+
 [
 {numeroCreditos:'x',
 uno:0, dos:0,tres:0,cuatro:0,cinco:0,seis:0,siete:0,ocho:0,nueve:0,diez:0,
 tipoEvaluacion:"Ordinario",codigo:"X",
 nombre:"algrebra",nombreMaestro:"Juan",grupo:"X",cupo:30,
-horario:{lunes:"17:00",martes:"17:30",miercoles:"17:30",
-jueves:"17:30",viernes:"17:30",sabado:"17:30"}}
-],{periodoEsc:"",promSem:10.5,creditosAprob:""}
+horario:{lunes:{salon:["sc5"],hora:["20:30"]},martes:{salon:["sc5"],hora:["20:30"]},miercoles:{salon:["sc5"],hora:["20:30"]},jueves:{salon:["sc5"],hora:["20:30"]},viernes:{salon:["sc5"],hora:["20:30"]},sabado:{salon:["sc5"],hora:["20:30"]}}
+}],{periodoEsc:"",promSem:10.5,creditosAprob:""}
+
 ]
+
 ];
 gpsDisponibles = [];
 materiasSeleccionadas=[];
