@@ -135,23 +135,56 @@ export class ExtraescolarComponent implements OnInit {
 
   maestros = [
     {
-      periodo: '20183',
-      grupo: 'RL',
-      promotor: 'GALINDO ZALDIVAR M.V. ISAAC ALEJANDRO',
-      hInicial: '13:00',
-      hFinal: '14:00',
-      dias: 'L,MA,MI,J',
-      lugares: '20'
+      promotor: "GALINDO ZALDIVAR M.V. ISAAC ALEJANDRO",
+      actividad: [
+        {
+          nombreActividad: "",
+          periodo: '20183',
+          grupo: 'RL',
+          hInicial: '13:00',
+          hFinal: '14:00',
+          dias: 'L,MA,MI,J',
+          lugares: '20'
+        },
+        {
+          nombreActividad: "",
+          periodo: '20183',
+          grupo: 'RM',
+          hInicial: '10:00',
+          hFinal: '11:00',
+          dias: 'L,MA,MI,J',
+          lugares: '15'
+        }
+
+      ]
     },
 
     {
-      periodo: '20183',
-      grupo: '1B',
-      promotor: 'GARCIA GARCIA JOSE ANTONIO',
-      hInicial: '11:00',
-      hFinal: '12:00',
-      dias: 'L,MA,MI,J',
-      lugares: '15'
-    },
+      promotor: "GARCIA LOPEZ JOSE ANTONIO",
+      actividad: [
+        {
+          nombreActividad: "",
+          periodo: '20183',
+          grupo: 'RN',
+          hInicial: '12:00',
+          hFinal: '13:00',
+          dias: 'L,MA,MI,J',
+          lugares: '20'
+        },
+        {
+          nombreActividad: "",
+          periodo: '20183',
+          grupo: 'RO',
+          hInicial: '15:00',
+          hFinal: '16:00',
+          dias: 'L,MA,MI,J',
+          lugares: '15'
+        }
+
+      ]
+    }
+
+
+
   ]
 }
