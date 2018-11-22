@@ -9,8 +9,10 @@ import * as $ from 'jquery';
 export class ExtraescolarComponent implements OnInit {
 
 
-  objetoActual = function (gru) {
+
+  objetoActual = function(gru) {
     console.log(gru);
+    document.getElementById('guardar').style.display = 'block';
     this.extraseleccionada = {
       periodo: gru.periodo, nombre: gru.nombre, grupo: gru.grupo,
       promotor: gru.promotor, hInicial: gru.hInicial, hFinal: gru.hFinal,
@@ -54,15 +56,21 @@ export class ExtraescolarComponent implements OnInit {
 
   }
 
+  guardarExtra(){
+    //Aqui se manda al servidor
+    alert("Inscripcion satisfactoria!!");
+    document.getElementById('guardar').style.display = 'none';
+  }
+
   ngOnInit() {
     ///metoro para regresar arriba
-    $(function(){
-      $(".botonModal").click(function(e){
-          e.preventDefault();
-          $("html, body").animate({"scrollTop": "0px"}, 600);
+    $(function() {
+      $(".botonModal").click(function(e) {
+        e.preventDefault();
+        $("html, body").animate({ "scrollTop": "0px" }, 600);
       })
-  });
-/////
+    });
+    /////
 
 
   }

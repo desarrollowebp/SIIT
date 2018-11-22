@@ -1,4 +1,3 @@
-
 /***empieza css de tabla de extra seleccionada*****/
 .tablaExtraSeleccionada {
   text-align: center;
@@ -15,14 +14,13 @@
   background: #70193f;
   color: #fff;
   border: none;
-
 }
+
 .theadExtraSeleccionada {
   background: #70193f;
   color: #fff;
   border: none;
 }
-
 
 .thExtraSeleccionada {
   font-weight: 500;
@@ -56,7 +54,6 @@
   vertical-align: left;
   margin-top: -4px;
 }**/
-
 .edit:hover {
   color: #111111;
 }
@@ -66,7 +63,6 @@
 }
 
 @media screen and (max-width: 600px) {
-
   .modal {
     padding-left: 0;
     padding-top: 0;
@@ -79,16 +75,15 @@
     width: 100%;
   }
 
+  #tablaModal th {
+    background-color: #6F193F;
+    color: white;
+  }
 
-#tablaModal th {
-  background-color: #6F193F;
-  color: white;
+  #tablaModal {
+    width: 100%;
+  }
 
-}
-#tablaModal {
-  width: 100%;
-
-}
   .tablaExtraSeleccionada {
     width: 100%;
   }
@@ -123,16 +118,25 @@
 
   .tbodyExtraSeleccionada td:last-child {
     text-align: center;
-
   }
 }
 
-/***termina css de tabla de extra seleccionada*****/
+.btnGuardarExtra {
+  background-color: #70193f;
+  color: white;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: none;
+  cursor: pointer;
+}
 
+/***termina css de tabla de extra seleccionada*****/
 /*empieza css de tabla que se despliega*/
 /* STYLE THE ACCORDION HOLDING CONTAINER */
 .accordionbox {
-
   max-width: 1000px;
   margin: 10px auto 0px auto;
   z-index: 2;
@@ -175,7 +179,7 @@
   overflow: hidden;
   transition: all 0.3s ease;
   text-decoration-color: #111111;
-	list-style: none;
+  list-style: none;
 }
 
 /* STYLE THE CLICKED DROPDOWN CONTENT BOX */
@@ -183,13 +187,11 @@
   height: 150px;
   overflow: scroll;
   scroll-behavior: smooth;
-
 }
 
 /* SHOW THE + SIGN WHEN BOXES ARE CLOSED */
 input[type=checkbox]+label::before {
   content: "+ ";
-
 }
 
 /* SHOW THE – SIGN WHEN BOXES ARE OPEN */
@@ -276,33 +278,34 @@ a.appbtn:hover {
   margin-bottom: 0;
 }
 
-li:hover{
-	cursor: pointer;
-	padding: 5px;
-	text-decoration: underline blue;
-	color: blue;
+li:hover {
+  cursor: pointer;
+  padding: 5px;
+  text-decoration: underline blue;
+  color: blue;
 }
-/*termina css de tabla que se despliega*/
 
+/*termina css de tabla que se despliega*/
 /*Empieza el modal*/
 /*modal */
-
-.botonModal{
+.botonModal {
   margin-bottom: auto;
   border-radius: 5px;
   color: white;
   background: #70193f;
 }
-#btn-cancelar{
+
+#btn-cancelar {
   margin-bottom: 15px;
 }
-.botonModal:hover{
+
+.botonModal:hover {
   cursor: pointer;
 }
 
 .visibleNoExtraescolar {
   /* Hidden by default */
-  display:block ;
+  display: block;
   position: fixed;
   /* Stay in place */
   z-index: 1;
@@ -333,7 +336,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-
 /* The Modal (background) */
 .modalExtraescolar {
   /* Hidden by default */
@@ -362,7 +364,6 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-
 }
 
 /* Modal Content */
@@ -380,30 +381,27 @@ body {
   text-align: center;
   margin: 15% auto;
   width: 100%
-
 }
-.etiqueta{
+
+.etiqueta {
   text-align: center;
 }
 
 .form table tr th, td {
   padding: 10px;
-
 }
 
-
-#tablaModal{
+#tablaModal {
   width: 100%;
   border-collapse: collapse;
 }
 
-.col-md-6{
+.col-md-6 {
   width: 100%;
   background: blue;
 }
 
 /* Zebra striping */
-
 #tablaModal tr:nth-of-type(odd) {
   background: #eee;
 }
@@ -419,9 +417,6 @@ body {
   font-size: 11px;
   text-align: center;
 }
-
-
-
 
 /* The Close Button */
 .close {
@@ -446,7 +441,6 @@ body {
 
 .modal-body {
   padding: 2px 16px;
-
 }
 
 .modal-footer {
