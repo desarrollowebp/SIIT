@@ -176,7 +176,7 @@
 			presiona seleccionar para elegir un grupo
 		</h4>
 		<form>
-			<table id="tablaModal">
+			<table id="tablaModal" class="modalTable">
 				<tr class="headModal">
 					<td>Grupo</td>
 					<td>Promotor</td>
@@ -185,7 +185,7 @@
 					<td>Dias</td>
 					<td>Lugares Disponibles</td>
 					<td></td>
-				</tr>
+				</tr>		
 				<tr *ngFor="let group of maestros">
 					<td>{{group.grupo}}</td>
 					<td>{{group.promotor}}</td>

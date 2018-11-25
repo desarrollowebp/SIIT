@@ -75,12 +75,12 @@
     width: 100%;
   }
 
-  #tablaModal th {
+  .modalTable th {
     background-color: #6F193F;
     color: white;
   }
 
-  #tablaModal {
+  .modalTable {
     width: 100%;
   }
 
@@ -391,7 +391,7 @@ body {
   padding: 10px;
 }
 
-#tablaModal {
+.modalTable {
   width: 100%;
   border-collapse: collapse;
 }
@@ -402,21 +402,23 @@ body {
 }
 
 /* Zebra striping */
-#tablaModal tr:nth-of-type(odd) {
+.modalTable tr:nth-of-type(odd) {
   background: #eee;
 }
 
-#tablaModal th {
+.modalTable th {
   background: #70193f;
   color: white;
   font-weight: bold;
 }
 
-#tablaModal td, th {
+.modalTable td, th {
   padding: 6px;
   font-size: 11px;
   text-align: center;
 }
+
+
 
 /* The Close Button */
 .close {
