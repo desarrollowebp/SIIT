@@ -7,6 +7,11 @@ const mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost:27017/siit', { useNewUrlParser: true })
 
 const alumnosRouter = require('./routes/alumnos.js')
+const {
+  preguntasEvaluacionesRouter,
+  respuestasEvaluacionesRouter,
+  adeudosAlumnosRouter
+} = require('./evaluacion-docente')
 
 const app = express();
 
@@ -15,6 +20,13 @@ app.use(bodyParser.json())
 
 app.use('/alumnos', alumnosRouter);
 
-app.listen(process.env.PORT, function() {
-    console.info('Backend escuchando en el puerto 3000', process.env.PORT);
+/**
+ * Evaluacion docente
+ */
+app.use('/preguntas-evaluaciones', preguntasEvaluacionesRouter)
+app.use('/respuestas-evaluaciones', respuestasEvaluacionesRouter)
+app.use('/adeudos-alumnos', adeudosAlumnosRouter)
+
+app.listen(3000, function () {
+  console.info('Backend escuchando en el puerto 3000');
 });
