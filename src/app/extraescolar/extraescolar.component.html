@@ -28,13 +28,9 @@
 </table>
 
 
- <div id="page-1">
-
-
- </div>
-
- <button type="button" name="button" id="guardar" class="btnGuardarExtra" (click)="guardarExtra()">Confirmar y guardar grupo</button>
-
+<div id="page-1">
+	<p>1</p>
+</div>
 
 <!--=========empieza tabla de avisos==========---------->
 <div class="accordionbox">
@@ -176,30 +172,30 @@
 			presiona seleccionar para elegir un grupo
 		</h4>
 		<form>
-			<table id="tablaModal">
+			<table id=tablaModal>
 				<tr class="headModal">
-					<td>Grupo</td>
-					<td>Promotor</td>
-					<td>H.Inicial</td>
-					<td>H.Final</td>
-					<td>Dias</td>
-					<td>Lugares Disponibles</td>
-					<td></td>
+					<th>Grupo</th>
+					<th>Promotor</th>
+					<th>H.Inicial</th>
+					<th>H.Final</th>
+					<th>Dias</th>
+					<th>Lugares Disponibles</th>
+					<th></th>
 				</tr>
-				<tr *ngFor="let group of maestros">
-					<td>{{group.grupo}}</td>
+			</table>
+			<table id="tablaModal" *ngFor="let group of maestros">
+				<tr class="headModal" *ngFor="let extra of group.actividad">
+					<td>{{extra.grupo}}</td>
 					<td>{{group.promotor}}</td>
-					<td>{{group.hInicial}}</td>
-					<td>{{group.hFinal}}</td>
-					<td>{{group.dias}}</td>
-					<td>{{group.lugares}}</td>
-					<td><button id="button" type="button" class="botonModal"
-						(click)="cerrar()"
-						(click)="objetoActual(group)">Seleccionar</button></td>
+					<td>{{extra.hInicial}}</td>
+					<td>{{extra.hFinal}}</td>
+					<td>{{extra.dias}}</td>
+					<td>{{extra.lugares}}</td>
+					<td><button id="button" type="button" class="botonModal" (click)="cerrar()" (click)="objetoActual(group)">Seleccionar</button></td>
 				</tr>
 			</table>
 		</form>
-		<button class="botonModal" id="btn-cancelar" (click)="cerrar()">Cancelar</button>
+		<button class="boton" id="btn-cancelar" (click)="cerrar()">Cancelar</button>
 
 	</div>
 </div>
