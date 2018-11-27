@@ -185,18 +185,22 @@
 					<td>Dias</td>
 					<td>Lugares Disponibles</td>
 					<td></td>
-				</tr>		
-				<tr *ngFor="let group of maestros">
-					<td>{{group.actividad.grupo}}</td>
+				</tr>
+						
+				<thead id="theadModal" *ngFor="let group of maestros">
+					<tr *ngFor="let act of group.actividad">
+					<td>{{act.grupo}}</td>
 					<td>{{group.promotor}}</td>
-					<td>{{group.hInicial}}</td>
-					<td>{{group.hFinal}}</td>
-					<td>{{group.dias}}</td>
-					<td>{{group.lugares}}</td>
+					<td>{{act.hInicial}}</td>
+					<td>{{act.hFinal}}</td>
+					<td>{{act.dias}}</td>
+					<td>{{act.lugares}}</td>
 					<td><button id="button" type="button" class="botonModal"
 						(click)="cerrar()"
 						(click)="objetoActual(group)">Seleccionar</button></td>
-				</tr>
+					</tr>
+				</thead>
+				
 			</table>
 		</form>
 		<button class="botonModal" id="btn-cancelar" (click)="cerrar()">Cancelar</button>
