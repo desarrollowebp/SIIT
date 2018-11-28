@@ -12,7 +12,7 @@ router.get('/', function(req,res,next){
 router.get('/get-data', function(req,res,next){
     mongo.connect(url, function(err,db){
         assert.equal(null,err);
-        var cursor=db.collection(user-data).fin();
+        var cursor=db.collection(user-data).find();
         cursor.forEach(function(doc,err){
             assert.equal(null,err);
             resultArray.push(doc);
