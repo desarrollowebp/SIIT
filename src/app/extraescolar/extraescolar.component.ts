@@ -10,13 +10,13 @@ export class ExtraescolarComponent implements OnInit {
 
 
 
-  objetoActual = function(gru) {
-    console.log(gru);
+  objetoActual = function(gru, act) {
+    console.log(gru, act);
     document.getElementById('guardar').style.display = 'block';
     this.extraseleccionada = {
-      periodo: gru.periodo, nombre: gru.nombre, grupo: gru.grupo,
-      promotor: gru.promotor, hInicial: gru.hInicial, hFinal: gru.hFinal,
-      dias: gru.dias
+      periodo: act.periodo, nombre: act.nombre, grupo: act.grupo,
+      promotor: gru.promotor, hInicial: act.hInicial, hFinal: act.hFinal,
+      dias: act.dias
     };
 
 
@@ -39,20 +39,20 @@ export class ExtraescolarComponent implements OnInit {
     dias: ""
   }
 
-  modals = "modalExtraescolar";
+  modals = "modal";
   constructor() {
-    this.modals = "modalExtraescolar";
+    this.modals = "modal";
   }
   func($var) {
-    this.modals = "visibleNoExtraescolar";
+    this.modals = "visibleNo";
     this.datosmodal = "";
   }
   funcp($var) {
-    this.modals = "visibleNoExtraescolar";
+    this.modals = "visibleNo";
     this.datosmodal = $var;
   }
   cerrar() {
-    this.modals = "modalExtraescolar";
+    this.modals = "modal";
 
   }
 

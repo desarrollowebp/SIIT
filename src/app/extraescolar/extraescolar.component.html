@@ -7,22 +7,22 @@
 	</thead>
 	<tbody class="tbodyExtraSeleccionada">
 		<tr>
-			<td>Periodo </td>
-			<td>Actividad</td>
-			<td>Grupo </td>
-			<td>Promotor</td>
-			<td>H.Inicial </td>
-			<td>H.Final </td>
-			<td>Dias</td>
+			<td class="tdExtraSeleccionada">Periodo </td>
+			<td class="tdExtraSeleccionada">Actividad</td>
+			<td class="tdExtraSeleccionada">Grupo </td>
+			<td class="tdExtraSeleccionada">Promotor</td>
+			<td class="tdExtraSeleccionada">H.Inicial </td>
+			<td class="tdExtraSeleccionada">H.Final </td>
+			<td class="tdExtraSeleccionada">Dias</td>
 		</tr>
 		<tr>
-			<td>{{extraseleccionada.periodo}}</td>
-			<td>{{datosmodal}}</td>
-			<td>{{extraseleccionada.grupo}}</td>
-			<td>{{extraseleccionada.promotor}}</td>
-			<td>{{extraseleccionada.hInicial}}</td>
-			<td>{{extraseleccionada.hFinal}}</td>
-			<td>{{extraseleccionada.dias}}</td>
+			<td class="tdExtraSeleccionada">{{extraseleccionada.periodo}}</td>
+			<td class="tdExtraSeleccionada">{{datosmodal}}</td>
+			<td class="tdExtraSeleccionada">{{extraseleccionada.grupo}}</td>
+			<td class="tdExtraSeleccionada">{{extraseleccionada.promotor}}</td>
+			<td class="tdExtraSeleccionada">{{extraseleccionada.hInicial}}</td>
+			<td class="tdExtraSeleccionada">{{extraseleccionada.hFinal}}</td>
+			<td class="tdExtraSeleccionada">{{extraseleccionada.dias}}</td>
 		</tr>
 	</tbody>
 </table>
@@ -161,5 +161,44 @@
 
 <!--=========empieza el modal==========--->
 
+<div id="myModal" class="{{modals}}">
+
+	<!--=========empieza el modal==========--->
+
+	<!-- Modal content -->
+	<div class="form">
+		<h4>
+			Grupos disponibles para {{datosmodal}},
+			presiona seleccionar para elegir un grupo
+		</h4>
+		<form>
+			<table>
+				<tr class="headModal">
+					<td class="modalth">Grupo</td>
+					<td class="modalth">Promotor</td>
+					<td class="modalth">H.Inicial</td>
+					<td class="modalth">H.Final</td>
+					<td class="modalth">Dias</td>
+					<td class="modalth">Lugares Disponibles</td>
+					<td class="modalth"></td>
+				</tr>
+			</table>	
+				<table *ngFor="let group of maestros">
+					<tr class="headModal" *ngFor="let act of group.actividad">
+					<td class="modaltd">{{act.grupo}}</td>
+					<td class="modaltd">{{group.promotor}}</td>
+					<td class="modaltd">{{act.hInicial}}</td>
+					<td class="modaltd">{{act.hFinal}}</td>
+					<td class="modaltd">{{act.dias}}</td>
+					<td class="modaltd">{{act.lugares}}</td>
+					<td class="modaltd"><button id="button" type="button" class="botonModal"
+						(click)="cerrar()"
+						(click)="objetoActual(group, act)">Tomar</button></td>
+					</tr>
+				</table>
+		</form>
+		<button class="botonModal" id="btn-cancelar" (click)="cerrar()">Cancelar</button>
+	</div>
+</div>
 
 <!--=========termina el modal==========--->
