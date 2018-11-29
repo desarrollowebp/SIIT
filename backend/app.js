@@ -1,3 +1,4 @@
+require('./config/config');
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
@@ -6,6 +7,15 @@ const mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost:27017/siit', { useNewUrlParser: true })
 
 const alumnosRouter = require('./routes/alumnos.js')
+const {
+    preguntasEvaluacionesRouter,
+    respuestasEvaluacionesRouter,
+    adeudosAlumnosRouter
+} = require('./evaluacion-docente')
+
+const {
+    grupposCargadosRouter
+} = require('./grupos-cargados')
 
 const app = express();
 
@@ -14,6 +24,21 @@ app.use(bodyParser.json())
 
 app.use('/alumnos', alumnosRouter);
 
-app.listen(3000, function () {
-  console.info('Backend escuchando en el puerto 3000');
+/**
+ * Evaluacion docente
+ */
+app.use('/preguntas-evaluaciones', preguntasEvaluacionesRouter)
+app.use('/respuestas-evaluaciones', respuestasEvaluacionesRouter)
+app.use('/adeudos-alumnos', adeudosAlumnosRouter)
+app.use('/grupos-cargados', gruposCargadosRouter)
+
+/**************
+ *   Auditoria servicios
+ */
+app.use(require('./auditoria-servicio/rutas'));
+
+
+
+app.listen(3000, function() {
+    console.info('Backend escuchando en el puerto 3000');
 });
