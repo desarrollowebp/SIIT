@@ -1,3 +1,5 @@
+//prueba para subirlo
+
 const { Router } = require('express')
 
 const {
@@ -21,8 +23,6 @@ const miGrupo=new gruposCargados({ grupo: '1M',
 	sabado:'', 
 	salons: '' }
 )
-
-//
 
 const gruposCargadosRouter = Router()
 
