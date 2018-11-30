@@ -11,9 +11,9 @@ const PrefichaPagoSchema = new mongoose.Schema({
   carrera:String,
   consepto:String,
   fechavencimiento:Number,
-  sucursal-cuenta:Number,
-  referencia-alfanumerica:Number,
-  fechavencimiento:Number,
+  sucursalCuenta:Number,
+  referenciaAlfanumerica:Number,
+  
 
 });
 
