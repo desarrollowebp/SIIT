@@ -1,6 +1,6 @@
 ////aquí va alumno
 const mongoose = require('mongoose')
-  , Schema = mongoose.Schema;
+
 
 const horarioSchema = new mongoose.Schema({
     nombres: String,

@@ -14,8 +14,12 @@ const {
 } = require('./evaluacion-docente')
 
 const {
-    grupposCargadosRouter
+    gruposCargadosRouter
 } = require('./grupos-cargados')
+
+const {
+    horarioReinscripcionRouter
+} = require('./horario-reinscripcion')
 
 const app = express();
 
