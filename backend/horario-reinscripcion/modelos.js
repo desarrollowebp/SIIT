@@ -1,8 +1,7 @@
 ////aquí va alumno
 const mongoose = require('mongoose')
-  , Schema = mongoose.Schema;
 
-const horarioSchema = new mongoose.Schema({
+const horarioReinscripcionSchema = new mongoose.Schema({
     nombres: String,
     fecha: String,
     hora: String,
@@ -18,6 +17,8 @@ const adeudosHorarioAlumnoSchema = new mongoose.Schema({
 }) */
 
 module.exports = {
-  horarioReinscripcion: mongoose.model('horarioReinscripcion', horarioSchema)
+  horarioReinscripcion:
+   mongoose.model('horarioReinscripcion',
+   horarioReinscripcionSchema)
   //adeudosHorarioAlumnos: mongoose.model('adeudosHorarioAlumnos', adeudoshorarioAlumnoSchema)
 }
