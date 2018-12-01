@@ -17,6 +17,12 @@ const {
     grupposCargadosRouter
 } = require('./grupos-cargados')
 
+///
+const {
+  horarioReinscripcionRouter
+} = require('./horario-reinscripcion')
+///
+
 const app = express();
 
 app.use(cors())
@@ -36,7 +42,9 @@ app.use('/adeudos-alumnos', adeudosAlumnosRouter)
  */
 app.use(require('./auditoria-servicio/rutas'));
 
-
+///
+app.use('/horario-reinscripcion', horarioReinscripcionRouter)
+///
 
 app.listen(3000, function() {
     console.info('Backend escuchando en el puerto 3000');
