@@ -4,6 +4,14 @@
 	box-sizing: border-box;
 	border: 0 auto;
 }
+.bt-menu{
+	tab-size: 16px;
+	font-weight: bold;
+	display: block;
+	position: relative;
+	margin-top: 15px;
+	color: #70193f;
+}
 
  ::-webkit-scrollbar {
     width: 5px;
@@ -129,26 +137,18 @@ header nav ul li .children li a {
 
 
 	.menu_bar img {
-		margin-top: 0;
-	
+		margin-top: 0s;
+
 		margin-top: 10px;
 		display: block;
-<<<<<<< HEAD
-<<<<<<< HEAD
 		color: #70193f;
-=======
-=======
-		color: #70193f;
->>>>>>> f8a6f6085dced899632b6971b6e5ff2a871f3bbc
-		color: #6F193F;
->>>>>>> 93f4e3d4fd767779a8ec7381e9c7dc1fc69cb93b
 		overflow: hidden;
 		font-size: 25px;
 		font-weight: bold;
 		text-decoration: none;
 		float: left;
 		margin-left: 10px;
-		
+
 		height: 65px;
 		width: 65px;
 	}

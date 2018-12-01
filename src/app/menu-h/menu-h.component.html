@@ -1,17 +1,23 @@
 <header>
-    <div class="menu_bar">
-        
+    <div class="menu_bar" >
+      <a *ngIf="this.router.url !==  '/' && this.router.url 
+      !== '/inicio'" class="bt-menu"><span class="icon-bars"></span></a>
+
+      <a *ngIf="this.router.url 
+      === '/inicio'" class="bt-menu" routerLink='/'>Cerrar Sesión</a>
     </div>
 
     <div class="textoITD">
-      <a class="ritd" routerLink="/inicio"><p>Instituto Tecnológico De Durango</p></a>
+      <a class="ritd" *ngIf="this.router.url !==  '/' && this.router.url !== '/inicio'" routerLink="/inicio"><p>Instituto Tecnológico De Durango</p></a>
+      <a class="ritd" *ngIf="this.router.url ===  '/' || this.router.url === '/inicio'"><p>Instituto Tecnológico De Durango</p></a>
+
     </div>
 
     <div class="logo">
       <img src="/assets/img/menu-h/Logo_itd.png">
     </div>
 
-    <nav>
+    <nav *ngIf="this.router.url !==  '/' && this.router.url !== '/inicio'">
       <ul>
 
         <li class="submenu2"> <a class="negrita"><span class="icon-graduation-cap"></span> Informacion Escolar<span class="caret icon-chevron-down"></span></a>

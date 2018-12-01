@@ -149,15 +149,31 @@ p {
 .header-top {
   box-shadow: 0 3px 5px rgba(0, 0, 0, .1)
 }
+.table tbody tr:nth-child(5) td:nth-child(1){
+  text-align: right;
+  
+}
+
+
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0px;
+  border: 1px solid black;
+  
+  empty-cells: HIDE;
+  border-radius: .25rem;
+  perspective: 1px;
+  -webkit-border-radius: .25rem;
+-moz-border-radius: .25rem;
+}
 
 .leftmenutrigger {
   display: none
 }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
+
 
 tr:nth-of-type(odd) {
   background: #eee;

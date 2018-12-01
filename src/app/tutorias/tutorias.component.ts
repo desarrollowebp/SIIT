@@ -36,5 +36,17 @@ export class TutoriasComponent implements AfterViewInit {
 
   }
 
+  tutorias = [
+    { dato: 'Tutor', nombre: 'Alexander Anderson Huerta', act1: 'Actividad 1', act2: 'Actividad 2',
+    act3: 'Actividad 3', act4: 'Actividad 4', act5: 'Actividad 5', act6: 'Actividad 6', act7: 'Actividad 7', act8: 'Actividad 8', act9: 'Actividad 9', act10: 'Actividad 10', act11: 'Actividad 11', act12: 'Actividad 12', act13: 'Actividad 13', act14: 'Actividad 14', act15: 'Actividad 15', act16: 'Actividad 16', act17: 'Actividad 17', act18: 'Actividad 18', act19: 'Actividad 19', act20: 'Actividad 20' }
+  ]
+
+  
+
+  
+  avance = [
+    { dato: 'Avance de actividades' }
+  ]
+
 }
 	
