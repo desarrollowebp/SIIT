@@ -10,18 +10,51 @@ export class ExtraescolarComponent implements OnInit {
 
 
 
-  objetoActual = function(gru, act) {
-    console.log(gru, act);
+
+
+
+  objetoActual = function(gruDis) {
+    console.log(gruDis);
     document.getElementById('guardar').style.display = 'block';
     this.extraseleccionada = {
-      periodo: act.periodo, nombre: act.nombre, grupo: act.grupo,
-      promotor: gru.promotor, hInicial: act.hInicial, hFinal: act.hFinal,
-      dias: act.dias
+      periodo: gruDis.periodo, nombreActividad: gruDis.nombreActividad, grupo: gruDis.grupo,
+      promotor: gruDis.promotor, hInicial: gruDis.hInicial, hFinal: gruDis.hFinal,
+      dias: gruDis.dias
     };
-
-
-
   }
+
+
+gpsDisponibles=[];
+materiaModal="";
+
+  funcMostrarGrupos($extra) {
+    this.gpsDisponibles = [];
+    this.modals = "visibleNo";
+    this.materiaModal=$extra;
+    for (let i = 0; i < this.maestros.length; i++) {
+            for (let j = 0; j < this.maestros[i].actividad.length; j++) {
+                    console.log( this.maestros[i].actividad[j].nombreActividad);
+                    if( this.maestros[i].actividad[j].nombreActividad == $extra ){
+                    this.gpsDisponibles.push(
+                    {
+                     periodo:this.maestros[i].actividad[j].periodo,
+                     nombreActividad:this.maestros[i].actividad[j].nombreActividad,
+                     grupo:this.maestros[i].actividad[j].grupo,
+                     promotor:this.maestros[i].promotor,
+                     hInicial:this.maestros[i].actividad[j].hInicial,
+                     hFinal:this.maestros[i].actividad[j].hFinal,
+                     dias:this.maestros[i].actividad[j].dias,
+                     lugares:this.maestros[i].actividad[j].lugares
+                     }
+                   );
+
+                      }
+
+             }
+      }
+      console.log(this.gpsDisponibles);
+  }
+
 
   actividadesCulturales = [];
   actividadesDeportivas = [];
@@ -30,6 +63,7 @@ export class ExtraescolarComponent implements OnInit {
 
   datosmodal = "";
   extraseleccionada = {
+    nombreActividad:"",
     periodo: "",
     nombre: "",
     grupo: "",
@@ -50,10 +84,10 @@ export class ExtraescolarComponent implements OnInit {
   funcp($var) {
     this.modals = "visibleNo";
     this.datosmodal = $var;
+    console.log($var);
   }
   cerrar() {
     this.modals = "modal";
-
   }
 
   guardarExtra(){
@@ -138,7 +172,7 @@ export class ExtraescolarComponent implements OnInit {
       promotor: "GALINDO ZALDIVAR M.V. ISAAC ALEJANDRO",
       actividad: [
         {
-          nombreActividad: "",
+          nombreActividad: "Ajedrez",
           periodo: '20183',
           grupo: 'RL',
           hInicial: '13:00',
@@ -147,7 +181,7 @@ export class ExtraescolarComponent implements OnInit {
           lugares: '20'
         },
         {
-          nombreActividad: "",
+          nombreActividad: "Rondalla",
           periodo: '20183',
           grupo: 'RM',
           hInicial: '10:00',
@@ -163,7 +197,7 @@ export class ExtraescolarComponent implements OnInit {
       promotor: "GARCIA LOPEZ JOSE ANTONIO",
       actividad: [
         {
-          nombreActividad: "",
+          nombreActividad: "Periodismo",
           periodo: '20183',
           grupo: 'RN',
           hInicial: '12:00',
@@ -172,7 +206,7 @@ export class ExtraescolarComponent implements OnInit {
           lugares: '20'
         },
         {
-          nombreActividad: "",
+          nombreActividad: "Teatro",
           periodo: '20183',
           grupo: 'RO',
           hInicial: '15:00',
@@ -188,3 +222,5 @@ export class ExtraescolarComponent implements OnInit {
 
   ]
 }
+
+

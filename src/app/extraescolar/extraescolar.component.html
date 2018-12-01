@@ -17,7 +17,7 @@
 		</tr>
 		<tr>
 			<td class="tdExtraSeleccionada">{{extraseleccionada.periodo}}</td>
-			<td class="tdExtraSeleccionada">{{datosmodal}}</td>
+			<td class="tdExtraSeleccionada">{{extraseleccionada.nombreActividad}}</td>
 			<td class="tdExtraSeleccionada">{{extraseleccionada.grupo}}</td>
 			<td class="tdExtraSeleccionada">{{extraseleccionada.promotor}}</td>
 			<td class="tdExtraSeleccionada">{{extraseleccionada.hInicial}}</td>
@@ -42,7 +42,7 @@
 		<div class="insidebox">
 			<!--=========PRIMER CONTENEDOR DE EXTRA==========--->
 			<div class="panel-body" *ngFor="let baile of bailes">
-				<li (click)="funcp(baile)">{{baile}} </li>
+				<li (click)="funcMostrarGrupos(baile)">{{baile}} </li>
 			</div>
 		</div>
 	</div>
@@ -54,7 +54,7 @@
 		<label for="tab-two">MÚSICA</label>
 		<div class="insidebox">
 			<div class="panel-body" *ngFor="let musica of musicales">
-				<li (click)="funcp(musica)">{{musica}}</li>
+				<li (click)="funcMostrarGrupos(musica)">{{musica}}</li>
 			</div>
 		</div>
 	</div>
@@ -66,7 +66,7 @@
 		<label for="tab-three">ACTIVIDADES CIVICAS</label>
 		<div class="insidebox">
 			<div class="panel-body" *ngFor="let civica of civicas">
-				<li (click)="funcp(civica)">{{civica}}</li>
+				<li (click)="funcMostrarGrupos(civica)">{{civica}}</li>
 			</div>
 		</div>
 	</div>
@@ -78,7 +78,7 @@
 		<label for="tab-four">DIFUSION Y TEATRO</label>
 		<div class="insidebox">
 			<div class="panel-body" *ngFor="let dt of dts">
-				<li (click)="funcp(dt)">{{dt}}</li>
+				<li (click)="funcMostrarGrupos(dt)">{{dt}}</li>
 			</div>
 		</div>
 	</div>
@@ -91,7 +91,7 @@
 		<label class="visuales" for="tab-five">VISUALES</label>
 		<div class="insidebox">
 			<div class="panel-body" *ngFor="let visual of visuales">
-				<li (click)="funcp(visual)">{{visual}}</li>
+				<li (click)="funcMostrarGrupos(visual)">{{visual}}</li>
 			</div>
 		</div>
 	</div>
@@ -113,7 +113,7 @@
 		<div class="insidebox">
 			<!--=========PRIMER CONTENEDOR DE EXTRA==========--->
 			<div class="panel-body" *ngFor="let pelota of pelotas">
-				<li (click)="funcp(pelota)">{{pelota}}</li>
+				<li (click)="funcMostrarGrupos(pelota)">{{pelota}}</li>
 			</div>
 		</div>
 	</div>
@@ -125,7 +125,7 @@
 		<label for="tab-seven">ACTIVIDADES FISICAS</label>
 		<div class="insidebox">
 			<div class="panel-body" *ngFor="let fisica of fisicas">
-				<li (click)="funcp(fisica)">{{fisica}}</li>
+				<li (click)="funcMostrarGrupos(fisica)">{{fisica}}</li>
 			</div>
 		</div>
 	</div>
@@ -137,7 +137,7 @@
 		<label for="tab-eight">NATACION</label>
 		<div class="insidebox">
 			<div class="panel-body" *ngFor="let natacion of nataciones">
-				<li (click)="funcp(natacion)">{{natacion}}</li>
+				<li (click)="funcMostrarGrupos(natacion)">{{natacion}}</li>
 			</div>
 		</div>
 	</div>
@@ -149,7 +149,7 @@
 		<label for="tab-nine">AJEDREZ, ELECTRONICOS Y ARCO</label>
 		<div class="insidebox">
 			<div class="panel-body" *ngFor="let aea of aeas">
-				<li (click)="funcp(aea)">{{aea}}</li>
+				<li  (click)="funcMostrarGrupos(aea)" >{{aea}}</li>
 			</div>
 		</div>
 	</div>
@@ -163,12 +163,12 @@
 
 <div id="myModal" class="{{modals}}">
 
-	<!--=========empieza el modal==========--->
+	
 
 	<!-- Modal content -->
 	<div class="form">
 		<h4>
-			Grupos disponibles para {{datosmodal}},
+			Grupos disponibles para {{materiaModal}},
 			presiona seleccionar para elegir un grupo
 		</h4>
 		<form>
@@ -183,18 +183,16 @@
 					<td class="modalth"></td>
 				</tr>
 			</table>	
-				<table *ngFor="let group of maestros">
-					<tr class="headModal" *ngFor="let act of group.actividad">
-					<td class="modaltd">{{act.grupo}}</td>
-					<td class="modaltd">{{group.promotor}}</td>
-					<td class="modaltd">{{act.hInicial}}</td>
-					<td class="modaltd">{{act.hFinal}}</td>
-					<td class="modaltd">{{act.dias}}</td>
-					<td class="modaltd">{{act.lugares}}</td>
+				<table *ngFor="let gpsdisp of gpsDisponibles">
+					<td class="modaltd">{{gpsdisp.grupo}}</td>
+					<td class="modaltd">{{gpsdisp.promotor}}</td>
+					<td class="modaltd">{{gpsdisp.hInicial}}</td>
+					<td class="modaltd">{{gpsdisp.hFinal}}</td>
+					<td class="modaltd">{{gpsdisp.dias}}</td>
+					<td class="modaltd">{{gpsdisp.lugares}}</td>
 					<td class="modaltd"><button id="button" type="button" class="botonModal"
 						(click)="cerrar()"
-						(click)="objetoActual(group, act)">Tomar</button></td>
-					</tr>
+						(click)="objetoActual(gpsdisp)">Tomar</button></td>
 				</table>
 		</form>
 		<button class="botonModal" id="btn-cancelar" (click)="cerrar()">Cancelar</button>
