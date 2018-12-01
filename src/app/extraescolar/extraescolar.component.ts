@@ -1,5 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import * as $ from 'jquery';
+import { Button } from 'protractor';
 
 @Component({
   selector: 'app-extraescolar',
@@ -28,6 +29,13 @@ gpsDisponibles=[];
 materiaModal="";
 
   funcMostrarGrupos($extra) {
+    $(function() {
+      $(".botonModal").click(function(e) {
+        e.preventDefault();
+        $("html, body").animate({ "scrollTop": "0px" }, 600);
+      })
+    });
+
     this.gpsDisponibles = [];
     this.modals = "visibleNo";
     this.materiaModal=$extra;
@@ -98,14 +106,8 @@ materiaModal="";
 
   ngOnInit() {
     ///metoro para regresar arriba
-    $(function() {
-      $(".botonModal").click(function(e) {
-        e.preventDefault();
-        $("html, body").animate({ "scrollTop": "0px" }, 600);
-      })
-    });
+    
     /////
-
 
   }
 
