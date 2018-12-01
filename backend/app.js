@@ -12,13 +12,10 @@ const {
     respuestasEvaluacionesRouter,
     adeudosAlumnosRouter
 } = require('./evaluacion-docente')
-<<<<<<< HEAD
 
 const {
     grupposCargadosRouter
 } = require('./grupos-cargados')
-=======
->>>>>>> b949cc9ffd7643bec59a164cdfc308dd4837c71a
 
 const app = express();
 
@@ -33,10 +30,6 @@ app.use('/alumnos', alumnosRouter);
 app.use('/preguntas-evaluaciones', preguntasEvaluacionesRouter)
 app.use('/respuestas-evaluaciones', respuestasEvaluacionesRouter)
 app.use('/adeudos-alumnos', adeudosAlumnosRouter)
-<<<<<<< HEAD
-app.use('/grupos-cargados', gruposCargadosRouter)
-=======
->>>>>>> b949cc9ffd7643bec59a164cdfc308dd4837c71a
 
 /**************
  *   Auditoria servicios

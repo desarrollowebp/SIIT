@@ -1,25 +1,25 @@
   ////aqui va lo de app
-  
+
   const {
-    horarioReinscripcion,
-    adeudosHorarioAlumnos
+    horarioReinscripcion
+    //adeudosHorarioAlumnos
   } = require('./modelos.js')
-  
+
   const {
-    horarioReinscripcionRouter,
-    adeudosHorarioAlumnosRouter
+    horarioReinscripcionRouter
+   // adeudosHorarioAlumnosRouter
   } = require('./rutas.js')
-  
+
   module.exports = {
     /**
      * Modelos
      */
     horarioReinscripcion,
-    adeudosHorarioAlumnos,
-  
+   // adeudosHorarioAlumnos,
+
     /**
      * Rutas
      */
-    horarioReinscripcionRouter,
-    adeudosHorarioAlumnosRouter
+    horarioReinscripcionRouter
+    //adeudosHorarioAlumnosRouter
   }
