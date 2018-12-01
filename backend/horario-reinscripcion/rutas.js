@@ -6,7 +6,7 @@ const {
 } = require('./modelos.js')
 
 //const adeudosHorarioAlumnosRouter = Router()
-const misDatos=new gruposCargados({
+const misDatos=new horarioReinscripcion({
   grupo: '1M',
   nombres: 'Alejandro Marrufo Quintana',
   fecha: '20/11/2018',
