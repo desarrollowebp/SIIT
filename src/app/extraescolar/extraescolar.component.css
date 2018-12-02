@@ -1,4 +1,3 @@
-
 /***empieza css de tabla de extra seleccionada*****/
 .tablaExtraSeleccionada {
   text-align: center;
@@ -11,24 +10,31 @@
   border-radius: .25rem;
 }
 
+h5{
+  font-size: 20px;
+}
+
+.tdExtraSeleccionada{
+  width: auto;
+}
+
 .theadExtraSeleccionada tr:first-child {
   background: #70193f;
   color: #fff;
   border: none;
-
 }
+
 .theadExtraSeleccionada {
   background: #70193f;
   color: #fff;
   border: none;
 }
 
-
 .thExtraSeleccionada {
   font-weight: 500;
 }
 
-.theadExtraSeleccionada tr:last-child th {
+.theadExtraSeleccionada tr:last-child, th {
   border-bottom: 3px solid #ddd;
 }
 
@@ -37,7 +43,7 @@
   cursor: default;
 }
 
-.tbodyExtraSeleccionada tr:last-child td {
+.tbodyExtraSeleccionada tr:last-child, td {
   border: none;
 }
 
@@ -50,12 +56,6 @@
   padding-right: 10px;
 }
 
-/**.button {
-  color: #aaa;
-  cursor: pointer;
-  vertical-align: left;
-  margin-top: -4px;
-}**/
 
 .edit:hover {
   color: #111111;
@@ -66,33 +66,12 @@
 }
 
 @media screen and (max-width: 600px) {
-
-  .modal {
-    padding-left: 0;
-    padding-top: 0;
-  }
-
-  .form {
-    margin: 35% auto;
-    padding-left: 0;
-    border-radius: 0;
-    width: 100%;
-  }
-
-
-#tablaModal th {
-  background-color: #6F193F;
-  color: white;
-
-}
-#tablaModal {
-  width: 100%;
-
-}
   .tablaExtraSeleccionada {
     width: 100%;
   }
-
+  .tdExtraSeleccionada{
+    width: auto;
+  }
   .theadExtraSeleccionada {
     display: flow-root;
     background: #70193f;
@@ -104,13 +83,24 @@
     background-color: inherit;
   }
 
-  .theadExtraSeleccionada tr, td:first-child {
+  .theadExtraSeleccionada tr{
     background: #aaa;
     font-weight: bold;
     font-size: 1.3em;
   }
 
-  .tbodyExtraSeleccionada td, th {
+  .tdExtraSeleccionada:first-child{
+    background: #aaa;
+    font-weight: bold;
+    font-size: 1.3em;
+  }
+
+  .tbodyExtraSeleccionada td {
+    display: block;
+    text-align: center;
+  }
+
+  .thExtraSeleccionada{
     display: block;
     text-align: center;
   }
@@ -123,16 +113,25 @@
 
   .tbodyExtraSeleccionada td:last-child {
     text-align: center;
-
   }
 }
 
-/***termina css de tabla de extra seleccionada*****/
+.btnGuardarExtra {
+  background-color: #70193f;
+  color: white;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: none;
+  cursor: pointer;
+}
 
+/***termina css de tabla de extra seleccionada*****/
 /*empieza css de tabla que se despliega*/
 /* STYLE THE ACCORDION HOLDING CONTAINER */
 .accordionbox {
-
   max-width: 1000px;
   margin: 10px auto 0px auto;
   z-index: 2;
@@ -175,7 +174,7 @@
   overflow: hidden;
   transition: all 0.3s ease;
   text-decoration-color: #111111;
-	list-style: none;
+  list-style: none;
 }
 
 /* STYLE THE CLICKED DROPDOWN CONTENT BOX */
@@ -183,13 +182,11 @@
   height: 150px;
   overflow: scroll;
   scroll-behavior: smooth;
-
 }
 
 /* SHOW THE + SIGN WHEN BOXES ARE CLOSED */
 input[type=checkbox]+label::before {
   content: "+ ";
-
 }
 
 /* SHOW THE – SIGN WHEN BOXES ARE OPEN */
@@ -276,31 +273,34 @@ a.appbtn:hover {
   margin-bottom: 0;
 }
 
-li:hover{
-	cursor: pointer;
-	padding: 5px;
-	text-decoration: underline blue;
-	color: blue;
+li:hover {
+  cursor: pointer;
+  padding: 5px;
+  text-decoration: underline blue;
+  color: blue;
 }
-/*termina css de tabla que se despliega*/
 
+/*termina css de tabla que se despliega*/
 /*Empieza el modal*/
 /*modal */
-
-.botonModal{
+.botonModal {
+  margin-top: 10px;
   margin-bottom: auto;
   border-radius: 5px;
   color: white;
   background: #70193f;
 }
-#btn-cancelar{
+
+#btn-cancelar {
   margin-bottom: 15px;
 }
-.botonModal:hover{
+
+.botonModal:hover {
   cursor: pointer;
 }
 
-.visibleNoExtraescolar {
+
+.visibleNo {
   /* Hidden by default */
   display:block ;
   position: fixed;
@@ -335,7 +335,7 @@ body {
 
 
 /* The Modal (background) */
-.modalExtraescolar {
+.modal {
   /* Hidden by default */
   display: none;
   position: fixed;
@@ -367,7 +367,6 @@ body {
 
 /* Modal Content */
 .form {
-  padding-top: 30px;
   bottom: 0;
   background-color: #fefefe;
   width: 80%;
@@ -379,81 +378,61 @@ body {
   align-items: center;
   text-align: center;
   margin: 15% auto;
-  width: 100%
 
 }
-.etiqueta{
-  text-align: center;
-}
+
 
 .form table tr th, td {
   padding: 10px;
 
 }
 
-
-#tablaModal{
+table {
   width: 100%;
   border-collapse: collapse;
 }
 
-.col-md-6{
-  width: 100%;
-  background: blue;
-}
+
 
 /* Zebra striping */
 
-#tablaModal tr:nth-of-type(odd) {
+tr:nth-of-type(odd) {
   background: #eee;
 }
 
-#tablaModal th {
+.modalth {
   background: #70193f;
   color: white;
   font-weight: bold;
 }
 
-#tablaModal td, th {
+.modaltd {
   padding: 6px;
   font-size: 11px;
   text-align: center;
+  width: 100%;
+}
+
+.modalth{
+  padding: 6px;
+  font-size: 11px;
+  text-align: center;
+  width: 100%;
+}
+
+.modaltd{
+  width: 14%;
 }
 
 
-
-
-/* The Close Button */
-.close {
+.modalth{
+  background-color:#70193f;
   color: white;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+  width: 10%;
 }
 
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
 
-.modal-header {
-  padding: 2px 16px;
-  background-color: #5cb85c;
-  color: white;
-}
 
-.modal-body {
-  padding: 2px 16px;
-
-}
-
-.modal-footer {
-  padding: 2px 16px;
-  background-color: #5cb85c;
-  color: white;
-}
 
 /* Add Animation */
 @-webkit-keyframes slideIn {
@@ -498,4 +477,37 @@ body {
   to {
     opacity: 1
   }
+}
+
+@media(max-width:780px) {
+
+  .modal {
+    padding-left: 0;
+    padding-top: 0;
+  }
+
+  .form {
+    margin: 35% auto;
+    padding-left: 0;
+    border-radius: 0;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+   
+  }
+
+
+.modalth {
+  background-color: #6F193F;
+  color: white;
+  width: auto;
+}
+
+
+
 }
