@@ -12,13 +12,26 @@ const {
     respuestasEvaluacionesRouter,
     adeudosAlumnosRouter
 } = require('./evaluacion-docente')
-<<<<<<< HEAD
 
 const {
     grupposCargadosRouter
 } = require('./grupos-cargados')
-=======
->>>>>>> b949cc9ffd7643bec59a164cdfc308dd4837c71a
+
+///
+const {
+  horarioReinscripcionRouter
+} = require('./horario-reinscripcion')
+///
+const {
+  semestresMateriaRouter,
+    maestrosMateriaRouter
+} = require('./seleccion-materias')
+///
+const {
+    actividadesRouter,
+      maestrosExtraescolarRouter
+  } = require('./extraescolar')
+
 
 const app = express();
 
@@ -33,17 +46,18 @@ app.use('/alumnos', alumnosRouter);
 app.use('/preguntas-evaluaciones', preguntasEvaluacionesRouter)
 app.use('/respuestas-evaluaciones', respuestasEvaluacionesRouter)
 app.use('/adeudos-alumnos', adeudosAlumnosRouter)
-<<<<<<< HEAD
-app.use('/grupos-cargados', gruposCargadosRouter)
-=======
->>>>>>> b949cc9ffd7643bec59a164cdfc308dd4837c71a
-
+app.use('/seleccion-materias', semestresMateriaRouter )
+app.use('/seleccion-materias-maestros',  maestrosMateriaRouter)
+app.use('/extraescolar',  actividadesRouter)
+app.use('/extraescolar-maestros',  maestrosExtraescolarRouter)
 /**************
  *   Auditoria servicios
  */
 app.use(require('./auditoria-servicio/rutas'));
 
-
+///
+app.use('/horario-reinscripcion', horarioReinscripcionRouter)
+///
 
 app.listen(3000, function() {
     console.info('Backend escuchando en el puerto 3000');
