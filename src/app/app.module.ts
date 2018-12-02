@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
@@ -32,6 +33,8 @@ import { AvanceMateriaAlumnoComponent } from './avance-materia-alumno/avance-mat
 import { PostSeleccionMateriasComponent } from './post-seleccion-materias/post-seleccion-materias.component';
 import { DatosTablaAlumnoComponent } from './datos-tabla-alumno/datos-tabla-alumno.component';
 import { TablaHorarioComponent } from './tabla-horario/tabla-horario.component';
+
+import { EvaluacionDocenteService } from './evaluacion-docente/evaluacion-docente.service'
 
 const routes:Routes = [
   { path: '', component: LoginComponent },
@@ -99,9 +102,12 @@ const routes:Routes = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [
+    EvaluacionDocenteService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

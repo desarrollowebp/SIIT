@@ -1,23 +1,23 @@
 const mongoose = require('mongoose')
 
-const preguntasEvaluacionSchema =  new mongoose.Schema({
+const preguntasEvaluacionesSchema =  new mongoose.Schema({
   pregunta: String
 })
 
-const respuestasEvaluacionSchema = new mongoose.Schema({
+const respuestasEvaluacionesSchema = new mongoose.Schema({
   materia: String,
   respuestas: [{
     type: String
   }]
 })
 
-const adeudosAlumnoSchema = new mongoose.Schema({
+const adeudosAlumnosSchema = new mongoose.Schema({
   numeroControl: Number,
   evaluacionDocente: Boolean
 })
 
 module.exports = {
-  preguntasEvaluaciones: mongoose.model('preguntasEvaluaciones', preguntasEvaluacionSchema),
-  respuestasEvaluaciones: mongoose.model('respuestasEvaluaciones', respuestasEvaluacionSchema),
-  adeudosAlumnos: mongoose.model('adeudosAlumnos', adeudosAlumnoSchema)
+  preguntasEvaluaciones: mongoose.model('preguntasEvaluaciones', preguntasEvaluacionesSchema),
+  respuestasEvaluaciones: mongoose.model('respuestasEvaluaciones', respuestasEvaluacionesSchema),
+  adeudosAlumnos: mongoose.model('adeudosAlumnos', adeudosAlumnosSchema)
 }
