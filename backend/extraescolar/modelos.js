@@ -1,15 +1,16 @@
 const mongoose = require('mongoose')
 
-const extraescolarSchema =  new mongoose.Schema({
-  periodo: Number,
-  grupo: Number,
-  promotor: String,
-  hInicial: TimeRanges,
-  hFinal: TimeRanges,
-  dias: String,
-  lugares: Number
+const actividadesSchema =  new mongoose.Schema({
+
 })
 
+const maestrosExtraescolarSchema =  new mongoose.Schema({
+
+})
+
+
+
 module.exports = {
-  extraescolar: mongoose.model('extraescolar', extraescolarSchema)
+  actividades: mongoose.model('extraescolar', actividadesSchema),
+  maestrosExtraescolar:  mongoose.model('maestrosextraescolar', maestrosExtraescolarSchema)
 }

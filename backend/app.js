@@ -26,6 +26,13 @@ const {
   semestresMateriaRouter,
     maestrosMateriaRouter
 } = require('./seleccion-materias')
+///
+const {
+    actividadesRouter,
+      maestrosExtraescolarRouter
+  } = require('./extraescolar')
+
+
 const app = express();
 
 app.use(cors())
@@ -41,6 +48,8 @@ app.use('/respuestas-evaluaciones', respuestasEvaluacionesRouter)
 app.use('/adeudos-alumnos', adeudosAlumnosRouter)
 app.use('/seleccion-materias', semestresMateriaRouter )
 app.use('/seleccion-materias-maestros',  maestrosMateriaRouter)
+app.use('/extraescolar',  actividadesRouter)
+app.use('/extraescolar-maestros',  maestrosExtraescolarRouter)
 /**************
  *   Auditoria servicios
  */
