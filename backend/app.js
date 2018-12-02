@@ -1,3 +1,4 @@
+require('./config/config');
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
@@ -7,10 +8,30 @@ mongoose.connect('mongodb://localhost:27017/siit', { useNewUrlParser: true })
 
 const alumnosRouter = require('./routes/alumnos.js')
 const {
-  preguntasEvaluacionesRouter,
-  respuestasEvaluacionesRouter,
-  adeudosAlumnosRouter
+    preguntasEvaluacionesRouter,
+    respuestasEvaluacionesRouter,
+    adeudosAlumnosRouter
 } = require('./evaluacion-docente')
+
+const {
+    grupposCargadosRouter
+} = require('./grupos-cargados')
+
+///
+const {
+  horarioReinscripcionRouter
+} = require('./horario-reinscripcion')
+///
+const {
+  semestresMateriaRouter,
+    maestrosMateriaRouter
+} = require('./seleccion-materias')
+///
+const {
+    actividadesRouter,
+      maestrosExtraescolarRouter
+  } = require('./extraescolar')
+
 
 const app = express();
 
@@ -25,7 +46,19 @@ app.use('/alumnos', alumnosRouter);
 app.use('/preguntas-evaluaciones', preguntasEvaluacionesRouter)
 app.use('/respuestas-evaluaciones', respuestasEvaluacionesRouter)
 app.use('/adeudos-alumnos', adeudosAlumnosRouter)
+app.use('/seleccion-materias', semestresMateriaRouter )
+app.use('/seleccion-materias-maestros',  maestrosMateriaRouter)
+app.use('/extraescolar',  actividadesRouter)
+app.use('/extraescolar-maestros',  maestrosExtraescolarRouter)
+/**************
+ *   Auditoria servicios
+ */
+app.use(require('./auditoria-servicio/rutas'));
 
-app.listen(3000, function () {
-  console.info('Backend escuchando en el puerto 3000');
+///
+app.use('/horario-reinscripcion', horarioReinscripcionRouter)
+///
+
+app.listen(3000, function() {
+    console.info('Backend escuchando en el puerto 3000');
 });
