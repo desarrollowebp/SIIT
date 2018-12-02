@@ -22,7 +22,10 @@ const {
   horarioReinscripcionRouter
 } = require('./horario-reinscripcion')
 ///
-
+const {
+  semestresMateriaRouter,
+    maestrosMateriaRouter
+} = require('./seleccion-materias')
 const app = express();
 
 app.use(cors())
@@ -36,7 +39,8 @@ app.use('/alumnos', alumnosRouter);
 app.use('/preguntas-evaluaciones', preguntasEvaluacionesRouter)
 app.use('/respuestas-evaluaciones', respuestasEvaluacionesRouter)
 app.use('/adeudos-alumnos', adeudosAlumnosRouter)
-
+app.use('/seleccion-materias', semestresMateriaRouter )
+app.use('/seleccion-materias-maestros',  maestrosMateriaRouter)
 /**************
  *   Auditoria servicios
  */
