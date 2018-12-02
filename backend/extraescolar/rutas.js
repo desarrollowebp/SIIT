@@ -3,7 +3,6 @@ const { Router } = require('express')
 const {
   actividades,
       maestrosExtraescolar
-
 } = require('./modelos.js')
 
 const actividadesRouter = Router()
@@ -18,10 +17,9 @@ actividadesRouter.get('/', (req, res, next) => {
 })
 maestrosExtraescolarRouter.get('/', (req, res, next) => {
   maestrosExtraescolar.find()
-    .then( actividadesMaes => res.json({  actividadesMaes }))
+    .then( actividadesMaes => res.json({actividadesMaes}))
     .catch(next)
 })
-
 
 module.exports = {
   actividadesRouter,
