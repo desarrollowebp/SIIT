@@ -22,7 +22,7 @@ const kardexCalificacionesRouter = Router()
 
 kardexCalificacionesRouter.get('/', (req, res, next) => {
   kardexCalificaciones.find()
-    .then((calificaciones) => res.json({ calificaciones }))
+    .then((promedio) => res.json({ promedio }))
     .catch(next)
 })
 
