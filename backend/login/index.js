@@ -1,12 +1,18 @@
-const {
-    login
-} = require('./modelos.js')
+var express = require('express');
+var loginRouter = express.Router();
 
-const {
-    loginRouter 
-} = require('./rutas.js')
+// Get Homepage
+loginRouter.get('/', ensureAuthenticated, function(req, res){
+	res.render('index');
+});
 
-module.exports = {
-    login,
-    loginRouter
+function ensureAuthenticated(req, res, next){
+	if(req.isAuthenticated()){
+		return next();
+	} else {
+		//req.flash('error_msg','You are not logged in');
+		res.redirect('/users/login');
+	}
 }
+
+module.exports = loginRouter;
