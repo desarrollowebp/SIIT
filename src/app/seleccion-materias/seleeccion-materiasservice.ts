@@ -6,7 +6,7 @@ export class SeleccionMateriassDataService{
   	constructor(private http: HttpClient) { }
 
 	getMaterias(){
-		console.log("aiuda!!!");
+		console.log("aiuda xD!!!");
 		return this.http.get('/assets/mocks/alumnos.json');
 	}
 
