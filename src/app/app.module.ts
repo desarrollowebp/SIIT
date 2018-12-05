@@ -35,8 +35,8 @@ import { DatosTablaAlumnoComponent } from './datos-tabla-alumno/datos-tabla-alum
 import { TablaHorarioComponent } from './tabla-horario/tabla-horario.component';
 
 import { EvaluacionDocenteService } from './evaluacion-docente/evaluacion-docente.service'
-import {SeleccionMateriassDataService} from './seleccion-materias/seleeccion-materiasservice';
 import { ExtraescolarService } from './extraescolar/extraescolar.service';
+import {SeleccionMateriassDataService} from './seleccion-materias/seleeccion-materias.service';
 const routes:Routes = [
   { path: '', component: LoginComponent },
   { path: 'inicio', component: InicioComponent },
