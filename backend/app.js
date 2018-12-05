@@ -14,7 +14,7 @@ const {
 } = require('./evaluacion-docente')
 
 const {
-    grupposCargadosRouter
+    gruposCargadosRouter
 } = require('./grupos-cargados')
 
 ///
@@ -50,6 +50,7 @@ app.use('/seleccion-materias', semestresMateriaRouter )
 app.use('/seleccion-materias-maestros',  maestrosMateriaRouter)
 app.use('/extraescolar',  actividadesRouter)
 app.use('/extraescolar-maestros',  maestrosExtraescolarRouter)
+app.use('/grupos-cargados',  gruposCargadosRouter)
 /**************
  *   Auditoria servicios
  */

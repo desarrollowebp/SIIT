@@ -9,11 +9,6 @@ import { Button } from 'protractor';
 })
 export class ExtraescolarComponent implements OnInit {
 
-
-
-
-
-
   objetoActual = function(gruDis) {
     console.log(gruDis);
     document.getElementById('guardar').style.display = 'block';
