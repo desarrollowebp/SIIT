@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 mongoose.connect('mongodb://localhost:27017/siit', { useNewUrlParser: true })
  const alumnosRouter = require('./routes/alumno.js')
 const {
@@ -34,7 +35,7 @@ const {
   /**
    * Modelos
    */
-  datoResidencias,
+  datosResidencias,
   respuestasResidencias,
   residenteAlumno,
    /**
@@ -89,7 +90,7 @@ datosResidenciasRouter.get('/', (req, res, next) => {
  /**
  * Respuestas 
  */
-respuestasResidenciaRosuter.put('/', (req, res, next) => {
+respuestasResidenciasRouter.put('/', (req, res, next) => {
   respuestasResidencias.create(req.body)
     .then(() => res.json({ success: true }))
     .catch(next)
@@ -106,4 +107,41 @@ residenteAlumnoRouter.post('/', (req, res, next) => {
   datosResidenciasRouter,
   respuestasResidenciasRouter,
   residenteAlumnoRouter
+=======
+const { Router } = require('express')
+
+const {
+  folio,
+  respuestasResidencias,
+
+} = require('./modelos.js')
+
+const datosResidenciasRouter = Router()
+const respuestasResidenciasRouter = Router()
+
+/**
+ * Preguntas Evaluaciones
+ */
+datosResidenciasRouter.get('/', (req, res, next) => {
+  datosResidencias.find()
+    .then(datos => res.json({ datos }))
+    .catch(next)
+})
+
+/**
+ * Respuestas Evaluaciones
+ */
+respuestasResidenciaRouter.put('/', (req, res, next) => {
+  respuestasResidencias.create(req.body)
+    .then(() => res.json({ success: true }))
+    .catch(next)
+})
+
+
+
+module.exports = {
+  datosResidenciasRouter,
+  respuestasResidenciasRouter
+  
+>>>>>>> 03403cc655d7ea17f03749234b42fc02b10a79ef
 }
