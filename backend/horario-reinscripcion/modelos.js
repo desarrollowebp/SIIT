@@ -1,9 +1,5 @@
 ////aquí va alumno
 const mongoose = require('mongoose')
-<<<<<<< HEAD
-
-=======
->>>>>>> 1c053a9eca09ab4777eae3a16ca388b45b81225b
 
 const horarioReinscripcionSchema = new mongoose.Schema({
 
