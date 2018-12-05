@@ -83,10 +83,15 @@ materiaModal="";
 
   modals = "modal";
   constructor(public service : ExtraescolarService) {
+    //console.log(this.service.getGruposDisponibles().subscribe(data => console.log(data)));
    service.getGruposDisponibles().subscribe((data:GrupoDisponible[])=>{
-    this.grupos=data;
-    });
-    this.modals = "modal";
+   //console.log(data);
+   this.grupos=data;
+   console.log(this.grupos);
+   });
+      console.log(this.grupos);
+
+    this.modals = "modal"; 
   }
   func($var) {
     this.modals = "visibleNo";
