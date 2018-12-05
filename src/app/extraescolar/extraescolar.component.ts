@@ -2,17 +2,15 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import * as $ from 'jquery';
 import { Button } from 'protractor';
 
+import { ExtraescolarDataService } from './extraescolardataservice';
+
+
 @Component({
   selector: 'app-extraescolar',
   templateUrl: './extraescolar.component.html',
   styleUrls: ['./extraescolar.component.css']
 })
 export class ExtraescolarComponent implements OnInit {
-
-
-
-
-
 
   objetoActual = function(gruDis) {
     console.log(gruDis);
