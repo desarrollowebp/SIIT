@@ -7,7 +7,7 @@ export class SeleccionMateriassDataService{
 
 	getMaterias(){
 		console.log("aiuda xD!!!");
-		return this.http.get('/assets/mocks/alumnos.json');
+		return this.http.get('http://localhost:3000/seleccion-materias-maestros');
 	}
 
 	getAlumno(){
