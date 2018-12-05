@@ -1,5 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import * as $ from 'jquery';
+import { Button } from 'protractor';
 
 @Component({
   selector: 'app-extraescolar',
@@ -8,18 +9,55 @@ import * as $ from 'jquery';
 })
 export class ExtraescolarComponent implements OnInit {
 
-
-  objetoActual = function (gru) {
-    console.log(gru);
+  objetoActual = function(gruDis) {
+    console.log(gruDis);
+    document.getElementById('guardar').style.display = 'block';
     this.extraseleccionada = {
-      periodo: gru.periodo, nombre: gru.nombre, grupo: gru.grupo,
-      promotor: gru.promotor, hInicial: gru.hInicial, hFinal: gru.hFinal,
-      dias: gru.dias
+      periodo: gruDis.periodo, nombreActividad: gruDis.nombreActividad, grupo: gruDis.grupo,
+      promotor: gruDis.promotor, hInicial: gruDis.hInicial, hFinal: gruDis.hFinal,
+      dias: gruDis.dias
     };
-
-
-
   }
+
+
+gpsDisponibles=[];
+materiaModal="";
+
+  funcMostrarGrupos($extra) {
+    $(function() {
+      $(".botonModal").click(function(e) {
+        e.preventDefault();
+        $("html, body").animate({ "scrollTop": "0px" }, 600);
+      })
+    });
+
+    this.gpsDisponibles = [];
+    this.modals = "visibleNo";
+    this.materiaModal=$extra;
+    for (let i = 0; i < this.maestros.length; i++) {
+            for (let j = 0; j < this.maestros[i].actividad.length; j++) {
+                    console.log( this.maestros[i].actividad[j].nombreActividad);
+                    if( this.maestros[i].actividad[j].nombreActividad == $extra ){
+                    this.gpsDisponibles.push(
+                    {
+                     periodo:this.maestros[i].actividad[j].periodo,
+                     nombreActividad:this.maestros[i].actividad[j].nombreActividad,
+                     grupo:this.maestros[i].actividad[j].grupo,
+                     promotor:this.maestros[i].promotor,
+                     hInicial:this.maestros[i].actividad[j].hInicial,
+                     hFinal:this.maestros[i].actividad[j].hFinal,
+                     dias:this.maestros[i].actividad[j].dias,
+                     lugares:this.maestros[i].actividad[j].lugares
+                     }
+                   );
+
+                      }
+
+             }
+      }
+      console.log(this.gpsDisponibles);
+  }
+
 
   actividadesCulturales = [];
   actividadesDeportivas = [];
@@ -28,6 +66,7 @@ export class ExtraescolarComponent implements OnInit {
 
   datosmodal = "";
   extraseleccionada = {
+    nombreActividad:"",
     periodo: "",
     nombre: "",
     grupo: "",
@@ -37,33 +76,33 @@ export class ExtraescolarComponent implements OnInit {
     dias: ""
   }
 
-  modals = "modalExtraescolar";
+  modals = "modal";
   constructor() {
-    this.modals = "modalExtraescolar";
+    this.modals = "modal";
   }
   func($var) {
-    this.modals = "visibleNoExtraescolar";
+    this.modals = "visibleNo";
     this.datosmodal = "";
   }
   funcp($var) {
-    this.modals = "visibleNoExtraescolar";
+    this.modals = "visibleNo";
     this.datosmodal = $var;
+    console.log($var);
   }
   cerrar() {
-    this.modals = "modalExtraescolar";
+    this.modals = "modal";
+  }
 
+  guardarExtra(){
+    //Aqui se manda al servidor
+    alert("Inscripcion satisfactoria!!");
+    document.getElementById('guardar').style.display = 'none';
   }
 
   ngOnInit() {
     ///metoro para regresar arriba
-    $(function(){
-      $(".botonModal").click(function(e){
-          e.preventDefault();
-          $("html, body").animate({"scrollTop": "0px"}, 600);
-      })
-  });
-/////
-
+    
+    /////
 
   }
 
@@ -127,23 +166,58 @@ export class ExtraescolarComponent implements OnInit {
 
   maestros = [
     {
-      periodo: '20183',
-      grupo: 'RL',
-      promotor: 'GALINDO ZALDIVAR M.V. ISAAC ALEJANDRO',
-      hInicial: '13:00',
-      hFinal: '14:00',
-      dias: 'L,MA,MI,J',
-      lugares: '20'
+      promotor: "GALINDO ZALDIVAR M.V. ISAAC ALEJANDRO",
+      actividad: [
+        {
+          nombreActividad: "Ajedrez",
+          periodo: '20183',
+          grupo: 'RL',
+          hInicial: '13:00',
+          hFinal: '14:00',
+          dias: 'L,MA,MI,J',
+          lugares: '20'
+        },
+        {
+          nombreActividad: "Rondalla",
+          periodo: '20183',
+          grupo: 'RM',
+          hInicial: '10:00',
+          hFinal: '11:00',
+          dias: 'L,MA,MI,J',
+          lugares: '15'
+        }
+
+      ]
     },
 
     {
-      periodo: '20183',
-      grupo: '1B',
-      promotor: 'GARCIA GARCIA JOSE ANTONIO',
-      hInicial: '11:00',
-      hFinal: '12:00',
-      dias: 'L,MA,MI,J',
-      lugares: '15'
-    },
+      promotor: "GARCIA LOPEZ JOSE ANTONIO",
+      actividad: [
+        {
+          nombreActividad: "Periodismo",
+          periodo: '20183',
+          grupo: 'RN',
+          hInicial: '12:00',
+          hFinal: '13:00',
+          dias: 'L,MA,MI,J',
+          lugares: '20'
+        },
+        {
+          nombreActividad: "Teatro",
+          periodo: '20183',
+          grupo: 'RO',
+          hInicial: '15:00',
+          hFinal: '16:00',
+          dias: 'L,MA,MI,J',
+          lugares: '15'
+        }
+
+      ]
+    }
+
+
+
   ]
 }
+
+
