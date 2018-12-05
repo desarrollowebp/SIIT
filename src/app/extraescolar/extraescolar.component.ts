@@ -1,6 +1,9 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import * as $ from 'jquery';
 import { Button } from 'protractor';
+import { ExtraescolarService } from './extraescolar.service';
+import { GrupoDisponible } from './grupoDisponible';
+import { Actividades } from './actividades';
 
 @Component({
   selector: 'app-extraescolar',
@@ -8,6 +11,7 @@ import { Button } from 'protractor';
   styleUrls: ['./extraescolar.component.css']
 })
 export class ExtraescolarComponent implements OnInit {
+grupos:GrupoDisponible[];
 
   objetoActual = function(gruDis) {
     console.log(gruDis);
@@ -20,6 +24,7 @@ export class ExtraescolarComponent implements OnInit {
   }
 
 
+  
 gpsDisponibles=[];
 materiaModal="";
 
@@ -34,20 +39,20 @@ materiaModal="";
     this.gpsDisponibles = [];
     this.modals = "visibleNo";
     this.materiaModal=$extra;
-    for (let i = 0; i < this.maestros.length; i++) {
-            for (let j = 0; j < this.maestros[i].actividad.length; j++) {
-                    console.log( this.maestros[i].actividad[j].nombreActividad);
-                    if( this.maestros[i].actividad[j].nombreActividad == $extra ){
+    for (let i = 0; i < this.grupos.length; i++) {
+            for (let j = 0; j < this.grupos[i].actividad.length; j++) {
+                    console.log( this.grupos[i].actividad[j].nombreActividad);
+                    if( this.grupos[i].actividad[j].nombreActividad == $extra ){
                     this.gpsDisponibles.push(
                     {
-                     periodo:this.maestros[i].actividad[j].periodo,
-                     nombreActividad:this.maestros[i].actividad[j].nombreActividad,
-                     grupo:this.maestros[i].actividad[j].grupo,
-                     promotor:this.maestros[i].promotor,
-                     hInicial:this.maestros[i].actividad[j].hInicial,
-                     hFinal:this.maestros[i].actividad[j].hFinal,
-                     dias:this.maestros[i].actividad[j].dias,
-                     lugares:this.maestros[i].actividad[j].lugares
+                     periodo:this.grupos[i].actividad[j].periodo,
+                     nombreActividad:this.grupos[i].actividad[j].nombreActividad,
+                     grupo:this.grupos[i].actividad[j].grupo,
+                     promotor:this.grupos[i].promotor,
+                     hInicial:this.grupos[i].actividad[j].hInicial,
+                     hFinal:this.grupos[i].actividad[j].hFinal,
+                     dias:this.grupos[i].actividad[j].dias,
+                     lugares:this.grupos[i].actividad[j].lugares
                      }
                    );
 
@@ -77,7 +82,10 @@ materiaModal="";
   }
 
   modals = "modal";
-  constructor() {
+  constructor(public service : ExtraescolarService) {
+   service.getGruposDisponibles().subscribe((data:GrupoDisponible[])=>{
+    this.grupos=data;
+    });
     this.modals = "modal";
   }
   func($var) {
@@ -100,9 +108,7 @@ materiaModal="";
   }
 
   ngOnInit() {
-    ///metoro para regresar arriba
-    
-    /////
+   this.service.getGruposDisponibles;
 
   }
 
@@ -164,60 +170,10 @@ materiaModal="";
   ]
 
 
-  maestros = [
-    {
-      promotor: "GALINDO ZALDIVAR M.V. ISAAC ALEJANDRO",
-      actividad: [
-        {
-          nombreActividad: "Ajedrez",
-          periodo: '20183',
-          grupo: 'RL',
-          hInicial: '13:00',
-          hFinal: '14:00',
-          dias: 'L,MA,MI,J',
-          lugares: '20'
-        },
-        {
-          nombreActividad: "Rondalla",
-          periodo: '20183',
-          grupo: 'RM',
-          hInicial: '10:00',
-          hFinal: '11:00',
-          dias: 'L,MA,MI,J',
-          lugares: '15'
-        }
-
-      ]
-    },
-
-    {
-      promotor: "GARCIA LOPEZ JOSE ANTONIO",
-      actividad: [
-        {
-          nombreActividad: "Periodismo",
-          periodo: '20183',
-          grupo: 'RN',
-          hInicial: '12:00',
-          hFinal: '13:00',
-          dias: 'L,MA,MI,J',
-          lugares: '20'
-        },
-        {
-          nombreActividad: "Teatro",
-          periodo: '20183',
-          grupo: 'RO',
-          hInicial: '15:00',
-          hFinal: '16:00',
-          dias: 'L,MA,MI,J',
-          lugares: '15'
-        }
-
-      ]
-    }
 
 
+  
 
-  ]
 }
 
 
