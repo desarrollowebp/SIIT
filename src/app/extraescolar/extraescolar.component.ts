@@ -2,7 +2,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import * as $ from 'jquery';
 import { Button } from 'protractor';
 
-import { ExtraescolarDataService } from './extraescolardataservice';
+import { ExtraescolarService } from './extraescolar.service';
 
 
 @Component({

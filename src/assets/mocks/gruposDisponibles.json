@@ -1,0 +1,52 @@
+[
+    {
+      "promotor": "GALINDO ZALDIVAR M.V. ISAAC ALEJANDRO",
+      "actividad": [
+        {
+          "nombreActividad": "Ajedrez",
+          "periodo": "20183",
+          "grupo": "RL",
+          "hInicial": "13:00",
+          "hFinal": "14:00",
+          "dias": "L,MA,MI,J",
+          "lugares": "20"
+        },
+        {
+          "nombreActividad": "Rondalla",
+          "periodo": "20183",
+          "grupo": "RM",
+          "hInicial": "10:00",
+          "hFinal": "11:00",
+          "dias": "L,MA,MI,J",
+          "lugares": "15"
+        }
+
+      ]
+    },
+
+    {
+      "promotor": "GARCIA LOPEZ JOSE ANTONIO",
+      "actividad": [
+        {
+          "nombreActividad": "Periodismo",
+          "periodo": "20183",
+          "grupo": "RN",
+          "hInicial": "12:00",
+          "hFinal": "13:00",
+          "dias": "L,MA,MI,J",
+          "lugares": "20"
+        },
+        {
+          "nombreActividad": "Teatro",
+          "periodo": "20183",
+          "grupo": "RO",
+          "hInicial": "15:00",
+          "hFinal": "16:00",
+          "dias": "L,MA,MI,J",
+          "lugares": "15"
+        }
+
+      ]
+    }
+
+  ]
