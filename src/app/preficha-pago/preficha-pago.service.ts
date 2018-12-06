@@ -7,6 +7,6 @@ export class PrefichaPagoService {
   constructor(private http: HttpClient) { }
 
   getPrefichasPago() {
-    return this.http.get<PrefichasPagos>('http://localhost:3000/preguntas-evaluaciones')
+    return this.http.get<PrefichasPagos>('http://localhost:3000/preficha-pago')
   }
 }
