@@ -1,15 +1,129 @@
-import { Component, OnInit } from '@angular/core';
-import * as $ from 'jquery';
-import { RouterModule } from '@angular/router';
-import { SeleccionMateriassDataService } from './seleeccion-materias.service'
-@Component({
-  selector: 'app-seleccion-materias',
-  templateUrl: './seleccion-materias.component.html',
-  styleUrls: ['./seleccion-materias.component.css']
-})
-export class SeleccionMateriasComponent implements OnInit {
+# Modelos MongoDB
 
-  semestres= [ [ {
+
+### maestros
+- _id
+- nombre
+
+### materias
+- _id
+- nombre
+- codigo
+- creditos
+- cadenas
+
+### grupos
+- _id
+- letra
+
+### semestres
+- _id
+- semestre
+- importePago
+
+### carreras
+- _id
+- carrera
+
+### clases
+- _id
+- idMaestro
+- idMateria
+- idSemestre
+- idCarrera
+- idGrupo
+- horario
+- salon
+
+### alumnos
+- _id
+- numeroControl
+- nombre
+- datosPersonales:{}
+- adeudos:{}
+- descuento
+- semestre
+- carrera
+
+
+### kardex
+- _id
+- idMateria
+- idAlumno
+- calificacion
+- tipoEvaluacion
+- periodo
+- idCodigoColor
+
+### codigosColores
+- _id
+- codigo
+- color
+
+### periodosEscolares
+- _id
+- periodo
+
+### extraescolares
+- _id
+- nombre
+- ...
+
+### preguntasEvaluaciones
+### resultadosEvaluaciones
+
+### adeudos
+
+### datosBancos
+- _id
+- sucursal
+- referencia
+
+#reticula
+
+#gruposCargados
+- _id
+- clases:[]
+
+### tutorias??
+
+### residencias ??
+
+
+### preguntasAuditoria
+- _id
+- ...
+- departamento
+
+### resultadosAuditoria
+- _id
+- departamento
+
+
+### calificacionesParciales
+- _id
+- [calificaciones]
+
+### calificacionesExamenes
+- _id
+- calificacion
+- tipo
+
+
+
+###MODELO para seleccion materiasSeleccionadas
+##Semestres materias
+-semestres = [ [ {} ] ]
+-codigo
+-nombre
+-uno:0, dos:0,tres:0,cuatro:0,cinco:0,seis:0,siete:0,ocho:0,nueve:0,diez:0,
+-tipoEvaluacion,
+-codColor ,
+-cadenas:[]
+
+Incluye cada semestre con sus materias respectibas
+
+semestres= [ [ {
                     codigo:"X", nombre:"Ejemplo 2",
                     numeroCreditos:'x',
                     uno:0, dos:0,tres:0,cuatro:0,cinco:0,seis:0,siete:0,ocho:0,nueve:0,diez:0,
@@ -165,30 +279,43 @@ export class SeleccionMateriasComponent implements OnInit {
 
 ]; //dinamica
 
-    maestros= [
-              {    nombre:"Martin",materias:[
-                   {codigo:"XZ",nombre:"algrebra",grupo:"XZ",cupo:30,horario:{lunes:{salon:["sc5"],hora:["20:30"]},martes:{salon:["sc5"],hora:["20:30"]},miercoles:{salon:["sc5"],hora:["20:30"]},jueves:{salon:["sc5"],hora:["20:30"]},viernes:{salon:["sc5"],hora:["20:30"]},sabado:{salon:["sc5"],hora:["20:30"]}}},
-                   {codigo:"XY",nombre:"algrebra2",grupo:"XY",cupo:30,horario:{lunes:{salon:["sc5"],hora:["20:30"]},martes:{salon:["sc5"],hora:["20:30"]},miercoles:{salon:["sc5"],hora:["20:30"]},jueves:{salon:["sc5"],hora:["20:30"]},viernes:{salon:["sc5"],hora:["20:30"]},sabado:{salon:["sc5"],hora:["20:30"]}}}
-                                            ]
-               },
-               {    nombre:"Vero",materias:[
-                    {codigo:"XZ",nombre:"algrebra",grupo:"XZ",cupo:30,horario:{lunes:{salon:["sc5"],hora:["20:30"]},martes:{salon:["sc5"],hora:["20:30"]},miercoles:{salon:["sc5"],hora:["20:30"]},jueves:{salon:["sc5"],hora:["20:30"]},viernes:{salon:["sc5"],hora:["20:30"]},sabado:{salon:["sc5"],hora:["20:30"]}}},
-                    {codigo:"X",nombre:"algrebra2",grupo:"XY",cupo:30,horario:{lunes:{salon:["sc5"],hora:["20:30"]},martes:{salon:["sc5"],hora:["20:30"]},miercoles:{salon:["sc5"],hora:["20:30"]},jueves:{salon:["sc5"],hora:["20:30"]},viernes:{salon:["sc5"],hora:["20:30"]},sabado:{salon:["sc5"],hora:["20:30"]}}}
-                                             ]
-                },
-                {    nombre:"Krak",materias:[
-                     {codigo:"AAA",nombre:"algrebra",grupo:"XZ",cupo:30,horario:{lunes:{salon:["sc5"],hora:["20:30"]},martes:{salon:["sc5"],hora:["20:30"]},miercoles:{salon:["sc5"],hora:["20:30"]},jueves:{salon:["sc5"],hora:["20:30"]},viernes:{salon:["sc5"],hora:["20:30"]},sabado:{salon:["sc5"],hora:["20:30"]}}},
-                     {codigo:"XY",nombre:"algrebra2",grupo:"XY",cupo:30,horario:{lunes:{salon:["sc5"],hora:["20:30"]},martes:{salon:["sc5"],hora:["20:30"]},miercoles:{salon:["sc5"],hora:["20:30"]},jueves:{salon:["sc5"],hora:["20:30"]},viernes:{salon:["sc5"],hora:["20:30"]},sabado:{salon:["sc5"],hora:["20:30"]}}}
-                                              ]
-                 }
-             ];
-
-  recuperarSemestre = function() {
-  }
+##Maestros
+-maestros [{{}}]
+-nombre
+-materias codigo nombreMateria,grupo,cupo,horario
 
 
+maestros= [
+          {    nombre:"Martin",materias:[
+               {codigo:"XZ",nombre:"algrebra",grupo:"XZ",cupo:30,horario:{lunes:{salon:["sc5"],hora:["20:30"]},martes:{salon:["sc5"],hora:["20:30"]},miercoles:{salon:["sc5"],hora:["20:30"]},jueves:{salon:["sc5"],hora:["20:30"]},viernes:{salon:["sc5"],hora:["20:30"]},sabado:{salon:["sc5"],hora:["20:30"]}}},
+               {codigo:"XY",nombre:"algrebra2",grupo:"XY",cupo:30,horario:{lunes:{salon:["sc5"],hora:["20:30"]},martes:{salon:["sc5"],hora:["20:30"]},miercoles:{salon:["sc5"],hora:["20:30"]},jueves:{salon:["sc5"],hora:["20:30"]},viernes:{salon:["sc5"],hora:["20:30"]},sabado:{salon:["sc5"],hora:["20:30"]}}}
+                                        ]
+           },
+           {    nombre:"Vero",materias:[
+                {codigo:"XZ",nombre:"algrebra",grupo:"XZ",cupo:30,horario:{lunes:{salon:["sc5"],hora:["20:30"]},martes:{salon:["sc5"],hora:["20:30"]},miercoles:{salon:["sc5"],hora:["20:30"]},jueves:{salon:["sc5"],hora:["20:30"]},viernes:{salon:["sc5"],hora:["20:30"]},sabado:{salon:["sc5"],hora:["20:30"]}}},
+                {codigo:"X",nombre:"algrebra2",grupo:"XY",cupo:30,horario:{lunes:{salon:["sc5"],hora:["20:30"]},martes:{salon:["sc5"],hora:["20:30"]},miercoles:{salon:["sc5"],hora:["20:30"]},jueves:{salon:["sc5"],hora:["20:30"]},viernes:{salon:["sc5"],hora:["20:30"]},sabado:{salon:["sc5"],hora:["20:30"]}}}
+                                         ]
+            },
+            {    nombre:"Krak",materias:[
+                 {codigo:"AAA",nombre:"algrebra",grupo:"XZ",cupo:30,horario:{lunes:{salon:["sc5"],hora:["20:30"]},martes:{salon:["sc5"],hora:["20:30"]},miercoles:{salon:["sc5"],hora:["20:30"]},jueves:{salon:["sc5"],hora:["20:30"]},viernes:{salon:["sc5"],hora:["20:30"]},sabado:{salon:["sc5"],hora:["20:30"]}}},
+                 {codigo:"XY",nombre:"algrebra2",grupo:"XY",cupo:30,horario:{lunes:{salon:["sc5"],hora:["20:30"]},martes:{salon:["sc5"],hora:["20:30"]},miercoles:{salon:["sc5"],hora:["20:30"]},jueves:{salon:["sc5"],hora:["20:30"]},viernes:{salon:["sc5"],hora:["20:30"]},sabado:{salon:["sc5"],hora:["20:30"]}}}
+                                          ]
+             }
+         ];
 
 
+##CargaActualSemestre
+-cargasemestreactual= [{}];
+-numeroCreditos
+-uno:0, dos:0,tres:0,cuatro:0,cinco:0,seis:0,siete:0,ocho:0,nueve:0,diez:0
+-tipoEvaluacion
+-nombreMateria
+-nombreMaestro
+-grupo
+-cupo
+-horario = { { { [] },{ [] } } x7 dias }
+
+Guarna N materias seleccionadas ya con la relacion materias maestros
 
 cargaSemestreActual=[
 
@@ -201,6 +328,19 @@ horario:{lunes:{salon:["sc5"],hora:["20:30"]},martes:{salon:["sc5"],hora:["20:30
 }
 ];
 
+##Kardex
+-numeroCreditos: [[[{},{}]]]
+-uno:0, dos:0,tres:0,cuatro:0,cinco:0,seis:0,siete:0,ocho:0,nueve:0,diez:0
+-Codigo
+-nombre (nombremateria)
+-nombreMaestro
+-grupo
+-horario { { { [] },{ [] } } x7 dias }
+-periodosEscolares-
+-promSem
+-creditosAprob
+
+Guarda N cargas y la carga incluye un solo promedio
 kardex=[
 [
 
@@ -215,74 +355,6 @@ horario:{lunes:{salon:["sc5"],hora:["20:30"]},martes:{salon:["sc5"],hora:["20:30
 ]
 
 ];
+
 gpsDisponibles = [];
 materiasSeleccionadas=[];
-materiaModal="";
-ejemploMaterias ;
-validacion ={};
-  modals = "modal";
-  constructor(seleccionMateriassDataService : SeleccionMateriassDataService) {
-    seleccionMateriassDataService.getMaterias().subscribe((data:any) => {
-      this.ejemploMaterias = JSON.parse(data) ;
-    })
-    console.log(this.ejemploMaterias);
-    this.modals = "modal";
-  }
-  apilarSeleccion($gpsdisp){
-     let temporal={Gpo:$gpsdisp.Gpo,Prof:this.materiaModal+"-"+$gpsdisp.Prof,Hor:$gpsdisp.Hor,Lug:$gpsdisp.Lug,creditos:$gpsdisp.creditos};
-    this.materiasSeleccionadas.push(temporal);
-    this.cerrar();
-  }
-  funcMostrarGrupos($materia) {
-
-    this.gpsDisponibles = [];
-    this.modals = "visibleNo";
-    this.materiaModal=$materia.nombre;
-    for (let i = 0; i < this.maestros.length; i++) {
-            for (let j = 0; j < this.maestros[i].materias.length; j++) {
-                    console.log( this.maestros[i].materias[j].codigo);
-                    if( this.maestros[i].materias[j].codigo == $materia.codigo ){
-                    this.gpsDisponibles.push(
-                    {Gpo:this.maestros[i].materias[j].grupo,
-                     Prof:this.maestros[i].nombre,
-                     Hor:this.maestros[i].materias[j].horario,
-                     Lug:this.maestros[i].materias[j].cupo,
-                     creditos:$materia.creditos}
-
-                   );
-
-                      }
-
-             }
-      }
-
-  }
-  eliminarMateria($materia) {
-    this.materiasSeleccionadas.splice(this.materiasSeleccionadas.indexOf($materia),1);
-  }
-  cerrar(){
-    this.modals="modal";
-  }
-  ngOnInit() {
-    this.recuperarSemestre();
-    $(".submenuSeleccionMaterias").click(function() {
-      $(this).children("ul").slideToggle();
-
-    }
-    )
-
-    $("ul").click(function(p) {
-      p.stopPropagation();
-    })
-
-    if ($(window).width() > 720) {
-
-
-      $(".submenuSeleccionMaterias").children("ul").show();
-
-
-
-    }
-    }
-
-  }

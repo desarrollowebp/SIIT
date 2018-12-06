@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
@@ -33,6 +34,10 @@ import { PostSeleccionMateriasComponent } from './post-seleccion-materias/post-s
 import { DatosTablaAlumnoComponent } from './datos-tabla-alumno/datos-tabla-alumno.component';
 import { TablaHorarioComponent } from './tabla-horario/tabla-horario.component';
 
+import { EvaluacionDocenteService } from './evaluacion-docente/evaluacion-docente.service'
+import { ExtraescolarService } from './extraescolar/extraescolar.service';
+import {horarioReinscripcionService} from './horario-reinscripcion/horarioreinscripcion.service';
+import {SeleccionMateriassDataService} from './seleccion-materias/seleeccion-materias.service';
 const routes:Routes = [
   { path: '', component: LoginComponent },
   { path: 'inicio', component: InicioComponent },
@@ -99,9 +104,12 @@ const routes:Routes = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [
+    EvaluacionDocenteService,SeleccionMateriassDataService,ExtraescolarService,horarioReinscripcionService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

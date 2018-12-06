@@ -52,10 +52,7 @@ th,td{
 	padding: 0 !important;
 }
 @media (max-width: 720px) {
-	.ui-tbody-big {
-		display: n
-		one;
-	}
+	
 
 	.ui-table-wrapper {
 		padding: 0;
@@ -71,7 +68,5 @@ th,td{
 		padding: 7px;
 	}
 
-	.ui-tbody-sm {
-		display: initial;
-	}	
+	
 }
