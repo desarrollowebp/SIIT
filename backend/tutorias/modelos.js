@@ -1,5 +1,5 @@
-const mongoose = require('mongoose'); 
-//const { Schema } = mongoose;
+const mongoose = require('mongoose');
+const { Schema } = mongoose;
 
 const informacionTutoriasSchema = new Schema({
     tutor: {type: String, required: true},
@@ -11,4 +11,4 @@ const informacionTutoriasSchema = new Schema({
 
 module.exports = {
     informacionTutorias: mongoose.model('informacionTutorias', informacionTutoriasSchema)
-} 
+}

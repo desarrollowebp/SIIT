@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { prefichasPagos } from './prefichasPagos'
+import { PrefichasPagos } from './prefichasPagos'
 import { HttpClient } from '@angular/common/http';
 
 @Injectable()
