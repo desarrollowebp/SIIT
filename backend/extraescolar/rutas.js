@@ -21,15 +21,10 @@ maestrosExtraescolarRouter.get('/', (req, res, next) => {
     .catch(next)
 })
 
-extraescolarSeleccionadaRouter.get('/', (req, res, next) => {
-  extraescolarSeleccionada.find()
-    .then( actividadesMaes => res.json({actividadesMaes}))
-    .catch(next)
-})
+
 
 
 module.exports = {
   actividadesRouter,
-  maestrosExtraescolarRouter,
-  extraescolarSeleccionadaRouter
+  maestrosExtraescolarRouter
 }

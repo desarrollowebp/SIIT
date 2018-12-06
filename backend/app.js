@@ -29,8 +29,7 @@ const {
 ///
 const {
     actividadesRouter,
-      maestrosExtraescolarRouter,
-      extraescolarSeleccionadaRouter
+      maestrosExtraescolarRouter
   } = require('./extraescolar')
 
   const {
@@ -38,7 +37,10 @@ const {
   const { calificacionesParcialesRouter} = require('./calificaciones-parciales')
 
   const {
-    
+
+
+
+
       becaRouter
   } = require('./verificacion-beca')
 const app = express();
@@ -59,7 +61,7 @@ app.use('/seleccion-materias-maestros',  maestrosMateriaRouter)
 app.use('/horario-reinscripcion', horarioReinscripcionRouter)
 app.use('/extraescolar',  actividadesRouter)
 app.use('/extraescolar-maestros',  maestrosExtraescolarRouter)
-app.use('/extraescolar-seleccionada', extraescolarSeleccionadaRouter)
+
 app.use('/grupos-cargados',  gruposCargadosRouter)
 app.use('/calificaciones-parciales', calificacionesParcialesRouter)
 app.use('/calificaciones-examenes', calificacionexamenRouter)

@@ -1,26 +1,22 @@
 const {
-    actividades,maestrosExtraescolar,extraescolarSeleccionada
-  
+    actividades,maestrosExtraescolar
+
   } = require('./modelos.js')
-  
+
   const {
     actividadesRouter,
-    maestrosExtraescolarRouter,
-    extraescolarSeleccionadaRouter
-  
+    maestrosExtraescolarRouter
+
   } = require('./rutas.js')
-  
+
   module.exports = {
-    
+
     actividades,
     maestrosExtraescolar,
-    extraescolarSeleccionada,
     /**
      * Rutas
      */
     actividadesRouter,
-    maestrosExtraescolarRouter,
-    extraescolarSeleccionadaRouter,
-  
+    maestrosExtraescolarRouter
+
   }
-  
