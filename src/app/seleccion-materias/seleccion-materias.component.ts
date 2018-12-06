@@ -45,7 +45,7 @@ horario:{lunes:{salon:["sc5"],hora:["20:30"]},martes:{salon:["sc5"],hora:["20:30
 ];
 materiaActual;
 gpsDisponibles={maestro:[]};
-materiasSeleccionadas=[];
+materiasSeleccionadas=[  ];
 materiaModal="";
 ejemploMaterias={
 materiasSem:[{
@@ -56,6 +56,7 @@ semestres:[
 };
 validacion ={};
   modals = "modal";
+ejemplo= {kevin:"xd"};
   constructor(service : SeleccionMateriassDataService) {
     service.getMaterias().subscribe((data)=>{
 
