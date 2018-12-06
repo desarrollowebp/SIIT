@@ -35,7 +35,9 @@ import { DatosTablaAlumnoComponent } from './datos-tabla-alumno/datos-tabla-alum
 import { TablaHorarioComponent } from './tabla-horario/tabla-horario.component';
 
 import { EvaluacionDocenteService } from './evaluacion-docente/evaluacion-docente.service'
-
+import { ExtraescolarService } from './extraescolar/extraescolar.service';
+import {horarioReinscripcionService} from './horario-reinscripcion/horarioreinscripcion.service';
+import {SeleccionMateriassDataService} from './seleccion-materias/seleeccion-materias.service';
 const routes:Routes = [
   { path: '', component: LoginComponent },
   { path: 'inicio', component: InicioComponent },
@@ -106,7 +108,7 @@ const routes:Routes = [
     HttpClientModule,
   ],
   providers: [
-    EvaluacionDocenteService
+    EvaluacionDocenteService,SeleccionMateriassDataService,ExtraescolarService,horarioReinscripcionService
   ],
   bootstrap: [AppComponent]
 })
