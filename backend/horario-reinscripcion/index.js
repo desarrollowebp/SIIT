@@ -11,15 +11,8 @@
   } = require('./rutas.js')
 
   module.exports = {
-    /**
-     * Modelos
-     */
+    //modelo
     horarioReinscripcion,
-   // adeudosHorarioAlumnos,
-
-    /**
-     * Rutas
-     */
+    //ruta
     horarioReinscripcionRouter
-    //adeudosHorarioAlumnosRouter
   }
