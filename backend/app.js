@@ -36,7 +36,10 @@ const {
        calificacionexamenRouter} = require('./calificaciones-examenes')
   const { calificacionesParcialesRouter} = require('./calificaciones-parciales')
 
-
+  const {
+    
+      becaRouter
+  } = require('./verificacion-beca')
 const app = express();
 
 app.use(cors())
@@ -58,6 +61,7 @@ app.use('/extraescolar-maestros',  maestrosExtraescolarRouter)
 app.use('/grupos-cargados',  gruposCargadosRouter)
 app.use('/calificaciones-parciales', calificacionesParcialesRouter)
 app.use('/calificaciones-examenes', calificacionexamenRouter)
+app.use('/verificion-beca', becaRouter)
 /**************
  *   Auditoria servicios
  */
