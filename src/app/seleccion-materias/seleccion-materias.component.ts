@@ -9,179 +9,7 @@ import { SeleccionMateriassDataService } from './seleeccion-materias.service'
 })
 export class SeleccionMateriasComponent implements OnInit {
 
-  semestres= [ [ {
-                    codigo:"X", nombre:"Ejemplo 2",
-                    numeroCreditos:'x',
-                    uno:0, dos:0,tres:0,cuatro:0,cinco:0,seis:0,siete:0,ocho:0,nueve:0,diez:0,
-                    tipoEvaluacion:"Ordinario",
-                    codColor:'codColorX' ,
-                    cadenas:["xzy","xzy"]
-                    },
-                    {
-                     codigo:"XZ", nombre:"Ejemplo",
-                     numeroCreditos:'x',
-                     uno:0, dos:0,tres:0,cuatro:0,cinco:0,seis:0,siete:0,ocho:0,nueve:0,diez:0,
-                     tipoEvaluacion:"Ordinario",
-                     codColor:'codColorX' ,
-                     cadenas:["xzy","xzy"]
-                    }
-                 ],
-                 [ {
-                    codigo:"XXX", nombre:"Ejemplo",
-                    numeroCreditos:'x',
-                    uno:0, dos:0,tres:0,cuatro:0,cinco:0,seis:0,siete:0,ocho:0,nueve:0,diez:0,
-                    tipoEvaluacion:"Ordinario",
-                    codColor:'codColorX' ,
-                    cadenas:["xzy","xzy"]
-                    },
-                    {
-                    codigo:"XXX", nombre:"Ejemplo",
-                    numeroCreditos:'x',
-                    uno:0, dos:0,tres:0,cuatro:0,cinco:0,seis:0,siete:0,ocho:0,nueve:0,diez:0,
-                    tipoEvaluacion:"Ordinario",
-                    codColor:'codColorX' ,
-                    cadenas:["xzy","xzy"]
-                    }
-                  ],
-                  [ {
-                     codigo:"XXX", nombre:"Ejemplo",
-                     numeroCreditos:'x',
-                     uno:0, dos:0,tres:0,cuatro:0,cinco:0,seis:0,siete:0,ocho:0,nueve:0,diez:0,
-                     tipoEvaluacion:"Ordinario",
-                     codColor:'codColorX' ,
-                     cadenas:["xzy","xzy"]
-                     },
-                     {
-                     codigo:"XXX", nombre:"Ejemplo",
-                     numeroCreditos:'x',
-                     uno:0, dos:0,tres:0,cuatro:0,cinco:0,seis:0,siete:0,ocho:0,nueve:0,diez:0,
-                     tipoEvaluacion:"Ordinario",
-                     codColor:'codColorX' ,
-                     cadenas:["xzy","xzy"]
-                     }
-                   ],
-                   [ {
-                                     codigo:"XXX", nombre:"Ejemplo",
-                                     numeroCreditos:'x',
-                                     uno:0, dos:0,tres:0,cuatro:0,cinco:0,seis:0,siete:0,ocho:0,nueve:0,diez:0,
-                                     tipoEvaluacion:"Ordinario",
-                                     codColor:'codColorX' ,
-                                     cadenas:["xzy","xzy"]
-                                     },
-                                     {
-                                      codigo:"XXX", nombre:"Ejemplo",
-                                      numeroCreditos:'x',
-                                      uno:0, dos:0,tres:0,cuatro:0,cinco:0,seis:0,siete:0,ocho:0,nueve:0,diez:0,
-                                      tipoEvaluacion:"Ordinario",
-                                      codColor:'codColorX' ,
-                                      cadenas:["xzy","xzy"]
-                                     }
-                                  ],
-                                  [ {
-                                     codigo:"XXX", nombre:"Ejemplo",
-                                     numeroCreditos:'x',
-                                     uno:0, dos:0,tres:0,cuatro:0,cinco:0,seis:0,siete:0,ocho:0,nueve:0,diez:0,
-                                     tipoEvaluacion:"Ordinario",
-                                     codColor:'codColorX' ,
-                                     cadenas:["xzy","xzy"]
-                                     },
-                                     {
-                                     codigo:"XXX", nombre:"Ejemplo",
-                                     numeroCreditos:'x',
-                                     uno:0, dos:0,tres:0,cuatro:0,cinco:0,seis:0,siete:0,ocho:0,nueve:0,diez:0,
-                                     tipoEvaluacion:"Ordinario",
-                                     codColor:'codColorX' ,
-                                     cadenas:["xzy","xzy"]
-                                     }
-                                   ],
-                                   [ {
-                                      codigo:"XXX", nombre:"Ejemplo",
-                                      numeroCreditos:'x',
-                                      uno:0, dos:0,tres:0,cuatro:0,cinco:0,seis:0,siete:0,ocho:0,nueve:0,diez:0,
-                                      tipoEvaluacion:"Ordinario",
-                                      codColor:'codColorX' ,
-                                      cadenas:["xzy","xzy"]
-                                      },
-                                      {
-                                      codigo:"XXX", nombre:"Ejemplo",
-                                      numeroCreditos:'x',
-                                      uno:0, dos:0,tres:0,cuatro:0,cinco:0,seis:0,siete:0,ocho:0,nueve:0,diez:0,
-                                      tipoEvaluacion:"Ordinario",
-                                      codColor:'codColorX' ,
-                                      cadenas:["xzy","xzy"]
-                                      }
-                                    ],
-                                    [ {
-                                                      codigo:"XXX", nombre:"Ejemplo",
-                                                      numeroCreditos:'x',
-                                                      uno:0, dos:0,tres:0,cuatro:0,cinco:0,seis:0,siete:0,ocho:0,nueve:0,diez:0,
-                                                      tipoEvaluacion:"Ordinario",
-                                                      codColor:'codColorX' ,
-                                                      cadenas:["xzy","xzy"]
-                                                      },
-                                                      {
-                                                       codigo:"AAA", nombre:"Ejemplo",
-                                                       numeroCreditos:'x',
-                                                       uno:0, dos:0,tres:0,cuatro:0,cinco:0,seis:0,siete:0,ocho:0,nueve:0,diez:0,
-                                                       tipoEvaluacion:"Ordinario",
-                                                       codColor:'codColorX' ,
-                                                       cadenas:["xzy","xzy"]
-                                                      }
-                                                   ],
-                                                   [ {
-                                                      codigo:"AAA", nombre:"Quimica",
-                                                      numeroCreditos:'x',
-                                                      uno:0, dos:0,tres:0,cuatro:0,cinco:0,seis:0,siete:0,ocho:0,nueve:0,diez:0,
-                                                      tipoEvaluacion:"Ordinario",
-                                                      codColor:'codColorX' ,
-                                                      cadenas:["xzy","xzy"]
-                                                      },
-                                                      {
-                                                      codigo:"XY", nombre:"Ejemplo",
-                                                      numeroCreditos:'x',
-                                                      uno:0, dos:0,tres:0,cuatro:0,cinco:0,seis:0,siete:0,ocho:0,nueve:0,diez:0,
-                                                      tipoEvaluacion:"Ordinario",
-                                                      codColor:'codColorX' ,
-                                                      cadenas:["xzy","xzy"]
-                                                      }
-                                                    ],
-                                                    [ {
-                                                       codigo:"XXX", nombre:"Ejemplo",
-                                                       numeroCreditos:'x',
-                                                       uno:0, dos:0,tres:0,cuatro:0,cinco:0,seis:0,siete:0,ocho:0,nueve:0,diez:0,
-                                                       tipoEvaluacion:"Ordinario",
-                                                       codColor:'codColorX' ,
-                                                       cadenas:["xzy","xzy"]
-                                                       },
-                                                       {
-                                                       codigo:"XXX", nombre:"Ejemplo",
-                                                       numeroCreditos:'x',
-                                                       uno:0, dos:0,tres:0,cuatro:0,cinco:0,seis:0,siete:0,ocho:0,nueve:0,diez:0,
-                                                       tipoEvaluacion:"Ordinario",
-                                                       codColor:'codColorX' ,
-                                                       cadenas:["xzy","xzy"]
-                                                       }
-                                                     ]
 
-]; //dinamica
-
-    maestros= [
-              {    nombre:"Martin",materias:[
-                   {codigo:"XZ",nombre:"algrebra",grupo:"XZ",cupo:30,horario:{lunes:{salon:["sc5"],hora:["20:30"]},martes:{salon:["sc5"],hora:["20:30"]},miercoles:{salon:["sc5"],hora:["20:30"]},jueves:{salon:["sc5"],hora:["20:30"]},viernes:{salon:["sc5"],hora:["20:30"]},sabado:{salon:["sc5"],hora:["20:30"]}}},
-                   {codigo:"XY",nombre:"algrebra2",grupo:"XY",cupo:30,horario:{lunes:{salon:["sc5"],hora:["20:30"]},martes:{salon:["sc5"],hora:["20:30"]},miercoles:{salon:["sc5"],hora:["20:30"]},jueves:{salon:["sc5"],hora:["20:30"]},viernes:{salon:["sc5"],hora:["20:30"]},sabado:{salon:["sc5"],hora:["20:30"]}}}
-                                            ]
-               },
-               {    nombre:"Vero",materias:[
-                    {codigo:"XZ",nombre:"algrebra",grupo:"XZ",cupo:30,horario:{lunes:{salon:["sc5"],hora:["20:30"]},martes:{salon:["sc5"],hora:["20:30"]},miercoles:{salon:["sc5"],hora:["20:30"]},jueves:{salon:["sc5"],hora:["20:30"]},viernes:{salon:["sc5"],hora:["20:30"]},sabado:{salon:["sc5"],hora:["20:30"]}}},
-                    {codigo:"X",nombre:"algrebra2",grupo:"XY",cupo:30,horario:{lunes:{salon:["sc5"],hora:["20:30"]},martes:{salon:["sc5"],hora:["20:30"]},miercoles:{salon:["sc5"],hora:["20:30"]},jueves:{salon:["sc5"],hora:["20:30"]},viernes:{salon:["sc5"],hora:["20:30"]},sabado:{salon:["sc5"],hora:["20:30"]}}}
-                                             ]
-                },
-                {    nombre:"Krak",materias:[
-                     {codigo:"AAA",nombre:"algrebra",grupo:"XZ",cupo:30,horario:{lunes:{salon:["sc5"],hora:["20:30"]},martes:{salon:["sc5"],hora:["20:30"]},miercoles:{salon:["sc5"],hora:["20:30"]},jueves:{salon:["sc5"],hora:["20:30"]},viernes:{salon:["sc5"],hora:["20:30"]},sabado:{salon:["sc5"],hora:["20:30"]}}},
-                     {codigo:"XY",nombre:"algrebra2",grupo:"XY",cupo:30,horario:{lunes:{salon:["sc5"],hora:["20:30"]},martes:{salon:["sc5"],hora:["20:30"]},miercoles:{salon:["sc5"],hora:["20:30"]},jueves:{salon:["sc5"],hora:["20:30"]},viernes:{salon:["sc5"],hora:["20:30"]},sabado:{salon:["sc5"],hora:["20:30"]}}}
-                                              ]
-                 }
-             ];
 
   recuperarSemestre = function() {
   }
@@ -215,6 +43,7 @@ horario:{lunes:{salon:["sc5"],hora:["20:30"]},martes:{salon:["sc5"],hora:["20:30
 ]
 
 ];
+materiaActual;
 gpsDisponibles={maestro:[]};
 materiasSeleccionadas=[];
 materiaModal="";
@@ -244,6 +73,7 @@ validacion ={};
   funcMostrarGrupos($materia) {
     console.log($materia);
     this.gpsDisponibles= $materia;
+    this.materiaActual=$materia.nombre;
     this.modals = "visibleNo";
   }
   eliminarMateria($materia) {
