@@ -59,19 +59,16 @@ app.use('/seleccion-materias-maestros',  maestrosMateriaRouter)
 app.use('/horario-reinscripcion', horarioReinscripcionRouter)
 app.use('/extraescolar',  actividadesRouter)
 app.use('/extraescolar-maestros',  maestrosExtraescolarRouter)
-<<<<<<< HEAD
-app.use('/tutorias', informacionTutoriasRouter)
-
-=======
 app.use('/grupos-cargados',  gruposCargadosRouter)
 app.use('/calificaciones-parciales', calificacionesParcialesRouter)
 app.use('/calificaciones-examenes', calificacionexamenRouter)
->>>>>>> 9dca04f980990f3342cc8a3d80703e4ce0a2db88
 /**************
  *   Auditoria servicios
  */
 app.use(require('./auditoria-servicio/rutas'));
-
+///
+app.use('/tutorias', informacionTutoriasRouter)
+///
 app.listen(3000, function() {
     console.info('Backend escuchando en el puerto 3000');
 });
