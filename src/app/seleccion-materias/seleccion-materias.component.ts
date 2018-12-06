@@ -57,7 +57,7 @@ semestres:[
 validacion ={};
   modals = "modal";
   constructor(service : SeleccionMateriassDataService) {
-    service.getMaterias().subscribe((data)=>{
+    service.getMaterias().subscribe((data:any)=>{
 
     this.ejemploMaterias=data;
 

@@ -12,6 +12,10 @@ const {
     respuestasEvaluacionesRouter,
     adeudosAlumnosRouter
 } = require('./evaluacion-docente')
+///
+const {
+  informacionTutoriasRouter
+} = require('./tutorias')  
 
 const {
     gruposCargadosRouter
@@ -60,6 +64,8 @@ app.use('/alumnos', alumnosRouter);
 app.use('/preguntas-evaluaciones', preguntasEvaluacionesRouter)
 app.use('/respuestas-evaluaciones', respuestasEvaluacionesRouter)
 app.use('/adeudos-alumnos', adeudosAlumnosRouter)
+///
+app.use('/tutorias', informacionTutoriasRouter)
 app.use('/seleccion-materias', semestresMateriaRouter )
 app.use('/seleccion-materias-maestros',  maestrosMateriaRouter)
 app.use('/horario-reinscripcion', horarioReinscripcionRouter)
