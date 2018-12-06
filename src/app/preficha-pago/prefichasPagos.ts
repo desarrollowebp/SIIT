@@ -2,7 +2,6 @@
 import { prefichaPago } from './prefichaPago'
 
 export class prefichasPagos {
-  preguntas:PreguntaEvaluacion[]
 
   nombres:prefichaPago[]
   apellidos:prefichaPago[]
