@@ -87,12 +87,18 @@ materiaModal="";
    service.getGruposDisponibles().subscribe((data:GrupoDisponible[])=>{
    //console.log(data);
    this.grupos=data;
-   console.log(this.grupos);
+   //console.log(this.grupos);
    });
       console.log(this.grupos);
 
     this.modals = "modal"; 
   }
+
+  
+  funct() {
+    console.log(this.grupos);
+  }
+
   func($var) {
     this.modals = "visibleNo";
     this.datosmodal = "";
