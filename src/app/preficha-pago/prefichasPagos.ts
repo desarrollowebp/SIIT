@@ -10,7 +10,7 @@ export class prefichasPagos {
   periodo:prefichaPago[]
   importe:prefichaPago[]
   carrera:prefichaPago[]
-  consepto:prefichaPago[],
+  consepto:prefichaPago[]
   fechavencimiento:prefichaPago[]
   sucursalCuenta:prefichaPago[]
   referenciaAlfanumerica:prefichaPago[]
