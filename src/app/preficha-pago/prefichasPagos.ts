@@ -1,8 +1,6 @@
-/*
-import { prefichaPago } from './prefichaPago'
+import { PrefichaPago } from './prefichaPago'
 
 export class prefichasPagos {
-
   nombres:prefichaPago[]
   apellidos:prefichaPago[]
   numeroControl:prefichaPago[]
@@ -15,4 +13,3 @@ export class prefichasPagos {
   sucursalCuenta:prefichaPago[]
   referenciaAlfanumerica:prefichaPago[]
 }
-*/
