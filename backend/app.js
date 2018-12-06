@@ -51,6 +51,7 @@ app.use('/respuestas-evaluaciones', respuestasEvaluacionesRouter)
 app.use('/adeudos-alumnos', adeudosAlumnosRouter)
 app.use('/seleccion-materias', semestresMateriaRouter )
 app.use('/seleccion-materias-maestros',  maestrosMateriaRouter)
+app.use('/horario-reinscripcion', horarioReinscripcionRouter)
 app.use('/extraescolar',  actividadesRouter)
 app.use('/extraescolar-maestros',  maestrosExtraescolarRouter)
 app.use('/grupos-cargados',  gruposCargadosRouter)
@@ -60,10 +61,6 @@ app.use('/calificaciones-examenes', calificacionexamenRouter)
  *   Auditoria servicios
  */
 app.use(require('./auditoria-servicio/rutas'));
-
-///
-app.use('/horario-reinscripcion', horarioReinscripcionRouter)
-///
 
 app.listen(3000, function() {
     console.info('Backend escuchando en el puerto 3000');
