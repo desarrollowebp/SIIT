@@ -1,5 +1,9 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import * as $ from 'jquery';
+import { Button } from 'protractor';
+import { ExtraescolarService } from './extraescolar.service';
+import { GrupoDisponible } from './grupoDisponible';
+import { Actividades } from './actividades';
 
 @Component({
   selector: 'app-extraescolar',
@@ -7,19 +11,58 @@ import * as $ from 'jquery';
   styleUrls: ['./extraescolar.component.css']
 })
 export class ExtraescolarComponent implements OnInit {
+grupos:GrupoDisponible[];
 
-
-  objetoActual = function (gru) {
-    console.log(gru);
+  objetoActual = function(gruDis) {
+    console.log(gruDis);
+    document.getElementById('guardar').style.display = 'block';
     this.extraseleccionada = {
-      periodo: gru.periodo, nombre: gru.nombre, grupo: gru.grupo,
-      promotor: gru.promotor, hInicial: gru.hInicial, hFinal: gru.hFinal,
-      dias: gru.dias
+      periodo: gruDis.periodo, nombreActividad: gruDis.nombreActividad, grupo: gruDis.grupo,
+      promotor: gruDis.promotor, hInicial: gruDis.hInicial, hFinal: gruDis.hFinal,
+      dias: gruDis.dias
     };
-
-
-
   }
+
+
+  
+gpsDisponibles=[];
+materiaModal="";
+
+  funcMostrarGrupos($extra) {
+    $(function() {
+      $(".botonModal").click(function(e) {
+        e.preventDefault();
+        $("html, body").animate({ "scrollTop": "0px" }, 600);
+      })
+    });
+
+    this.gpsDisponibles = [];
+    this.modals = "visibleNo";
+    this.materiaModal=$extra;
+    for (let i = 0; i < this.grupos.length; i++) {
+            for (let j = 0; j < this.grupos[i].actividad.length; j++) {
+                    console.log( this.grupos[i].actividad[j].nombreActividad);
+                    if( this.grupos[i].actividad[j].nombreActividad == $extra ){
+                    this.gpsDisponibles.push(
+                    {
+                     periodo:this.grupos[i].actividad[j].periodo,
+                     nombreActividad:this.grupos[i].actividad[j].nombreActividad,
+                     grupo:this.grupos[i].actividad[j].grupo,
+                     promotor:this.grupos[i].promotor,
+                     hInicial:this.grupos[i].actividad[j].hInicial,
+                     hFinal:this.grupos[i].actividad[j].hFinal,
+                     dias:this.grupos[i].actividad[j].dias,
+                     lugares:this.grupos[i].actividad[j].lugares
+                     }
+                   );
+
+                      }
+
+             }
+      }
+      console.log(this.gpsDisponibles);
+  }
+
 
   actividadesCulturales = [];
   actividadesDeportivas = [];
@@ -28,6 +71,7 @@ export class ExtraescolarComponent implements OnInit {
 
   datosmodal = "";
   extraseleccionada = {
+    nombreActividad:"",
     periodo: "",
     nombre: "",
     grupo: "",
@@ -37,33 +81,45 @@ export class ExtraescolarComponent implements OnInit {
     dias: ""
   }
 
-  modals = "modalExtraescolar";
-  constructor() {
-    this.modals = "modalExtraescolar";
+  modals = "modal";
+  constructor(public service : ExtraescolarService) {
+    //console.log(this.service.getGruposDisponibles().subscribe(data => console.log(data)));
+   service.getGruposDisponibles().subscribe((data:GrupoDisponible[])=>{
+   //console.log(data);
+   this.grupos=data;
+   //console.log(this.grupos);
+   });
+      console.log(this.grupos);
+
+    this.modals = "modal"; 
   }
+
+  
+  funct() {
+    console.log(this.grupos);
+  }
+
   func($var) {
-    this.modals = "visibleNoExtraescolar";
+    this.modals = "visibleNo";
     this.datosmodal = "";
   }
   funcp($var) {
-    this.modals = "visibleNoExtraescolar";
+    this.modals = "visibleNo";
     this.datosmodal = $var;
+    console.log($var);
   }
   cerrar() {
-    this.modals = "modalExtraescolar";
+    this.modals = "modal";
+  }
 
+  guardarExtra(){
+    //Aqui se manda al servidor
+    alert("Inscripcion satisfactoria!!");
+    document.getElementById('guardar').style.display = 'none';
   }
 
   ngOnInit() {
-    ///metoro para regresar arriba
-    $(function(){
-      $(".botonModal").click(function(e){
-          e.preventDefault();
-          $("html, body").animate({"scrollTop": "0px"}, 600);
-      })
-  });
-/////
-
+   this.service.getGruposDisponibles;
 
   }
 
@@ -125,25 +181,10 @@ export class ExtraescolarComponent implements OnInit {
   ]
 
 
-  maestros = [
-    {
-      periodo: '20183',
-      grupo: 'RL',
-      promotor: 'GALINDO ZALDIVAR M.V. ISAAC ALEJANDRO',
-      hInicial: '13:00',
-      hFinal: '14:00',
-      dias: 'L,MA,MI,J',
-      lugares: '20'
-    },
 
-    {
-      periodo: '20183',
-      grupo: '1B',
-      promotor: 'GARCIA GARCIA JOSE ANTONIO',
-      hInicial: '11:00',
-      hFinal: '12:00',
-      dias: 'L,MA,MI,J',
-      lugares: '15'
-    },
-  ]
+
+  
+
 }
+
+

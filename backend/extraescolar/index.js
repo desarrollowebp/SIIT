@@ -10,11 +10,10 @@ const {
   } = require('./rutas.js')
   
   module.exports = {
-    /**
-     * Modelos
-     */
+    
     actividades,
     maestrosExtraescolar,
+  
   
     /**
      * Rutas

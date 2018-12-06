@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {horarioReinscripcionService} from './horarioreinscripcion.service';
 
 @Component({
   selector: 'app-horario-reinscripcion',
@@ -7,10 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HorarioReinscripcionComponent implements OnInit {
 
-  constructor() { }
+  constructor(public service: horarioReinscripcionService) {
+     /* service.gethorarioReinscripcion()
+      .subscribe((data))*/
+     console.log(this.service.gethorarioReinscripcion()
+     .subscribe(data => console.log(data)));
+   }
 
   ngOnInit() {
-
+      this.service.gethorarioReinscripcion();
   }
 
 
