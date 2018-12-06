@@ -7,6 +7,6 @@ const horarioReinscripcionSchema = new mongoose.Schema({
 
 module.exports = {
   horarioReinscripcion:
-  mongoose.model('horarioreinscripcion',
+  mongoose.model('horarioreinscripcions',
   horarioReinscripcionSchema)
 }
