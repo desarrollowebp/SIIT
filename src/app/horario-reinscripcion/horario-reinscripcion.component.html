@@ -6,10 +6,10 @@
 			<div>
 				<h5> Información Importante </h5>
 			</div>
-	
+
 			<div>
 				<input id="tab" name="myaccordion" type="checkbox" />
-				
+
 				<label for="tab"> Acerca del pago</label>
 				<div class="insidebox">
 					<div class="panel-body">
@@ -32,15 +32,15 @@
 							</li>
 						</ul>
 					</div>
-	
+
 				</div>
 			</div>
-	
+
 			<div>
-				<input id="tab-two" name="myaccordion" type="checkbox"/> 
+				<input id="tab-two" name="myaccordion" type="checkbox"/>
 				<label for="tab-two"> Acerca la reinscripción </label>
 				<div class="insidebox">
-	
+
 					<ul>
 						<li>Nota:El orden de reinscripción será de la siguiente manera:</li>
 						<li>1- Por Carreras</li>
@@ -51,7 +51,7 @@
 							Si Debes la encuesta, acude al departamento Desarrollo Academico. <br>
 							Si Tienes algún adeudo escolar, Acude a Servicios Escolares.</li>
 					</ul>
-	
+
 				</div>
 			</div>
 		</div>
@@ -70,38 +70,38 @@
 		</thead>
 		<tbody>
 			<tr>
-			<tr *ngFor="let alumno of alumno">
-				<td>{{alumno.dato}}</td>
-				<td>{{alumno.nombre}}</td>
-				<td>{{alumno.tipoadeudo}}</td>
-				<td>{{alumno.adeudo}}</td>
+			<tr *ngFor="let datosreinscripcion of datosreinscripcion">
+				<td>Nombre</td>
+				<td>{{datosreinscripcion.nombres}}</td>
+				<td>Biblioteca</td>
+				<td>{{datosreinscripcion.biblioteca}}</td>
 			</tr>
 
-			<tr *ngFor="let fecha of fecha">
-				<td>{{fecha.dato}}</td>
-				<td>{{fecha.fecha}}</td>
-				<td>{{fecha.tipoadeudo}}</td>
-				<td>{{fecha.adeudo}}</td>
+			<tr *ngFor="let datosreinscripcion of datosreinscripcion">
+				<td>Fecha</td>
+				<td>{{datosreinscripcion.fecha}}</td>
+				<td>Escolares</td>
+				<td>{{datosreinscripcion.escolares}}</td>
 			</tr>
 
-			<tr *ngFor="let hora of hora">
-				<td>{{hora.dato}}</td>
-				<td>{{hora.hora}}</td>
-				<td>{{hora.tipoadeudo}}</td>
-				<td>{{hora.adeudo}}</td>
+			<tr *ngFor="let datosreinscripcion of datosreinscripcion">
+				<td>Hora</td>
+				<td>{{datosreinscripcion.hora}}</td>
+				<td>Financieros</td>
+				<td>{{datosreinscripcion.financieros}}</td>
 			</tr>
 
-			<tr *ngFor="let autorizado of autorizado">
-				<td>{{autorizado.dato}}</td>
-				<td>{{autorizado.autorizado}}</td>
-				<td>{{autorizado.tipoadeudo}}</td>
-				<td>{{autorizado.adeudo}}</td>
+			<tr *ngFor="let datosreinscripcion of datosreinscripcion">
+				<td>Autorizado</td>
+				<td>{{datosreinscripcion.autorizado}}</td>
+				<td>Encuesta</td>
+				<td>{{datosreinscripcion.encuesta}}</td>
 			</tr>
 		</tbody>
 	</table>
 	<!--=========Termian tabla de hora de reins==========--->
 
-	
+
 
 
 </body>
