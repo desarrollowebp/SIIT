@@ -32,8 +32,9 @@ const {
       maestrosExtraescolarRouter
   } = require('./extraescolar')
 
-  const {calificacionexamen, calificacionexamenRouter} = require('./calificaciones-examenes')
-  const {calificacionesParciales, calificacionesParcialesRouter} = require('./calificaciones-parciales')
+  const {
+       calificacionexamenRouter} = require('./calificaciones-examenes')
+  const { calificacionesParcialesRouter} = require('./calificaciones-parciales')
 
 
 const app = express();
