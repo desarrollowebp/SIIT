@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component,Input, OnInit } from '@angular/core';
 import * as $ from 'jquery';
 @Component({
   selector: 'app-post-seleccion-materias',
@@ -6,7 +6,7 @@ import * as $ from 'jquery';
   styleUrls: ['./post-seleccion-materias.component.css']
 })
 export class PostSeleccionMateriasComponent implements OnInit {
-
+  @Input() public kardex;
   constructor() { }
 
   ngOnInit() {

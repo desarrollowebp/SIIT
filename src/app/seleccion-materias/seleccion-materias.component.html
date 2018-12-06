@@ -20,7 +20,7 @@
             <a> Semestre 1<span class="icon-angle-down"> </span> </a>
             <ul>
               <li  class="vertical">
-                <div *ngFor="let mats of semestres[0]"   class="materia">
+                <div *ngFor="let mats of ejemploMaterias.materiasSem[0].semestres[0]"   class="materia">
                   <div class="estado">
 
                     <p>Cd:{{mats.codigo}} </p>
@@ -39,7 +39,7 @@
             <a> Semestre 2<span class="icon-angle-down"> </span> </a>
             <ul>
               <li  class="vertical">
-                <div *ngFor="let mats of semestres[1]"   class="materia">
+                <div *ngFor="let mats of ejemploMaterias.materiasSem[0].semestres[1]"   class="materia">
                   <div class="estado">
 
                     <p>Cd:{{mats.codigo}} </p>
@@ -58,7 +58,7 @@
             <a> Semestre 3<span class="icon-angle-down"> </span> </a>
             <ul>
               <li  class="vertical">
-                <div *ngFor="let mats of semestres[2]"   class="materia">
+                <div *ngFor="let mats of ejemploMaterias.materiasSem[0].semestres[2]"   class="materia">
                   <div class="estado">
 
                     <p>Cd:{{mats.codigo}} </p>
@@ -76,7 +76,7 @@
             <a> Semestre 4<span class="icon-angle-down"> </span> </a>
             <ul>
               <li  class="vertical">
-                <div *ngFor="let mats of semestres[3]"   class="materia">
+                <div *ngFor="let mats of ejemploMaterias.materiasSem[0].semestres[3]"   class="materia">
                   <div class="estado">
 
                     <p>Cd:{{mats.codigo}} </p>
@@ -94,7 +94,7 @@
             <a> Semestre 5<span class="icon-angle-down"> </span> </a>
             <ul>
               <li  class="vertical">
-                <div *ngFor="let mats of semestres[4]"   class="materia">
+                <div *ngFor="let mats of ejemploMaterias.materiasSem[0].semestres[4]"   class="materia">
                   <div class="estado">
 
                     <p>Cd:{{mats.codigo}} </p>
@@ -112,7 +112,7 @@
             <a> Semestre 6<span class="icon-angle-down"> </span> </a>
             <ul>
               <li  class="vertical">
-                <div *ngFor="let mats of semestres[5]"   class="materia">
+                <div *ngFor="let mats of ejemploMaterias.materiasSem[0].semestres[5]"   class="materia">
                   <div class="estado">
 
                     <p>Cd:{{mats.codigo}} </p>
@@ -130,7 +130,7 @@
             <a> Semestre 7<span class="icon-angle-down"> </span> </a>
             <ul>
               <li  class="vertical">
-                <div *ngFor="let mats of semestres[6]"   class="materia">
+                <div *ngFor="let mats of ejemploMaterias.materiasSem[0].semestres[6]"   class="materia">
                   <div class="estado">
 
                     <p>Cd:{{mats.codigo}} </p>
@@ -148,7 +148,7 @@
             <a> Semestre 8<span class="icon-angle-down"> </span> </a>
             <ul>
               <li  class="vertical">
-                <div *ngFor="let mats of semestres[7]"   class="materia">
+                <div *ngFor="let mats of ejemploMaterias.materiasSem[0].semestres[7]"   class="materia">
                   <div class="estado">
 
                     <p>Cd:{{mats.codigo}} </p>
@@ -166,7 +166,7 @@
             <a> Semestre 9<span class="icon-angle-down"> </span> </a>
             <ul>
               <li  class="vertical">
-                <div *ngFor="let mats of semestres[0]"   class="materia">
+                <div *ngFor="let mats of ejemploMaterias.materiasSem[0].semestres[8]"   class="materia">
                   <div class="estado">
 
                     <p>Cd:{{mats.codigo}} </p>
@@ -222,15 +222,15 @@
                   </thead>
                   <tbody>
                     <tr *ngFor="let seleccionado of materiasSeleccionadas" class="">
-                      <td>{{seleccionado.Prof}}</td>
-                      <td>{{seleccionado.Gpo}}</td>
-                      <td>{{seleccionado.creditos}}</td>
-                      <td>{{seleccionado.Hor.lunes.hora}}      <br>{{seleccionado.Hor.lunes.salon}}     </td>
-                      <td>{{seleccionado.Hor.martes.hora}}     <br>{{seleccionado.Hor.martes.salon}}    </td>
-                      <td>{{seleccionado.Hor.miercoles.hora}}  <br>{{seleccionado.Hor.miercoles.salon}} </td>
-                      <td>{{seleccionado.Hor.jueves.hora}}     <br>{{seleccionado.Hor.jueves.salon}}    </td>
-                      <td>{{seleccionado.Hor.viernes.hora}}    <br>{{seleccionado.Hor.viernes.salon}}   </td>
-                      <td>{{seleccionado.Hor.viernes.hora}}    <br>{{seleccionado.Hor.viernes.salon}}   </td>
+                      <td>{{seleccionado.grupo.nombre}} {{seleccionado.maestro.nombre}}</td>
+                      <td>{{seleccionado.maestro.grupo}}</td>
+                      <td>{{seleccionado.maestro.numeroCreditos}}</td>
+
+                      <td>{{seleccionado.maestro.horario.martes.hora}}     <br>{{seleccionado.maestro.horario.martes.salon}}    </td>
+                      <td>{{seleccionado.maestro.horario.miercoles.hora}}  <br>{{seleccionado.maestro.horario.miercoles.salon}} </td>
+                      <td>{{seleccionado.maestro.horario.jueves.hora}}     <br>{{seleccionado.maestro.horario.jueves.salon}}    </td>
+                      <td>{{seleccionado.maestro.horario.viernes.hora}}    <br>{{seleccionado.maestro.horario.viernes.salon}}   </td>
+                      <td>{{seleccionado.maestro.horario.viernes.hora}}    <br>{{seleccionado.maestro.horario.viernes.salon}}   </td>
                       <td><button type="button" id="btn-eliminar" (click)="  eliminarMateria(gpsdisp)" >Eliminar</button></td>
                     </tr>
 
@@ -251,43 +251,43 @@
 
       <div class="menuSeleccionMaterias movil ">
         <ul  class="">
-          <li *ngFor="let seleccionada of materiasSeleccionadas" class="submenuSeleccionMaterias horarioseparacion ">
-            <p class="NombreMateria">{{seleccionada.Prof}} CR:5 GGP: {{seleccionada.Gpo}} </p>
+          <li *ngFor="let seleccionado of materiasSeleccionadas" class="submenuSeleccionMaterias horarioseparacion ">
+            <p class="NombreMateria">{{seleccionado.maestro.nombre}} {{seleccionado.grupo.nombre}} CR: {{seleccionado.maestro.numeroCreditos}} GPO: {{seleccionado.maestro.grupo}} </p>
             <ul>
               <li class="horariodes">
                 <div class="materia">
                   <div class="dias">
                     <div class="infodia">
                       <p>Lunes</p>
-                      <p>{{seleccionada.Hor.lunes.hora}}</p>
-                      <p>{{seleccionada.Gpo}}</p>
+                      <p>{{seleccionado.maestro.horario.lunes.hora}}</p>
+                      <p>{{seleccionado.maestro.horario.lunes.salon}}</p>
                     </div>
                     <div class="infodia">
                       <p>Martes</p>
-                      <p>{{seleccionada.Hor}}</p>
-                      <p>{{seleccionada.Gpo}}</p>
+                      <p>{{seleccionado.maestro.horario.martes.hora}}</p>
+                      <p>{{seleccionado.maestro.horario.martes.salon}}</p>
                     </div>
                     <div class="infodia">
                       <p>Miercoles</p>
-                      <p>{{seleccionada.Hor}}</p>
-                      <p>{{seleccionada.Gpo}}</p>
+                      <p>{{seleccionado.maestro.horario.miercoles.hora}}</p>
+                      <p>{{seleccionado.maestro.horario.miercoles.salon}}</p>
                     </div>
                   </div>
                   <div class="dias">
                     <div class="infodia">
                       <p>Jueves</p>
-                      <p>{{seleccionada.Hor}}</p>
-                      <p>{{seleccionada.Gpo}}</p>
+                      <p>{{seleccionado.maestro.horario.jueves.hora}}</p>
+                      <p>{{seleccionado.maestro.horario.jueves.salon}}</p>
                     </div>
                     <div class="infodia">
                       <p>Viernes</p>
-                      <p>{{seleccionada.Hor}}</p>
-                      <p>{{seleccionada.Gpo}}</p>
+                      <p>{{seleccionado.maestro.horario.viernes.hora}}</p>
+                      <p>{{seleccionado.maestro.horario.viernes.salon}}</p>
                     </div>
                     <div class="infodia">
                       <p>Sabado</p>
-                      <p>{{seleccionada.Hor}}</p>
-                      <p>{{seleccionada.Gpo}}</p>
+                      <p>{{seleccionado.maestro.horario.sabado.hora}}</p>
+                      <p>{{seleccionado.maestro.horario.sabado.salon}}</p>
                     </div>
                   </div>
 
@@ -317,7 +317,7 @@
       <!-- Modal content -->
       <div  class="form">
         <h4>
-          Grupos disponibles {{materiaModal}}  Presiona para mostrar horario
+          Grupos disponibles {{materiaActual}}  Presiona para mostrar horario
         </h4>
         <form>
           <table>
@@ -329,13 +329,18 @@
               <th></th>
             </tr>
 
-            <tr *ngFor="let gpsdisp of gpsDisponibles" class="">
-              <td>{{gpsdisp.Gpo}}</td>
-              <td>{{gpsdisp.Prof}}</td>
-              <td>{{gpsdisp.Hor.lunes.hora}}</td>
-              <td>{{gpsdisp.Lug}}</td>
-              <td><button type="button" id="btn-seleccionar"  (click)="apilarSeleccion(gpsdisp)">Seleccionar</button></td>
+
+            <tr *ngFor="let gpsdisp of gpsDisponibles.maestros" class="">
+
+
+              <td>{{gpsdisp.grupo}}</td>
+              <td>{{gpsdisp.nombre}}</td>
+              <td>{{gpsdisp.horario.lunes.hora}}</td>
+              <td>{{gpsdisp.cupo}}</td>
+              <td><button type="button" id="btn-seleccionar"  (click)="apilarSeleccion(gpsdisp,gpsDisponibles)">Seleccionar</button></td>
             </tr>
+
+
 
 
 
