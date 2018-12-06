@@ -11,6 +11,10 @@ const {
   respuestasEvaluacionesRouter,
   adeudosAlumnosRouter
 } = require('./evaluacion-docente')
+///
+const {
+  informacionTutoriasRouter
+} = require('./tutorias')  
 
 const app = express();
 
@@ -25,6 +29,8 @@ app.use('/alumnos', alumnosRouter);
 app.use('/preguntas-evaluaciones', preguntasEvaluacionesRouter)
 app.use('/respuestas-evaluaciones', respuestasEvaluacionesRouter)
 app.use('/adeudos-alumnos', adeudosAlumnosRouter)
+///
+app.use('/tutorias', informacionTutoriasRouter)
 
 app.listen(3000, function () {
   console.info('Backend escuchando en el puerto 3000');
