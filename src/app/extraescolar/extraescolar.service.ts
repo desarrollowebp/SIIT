@@ -12,7 +12,7 @@ export class ExtraescolarService{
     }
 
     getExtraescolares(){
-
+        return this.http.get("http://localhost:3000/extraescolar/");
     }
 
     getGruposDisponibles(){
