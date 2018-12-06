@@ -215,10 +215,16 @@ horario:{lunes:{salon:["sc5"],hora:["20:30"]},martes:{salon:["sc5"],hora:["20:30
 ]
 
 ];
-gpsDisponibles;
+gpsDisponibles={maestro:[]};
 materiasSeleccionadas=[];
 materiaModal="";
-ejemploMaterias ;
+ejemploMaterias={
+materiasSem:[{
+carrera:"Sistemas",
+semestres:[
+]
+}]
+};
 validacion ={};
   modals = "modal";
   constructor(service : SeleccionMateriassDataService) {
