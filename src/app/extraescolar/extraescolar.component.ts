@@ -12,6 +12,9 @@ import { Actividades } from './actividades';
 })
 export class ExtraescolarComponent implements OnInit {
 grupos;
+extras;
+bailes;musicales;civicas;dts;visuales;
+pelotas;fisicas;nataciones;aeas;
 
   objetoActual = function(gruDis) {
     console.log(gruDis);
@@ -23,6 +26,12 @@ grupos;
     };
   }
 
+  actividades = {
+    actividadesCulturales : [{
+      bailes: [], musicales: [], civicas: [], dts: [], visuales: []
+    }],
+    actividadesDeportivas : [{ pelotas: [], fisicas: [], nataciones: [], aeas: [] }]
+  }
 
   
 gpsDisponibles=[];
@@ -64,11 +73,6 @@ materiaModal="";
   }
 
 
-  actividadesCulturales = [];
-  actividadesDeportivas = [];
-
-
-
   datosmodal = "";
   extraseleccionada = {
     nombreActividad:"",
@@ -80,9 +84,10 @@ materiaModal="";
     hFinal: "",
     dias: ""
   }
-
+  
   modals = "modal";
   constructor(public service : ExtraescolarService) {
+    //Regresa los grupos disponibles
     //console.log(this.service.getGruposDisponibles().subscribe(data => console.log(data)));
    service.getGruposDisponibles().subscribe((data)=>{
    //console.log(data);
@@ -90,15 +95,34 @@ materiaModal="";
    this.grupos=this.grupos.actividadesMaes;
    //console.log(this.grupos);
    });
-      console.log(this.grupos);
+
+
+   service.getExtraescolares().subscribe((data)=>{
+     //Regresa todas las actividades extraescolares
+    this.extras=data;
+    this.extras=this.extras.actividadesExtra;
+    //Actividades Culturales
+    this.bailes=this.extras[0].actividades.actividadesCulturales[0].bailes;
+    this.musicales=this.extras[0].actividades.actividadesCulturales[0].musicales;
+    this.civicas=this.extras[0].actividades.actividadesCulturales[0].civicas;
+    this.dts=this.extras[0].actividades.actividadesCulturales[0].dts;
+    this.visuales=this.extras[0].actividades.actividadesCulturales[0].visuales;
+    //Actividades Deportivas
+    this.pelotas=this.extras[0].actividades.actividadesDeportivas[0].pelotas;
+    this.fisicas=this.extras[0].actividades.actividadesDeportivas[0].fisicas;
+    this.nataciones=this.extras[0].actividades.actividadesDeportivas[0].nataciones;
+    this.aeas=this.extras[0].actividades.actividadesDeportivas[0].aeas;
+    });
+
+      //console.log(this.grupos); manda undefined
 
     this.modals = "modal"; 
   }
 
-  
   funct() {
     this.grupos=this.grupos.actividadesMaes;
-    console.log(this.grupos);
+    //console.log(this.grupos);
+    console.log(this.extras[0].actividades.actividadesDeportivas[0].pelotas);
   }
 
   func($var) {
@@ -125,15 +149,11 @@ materiaModal="";
 
   }
 
-  actividades = [
-    this.actividadesCulturales = [{
-      bailes: [], musicales: [], civicas: [], dts: [], visuales: []
-    }],
-    this.actividadesDeportivas = [{ pelotas: [], fisicas: [], nataciones: [], aeas: [] }]
-  ]
+  
+  
 
 
-
+/*
   bailes = [
     'Ballet Tahitiano', 'Bellydance Fusión', 'Break Dance', 'Danza Aérea',
     'Danza Árabe', 'Electro Dance', 'Hip Hop', 'Hip Hop Avanzado', 'Hip Hop Principiante',
@@ -181,7 +201,7 @@ materiaModal="";
   aeas = [
     'Ajedrez', 'Ajedrez Paralelo', 'Deportes Electronicos', 'Tiro con Arco',
   ]
-
+*/
 
 
 
