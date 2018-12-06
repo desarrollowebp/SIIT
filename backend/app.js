@@ -31,6 +31,10 @@ const {
     actividadesRouter,
       maestrosExtraescolarRouter
   } = require('./extraescolar')
+///
+const {
+    informacionTutoriasRouter
+  } = require('./tutorias')  
 
 
 const app = express();
@@ -50,6 +54,8 @@ app.use('/seleccion-materias', semestresMateriaRouter )
 app.use('/seleccion-materias-maestros',  maestrosMateriaRouter)
 app.use('/extraescolar',  actividadesRouter)
 app.use('/extraescolar-maestros',  maestrosExtraescolarRouter)
+app.use('/tutorias', informacionTutoriasRouter)
+
 /**************
  *   Auditoria servicios
  */

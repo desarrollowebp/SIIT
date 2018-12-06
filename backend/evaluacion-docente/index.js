@@ -1,4 +1,4 @@
-const {
+const { 
   preguntasEvaluaciones,
   respuestasEvaluaciones,
   adeudosAlumnos

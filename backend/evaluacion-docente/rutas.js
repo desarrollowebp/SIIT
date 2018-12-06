@@ -13,7 +13,7 @@ const adeudosAlumnosRouter = Router()
 /**
  * Preguntas Evaluaciones
  */
-preguntasEvaluacionesRouter.get('/', (req, res, next) => {
+preguntasEvaluacionesRouter.get('/', (req, res, next) => {  
   preguntasEvaluaciones.find()
     .then(preguntas => res.json({ preguntas }))
     .catch(next)

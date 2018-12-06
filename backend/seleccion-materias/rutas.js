@@ -7,7 +7,7 @@ const {
 } = require('./modelos.js')
 
 const semestresMateriaRouter = Router()
-const maestrosMateriaRouter = Router()
+const maestrosMateriaRouter = Router() 
 /**
  * Preguntas Evaluaciones
  */
