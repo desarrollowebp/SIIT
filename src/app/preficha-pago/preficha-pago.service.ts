@@ -1,3 +1,4 @@
+/*
 import { Injectable } from '@angular/core';
 import { PrefichaPago } from './prefichasPagos'
 import { HttpClient } from '@angular/common/http';
@@ -10,3 +11,4 @@ export class PrefichaPagoService {
     return this.http.get<PrefichasPagos>('http://localhost:3000/preficha-pago')
   }
 }
+*/

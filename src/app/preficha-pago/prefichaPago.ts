@@ -1,3 +1,4 @@
+/*
 export class PrefichaPago {
   nombres: String;
   apellidos: String;
@@ -11,3 +12,4 @@ export class PrefichaPago {
   sucursalCuenta:Number;
   referenciaAlfanumerica:Number;
 }
+*/

@@ -1,3 +1,4 @@
+/*
 import { prefichaPago } from './prefichaPago'
 
 export class prefichasPagos {
@@ -15,3 +16,4 @@ export class prefichasPagos {
   sucursalCuenta:prefichaPago[]
   referenciaAlfanumerica:prefichaPago[]
 }
+*/

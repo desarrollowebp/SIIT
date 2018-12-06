@@ -12,7 +12,7 @@ export class PostSeleccionMateriasComponent implements OnInit {
  paramse=[{}];
   ngOnInit() {
     this.route.queryParamMap.subscribe(params => {
-       this.paramse={params};
+       
         console.log(this.paramse);
   });
 
