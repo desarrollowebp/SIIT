@@ -304,9 +304,12 @@
       </div>
       <div class="centarbtn">
         <button routerLink="/preSeleccionMaterias" type="button" id="btn-guardar">
+
           Regresar
         </button>
-        <button routerLink="/postSeleccionMaterias" type="button" id="btn-guardar">
+        <button [routerLink]="['/postSeleccionMaterias']"
+   [queryParams]="arregloMaterias"
+   queryParamsHandling="merge">
           Guardar
         </button>
       </div>

@@ -43,9 +43,10 @@ horario:{lunes:{salon:["sc5"],hora:["20:30"]},martes:{salon:["sc5"],hora:["20:30
 ]
 
 ];
+arregloMaterias={materias:[]};
 materiaActual;
 gpsDisponibles={maestro:[]};
-materiasSeleccionadas=[];
+materiasSeleccionadas=[  ];
 materiaModal="";
 ejemploMaterias={
 materiasSem:[{
@@ -56,6 +57,7 @@ semestres:[
 };
 validacion ={};
   modals = "modal";
+ejemplo= {kevin:"xd"};
   constructor(service : SeleccionMateriassDataService) {
     service.getMaterias().subscribe((data)=>{
 
@@ -68,6 +70,7 @@ validacion ={};
   apilarSeleccion($gpsdisp,$gpsdispaux){
      let temporal={grupo:$gpsdispaux,maestro:$gpsdisp};
     this.materiasSeleccionadas.push(temporal);
+    this.arregloMaterias= {materias:this.materiasSeleccionadas};
     this.cerrar();
   }
   funcMostrarGrupos($materia) {
