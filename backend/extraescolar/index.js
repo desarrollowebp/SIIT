@@ -15,7 +15,7 @@ const {
     maestrosExtraescolar,
     /**
 
-    
+
      * Rutas
      */
     actividadesRouter,
