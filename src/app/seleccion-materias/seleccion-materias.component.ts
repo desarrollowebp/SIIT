@@ -215,47 +215,30 @@ horario:{lunes:{salon:["sc5"],hora:["20:30"]},martes:{salon:["sc5"],hora:["20:30
 ]
 
 ];
-gpsDisponibles = [];
+gpsDisponibles;
 materiasSeleccionadas=[];
 materiaModal="";
 ejemploMaterias ;
 validacion ={};
   modals = "modal";
-  constructor(seleccionMateriassDataService : SeleccionMateriassDataService) {
-    seleccionMateriassDataService.getMaterias().subscribe((data:any) => {
-      this.ejemploMaterias = JSON.parse(data) ;
-    })
-    console.log(this.ejemploMaterias);
+  constructor(service : SeleccionMateriassDataService) {
+    service.getMaterias().subscribe((data)=>{
+
+    this.ejemploMaterias=data;
+
+    });
+
     this.modals = "modal";
   }
-  apilarSeleccion($gpsdisp){
-     let temporal={Gpo:$gpsdisp.Gpo,Prof:this.materiaModal+"-"+$gpsdisp.Prof,Hor:$gpsdisp.Hor,Lug:$gpsdisp.Lug,creditos:$gpsdisp.creditos};
+  apilarSeleccion($gpsdisp,$gpsdispaux){
+     let temporal={grupo:$gpsdispaux,maestro:$gpsdisp};
     this.materiasSeleccionadas.push(temporal);
     this.cerrar();
   }
   funcMostrarGrupos($materia) {
-
-    this.gpsDisponibles = [];
+    console.log($materia);
+    this.gpsDisponibles= $materia;
     this.modals = "visibleNo";
-    this.materiaModal=$materia.nombre;
-    for (let i = 0; i < this.maestros.length; i++) {
-            for (let j = 0; j < this.maestros[i].materias.length; j++) {
-                    console.log( this.maestros[i].materias[j].codigo);
-                    if( this.maestros[i].materias[j].codigo == $materia.codigo ){
-                    this.gpsDisponibles.push(
-                    {Gpo:this.maestros[i].materias[j].grupo,
-                     Prof:this.maestros[i].nombre,
-                     Hor:this.maestros[i].materias[j].horario,
-                     Lug:this.maestros[i].materias[j].cupo,
-                     creditos:$materia.creditos}
-
-                   );
-
-                      }
-
-             }
-      }
-
   }
   eliminarMateria($materia) {
     this.materiasSeleccionadas.splice(this.materiasSeleccionadas.indexOf($materia),1);
