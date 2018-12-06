@@ -11,7 +11,7 @@ import { Actividades } from './actividades';
   styleUrls: ['./extraescolar.component.css']
 })
 export class ExtraescolarComponent implements OnInit {
-grupos:GrupoDisponible[];
+grupos;
 
   objetoActual = function(gruDis) {
     console.log(gruDis);
@@ -84,15 +84,23 @@ materiaModal="";
   modals = "modal";
   constructor(public service : ExtraescolarService) {
     //console.log(this.service.getGruposDisponibles().subscribe(data => console.log(data)));
-   service.getGruposDisponibles().subscribe((data:GrupoDisponible[])=>{
+   service.getGruposDisponibles().subscribe((data)=>{
    //console.log(data);
    this.grupos=data;
-   console.log(this.grupos);
+   this.grupos=this.grupos.actividadesMaes;
+   //console.log(this.grupos);
    });
       console.log(this.grupos);
 
     this.modals = "modal"; 
   }
+
+  
+  funct() {
+    this.grupos=this.grupos.actividadesMaes;
+    console.log(this.grupos);
+  }
+
   func($var) {
     this.modals = "visibleNo";
     this.datosmodal = "";

@@ -1,18 +1,18 @@
   
   const {
-    calificacionExamen
+    calificacionexamen
     
   } = require('./modelos.js')
 
   const {
-    calificacionExamenRouter
+    calificacionexamenRouter
    
   } = require('./rutas.js')
 
   module.exports = {
    
-    calificacionExamen,
+    calificacionexamen,
   
-    calificacionExamenRouter
+    calificacionexamenRouter
     
   }
