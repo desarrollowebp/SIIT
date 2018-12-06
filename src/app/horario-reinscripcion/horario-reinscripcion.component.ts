@@ -9,7 +9,7 @@ import {horarioReinscripcionService} from './horarioreinscripcion.service';
 
 export class HorarioReinscripcionComponent implements OnInit {
 //    datoshorarior:
-      ;
+
 
   constructor(public service: horarioReinscripcionService) {
 /*
