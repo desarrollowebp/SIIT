@@ -9,22 +9,26 @@ import {horarioReinscripcionService} from './horarioreinscripcion.service';
 
 export class HorarioReinscripcionComponent implements OnInit {
 //    datoshorarior:
+  datosreinscripcion;
 
 
   constructor(public service: horarioReinscripcionService) {
-/*
+
      service.gethorarioReinscripcion().subscribe((data)=>{
       this.datosreinscripcion=data;
+      this.datosreinscripcion=this.datosreinscripcion.datosHorario;
       console.log(this.datosreinscripcion);
       });
-     /*console.log(this.service.gethorarioReinscripcion()
+
+    /*
+    console.log(this.service.gethorarioReinscripcion()
      .subscribe(data => console.log(data)));*/
    }
 
   ngOnInit() {
       this.service.gethorarioReinscripcion();
   }
-
+/*
   datosreinscripcion = [{
     autorizado: "NO",
     biblioteca: "NO",
@@ -35,7 +39,7 @@ export class HorarioReinscripcionComponent implements OnInit {
     grupo: "1M",
     hora: "10:40",
     nombres: "Alejandro Marrufo Quintana"
-  }];
+  }];*/
 
 
 
