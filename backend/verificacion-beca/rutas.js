@@ -1,7 +1,7 @@
 const { Router } = require('express')
 
 const {
-  beca,
+  beca
      
 
 } = require('./modelos.js')
@@ -27,7 +27,7 @@ becaRouter.get('/', (req, res, next) => {
 
 
 module.exports = {
-  becaMateriaRouter,
+  becaRouter,
   
 
 }
