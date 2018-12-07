@@ -2,18 +2,18 @@
 const { Router } = require('express')
 
 const {
-  calificacionExamen
+  calificacionexamen
 } = require('./modelos.js')
 
 
-const calificacionExamenRouter = Router()
+const calificacionexamenRouter = Router()
 
-calificacionExamenRouter.get('/', (req, res, next) => {
-  calificacionExamen.find()
+calificacionexamenRouter.get('/', (req, res, next) => {
+  calificacionexamen.find()
     .then((caliexam) => res.json({ caliexam }))
     .catch(next)
 })
 
 module.exports = {
-  calificacionExamenRouter
+  calificacionexamenRouter
 }

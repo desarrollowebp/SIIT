@@ -1,11 +1,8 @@
 const mongoose = require('mongoose')
 
-const calificacionExamenSchema =  new mongoose.Schema({
+const calificacionexamenSchema =  new mongoose.Schema({
  
-    facilitador: String,
-    materia: String,
-    calificacion: Number,
-    tipo: String
+    
 
 
   
@@ -13,5 +10,5 @@ const calificacionExamenSchema =  new mongoose.Schema({
 
 
 module.exports = {
-  calificacionExamen: mongoose.model('calificacionExamen', calificacionExamenSchema)
+  calificacionexamen: mongoose.model('calificacionexamen', calificacionexamenSchema)
 }
