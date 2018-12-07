@@ -1,105 +1,58 @@
-require('./config/config');
-const express = require('express');
-const mongoose = require('mongoose');
-const bodyParser = require('body-parser');
-const cors = require('cors');
-
-mongoose.connect('mongodb://localhost:27017/siit', { useNewUrlParser: true })
+const express = require('express')
+const mongoose = require('mongoose')
+const bodyParser = require('body-parser')
+const cors = require('cors')
 
 const alumnosRouter = require('./routes/alumnos.js')
 const {
-    preguntasEvaluacionesRouter,
-    respuestasEvaluacionesRouter,
-    adeudosAlumnosRouter
-} = require('./evaluacion-docente') <<
-    << << < HEAD
-    ///
+  preguntasEvaluacionesRouter,
+  respuestasEvaluacionesRouter,
+  adeudosAlumnosRouter
+} = require('./evaluacion-docente')
 const {
-    informacionTutoriasRouter
-} = require('./tutorias') ===
-    === =
-    ///
-    const {
-        informacionTutoriasRouter
-    } = require('./tutorias') >>>
-    >>> > af8ca343a96eb8406181db602cdb9a508a70b62c
-
+  informacionTutoriasRouter
+} = require('./tutorias')
 const {
-    gruposCargadosRouter
+  gruposCargadosRouter
 } = require('./grupos-cargados')
-
-///
 const {
-    horarioReinscripcionRouter
+  horarioReinscripcionRouter
 } = require('./horario-reinscripcion')
-    ///
 const {
-    semestresMateriaRouter,
-    maestrosMateriaRouter
+  semestresMateriaRouter,
+  maestrosMateriaRouter
 } = require('./seleccion-materias')
-    ///
 const {
-    actividadesRouter,
-    <<
-    << << < HEAD
-    maestrosExtraescolarRouter,
-    extraescolarSeleccionadaRouter
+  actividadesRouter,
+  maestrosExtraescolarRouter,
+  extraescolarSeleccionadaRouter
 } = require('./extraescolar')
-
 const {
-    calificacionexamenRouter
+  calificacionexamenRouter
 } = require('./calificaciones-examenes')
-
 const {
-    calificacionesParcialesRouter
+  calificacionesParcialesRouter
 } = require('./calificaciones-parciales')
-
 const {
+  becaRouter
+} = require('./verificacion-beca')
 
-    ===
-    === =
-    maestrosExtraescolarRouter,
-    extraescolarSeleccionadaRouter
-} = require('./extraescolar') >>>
-    >>> > af8ca343a96eb8406181db602cdb9a508a70b62c
+const app = express()
 
-const {
-    calificacionexamenRouter
-} = require('./calificaciones-examenes')
-
-const {
-    calificacionesParcialesRouter
-} = require('./calificaciones-parciales')
-
-const {
-
-
-
-
-    <<
-    << << < HEAD
-
-    becaRouter
-} = require('./verificacion-beca') ===
-    === =
-    becaRouter
-} = require('./verificacion-beca') >>>
-    >>> > af8ca343a96eb8406181db602cdb9a508a70b62c
-const app = express();
-
+/**
+ * Middleware
+ */
 app.use(cors())
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
-app.use('/alumnos', alumnosRouter);
-
 /**
- * Evaluacion docente
+ * Rutas
  */
+app.use('/alumnos', alumnosRouter)
 app.use('/preguntas-evaluaciones', preguntasEvaluacionesRouter)
 app.use('/respuestas-evaluaciones', respuestasEvaluacionesRouter)
 app.use('/adeudos-alumnos', adeudosAlumnosRouter)
-    ///
 app.use('/tutorias', informacionTutoriasRouter)
 app.use('/seleccion-materias', semestresMateriaRouter)
 app.use('/seleccion-materias-maestros', maestrosMateriaRouter)
@@ -111,9 +64,20 @@ app.use('/grupos-cargados', gruposCargadosRouter)
 app.use('/calificaciones-parciales', calificacionesParcialesRouter)
 app.use('/calificaciones-examenes', calificacionexamenRouter)
 app.use('/verificion-beca', becaRouter)
+app.use('/api', require('./auditoria-servicio/rutas'))
 
-app.use("/api", require('./auditoria-servicio/rutas'));
+/**
+ * Error Handler
+ */
+app.use((err, req, res, next) => {
+  res.status(500).json({ error: err })
+})
 
-app.listen(3000, function() {
-    console.info('Backend escuchando en el puerto 3000');
-});
+/**
+ * Listen
+ */
+app.listen(3000, () => {
+  mongoose.connect('mongodb://localhost:27017/siit', { useNewUrlParser: true })
+  mongoose.connection.on('error', console.error)
+  console.log('Backend escuchando en el puerto 3000')
+})
