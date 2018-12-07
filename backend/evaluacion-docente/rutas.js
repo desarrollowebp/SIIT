@@ -3,12 +3,14 @@ const { Router } = require('express')
 const {
   preguntasEvaluaciones,
   respuestasEvaluaciones,
-  adeudosAlumnos
+  adeudosAlumnos,
+  maestrosMaterias
 } = require('./modelos.js')
 
 const preguntasEvaluacionesRouter = Router()
 const respuestasEvaluacionesRouter = Router()
 const adeudosAlumnosRouter = Router()
+const maestrosMateriasRouter = Router()
 
 /**
  * Preguntas Evaluaciones
@@ -37,8 +39,18 @@ adeudosAlumnosRouter.post('/', (req, res, next) => {
     .catch(next)
 })
 
+/**
+ * Maestros Materias
+ */
+maestrosMateriasRouter.get('/', (req, res, next) => {
+  maestrosMaterias.find()
+    .then(maestros => res.json({ maestros }))
+    .catch(next)
+})
+
 module.exports = {
   preguntasEvaluacionesRouter,
   respuestasEvaluacionesRouter,
-  adeudosAlumnosRouter
+  adeudosAlumnosRouter,
+  maestrosMateriasRouter
 }

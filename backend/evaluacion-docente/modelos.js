@@ -25,5 +25,5 @@ module.exports = {
   preguntasEvaluaciones: mongoose.model('preguntasEvaluaciones', preguntasEvaluacionesSchema),
   respuestasEvaluaciones: mongoose.model('respuestasEvaluaciones', respuestasEvaluacionesSchema),
   adeudosAlumnos: mongoose.model('adeudosAlumnos', adeudosAlumnosSchema),
-  maestroMateria: mongoose.model('maestroMateria', maestrosMateriasSchema)
+  maestrosMaterias: mongoose.model('maestrosMaterias', maestrosMateriasSchema)
 }
