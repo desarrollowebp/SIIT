@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+//prueba para subirlo x3
+>>>>>>> bc6ac46295d95f9da42364f468ea1cf56d139101
 
 const { Router } = require('express')
 
@@ -5,6 +9,7 @@ const {
   gruposCargados
 } = require('./modelos.js')
 
+<<<<<<< HEAD
 const miGrupo=new gruposCargados({ grupo: '1M', 
 	materia: 'CALCULO DIFERENCIAL\n', 
 	codigo: 'CO1001\n', 
@@ -25,6 +30,11 @@ const miGrupo=new gruposCargados({ grupo: '1M',
 
 //
 
+=======
+const miGrupo=new gruposCargados({}
+)
+
+>>>>>>> bc6ac46295d95f9da42364f468ea1cf56d139101
 const gruposCargadosRouter = Router()
 
 gruposCargadosRouter.get('/', (req, res, next) => {
