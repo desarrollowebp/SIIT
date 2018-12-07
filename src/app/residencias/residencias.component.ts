@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import {residenciasService} from './residencias.service';
 @Component({
   selector: 'app-residencias',
   templateUrl: './residencias.component.html',
@@ -14,9 +14,15 @@ dictamen:"ACEPTADO",
  portadaAnt:"ENTREGADO", asesorInt2:"ENTREGADO",
 reporteFinal:"ENTREGADO",revFinal:"ENTREGADO"};
   
-  constructor() { }
+  constructor(private servicio : residenciasService) {
+  
+  } 
+  
 
   ngOnInit() {
-  }
-
+  	this.service.getresidencia().subscribe(function)(data){
+  this.residencias=data;
+  } );
+  
+ 
 }

@@ -108,7 +108,7 @@ const routes:Routes = [
     HttpClientModule,
   ],
   providers: [
-    EvaluacionDocenteService,SeleccionMateriassDataService,ExtraescolarService,horarioReinscripcionService
+    EvaluacionDocenteService,SeleccionMateriassDataService,ExtraescolarService,horarioReinscripcionService, residenciasService
   ],
   bootstrap: [AppComponent]
 })

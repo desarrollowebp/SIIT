@@ -1,45 +1,29 @@
 const mongoose = require('mongoose')
 
-<<<<<<< HEAD
 const datosResidenciasSchema =  new mongoose.Schema({
-  datos: String
-})
+  folio{type:String,required:true}
+   noctrl{type:String,required:true}
+   carrera{type:String,required:true}
+   nombreAlumno{type:String,required:true}
+   seguimiento1{type:String,required:true}
+   seguimiento2{type:String,required:true}
+   seguimiento3{type:String,required:true}
+   nombreProyecto{type:String,required:true}
+   nctrl{type:String,required:true}
+   empresa{type:String,required:true}
+   asesorInt{type:String,required:true}
+   asesorExt{type:String,required:true}
+   dictamen{type:String,required:true}
+   portadaAnt{type:String,required:true}
+   asesorInt2{type:String,required:true}
+   reporteFinal{type:String,required:true}
+   revFinal{type:String,required:true}
+   )
 
-const respuestasResidenciasSchema = new mongoose.Schema({
-  folio: String,
-  respuestas: [{
-=======
-const datosResidenciaSchema =  new mongoose.Schema({
-  datos: String
-})
 
-const respuestasResidenciaSchema = new mongoose.Schema({
-  folio: String,
-  numeroControl: [{
->>>>>>> 03403cc655d7ea17f03749234b42fc02b10a79ef
-    type: String
-  }]
-})
-
-<<<<<<< HEAD
-const residenteAlumnoSchema = new mongoose.Schema({
-  numeroControl: Number,
-  datosResidencias: String,
-})
 
 module.exports = {
-  datosResidencias: mongoose.model('preguntasResidencias', datosResidenciasSchema),
-  respuestasResidencias: mongoose.model('respuestasResidencias', respuestasResidenciasSchema),
-  residenteAlumno: mongoose.model('residenteAlumno', adeudosAlumnosSchema)
-=======
-const adeudosAlumnosSchema = new mongoose.Schema({
-  numeroControl: Number,
-  nombreAlumno: String
-})
+  datosResidencias: mongoose.model('datosResidenciasSchema', datosResidenciasSchema)
+ 
 
-module.exports = {
-  preguntasResidencias: mongoose.model('datosResidencias', preguntasEvaluacionesSchema),
-  respuestasResidencia: mongoose.model('respuestasResidencias', respuestasEvaluacionesSchema)
-  
->>>>>>> 03403cc655d7ea17f03749234b42fc02b10a79ef
 }
