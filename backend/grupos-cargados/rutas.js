@@ -1,13 +1,13 @@
-//prueba para subirlo x3
-
 const { Router } = require('express')
 
 const {
   gruposCargados
 } = require('./modelos.js')
+/*
+const miGrupo=new gruposCargados({
 
-const miGrupo=new gruposCargados({}
-)
+})
+*/
 
 const gruposCargadosRouter = Router()
 
