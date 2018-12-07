@@ -1,9 +1,9 @@
 /*
  {
-    "nombre":"biblioteca",
+    "servicio":"biblioteca",
     "descripcion":"calidad de los servicios ofertados en la biblioteca",
     "preguntas":[
-    {"pregunta":"cual es su nuero?"}
+    {"pregunta":"cual es su nunero?"}
     ]
     } 
 //formato json para enviar las preguntas
@@ -32,36 +32,49 @@ let respuestasvalidas = {
 
 
 let preguntaSchema = new Schema({
-    nombre: {
-        type: String
+    servicio: {
+        type: String,
+        required: [true, 'el servicio es necesario']
+
     },
     descripcion: {
-        type: String
+        type: String,
+        required: [true, 'la descripcion es necesario']
+
     },
     preguntas: [{
 
-        pregunta: { type: String }
+        pregunta: String
     }]
 });
 
 let auditoriarespuestaSchema = new Schema({
     usuario: {
-        // categoria: { type: Schema.Types.ObjectId, ref: 'usuarios', required: true },
         type: String,
-        unique: true,
         required: [true, 'El usuario es necesario']
     },
     fecha: { type: Date, default: Date.now },
+    comentario: String,
     respuestas: [{
-        idpregunta: {
-            type: String,
-            // categoria: { type: Schema.Types.ObjectId, ref: 'auditorias', required: true },
-            required: [true, 'El id de la pregunta es obligatorio ']
-        },
-        respuesta: {
-            type: Number,
-            enum: respuestasvalidas
-        }
+        categoria: String,
+        respuesta: [{
+
+                _idpregunta: {
+                    type: Schema.Types.ObjectId,
+                    ref: 'Auditoria',
+                    required: [true, 'El id de la pregunta es obligatorio ']
+                },
+                numero: String
+            }]
+            /*    idpregunta: {
+                   type: String,
+                   // categoria: { type: Schema.Types.ObjectId, ref: 'auditorias', required: true },
+                   required: [true, 'El id de la pregunta es obligatorio ']
+               },
+               respuesta: {
+                   type: Number,
+                   enum: respuestasvalidas
+               } */
     }]
 });
 

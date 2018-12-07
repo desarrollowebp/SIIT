@@ -2,7 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
-
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { InicioComponent } from './inicio/inicio.component';
@@ -35,6 +34,7 @@ import { DatosTablaAlumnoComponent } from './datos-tabla-alumno/datos-tabla-alum
 import { TablaHorarioComponent } from './tabla-horario/tabla-horario.component';
 
 import { EvaluacionDocenteService } from './evaluacion-docente/evaluacion-docente.service'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 const routes:Routes = [
   { path: '', component: LoginComponent },
@@ -104,6 +104,7 @@ const routes:Routes = [
     BrowserModule,
     RouterModule.forRoot(routes),
     HttpClientModule,
+    FormsModule, ReactiveFormsModule
   ],
   providers: [
     EvaluacionDocenteService
