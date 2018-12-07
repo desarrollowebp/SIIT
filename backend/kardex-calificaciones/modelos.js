@@ -1,7 +1,7 @@
 
 const mongoose = require('mongoose')
 
-const kardexCalificacionsSchema = new mongoose.Schema({
+const kardexCalificacionesSchema = new mongoose.Schema({
   salon: String,
   curso: String,
   periodoEsc: String,
