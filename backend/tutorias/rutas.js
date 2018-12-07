@@ -1,13 +1,3 @@
-/*const express = require('express');
-const router = express.Router();
-
-const tutoCtrl = require('../controllers/tutorias.controladores');
-
-
-router.get('/', tutoCtrl.getTutorias);
-router.get('/:id', tutoCtrl.getTutoria);
-
-module.exports = router;*/
 const { Router } = require('express')
 
 const {

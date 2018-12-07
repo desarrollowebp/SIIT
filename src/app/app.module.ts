@@ -39,6 +39,7 @@ import { ExtraescolarService } from './extraescolar/extraescolar.service';
 import {horarioReinscripcionService} from './horario-reinscripcion/horarioreinscripcion.service';
 import {SeleccionMateriassDataService} from './seleccion-materias/seleeccion-materias.service';
 import { GruposCargadosService } from './grupos-cargados/grupos-cargados.service';
+import { TutoriasService } from './tutorias/tutorias.service';
 const routes:Routes = [
   { path: '', component: LoginComponent },
   { path: 'inicio', component: InicioComponent },
@@ -106,10 +107,10 @@ const routes:Routes = [
   imports: [
     BrowserModule,
     RouterModule.forRoot(routes),
-    HttpClientModule,
+    HttpClientModule
   ],
   providers: [
-    EvaluacionDocenteService,SeleccionMateriassDataService,ExtraescolarService,horarioReinscripcionService,GruposCargadosService
+    EvaluacionDocenteService,SeleccionMateriassDataService,ExtraescolarService,horarioReinscripcionService,GruposCargadosService, TutoriasService
   ],
   bootstrap: [AppComponent]
 })

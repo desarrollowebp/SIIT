@@ -76,8 +76,8 @@
 
   <!--=========Progress Bar que mostrara el porcentaje de actividades realizadas segun checbox marcados==========----------> 
 
-  <div class="lab" *ngFor="let avance of avance">
-    <h4>{{avance.dato}}</h4>
+  <div class="lab" *ngFor="let tutorias of tutorias">
+    <h4>{{tutorias.avance}}</h4>
     <div class="progress-bar bg-info" id="progreso" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"> <label id="lblporcentaje">0%</label></div>
     <div class="ready"></div>
   </div>
