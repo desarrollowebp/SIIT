@@ -15,11 +15,7 @@ export class SeleccionMateriasComponent implements OnInit {
   }
 
 
-
-
-
 cargaSemestreActual=[
-
 {
 numeroCreditos:'x',
 uno:0, dos:0,tres:0,cuatro:0,cinco:0,seis:0,siete:0,ocho:0,nueve:0,diez:0,
@@ -44,7 +40,7 @@ horario:{lunes:{salon:["sc5"],hora:["20:30"]},martes:{salon:["sc5"],hora:["20:30
 
 ];
 materiaActual;
-gpsDisponibles={maestro:[]};
+gpsDisponibles={};
 materiasSeleccionadas=[];
 materiaModal="";
 ejemploMaterias={
@@ -66,9 +62,32 @@ validacion ={};
     this.modals = "modal";
   }
   apilarSeleccion($gpsdisp,$gpsdispaux){
-     let temporal={grupo:$gpsdispaux,maestro:$gpsdisp};
+
+   if(this.materiasSeleccionadas.length  > 0  ){
+    var salida = true;
+   for (let i = 0; i < this.materiasSeleccionadas.length ; i++) {
+
+     if(this.materiasSeleccionadas[i].maestro.horario.lunes.hora.toString() == $gpsdisp.horario.lunes.hora.toString() ){
+       alert("La hora es igual a: "+$gpsdispaux.nombre);
+       i=this.materiasSeleccionadas.length+100;
+       salida = false;
+     }
+   }
+   if(salida){
+    this.materiasSeleccionadas
+    let temporal={grupo:$gpsdispaux,maestro:$gpsdisp};
     this.materiasSeleccionadas.push(temporal);
+    }
     this.cerrar();
+
+   }
+
+   else{
+     let temporal={grupo:$gpsdispaux,maestro:$gpsdisp};
+     this.materiasSeleccionadas.push(temporal);
+     this.cerrar();
+   }
+
   }
   funcMostrarGrupos($materia) {
     console.log($materia);
