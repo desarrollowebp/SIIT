@@ -1,17 +1,14 @@
 const { Router } = require('express')
 
 const {
-  PrefichaPago
+  prefichaPago
 } = require('./modelos.js')
-const FichasPago = new PrefichaPago({ 
- 
-}) 
 
 const PrefichaPagoRouter = Router()
 
 PrefichaPagoRouter.get('./', (req,res,next)=> {
-	PrefichaPago.find()
-	.then((fichas) => res.json({fichas}))
+	prefichaPago.find()
+	.then((preficha) => res.json({ preficha }))
 	.catch(next)
 })
 module.exports ={

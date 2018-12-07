@@ -20,6 +20,13 @@
 .ui-table-sm {
 	display: none;
 }
+h1
+{
+	font-size: 30px;
+	font-family: 'Times New Roman', Times, serif;
+
+}
+
 
 @media (max-width: 720px) {
 	.ui-table-big {

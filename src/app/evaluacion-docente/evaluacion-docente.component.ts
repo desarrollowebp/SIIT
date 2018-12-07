@@ -12,11 +12,11 @@ export class EvaluacionDocenteComponent implements OnInit {
   preguntas:PreguntaEvaluacion[]
 
   maestros = [
-    {nombre: 'Sofia', materia: 'Estadistica'},
-    {nombre: 'Miguel', materia: 'Historia'},
-    {nombre: 'Betty', materia: 'Quimica'},
-    {nombre: 'Roberto', materia: 'Programacion'},
-    {nombre: 'Laura', materia: 'Investigacion'},
+    {maestro: 'Sofia', materia: 'Estadistica'},
+    {maestro: 'Miguel', materia: 'Historia'},
+    {maestro: 'Betty', materia: 'Quimica'},
+    {maestro: 'Roberto', materia: 'Programacion'},
+    {maestro: 'Laura', materia: 'Investigacion'},
   ]
 
   constructor(evaluacionDocenteService: EvaluacionDocenteService) {

@@ -1,5 +1,6 @@
 const mongoose = require('mongoose')
 
+
 const datosResidenciasSchema =  new mongoose.Schema({
   folio{type:String,required:true}
    noctrl{type:String,required:true}

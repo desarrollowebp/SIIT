@@ -2,11 +2,16 @@ const { Router } = require('express')
 
 const {
   actividades,
-      maestrosExtraescolar
+      maestrosExtraescolar,
+      extraescolarSeleccionada,
+      extraescolarAgregada
 } = require('./modelos.js')
 
 const actividadesRouter = Router()
 const maestrosExtraescolarRouter = Router()
+const extraescolarSeleccionadaRouter = Router()
+const extraescolarAgregadaRouter = Router()
+
 /**
  * Preguntas Evaluaciones
  */
@@ -21,10 +26,21 @@ maestrosExtraescolarRouter.get('/', (req, res, next) => {
     .catch(next)
 })
 
+extraescolarSeleccionadaRouter.get('/', (req, res, next) => {
+  extraescolarSeleccionada.find()
+    .then( extraSel => res.json({extraSel}))
+    .catch(next)
+})
 
-
+extraescolarAgregadaRouter.put('/', (req, res, next) => {
+  extraescolarAgregada.create(req.body)
+    .then(() => res.json({ success: true }))
+    .catch(next)
+})
 
 module.exports = {
   actividadesRouter,
-  maestrosExtraescolarRouter
+  maestrosExtraescolarRouter,
+  extraescolarSeleccionadaRouter,
+  extraescolarAgregadaRouter
 }

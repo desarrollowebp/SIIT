@@ -1,5 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { Tpregunta } from '../auditoria-servicio/tipos/pregunta';
+import { map } from 'rxjs/operators';
+
+import { Router} from '@angular/router';
+import {Observable, Subscriber} from 'rxjs';
+import {FormControl, FormGroup, FormBuilder, Validators, AbstractControl, ValidatorFn, FormArray } from '@angular/forms';
+
+import { ServiciosService } from '../auditoria-servicio/servicios.service';
 
 @Component({
   selector: 'app-centro-info',
@@ -7,8 +14,23 @@ import { Tpregunta } from '../auditoria-servicio/tipos/pregunta';
   styleUrls: ['./centro-info.component.css']
 })
 export class CentroInfoComponent implements OnInit {
-  pregunta:Tpregunta={
-      "servicio" :"", 
+
+
+
+// cargarPregunta en base al modelo tenemos
+// cambio del modelo del backend
+
+  usuario = '143333';
+   preguntass= null;
+
+  Formulario: FormGroup;
+  // comprobar si un alumno ya la realizo 
+    // para pruebas usaremo el almacenaientodelnavegador para manejar el id de usuario del sistema
+  comprobar: boolean;
+  datoaenviar;
+
+      pregunta:Tpregunta={
+      "servicio" :"",
       "pregunta1":"",
       "pregunta2":"",
       "pregunta3":"",
@@ -19,7 +41,7 @@ export class CentroInfoComponent implements OnInit {
       "pregunta8":"",
       "pregunta9":"",
   };
-
+/* 
 preguntas : Tpregunta[] = [
   {
     "servicio" :"Centro de Informacion",
@@ -117,18 +139,118 @@ preguntas : Tpregunta[] = [
     "pregunta7":"7.-¿Me atienden en forma oportuna cuando solicito cualquier servicio?",
     "pregunta8":"8.-¿Me atienden en forma amable cuando solicito información?",
     "pregunta9":"9.-¿Mantienen una relación atenta conmigo durante toda mi estancia en el laboratorio?"
-} 
-];
+}
+];  */
 
-  constructor() { }
+  // la fecha la crea mongo
+  constructor(private formBuilder: FormBuilder, private _auditoria: ServiciosService,private router: Router) { 
+     this.Formulario = this.formBuilder.group({
+      usuario: '1403301',
+      comentario: [''],
+       respuestas: this.formBuilder.array([])
+     
+     });
+     // no se puede usar la variable preguntass globalmente ya que es asyncrono
+  this._auditoria.obtenerPreguntas().subscribe((re: any) => {
+            
+      if(this.preguntass === null) {
+    this.preguntass = re;
+      }
+    console.log(this.preguntass);
+    }, (error: any) => {
+      console.log(error);
+      }, () => {
+        console.log(this.preguntass);
+        this.setPreguntas(this.preguntass);
 
-  ngOnInit() {
+      }
+    );
+    console.log(this.preguntass); /// ese ya no me funciona
+   }
+
+  setPreguntas(va) {
+    console.log(va);
+    let control = <FormArray>this.Formulario.controls.respuestas;
+    va.preguntas.forEach(x => {
+      console.log(x);
+      control.push(this.formBuilder.group({ 
+        categoria: x.servicio,
+        respuesta: this.setPregunta(x) }));
+    });
+    // agregamos al json el usuario y eliminamos datos que usaremos de salida
+    this.agregausuarioaljson();
+
+  }
+  
+
+  setPregunta(x) {
+    let arr = new FormArray([]);
+    x.preguntas.forEach(y => {
+      console.log(y);
+      arr.push(this.formBuilder.group({ 
+        Nombrepregunta: y.pregunta,
+        numero: [y.numero, Validators.required],
+        _idpregunta: y._id
+
+      }))
+    })
+    return arr;
+  } 
+
+agregausuarioaljson() {
+  let j = this.Formulario.value;
+console.log(j);
+    j.respuestas = j.respuestas.map(company => {
+    company.respuesta = company.respuesta.map(project => {
+      delete project['Nombrepregunta']; // we delete the key on project each.
+      return project;
+    });
+    return company;
+  });
+  this.datoaenviar = j;
+  console.log(j);
+return j;
+
+}
+
+
+  comprobarsiyalarealizo() {
+
   }
 
-  fechaActual = (new Date()).toLocaleString()
+
+/*
+
+
+ } */
+
+ ngOnInit() {
+     console.log(this.preguntass);
+console.log(this.preguntass);
+
+
+  }
+
+  registrar() {
+    this.agregausuarioaljson();
+    this._auditoria.registrar(this.datoaenviar).subscribe(ok => {
+      console.log('registrado', ok);
+
+        }, error => {
+      console.log(error);
+  }
+);
+this.router.navigate(['/auditoriaServicio']);
+
+
+}
+
+
+  fechaActual = (new Date()).toLocaleString();
 
   imprimirPagina() {
     window.print()
   }
 
 }
+

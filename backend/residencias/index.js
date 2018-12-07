@@ -8,7 +8,7 @@ const {
 const {
   datosResidenciasRouter,
 
- 
+
 } = require('./rutas.js')
 
 module.exports = {
@@ -16,8 +16,6 @@ module.exports = {
    * Modelos
    */
   datosResidencias,
-
-
 
   /**
    * Rutas

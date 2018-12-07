@@ -2,8 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
-
 import { AppComponent } from './app.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './login/login.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { DatosEscolaresComponent } from './datos-escolares/datos-escolares.component';
@@ -38,6 +38,8 @@ import { EvaluacionDocenteService } from './evaluacion-docente/evaluacion-docent
 import { ExtraescolarService } from './extraescolar/extraescolar.service';
 import {horarioReinscripcionService} from './horario-reinscripcion/horarioreinscripcion.service';
 import {SeleccionMateriassDataService} from './seleccion-materias/seleeccion-materias.service';
+import { GruposCargadosService } from './grupos-cargados/grupos-cargados.service';
+import { TutoriasService } from './tutorias/tutorias.service';
 const routes:Routes = [
   { path: '', component: LoginComponent },
   { path: 'inicio', component: InicioComponent },
@@ -106,9 +108,10 @@ const routes:Routes = [
     BrowserModule,
     RouterModule.forRoot(routes),
     HttpClientModule,
+    FormsModule, ReactiveFormsModule
   ],
-  providers: [
-    EvaluacionDocenteService,SeleccionMateriassDataService,ExtraescolarService,horarioReinscripcionService, residenciasService
+  providers: [ EvaluacionDocenteService,SeleccionMateriassDataService,ExtraescolarService,horarioReinscripcionService,GruposCargadosService, TutoriasService, residenciasService
+
   ],
   bootstrap: [AppComponent]
 })
