@@ -11,11 +11,18 @@ const {
     preguntasEvaluacionesRouter,
     respuestasEvaluacionesRouter,
     adeudosAlumnosRouter
-} = require('./evaluacion-docente')
+} = require('./evaluacion-docente') <<
+    << << < HEAD
     ///
 const {
     informacionTutoriasRouter
-} = require('./tutorias')
+} = require('./tutorias') ===
+    === =
+    ///
+    const {
+        informacionTutoriasRouter
+    } = require('./tutorias') >>>
+    >>> > af8ca343a96eb8406181db602cdb9a508a70b62c
 
 const {
     gruposCargadosRouter
@@ -33,6 +40,8 @@ const {
     ///
 const {
     actividadesRouter,
+    <<
+    << << < HEAD
     maestrosExtraescolarRouter,
     extraescolarSeleccionadaRouter
 } = require('./extraescolar')
@@ -47,11 +56,35 @@ const {
 
 const {
 
+    ===
+    === =
+    maestrosExtraescolarRouter,
+    extraescolarSeleccionadaRouter
+} = require('./extraescolar') >>>
+    >>> > af8ca343a96eb8406181db602cdb9a508a70b62c
+
+const {
+    calificacionexamenRouter
+} = require('./calificaciones-examenes')
+
+const {
+    calificacionesParcialesRouter
+} = require('./calificaciones-parciales')
+
+const {
 
 
+
+
+    <<
+    << << < HEAD
 
     becaRouter
-} = require('./verificacion-beca')
+} = require('./verificacion-beca') ===
+    === =
+    becaRouter
+} = require('./verificacion-beca') >>>
+    >>> > af8ca343a96eb8406181db602cdb9a508a70b62c
 const app = express();
 
 app.use(cors())
