@@ -1,16 +1,12 @@
-const {
-    Prefichapago
-    //adeudosHorarioAlumnos
-  } = require('./modelos.js')
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
-  const {
-    PrefichaPagoRouter
-   // adeudosHorarioAlumnosRouter
-  } = require('./rutas.js')
+@Injectable()
+export class prefichaPagoService{
+  url = "http://localhost:3000/preficha-pago/";
+    constructor(private http: HttpClient) { }
 
-  module.exports = {
-    //modelo
-    Prefichapago,
-    //ruta
-    PrefichaPagoRouter
+    getprefichaPago() {
+    return this.http.get("http://localhost:3000/preficha-pago/");
   }
+}

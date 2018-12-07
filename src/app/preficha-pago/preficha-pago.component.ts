@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
+import {prefichaPagoService} from './preficha-pago.service';
 
 @Component({
   selector: 'app-preficha-pago',
@@ -8,24 +9,40 @@ import * as $ from 'jquery';
 })
 export class PrefichaPagoComponent implements OnInit {
 
-
+  datospreficha;
   
 
-  constructor() { }
+  constructor(public service:prefichaPagoService) { 
+    service.getprefichaPago().subscribe((data)=>{
+      this.datospreficha=data;
+      this.datospreficha=this.datospreficha.preficha;
+      console.log(this.datospreficha);
+    });
+
+  }
 
   
 
   ngOnInit() {
-  	$('h1').click(function() {
-      $(this).fadeOut()
-    })
-
+    
+      this.service.getprefichaPago();
   }
-    importe=[{ dato:'importe a pagar:' , importe:'2450.00'} ]
-    semes=[{dato:'semestre:',semest:'9'} ]
-    numero=[{dato:'Numero de Control:',numerocontrol:'14040437'}]
-    alumno=[{dato:'Alumno:', nombre:'Abrego Salmeron Ricardo'}]
-    carrera=[{dato:'Carrera:', carre:'Ingeneria En Sistemas Computacionales'}]
-    consep=[{dato:'Consepto:', reinc:'INSCRIPCION REINGRESO'}]
-    fecha=[{dato:'Periodo',dia:'AGOSTO-DICIEMBRE/2018',}]
+/* 
+  db.datosreins.insert({     
+ 
+ 
+ nombres: 'juan',
+  apellidos: 'cabral',
+  numeroControl: '14040428',
+  semestre: '3',
+  periodo: 'enero-febrero',
+  importe: '1550',
+  carrera: 'sistemas',
+  consepto: 'pago de incripcion',
+  fechavencimiento: 'diciembre',
+  sucursalCuenta: '70000',
+  referenciaAlfanumerica: 'P14040428'
+
+})
+*/
 }
