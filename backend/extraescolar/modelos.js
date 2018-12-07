@@ -8,7 +8,13 @@ const maestrosExtraescolarSchema =  new mongoose.Schema({
 
 })
 
+const extraescolarSeleccionadaSchema =  new mongoose.Schema({
+
+})
+
+
 module.exports = {
   actividades: mongoose.model('actividades', actividadesSchema),
-  maestrosExtraescolar:  mongoose.model('extraescolargpos', maestrosExtraescolarSchema)
+  maestrosExtraescolar:  mongoose.model('extraescolargpos', maestrosExtraescolarSchema),
+  extraescolarSeleccionada:  mongoose.model('extraescolarActual', extraescolarSeleccionadaSchema)
 }

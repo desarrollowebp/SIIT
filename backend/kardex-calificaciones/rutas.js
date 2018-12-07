@@ -5,7 +5,7 @@ const {
   kardexCalificaciones
 } = require('./modelos.js')
 
-const kardex=new kardexCalificaciones({ 
+ /*const kardex=new kardexCalificaciones({ 
     salon: 'LC22', 
      curso: 'Repeticion', 
 	periodoEsc: 'AGO/DIC 2014', 
@@ -16,7 +16,7 @@ const kardex=new kardexCalificaciones({
 	 }
 )
 
-//
+//*/
 
 const kardexCalificacionesRouter = Router()
 

@@ -6,8 +6,8 @@ export class SeleccionMateriassDataService{
   	constructor(private http: HttpClient) { }
 
 	getMaterias(){
-		console.log("aiuda xD!!!");
-		return this.http.get('http://localhost:3000/seleccion-materias-maestros');
+
+		return this.http.get('http://localhost:3000/seleccion-materias');
 	}
 
 	getAlumno(){

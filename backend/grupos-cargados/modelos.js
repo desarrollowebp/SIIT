@@ -5,7 +5,7 @@
 const mongoose = require('mongoose')
 
 const gruposCargadosSchema = new mongoose.Schema({
-  grupo: String,
+  /*grupo: String,
   materia: String,
   codigo: String,
   facilitador: String,
@@ -20,9 +20,26 @@ const gruposCargadosSchema = new mongoose.Schema({
   viernes: String,
   salonv: String,
   sabado: String,
-  salons: String
+  salons: String*/
 })
 
 module.exports = {
-  gruposCargados: mongoose.model('gruposCargados', gruposCargadosSchema)
+  gruposCargados:
+  mongoose.model('horarioreinscripcions',
+  gruposCargadosSchema)
 }
+
+/*
+horarioreinscripcions es como se debe de llamar donde vas a hacer el insert,
+module.exports = {
+  gruposCargados:
+  mongoose.model('horarioreinscripcions', <----aqui pones el nombre de la tabla que crearas
+  gruposCargadosSchema)
+}
+
+así es como inserto cosas
+db.datosreins.insert({     autorizado: 'NO',     biblioteca: 'NO',     encuesta: 'NO',     escolares:
+'NO',     financieros: 'NO',     fecha: '20/11/2018',     grupo: '1M',     hora: '10:40',     nombres: 'Dalia que pez'     })
+WriteResult({ "nInserted" : 1 })
+>
+*/

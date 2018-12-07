@@ -1,0 +1,34 @@
+ {
+    "servicio":"biblioteca",
+    "descripcion" : "petro",
+    "preguntas" : [ 
+        {
+            "pregunta" : "1.-¿Tiene un Horario de atencion?"
+        }, 
+        {
+            "pregunta" : "2.-¿Me proporciona informacion necesaria para el manejo de mi reticula de carrera?"
+        }, 
+        {
+            "pregunta" : "3.-¿Me da orientacion adecuada cuando requiero realizar tramites en la institucion?"
+        }, 
+        {
+            "pregunta" : "4.-¿Me orienta acerca de desarrollo del plan de estudios de la carrera?"
+        }, 
+        {
+            "pregunta" : "5.-¿Me da información necesaria para realizar las Residencias profesionales?"
+        }, 
+        {
+            "pregunta" : "6.-¿Me proporciona información sobre el proceso para la reinscripción de estudiantes?"
+        }, 
+        {
+            "pregunta" : "7.-¿Me orientan para resolver situaciones de tipo académico?"
+        }, 
+        {
+            "pregunta" : "8.-¿Me dan la orientación necesaria para la realización de trámites de titulación?"
+        }, 
+        {
+            "pregunta" : "9.-¿Me proporciona información sobre el calendario escolar?"
+        }
+ 	]
+ 	
+ }

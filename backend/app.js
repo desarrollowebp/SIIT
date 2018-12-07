@@ -14,13 +14,10 @@ const {
 } = require('./evaluacion-docente')
 
 const {
-<<<<<<< HEAD
   gruposCargadosRouter
 } = require('./grupos-cargados')
 
-=======
-    gruposCargadosRouter
-} = require('./grupos-cargados')
+   
 
 ///
 const {
@@ -48,7 +45,6 @@ const {
   const {
       kardexCalificacionesRouter
   }= require('./kardex-calificaciones')
->>>>>>> bc6ac46295d95f9da42364f468ea1cf56d139101
 const app = express();
 
 app.use(cors())
@@ -62,9 +58,7 @@ app.use('/alumnos', alumnosRouter);
 app.use('/preguntas-evaluaciones', preguntasEvaluacionesRouter)
 app.use('/respuestas-evaluaciones', respuestasEvaluacionesRouter)
 app.use('/adeudos-alumnos', adeudosAlumnosRouter)
-<<<<<<< HEAD
 app.use('/grupos-cargados', gruposCargadosRouter)
-=======
 app.use('/seleccion-materias', semestresMateriaRouter )
 app.use('/seleccion-materias-maestros',  maestrosMateriaRouter)
 app.use('/horario-reinscripcion', horarioReinscripcionRouter)
@@ -79,7 +73,6 @@ app.use('/kardex-calificaciones',kardexCalificacionesRouter)
  *   Auditoria servicios
  */
 app.use(require('./auditoria-servicio/rutas'));
->>>>>>> bc6ac46295d95f9da42364f468ea1cf56d139101
 
 app.listen(3000, function() {
     console.info('Backend escuchando en el puerto 3000');

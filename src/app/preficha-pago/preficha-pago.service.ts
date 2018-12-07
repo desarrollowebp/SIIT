@@ -1,12 +1,12 @@
 import { Injectable } from '@angular/core';
-import { PrefichaPago } from './prefichasPagos'
 import { HttpClient } from '@angular/common/http';
 
 @Injectable()
-export class PrefichaPagoService {
-  constructor(private http: HttpClient) { }
+export class prefichaPagoService{
+  url = "http://localhost:3000/preficha-pago/";
+    constructor(private http: HttpClient) { }
 
-  getPrefichasPago() {
-    return this.http.get<PrefichasPagos>('http://localhost:3000/preguntas-evaluaciones')
+    getprefichaPago() {
+    return this.http.get("http://localhost:3000/preficha-pago/");
   }
 }
