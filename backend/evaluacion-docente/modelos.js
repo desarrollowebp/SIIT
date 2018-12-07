@@ -16,8 +16,14 @@ const adeudosAlumnosSchema = new mongoose.Schema({
   evaluacionDocente: Boolean
 })
 
+const maestrosMateriasSchema = new mongoose.Schema({
+  maestro: String,
+  materia:String
+})
+
 module.exports = {
   preguntasEvaluaciones: mongoose.model('preguntasEvaluaciones', preguntasEvaluacionesSchema),
   respuestasEvaluaciones: mongoose.model('respuestasEvaluaciones', respuestasEvaluacionesSchema),
-  adeudosAlumnos: mongoose.model('adeudosAlumnos', adeudosAlumnosSchema)
+  adeudosAlumnos: mongoose.model('adeudosAlumnos', adeudosAlumnosSchema),
+  maestroMateria: mongoose.model('maestroMateria', maestrosMateriasSchema)
 }
