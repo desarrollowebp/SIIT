@@ -50,6 +50,10 @@ const {
   }= require('./kardex-calificaciones')
 const app = express();
 
+const {
+    informacionTutoriasRouter
+  } = require('./tutorias')  
+
 app.use(cors())
 app.use(bodyParser.json())
 
@@ -75,6 +79,7 @@ app.use('/calificaciones-parciales', calificacionesParcialesRouter)
 app.use('/calificaciones-examenes', calificacionexamenRouter)
 app.use('/verificion-beca', becaRouter)
 app.use('/kardex-calificaciones',kardexCalificacionesRouter)
+app.use('/tutorias', informacionTutoriasRouter)
 /**************
  *   Auditoria servicios
  */
