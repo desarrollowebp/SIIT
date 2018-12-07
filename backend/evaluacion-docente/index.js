@@ -1,13 +1,15 @@
 const {
   preguntasEvaluaciones,
   respuestasEvaluaciones,
-  adeudosAlumnos
+  adeudosAlumnos,
+  maestrosMaterias
 } = require('./modelos.js')
 
 const {
   preguntasEvaluacionesRouter,
   respuestasEvaluacionesRouter,
-  adeudosAlumnosRouter
+  adeudosAlumnosRouter,
+  maestrosMateriasRouter
 } = require('./rutas.js')
 
 module.exports = {
@@ -17,11 +19,13 @@ module.exports = {
   preguntasEvaluaciones,
   respuestasEvaluaciones,
   adeudosAlumnos,
+  maestrosMaterias,
 
   /**
    * Rutas
    */
   preguntasEvaluacionesRouter,
   respuestasEvaluacionesRouter,
-  adeudosAlumnosRouter
+  adeudosAlumnosRouter,
+  maestrosMateriasRouter
 }
