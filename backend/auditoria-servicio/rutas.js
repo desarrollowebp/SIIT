@@ -47,7 +47,7 @@ app.post('/auditoria', (req, res) => {
 
     let body = req.body;
     let registrarRespuesta = new Auditoria({
-        nombre: body.nombre,
+        servicio: body.servicio,
         descripcion: body.descripcion,
         preguntas: body.preguntas
     });
@@ -83,6 +83,33 @@ app.post('/responauditoria/', (req, res) => {
 
     let nuevapregunta = new AuditoriaRespuestas({
         usuario: body.usuario,
+        comentario: body.comentario,
+        respuestas: body.respuestas
+    });
+    nuevapregunta.save((err, usuarioDB) => {
+
+        if (err) {
+            return res.status(400).json({
+                ok: false,
+                err
+            });
+        }
+        res.json({
+            ok: true,
+            usuario: usuarioDB
+        });
+
+
+    });
+
+});
+
+// regresa toda la informacion
+app.get('/responauditoria/', (req, res) => {
+    let body = req.body;
+
+    let nuevapregunta = new AuditoriaRespuestas({
+        usuario: body.usuario,
 
         respuestas: body.respuestas
     });
@@ -107,50 +134,65 @@ app.post('/responauditoria/', (req, res) => {
 
 
 
-// falta los get de abaja 
-app.get('/responauditoria/respuestas:id', (req, res) => {
+// ==================================
+// Regresa la relacion con idpregunta y el texto de la respuesta
+// ==================================
+app.get('/responauditoria/respuestas/', (req, res) => {
 
     // populate: usuario categoria
     // paginado
     let id = req.params.id;
 
-    AuditoriaRespuestas.findById(id)
-        .populate('usuario')
-        .exec((err, respuestas) => {
-
-            if (err) {
-                return res.status(500).json({
-                    ok: false,
-                    err
-                });
+    AuditoriaRespuestas.aggregate([{
+            $lookup: {
+                from: "auditorias",
+                localField: "respuestas.respuesta._idpregunta",
+                foreignField: "preguntas._id",
+                as: "respuestas.respuesta._idpregunta"
             }
 
-            if (!respuestas) {
-                return res.status(400).json({
-                    ok: false,
-                    err: {
-                        message: 'ID no existe'
-                    }
-                });
-            }
+        },
+        { $unwind: { path: "$_idpregunta", preserveNullAndEmptyArrays: true } }
 
-            res.json({
-                ok: true,
-                producto: respuestas
+    ])
+
+    .exec((err, respuestas) => {
+
+        if (err) {
+            return res.status(500).json({
+                ok: false,
+                err
             });
+        }
 
+        if (!respuestas) {
+            return res.status(400).json({
+                ok: false,
+                err: {
+                    message: 'ID no existe'
+                }
+            });
+        }
+
+        res.json({
+            ok: true,
+            producto: respuestas
         });
+
+    });
 });
 
+// ==================================
+// Buscar si el usurio ya realizo  la encuesta
+// ==================================
 
 
-app.get('/responauditoria/verificar:id', (req, res) => {
+//verificar si el usuario tiene una entrada en la base de datos
+app.get('/responauditoria/verificar/:usuario', (req, res) => {
 
-    // populate: usuario categoria
-    // paginado
-    let id = req.params.id;
+    let usuario = req.params.usuario;
 
-    AuditoriaRespuestas.findById(usuario)
+    AuditoriaRespuestas.find({ usuario: usuario })
         .exec((err, existe) => {
 
             if (err) {
@@ -160,17 +202,9 @@ app.get('/responauditoria/verificar:id', (req, res) => {
                 });
             }
 
-            if (!existe) {
-                return res.status(400).json({
-                    ok: false,
-                    err: {
-                        message: 'ID no existe'
-                    }
-                });
-            }
-
             res.json({
-                existe: true
+                ok: true,
+                existe
             });
 
         });

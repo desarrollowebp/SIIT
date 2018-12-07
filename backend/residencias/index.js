@@ -9,7 +9,7 @@ const {
 const {
   datosResidenciasRouter,
 
-  respuestasResidenciasRouter
+  respuestasResidenciasRouter,
   respuestasResidenciasRouter,
 
 
@@ -20,7 +20,7 @@ module.exports = {
    * Modelos
    */
   datosResidencias,
-  respuestasResidencias
+  respuestasResidencias,
 
   datosEvaluaciones,
   respuestasEvaluaciones,
