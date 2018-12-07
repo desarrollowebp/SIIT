@@ -31,7 +31,9 @@ const {
 ///
 const {
     actividadesRouter,
-      maestrosExtraescolarRouter
+      maestrosExtraescolarRouter,
+      extraescolarSeleccionadaRouter,
+      extraescolarAgregadaRouter
   } = require('./extraescolar')
 
   const {
@@ -64,6 +66,8 @@ app.use('/seleccion-materias-maestros',  maestrosMateriaRouter)
 app.use('/horario-reinscripcion', horarioReinscripcionRouter)
 app.use('/extraescolar',  actividadesRouter)
 app.use('/extraescolar-maestros',  maestrosExtraescolarRouter)
+app.use('/extraescolar-seleccionada',  extraescolarSeleccionadaRouter)
+app.use('/extraescolar-agregada',  extraescolarAgregadaRouter)
 app.use('/grupos-cargados',  gruposCargadosRouter)
 app.use('/calificaciones-parciales', calificacionesParcialesRouter)
 app.use('/calificaciones-examenes', calificacionexamenRouter)
@@ -77,3 +81,5 @@ app.use(require('./auditoria-servicio/rutas'));
 app.listen(3000, function() {
     console.info('Backend escuchando en el puerto 3000');
 });
+
+  
