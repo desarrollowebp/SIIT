@@ -1,14 +1,10 @@
-td, th 
-{
-	font-size: 17px; 
-	
+td, th {
+	font-size: 17px;
 }
 
-h4
-{
+h4 {
 	font-size: 19px;
 	font-family: 'Times New Roman', Times, serif;
-
 }
 .bg-guinda {
 	background-color: #70193f;
@@ -27,15 +23,14 @@ h4
 
 .ui-table-wrapper{
 	border: 1px solid #70193f;
-	
 }
-	tr:nth-last-child(even){
-		background-color:#eee; 
-	}
-	tr:hover td{
-		background-color: #eee;
-	}
-	
+tr:nth-last-child(even){
+	background-color:#eee;
+}
+tr:hover td{
+	background-color: #eee;
+}
+
 .ui-tbody-sm {
 	display: none;
 }
@@ -48,12 +43,10 @@ h4
 	margin: 28px 0 70px;
 }
 
-th,td{
+th, td {
 	padding: 0 !important;
 }
 @media (max-width: 720px) {
-	
-
 	.ui-table-wrapper {
 		padding: 0;
 	}
@@ -67,6 +60,4 @@ th,td{
 		font-size: 10px;
 		padding: 7px;
 	}
-
-	
 }

@@ -10,7 +10,8 @@ const alumnosRouter = require('./routes/alumnos.js')
 const {
     preguntasEvaluacionesRouter,
     respuestasEvaluacionesRouter,
-    adeudosAlumnosRouter
+    adeudosAlumnosRouter,
+    maestrosMateriasRouter
 } = require('./evaluacion-docente')
 
 const {
@@ -31,7 +32,9 @@ const {
 ///
 const {
     actividadesRouter,
-      maestrosExtraescolarRouter
+      maestrosExtraescolarRouter,
+      extraescolarSeleccionadaRouter,
+      extraescolarAgregadaRouter
   } = require('./extraescolar')
 
   const {
@@ -58,12 +61,15 @@ app.use('/alumnos', alumnosRouter);
 app.use('/preguntas-evaluaciones', preguntasEvaluacionesRouter)
 app.use('/respuestas-evaluaciones', respuestasEvaluacionesRouter)
 app.use('/adeudos-alumnos', adeudosAlumnosRouter)
+app.use('/maestros-materias-evaluacion', maestrosMateriaRouter)
 app.use('/grupos-cargados', gruposCargadosRouter)
 app.use('/seleccion-materias', semestresMateriaRouter )
 app.use('/seleccion-materias-maestros',  maestrosMateriaRouter)
 app.use('/horario-reinscripcion', horarioReinscripcionRouter)
 app.use('/extraescolar',  actividadesRouter)
 app.use('/extraescolar-maestros',  maestrosExtraescolarRouter)
+app.use('/extraescolar-seleccionada',  extraescolarSeleccionadaRouter)
+app.use('/extraescolar-agregada',  extraescolarAgregadaRouter)
 app.use('/grupos-cargados',  gruposCargadosRouter)
 app.use('/calificaciones-parciales', calificacionesParcialesRouter)
 app.use('/calificaciones-examenes', calificacionexamenRouter)
@@ -77,3 +83,5 @@ app.use(require('./auditoria-servicio/rutas'));
 app.listen(3000, function() {
     console.info('Backend escuchando en el puerto 3000');
 });
+
+  
