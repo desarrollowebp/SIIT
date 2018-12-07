@@ -33,12 +33,17 @@ const {
 ///
 const {
     actividadesRouter,
-      maestrosExtraescolarRouter
+      maestrosExtraescolarRouter,
+      extraescolarSeleccionadaRouter
   } = require('./extraescolar')
 
   const {
-       calificacionexamenRouter} = require('./calificaciones-examenes')
-  const { calificacionesParcialesRouter} = require('./calificaciones-parciales')
+       calificacionexamenRouter
+    } = require('./calificaciones-examenes')
+
+  const { 
+      calificacionesParcialesRouter
+} = require('./calificaciones-parciales')
 
   const {
 
@@ -67,7 +72,7 @@ app.use('/seleccion-materias-maestros',  maestrosMateriaRouter)
 app.use('/horario-reinscripcion', horarioReinscripcionRouter)
 app.use('/extraescolar',  actividadesRouter)
 app.use('/extraescolar-maestros',  maestrosExtraescolarRouter)
-
+app.use('/extraescolar-seleccionada',  extraescolarSeleccionadaRouter)
 app.use('/grupos-cargados',  gruposCargadosRouter)
 app.use('/calificaciones-parciales', calificacionesParcialesRouter)
 app.use('/calificaciones-examenes', calificacionexamenRouter)

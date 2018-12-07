@@ -38,6 +38,7 @@ import { EvaluacionDocenteService } from './evaluacion-docente/evaluacion-docent
 import { ExtraescolarService } from './extraescolar/extraescolar.service';
 import {horarioReinscripcionService} from './horario-reinscripcion/horarioreinscripcion.service';
 import {SeleccionMateriassDataService} from './seleccion-materias/seleeccion-materias.service';
+import { GruposCargadosService } from './grupos-cargados/grupos-cargados.service';
 const routes:Routes = [
   { path: '', component: LoginComponent },
   { path: 'inicio', component: InicioComponent },
@@ -108,7 +109,7 @@ const routes:Routes = [
     HttpClientModule,
   ],
   providers: [
-    EvaluacionDocenteService,SeleccionMateriassDataService,ExtraescolarService,horarioReinscripcionService
+    EvaluacionDocenteService,SeleccionMateriassDataService,ExtraescolarService,horarioReinscripcionService,GruposCargadosService
   ],
   bootstrap: [AppComponent]
 })

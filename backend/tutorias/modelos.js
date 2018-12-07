@@ -1,9 +1,9 @@
-const mongoose = require('mongoose');  
-//const { Schema } = mongoose;
+const mongoose = require('mongoose');
+
 
 const informacionTutoriasSchema = new mongoose.Schema({
     tutor: {type: String, required: true},
-    nombretutor:{type: String, required: true},
+    nombretutor:{type: String, required: true}, 
     actividad: {type: String, required: true},
     check: {type: Boolean, required: true},
     avance: {type: String, required: true}
@@ -11,4 +11,4 @@ const informacionTutoriasSchema = new mongoose.Schema({
 
 module.exports = {
     informacionTutorias: mongoose.model('informacionTutorias', informacionTutoriasSchema)
-} 
+}
