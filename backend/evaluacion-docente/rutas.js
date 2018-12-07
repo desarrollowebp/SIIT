@@ -34,7 +34,9 @@ respuestasEvaluacionesRouter.put('/', (req, res, next) => {
  * Adeudos Alumnos
  */
 adeudosAlumnosRouter.post('/', (req, res, next) => {
-  adeudosAlumnos.findByIdAndUpdate({ numeroControl: req.body.numeroControl }, { $set: { evaluacionDocente: true }})
+  adeudosAlumnos.findByIdAndUpdate(
+    { numeroControl: req.body.numeroControl },
+    { $set: { evaluacionDocente: true }})
     .then(() => res.json({ success: true }))
     .catch(next)
 })
