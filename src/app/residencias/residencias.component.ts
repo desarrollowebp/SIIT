@@ -20,7 +20,7 @@ reporteFinal:"ENTREGADO",revFinal:"ENTREGADO"};
   
 
   ngOnInit() {
-  	this.service.getresidencia().subscribe(function)(data){
+  	this.service.getresidencia().subscribe(function(data){
   this.residencias=data;
   } );
   
