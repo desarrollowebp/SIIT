@@ -11,64 +11,64 @@
   <ul *ngFor="let tutorias of tutorias">
     <h2 class="tuto">{{tutorias.dato}} : {{tutorias.nombre}}</h2>
     <li>
-      <div class="title">{{tutorias.act1}}</div><input type="checkbox" name="" disabled checked>Realizado
+      <div class="title">{{tutorias.act1}}</div><input type="checkbox" name=""  checked>Realizado
     </li>
     <li>
-      <div class="title">{{tutorias.act2}}</div><input type="checkbox" name="" disabled checked>Realizado
+      <div class="title">{{tutorias.act2}}</div><input type="checkbox" name=""  checked>Realizado
     </li>
     <li>
-      <div class="title">{{tutorias.act3}}</div><input type="checkbox" name="" disabled checked>Realizado
+      <div class="title">{{tutorias.act3}}</div><input type="checkbox" name=""  checked>Realizado
     </li>
     <li>
-      <div class="title">{{tutorias.act4}}</div><input type="checkbox" name="" disabled checked>Realizado
+      <div class="title">{{tutorias.act4}}</div><input type="checkbox" name=""  checked>Realizado
     </li>
     <li>
-      <div class="title">{{tutorias.act5}}</div><input type="checkbox" name="" disabled checked>Realizado
+      <div class="title">{{tutorias.act5}}</div><input type="checkbox" name=""  checked>Realizado
     </li>
     <li>
-      <div class="title">{{tutorias.act6}}</div><input type="checkbox" name="" disabled checked>Realizado
+      <div class="title">{{tutorias.act6}}</div><input type="checkbox" name=""  checked>Realizado
     </li>
     <li>
-      <div class="title">{{tutorias.act7}}</div><input type="checkbox" name="" disabled checked>Realizado
+      <div class="title">{{tutorias.act7}}</div><input type="checkbox" name=""  checked>Realizado
     </li>
     <li>
-      <div class="title">{{tutorias.act8}}</div><input type="checkbox" name="" disabled checked>Realizado
+      <div class="title">{{tutorias.act8}}</div><input type="checkbox" name=""  checked>Realizado
     </li>
     <li>
-      <div class="title">{{tutorias.act9}}</div><input type="checkbox" name="" disabled checked>Realizado
+      <div class="title">{{tutorias.act9}}</div><input type="checkbox" name=""  checked>Realizado
     </li>
     <li>
-      <div class="title">{{tutorias.act10}}</div><input type="checkbox" name="" disabled checked>Realizado
+      <div class="title">{{tutorias.act10}}</div><input type="checkbox" name=""  checked>Realizado
     </li>
     <li >
-      <div class="title">{{tutorias.act11}}</div><input type="checkbox" name="" disabled checked>Realizado
+      <div class="title">{{tutorias.act11}}</div><input type="checkbox" name=""  checked>Realizado
     </li>
     <li>
-      <div class="title">{{tutorias.act12}}</div><input type="checkbox" name="" disabled checked>Realizado
+      <div class="title">{{tutorias.act12}}</div><input type="checkbox" name=""  checked>Realizado
     </li>
     <li>
-      <div class="title">{{tutorias.act13}}</div><input type="checkbox" name="" disabled checked>Realizado
+      <div class="title">{{tutorias.act13}}</div><input type="checkbox" name=""  checked>Realizado
     </li>
     <li>
-      <div class="title">{{tutorias.act14}}</div><input type="checkbox" name="" disabled checked>Realizado
+      <div class="title">{{tutorias.act14}}</div><input type="checkbox" name=""  checked>Realizado
     </li>
     <li>
-      <div class="title">{{tutorias.act15}}</div><input type="checkbox" name="" disabled checked>Realizado
+      <div class="title">{{tutorias.act15}}</div><input type="checkbox" name=""  checked>Realizado
     </li>
     <li>
-      <div class="title">{{tutorias.act16}}</div><input type="checkbox" name="" disabled checked>Realizado
+      <div class="title">{{tutorias.act16}}</div><input type="checkbox" name=""  checked>Realizado
     </li>
     <li>
-      <div class="title">{{tutorias.act17}}</div><input type="checkbox" name="" disabled checked>Realizado
+      <div class="title">{{tutorias.act17}}</div><input type="checkbox" name=""  checked>Realizado
     </li>
     <li>
-      <div class="title">{{tutorias.act18}}</div><input type="checkbox" name="" disabled checked>Realizado
+      <div class="title">{{tutorias.act18}}</div><input type="checkbox" name=""  checked>Realizado
     </li>
     <li>
-      <div class="title">{{tutorias.act19}}</div><input type="checkbox" name="" disabled checked>Realizado
+      <div class="title">{{tutorias.act19}}</div><input type="checkbox" name="" disabled >Realizado
     </li>
     <li>
-      <div class="title">{{tutorias.act20}}</div><input type="checkbox" name="" disabled checked>Realizado
+      <div class="title">{{tutorias.act20}}</div><input type="checkbox" name="" disabled >Realizado
     </li>
   </ul>
 
@@ -76,8 +76,8 @@
 
   <!--=========Progress Bar que mostrara el porcentaje de actividades realizadas segun checbox marcados==========----------> 
 
-  <div class="lab" *ngFor="let avance of avance">
-    <h4>{{avance.dato}}</h4>
+  <div class="lab" *ngFor="let tutorias of tutorias">
+    <h4>{{tutorias.avance}}</h4>
     <div class="progress-bar bg-info" id="progreso" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"> <label id="lblporcentaje">0%</label></div>
     <div class="ready"></div>
   </div>

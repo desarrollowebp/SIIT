@@ -1,0 +1,5 @@
+{"_id":{"$oid":"5c0b1f39694d3023709fde55"},"maestro":"Sofia","materia":"Estadistica","__v":0}
+{"_id":{"$oid":"5c0b1f39694d3023709fde56"},"maestro":"Miguel","materia":"Historia","__v":0}
+{"_id":{"$oid":"5c0b1f39694d3023709fde57"},"maestro":"Betty","materia":"Quimica","__v":0}
+{"_id":{"$oid":"5c0b1f39694d3023709fde58"},"maestro":"Roberto","materia":"Programacion","__v":0}
+{"_id":{"$oid":"5c0b1f39694d3023709fde59"},"maestro":"Laura","materia":"Investigacion","__v":0}
