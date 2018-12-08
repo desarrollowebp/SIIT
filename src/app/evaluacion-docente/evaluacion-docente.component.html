@@ -5,54 +5,43 @@
 <div class="container">
   <div class="row">
     <div class="col-12">
-      <div class="card" *ngFor="let pregunta of preguntas; let index = index">
+      <div class="card" *ngFor="let pregunta of preguntas; let preguntaIndex = index">
         <div class="card-header bg-guinda text-light">
-          <h4 class="mb-0">{{index + 1}}. {{pregunta.pregunta}}</h4>
+          <h4 class="mb-0">{{preguntaIndex + 1}}. {{pregunta.pregunta}}</h4>
         </div>
-        
         <div class="ui-table-wrapper card-body table-responsive-md pt-0 pb-0">
-          <table class="table text-center mb-0">
-            <tbody class="ui-tbody-sm">
-              <tr *ngFor="let maestro of maestros">
-                <th>{{maestro.maestro}}</th>
-                <td>1 <input type="radio" name="{{maestro.maestro}}"></td>
-                <td>2 <input type="radio" name="{{maestro.maestro}}"></td>
-                <td>3 <input type="radio" name="{{maestro.maestro}}"></td>
-                <td>4 <input type="radio" name="{{maestro.maestro}}"></td>
-                <td>5 <input type="radio" name="{{maestro.maestro}}"></td>
-              </tr>
-            </tbody>
-            <tbody class="ui-tbody-big">
-              <tr class="ui-tr-slim" *ngFor="let maestro of maestros">
-                <th>{{maestro.materia}}</th>
-                <th>{{maestro.maestro}}</th>
-                <td>
-                  1 <input type="radio" name="{{maestro.maestro}}">
-                </td>
-                <td>
-                  2 <input type="radio" name="{{maestro.maestro}}">
-                </td>
-                <td>
-                  3 <input type="radio" name="{{maestro.maestro}}">
-                </td>
-                <td>
-                  4 <input type="radio" name="{{maestro.maestro}}">
-                </td>
-                <td>
-                  5 <input type="radio" name="{{maestro.maestro}}">
-                </td>
-              </tr>
-            </tbody>
-          </table>
+          <form>
+            <table class="table text-center mb-0">
+              <tbody class="ui-tbody-sm">
+                <tr *ngFor="let maestro of maestros">
+                  <th>{{maestro.maestro}}</th>
+                  <td>1 <input type="radio" value="A" name="{{maestro.materia}}" (change)="cambiaRespuesta($event, preguntaIndex, maestro.materia)"></td>
+                  <td>2 <input type="radio" value="B" name="{{maestro.materia}}" (change)="cambiaRespuesta($event, preguntaIndex, maestro.materia)"></td>
+                  <td>3 <input type="radio" value="C" name="{{maestro.materia}}" (change)="cambiaRespuesta($event, preguntaIndex, maestro.materia)"></td>
+                  <td>4 <input type="radio" value="D" name="{{maestro.materia}}" (change)="cambiaRespuesta($event, preguntaIndex, maestro.materia)"></td>
+                  <td>5 <input type="radio" value="E" name="{{maestro.materia}}" (change)="cambiaRespuesta($event, preguntaIndex, maestro.materia)"></td>
+                </tr>
+              </tbody>
+              <tbody class="ui-tbody-big">
+                <tr class="ui-tr-slim" *ngFor="let maestro of maestros">
+                  <th>{{maestro.materia}}</th>
+                  <th>{{maestro.maestro}}</th>
+                  <td>1 <input type="radio" value="A" name="{{maestro.materia}}" (change)="cambiaRespuesta($event, preguntaIndex, maestro.materia)"></td>
+                  <td>2 <input type="radio" value="B" name="{{maestro.materia}}" (change)="cambiaRespuesta($event, preguntaIndex, maestro.materia)"></td>
+                  <td>3 <input type="radio" value="C" name="{{maestro.materia}}" (change)="cambiaRespuesta($event, preguntaIndex, maestro.materia)"></td>
+                  <td>4 <input type="radio" value="D" name="{{maestro.materia}}" (change)="cambiaRespuesta($event, preguntaIndex, maestro.materia)"></td>
+                  <td>5 <input type="radio" value="E" name="{{maestro.materia}}" (change)="cambiaRespuesta($event, preguntaIndex, maestro.materia)"></td>
+                </tr>
+              </tbody>
+            </table>
+          </form>
         </div>
       </div>
     </div>
   </div>
-  <div class="row ui-custom-row">
+  <div class="row">
     <div class="col-12 text-center">
-      <button type="button" class="btn btn-guinda" routerLink="/evaluacionDocente/comprobante">FINALIZAR EVALUACION</button>
+      <button type="button" class="btn btn-guinda" (click)="finalizarEvaluacion()">FINALIZAR EVALUACION</button>
     </div>
-  </div>
-
   </div>
 </div>

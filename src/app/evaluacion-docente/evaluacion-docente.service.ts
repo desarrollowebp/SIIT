@@ -14,6 +14,10 @@ export class EvaluacionDocenteService {
   getMaestrosMaterias() {
     return this.http.get<MaestrosMaterias>('http://localhost:3000/maestros-materias')
   }
+
+  postRespuestasEvaluaciones(data) {
+    return this.http.post('http://localhost:3000/respuestas-evaluaciones', data)
+  }
 }
 
 

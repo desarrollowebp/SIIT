@@ -24,7 +24,7 @@ preguntasEvaluacionesRouter.get('/', (req, res, next) => {
 /**
  * Respuestas Evaluaciones
  */
-respuestasEvaluacionesRouter.put('/', (req, res, next) => {
+respuestasEvaluacionesRouter.post('/', (req, res, next) => {
   respuestasEvaluaciones.create(req.body)
     .then(() => res.json({ success: true }))
     .catch(next)
