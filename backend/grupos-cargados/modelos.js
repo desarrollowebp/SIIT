@@ -18,10 +18,10 @@ const gruposCargadosSchema = new mongoose.Schema({
   sabado: String,
   salons: String*/
 })
-
+//actualizado
 module.exports = {
   gruposCargados:
-  mongoose.model('horarioreinscripcions',
+  mongoose.model('gruposcargados',
   gruposCargadosSchema)
 }
 

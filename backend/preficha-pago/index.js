@@ -1,17 +1,15 @@
 
   const {
-    Prefichapago
-    //adeudosHorarioAlumnos
+    prefichaPago
   } = require('./modelos.js')
 
   const {
-    Prefichapago
-   // adeudosHorarioAlumnosRouter
+    prefichaPagoRouter
   } = require('./rutas.js')
 
   module.exports = {
     //modelo
-    Prefichapago,
+    prefichaPago,
     //ruta
-    PrefichaPagoRouter
+    prefichaPagoRouter
   }

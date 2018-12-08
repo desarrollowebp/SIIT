@@ -18,6 +18,12 @@ const {
 const {
   gruposCargadosRouter
 } = require('./grupos-cargados')
+
+const {
+    prefichaPagoRouter
+  } = require('./preficha-pago')
+
+///
 const {
   horarioReinscripcionRouter
 } = require('./horario-reinscripcion')
@@ -61,6 +67,11 @@ app.use('/grupos-cargados', gruposCargadosRouter)
 app.use('/seleccion-materias', semestresMateriaRouter)
 app.use('/seleccion-materias-maestros', maestrosMateriaRouter)
 app.use('/horario-reinscripcion', horarioReinscripcionRouter)
+app.use('/extraescolar',  actividadesRouter)
+app.use('/extraescolar-maestros',  maestrosExtraescolarRouter)
+app.use('/extraescolar-seleccionada',  extraescolarSeleccionadaRouter)
+app.use('/extraescolar-agregada',  extraescolarAgregadaRouter)
+app.use('/preficha-pago',  prefichaPagoRouter)
 app.use('/extraescolar', actividadesRouter)
 app.use('/extraescolar-maestros', maestrosExtraescolarRouter)
 app.use('/extraescolar-seleccionada', extraescolarSeleccionadaRouter)

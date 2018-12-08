@@ -39,6 +39,7 @@ import { ExtraescolarService } from './extraescolar/extraescolar.service';
 import {horarioReinscripcionService} from './horario-reinscripcion/horarioreinscripcion.service';
 import {SeleccionMateriassDataService} from './seleccion-materias/seleeccion-materias.service';
 import { GruposCargadosService } from './grupos-cargados/grupos-cargados.service';
+import { PrefichaPagoService } from './preficha-pago/preficha-pago.service';
 import { TutoriasService } from './tutorias/tutorias.service';
 import { ResidenciasService } from './residencias/residencias.service';
 
@@ -113,6 +114,7 @@ const routes:Routes = [
     FormsModule, ReactiveFormsModule
   ],
   providers: [
+    EvaluacionDocenteService,SeleccionMateriassDataService,ExtraescolarService,horarioReinscripcionService,GruposCargadosService,PrefichaPagoService,
     EvaluacionDocenteService,
     SeleccionMateriassDataService,
     ExtraescolarService,
