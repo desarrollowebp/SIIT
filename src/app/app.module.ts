@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 import { LoginComponent } from './login/login.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { DatosEscolaresComponent } from './datos-escolares/datos-escolares.component';
@@ -29,7 +30,6 @@ import { CentroInfoComponent } from './centro-info/centro-info.component';
 import { MenuHComponent } from './menu-h/menu-h.component';
 import { EvaluacionDocenteComprobanteComponent } from './evaluacion-docente-comprobante/evaluacion-docente-comprobante.component';
 import { AvanceMateriaAlumnoComponent } from './avance-materia-alumno/avance-materia-alumno.component';
-
 import { PostSeleccionMateriasComponent } from './post-seleccion-materias/post-seleccion-materias.component';
 import { DatosTablaAlumnoComponent } from './datos-tabla-alumno/datos-tabla-alumno.component';
 import { TablaHorarioComponent } from './tabla-horario/tabla-horario.component';
@@ -39,6 +39,9 @@ import { ExtraescolarService } from './extraescolar/extraescolar.service';
 import {horarioReinscripcionService} from './horario-reinscripcion/horarioreinscripcion.service';
 import {SeleccionMateriassDataService} from './seleccion-materias/seleeccion-materias.service';
 import { GruposCargadosService } from './grupos-cargados/grupos-cargados.service';
+import { TutoriasService } from './tutorias/tutorias.service';
+import { ResidenciasService } from './residencias/residencias.service';
+
 const routes:Routes = [
   { path: '', component: LoginComponent },
   { path: 'inicio', component: InicioComponent },
@@ -110,7 +113,13 @@ const routes:Routes = [
     FormsModule, ReactiveFormsModule
   ],
   providers: [
-    EvaluacionDocenteService,SeleccionMateriassDataService,ExtraescolarService,horarioReinscripcionService,GruposCargadosService
+    EvaluacionDocenteService,
+    SeleccionMateriassDataService,
+    ExtraescolarService,
+    horarioReinscripcionService,
+    GruposCargadosService,
+    TutoriasService,
+    ResidenciasService
   ],
   bootstrap: [AppComponent]
 })

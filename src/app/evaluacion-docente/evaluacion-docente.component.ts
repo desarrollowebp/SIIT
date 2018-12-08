@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core'
 import { PreguntaEvaluacion } from './preguntaEvaluacion'
 import { PreguntasEvaluaciones } from './preguntasEvaluaciones'
 import { EvaluacionDocenteService } from './evaluacion-docente.service'
+import { MaestroMateria } from './maestroMateria';
+import { MaestrosMaterias } from './maestrosMaterias';
 
 @Component({
   selector: 'app-evaluacion-docente',
@@ -10,20 +12,19 @@ import { EvaluacionDocenteService } from './evaluacion-docente.service'
 })
 export class EvaluacionDocenteComponent implements OnInit {
   preguntas:PreguntaEvaluacion[]
+  maestros:MaestroMateria[]
 
-  maestros = [
-    {maestro: 'Sofia', materia: 'Estadistica'},
-    {maestro: 'Miguel', materia: 'Historia'},
-    {maestro: 'Betty', materia: 'Quimica'},
-    {maestro: 'Roberto', materia: 'Programacion'},
-    {maestro: 'Laura', materia: 'Investigacion'},
-  ]
-
-  constructor(evaluacionDocenteService: EvaluacionDocenteService) {
-    evaluacionDocenteService
-      .getPreguntasEvaluacion()
+  constructor(service: EvaluacionDocenteService) {
+    service
+      .getPreguntasEvaluaciones()
       .subscribe((data:PreguntasEvaluaciones) => {
         this.preguntas = data.preguntas
+      })
+
+    service
+      .getMaestrosMaterias()
+      .subscribe((data:MaestrosMaterias) => {
+        this.maestros = data.maestros
       })
   }
 
