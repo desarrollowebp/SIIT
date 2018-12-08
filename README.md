@@ -21,8 +21,11 @@ nota final a este README, mencionenlo en el grupo.
 ### Base de Datos
 Para restaurar la base de datos en su totalidad, es necesario utilizar el siguiente comando:
 ```sh
-mongorestore -d siit backend/db
+mongorestore -d siit backend/db/siit
 ```
+
+> NOTA: Si es necesario, habra que especificar la opcion `--drop` antes de la especificacion
+> de la base de datos.
 
 ## Pruebas
 El proyecto esta lo suficientemente listo para las pruebas. Despues de ~427 commits por
