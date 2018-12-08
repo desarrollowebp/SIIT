@@ -33,7 +33,7 @@ pelotas;fisicas;nataciones;aeas;
     actividadesDeportivas : [{ pelotas: [], fisicas: [], nataciones: [], aeas: [] }]
   }
 
-  
+
 gpsDisponibles=[];
 materiaModal="";
 
@@ -82,7 +82,7 @@ materiaModal="";
     hFinal: "",
     dias: ""
   }
-  
+
   modals = "modal";
   constructor(public service : ExtraescolarService) {
     //Regresa los grupos disponibles
@@ -113,7 +113,7 @@ materiaModal="";
 
       //console.log(this.grupos); manda undefined
 
-    this.modals = "modal"; 
+    this.modals = "modal";
   }
 
   funct() {
