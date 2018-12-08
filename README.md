@@ -1,6 +1,12 @@
 # SIIT | Desarrollo Web Profesional
 
 
+# DOCUMENTACION DEL PROYECTO GENERAL
+https://drive.google.com/drive/u/2/folders/1Xley85hVqu5H-eBp8aOKHsUncmwbLk0M
+
+# Documento final del proyecto
+https://drive.google.com/drive/u/2/folders/1GJw2Tvgizaodcrs8KUpcB2HaSvwf8GB4
+
 ## Pruebas
 El proyecto esta lo suficientemente listo para las pruebas. Despues de ~427 commits por
 20 contribuidores se puede apreciar el trabajo realizado para llegar a este punto, pero
