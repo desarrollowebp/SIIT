@@ -18,7 +18,9 @@ const {
   gruposCargadosRouter
 } = require('./grupos-cargados')
 
-   
+const {
+    prefichaPagoRouter
+  } = require('./preficha-pago')
 
 ///
 const {
@@ -70,7 +72,7 @@ app.use('/extraescolar',  actividadesRouter)
 app.use('/extraescolar-maestros',  maestrosExtraescolarRouter)
 app.use('/extraescolar-seleccionada',  extraescolarSeleccionadaRouter)
 app.use('/extraescolar-agregada',  extraescolarAgregadaRouter)
-app.use('/grupos-cargados',  gruposCargadosRouter)
+app.use('/preficha-pago',  prefichaPagoRouter)
 app.use('/calificaciones-parciales', calificacionesParcialesRouter)
 app.use('/calificaciones-examenes', calificacionexamenRouter)
 app.use('/verificion-beca', becaRouter)

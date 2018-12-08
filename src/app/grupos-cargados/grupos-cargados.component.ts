@@ -9,10 +9,16 @@ import {GruposCargadosService} from './grupos-cargados.service';
 export class GruposCargadosComponent implements OnInit {
 grupos;
   constructor(public cargar: GruposCargadosService) {
-	 }
+		this.cargar.getGruposCargados().subscribe(data => { console.log(data) });
+	/*	cargar.getGruposCargados().subscribe((data)=>{
+      this.grupos=data;
+      this.grupos=this.grupos.gruposC;
+      console.log(this.grupos);
+      });*/
+	}
 
   ngOnInit() {
-		this.cargar.getGruposCargados();
+	this.cargar.getGruposCargados();																					 
 		
   	//inicio del funcionamiento del filtro
   	(function(){
@@ -67,13 +73,7 @@ grupos;
   	//fin del funcionamineto del filtro
 
   	//inicio del funcionamiento de los botones que especifican los semestres
-		$('.pestanasGC').click(function(evento){this.cargar.getGruposCargados().subscribe((data) =>{
-																								this.grupos = data;
-																								this.grupos = this.grupos;
-																								console.log(this.grupos);
-																								});
-																								
-																								
+		$('.pestanasGC').click(function(evento){		
     	if($(this).data("sem")==0)
     	{
     		$('.semestresdivGC').show();

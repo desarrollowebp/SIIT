@@ -21,7 +21,7 @@ const gruposCargadosSchema = new mongoose.Schema({
 
 module.exports = {
   gruposCargados:
-  mongoose.model('horarioreinscripcions',
+  mongoose.model('gruposcargados',
   gruposCargadosSchema)
 }
 
