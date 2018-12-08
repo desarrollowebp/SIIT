@@ -40,6 +40,7 @@ import {horarioReinscripcionService} from './horario-reinscripcion/horarioreinsc
 import {SeleccionMateriassDataService} from './seleccion-materias/seleeccion-materias.service';
 import { GruposCargadosService } from './grupos-cargados/grupos-cargados.service';
 import { TutoriasService } from './tutorias/tutorias.service';
+import { ResidenciasService } from './residencias/residencias.service';
 const routes:Routes = [
   { path: '', component: LoginComponent },
   { path: 'inicio', component: InicioComponent },
@@ -110,7 +111,7 @@ const routes:Routes = [
     HttpClientModule,
     FormsModule, ReactiveFormsModule
   ],
-  providers: [ EvaluacionDocenteService,SeleccionMateriassDataService,ExtraescolarService,horarioReinscripcionService,GruposCargadosService, TutoriasService, residenciasService
+  providers: [ EvaluacionDocenteService,SeleccionMateriassDataService,ExtraescolarService,horarioReinscripcionService,GruposCargadosService, TutoriasService, ResidenciasService
 
   ],
   bootstrap: [AppComponent]

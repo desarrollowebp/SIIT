@@ -1,16 +1,9 @@
 const mongoose = require('mongoose');
- 
 
-<<<<<<< HEAD
+
 const informacionTutoriasSchema = new mongoose.Schema({
-    tutor: {type: String, required: true},
-    nombretutor:{type: String, required: true},
-    actividad: {type: String, required: true},
-    check: {type: Boolean, required: true},
-=======
-const informacionTutoriasSchema = new mongoose.Schema({ 
     dato: {type: String, required: true},
-    tutor:{type: String, required: true}, 
+    tutor:{type: String, required: true},
     act1: {type: String, required: true},
     checkbox1: {type: Boolean, required: true},
     act2: {type: String, required: true},
@@ -51,7 +44,6 @@ const informacionTutoriasSchema = new mongoose.Schema({
     checkbox19: {type: Boolean, required: true},
     act20: {type: String, required: true},
     checkbox20: {type: Boolean, required: true},
->>>>>>> 9ce0289f5eabff5ab2bc4c1e070e2d1db63d78c3
     avance: {type: String, required: true}
 });
 
