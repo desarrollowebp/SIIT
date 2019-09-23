@@ -42,6 +42,7 @@ import { GruposCargadosService } from './grupos-cargados/grupos-cargados.service
 import { PrefichaPagoService } from './preficha-pago/preficha-pago.service';
 import { TutoriasService } from './tutorias/tutorias.service';
 import { ResidenciasService } from './residencias/residencias.service';
+import { EjemploDosComponent } from './ejemplo-dos/ejemplo-dos.component';
 
 const routes:Routes = [
   { path: '', component: LoginComponent },
@@ -106,6 +107,7 @@ const routes:Routes = [
     PreSeleccionMateriasComponent,
     DatosTablaAlumnoComponent,
     TablaHorarioComponent,
+    EjemploDosComponent,
   ],
   imports: [
     BrowserModule,
