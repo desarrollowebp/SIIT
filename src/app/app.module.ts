@@ -33,6 +33,7 @@ import { AvanceMateriaAlumnoComponent } from './avance-materia-alumno/avance-mat
 import { PostSeleccionMateriasComponent } from './post-seleccion-materias/post-seleccion-materias.component';
 import { DatosTablaAlumnoComponent } from './datos-tabla-alumno/datos-tabla-alumno.component';
 import { TablaHorarioComponent } from './tabla-horario/tabla-horario.component';
+import { EjemploDosComponent } from './ejemplo-dos/ejemplo-dos.component';
 
 import { EvaluacionDocenteService } from './evaluacion-docente/evaluacion-docente.service'
 import { ExtraescolarService } from './extraescolar/extraescolar.service';
@@ -42,7 +43,6 @@ import { GruposCargadosService } from './grupos-cargados/grupos-cargados.service
 import { PrefichaPagoService } from './preficha-pago/preficha-pago.service';
 import { TutoriasService } from './tutorias/tutorias.service';
 import { ResidenciasService } from './residencias/residencias.service';
-import { EjemploDosComponent } from './ejemplo-dos/ejemplo-dos.component';
 
 const routes:Routes = [
   { path: '', component: LoginComponent },
@@ -72,6 +72,7 @@ const routes:Routes = [
   { path: 'auditoriaServicio', component: AuditoriaServicioComponent },
   { path: 'postSeleccionMaterias', component:PostSeleccionMateriasComponent},
   { path: 'preSeleccionMaterias', component: PreSeleccionMateriasComponent},
+  { path: 'ejemploDos', component: EjemploDosComponent},
   { path: 'datosTablaAlumno', component:DatosTablaAlumnoComponent},
   { path: 'tablaHorario', component:TablaHorarioComponent}
 ]
@@ -105,9 +106,9 @@ const routes:Routes = [
     AvanceMateriaAlumnoComponent,
     PostSeleccionMateriasComponent,
     PreSeleccionMateriasComponent,
+    EjemploDosComponent,
     DatosTablaAlumnoComponent,
     TablaHorarioComponent,
-    EjemploDosComponent,
   ],
   imports: [
     BrowserModule,
